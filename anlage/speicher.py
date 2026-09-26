@@ -42,6 +42,12 @@ def schreibe_text(pfad: Path, text: str) -> None:
     os.replace(hilfe, pfad)
 
 
+def haenge_zeile_an(pfad: Path, eintrag: dict) -> None:
+    """Eine JSON-Zeile anhängen (Verlauf, Logbuch). Bestehende Zeilen bleiben unberührt."""
+    pfad.parent.mkdir(parents=True, exist_ok=True)
+    with open(pfad, "a", encoding="utf-8") as f:
+        f.write(json.dumps(eintrag, ensure_ascii=False, sort_keys=True, default=str) + "\n")
+
 # ------------------------------------------------------------------ Regenarchiv
 def regen_abrufbeginn(vorhanden: dict[str, float | None], bedarf_ab: date, heute: date,
                       nachlauf_tage: int = 100) -> date:

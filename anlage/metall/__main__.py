@@ -1,6 +1,6 @@
 """Täglicher Datenlauf des Metall-Agenten.
 
-Schreibt daten/metall/<land>/stand.json, rueckblick.json, stoerungen.json, das Regen-Normal
+Schreibt daten/metall/<land>/stand.json, rueckblick.json, stoerungen.json, verlauf.jsonl, das Regen-Normal
 der Wasserkraft-Standorte (klima/) und das Kursarchiv (kurse/), dazu den Vorlesetext
 abgabe/metall-<land>-teil-N.md und abgabe/status-metall-<land>.md.
 
@@ -200,6 +200,10 @@ def lauf(land: str, heute: date, zeitpunkt: datetime, budget_minuten: float = 25
         "quellen": {kennung: {"name": namen[kennung], **s} for kennung, s in status.items()},
     }
     speicher.schreibe_json(o / "stand.json", stand)
+    speicher.haenge_zeile_an(o / "verlauf.jsonl", {   # für den Nachprüfer: Stufen der Woche
+        "zeit": stand["stand"], "datum": stand["datum"], "zustand": zustand,
+        "stufen": {a: e["stufe"] for a, e in achsen.items()},
+        "preise": {t: p.get("urteil") for t, p in preise.items()}})
     return stand
 
 

@@ -38,6 +38,8 @@ sensor:
 # 2004 verlor Giresun rund 90 Prozent, 2014 rund 75 Prozent der Ernte.
 bekannte_frostjahre: [2004, 2014, 2025]
 
+schattendepot: {bis_monat_tag: "09-30"}   # bisherige Ausstiegsregel: am Ende der Ernte
+
 rueckblick:
   jahre_ab: 1991
   horizonte: [20, 60, 120]    # Handelstage nach dem ersten Frost; Ersatz wirkt langsamer als eine Ausfuhrsperre

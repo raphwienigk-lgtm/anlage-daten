@@ -1,0 +1,47 @@
+# Ersatz-Paar Palladium → Platin (Auftrag 26.09.2026, Protokoll „substitution-ersatzrohstoffe“, Musterpaar der Metalle).
+# Grundsatz: Der Sensor schlägt beim Original aus, gekauft wird der handelbare Ersatz.
+# Beide Metalle sitzen im Autokatalysator und sind dort gegeneinander austauschbar. Wird Palladium zu teuer
+# (etwa weil Lieferungen aus Russland ausfallen, rund 40 Prozent der Minenförderung), stellen die Hersteller
+# auf Platin um, und dessen Preis zieht an. Anders als bei der Haselnuss sind hier beide handelbar;
+# der Sensor ist der Preis des Originals selbst.
+
+kennung: palladium
+name: Palladium
+familie: B
+treiber: politik
+rolle: sensor                 # Kandidat erst, wenn der Rückblick besteht (Regel für neue Rohstoffe)
+original:
+  name: "Palladium"
+  hinweis: "rund 40 Prozent der Minenförderung aus Russland; im Benzin-Katalysator gegen Platin austauschbar"
+ersatz:
+  - {ticker: PPLT, name: "Platin-ETF", waehrung: USD, rolle: kandidat, hinweis: "physisch hinterlegtes Platin, in Dollar gehandelt"}
+vergleich: {ticker: GLD, name: "Gold-ETF", akkusativ: "den Gold-ETF"}
+
+sensor:
+  art: preisabstand
+  ersatz_name: Platin          # Metall des Ersatzes, für den Vorlesetext
+  original_ticker: PALL       # physisch hinterlegtes Palladium; beide ETFs starteten 2010 mit einer Zehntelunze je Anteil,
+                              # das Verhältnis der Anteilspreise entspricht deshalb ungefähr dem der Metallpreise
+  anstieg_tage: 60            # Palladium steigt binnen 60 Handelstagen …
+  anstieg_ab: 0.30            # … um mindestens 30 Prozent: Sprung
+  verhaeltnis_ab: 1.0         # Palladium wird teurer als Platin: ab hier lohnt die Umstellung
+  pause_tage: 120             # nach einem Signal zählt das nächste erst nach so vielen Handelstagen (kein Doppelzählen)
+  gelb_tage: 180              # so lange (Kalendertage) hält ein Signal die Stufe auf Gelb
+  rot_tage: 30                # nur ein so frisches Signal kann Rot werden
+
+schattendepot: {kalendertage: 180}   # bisherige Ausstiegsregel: nach einem halben Jahr
+
+rueckblick:
+  horizonte: [20, 60, 120, 250]  # Umstellungen im Katalysator brauchen Monate; deshalb bis ein Jahr
+  haupt: 120
+  vorlauf: 20
+  treffer_ab: 0.10
+  bestanden: {mindestens: 3, trefferquote: 0.5}
+  kurse_ab: 2010-01-04
+
+preisprobe:
+  tage_kurz: 5
+  tage_lang: 20
+  gelaufen_ab: 0.15
+  handel_tage: 60
+  duenn_unter: 1000000

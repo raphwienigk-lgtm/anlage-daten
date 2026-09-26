@@ -135,6 +135,17 @@ preisprobe:
 # Ereignisse für den Rückblick (Ankündigungstag in Peking bzw. Washington).
 # Quellen: Kanzlei- und Fachberichte (Pillsbury, Morgan Lewis, Greenberg Traurig, Referently); bei Zweifel prüfen.
 ereignisse:
+  # Magnet-Achse ab 2010 (nachgetragen am 26.09.2026, damit Lynas an mehr als fünf Fällen geprüft wird;
+  # Quellen: Bloomberg, CNBC, New York Times, WTO DS431, Global Times; Tag = erster Tag der Meldung).
+  - {datum: 2010-07-09, art: verschaerfung, achsen: [magnet],           text: "Ausfuhrquote für seltene Erden im zweiten Halbjahr 2010 um 72 Prozent gekürzt"}
+  - {datum: 2010-09-23, art: verschaerfung, achsen: [magnet],           text: "Faktischer Ausfuhrstopp seltener Erden nach Japan nach dem Zwischenfall bei den Senkaku-Inseln"}
+  - {datum: 2010-10-20, art: verschaerfung, achsen: [magnet],           text: "Lieferstopp auf die USA und Europa ausgeweitet"}
+  - {datum: 2010-12-28, art: verschaerfung, achsen: [magnet],           text: "Erste Ausfuhrquote für 2011 um 35 Prozent gekürzt"}
+  - {datum: 2015-01-05, art: lockerung,     achsen: [magnet],           text: "China schafft die Ausfuhrquoten für seltene Erden ab"}
+  - {datum: 2015-04-23, art: lockerung,     achsen: [magnet],           text: "China schafft die Ausfuhrzölle auf seltene Erden ab (ab 1.5.2015)"}
+  - {datum: 2012-03-13, art: gegenseite,    achsen: [magnet],           text: "USA, EU und Japan klagen bei der WTO gegen Chinas Ausfuhrbeschränkungen"}
+  - {datum: 2014-03-26, art: gegenseite,    achsen: [magnet],           text: "WTO-Panel gibt den Klägern recht"}
+  - {datum: 2014-08-07, art: gegenseite,    achsen: [magnet],           text: "WTO-Berufungsinstanz bestätigt das Urteil"}
   - {datum: 2023-07-03, art: verschaerfung, achsen: [chip],             text: "Lizenzpflicht für Gallium und Germanium angekündigt (gültig ab 1.8.2023)"}
   - {datum: 2023-10-20, art: verschaerfung, achsen: [batterie],         text: "Lizenzpflicht für Graphit angekündigt (gültig ab 1.12.2023)"}
   - {datum: 2023-12-21, art: verschaerfung, achsen: [magnet],           text: "Ausfuhrverbot für Technik zur Gewinnung und Verarbeitung seltener Erden"}

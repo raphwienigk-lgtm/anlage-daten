@@ -11,7 +11,7 @@ from datetime import date, datetime, timedelta
 
 import pytest
 
-from anlage import konfig, netz
+from anlage import konfig, logbuch, netz, speicher
 from anlage.ausgabe import ersatz_text, vorlesen
 from anlage.ersatz import __main__ as ersatz
 from anlage.ersatz import frost
@@ -47,12 +47,15 @@ class Netz:
 
     def hole_json(self, url, params=None, kopf=None, timeout=45):
         if "archive-api.open-meteo.com" in url:
-            assert params["elevation"] in (400, 100, 250)
+            hoehen = [int(h) for h in str(params["elevation"]).split(",")]
+            assert set(hoehen) <= {400, 100, 250}
             self.archiv_abrufe += 1
             start, ende = date.fromisoformat(params["start_date"]), date.fromisoformat(params["end_date"])
             tage = [start + timedelta(days=i) for i in range((ende - start).days + 1)]
-            k = _kennung(params["latitude"])
-            return {"daily": {"time": [t.isoformat() for t in tage], "temperature_2m_min": [self.tmin(k, t) for t in tage]}}
+            kennungen = [_kennung(lat) for lat in str(params["latitude"]).split(",")]
+            antworten = [{"daily": {"time": [t.isoformat() for t in tage],
+                                    "temperature_2m_min": [self.tmin(k, t) for t in tage]}} for k in kennungen]
+            return antworten if len(antworten) > 1 else antworten[0]
         if url.startswith("https://api.open-meteo.com"):
             lats = params["latitude"].split(",")
             heute = date(2027, 3, 20)
@@ -162,6 +165,21 @@ def test_saison_vorhersage_und_rot(ablage, ersatz_netz):
     stand = ersatz.lauf("haselnuss", date(2027, 3, 20), zeit, budget_minuten=5, holen=falsche_kurse)
     assert stand["stufe"] == "Rot" and stand["wechsel"] == {"vorher": "Gelb", "jetzt": "Rot"}
     assert stand["aktuell"]["gemessen"][0]["stark"]
+
+    # Schattendepot: Rot kauft den Ersatz gedacht; das Ende der Ernte schließt
+    assert stand["schattendepot"] == {"offen": True, "seit": "2027-03-20", "positionen": 1}
+    o = konfig.DATEN / "ersatz" / "haselnuss"
+    depot = speicher.lies_json(o / "schattendepot.json")
+    assert depot["positionen"][0]["kurse"]["SHV.AX"]["datum"] == "2027-03-19"
+    assert "^AXJO" in depot["positionen"][0]["vergleich"]
+    stand = ersatz.lauf("haselnuss", date(2027, 3, 21), zeit, budget_minuten=5, holen=falsche_kurse)
+    assert stand["schattendepot"]["positionen"] == 1                     # zweites Rot kauft nicht nach
+    herbst = datetime(2027, 10, 1, 4, 7, tzinfo=konfig.ZEITZONE)
+    stand = ersatz.lauf("haselnuss", date(2027, 10, 1), herbst, budget_minuten=5, holen=falsche_kurse)
+    assert stand["stufe"] == "Grün" and stand["schattendepot"] == {"offen": False, "seit": None, "positionen": 1}
+    assert speicher.lies_json(o / "schattendepot.json")["positionen"][0]["schluss_grund"] == "Ende der Ernte"
+    verlauf = logbuch.lies(o / "verlauf.jsonl")
+    assert [v["stufe"] for v in verlauf] == ["Gelb", "Rot", "Rot", "Grün"]
 
 
 def test_frostjahr_haelt_gelb_bis_zur_ernte():

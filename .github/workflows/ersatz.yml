@@ -1,7 +1,7 @@
-# Ersatz-Sensor Haselnuss → Select Harvests: täglich um 02:07 UTC (04:07 Uhr), vor dem Anlage-Bewerter.
-# Außerhalb der Frostsaison (März, April) dauert der Lauf Sekunden. Die ersten Läufe laden einmalig die
-# Frostsaisons ab 1991 für den Rückblick (etwa eine Viertelstunde).
-name: Ersatz Haselnuss
+# Ersatz-Sensoren: Haselnuss → Select Harvests (Spätfrost) und Palladium → Platin (Preis des Originals),
+# täglich um 02:07 UTC (04:07 Uhr), vor dem Anlage-Bewerter. Außerhalb der Frostsaison dauert der Lauf
+# Sekunden. Die ersten Haselnuss-Läufe laden einmalig die Frostsaisons ab 1991 (etwa eine Viertelstunde).
+name: Ersatz-Sensoren
 
 on:
   schedule:
@@ -29,8 +29,8 @@ jobs:
           cache: pip
       - name: Pakete installieren
         run: pip install -r requirements.txt
-      - name: Ersatz-Sensor Haselnuss
-        run: python -m anlage.ersatz --kennung haselnuss --budget-minuten 20
+      - name: Ersatz-Sensoren
+        run: python -m anlage.ersatz --kennung alle --budget-minuten 20
       - name: Ergebnis sichern
         if: always()
         run: |
@@ -40,7 +40,7 @@ jobs:
           if git diff --cached --quiet; then
             exit 0
           fi
-          git commit -m "Ersatz Haselnuss $(date -u +%Y-%m-%dT%H:%MZ)"
+          git commit -m "Ersatz-Sensoren $(date -u +%Y-%m-%dT%H:%MZ)"
           for versuch in 1 2 3; do
             git pull --rebase && git push && exit 0
             git rebase --abort 2>/dev/null || true

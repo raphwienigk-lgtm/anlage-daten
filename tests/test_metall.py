@@ -12,7 +12,7 @@ from datetime import date, datetime, timedelta, timezone
 
 import pytest
 
-from anlage import konfig, netz
+from anlage import konfig, logbuch, netz
 from anlage.ausgabe import metall_text, sprache, vorlesen
 from anlage.metall import __main__ as metall
 from anlage.metall import quellen as q
@@ -253,6 +253,8 @@ def test_ganzer_lauf(ablage, metall_netz):
     stand2 = metall.lauf("china", HEUTE, zeit, budget_minuten=5, holen=falsche_kurse)
     assert not stand2["wechsel"] and not any(d["neu"] for d in stand2["gegenseite"]["dokumente"])
     assert len([u for u in metall_netz.abrufe if "archive" in u]) - vorher == 2      # nur die zwei aktuellen Fenster
+    verlauf = logbuch.lies(konfig.DATEN / "metall" / "china" / "verlauf.jsonl")
+    assert len(verlauf) == 2 and verlauf[-1]["stufen"] == {a: e["stufe"] for a, e in stand2["achsen"].items()}
 
 
 def test_normal_wird_geladen_und_quellen_fallen_aus(ablage, monkeypatch):

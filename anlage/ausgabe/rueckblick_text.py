@@ -40,7 +40,7 @@ def _pm(anteil: float | None) -> str:
     p = round(anteil * 100)
     if p == 0:
         return "null Prozent"
-    return f"{'plus' if p > 0 else 'minus'} {sprache.wort(abs(p))} Prozent"
+    return f"{'plus' if p > 0 else 'minus'} {'ein' if abs(p) == 1 else sprache.wort(abs(p))} Prozent"
 
 
 def _punkte(anteil: float | None) -> str:

@@ -117,10 +117,75 @@ def _signal_absatz(name: str, r: dict) -> str:
     return satz
 
 
+def _weitere_absatz(liste: list[dict]) -> str | None:
+    if not liste:
+        return None
+    stuecke = []
+    for w in liste:
+        gez, mit = w.get("tage_gezaehlt"), w.get("tage_mit_lauf")
+        if mit is None:
+            stuecke.append(f"{w['name']} unbekannt")
+        elif gez == 0:
+            seit = w.get("betrieb_seit")
+            stuecke.append(f"{w['name']} noch nicht in Betrieb" + (f", der erste Lauf ist für den {_datum(seit)} geplant" if seit else ""))
+        elif mit == gez:
+            stuecke.append(f"{w['name']} an allen {'sieben Tagen' if gez == 7 else sprache.wort(gez) + ' Tagen seit Betriebsbeginn'}"
+                           if gez > 1 else f"{w['name']} am ersten Tag")
+        else:
+            fehlend = sprache.tage([date.fromisoformat(x) for x in w["fehlende_tage"]])
+            stuecke.append(f"{w['name']} an {sprache.wort(mit)} von {sprache.wort(gez)} Tagen, es fehlte am {fehlend}")
+    return "Die anderen täglichen Läufe: " + "; ".join(stuecke) + "."
+
+
+def _seit(w: dict) -> str:
+    if not w.get("seit"):
+        return ""
+    return (f" seit Beginn der Aufzeichnung am {_datum(w['seit'])}" if w.get("seit_beginn")
+            else f" seit dem {_datum(w['seit'])}")
+
+
+def _wechsel(w: dict, name: str | None = None) -> list[str]:
+    return [f"{name + ' ' if name else ''}am {_datum(x['tag'])} von {x['vorher']} auf {x['jetzt']}" for x in w["wechsel"]]
+
+
+def _zweig_absaetze(z: dict) -> list[str]:
+    if not z["laeufe"]:
+        return [f"{z['name']}: noch kein Lauf aufgezeichnet."]
+    if z["art"] == "metall":
+        gruppen: dict[tuple, list[str]] = {}
+        for a in z["achsen"].values():
+            if a["jetzt"]:
+                gruppen.setdefault((a["jetzt"], a["seit"], a["seit_beginn"]), []).append(a["name"])
+        teile = [f"{sprache.aufzaehlung(namen)} {'steht' if len(namen) == 1 else 'stehen'} auf {stufe}"
+                 + _seit({"seit": seit, "seit_beginn": beginn})
+                 for (stufe, seit, beginn), namen in gruppen.items()]
+        satz = f"{z['name']}, Datenteil: " + "; ".join(teile) + "."
+        wechsel = [s for a in z["achsen"].values() for s in _wechsel(a, a["name"])]
+        satz += (" Wechsel in dieser Woche: " + "; ".join(wechsel) + ".") if wechsel else " In dieser Woche gab es keinen Wechsel."
+        satz += (" Rot und das Schattendepot der Metalle führt der Metall-Wächter in der Cloud; "
+                 "sie stehen im Bericht des Nachprüfers im Projekt.")
+        return [satz]
+    satz = f"{z['name']} steht auf {z['jetzt']}{_seit(z)}."
+    wechsel = _wechsel(z)
+    satz += (" Wechsel in dieser Woche: " + "; ".join(wechsel) + ".") if wechsel else " In dieser Woche gab es keinen Wechsel."
+    liste = [satz]
+    if not z["positionen"]:
+        liste.append("Im Schattendepot des Ersatzes gab es bisher keine gedachte Position.")
+    for pos in [p for p in z["positionen"] if p["offen"]] + [p for p in z["positionen"] if not p["offen"]][-2:]:
+        s = _position_satz(pos)
+        if pos.get("vergleich") is not None:
+            s += f" Der Vergleichsmaßstab, {z['vergleich']}, im selben Zeitraum: {_pm(pos['vergleich'])}."
+        liste.append(s)
+    return liste
+
+
 def absaetze(e: dict) -> list[str]:
     w = e["woche"]
     liste = [f"Der Nachprüfer für die Woche vom {_datum(w['von'])} bis {_datum(w['bis'])}.",
              _lauf_absatz(e["laufkontrolle"])]
+    weitere = _weitere_absatz(e.get("weitere_laeufe") or [])
+    if weitere:
+        liste.append(weitere)
     for r in e["rohstoffe"].values():
         liste.append(_ampel_absatz(r["name"], r["ampel"]))
         offene = [p for p in r["positionen"] if p["offen"]]
@@ -132,6 +197,8 @@ def absaetze(e: dict) -> list[str]:
             for p in offene + geschlossene[-3:]:
                 liste.append(_position_satz(p))
         liste.append(_signal_absatz(r["name"], r))
+    for z in (e.get("zweige") or {}).values():
+        liste.extend(sprache.ausschreiben(s) for s in _zweig_absaetze(z))
     liste.append("Politik-Vetos aus den Mails sind hier nicht eingerechnet; sie stehen im Bericht des Nachprüfers im Projekt.")
     liste.append("Das ist eine Denkhilfe, keine Anlageberatung.")
     return liste
@@ -142,7 +209,9 @@ def schreibe(e: dict, ordner: Path) -> list[Path]:
     pfade = vorlesen.schreibe_teile(ordner, "nachpruefer", stuecke)
     zeit = datetime.fromisoformat(e["stand"])
     lk = e["laufkontrolle"]
-    zustand = "in Ordnung" if (not lk.get("fehlende_tage") and lk.get("zustand") != "Fehler") else "Warnung"
+    fehlt_weiter = any(w.get("fehlende_tage") for w in e.get("weitere_laeufe") or [])
+    zustand = ("in Ordnung" if (not lk.get("fehlende_tage") and lk.get("zustand") != "Fehler" and not fehlt_weiter)
+               else "Warnung")
     status = (f"Agent: Nachprüfer (wöchentlich, GitHub)\n"
               f"Stand: {zeit.strftime('%d.%m.%Y, %H:%M')}\n"
               f"Zustand: {zustand}\n"
@@ -158,6 +227,13 @@ def zusammenfassung(e: dict) -> str:
     lk = e["laufkontrolle"]
     zeilen = [f"## Nachprüfer, {e['stand']}", "",
               f"- Läufe in 7 Tagen: {lk.get('tage_mit_lauf')}, fehlend: {lk.get('fehlende_tage')}"]
+    for w in e.get("weitere_laeufe") or []:
+        zeilen.append(f"- Lauf {w['workflow']}: {w.get('tage_mit_lauf')} von {w.get('tage_gezaehlt')}, fehlend {w.get('fehlende_tage')}")
+    for z in (e.get("zweige") or {}).values():
+        if z["art"] == "metall":
+            zeilen.append(f"- {z['name']}: " + ", ".join(f"{a['name']} {a['jetzt']} seit {a['seit']}" for a in z["achsen"].values()))
+        else:
+            zeilen.append(f"- {z['name']}: {z['jetzt']} seit {z['seit']}; Positionen {len(z['positionen'])}")
     for r in e["rohstoffe"].values():
         a, sg = r["ampel"], r["signale"]
         zeilen.append(f"- {r['name']}: {a.get('farbe')} seit {a.get('seit')}; Signale {sg['anzahl']}, "

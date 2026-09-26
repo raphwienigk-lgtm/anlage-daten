@@ -129,3 +129,58 @@ def test_text_vor_betriebsbeginn(ablage):
     assert "noch nicht in Betrieb; der erste ist für den siebenundzwanzigsten September geplant" in text
     assert "Zustand: in Ordnung" in (konfig.ABGABE / "status-nachpruefer.md").read_text(encoding="utf-8")
     assert "etwa 1 Minute Vorlesezeit" in (konfig.ABGABE / "status-nachpruefer.md").read_text(encoding="utf-8")
+
+
+# ------------------------------------------------------------------ andere Zweige (seit 26.09.2026)
+def _zweige_szenario(ordner) -> None:
+    tage = [date(2026, 9, 27) + timedelta(days=i) for i in range(8)]            # bis Sonntag, 4. Oktober
+    m = konfig.DATEN / "metall" / "china"
+    for t in tage:
+        chip = "Gelb" if t >= date(2026, 10, 1) else "Grün"
+        speicher.haenge_zeile_an(m / "verlauf.jsonl", {"zeit": f"{t}T01:20:00+02:00", "datum": t.isoformat(),
+                                                        "stufen": {"chip": chip, "magnet": "Grün", "batterie": "Grün",
+                                                                   "werkzeug": "Grün"}})
+    o = konfig.DATEN / "ersatz" / "haselnuss"
+    for t in tage[1:]:
+        speicher.haenge_zeile_an(o / "verlauf.jsonl", {"zeit": f"{t}T04:10:00+02:00", "datum": t.isoformat(),
+                                                        "stufe": "Grün", "phase": "außer Saison"})
+    speicher.schreibe_json(o / "schattendepot.json", {"positionen": [
+        {"zeit": "2026-09-28T04:10:00+02:00", "grund": "Rot", "kurse": {"SHV.AX": {"kurs": 4.0, "datum": "2026-09-25"}},
+         "vergleich": {"^AXJO": {"kurs": 8000.0, "datum": "2026-09-25"}}}]})
+    for ticker, werte in (("SHV.AX", (4.0, 4.4)), ("^AXJO", (8000.0, 8080.0))):
+        kurse.ergaenze_archiv(kurse.archiv_pfad(o / "kurse", ticker),
+                              [{"datum": "2026-09-25", "schluss": werte[0], "volumen": 1}, {"datum": "2026-10-02", "schluss": werte[1], "volumen": 1}])
+    # Metall läuft um 23:17 UTC, also am Vorabend nach UTC; Ersatz fehlt am 30. September; Inlandspreise ohne Datei
+    metall = [{"conclusion": "success", "createdAt": f"{t - timedelta(days=1)}T23:18:00Z"} for t in tage]
+    ersatz = [{"conclusion": "success", "createdAt": f"{t}T02:09:00Z"} for t in tage if t != date(2026, 9, 30)]
+    (ordner / "metall.json").write_text(json.dumps(metall), encoding="utf-8")
+    (ordner / "ersatz.json").write_text(json.dumps(ersatz), encoding="utf-8")
+
+
+def test_andere_zweige(ablage):
+    ordner = ablage / "laeufe"
+    ordner.mkdir()
+    _zweige_szenario(ordner)
+    assert nachpruefer.main(["--heute", "2026-10-04", "--laeufe-ordner", str(ordner)]) == 0
+    e = speicher.lies_json(konfig.DATEN / "nachpruefer.json")
+    w = {x["workflow"]: x for x in e["weitere_laeufe"]}
+    assert w["metall"]["tage_mit_lauf"] == 7 and w["metall"]["fehlende_tage"] == []
+    assert w["ersatz"]["tage_gezaehlt"] == 7 and w["ersatz"]["fehlende_tage"] == ["2026-09-30"]
+    assert w["inlandspreise"]["tage_mit_lauf"] is None
+    chip = e["zweige"]["metall_china"]["achsen"]["chip"]
+    assert chip["jetzt"] == "Gelb" and chip["seit"] == "2026-10-01" and chip["wechsel"] == [
+        {"tag": "2026-10-01", "vorher": "Grün", "jetzt": "Gelb"}]
+    hasel = e["zweige"]["ersatz_haselnuss"]
+    assert hasel["jetzt"] == "Grün" and hasel["seit_beginn"] and hasel["positionen"][0]["offen"]
+    assert hasel["positionen"][0]["instrumente"][0]["veraenderung"] == 0.1 and hasel["positionen"][0]["vergleich"] == 0.01
+
+    teile = sorted(konfig.ABGABE.glob("nachpruefer-teil-*.md"))
+    gesamt = " ".join(p.read_text(encoding="utf-8").split("\n", 2)[2] for p in teile)
+    assert not re.search(r"\d", gesamt)
+    assert ("Die anderen täglichen Läufe: Metall China an allen sieben Tagen; Ersatz-Sensoren an sechs von sieben Tagen, "
+            "es fehlte am dreißigsten September; Inlandspreise unbekannt.") in gesamt
+    assert "Chip-Achse steht auf Gelb seit dem ersten Oktober" in gesamt
+    assert "Wechsel in dieser Woche: Chip-Achse am ersten Oktober von Grün auf Gelb." in gesamt
+    assert "Ersatz-Sensor Haselnuss steht auf Grün seit Beginn der Aufzeichnung am achtundzwanzigsten September." in gesamt
+    assert "Select Harvests plus zehn Prozent" in gesamt and "Der Vergleichsmaßstab, australischer Aktienindex ASX zweihundert, im selben Zeitraum: plus ein Prozent." in gesamt
+    assert "Zustand: Warnung" in (konfig.ABGABE / "status-nachpruefer.md").read_text(encoding="utf-8")

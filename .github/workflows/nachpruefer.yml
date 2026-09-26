@@ -1,5 +1,6 @@
 # Nachprüfer: jeden Sonntag nach dem täglichen Lauf. Rechnet die Bilanz der echten Signale
-# (Schattendepot) und prüft, ob der tägliche Lauf an allen sieben Tagen gelang.
+# (Schattendepot) und prüft, ob der tägliche Lauf und die anderen täglichen Workflows (Metall,
+# Ersatz, Inlandspreise) an allen sieben Tagen gelangen. Danach der Ausstiegs-Vergleich.
 # Er verstellt nichts. Den Bericht holt der Nachprüfer in der Cloud ab und ergänzt die Mail-Vetos.
 name: Nachprüfer
 
@@ -34,9 +35,15 @@ jobs:
         env:
           GH_TOKEN: ${{ github.token }}
         run: |
-          gh run list --workflow taeglich.yml --limit 30 --json conclusion,createdAt > "$RUNNER_TEMP/laeufe.json" || rm -f "$RUNNER_TEMP/laeufe.json"
+          mkdir -p "$RUNNER_TEMP/laeufe"
+          for w in taeglich metall ersatz inlandspreise; do
+            gh run list --workflow "$w.yml" --limit 30 --json conclusion,createdAt > "$RUNNER_TEMP/laeufe/$w.json" || rm -f "$RUNNER_TEMP/laeufe/$w.json"
+          done
       - name: Nachprüfen
-        run: python -m anlage.nachpruefer --laeufe "$RUNNER_TEMP/laeufe.json"
+        run: python -m anlage.nachpruefer --laeufe "$RUNNER_TEMP/laeufe/taeglich.json" --laeufe-ordner "$RUNNER_TEMP/laeufe"
+      - name: Ausstiegsregeln vergleichen
+        if: always()
+        run: python -m anlage.ausstieg
       - name: Ergebnis sichern
         if: always()
         run: |

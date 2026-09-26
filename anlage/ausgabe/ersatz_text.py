@@ -102,10 +102,16 @@ def _rueckblick(stand: dict) -> str:
         if not z["n"]:
             teile.append(f"{r['name']}: noch keine auswertbaren Frostjahre mit Kursen.")
             continue
-        fall = "einem Frostjahr" if z["n"] == 1 else f"{sprache.wort(z['n'])} Frostjahren"
-        satz = (f"{r['name']} nach {fall}, gerechnet ab dem Tag nach der ersten Frostnacht: nach "
+        if stand.get("sensor_art") == "preisabstand":
+            fall = "einem Signal" if z["n"] == 1 else f"{sprache.wort(z['n'])} Signalen"
+            ab = "gerechnet ab dem Tag nach dem Signal"
+        else:
+            fall = "einem Frostjahr" if z["n"] == 1 else f"{sprache.wort(z['n'])} Frostjahren"
+            ab = "gerechnet ab dem Tag nach der ersten Frostnacht"
+        satz = (f"{r['name']} nach {fall}, {ab}: nach "
                 f"{sprache.wort(h)} Handelstagen im Mittel {_punkte(z[f'v{h}'])} gegen {_vergleich(stand)}")
-        weitere = [f"nach {sprache.wort(x)} {_punkte(z[f'v{x}'])}" for x in (20, 120) if z.get(f"v{x}") is not None and x != h]
+        horizonte = sorted(int(x[1:]) for x in z if x[1:].isdigit())
+        weitere = [f"nach {sprache.wort(x)} {_punkte(z[f'v{x}'])}" for x in horizonte if z.get(f"v{x}") is not None and x != h]
         if weitere:
             satz += ", " + ", ".join(weitere)
         satz += "; " + {0: "in keinem Fall ein Treffer", 1: "Treffer in einem Fall"}.get(
@@ -153,7 +159,79 @@ def _quellen(stand: dict) -> str:
     return satz
 
 
+def _mal(x: float) -> str:
+    return f"{sprache.komma(x, 2)} mal so viel"
+
+
+def _stufe_preis(stand: dict) -> str:
+    s, orig, ers = stand["schwellen"], stand["original"]["name"], stand.get("ersatz_name") or stand["ersatz"][0]["name"]
+    teile = []
+    w = stand.get("wechsel")
+    if w:
+        teile.append(f"Neu seit dem letzten Lauf: Die Stufe ist von {w['vorher']} auf {w['jetzt']} gesprungen.")
+    satz = f"Stufe {stand['stufe']}."
+    for g in stand["gruende"]:
+        if g["art"] == "signal":
+            was = (f"{orig} ist binnen {sprache.wort(s['anstieg_tage'])} Handelstagen um {sprache.prozent(g['wert'])} gestiegen"
+                   if g["art_signal"] == "Sprung" else f"{orig} wurde teurer als {ers}")
+            satz += f" Letztes Signal am {_datum(g['datum'])}: {was}."
+        elif g["art"] == "teurer":
+            satz += f" {orig} kostet {_mal(g['verhaeltnis'])} wie {ers}; ab Gleichstand lohnt die Umstellung auf {ers}."
+        elif g["art"] == "ruhig":
+            if g.get("anstieg") is not None:
+                satz += f" {orig} ist in {sprache.wort(s['anstieg_tage'])} Handelstagen {_veraendert(g['anstieg'])}"
+                satz += f" und kostet {_mal(g['verhaeltnis'])} wie {ers}." if g.get("verhaeltnis") is not None else "."
+        elif g["art"] == "rot_gesperrt":
+            satz += f" Rot bleibt gesperrt: {g['grund']}."
+    if stand["stufe"] == "Rot":
+        satz += " Ein frisches Signal, der Rückblick bestanden und der Markt schläft. Das ist ein Signal zum Nachdenken, kein Kaufauftrag."
+    teile.append(satz)
+    return " ".join(teile)
+
+
+def _sensor_preis(stand: dict) -> str:
+    s, orig, ers = stand["schwellen"], stand["original"]["name"], stand.get("ersatz_name") or stand["ersatz"][0]["name"]
+    return (f"Ein Signal heißt: {orig} steigt binnen {sprache.wort(s['anstieg_tage'])} Handelstagen um mindestens "
+            f"{sprache.prozent(s['anstieg_ab'])}, oder es wird teurer als {ers}. Nach einem Signal zählt das nächste erst "
+            f"nach {sprache.wort(s['pause_tage'])} Handelstagen. Ein Signal hält die Stufe {sprache.wort(s['gelb_tage'])} Tage "
+            f"auf Gelb; Rot ist nur bei einem Signal möglich, das höchstens {sprache.wort(s['rot_tage'])} Tage alt ist.")
+
+
+def _signale_preis(stand: dict) -> str:
+    liste = stand["signale"]
+    if not stand.get("erster_kurs"):
+        return "Noch keine Kurse des Originals."
+    satz = f"Seit {sprache.jahr(int(stand['erster_kurs'][:4]))} meldete der Sensor "
+    if not liste:
+        return satz + "kein Signal."
+    satz += ("ein Signal" if len(liste) == 1 else f"{sprache.wort(len(liste))} Signale")
+    jahre: dict[int, list[str]] = {}
+    for x in liste:
+        jahre.setdefault(int(x["datum"][:4]), []).append(x["art"])
+    teile = [f"{sprache.jahr(j)}" + (f" ({sprache.aufzaehlung(sorted(set(a)))})" if len(liste) <= 8 else "")
+             for j, a in jahre.items()]
+    return satz + ": " + sprache.aufzaehlung(teile) + "."
+
+
+def absaetze_preis(stand: dict) -> list[str]:
+    heute = date.fromisoformat(stand["datum"])
+    ersatz = stand["ersatz"][0]
+    liste = [f"Der Ersatz-Sensor {stand['name']}, Datenteil für {WOCHENTAGE[heute.weekday()]}, den {sprache.datum(heute)}. "
+             f"Der Sensor schlägt beim Original aus, gekauft würde der Ersatz: {ersatz['name']}, {ersatz.get('hinweis', '')}. "
+             f"Das Original, {stand['original']['name']}: {stand['original']['hinweis']}. "
+             "Hier sind beide handelbar; der Sensor ist der Preis des Originals.",
+             _stufe_preis(stand), _sensor_preis(stand), _signale_preis(stand), _rueckblick(stand), _preise(stand),
+             _quellen(stand),
+             ("Der Rückblick ist bestanden; ob der Sensor zum Kandidaten wird, entscheidest du. "
+              if any(r["urteil"] == "bestanden" for r in stand["rueckblick"].values())
+              else "Der Sensor bleibt Sensor, bis sein Rückblick bestanden ist. ")
+             + "Das ist eine Denkhilfe, keine Anlageberatung."]
+    return [sprache.ausschreiben(a) for a in liste if a]
+
+
 def absaetze(stand: dict) -> list[str]:
+    if stand.get("sensor_art") == "preisabstand":
+        return absaetze_preis(stand)
     heute = date.fromisoformat(stand["datum"])
     ersatz = stand["ersatz"][0]
     liste = [f"Der Ersatz-Sensor {stand['name']}, Datenteil für {WOCHENTAGE[heute.weekday()]}, den {sprache.datum(heute)}. "
@@ -186,9 +264,13 @@ def schreibe(stand: dict, ordner: Path) -> list[Path]:
 
 def zusammenfassung(stand: dict) -> str:
     zeilen = [f"## Ersatz {stand['kennung']}, {stand['stand']}, Zustand {stand['zustand']}", "",
-              f"- Stufe {stand['stufe']} ({stand['phase']}), Gründe {stand['gruende']}",
-              f"- Saisons geladen {stand['saisons_geladen']}", f"- Abgleich {stand['abgleich']}"]
-    for s in stand["saisons"]:
+              f"- Stufe {stand['stufe']} ({stand['phase']}), Gründe {stand['gruende']}"]
+    if stand.get("sensor_art") == "preisabstand":
+        zeilen.append(f"- Lage {stand['lage']}, erster Kurs {stand.get('erster_kurs')}")
+        zeilen += [f"  - Signal {x['datum']} {x['art']} {x['wert']} (Verhältnis {x.get('verhaeltnis')})" for x in stand["signale"]]
+    else:
+        zeilen += [f"- Saisons geladen {stand['saisons_geladen']}", f"- Abgleich {stand['abgleich']}"]
+    for s in stand.get("saisons") or []:
         if s["urteil"] != "ruhig" or s["jahr"] in (2004, 2014, 2025):
             zeilen.append(f"  - {s['jahr']}: {s['urteil']}, {s['frostnaechte']} Nächte, erste {s['erste']}, tiefste {s['tiefste']}")
     for t, p in stand["preise"].items():

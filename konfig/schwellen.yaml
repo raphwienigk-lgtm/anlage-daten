@@ -53,6 +53,10 @@ inlandspreise:              # Frühzeichen, nicht am Rückblick geprüft (die Re
 nachpruefer:
   mindest_signale_fuer_vorschlag: 5   # erst ab so vielen abgeschlossenen echten Signalen schlägt er vor, die Regeln zu prüfen
   betrieb_seit: 2026-09-27            # erster geplanter Tageslauf; Tage davor zählen in der Laufkontrolle nicht als Ausfall
+  weitere_laeufe:                     # auch diese täglichen Workflows zählt die Laufkontrolle (Tag nach Berliner Zeit)
+    - {workflow: metall,        name: "Metall China",     betrieb_seit: 2026-09-27}
+    - {workflow: ersatz,        name: "Ersatz-Sensoren",  betrieb_seit: 2026-09-28}
+    - {workflow: inlandspreise, name: "Inlandspreise",    betrieb_seit: 2026-09-27}
 
 rueckblick:
   beginn: 1960-01

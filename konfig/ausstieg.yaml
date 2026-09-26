@@ -1,0 +1,76 @@
+# Ausstiegsregeln (Auftrag 26.09.2026): Wann schließt eine gedachte Position wieder?
+# Das System sagt, wann sich ein Blick lohnt (Rot). Hier wird verglichen, wann man wieder hätte
+# aussteigen sollen: an denselben Fällen wie im Rückblick des jeweiligen Zweigs.
+#
+# Wenige, vorher festgelegte Varianten; kein freies Optimieren. Die Werte sind vor dem ersten
+# Vergleich eingetragen und werden nicht nach dem Ergebnis nachgestellt. Welche Variante gilt,
+# legt Raphael fest; bis dahin gilt überall „bisher“, und die Schattendepots bleiben, wie sie sind.
+#
+# Bausteine einer Variante:
+#   halten       höchstens so viele Schritte (Handelstage, bei Palmöl Monate)
+#   ziel         schließen, sobald der Gewinn das Ziel erreicht
+#   verlust      schließen, sobald der Verlust die Grenze erreicht
+#   nachlauf     schließen, sobald der Kurs so weit unter seinen Höchststand seit dem Einstieg fällt
+#   nachlauf_ab  die nachgezogene Grenze gilt erst ab diesem Gewinn (sonst sofort)
+# `kurz` ist der Name im Vorlesetext; `spaetestens` wird einmal je Zweig gesagt.
+
+gilt: {palmoel: bisher, metall: bisher, ersatz_haselnuss: bisher, ersatz_palladium: bisher}
+
+zweige:
+  metall:
+    einheit: Handelstage
+    einstieg: "Schlusskurs am ersten Handelstag ab der Ankündigung, bei jeder Verschärfung auf der eigenen Achse"
+    spaetestens: "Gewinnziel und Grenzen schließen spätestens nach sechs Monaten."
+    bisher: {name: "bisherige Regel: Lockerung auf der Achse oder nach 90 Tagen", kurz: "Bisherige Regel, Lockerung oder 90 Tage",
+             kalendertage: 90, lockerung: true}
+    varianten:
+      - {kennung: zeit,     name: "nach 20 Handelstagen", kurz: "Nach 20 Handelstagen", halten: 20}
+      - {kennung: ziel,     name: "Gewinnziel 30 Prozent, spätestens nach 126 Handelstagen", kurz: "Gewinnziel 30 Prozent", ziel: 0.30, halten: 126}
+      - {kennung: nachlauf, name: "20 Prozent unter dem Höchststand, spätestens nach 126 Handelstagen",
+         kurz: "Grenze 20 Prozent unter dem Höchststand", nachlauf: 0.20, halten: 126}
+      - {kennung: kombi,    name: "Verlustgrenze 20 Prozent, ab 30 Prozent Gewinn 10 Prozent unter dem Höchststand, spätestens nach 126 Handelstagen",
+         kurz: "Verlustgrenze 20 Prozent, ab 30 Prozent Gewinn Grenze 10 Prozent unter dem Höchststand",
+         verlust: 0.20, nachlauf: 0.10, nachlauf_ab: 0.30, halten: 126}
+
+  ersatz_haselnuss:
+    einheit: Handelstage
+    einstieg: "Schlusskurs am ersten Handelstag nach der ersten Frostnacht, in jedem Frostjahr"
+    spaetestens: "Gewinnziel und Grenzen schließen spätestens nach sechs Monaten."
+    bisher: {name: "bisherige Regel: bis zum Ende der Ernte am 30. September", kurz: "Bisherige Regel, bis zum Ende der Ernte",
+             bis_monat_tag: "09-30"}
+    varianten:
+      - {kennung: zeit,     name: "nach 60 Handelstagen", kurz: "Nach 60 Handelstagen", halten: 60}
+      - {kennung: ziel,     name: "Gewinnziel 20 Prozent, spätestens nach 126 Handelstagen", kurz: "Gewinnziel 20 Prozent", ziel: 0.20, halten: 126}
+      - {kennung: nachlauf, name: "15 Prozent unter dem Höchststand, spätestens nach 126 Handelstagen",
+         kurz: "Grenze 15 Prozent unter dem Höchststand", nachlauf: 0.15, halten: 126}
+      - {kennung: kombi,    name: "Verlustgrenze 15 Prozent, ab 20 Prozent Gewinn 10 Prozent unter dem Höchststand, spätestens nach 126 Handelstagen",
+         kurz: "Verlustgrenze 15 Prozent, ab 20 Prozent Gewinn Grenze 10 Prozent unter dem Höchststand",
+         verlust: 0.15, nachlauf: 0.10, nachlauf_ab: 0.20, halten: 126}
+
+  ersatz_palladium:
+    einheit: Handelstage
+    einstieg: "Schlusskurs des Platin-ETF am ersten Handelstag nach jedem Signal am Palladium"
+    spaetestens: "Gewinnziel und Grenzen schließen spätestens nach einem Jahr."
+    bisher: {name: "bisherige Regel: nach 180 Tagen", kurz: "Bisherige Regel, nach 180 Tagen", kalendertage: 180}
+    varianten:
+      - {kennung: zeit,     name: "nach 120 Handelstagen", kurz: "Nach 120 Handelstagen", halten: 120}
+      - {kennung: ziel,     name: "Gewinnziel 20 Prozent, spätestens nach 250 Handelstagen", kurz: "Gewinnziel 20 Prozent", ziel: 0.20, halten: 250}
+      - {kennung: nachlauf, name: "15 Prozent unter dem Höchststand, spätestens nach 250 Handelstagen",
+         kurz: "Grenze 15 Prozent unter dem Höchststand", nachlauf: 0.15, halten: 250}
+      - {kennung: kombi,    name: "Verlustgrenze 15 Prozent, ab 20 Prozent Gewinn 10 Prozent unter dem Höchststand, spätestens nach 250 Handelstagen",
+         kurz: "Verlustgrenze 15 Prozent, ab 20 Prozent Gewinn Grenze 10 Prozent unter dem Höchststand",
+         verlust: 0.15, nachlauf: 0.10, nachlauf_ab: 0.20, halten: 250}
+
+  palmoel:
+    einheit: Monate
+    einstieg: "Monatsdurchschnitt des Palmölpreises im Monat des Rot-Signals, nur Signale der Lernzeit"
+    spaetestens: "Gewinnziel und Grenzen schließen spätestens nach zwei Jahren."
+    bisher: {name: "bisherige Regel: bis die Ampel auf Grün springt", kurz: "Bisherige Regel, bis Grün", gruen: true}
+    varianten:
+      - {kennung: zeit,     name: "nach 12 Monaten", kurz: "Nach 12 Monaten", halten: 12}
+      - {kennung: ziel,     name: "Gewinnziel 20 Prozent, spätestens nach 24 Monaten", kurz: "Gewinnziel 20 Prozent", ziel: 0.20, halten: 24}
+      - {kennung: nachlauf, name: "15 Prozent unter dem Höchststand, spätestens nach 24 Monaten",
+         kurz: "Grenze 15 Prozent unter dem Höchststand", nachlauf: 0.15, halten: 24}
+      - {kennung: kombi,    name: "Verlustgrenze 15 Prozent, ab 20 Prozent Gewinn 10 Prozent unter dem Höchststand, spätestens nach 24 Monaten",
+         kurz: "Verlustgrenze 15 Prozent, ab 20 Prozent Gewinn Grenze 10 Prozent unter dem Höchststand",
+         verlust: 0.15, nachlauf: 0.10, nachlauf_ab: 0.20, halten: 24}

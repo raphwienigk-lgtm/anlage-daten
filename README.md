@@ -97,13 +97,14 @@ Stunde später. Schlägt ein Lauf fehl, schickt GitHub eine Mail.
 | `daten/rueckblick/palmoel.json` | Ergebnis des Rückblicks: Verlauf je Monat, Bilanz, Varianten |
 | `daten/rueckblick/pruefzeit.json` | Buch über jedes Öffnen der Prüfzeit, mit Fingerabdruck der Regeln |
 | `abgabe/rueckblick-palmoel-teil-N.md` | Vorlesetext des Rückblicks |
-| `daten/nachpruefer.json`, `abgabe/nachpruefer-teil-N.md` | Nachprüfer, jeden Sonntag: Laufkontrolle, Schattendepot, Bilanz der echten Signale |
+| `daten/nachpruefer.json`, `abgabe/nachpruefer-teil-N.md` | Nachprüfer, jeden Sonntag: Laufkontrolle aller täglichen Workflows, Stufen der Woche je Zweig, Schattendepots, Bilanz der echten Signale |
+| `daten/ausstieg.json`, `abgabe/ausstieg-teil-N.md` | Ausstiegsregeln im Vergleich (sonntags nach dem Nachprüfer) |
 
 Befehle: `python -m anlage.lauf` (täglicher Lauf), `python -m anlage.pruefen` (Prüflauf),
 `python -m anlage.klimatologie` (Normal bauen), `python -m anlage.geschichte` (Geschichtsdaten),
 `python -m anlage.rueckblick` (Rückblick), `python -m anlage.nachpruefer` (Nachprüfer),
-`python -m anlage.metall` (Metall-Agent China), `python -m anlage.ersatz` (Ersatz-Sensor),
-`python -m pytest -q` (Tests).
+`python -m anlage.metall` (Metall-Agent China), `python -m anlage.ersatz` (Ersatz-Sensoren),
+`python -m anlage.ausstieg` (Ausstiegsregeln vergleichen), `python -m pytest -q` (Tests).
 
 ---
 
@@ -236,7 +237,9 @@ gegen XME in 20 Handelstagen).
 **Ereignis-Rückblick:** Für jedes Ereignis unter `ereignisse` misst der Lauf, wie die Werte
 0, 5, 20 und 60 Handelstage danach gegen XME lagen, dazu die 20 Tage davor. Vorläufige
 Prüfregel für den Schritt vom Sensor zum Kandidaten: mindestens drei Verschärfungen auf
-der eigenen Achse, in mindestens der Hälfte ein Vorsprung von 10 Prozentpunkten.
+der eigenen Achse, in mindestens der Hälfte ein Vorsprung von 10 Prozentpunkten. Für die
+Magnet-Achse reichen die Ereignisse bis 2010 zurück (Quotenkürzungen, Lieferstopp nach Japan,
+WTO-Verfahren, Abschaffung der Quoten und Zölle 2015), damit Lynas an mehr Fällen geprüft wird.
 
 **Pflege:** Verlängert Peking eine Aussetzung formell, das neue Datum unter
 `verlaengert_bis` eintragen. Neue Ereignisse unter `ereignisse` ergänzen (Datum der
@@ -253,7 +256,15 @@ Ankündigung). Ein neues Land: `konfig/metalle/china.yaml` kopieren und `--land`
 
 ---
 
-## Ersatz-Sensor Haselnuss → Select Harvests
+## Ersatz-Sensoren
+
+Grundsatz für alle: Der Sensor schlägt beim Original aus, gekauft wird der handelbare Ersatz.
+Ein Workflow „Ersatz-Sensoren“ (täglich 02:07 UTC) rechnet jedes Formular unter `konfig/ersatz/`
+(`python -m anlage.ersatz --kennung alle`). Jeder Sensor führt ein Schattendepot
+(`daten/ersatz/<kennung>/schattendepot.json`: Rot kauft den Ersatz gedacht) und einen Verlauf der
+Stufen für den Nachprüfer (`verlauf.jsonl`).
+
+### Haselnuss → Select Harvests
 
 Grundsatz: Der Sensor schlägt beim Original aus, gekauft wird der handelbare Ersatz. Haselnuss
 ist nicht handelbar; wird sie knapp, weichen die Hersteller auf Mandeln aus. Select Harvests
@@ -268,10 +279,37 @@ ist nicht handelbar; wird sie knapp, weichen die Hersteller auf Mandeln aus. Sel
 - **Rückblick:** alle Frostsaisons ab 1991, abgeglichen mit den belegten Frostjahren 2004, 2014 und
   2025; danach, wie Select Harvests 20, 60 und 120 Handelstage nach der ersten Frostnacht gegen den
   ASX 200 lief.
-- Formular `konfig/ersatz/haselnuss.yaml`, Lauf `python -m anlage.ersatz`, Workflow „Ersatz
-  Haselnuss“ täglich 02:07 UTC; schreibt `daten/ersatz/haselnuss/` und
-  `abgabe/ersatz-haselnuss-teil-N.md`. Weitere Paare (etwa Palladium ↔ Platin) bekommen ein
-  eigenes Formular unter `konfig/ersatz/`.
+- Formular `konfig/ersatz/haselnuss.yaml`; schreibt `daten/ersatz/haselnuss/` und
+  `abgabe/ersatz-haselnuss-teil-N.md`. Die Frostsaisons werden je Saison für alle fünf Orte in
+  einem Abruf geladen (das Archiv antwortet von GitHub aus oft langsam).
+- **Schattendepot:** geschlossen am Ende der Ernte (30. September), bis eine andere Ausstiegsregel gilt.
+
+### Palladium → Platin
+
+Beide Metalle sitzen im Autokatalysator und sind dort austauschbar. Wird Palladium zu teuer
+(etwa weil Lieferungen aus Russland ausfallen), stellen die Hersteller auf Platin um. Hier sind
+beide handelbar; der Sensor ist der Preis des Originals (Palladium-ETF PALL), gekauft würde der
+Platin-ETF PPLT, Vergleichsmaßstab ist der Gold-ETF GLD.
+
+- **Signal:** Palladium steigt binnen 60 Handelstagen um mindestens 30 Prozent (Sprung), oder es
+  wird teurer als Platin (Verhältnis der Anteilspreise über 1). Nach einem Signal zählt das nächste
+  erst nach 120 Handelstagen.
+- **Stufe:** Gelb 180 Tage nach einem Signal und solange Palladium teurer ist als Platin; Rot nur bei
+  einem höchstens 30 Tage alten Signal, bestandenem Rückblick und schlafendem Markt.
+- **Rückblick:** Platin-ETF gegen Gold 20, 60, 120 und 250 Handelstage nach jedem Signal seit 2010;
+  geurteilt wird nach 120.
+- Formular `konfig/ersatz/palladium.yaml`; Schattendepot schließt nach 180 Tagen.
+
+## Ausstiegsregeln
+
+`python -m anlage.ausstieg` (sonntags im Workflow „Nachprüfer“) vergleicht an denselben Fällen wie
+die Rückblicke, wann man jeweils wieder ausgestiegen wäre: die bisherige Regel, eine feste
+Haltedauer, ein Gewinnziel, eine nachgezogene Grenze unter dem Höchststand und eine Verbindung aus
+Verlustgrenze und nachgezogener Grenze. Die Varianten stehen vorher fest in `konfig/ausstieg.yaml`
+und werden nicht nach dem Ergebnis nachgestellt. Verglichen werden nur Fälle, die unter allen
+Regeln abgeschlossen sind. Welche Regel gilt (`gilt:`), legt Raphael fest; bis dahin gilt überall
+die bisherige, und erst danach wird sie in die Schattendepots eingebaut. Palmöl rechnet nur mit den
+Signalen der Lernzeit, die Prüfzeit bleibt verschlossen.
 
 ---
 
