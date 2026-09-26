@@ -1,0 +1,39 @@
+{
+  "stand": "2026-09-26T22:07:17+02:00",
+  "regeln": {
+    "jahre_ab": 1991,
+    "horizonte": [
+      20,
+      60,
+      120
+    ],
+    "haupt": 60,
+    "vorlauf": 20,
+    "treffer_ab": 0.1,
+    "bestanden": {
+      "mindestens": 3,
+      "trefferquote": 0.5
+    },
+    "kurse_ab": "2000-01-01"
+  },
+  "werte": {
+    "SHV.AX": {
+      "name": "Select Harvests",
+      "rolle": "kandidat",
+      "erster_kurs": "2000-01-03",
+      "urteil": "zu wenige Fälle",
+      "haupt": 60,
+      "zusammen": {
+        "n": 0,
+        "offen": 0,
+        "v20": null,
+        "v60": null,
+        "v120": null,
+        "v_vorlauf": null,
+        "treffer": 0,
+        "trefferquote": 0.0
+      },
+      "faelle": []
+    }
+  }
+}

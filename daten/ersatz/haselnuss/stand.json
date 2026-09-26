@@ -1,0 +1,172 @@
+{
+  "stand": "2026-09-26T22:07:17+02:00",
+  "datum": "2026-09-26",
+  "version": "0.1.0",
+  "kennung": "haselnuss",
+  "name": "Haselnuss",
+  "rolle": "sensor",
+  "hinweis": "Denkhilfe, keine Anlageberatung. Der Sensor schlägt beim Original aus, gekauft würde der Ersatz.",
+  "original": {
+    "name": "Haselnuss aus der Türkei",
+    "hinweis": "kein Einzel-ETC; der größte Abnehmer Ferrero ist nicht börsennotiert"
+  },
+  "ersatz": [
+    {
+      "ticker": "SHV.AX",
+      "name": "Select Harvests",
+      "waehrung": "AUD",
+      "rolle": "kandidat",
+      "hinweis": "Mandeln aus Australien"
+    }
+  ],
+  "vergleich": {
+    "ticker": "^AXJO",
+    "name": "australischer Aktienindex ASX 200",
+    "akkusativ": "den australischen Aktienindex ASX 200"
+  },
+  "phase": "außer Saison",
+  "saison": {
+    "von": "2026-03-10",
+    "bis": "2026-04-30",
+    "vorwarnung_ab": "2026-02-24"
+  },
+  "schwellen": {
+    "frost_c": -1.0,
+    "stark_c": -3.0,
+    "mindest_standorte": 2,
+    "hoehe_m": 400
+  },
+  "standorte": {
+    "ordu": "Ordu",
+    "giresun": "Giresun",
+    "trabzon": "Trabzon",
+    "samsun": "Samsun (Terme, Çarşamba)",
+    "duzce": "Düzce"
+  },
+  "stufe": "Grün",
+  "gruende": [
+    {
+      "art": "außer Saison"
+    }
+  ],
+  "wechsel": null,
+  "aktuell": {
+    "gemessen": [],
+    "vorhergesagt": [],
+    "tiefste": null
+  },
+  "letzte_saison": {
+    "jahr": 1996,
+    "urteil": "ruhig",
+    "frostnaechte": 0,
+    "erste": null,
+    "erste_starke": null,
+    "tiefste": -8.4
+  },
+  "saisons": [
+    {
+      "jahr": 1991,
+      "urteil": "Spätfrost",
+      "frostnaechte": 1,
+      "erste": "1991-03-10",
+      "erste_starke": null,
+      "tiefste": -2.7
+    },
+    {
+      "jahr": 1993,
+      "urteil": "starker Spätfrost",
+      "frostnaechte": 4,
+      "erste": "1993-03-13",
+      "erste_starke": "1993-03-13",
+      "tiefste": -4.6
+    },
+    {
+      "jahr": 1994,
+      "urteil": "Spätfrost",
+      "frostnaechte": 1,
+      "erste": "1994-03-10",
+      "erste_starke": null,
+      "tiefste": -2.2
+    },
+    {
+      "jahr": 1996,
+      "urteil": "ruhig",
+      "frostnaechte": 0,
+      "erste": null,
+      "erste_starke": null,
+      "tiefste": -8.4
+    }
+  ],
+  "abgleich": {
+    "erkannte_jahre": [
+      1991,
+      1993,
+      1994
+    ],
+    "bekannte_getroffen": [],
+    "bekannte_verfehlt": [],
+    "weitere": [
+      1991,
+      1993,
+      1994
+    ],
+    "jahre_geprueft": 4
+  },
+  "saisons_geladen": {
+    "geladen": 4,
+    "von": 36,
+    "fehler": [
+      "Ordu 1992: AbrufFehler: ReadTimeout bei https://archive-api.open-meteo.com/v1/archive: HTTPSConnectionPool(host='archive-api.open-meteo.com', port=443): Read timed out. (read timeout=45)",
+      "Samsun (Terme, Çarşamba) 1995: AbrufFehler: ReadTimeout bei https://archive-api.open-meteo.com/v1/archive: HTTPSConnectionPool(host='archive-api.open-meteo.com', port=443): Read timed out. (read timeout=45)"
+    ]
+  },
+  "preise": {
+    "SHV.AX": {
+      "name": "Select Harvests",
+      "rolle": "kandidat",
+      "hinweis": "Mandeln aus Australien",
+      "waehrung": "AUD",
+      "letzter": "2026-09-25",
+      "schluss": 4.31,
+      "alter_tage": 1,
+      "r_kurz": -0.0293,
+      "vorsprung_kurz": -0.0217,
+      "r_lang": -0.063,
+      "vorsprung_lang": -0.016,
+      "urteil": "schläft",
+      "markt_schlaeft": true,
+      "handel": 2116446,
+      "duenn": false
+    }
+  },
+  "rueckblick": {
+    "SHV.AX": {
+      "name": "Select Harvests",
+      "rolle": "kandidat",
+      "erster_kurs": "2000-01-03",
+      "urteil": "zu wenige Fälle",
+      "haupt": 60,
+      "zusammen": {
+        "n": 0,
+        "offen": 0,
+        "v20": null,
+        "v60": null,
+        "v120": null,
+        "v_vorlauf": null,
+        "treffer": 0,
+        "trefferquote": 0.0
+      }
+    }
+  },
+  "zustand": "Warnung",
+  "quellen": {
+    "openmeteo": {
+      "status": "Warnung",
+      "meldung": "Ordu 1992: AbrufFehler: ReadTimeout bei https://archive-api.open-meteo.com/v1/archive: HTTPSConnectionPool(host='archive-api.open-meteo.com', port=443): Read timed out. (read timeout=45); Samsun (Terme, Çarşamba) 1995: AbrufFehler: ReadTimeout bei https://archive-api.open-meteo.com/v1/archive: HTTPS"
+    },
+    "yahoo": {
+      "status": "ok",
+      "meldung": null
+    }
+  }
+}
