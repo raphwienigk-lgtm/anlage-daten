@@ -1,5 +1,5 @@
 {
-  "stand": "2026-09-26T14:10:51+02:00",
+  "stand": "2026-09-26T14:46:28+02:00",
   "datum": "2026-09-26",
   "version": "0.1.0",
   "hinweis": "Denkhilfe, keine Anlageberatung. Frühzeichen, nicht am Rückblick geprüft.",
@@ -51,10 +51,20 @@
       "quelle": "fpma",
       "einheit": "Rupiah je Liter",
       "rolle": "ersatz",
-      "status": "Fehler",
-      "meldung": "AbrufFehler: Fehler 403 bei https://fpma.fao.org/giews/v4/price_module/api/v1/FpmaSeriePrice/c0b2e88d-8010-4f45-b989-fdf1eb126c10/: <!DOCTYPE html> <!--[if lt IE 7]> <html class=\"no-js ie6 oldie\" lang=\"en-US\"> <![endif]--> <!--[if IE 7]> <html class=\"no-js ie7 oldie\" lang=\"en-US\"> <![endif]--> <!--[",
-      "werte": 0,
-      "urteil": "keine Daten"
+      "status": "ok",
+      "werte": 69,
+      "letzter": {
+        "datum": "2026-07-01",
+        "wert": 21932.0
+      },
+      "alter_tage": 87,
+      "art": "monatlich",
+      "vergleich": {
+        "datum": "2026-04-01",
+        "wert": 21027.0
+      },
+      "veraenderung": 0.043,
+      "urteil": "veraltet"
     },
     "cpo_my_tag": {
       "rohstoff": "palmoel",
@@ -63,10 +73,18 @@
       "quelle": "mpob",
       "einheit": "Ringgit je Tonne",
       "rolle": "tagespreis",
-      "status": "Fehler",
-      "meldung": "FormatFehler: MPOB: keine Kopfzeile mit Monaten gefunden",
-      "werte": 0,
-      "urteil": "keine Daten"
+      "status": "ok",
+      "werte": 416,
+      "letzter": {
+        "datum": "2026-09-24",
+        "wert": 4570.0
+      },
+      "alter_tage": 2,
+      "art": "täglich",
+      "mittel_jetzt": 4624.94,
+      "mittel_damals": 4485.78,
+      "veraenderung": 0.031,
+      "urteil": "ruhig"
     }
   },
   "fruehzeichen": []
