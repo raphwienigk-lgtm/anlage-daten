@@ -1,0 +1,1316 @@
+{
+  "stand": "2026-09-26T23:15:02+02:00",
+  "datum": "2026-09-26",
+  "version": "0.1.0",
+  "hinweis": "Denkhilfe, keine Anlageberatung. Welche Ausstiegsregel gilt, entscheidest du.",
+  "gilt": {
+    "palmoel": "bisher",
+    "metall": "bisher",
+    "ersatz_haselnuss": "bisher",
+    "ersatz_palladium": "bisher"
+  },
+  "zweige": {
+    "metall_china": {
+      "art": "metall",
+      "name": "Metall China-Ausfuhr",
+      "einheit": "Handelstage",
+      "einstieg": "Schlusskurs am ersten Handelstag ab der Ankündigung, bei jeder Verschärfung auf der eigenen Achse",
+      "spaetestens": "Gewinnziel und Grenzen schließen spätestens nach sechs Monaten.",
+      "vergleich": "Metall- und Bergbau-Aktien USA (Vergleichsmaßstab)",
+      "achsen": {
+        "chip": {
+          "name": "Chip-Achse",
+          "werte": [
+            "Perpetua Resources",
+            "United States Antimony"
+          ],
+          "faelle_gesamt": 6,
+          "verglichen": 6,
+          "offen": 0,
+          "massstab": "vorsprung",
+          "vorn": "zeit",
+          "vorn_gleichauf": [],
+          "gipfel_mittel": 1.3531,
+          "varianten": [
+            {
+              "kennung": "bisher",
+              "name": "bisherige Regel: Lockerung auf der Achse oder nach 90 Tagen",
+              "kurz": "Bisherige Regel, Lockerung oder 90 Tage",
+              "n": 6,
+              "mittel": 0.0897,
+              "median": 0.1376,
+              "vorsprung": 0.1071,
+              "im_plus": 4,
+              "schlechtester": -0.1931,
+              "bester": 0.3163,
+              "dauer": 61.7,
+              "gruende": {
+                "nach 90 Tagen": 6
+              }
+            },
+            {
+              "kennung": "zeit",
+              "name": "nach 20 Handelstagen",
+              "kurz": "Nach 20 Handelstagen",
+              "n": 6,
+              "mittel": 0.3014,
+              "median": 0.2268,
+              "vorsprung": 0.3387,
+              "im_plus": 6,
+              "schlechtester": 0.0434,
+              "bester": 0.7653,
+              "dauer": 20,
+              "gruende": {
+                "Haltedauer": 6
+              }
+            },
+            {
+              "kennung": "ziel",
+              "name": "Gewinnziel 30 Prozent, spätestens nach 126 Handelstagen",
+              "kurz": "Gewinnziel 30 Prozent",
+              "n": 6,
+              "mittel": 0.2636,
+              "median": 0.3175,
+              "vorsprung": 0.2441,
+              "im_plus": 5,
+              "schlechtester": -0.0864,
+              "bester": 0.3776,
+              "dauer": 47.8,
+              "gruende": {
+                "Gewinnziel": 5,
+                "Haltedauer": 1
+              }
+            },
+            {
+              "kennung": "nachlauf",
+              "name": "20 Prozent unter dem Höchststand, spätestens nach 126 Handelstagen",
+              "kurz": "Grenze 20 Prozent unter dem Höchststand",
+              "n": 6,
+              "mittel": 0.1279,
+              "median": 0.1639,
+              "vorsprung": 0.1298,
+              "im_plus": 4,
+              "schlechtester": -0.1476,
+              "bester": 0.4184,
+              "dauer": 52.2,
+              "gruende": {
+                "nachgezogene Grenze": 6
+              }
+            },
+            {
+              "kennung": "kombi",
+              "name": "Verlustgrenze 20 Prozent, ab 30 Prozent Gewinn 10 Prozent unter dem Höchststand, spätestens nach 126 Handelstagen",
+              "kurz": "Verlustgrenze 20 Prozent, ab 30 Prozent Gewinn Grenze 10 Prozent unter dem Höchststand",
+              "n": 6,
+              "mittel": 0.1645,
+              "median": 0.2321,
+              "vorsprung": 0.1772,
+              "im_plus": 4,
+              "schlechtester": -0.2312,
+              "bester": 0.6531,
+              "dauer": 27.5,
+              "gruende": {
+                "nachgezogene Grenze": 4,
+                "Verlustgrenze": 2
+              }
+            }
+          ],
+          "faelle": [
+            {
+              "name": "Perpetua Resources",
+              "ticker": "PPTA",
+              "datum": "2023-07-03",
+              "text": "Lizenzpflicht für Gallium und Germanium angekündigt (gültig ab 1.8.2023)",
+              "gipfel": 0.0947,
+              "ergebnis": {
+                "bisher": {
+                  "offen": false,
+                  "schritt": 63,
+                  "grund": "nach 90 Tagen",
+                  "rendite": -0.1309,
+                  "vergleich": -0.0051,
+                  "vorsprung": -0.1258
+                },
+                "zeit": {
+                  "offen": false,
+                  "schritt": 20,
+                  "grund": "Haltedauer",
+                  "rendite": 0.0669,
+                  "vergleich": 0.038,
+                  "vorsprung": 0.0289
+                },
+                "ziel": {
+                  "offen": false,
+                  "schritt": 126,
+                  "grund": "Haltedauer",
+                  "rendite": -0.0864,
+                  "vergleich": 0.1554,
+                  "vorsprung": -0.2418
+                },
+                "nachlauf": {
+                  "offen": false,
+                  "schritt": 30,
+                  "grund": "nachgezogene Grenze",
+                  "rendite": -0.1476,
+                  "vergleich": -0.0099,
+                  "vorsprung": -0.1377
+                },
+                "kombi": {
+                  "offen": false,
+                  "schritt": 31,
+                  "grund": "Verlustgrenze",
+                  "rendite": -0.2312,
+                  "vergleich": -0.007,
+                  "vorsprung": -0.2242
+                }
+              }
+            },
+            {
+              "name": "Perpetua Resources",
+              "ticker": "PPTA",
+              "datum": "2024-08-15",
+              "text": "Lizenzpflicht für Antimon angekündigt (gültig ab 15.9.2024)",
+              "gipfel": 0.5629,
+              "ergebnis": {
+                "bisher": {
+                  "offen": false,
+                  "schritt": 63,
+                  "grund": "nach 90 Tagen",
+                  "rendite": 0.0818,
+                  "vergleich": 0.1319,
+                  "vorsprung": -0.0501
+                },
+                "zeit": {
+                  "offen": false,
+                  "schritt": 20,
+                  "grund": "Haltedauer",
+                  "rendite": 0.0989,
+                  "vergleich": 0.0084,
+                  "vorsprung": 0.0905
+                },
+                "ziel": {
+                  "offen": false,
+                  "schritt": 47,
+                  "grund": "Gewinnziel",
+                  "rendite": 0.3053,
+                  "vergleich": 0.1326,
+                  "vorsprung": 0.1727
+                },
+                "nachlauf": {
+                  "offen": false,
+                  "schritt": 125,
+                  "grund": "nachgezogene Grenze",
+                  "rendite": 0.1343,
+                  "vergleich": 0.0487,
+                  "vorsprung": 0.0856
+                },
+                "kombi": {
+                  "offen": false,
+                  "schritt": 50,
+                  "grund": "nachgezogene Grenze",
+                  "rendite": 0.174,
+                  "vergleich": 0.1006,
+                  "vorsprung": 0.0734
+                }
+              }
+            },
+            {
+              "name": "Perpetua Resources",
+              "ticker": "PPTA",
+              "datum": "2024-12-03",
+              "text": "Ausfuhrverbot in die USA für Gallium, Germanium und Antimon (Nr. 46)",
+              "gipfel": 0.6402,
+              "ergebnis": {
+                "bisher": {
+                  "offen": false,
+                  "schritt": 59,
+                  "grund": "nach 90 Tagen",
+                  "rendite": -0.1931,
+                  "vergleich": -0.1789,
+                  "vorsprung": -0.0142
+                },
+                "zeit": {
+                  "offen": false,
+                  "schritt": 20,
+                  "grund": "Haltedauer",
+                  "rendite": 0.0434,
+                  "vergleich": -0.1582,
+                  "vorsprung": 0.2016
+                },
+                "ziel": {
+                  "offen": false,
+                  "schritt": 96,
+                  "grund": "Gewinnziel",
+                  "rendite": 0.3503,
+                  "vergleich": -0.1645,
+                  "vorsprung": 0.5148
+                },
+                "nachlauf": {
+                  "offen": false,
+                  "schritt": 49,
+                  "grund": "nachgezogene Grenze",
+                  "rendite": -0.1228,
+                  "vergleich": -0.1091,
+                  "vorsprung": -0.0137
+                },
+                "kombi": {
+                  "offen": false,
+                  "schritt": 53,
+                  "grund": "Verlustgrenze",
+                  "rendite": -0.2115,
+                  "vergleich": -0.1433,
+                  "vorsprung": -0.0682
+                }
+              }
+            },
+            {
+              "name": "United States Antimony",
+              "ticker": "UAMY",
+              "datum": "2023-07-03",
+              "text": "Lizenzpflicht für Gallium und Germanium angekündigt (gültig ab 1.8.2023)",
+              "gipfel": 0.5161,
+              "ergebnis": {
+                "bisher": {
+                  "offen": false,
+                  "schritt": 63,
+                  "grund": "nach 90 Tagen",
+                  "rendite": 0.1935,
+                  "vergleich": -0.0051,
+                  "vorsprung": 0.1986
+                },
+                "zeit": {
+                  "offen": false,
+                  "schritt": 20,
+                  "grund": "Haltedauer",
+                  "rendite": 0.3548,
+                  "vergleich": 0.038,
+                  "vorsprung": 0.3168
+                },
+                "ziel": {
+                  "offen": false,
+                  "schritt": 13,
+                  "grund": "Gewinnziel",
+                  "rendite": 0.3226,
+                  "vergleich": 0.0058,
+                  "vorsprung": 0.3168
+                },
+                "nachlauf": {
+                  "offen": false,
+                  "schritt": 50,
+                  "grund": "nachgezogene Grenze",
+                  "rendite": 0.1935,
+                  "vergleich": 0.0152,
+                  "vorsprung": 0.1783
+                },
+                "kombi": {
+                  "offen": false,
+                  "schritt": 22,
+                  "grund": "nachgezogene Grenze",
+                  "rendite": 0.2903,
+                  "vergleich": 0.0056,
+                  "vorsprung": 0.2847
+                }
+              }
+            },
+            {
+              "name": "United States Antimony",
+              "ticker": "UAMY",
+              "datum": "2024-08-15",
+              "text": "Lizenzpflicht für Antimon angekündigt (gültig ab 15.9.2024)",
+              "gipfel": 3.4375,
+              "ergebnis": {
+                "bisher": {
+                  "offen": false,
+                  "schritt": 63,
+                  "grund": "nach 90 Tagen",
+                  "rendite": 0.2708,
+                  "vergleich": 0.1319,
+                  "vorsprung": 0.1389
+                },
+                "zeit": {
+                  "offen": false,
+                  "schritt": 20,
+                  "grund": "Haltedauer",
+                  "rendite": 0.4792,
+                  "vergleich": 0.0084,
+                  "vorsprung": 0.4708
+                },
+                "ziel": {
+                  "offen": false,
+                  "schritt": 3,
+                  "grund": "Gewinnziel",
+                  "rendite": 0.3125,
+                  "vergleich": 0.0074,
+                  "vorsprung": 0.3051
+                },
+                "nachlauf": {
+                  "offen": false,
+                  "schritt": 54,
+                  "grund": "nachgezogene Grenze",
+                  "rendite": 0.2917,
+                  "vergleich": 0.0934,
+                  "vorsprung": 0.1983
+                },
+                "kombi": {
+                  "offen": false,
+                  "schritt": 5,
+                  "grund": "nachgezogene Grenze",
+                  "rendite": 0.3125,
+                  "vergleich": 0.0046,
+                  "vorsprung": 0.3079
+                }
+              }
+            },
+            {
+              "name": "United States Antimony",
+              "ticker": "UAMY",
+              "datum": "2024-12-03",
+              "text": "Ausfuhrverbot in die USA für Gallium, Germanium und Antimon (Nr. 46)",
+              "gipfel": 2.8673,
+              "ergebnis": {
+                "bisher": {
+                  "offen": false,
+                  "schritt": 59,
+                  "grund": "nach 90 Tagen",
+                  "rendite": 0.3163,
+                  "vergleich": -0.1789,
+                  "vorsprung": 0.4952
+                },
+                "zeit": {
+                  "offen": false,
+                  "schritt": 20,
+                  "grund": "Haltedauer",
+                  "rendite": 0.7653,
+                  "vergleich": -0.1582,
+                  "vorsprung": 0.9235
+                },
+                "ziel": {
+                  "offen": false,
+                  "schritt": 2,
+                  "grund": "Gewinnziel",
+                  "rendite": 0.3776,
+                  "vergleich": -0.0196,
+                  "vorsprung": 0.3972
+                },
+                "nachlauf": {
+                  "offen": false,
+                  "schritt": 5,
+                  "grund": "nachgezogene Grenze",
+                  "rendite": 0.4184,
+                  "vergleich": -0.0497,
+                  "vorsprung": 0.4681
+                },
+                "kombi": {
+                  "offen": false,
+                  "schritt": 4,
+                  "grund": "nachgezogene Grenze",
+                  "rendite": 0.6531,
+                  "vergleich": -0.0365,
+                  "vorsprung": 0.6896
+                }
+              }
+            }
+          ]
+        },
+        "magnet": {
+          "name": "Magnet-Achse",
+          "werte": [
+            "Lynas Rare Earths",
+            "MP Materials"
+          ],
+          "faelle_gesamt": 14,
+          "verglichen": 12,
+          "offen": 2,
+          "massstab": "vorsprung",
+          "vorn": "bisher",
+          "vorn_gleichauf": [],
+          "gipfel_mittel": 0.8274,
+          "varianten": [
+            {
+              "kennung": "bisher",
+              "name": "bisherige Regel: Lockerung auf der Achse oder nach 90 Tagen",
+              "kurz": "Bisherige Regel, Lockerung oder 90 Tage",
+              "n": 12,
+              "mittel": 0.193,
+              "median": 0.1305,
+              "vorsprung": 0.0804,
+              "im_plus": 7,
+              "schlechtester": -0.3069,
+              "bester": 1.5546,
+              "dauer": 53.7,
+              "gruende": {
+                "nach 90 Tagen": 10,
+                "Lockerung": 2
+              }
+            },
+            {
+              "kennung": "zeit",
+              "name": "nach 20 Handelstagen",
+              "kurz": "Nach 20 Handelstagen",
+              "n": 12,
+              "mittel": 0.0106,
+              "median": 0.0201,
+              "vorsprung": -0.0168,
+              "im_plus": 7,
+              "schlechtester": -0.3618,
+              "bester": 0.4454,
+              "dauer": 20,
+              "gruende": {
+                "Haltedauer": 12
+              }
+            },
+            {
+              "kennung": "ziel",
+              "name": "Gewinnziel 30 Prozent, spätestens nach 126 Handelstagen",
+              "kurz": "Gewinnziel 30 Prozent",
+              "n": 12,
+              "mittel": 0.1701,
+              "median": 0.311,
+              "vorsprung": 0.0631,
+              "im_plus": 9,
+              "schlechtester": -0.3842,
+              "bester": 0.3846,
+              "dauer": 65,
+              "gruende": {
+                "Gewinnziel": 8,
+                "Haltedauer": 4
+              }
+            },
+            {
+              "kennung": "nachlauf",
+              "name": "20 Prozent unter dem Höchststand, spätestens nach 126 Handelstagen",
+              "kurz": "Grenze 20 Prozent unter dem Höchststand",
+              "n": 12,
+              "mittel": 0.1981,
+              "median": -0.0212,
+              "vorsprung": 0.0724,
+              "im_plus": 6,
+              "schlechtester": -0.2322,
+              "bester": 1.4706,
+              "dauer": 41.3,
+              "gruende": {
+                "nachgezogene Grenze": 11,
+                "Haltedauer": 1
+              }
+            },
+            {
+              "kennung": "kombi",
+              "name": "Verlustgrenze 20 Prozent, ab 30 Prozent Gewinn 10 Prozent unter dem Höchststand, spätestens nach 126 Handelstagen",
+              "kurz": "Verlustgrenze 20 Prozent, ab 30 Prozent Gewinn Grenze 10 Prozent unter dem Höchststand",
+              "n": 12,
+              "mittel": 0.0782,
+              "median": 0.1537,
+              "vorsprung": 0.0153,
+              "im_plus": 7,
+              "schlechtester": -0.2405,
+              "bester": 0.4267,
+              "dauer": 42.6,
+              "gruende": {
+                "nachgezogene Grenze": 7,
+                "Verlustgrenze": 4,
+                "Haltedauer": 1
+              }
+            }
+          ],
+          "faelle": [
+            {
+              "name": "MP Materials",
+              "ticker": "MP",
+              "datum": "2023-12-21",
+              "text": "Ausfuhrverbot für Technik zur Gewinnung und Verarbeitung seltener Erden",
+              "gipfel": 0.0351,
+              "ergebnis": {
+                "bisher": {
+                  "offen": false,
+                  "schritt": 60,
+                  "grund": "nach 90 Tagen",
+                  "rendite": -0.3069,
+                  "vergleich": -0.0391,
+                  "vorsprung": -0.2678
+                },
+                "zeit": {
+                  "offen": false,
+                  "schritt": 20,
+                  "grund": "Haltedauer",
+                  "rendite": -0.1896,
+                  "vergleich": -0.0447,
+                  "vorsprung": -0.1449
+                },
+                "ziel": {
+                  "offen": false,
+                  "schritt": 126,
+                  "grund": "Haltedauer",
+                  "rendite": -0.3842,
+                  "vergleich": -0.0361,
+                  "vorsprung": -0.3481
+                },
+                "nachlauf": {
+                  "offen": false,
+                  "schritt": 16,
+                  "grund": "nachgezogene Grenze",
+                  "rendite": -0.1956,
+                  "vergleich": -0.0752,
+                  "vorsprung": -0.1204
+                },
+                "kombi": {
+                  "offen": false,
+                  "schritt": 17,
+                  "grund": "Verlustgrenze",
+                  "rendite": -0.2046,
+                  "vergleich": -0.0649,
+                  "vorsprung": -0.1397
+                }
+              }
+            },
+            {
+              "name": "MP Materials",
+              "ticker": "MP",
+              "datum": "2025-04-04",
+              "text": "Lizenzpflicht für sieben seltene Erden und Magnete (Nr. 18)",
+              "gipfel": 2.3448,
+              "ergebnis": {
+                "bisher": {
+                  "offen": false,
+                  "schritt": 61,
+                  "grund": "nach 90 Tagen",
+                  "rendite": 0.3807,
+                  "vergleich": 0.4453,
+                  "vorsprung": -0.0646
+                },
+                "zeit": {
+                  "offen": false,
+                  "schritt": 20,
+                  "grund": "Haltedauer",
+                  "rendite": 0.0928,
+                  "vergleich": 0.1852,
+                  "vorsprung": -0.0924
+                },
+                "ziel": {
+                  "offen": false,
+                  "schritt": 48,
+                  "grund": "Gewinnziel",
+                  "rendite": 0.3248,
+                  "vergleich": 0.3482,
+                  "vorsprung": -0.0234
+                },
+                "nachlauf": {
+                  "offen": false,
+                  "schritt": 24,
+                  "grund": "nachgezogene Grenze",
+                  "rendite": -0.0481,
+                  "vergleich": 0.2046,
+                  "vorsprung": -0.2527
+                },
+                "kombi": {
+                  "offen": false,
+                  "schritt": 57,
+                  "grund": "nachgezogene Grenze",
+                  "rendite": 0.4267,
+                  "vergleich": 0.3692,
+                  "vorsprung": 0.0575
+                }
+              }
+            },
+            {
+              "name": "MP Materials",
+              "ticker": "MP",
+              "datum": "2025-10-09",
+              "text": "Ausweitung auf fünf weitere seltene Erden, Batteriematerial, Graphit-Anoden (Nr. 55 bis 62)",
+              "gipfel": 0.3646,
+              "ergebnis": {
+                "bisher": {
+                  "offen": false,
+                  "schritt": 15,
+                  "grund": "Lockerung",
+                  "rendite": -0.102,
+                  "vergleich": -0.058,
+                  "vorsprung": -0.044
+                },
+                "zeit": {
+                  "offen": false,
+                  "schritt": 20,
+                  "grund": "Haltedauer",
+                  "rendite": -0.2814,
+                  "vergleich": -0.11,
+                  "vorsprung": -0.1714
+                },
+                "ziel": {
+                  "offen": false,
+                  "schritt": 2,
+                  "grund": "Gewinnziel",
+                  "rendite": 0.315,
+                  "vergleich": 0.0559,
+                  "vorsprung": 0.2591
+                },
+                "nachlauf": {
+                  "offen": false,
+                  "schritt": 8,
+                  "grund": "nachgezogene Grenze",
+                  "rendite": 0.0252,
+                  "vergleich": -0.02,
+                  "vorsprung": 0.0452
+                },
+                "kombi": {
+                  "offen": false,
+                  "schritt": 5,
+                  "grund": "nachgezogene Grenze",
+                  "rendite": 0.1598,
+                  "vergleich": 0.0415,
+                  "vorsprung": 0.1183
+                }
+              }
+            },
+            {
+              "name": "MP Materials",
+              "ticker": "MP",
+              "datum": "2026-01-06",
+              "text": "Ausfuhrkontrollen für Doppelverwendungsgüter an Japan (Nr. 1/2026)",
+              "gipfel": 0.2145,
+              "ergebnis": {
+                "bisher": {
+                  "offen": false,
+                  "schritt": 61,
+                  "grund": "nach 90 Tagen",
+                  "rendite": -0.1446,
+                  "vergleich": -0.0417,
+                  "vorsprung": -0.1029
+                },
+                "zeit": {
+                  "offen": false,
+                  "schritt": 20,
+                  "grund": "Haltedauer",
+                  "rendite": 0.0122,
+                  "vergleich": 0.0576,
+                  "vorsprung": -0.0454
+                },
+                "ziel": {
+                  "offen": false,
+                  "schritt": 126,
+                  "grund": "Haltedauer",
+                  "rendite": -0.1356,
+                  "vergleich": -0.1024,
+                  "vorsprung": -0.0332
+                },
+                "nachlauf": {
+                  "offen": false,
+                  "schritt": 31,
+                  "grund": "nachgezogene Grenze",
+                  "rendite": -0.0749,
+                  "vergleich": 0.0212,
+                  "vorsprung": -0.0961
+                },
+                "kombi": {
+                  "offen": false,
+                  "schritt": 57,
+                  "grund": "Verlustgrenze",
+                  "rendite": -0.2379,
+                  "vergleich": -0.1005,
+                  "vorsprung": -0.1374
+                }
+              }
+            },
+            {
+              "name": "MP Materials",
+              "ticker": "MP",
+              "datum": "2026-06-22",
+              "text": "zehn US-Firmen auf Chinas Exportkontrollliste, darunter MP Materials",
+              "gipfel": -0.002,
+              "ergebnis": {
+                "bisher": {
+                  "offen": false,
+                  "schritt": 63,
+                  "grund": "nach 90 Tagen",
+                  "rendite": -0.1707,
+                  "vergleich": -0.054,
+                  "vorsprung": -0.1167
+                },
+                "zeit": {
+                  "offen": false,
+                  "schritt": 20,
+                  "grund": "Haltedauer",
+                  "rendite": -0.232,
+                  "vergleich": -0.1182,
+                  "vorsprung": -0.1138
+                },
+                "ziel": {
+                  "offen": true,
+                  "schritt": 67,
+                  "rendite": -0.1901
+                },
+                "nachlauf": {
+                  "offen": false,
+                  "schritt": 17,
+                  "grund": "nachgezogene Grenze",
+                  "rendite": -0.246,
+                  "vergleich": -0.1409,
+                  "vorsprung": -0.1051
+                },
+                "kombi": {
+                  "offen": false,
+                  "schritt": 17,
+                  "grund": "Verlustgrenze",
+                  "rendite": -0.246,
+                  "vergleich": -0.1409,
+                  "vorsprung": -0.1051
+                }
+              }
+            },
+            {
+              "name": "Lynas Rare Earths",
+              "ticker": "LYC.AX",
+              "datum": "2010-07-09",
+              "text": "Ausfuhrquote für seltene Erden im zweiten Halbjahr 2010 um 72 Prozent gekürzt",
+              "gipfel": 2.8655,
+              "ergebnis": {
+                "bisher": {
+                  "offen": false,
+                  "schritt": 64,
+                  "grund": "nach 90 Tagen",
+                  "rendite": 1.5546,
+                  "vergleich": 0.11,
+                  "vorsprung": 1.4446
+                },
+                "zeit": {
+                  "offen": false,
+                  "schritt": 20,
+                  "grund": "Haltedauer",
+                  "rendite": 0.4454,
+                  "vergleich": 0.0723,
+                  "vorsprung": 0.3731
+                },
+                "ziel": {
+                  "offen": false,
+                  "schritt": 11,
+                  "grund": "Gewinnziel",
+                  "rendite": 0.3109,
+                  "vergleich": 0.0547,
+                  "vorsprung": 0.2562
+                },
+                "nachlauf": {
+                  "offen": false,
+                  "schritt": 84,
+                  "grund": "nachgezogene Grenze",
+                  "rendite": 1.3361,
+                  "vergleich": 0.2137,
+                  "vorsprung": 1.1224
+                },
+                "kombi": {
+                  "offen": false,
+                  "schritt": 24,
+                  "grund": "nachgezogene Grenze",
+                  "rendite": 0.395,
+                  "vergleich": 0.0018,
+                  "vorsprung": 0.3932
+                }
+              }
+            },
+            {
+              "name": "Lynas Rare Earths",
+              "ticker": "LYC.AX",
+              "datum": "2010-09-23",
+              "text": "Faktischer Ausfuhrstopp seltener Erden nach Japan nach dem Zwischenfall bei den Senkaku-Inseln",
+              "gipfel": 0.8623,
+              "ergebnis": {
+                "bisher": {
+                  "offen": false,
+                  "schritt": 64,
+                  "grund": "nach 90 Tagen",
+                  "rendite": 0.3441,
+                  "vergleich": 0.3075,
+                  "vorsprung": 0.0366
+                },
+                "zeit": {
+                  "offen": false,
+                  "schritt": 20,
+                  "grund": "Haltedauer",
+                  "rendite": 0.4251,
+                  "vergleich": 0.0557,
+                  "vorsprung": 0.3694
+                },
+                "ziel": {
+                  "offen": false,
+                  "schritt": 15,
+                  "grund": "Gewinnziel",
+                  "rendite": 0.3846,
+                  "vergleich": 0.0927,
+                  "vorsprung": 0.2919
+                },
+                "nachlauf": {
+                  "offen": false,
+                  "schritt": 30,
+                  "grund": "nachgezogene Grenze",
+                  "rendite": 0.1255,
+                  "vergleich": 0.1457,
+                  "vorsprung": -0.0202
+                },
+                "kombi": {
+                  "offen": false,
+                  "schritt": 23,
+                  "grund": "nachgezogene Grenze",
+                  "rendite": 0.2632,
+                  "vergleich": 0.0715,
+                  "vorsprung": 0.1917
+                }
+              }
+            },
+            {
+              "name": "Lynas Rare Earths",
+              "ticker": "LYC.AX",
+              "datum": "2010-10-20",
+              "text": "Lieferstopp auf die USA und Europa ausgeweitet",
+              "gipfel": 0.5249,
+              "ergebnis": {
+                "bisher": {
+                  "offen": false,
+                  "schritt": 61,
+                  "grund": "nach 90 Tagen",
+                  "rendite": 0.1202,
+                  "vergleich": 0.2525,
+                  "vorsprung": -0.1323
+                },
+                "zeit": {
+                  "offen": false,
+                  "schritt": 20,
+                  "grund": "Haltedauer",
+                  "rendite": -0.2053,
+                  "vergleich": 0.038,
+                  "vorsprung": -0.2433
+                },
+                "ziel": {
+                  "offen": false,
+                  "schritt": 51,
+                  "grund": "Gewinnziel",
+                  "rendite": 0.349,
+                  "vergleich": 0.2491,
+                  "vorsprung": 0.0999
+                },
+                "nachlauf": {
+                  "offen": false,
+                  "schritt": 11,
+                  "grund": "nachgezogene Grenze",
+                  "rendite": -0.1848,
+                  "vergleich": 0.0669,
+                  "vorsprung": -0.2517
+                },
+                "kombi": {
+                  "offen": false,
+                  "schritt": 12,
+                  "grund": "Verlustgrenze",
+                  "rendite": -0.2405,
+                  "vergleich": 0.0892,
+                  "vorsprung": -0.3297
+                }
+              }
+            },
+            {
+              "name": "Lynas Rare Earths",
+              "ticker": "LYC.AX",
+              "datum": "2010-12-29",
+              "text": "Erste Ausfuhrquote für 2011 um 35 Prozent gekürzt",
+              "gipfel": 0.4485,
+              "ergebnis": {
+                "bisher": {
+                  "offen": false,
+                  "schritt": 61,
+                  "grund": "nach 90 Tagen",
+                  "rendite": 0.2145,
+                  "vergleich": 0.0724,
+                  "vorsprung": 0.1421
+                },
+                "zeit": {
+                  "offen": false,
+                  "schritt": 20,
+                  "grund": "Haltedauer",
+                  "rendite": 0.0279,
+                  "vergleich": -0.0126,
+                  "vorsprung": 0.0405
+                },
+                "ziel": {
+                  "offen": false,
+                  "schritt": 65,
+                  "grund": "Gewinnziel",
+                  "rendite": 0.337,
+                  "vergleich": 0.1005,
+                  "vorsprung": 0.2365
+                },
+                "nachlauf": {
+                  "offen": false,
+                  "schritt": 21,
+                  "grund": "nachgezogene Grenze",
+                  "rendite": 0.0056,
+                  "vergleich": 0.0073,
+                  "vorsprung": -0.0017
+                },
+                "kombi": {
+                  "offen": false,
+                  "schritt": 76,
+                  "grund": "nachgezogene Grenze",
+                  "rendite": 0.2758,
+                  "vergleich": 0.0511,
+                  "vorsprung": 0.2247
+                }
+              }
+            },
+            {
+              "name": "Lynas Rare Earths",
+              "ticker": "LYC.AX",
+              "datum": "2023-12-21",
+              "text": "Ausfuhrverbot für Technik zur Gewinnung und Verarbeitung seltener Erden",
+              "gipfel": 0.0574,
+              "ergebnis": {
+                "bisher": {
+                  "offen": false,
+                  "schritt": 60,
+                  "grund": "nach 90 Tagen",
+                  "rendite": -0.1471,
+                  "vergleich": -0.0391,
+                  "vorsprung": -0.108
+                },
+                "zeit": {
+                  "offen": false,
+                  "schritt": 20,
+                  "grund": "Haltedauer",
+                  "rendite": -0.1485,
+                  "vergleich": -0.0447,
+                  "vorsprung": -0.1038
+                },
+                "ziel": {
+                  "offen": false,
+                  "schritt": 126,
+                  "grund": "Haltedauer",
+                  "rendite": -0.1206,
+                  "vergleich": -0.0233,
+                  "vorsprung": -0.0973
+                },
+                "nachlauf": {
+                  "offen": false,
+                  "schritt": 26,
+                  "grund": "nachgezogene Grenze",
+                  "rendite": -0.1647,
+                  "vergleich": -0.0388,
+                  "vorsprung": -0.1259
+                },
+                "kombi": {
+                  "offen": false,
+                  "schritt": 126,
+                  "grund": "Haltedauer",
+                  "rendite": -0.1206,
+                  "vergleich": -0.0233,
+                  "vorsprung": -0.0973
+                }
+              }
+            },
+            {
+              "name": "Lynas Rare Earths",
+              "ticker": "LYC.AX",
+              "datum": "2025-04-04",
+              "text": "Lizenzpflicht für sieben seltene Erden und Magnete (Nr. 18)",
+              "gipfel": 1.4706,
+              "ergebnis": {
+                "bisher": {
+                  "offen": false,
+                  "schritt": 60,
+                  "grund": "nach 90 Tagen",
+                  "rendite": 0.1409,
+                  "vergleich": 0.4453,
+                  "vorsprung": -0.3044
+                },
+                "zeit": {
+                  "offen": false,
+                  "schritt": 20,
+                  "grund": "Haltedauer",
+                  "rendite": 0.093,
+                  "vergleich": 0.1846,
+                  "vorsprung": -0.0916
+                },
+                "ziel": {
+                  "offen": false,
+                  "schritt": 48,
+                  "grund": "Gewinnziel",
+                  "rendite": 0.3051,
+                  "vergleich": 0.3771,
+                  "vorsprung": -0.072
+                },
+                "nachlauf": {
+                  "offen": false,
+                  "schritt": 126,
+                  "grund": "Haltedauer",
+                  "rendite": 1.4706,
+                  "vergleich": 1.0124,
+                  "vorsprung": 0.4582
+                },
+                "kombi": {
+                  "offen": false,
+                  "schritt": 58,
+                  "grund": "nachgezogene Grenze",
+                  "rendite": 0.1477,
+                  "vergleich": 0.3853,
+                  "vorsprung": -0.2376
+                }
+              }
+            },
+            {
+              "name": "Lynas Rare Earths",
+              "ticker": "LYC.AX",
+              "datum": "2025-10-09",
+              "text": "Ausweitung auf fünf weitere seltene Erden, Batteriematerial, Graphit-Anoden (Nr. 55 bis 62)",
+              "gipfel": 0.0617,
+              "ergebnis": {
+                "bisher": {
+                  "offen": false,
+                  "schritt": 15,
+                  "grund": "Lockerung",
+                  "rendite": -0.2817,
+                  "vergleich": -0.058,
+                  "vorsprung": -0.2237
+                },
+                "zeit": {
+                  "offen": false,
+                  "schritt": 20,
+                  "grund": "Haltedauer",
+                  "rendite": -0.3618,
+                  "vergleich": -0.11,
+                  "vorsprung": -0.2518
+                },
+                "ziel": {
+                  "offen": false,
+                  "schritt": 126,
+                  "grund": "Haltedauer",
+                  "rendite": 0.0437,
+                  "vergleich": 0.123,
+                  "vorsprung": -0.0793
+                },
+                "nachlauf": {
+                  "offen": false,
+                  "schritt": 13,
+                  "grund": "nachgezogene Grenze",
+                  "rendite": -0.2322,
+                  "vergleich": -0.0397,
+                  "vorsprung": -0.1925
+                },
+                "kombi": {
+                  "offen": false,
+                  "schritt": 13,
+                  "grund": "Verlustgrenze",
+                  "rendite": -0.2322,
+                  "vergleich": -0.0397,
+                  "vorsprung": -0.1925
+                }
+              }
+            },
+            {
+              "name": "Lynas Rare Earths",
+              "ticker": "LYC.AX",
+              "datum": "2026-01-06",
+              "text": "Ausfuhrkontrollen für Doppelverwendungsgüter an Japan (Nr. 1/2026)",
+              "gipfel": 0.6783,
+              "ergebnis": {
+                "bisher": {
+                  "offen": false,
+                  "schritt": 62,
+                  "grund": "nach 90 Tagen",
+                  "rendite": 0.5437,
+                  "vergleich": -0.0454,
+                  "vorsprung": 0.5891
+                },
+                "zeit": {
+                  "offen": false,
+                  "schritt": 20,
+                  "grund": "Haltedauer",
+                  "rendite": 0.2175,
+                  "vergleich": 0.0576,
+                  "vorsprung": 0.1599
+                },
+                "ziel": {
+                  "offen": false,
+                  "schritt": 36,
+                  "grund": "Gewinnziel",
+                  "rendite": 0.311,
+                  "vergleich": 0.0436,
+                  "vorsprung": 0.2674
+                },
+                "nachlauf": {
+                  "offen": false,
+                  "schritt": 106,
+                  "grund": "nachgezogene Grenze",
+                  "rendite": 0.3141,
+                  "vergleich": 0.0094,
+                  "vorsprung": 0.3047
+                },
+                "kombi": {
+                  "offen": false,
+                  "schritt": 43,
+                  "grund": "nachgezogene Grenze",
+                  "rendite": 0.3065,
+                  "vergleich": -0.0258,
+                  "vorsprung": 0.3323
+                }
+              }
+            },
+            {
+              "name": "Lynas Rare Earths",
+              "ticker": "LYC.AX",
+              "datum": "2026-06-22",
+              "text": "zehn US-Firmen auf Chinas Exportkontrollliste, darunter MP Materials",
+              "gipfel": 0.0387,
+              "ergebnis": {
+                "bisher": {
+                  "offen": false,
+                  "schritt": 65,
+                  "grund": "nach 90 Tagen",
+                  "rendite": -0.2492,
+                  "vergleich": -0.054,
+                  "vorsprung": -0.1952
+                },
+                "zeit": {
+                  "offen": false,
+                  "schritt": 20,
+                  "grund": "Haltedauer",
+                  "rendite": -0.1611,
+                  "vergleich": -0.1517,
+                  "vorsprung": -0.0094
+                },
+                "ziel": {
+                  "offen": true,
+                  "schritt": 69,
+                  "rendite": -0.2363
+                },
+                "nachlauf": {
+                  "offen": false,
+                  "schritt": 22,
+                  "grund": "nachgezogene Grenze",
+                  "rendite": -0.174,
+                  "vergleich": -0.1017,
+                  "vorsprung": -0.0723
+                },
+                "kombi": {
+                  "offen": false,
+                  "schritt": 24,
+                  "grund": "Verlustgrenze",
+                  "rendite": -0.2057,
+                  "vergleich": -0.117,
+                  "vorsprung": -0.0887
+                }
+              }
+            }
+          ]
+        }
+      },
+      "status": "ok"
+    },
+    "ersatz_haselnuss": {
+      "art": "ersatz",
+      "name": "Ersatz Haselnuss",
+      "einheit": "Handelstage",
+      "einstieg": "Schlusskurs am ersten Handelstag nach der ersten Frostnacht, in jedem Frostjahr",
+      "spaetestens": "Gewinnziel und Grenzen schließen spätestens nach sechs Monaten.",
+      "vergleich": "australischer Aktienindex ASX 200",
+      "ersatz": [
+        "Select Harvests"
+      ],
+      "status": "ok",
+      "faelle_gesamt": 0,
+      "verglichen": 0,
+      "offen": 0,
+      "massstab": "mittel",
+      "vorn": null,
+      "vorn_gleichauf": [],
+      "gipfel_mittel": null,
+      "varianten": [
+        {
+          "kennung": "bisher",
+          "name": "bisherige Regel: bis zum Ende der Ernte am 30. September",
+          "kurz": "Bisherige Regel, bis zum Ende der Ernte",
+          "n": 0,
+          "mittel": null,
+          "median": null,
+          "vorsprung": null,
+          "im_plus": 0,
+          "schlechtester": null,
+          "bester": null,
+          "dauer": null,
+          "gruende": {}
+        },
+        {
+          "kennung": "zeit",
+          "name": "nach 60 Handelstagen",
+          "kurz": "Nach 60 Handelstagen",
+          "n": 0,
+          "mittel": null,
+          "median": null,
+          "vorsprung": null,
+          "im_plus": 0,
+          "schlechtester": null,
+          "bester": null,
+          "dauer": null,
+          "gruende": {}
+        },
+        {
+          "kennung": "ziel",
+          "name": "Gewinnziel 20 Prozent, spätestens nach 126 Handelstagen",
+          "kurz": "Gewinnziel 20 Prozent",
+          "n": 0,
+          "mittel": null,
+          "median": null,
+          "vorsprung": null,
+          "im_plus": 0,
+          "schlechtester": null,
+          "bester": null,
+          "dauer": null,
+          "gruende": {}
+        },
+        {
+          "kennung": "nachlauf",
+          "name": "15 Prozent unter dem Höchststand, spätestens nach 126 Handelstagen",
+          "kurz": "Grenze 15 Prozent unter dem Höchststand",
+          "n": 0,
+          "mittel": null,
+          "median": null,
+          "vorsprung": null,
+          "im_plus": 0,
+          "schlechtester": null,
+          "bester": null,
+          "dauer": null,
+          "gruende": {}
+        },
+        {
+          "kennung": "kombi",
+          "name": "Verlustgrenze 15 Prozent, ab 20 Prozent Gewinn 10 Prozent unter dem Höchststand, spätestens nach 126 Handelstagen",
+          "kurz": "Verlustgrenze 15 Prozent, ab 20 Prozent Gewinn Grenze 10 Prozent unter dem Höchststand",
+          "n": 0,
+          "mittel": null,
+          "median": null,
+          "vorsprung": null,
+          "im_plus": 0,
+          "schlechtester": null,
+          "bester": null,
+          "dauer": null,
+          "gruende": {}
+        }
+      ],
+      "faelle": []
+    },
+    "ersatz_palladium": {
+      "art": "ersatz",
+      "name": "Ersatz Palladium",
+      "einheit": "Handelstage",
+      "einstieg": "Schlusskurs des Platin-ETF am ersten Handelstag nach jedem Signal am Palladium",
+      "spaetestens": "Gewinnziel und Grenzen schließen spätestens nach einem Jahr.",
+      "vergleich": "Gold-ETF",
+      "ersatz": [
+        "Platin-ETF"
+      ],
+      "status": "Rückblick fehlt"
+    },
+    "palmoel": {
+      "art": "palmoel",
+      "name": "Palmöl",
+      "einheit": "Monate",
+      "einstieg": "Monatsdurchschnitt des Palmölpreises im Monat des Rot-Signals, nur Signale der Lernzeit",
+      "spaetestens": "Gewinnziel und Grenzen schließen spätestens nach zwei Jahren.",
+      "vergleich": null,
+      "status": "Rückblick fehlt"
+    }
+  },
+  "zustand": "in Ordnung"
+}

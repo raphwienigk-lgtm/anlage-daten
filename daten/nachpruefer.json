@@ -1,5 +1,5 @@
 {
-  "stand": "2026-09-26T14:10:47+02:00",
+  "stand": "2026-09-26T23:15:02+02:00",
   "version": "0.1.0",
   "hinweis": "Denkhilfe, keine Anlageberatung.",
   "woche": {
@@ -15,6 +15,32 @@
     "tage_gezaehlt": 0,
     "fehlende_tage": []
   },
+  "weitere_laeufe": [
+    {
+      "workflow": "metall",
+      "name": "Metall China",
+      "betrieb_seit": "2026-09-27",
+      "tage_mit_lauf": 0,
+      "tage_gezaehlt": 0,
+      "fehlende_tage": []
+    },
+    {
+      "workflow": "ersatz",
+      "name": "Ersatz-Sensoren",
+      "betrieb_seit": "2026-09-28",
+      "tage_mit_lauf": 0,
+      "tage_gezaehlt": 0,
+      "fehlende_tage": []
+    },
+    {
+      "workflow": "inlandspreise",
+      "name": "Inlandspreise",
+      "betrieb_seit": "2026-09-27",
+      "tage_mit_lauf": 0,
+      "tage_gezaehlt": 0,
+      "fehlende_tage": []
+    }
+  ],
   "rohstoffe": {
     "palmoel": {
       "name": "Palmöl",
@@ -34,6 +60,65 @@
       "rueckblick": null,
       "vorschlag_faellig": false,
       "mindest_signale": 5
+    }
+  },
+  "zweige": {
+    "metall_china": {
+      "art": "metall",
+      "name": "Metall China-Ausfuhr",
+      "laeufe": 0,
+      "achsen": {
+        "chip": {
+          "name": "Chip-Achse",
+          "jetzt": null,
+          "seit": null,
+          "seit_beginn": false,
+          "wechsel": []
+        },
+        "magnet": {
+          "name": "Magnet-Achse",
+          "jetzt": null,
+          "seit": null,
+          "seit_beginn": false,
+          "wechsel": []
+        },
+        "batterie": {
+          "name": "Batterie-Achse",
+          "jetzt": null,
+          "seit": null,
+          "seit_beginn": false,
+          "wechsel": []
+        },
+        "werkzeug": {
+          "name": "Werkzeug-Achse",
+          "jetzt": null,
+          "seit": null,
+          "seit_beginn": false,
+          "wechsel": []
+        }
+      }
+    },
+    "ersatz_haselnuss": {
+      "art": "ersatz",
+      "name": "Ersatz-Sensor Haselnuss",
+      "laeufe": 0,
+      "vergleich": "australischer Aktienindex ASX 200",
+      "jetzt": null,
+      "seit": null,
+      "seit_beginn": false,
+      "wechsel": [],
+      "positionen": []
+    },
+    "ersatz_palladium": {
+      "art": "ersatz",
+      "name": "Ersatz-Sensor Palladium",
+      "laeufe": 0,
+      "vergleich": "Gold-ETF",
+      "jetzt": null,
+      "seit": null,
+      "seit_beginn": false,
+      "wechsel": [],
+      "positionen": []
     }
   }
 }

@@ -1,0 +1,20 @@
+Stand: 26.09.2026, 23:15
+Teil 1 von 1
+
+Ausstiegsregeln im Vergleich, gerechnet am Samstag, dem sechsundzwanzigsten September. Das System sagt, wann sich ein Blick lohnt. Hier steht, wann man jeweils wieder ausgestiegen wäre: wenige, vorher festgelegte Regeln an denselben Fällen wie im Rückblick. Gemessen wird bis zum Ausstieg; verglichen werden nur Fälle, die unter allen Regeln schon abgeschlossen sind.
+
+Metall China-Ausfuhr. Einstieg: Schlusskurs am ersten Handelstag ab der Ankündigung, bei jeder Verschärfung auf der eigenen Achse. Vergleich: Metall- und Bergbau-Aktien USA. Gewinnziel und Grenzen schließen spätestens nach sechs Monaten.
+
+Chip-Achse mit Perpetua Resources und United States Antimony: sechs Fälle. Im Mittel bis zum Ausstieg. Bisherige Regel, Lockerung oder neunzig Tage: plus neun Prozent, gegen den Vergleich elf Prozentpunkte vorn, vier von sechs im Plus, gehalten zweiundsechzig Handelstage, schlechtester Fall minus neunzehn Prozent. Nach zwanzig Handelstagen: plus dreißig Prozent, gegen den Vergleich vierunddreißig Prozentpunkte vorn, sechs von sechs im Plus, gehalten zwanzig Handelstage. Gewinnziel dreißig Prozent: plus sechsundzwanzig Prozent, gegen den Vergleich vierundzwanzig Prozentpunkte vorn, fünf von sechs im Plus, gehalten achtundvierzig Handelstage, schlechtester Fall minus neun Prozent. Grenze zwanzig Prozent unter dem Höchststand: plus dreizehn Prozent, gegen den Vergleich dreizehn Prozentpunkte vorn, vier von sechs im Plus, gehalten zweiundfünfzig Handelstage, schlechtester Fall minus fünfzehn Prozent. Verlustgrenze zwanzig Prozent, ab dreißig Prozent Gewinn Grenze zehn Prozent unter dem Höchststand: plus sechzehn Prozent, gegen den Vergleich achtzehn Prozentpunkte vorn, vier von sechs im Plus, gehalten achtundzwanzig Handelstage, schlechtester Fall minus dreiundzwanzig Prozent. Vorn beim Vorsprung: Nach zwanzig Handelstagen. Der beste denkbare Ausstieg hätte im Mittel plus einhundertfünfunddreißig Prozent gebracht; den trifft keine Regel.
+
+Magnet-Achse mit Lynas Rare Earths und MP Materials: vierzehn Fälle. Zwei sind noch nicht abgeschlossen und zählen nicht mit. Im Mittel bis zum Ausstieg. Bisherige Regel, Lockerung oder neunzig Tage: plus neunzehn Prozent, gegen den Vergleich acht Prozentpunkte vorn, sieben von zwölf im Plus, gehalten vierundfünfzig Handelstage, schlechtester Fall minus einunddreißig Prozent. Nach zwanzig Handelstagen: plus ein Prozent, gegen den Vergleich zwei Prozentpunkte zurück, sieben von zwölf im Plus, gehalten zwanzig Handelstage, schlechtester Fall minus sechsunddreißig Prozent. Gewinnziel dreißig Prozent: plus siebzehn Prozent, gegen den Vergleich sechs Prozentpunkte vorn, neun von zwölf im Plus, gehalten fünfundsechzig Handelstage, schlechtester Fall minus achtunddreißig Prozent. Grenze zwanzig Prozent unter dem Höchststand: plus zwanzig Prozent, gegen den Vergleich sieben Prozentpunkte vorn, sechs von zwölf im Plus, gehalten einundvierzig Handelstage, schlechtester Fall minus dreiundzwanzig Prozent. Verlustgrenze zwanzig Prozent, ab dreißig Prozent Gewinn Grenze zehn Prozent unter dem Höchststand: plus acht Prozent, gegen den Vergleich zwei Prozentpunkte vorn, sieben von zwölf im Plus, gehalten dreiundvierzig Handelstage, schlechtester Fall minus vierundzwanzig Prozent. Vorn beim Vorsprung: Bisherige Regel, Lockerung oder neunzig Tage. Der beste denkbare Ausstieg hätte im Mittel plus dreiundachtzig Prozent gebracht; den trifft keine Regel.
+
+Ersatz Haselnuss. Einstieg: Schlusskurs am ersten Handelstag nach der ersten Frostnacht, in jedem Frostjahr. Vergleich: australischer Aktienindex ASX zweihundert. Gewinnziel und Grenzen schließen spätestens nach sechs Monaten.
+
+Ersatz Haselnuss: noch keine auswertbaren Fälle.
+
+Ersatz Palladium: folgt, sobald der erste Rückblick gelaufen ist.
+
+Palmöl: folgt, sobald der erste Rückblick gelaufen ist.
+
+Überall gilt noch die bisherige Regel. Welche gilt, legst du fest; dann baue ich sie ins Schattendepot ein. Das ist eine Denkhilfe, keine Anlageberatung.
