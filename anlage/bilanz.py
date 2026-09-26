@@ -95,7 +95,8 @@ def signale_aus_logbuch(eintraege: list[dict], kennung: str) -> list[dict]:
                      "rohstoffpreis": e.get("rohstoffpreis"), "kurse": e.get("kurse")}
             liste.append(offen)
         elif e.get("schattenschluss") and offen is not None:
-            offen["schluss"] = e["zeit"][:7]
+            offen.update({"schluss": e["zeit"][:7], "schluss_zeit": e["zeit"],
+                          "schluss_rohstoffpreis": e.get("rohstoffpreis"), "schluss_kurse": e.get("kurse")})
             offen = None
     return liste
 

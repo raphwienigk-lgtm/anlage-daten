@@ -97,10 +97,11 @@ Stunde später. Schlägt ein Lauf fehl, schickt GitHub eine Mail.
 | `daten/rueckblick/palmoel.json` | Ergebnis des Rückblicks: Verlauf je Monat, Bilanz, Varianten |
 | `daten/rueckblick/pruefzeit.json` | Buch über jedes Öffnen der Prüfzeit, mit Fingerabdruck der Regeln |
 | `abgabe/rueckblick-palmoel-teil-N.md` | Vorlesetext des Rückblicks |
+| `daten/nachpruefer.json`, `abgabe/nachpruefer-teil-N.md` | Nachprüfer, jeden Sonntag: Laufkontrolle, Schattendepot, Bilanz der echten Signale |
 
 Befehle: `python -m anlage.lauf` (täglicher Lauf), `python -m anlage.pruefen` (Prüflauf),
 `python -m anlage.klimatologie` (Normal bauen), `python -m anlage.geschichte` (Geschichtsdaten),
-`python -m anlage.rueckblick` (Rückblick), `python -m pytest -q` (Tests).
+`python -m anlage.rueckblick` (Rückblick), `python -m anlage.nachpruefer` (Nachprüfer), `python -m pytest -q` (Tests).
 
 ---
 

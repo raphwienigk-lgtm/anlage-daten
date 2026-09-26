@@ -39,11 +39,14 @@ kurse:
   z_fenster_tage: 200
   historie: 2y             # so viel Kurshistorie holt der erste Lauf (yfinance kennt 1y, 2y, 5y, 10y, max)
 
+nachpruefer:
+  mindest_signale_fuer_vorschlag: 5   # erst ab so vielen abgeschlossenen echten Signalen schlägt er vor, die Regeln zu prüfen
+
 rueckblick:
   beginn: 1960-01
   lernzeit_bis: 2015-12    # danach Prüfzeit: bleibt weggeschlossen, bis sie einmal bewusst geöffnet wird
   wetter_unsicher_bis: 1978   # ERA5 vor der Satellitenzeit in den Tropen unsicherer, wird getrennt ausgewiesen
-  # VORSCHLAG, von Raphael vor dem ersten Lauf festzulegen:
+  # Bestehensgrenze beschlossen am 26.09.2026 (vor dem ersten Lauf); nicht nachträglich lockern:
   treffer_ab: 0.20         # Rot ist ein Treffer, wenn der Preis in den 12 Monaten danach um mindestens 20 % steigt
   bewegung_ab: 0.30        # große Bewegung: Anstieg um mindestens 30 % innerhalb von 12 Monaten
   erkannt_monate_vorher: 6 # Gelb höchstens so viele Monate vor Beginn einer großen Bewegung zählt als Vorwarnung;

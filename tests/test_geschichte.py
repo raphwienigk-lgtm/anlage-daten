@@ -194,3 +194,15 @@ def test_preise_werden_nicht_schlechter(ablage, monkeypatch):
     assert daten["reihen"]["palmoel"][0]["datum"] == "1960-01-01"        # die längere Reihe bleibt
     assert daten["reihen"]["brent"][0]["datum"] == "1992-01-01"
     assert any("bleibt" in f for f in daten["fehler"])
+
+
+def test_preise_nehmen_die_juengste_ausgabe(ablage, monkeypatch):
+    k = konfig.konfiguration()
+    alt, neu = pink_sheet(bis=(1961, 12)), pink_sheet(bis=(1962, 12))
+    seite = '<a href="https://thedocs.worldbank.org/x/CMO-Historical-Data-Monthly.xlsx">Monthly</a>'
+    monkeypatch.setattr(netz, "hole_text", lambda url, params=None: seite)
+    monkeypatch.setattr(netz, "hole_bytes",
+                        lambda url, params=None, timeout=120: neu if "/x/" in url else alt)
+    daten = geschichte.preise(k, melde=lambda t: None)
+    assert daten["reihen"]["palmoel"][-1]["datum"] == "1962-12-01"
+    assert "bis 1962-12" in daten["herkunft"]["palmoel"]

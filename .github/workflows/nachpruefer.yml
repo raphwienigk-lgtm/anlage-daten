@@ -1,0 +1,56 @@
+# Nachprüfer: jeden Sonntag nach dem täglichen Lauf. Rechnet die Bilanz der echten Signale
+# (Schattendepot) und prüft, ob der tägliche Lauf an allen sieben Tagen gelang.
+# Er verstellt nichts. Den Bericht holt der Nachprüfer in der Cloud ab und ergänzt die Mail-Vetos.
+name: Nachprüfer
+
+on:
+  schedule:
+    - cron: "17 3 * * 0"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+  actions: read
+
+concurrency:
+  group: anlage-nachpruefer
+  cancel-in-progress: false
+
+jobs:
+  nachpruefer:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v5
+        with:
+          ref: ${{ github.ref_name }}
+      - uses: actions/setup-python@v6
+        with:
+          python-version: "3.12"
+          cache: pip
+      - name: Pakete installieren
+        run: pip install -r requirements.txt
+      - name: Läufe der Woche abfragen
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          gh run list --workflow taeglich.yml --limit 30 --json conclusion,createdAt > "$RUNNER_TEMP/laeufe.json" || rm -f "$RUNNER_TEMP/laeufe.json"
+      - name: Nachprüfen
+        run: python -m anlage.nachpruefer --laeufe "$RUNNER_TEMP/laeufe.json"
+      - name: Ergebnis sichern
+        if: always()
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add -A daten abgabe
+          if git diff --cached --quiet; then
+            echo "Keine Änderungen."
+            exit 0
+          fi
+          git commit -m "Nachprüfer $(date -u +%Y-%m-%dT%H:%MZ)"
+          for versuch in 1 2 3; do
+            git pull --rebase && git push && exit 0
+            git rebase --abort 2>/dev/null || true
+            sleep $((versuch * 10))
+          done
+          exit 1

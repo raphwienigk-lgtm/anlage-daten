@@ -129,18 +129,24 @@ def _weltbank_urls(g: dict) -> list[str]:
 def preise(k: dict, melde=print) -> dict:
     g = k["quellen"]["geschichte"]
     spalten = {kennung: e["weltbank"] for kennung, e in g["preise"].items()}
-    reihen, quelle, fehler = {}, None, []
+    # Alle bekannten Adressen lesen und die Ausgabe mit den jüngsten Werten nehmen:
+    # Eine feste Adresse kann auf eine ältere Ausgabe zeigen als die auf der Seite verlinkte.
+    reihen, quelle, fehler, beste = {}, None, [], None
     for url in _weltbank_urls(g):
         try:
-            reihen, fehlend = lies_weltbank(netz.hole_bytes(url), spalten)
+            kandidat, fehlend = lies_weltbank(netz.hole_bytes(url), spalten)
         except Exception as f:
             fehler.append(f"{url}: {type(f).__name__}: {f}")
             continue
-        if reihen:
-            quelle = f"Weltbank Pink Sheet ({url.rsplit('/', 1)[-1]})"
-            if fehlend:
-                fehler.append("im Pink Sheet nicht gefunden: " + ", ".join(fehlend))
-            break
+        if not kandidat:
+            continue
+        guete = (max(r[-1]["datum"] for r in kandidat.values()), len(kandidat))
+        if beste is None or guete > beste:
+            beste, reihen = guete, kandidat
+            quelle = f"Weltbank Pink Sheet ({url.rsplit('/', 1)[-1]}, bis {guete[0][:7]})"
+            fehlend_beste = fehlend
+    if reihen and fehlend_beste:
+        fehler.append("im Pink Sheet nicht gefunden: " + ", ".join(fehlend_beste))
     herkunft = {kennung: quelle for kennung in reihen}
     for kennung, eintrag in g["preise"].items():
         if kennung in reihen or not eintrag.get("fred"):
