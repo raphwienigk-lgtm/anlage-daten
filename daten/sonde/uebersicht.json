@@ -136,5 +136,11 @@
     "sekunden": 11.7,
     "zeit": "2026-09-26T14:11:37+02:00",
     "erste_zeile": "URL: https://www.ippc.int/en/countries/all/pestreport/"
+  },
+  "mpob_tabelle": {
+    "status": "ok",
+    "sekunden": 1.6,
+    "zeit": "2026-09-26T14:46:27+02:00",
+    "erste_zeile": "URL: https://bepi.mpob.gov.my/admin2/price_local_daily_view_cpo_msia.php?more=Y&jenis=1Y&tahun=2026"
   }
 }

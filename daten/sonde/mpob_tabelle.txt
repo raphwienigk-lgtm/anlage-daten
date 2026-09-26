@@ -1,0 +1,163 @@
+URL: https://bepi.mpob.gov.my/admin2/price_local_daily_view_cpo_msia.php?more=Y&jenis=1Y&tahun=2026
+Größe: 60127 Zeichen
+lies_mpob: 174 Werte, erste [{'datum': '2026-01-02', 'wert': 3967.5}, {'datum': '2026-01-05', 'wert': 3976.5}], letzte [{'datum': '2026-09-23', 'wert': 4558.0}, {'datum': '2026-09-24', 'wert': 4570.0}]
+Tabellenzeilen: 36
+  MYR 4,570.00 | Latest Price: 24 September 2026
+  
+   | Crude Palm Oil (Local Delivered) Minyak Sawit Mentah (Hantaran Tempatan)
+  Date | January | February | March | April | May | June | July | August | September | October | November | December
+  01 | PH | PH | PH | 4,735.50 | PH | PH | 4,477.50 | NT | 4,662.00 | - | PH | -
+  02 | 3,967.50 | PH | 4,030.00 | 4,740.50 | NT | PH | 4,472.00 | PH | 4,660.00 | - | - | -
+  03 | NT | 4,134.00 | 4,052.50 | 4,738.00 | PH | 4,546.00 | 4,445.50 | 4,499.00 | 4,662.50 | NT | - | -
+  04 | PH | 4,146.00 | 4,078.50 | NT | 4,566.50 | 4,548.50 | NT | 4,509.00 | 4,626.00 | PH | - | -
+  05 | 3,976.50 | 4,132.50 | 4,123.50 | PH | 4,611.50 | 4,477.50 | PH | 4,532.00 | NT | - | - | NT
+  06 | 3,950.00 | 4,107.50 | 4,187.00 | 4,756.50 | 4,596.00 | NT | 4,459.50 | 4,514.50 | PH | - | - | PH
+  07 | 3,938.50 | NT | NT | 4,758.50 | 4,502.50 | PH | 4,490.50 | 4,510.50 | 4,655.00 | - | NT | -
+  08 | 3,968.00 | PH | PH | 4,578.00 | 4,515.00 | 4,492.00 | 4,495.50 | NT | 4,669.50 | - | PH | -
+--- series\s*:: 1 Treffer
+out: 'vertical',
+                align: 'right',
+                verticalAlign: 'top',
+                x: -10,
+                y: 100,
+                borderWidth: 0
+            },
+            series: [{
+                name: 'Crude Palm Oil',
+				 marker : {
+                    enabled : true,
+                    radius : 3.5
+                },
+                data: [
+                               3933.00,
+                                3967.50,
+                                3976.50,
+                                3950.00,
+                                3938.50,
+                                3968.00,
+                                4004.00,
+                                4021.00,
+                                4022.00,
+                                4007.00,
+                                3980.50,
+                                3993.50,
+                                4010.50,
+                                4056.50,
+                                4081.00,
+                                4116.00,
+                                4090.50,
+                                4111.00,
+                                4144.50,
+                                4180.00,
+                                4221.50,
+                                4134.00,
+                                4146.00,
+                                4132.50,
+       
+--- data\s*:\s*\[: 1 Treffer
+       },
+            series: [{
+                name: 'Crude Palm Oil',
+				 marker : {
+                    enabled : true,
+                    radius : 3.5
+                },
+                data: [
+                               3933.00,
+                                3967.50,
+                                3976.50,
+                                3950.00,
+                                3938.50,
+                                3968.00,
+                                4004.00,
+                                4021.00,
+                                4022.00,
+                                4007.00,
+                                3980.50,
+                                3993.50,
+                                4010.50,
+                                4056.50,
+                                4081.00,
+                                4116.00,
+                                4090.50,
+                                4111.00,
+                                4144.50,
+                                4180.00,
+                                4221.50,
+                                4134.00,
+                                4146.00,
+                                4132.50,
+                                4107.50,
+                                4111.00,
+                                4082.00,
+                                4062.50,
+                
+--- <!--: 3 Treffer
+kosong" style="width:100%;" >
+        <tr >
+            <th colspan="13" style="text-align:center;">
+                <img src="../images/mpob-logo-md.png" width="100" align="center"/>
+                <!--<span style="style1"><strong>MPOB DAILY MALAYSIA PRICES OF CRUDE PALM OIL (RM/TONNE)</strong><br /><strong><em>Harga Harian Minyak Sawit Mentah -  Malaysia (RM/Tan)</em></strong><br />-->
+                </span>
+            </th>
+            <tbody>
+
+				 <tr>
+                    <td colspan="13"> <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>MALAYSIA PRICES OF CRUDE PALM OIL</title>
+<script type="text/javascript" src="js/jquery/jquery-latest.pack.js"></script>
+<script type="text/javascript">
+function loadBack(tahun){
+    location.href="price_local_daily_view_cpo_msia.php?more=Y&jenis=1Y&tahun="+tahun;   
+}
+</script>
+<script type="text/javascript">
+$(function () {
+    var chart;
+
+    $(document).ready(function() {
+	
+	    Highcharts.setOptions({
+		lang: {
+        decimalPoint: '.',
+        thousandsSep: ','
+		}
+		});	   
+		
+        chart = new Highcharts.Chart({
+            chart: {
+                renderTo: 'container',
+                type: 'line',
+
+h1></td><td align=right><h1 style="font-size:2vw"><font color="#027b77">Latest Price: 24 September 2026</font></h1></td></tr></table>
+<script type="text/javascript" src="js/highcharts.js"></script>
+<!--<script type="text/javascript" src="js/modules/exporting.js"></script>-->
+<div id="container" style="height: 300px"></div>
+<br>
+
+<div align=center>
+<ul class="listTahun">
+   
+	<li><a href="price_local_daily_view_cpo_msia.php?more=Y&jenis=6M"><font size=2>6M</font></a> </li>
+	<li><a href="price_local_daily_view_cpo_msia.php?more=Y&jenis=3M"><font size=2>3M</font></a> </li>
+	<li><a href="price_local_daily_view_cpo_msia.php?more=Y&jenis=1M"><font size=2>1M</font></a> </li>
+	<li><a href="price_local_daily_view_cpo_msia.php?more=Y&jenis=1W"><font size=2>1W</font></a> </li>
+            <li><a href="javascript:loadBack(2024);"><font size=2>2024</font></a></li>
+            <li><a href="javascript:loadBack(2025);"><font size=2>2025</font></a></li>
+            <li><a href="javascript:loadBack(2026);"><font size=2>2026</font></a></li>
+        </ul>
+    
+
+
+</div>
+</td>
+
+                </tr>
+				<table id="hor-zebra" style="width:100%;">
+				<tr> <td colspan="13">
+				    <img class="print-icon" src="../images/icons/printer.png" onclick="window.print() " />
+<a href='../admin2/price_local_daily_view_cpo_msia_excel.php?val=2026&excel=Y'><img class='print-icon' src='./image
+--- <td[^>]*>\s*0?1\s*</td>: 0 Treffer
