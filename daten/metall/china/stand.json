@@ -1,0 +1,1081 @@
+{
+  "stand": "2026-09-26T19:38:34+02:00",
+  "datum": "2026-09-26",
+  "version": "0.1.0",
+  "land": "china",
+  "name": "China-Ausfuhr",
+  "laenderpaar": "China ↔ USA über Halbleiter",
+  "rolle": "sensor",
+  "hinweis": "Denkhilfe, keine Anlageberatung. Rot setzt nur der Metall-Wächter in der Cloud.",
+  "zustand": "in Ordnung",
+  "reihenfolge": [
+    "chip",
+    "magnet",
+    "werkzeug",
+    "batterie"
+  ],
+  "achsen": {
+    "chip": {
+      "name": "Chip-Achse",
+      "beschreibung": "Gallium und Germanium für Halbleiter; Antimon kommt im selben Paket",
+      "pilot": true,
+      "metalle": [
+        {
+          "kennung": "gallium",
+          "name": "Gallium",
+          "dativ": null,
+          "wucht": 0.88
+        },
+        {
+          "kennung": "germanium",
+          "name": "Germanium",
+          "dativ": null,
+          "wucht": 0.72
+        },
+        {
+          "kennung": "antimon",
+          "name": "Antimon",
+          "dativ": null,
+          "wucht": 0.4
+        }
+      ],
+      "wucht": 0.88,
+      "stufe": "Grün",
+      "gruende": [],
+      "kanaele": [],
+      "mehrfach": false,
+      "instrumente": [
+        "PPTA",
+        "UAMY"
+      ]
+    },
+    "magnet": {
+      "name": "Magnet-Achse",
+      "beschreibung": "Seltene Erden für Dauermagnete; Ersatz über Produzenten außerhalb Chinas",
+      "pilot": false,
+      "metalle": [
+        {
+          "kennung": "seltene_erden",
+          "name": "seltene Erden",
+          "dativ": "den seltenen Erden",
+          "wucht": 0.81
+        }
+      ],
+      "wucht": 0.81,
+      "stufe": "Grün",
+      "gruende": [],
+      "kanaele": [],
+      "mehrfach": false,
+      "instrumente": [
+        "MP",
+        "LYC.AX"
+      ]
+    },
+    "batterie": {
+      "name": "Batterie-Achse",
+      "beschreibung": "Graphit für Anoden",
+      "pilot": false,
+      "metalle": [
+        {
+          "kennung": "graphit",
+          "name": "Graphit",
+          "dativ": null,
+          "wucht": 0.54
+        }
+      ],
+      "wucht": 0.54,
+      "stufe": "Grün",
+      "gruende": [],
+      "kanaele": [],
+      "mehrfach": false,
+      "instrumente": []
+    },
+    "werkzeug": {
+      "name": "Werkzeug-Achse",
+      "beschreibung": "Wolfram für Hartmetall und Rüstung",
+      "pilot": false,
+      "metalle": [
+        {
+          "kennung": "wolfram",
+          "name": "Wolfram",
+          "dativ": null,
+          "wucht": 0.64
+        }
+      ],
+      "wucht": 0.64,
+      "stufe": "Grün",
+      "gruende": [],
+      "kanaele": [],
+      "mehrfach": false,
+      "instrumente": []
+    }
+  },
+  "wechsel": [],
+  "fristen": [
+    {
+      "kennung": "aussetzung_okt2025",
+      "name": "Aussetzung der Oktober-Maßnahmen für seltene Erden, Graphit-Anoden und Batteriematerial",
+      "nummer": 70,
+      "achsen": [
+        "magnet",
+        "batterie"
+      ],
+      "bis": "2026-11-10",
+      "urspruenglich_bis": "2026-11-10",
+      "verlaengert": false,
+      "tage": 45,
+      "zustand": "läuft",
+      "gelb": false,
+      "rot_pruefen": false,
+      "stand": "USA melden am 24.09.2026 eine Verlängerung des Waffenstillstands bis zum 10.01.2027; die formelle Bekanntmachung aus Peking steht aus"
+    },
+    {
+      "kennung": "aussetzung_usa_ga_ge_sb",
+      "name": "Aussetzung des Ausfuhrverbots in die USA für Gallium, Germanium, Antimon und superharte Materialien",
+      "nummer": 72,
+      "achsen": [
+        "chip"
+      ],
+      "bis": "2026-11-27",
+      "urspruenglich_bis": "2026-11-27",
+      "verlaengert": false,
+      "tage": 62,
+      "zustand": "läuft",
+      "gelb": false,
+      "rot_pruefen": false,
+      "stand": "offen; die Meldungen vom 24.09.2026 nennen diese Frist nicht"
+    }
+  ],
+  "gegenseite": {
+    "herkunft": "frisch",
+    "tage": 30,
+    "dokumente": [
+      {
+        "nummer": "2026-19591",
+        "titel": "Foreign-Trade Zone (FTZ) 272, Notification of Proposed Production Activity; Infinera Corporation; (Telecommunications Devices); Allentown, Pennsylvania",
+        "datum": "2026-09-24",
+        "art": "Notice",
+        "behoerden": [
+          "commerce-department",
+          "foreign-trade-zones-board"
+        ],
+        "behoerden_namen": [
+          "Commerce Department",
+          "Foreign-Trade Zones Board"
+        ],
+        "url": "https://www.federalregister.gov/documents/2026/09/24/2026-19591/foreign-trade-zone-ftz-272-notification-of-proposed-production-activity-infinera-corporation",
+        "zusammenfassung": "",
+        "begriffe": [
+          "germanium"
+        ],
+        "achsen": [
+          "chip"
+        ],
+        "gewichtig": false,
+        "neu": false
+      },
+      {
+        "nummer": "2026-19518",
+        "titel": "Large Diameter Graphite Electrodes From the People's Republic of China: Preliminary Affirmative Critical Circumstances Determination in Countervailing Duty Investigation",
+        "datum": "2026-09-24",
+        "art": "Notice",
+        "behoerden": [
+          "commerce-department",
+          "international-trade-administration"
+        ],
+        "behoerden_namen": [
+          "Commerce Department",
+          "International Trade Administration"
+        ],
+        "url": "https://www.federalregister.gov/documents/2026/09/24/2026-19518/large-diameter-graphite-electrodes-from-the-peoples-republic-of-china-preliminary-affirmative",
+        "zusammenfassung": "The U.S. Department of Commerce (Commerce) preliminarily determines that critical circumstances exist with respect to imports of large diameter graphite electrodes (large graphite electrodes) from the People's Republic of China (China). The period of investigation is January 1, 2025, through December 31, 2025. Interested parties are invited to comment on this preliminary determination of critical circumstances.",
+        "begriffe": [
+          "graphite"
+        ],
+        "achsen": [
+          "batterie"
+        ],
+        "gewichtig": false,
+        "neu": false
+      },
+      {
+        "nummer": "2026-19504",
+        "titel": "Agency Information Collection Activities; Submission to the Office of Management and Budget for Review and Approval; Comment Request; NESHAP for Semiconductor Manufacturing (Renewal)",
+        "datum": "2026-09-24",
+        "art": "Notice",
+        "behoerden": [
+          "environmental-protection-agency"
+        ],
+        "behoerden_namen": [
+          "Environmental Protection Agency"
+        ],
+        "url": "https://www.federalregister.gov/documents/2026/09/24/2026-19504/agency-information-collection-activities-submission-to-the-office-of-management-and-budget-for",
+        "zusammenfassung": "The Environmental Protection Agency (EPA) has submitted an information collection request (ICR), NESHAP for Semiconductor Manufacturing (EPA ICR Number 2042.09, OMB Control Number 2060-0519) to the Office of Management and Budget (OMB) for review and approval in accordance with the Paperwork Reduction Act. This is a proposed extension of the ICR, which is currently approved through September 30, 2026. Public comments were previously requested via the Federal Register on August 6, 2024 during a 60-day comment period. This notice allows for an additional 30 days for public comments.",
+        "begriffe": [
+          "semiconductor manufacturing"
+        ],
+        "achsen": [
+          "chip"
+        ],
+        "gewichtig": false,
+        "neu": false
+      },
+      {
+        "nummer": "2026-19372",
+        "titel": "Certain Brake Drums From the People's Republic of China: Preliminary Affirmative Determination of Circumvention of the Antidumping Duty and Countervailing Duty Orders",
+        "datum": "2026-09-22",
+        "art": "Notice",
+        "behoerden": [
+          "commerce-department",
+          "international-trade-administration"
+        ],
+        "behoerden_namen": [
+          "Commerce Department",
+          "International Trade Administration"
+        ],
+        "url": "https://www.federalregister.gov/documents/2026/09/22/2026-19372/certain-brake-drums-from-the-peoples-republic-of-china-preliminary-affirmative-determination-of",
+        "zusammenfassung": "The U.S. Department of Commerce (Commerce) preliminarily determines that imports of compacted graphite iron (CGI) brake drums, from the People's Republic of China (China), constitute later-developed merchandise that is circumventing the antidumping duty (AD) and countervailing duty (CVD) orders on certain brake drums (brake drums) from China. Interested parties are invited to comment on this preliminary determination.",
+        "begriffe": [
+          "graphite"
+        ],
+        "achsen": [
+          "batterie"
+        ],
+        "gewichtig": false,
+        "neu": false
+      },
+      {
+        "nummer": "2026-19072",
+        "titel": "Rescission of the Greenhouse Gas Findings for Fossil Fuel-Fired Power Plants and Repeal of Regulations for Power Plant Greenhouse Gas Emissions Under Clean Air Act Section 111",
+        "datum": "2026-09-17",
+        "art": "Proposed Rule",
+        "behoerden": [
+          "environmental-protection-agency"
+        ],
+        "behoerden_namen": [
+          "Environmental Protection Agency"
+        ],
+        "url": "https://www.federalregister.gov/documents/2026/09/17/2026-19072/rescission-of-the-greenhouse-gas-findings-for-fossil-fuel-fired-power-plants-and-repeal-of",
+        "zusammenfassung": "In this action, the U.S. Environmental Protection Agency (EPA) is supplementing its proposal to repeal all greenhouse gas (GHG) emission standards for fossil fuel-fired electric generating units (EGUs) to effectuate the best reading of Clean Air Act (CAA) section 111. We propose that CAA section 111 does not authorize the EPA to regulate emissions from power plants in response to global climate change concerns. For the multiple and independent reasons described herein, this additional rationale would also require rescinding the Administrator's contrary findings and determinations in 2015 and r",
+        "begriffe": [
+          "critical mineral"
+        ],
+        "achsen": [],
+        "gewichtig": false,
+        "neu": false
+      },
+      {
+        "nummer": "2026-19071",
+        "titel": "Partial Repeal of the Carbon Pollution Standards for Fossil Fuel-Fired Electric Generating Units",
+        "datum": "2026-09-17",
+        "art": "Rule",
+        "behoerden": [
+          "environmental-protection-agency"
+        ],
+        "behoerden_namen": [
+          "Environmental Protection Agency"
+        ],
+        "url": "https://www.federalregister.gov/documents/2026/09/17/2026-19071/partial-repeal-of-the-carbon-pollution-standards-for-fossil-fuel-fired-electric-generating-units",
+        "zusammenfassung": "In this final rule, the U.S. Environmental Protection Agency (EPA) is repealing most provisions of the 2024 Carbon Pollution Standards for greenhouse gas (GHG) emissions from fossil fuel-fired electric generating units (EGUs) based on a reevaluation of the best system of emission reduction for the relevant subcategories. Specifically, the EPA is repealing the emission guidelines for existing fossil fuel-fired steam generating units, the carbon capture and sequestration/storage (CCS)-based standards for coal-fired steam generating units undertaking a large modification, and the CCS-based standa",
+        "begriffe": [
+          "critical mineral"
+        ],
+        "achsen": [],
+        "gewichtig": false,
+        "neu": false
+      },
+      {
+        "nummer": "2026-19048",
+        "titel": "Agency Information Collection Activities; Submission to the Office of Management and Budget for Review and Approval; Regional Climate Adaptation Science Centers (CASCs)",
+        "datum": "2026-09-17",
+        "art": "Notice",
+        "behoerden": [
+          "interior-department",
+          "geological-survey"
+        ],
+        "behoerden_namen": [
+          "Interior Department",
+          "Geological Survey"
+        ],
+        "url": "https://www.federalregister.gov/documents/2026/09/17/2026-19048/agency-information-collection-activities-submission-to-the-office-of-management-and-budget-for",
+        "zusammenfassung": "In accordance with the Paperwork Reduction Act (PRA) of 1995, the U.S. Geological Survey (USGS) is proposing to renew an information collection authorization. Projects supported under this cooperative agreement should advance Administration priorities, including, but not limited to, American energy dominance, critical mineral development, water security, infrastructure resilience, and natural hazard preparedness. Research and activities may incorporate scientific expertise in areas such as hydrology, geology, geospatial science, biosecurity, and near-earth space science, including extreme even",
+        "begriffe": [
+          "critical mineral"
+        ],
+        "achsen": [],
+        "gewichtig": false,
+        "neu": false
+      },
+      {
+        "nummer": "2026-18947",
+        "titel": "Crystalline Silicon Photovoltaic Cells, Whether or Not Assembled Into Modules, From India: Final Affirmative Countervailing Duty Determination and the Final Affirmative Critical Circumstances Determination, in Part",
+        "datum": "2026-09-16",
+        "art": "Notice",
+        "behoerden": [
+          "commerce-department",
+          "international-trade-administration"
+        ],
+        "behoerden_namen": [
+          "Commerce Department",
+          "International Trade Administration"
+        ],
+        "url": "https://www.federalregister.gov/documents/2026/09/16/2026-18947/crystalline-silicon-photovoltaic-cells-whether-or-not-assembled-into-modules-from-india-final",
+        "zusammenfassung": "The U.S. Department of Commerce (Commerce) determines that countervailable subsidies are being provided to producers and exporters of crystalline silicon photovoltaic cells, whether or not assembled into modules (solar cells) from India. The period of investigation is April 1, 2024, through March 31, 2025.",
+        "begriffe": [
+          "gallium"
+        ],
+        "achsen": [
+          "chip"
+        ],
+        "gewichtig": false,
+        "neu": false
+      },
+      {
+        "nummer": "2026-18945",
+        "titel": "Crystalline Silicon Photovoltaic Cells, Whether or Not Assembled Into Modules From India: Final Affirmative Determination of Sales at Less Than Fair Value, and Final Affirmative Determination of Critical Circumstances, In Part",
+        "datum": "2026-09-16",
+        "art": "Notice",
+        "behoerden": [
+          "commerce-department",
+          "international-trade-administration"
+        ],
+        "behoerden_namen": [
+          "Commerce Department",
+          "International Trade Administration"
+        ],
+        "url": "https://www.federalregister.gov/documents/2026/09/16/2026-18945/crystalline-silicon-photovoltaic-cells-whether-or-not-assembled-into-modules-from-india-final",
+        "zusammenfassung": "The U.S. Department of Commerce (Commerce) determines that crystalline silicon photovoltaic cells, whether or not assembled into modules (solar cells) from India are being, or are likely to be, sold in the United States at less than fair value (LTFV). The period of investigation (POI) is July 1, 2024, through June 30, 2025.",
+        "begriffe": [
+          "gallium"
+        ],
+        "achsen": [
+          "chip"
+        ],
+        "gewichtig": false,
+        "neu": false
+      },
+      {
+        "nummer": "2026-18942",
+        "titel": "Crystalline Silicon Photovoltaic Cells, Whether or Not Assembled Into Modules From the Lao People's Democratic Republic: Final Affirmative Countervailing Duty Determination and Final Affirmative Determination of Critical Circumstances, in Part",
+        "datum": "2026-09-16",
+        "art": "Notice",
+        "behoerden": [
+          "commerce-department",
+          "international-trade-administration"
+        ],
+        "behoerden_namen": [
+          "Commerce Department",
+          "International Trade Administration"
+        ],
+        "url": "https://www.federalregister.gov/documents/2026/09/16/2026-18942/crystalline-silicon-photovoltaic-cells-whether-or-not-assembled-into-modules-from-the-lao-peoples",
+        "zusammenfassung": "The U.S. Department of Commerce (Commerce) determines that countervailable subsidies are being provided to producers and exporters of crystalline silicon photovoltaic cells, whether or not assembled into modules (solar cells), from the Lao People's Democratic Republic (Laos). The period of investigation (POI) is January 1, 2024, through December 31, 2024.",
+        "begriffe": [
+          "gallium"
+        ],
+        "achsen": [
+          "chip"
+        ],
+        "gewichtig": false,
+        "neu": false
+      },
+      {
+        "nummer": "2026-18941",
+        "titel": "Crystalline Silicon Photovoltaic Cells, Whether or Not Assembled Into Modules, From the Lao People's Democratic Republic: Final Affirmative Determination of Sales at Less Than Fair Value and Final Affirmative Determination of Critical Circumstances, in Part",
+        "datum": "2026-09-16",
+        "art": "Notice",
+        "behoerden": [
+          "commerce-department",
+          "international-trade-administration"
+        ],
+        "behoerden_namen": [
+          "Commerce Department",
+          "International Trade Administration"
+        ],
+        "url": "https://www.federalregister.gov/documents/2026/09/16/2026-18941/crystalline-silicon-photovoltaic-cells-whether-or-not-assembled-into-modules-from-the-lao-peoples",
+        "zusammenfassung": "The U.S. Department of Commerce (Commerce) determines that crystalline silicon photovoltaic cells, whether or not assembled into modules (solar cells), from the Lao People's Democratic Republic (Laos) are being, or are likely to be, sold in the United States at less than fair value (LTFV). The period of investigation (POI) is January 1, 2025, through June 30, 2025.",
+        "begriffe": [
+          "gallium"
+        ],
+        "achsen": [
+          "chip"
+        ],
+        "gewichtig": false,
+        "neu": false
+      },
+      {
+        "nummer": "2026-18940",
+        "titel": "Crystalline Silicon Photovoltaic Cells, Whether or Not Assembled Into Modules From Indonesia: Final Affirmative Countervailing Duty Determination and Final Affirmative Determination of Critical Circumstances, in Part",
+        "datum": "2026-09-16",
+        "art": "Notice",
+        "behoerden": [
+          "commerce-department",
+          "international-trade-administration"
+        ],
+        "behoerden_namen": [
+          "Commerce Department",
+          "International Trade Administration"
+        ],
+        "url": "https://www.federalregister.gov/documents/2026/09/16/2026-18940/crystalline-silicon-photovoltaic-cells-whether-or-not-assembled-into-modules-from-indonesia-final",
+        "zusammenfassung": "The U.S. Department of Commerce (Commerce) determines that countervailable subsidies are being provided to producers and exporters of crystalline silicon photovoltaic cells, whether or not assembled into modules (solar cells) from Indonesia during the period of investigation (POI), January 1, 2024, through December 31, 2024.",
+        "begriffe": [
+          "gallium"
+        ],
+        "achsen": [
+          "chip"
+        ],
+        "gewichtig": false,
+        "neu": false
+      },
+      {
+        "nummer": "2026-18939",
+        "titel": "Crystalline Silicon Photovoltaic Cells, Whether or Not Assembled Into Modules, From Indonesia: Final Affirmative Determination of Sales at Less Than Fair Value and Final Affirmative Determination of Critical Circumstances",
+        "datum": "2026-09-16",
+        "art": "Notice",
+        "behoerden": [
+          "commerce-department",
+          "international-trade-administration"
+        ],
+        "behoerden_namen": [
+          "Commerce Department",
+          "International Trade Administration"
+        ],
+        "url": "https://www.federalregister.gov/documents/2026/09/16/2026-18939/crystalline-silicon-photovoltaic-cells-whether-or-not-assembled-into-modules-from-indonesia-final",
+        "zusammenfassung": "The U.S. Department of Commerce (Commerce) determines that imports of crystalline silicon photovoltaic cells, whether or not assembled into modules (solar cells) from Indonesia are being, or are likely to be, sold in the United States at less than fair value (LTFV). The period of investigation (POI) is July 1, 2024, through June 30, 2025.",
+        "begriffe": [
+          "gallium"
+        ],
+        "achsen": [
+          "chip"
+        ],
+        "gewichtig": false,
+        "neu": false
+      },
+      {
+        "nummer": "2026-18935",
+        "titel": "UChicago Argonne LLC. et al.; Notice of Decision on Application for Duty-Free Entry of Scientific Instruments",
+        "datum": "2026-09-16",
+        "art": "Notice",
+        "behoerden": [
+          "commerce-department",
+          "international-trade-administration"
+        ],
+        "behoerden_namen": [
+          "Commerce Department",
+          "International Trade Administration"
+        ],
+        "url": "https://www.federalregister.gov/documents/2026/09/16/2026-18935/uchicago-argonne-llc-et-al-notice-of-decision-on-application-for-duty-free-entry-of-scientific",
+        "zusammenfassung": "",
+        "begriffe": [
+          "germanium"
+        ],
+        "achsen": [
+          "chip"
+        ],
+        "gewichtig": false,
+        "neu": false
+      },
+      {
+        "nummer": "2026-18496",
+        "titel": "Certain Cased Pencils From the People's Republic of China: Preliminary Results of Antidumping Duty Administrative Review; 2024-2025",
+        "datum": "2026-09-10",
+        "art": "Notice",
+        "behoerden": [
+          "commerce-department",
+          "international-trade-administration"
+        ],
+        "behoerden_namen": [
+          "Commerce Department",
+          "International Trade Administration"
+        ],
+        "url": "https://www.federalregister.gov/documents/2026/09/10/2026-18496/certain-cased-pencils-from-the-peoples-republic-of-china-preliminary-results-of-antidumping-duty",
+        "zusammenfassung": "The U.S. Department of Commerce (Commerce) preliminarily determines that producers/exporters subject to this review made sales of subject merchandise at less than normal value during the period of review (POR), December 1, 2024, through November 30, 2025. Interested parties are invited to comment on these preliminary results of review.",
+        "begriffe": [
+          "graphite"
+        ],
+        "achsen": [
+          "batterie"
+        ],
+        "gewichtig": false,
+        "neu": false
+      },
+      {
+        "nummer": "2026-18260",
+        "titel": "Certain Foreign-Fabricated Semiconductor Devices, Products Containing the Same, and Components Thereof; Notice of a Commission Determination Not To Review an Initial Determination Granting a Joint Motion To Terminate the Investigation",
+        "datum": "2026-09-08",
+        "art": "Notice",
+        "behoerden": [
+          "international-trade-commission"
+        ],
+        "behoerden_namen": [
+          "International Trade Commission"
+        ],
+        "url": "https://www.federalregister.gov/documents/2026/09/08/2026-18260/certain-foreign-fabricated-semiconductor-devices-products-containing-the-same-and-components-thereof",
+        "zusammenfassung": "Notice is hereby given that the U.S. International Trade Commission has determined not to review an initial determination (\"ID\") (Order No. 77) of the presiding administrative law judge (\"ALJ\") granting a joint motion to terminate the investigation in its entirety based on settlement and to limit service of the settlement agreement.",
+        "begriffe": [
+          "semiconductor manufacturing"
+        ],
+        "achsen": [
+          "chip"
+        ],
+        "gewichtig": false,
+        "neu": false
+      },
+      {
+        "nummer": "2026-17819",
+        "titel": "Perfluoroalkoxy Alkane From India: Initiation of Less-Than-Fair-Value Investigation",
+        "datum": "2026-09-01",
+        "art": "Notice",
+        "behoerden": [
+          "commerce-department",
+          "international-trade-administration"
+        ],
+        "behoerden_namen": [
+          "Commerce Department",
+          "International Trade Administration"
+        ],
+        "url": "https://www.federalregister.gov/documents/2026/09/01/2026-17819/perfluoroalkoxy-alkane-from-india-initiation-of-less-than-fair-value-investigation",
+        "zusammenfassung": "",
+        "begriffe": [
+          "graphite"
+        ],
+        "achsen": [
+          "batterie"
+        ],
+        "gewichtig": false,
+        "neu": false
+      },
+      {
+        "nummer": "2026-17817",
+        "titel": "Perfluoroalkoxy Alkane From India: Initiation of Countervailing Duty Investigation",
+        "datum": "2026-09-01",
+        "art": "Notice",
+        "behoerden": [
+          "commerce-department",
+          "international-trade-administration"
+        ],
+        "behoerden_namen": [
+          "Commerce Department",
+          "International Trade Administration"
+        ],
+        "url": "https://www.federalregister.gov/documents/2026/09/01/2026-17817/perfluoroalkoxy-alkane-from-india-initiation-of-countervailing-duty-investigation",
+        "zusammenfassung": "",
+        "begriffe": [
+          "graphite"
+        ],
+        "achsen": [
+          "batterie"
+        ],
+        "gewichtig": false,
+        "neu": false
+      },
+      {
+        "nummer": "2026-17772",
+        "titel": "Light-Walled Rectangular Pipe and Tube From the People's Republic of China, Mexico, the Republic of Korea, and the Republic of Türkiye: Continuation of Antidumping Duty Orders and Countervailing Duty Order",
+        "datum": "2026-09-01",
+        "art": "Notice",
+        "behoerden": [
+          "commerce-department",
+          "international-trade-administration"
+        ],
+        "behoerden_namen": [
+          "Commerce Department",
+          "International Trade Administration"
+        ],
+        "url": "https://www.federalregister.gov/documents/2026/09/01/2026-17772/light-walled-rectangular-pipe-and-tube-from-the-peoples-republic-of-china-mexico-the-republic-of",
+        "zusammenfassung": "As a result of the determinations by the U.S. Department of Commerce (Commerce) and the U.S. International Trade Commission (ITC) that revocation of the antidumping duty (AD) orders and countervailing duty (CVD) order on light-walled rectangular pipe and tube (light- walled pipe and tube) from the People's Republic of China (China) (AD/ CVD), Mexico (AD), the Republic of Korea (Korea) (AD) and the Republic of T[uuml]rkiye (T[uuml]rkiye) (AD) would likely lead to the continuation or recurrence of dumping, countervailable subsidies, and material injury to an industry in the United States, Commer",
+        "begriffe": [
+          "tungsten"
+        ],
+        "achsen": [
+          "werkzeug"
+        ],
+        "gewichtig": false,
+        "neu": false
+      },
+      {
+        "nummer": "2026-17482",
+        "titel": "Certain New Chemicals; Receipt and Status Information for March, May, and June 2026",
+        "datum": "2026-08-27",
+        "art": "Notice",
+        "behoerden": [
+          "environmental-protection-agency"
+        ],
+        "behoerden_namen": [
+          "Environmental Protection Agency"
+        ],
+        "url": "https://www.federalregister.gov/documents/2026/08/27/2026-17482/certain-new-chemicals-receipt-and-status-information-for-march-may-and-june-2026",
+        "zusammenfassung": "This document announces the Agency's receipt of new chemical submissions under the Toxic Substances Control Act (TSCA), including information about the receipt of a Premanufacture Notice (PMN), Significant New Use Notice (SNUN), Microbial Commercial Activity Notice (MCAN), and an amendment to a previously submitted notice; test information; a biotechnology exemption application; an application for a test marketing exemption (TME); and a notice of commencement of manufacture (defined by statute to include import) (NOC) for a new chemical substance. This document also provides a periodic status ",
+        "begriffe": [
+          "rare earth"
+        ],
+        "achsen": [
+          "magnet"
+        ],
+        "gewichtig": false,
+        "neu": false
+      },
+      {
+        "nummer": "2026-17478",
+        "titel": "trans-1,2-Dichloroethylene Draft Risk Evaluation Under the Toxic Substances Control Act (TSCA); Notice of Availability and Request for Comment",
+        "datum": "2026-08-27",
+        "art": "Notice",
+        "behoerden": [
+          "environmental-protection-agency"
+        ],
+        "behoerden_namen": [
+          "Environmental Protection Agency"
+        ],
+        "url": "https://www.federalregister.gov/documents/2026/08/27/2026-17478/trans-12-dichloroethylene-draft-risk-evaluation-under-the-toxic-substances-control-act-tsca-notice",
+        "zusammenfassung": "The Environmental Protection Agency (EPA or Agency) is announcing the availability of and seeking public comment on the draft risk evaluation under the Toxic Substances Control Act (TSCA) for trans-1,2-dichloroethylene. The purpose of risk evaluations under TSCA is to determine whether a chemical substance presents an unreasonable risk of injury to health or the environment under the conditions of use (COUs), including unreasonable risk to potentially exposed or susceptible subpopulations identified as relevant to the risk evaluation by EPA, and without consideration of costs or non-risk facto",
+        "begriffe": [
+          "semiconductor manufacturing"
+        ],
+        "achsen": [
+          "chip"
+        ],
+        "gewichtig": false,
+        "neu": false
+      }
+    ]
+  },
+  "stoerung": {
+    "erdbeben": [],
+    "erdbeben_gesamt": 8,
+    "starkregen_gemessen": [],
+    "starkregen_vorhergesagt": [],
+    "regen_hoechst_mm": {
+      "lengshuijiang": 39.3,
+      "hechi": 33.6,
+      "lincang": 18.9,
+      "qujing": 22.5,
+      "pingguo": 26.7,
+      "zibo": 0.9,
+      "baotou": 2.8,
+      "ganzhou": 16.5,
+      "jixi": 9.9
+    },
+    "trocken": {
+      "lincang": {
+        "von": "2026-06-23",
+        "bis": "2026-09-20",
+        "summe_mm": 820,
+        "normal_mm": 783,
+        "urteil": "normal",
+        "anteil": 1.05,
+        "trocken": false
+      },
+      "qujing": {
+        "urteil": "Normal wird geladen",
+        "jahre": 5,
+        "von": 30
+      }
+    },
+    "gelb_tage": 30
+  },
+  "preise": {
+    "PPTA": {
+      "name": "Perpetua Resources",
+      "achse": "chip",
+      "rolle": "kandidat",
+      "hinweis": "Antimon-Projekt Stibnite in Idaho, noch ohne Förderung",
+      "letzter": "2026-09-25",
+      "schluss": 23.49,
+      "alter_tage": 1,
+      "r_kurz": 0.0108,
+      "vorsprung_kurz": 0.014,
+      "r_lang": -0.1028,
+      "vorsprung_lang": 0.0165,
+      "urteil": "schläft",
+      "markt_schlaeft": true
+    },
+    "UAMY": {
+      "name": "United States Antimony",
+      "achse": "chip",
+      "rolle": "kandidat",
+      "hinweis": "kleiner Antimon-Verarbeiter in den USA und Mexiko",
+      "letzter": "2026-09-25",
+      "schluss": 4.5,
+      "alter_tage": 1,
+      "r_kurz": -0.0281,
+      "vorsprung_kurz": -0.0249,
+      "r_lang": -0.1279,
+      "vorsprung_lang": -0.0086,
+      "urteil": "schläft",
+      "markt_schlaeft": true
+    },
+    "MP": {
+      "name": "MP Materials",
+      "achse": "magnet",
+      "rolle": "beobachtung",
+      "hinweis": "seltene Erden USA; seit 22.06.2026 selbst auf Chinas Exportkontrollliste",
+      "letzter": "2026-09-25",
+      "schluss": 48.83,
+      "alter_tage": 1,
+      "r_kurz": 0.0332,
+      "vorsprung_kurz": 0.0364,
+      "r_lang": -0.1728,
+      "vorsprung_lang": -0.0535,
+      "urteil": "schläft",
+      "markt_schlaeft": true
+    },
+    "LYC.AX": {
+      "name": "Lynas Rare Earths",
+      "achse": "magnet",
+      "rolle": "beobachtung",
+      "hinweis": "größter Produzent seltener Erden außerhalb Chinas",
+      "letzter": "2026-09-25",
+      "schluss": 14.22,
+      "alter_tage": 1,
+      "r_kurz": -0.0091,
+      "vorsprung_kurz": -0.0058,
+      "r_lang": -0.1255,
+      "vorsprung_lang": -0.0062,
+      "urteil": "schläft",
+      "markt_schlaeft": true
+    }
+  },
+  "vergleich": {
+    "ticker": "XME",
+    "name": "Metall- und Bergbau-Aktien USA (Vergleichsmaßstab)"
+  },
+  "rueckblick": {
+    "PPTA": {
+      "name": "Perpetua Resources",
+      "achse": "chip",
+      "rolle": "kandidat",
+      "erster_kurs": "2021-02-18",
+      "urteil": "bestanden",
+      "gruppen": {
+        "verschaerfung_eigene": {
+          "n": 3,
+          "offen": 0,
+          "v0": 0.1183,
+          "v5": 0.2129,
+          "v20": 0.235,
+          "v60": 0.0976,
+          "v_vorlauf": -0.1347,
+          "treffer": 2,
+          "trefferquote": 0.67
+        },
+        "verschaerfung_alle": {
+          "n": 10,
+          "offen": 0,
+          "v0": 0.0289,
+          "v5": 0.068,
+          "v20": 0.0326,
+          "v60": 0.0418,
+          "v_vorlauf": -0.0107,
+          "treffer": 3,
+          "trefferquote": 0.3
+        },
+        "lockerung_eigene": {
+          "n": 2,
+          "offen": 0,
+          "v0": 0.0503,
+          "v5": 0.0054,
+          "v20": 0.1171,
+          "v60": 0.0512,
+          "v_vorlauf": 0.0221,
+          "treffer": 0,
+          "trefferquote": 0.0
+        },
+        "lockerung_alle": {
+          "n": 3,
+          "offen": 0,
+          "v0": 0.0474,
+          "v5": 0.0126,
+          "v20": 0.1226,
+          "v60": 0.0256,
+          "v_vorlauf": 0.0083,
+          "treffer": 0,
+          "trefferquote": 0.0
+        },
+        "gegenseite_eigene": {
+          "n": 3,
+          "offen": 0,
+          "v0": -0.0357,
+          "v5": 0.0653,
+          "v20": 0.07,
+          "v60": 0.0228,
+          "v_vorlauf": -0.1104,
+          "treffer": 1,
+          "trefferquote": 0.33
+        },
+        "gegenseite_alle": {
+          "n": 5,
+          "offen": 0,
+          "v0": -0.028,
+          "v5": 0.0588,
+          "v20": 0.141,
+          "v60": 0.0264,
+          "v_vorlauf": -0.0115,
+          "treffer": 3,
+          "trefferquote": 0.6
+        }
+      }
+    },
+    "UAMY": {
+      "name": "United States Antimony",
+      "achse": "chip",
+      "rolle": "kandidat",
+      "erster_kurs": "2008-01-02",
+      "urteil": "bestanden",
+      "gruppen": {
+        "verschaerfung_eigene": {
+          "n": 3,
+          "offen": 0,
+          "v0": 0.2034,
+          "v5": 0.5739,
+          "v20": 0.9127,
+          "v60": 0.5427,
+          "v_vorlauf": 0.0715,
+          "treffer": 3,
+          "trefferquote": 1.0
+        },
+        "verschaerfung_alle": {
+          "n": 10,
+          "offen": 0,
+          "v0": 0.0699,
+          "v5": 0.2262,
+          "v20": 0.2533,
+          "v60": 0.1348,
+          "v_vorlauf": 0.1433,
+          "treffer": 4,
+          "trefferquote": 0.4
+        },
+        "lockerung_eigene": {
+          "n": 2,
+          "offen": 0,
+          "v0": -0.0428,
+          "v5": -0.1138,
+          "v20": -0.2755,
+          "v60": -0.2155,
+          "v_vorlauf": -0.0816,
+          "treffer": 2,
+          "trefferquote": 1.0
+        },
+        "lockerung_alle": {
+          "n": 3,
+          "offen": 0,
+          "v0": 0.022,
+          "v5": -0.0635,
+          "v20": -0.2432,
+          "v60": -0.2142,
+          "v_vorlauf": -0.1348,
+          "treffer": 3,
+          "trefferquote": 1.0
+        },
+        "gegenseite_eigene": {
+          "n": 3,
+          "offen": 0,
+          "v0": -0.0347,
+          "v5": 0.4035,
+          "v20": 0.421,
+          "v60": 0.2183,
+          "v_vorlauf": 0.0297,
+          "treffer": 1,
+          "trefferquote": 0.33
+        },
+        "gegenseite_alle": {
+          "n": 5,
+          "offen": 0,
+          "v0": -0.014,
+          "v5": 0.2958,
+          "v20": 0.431,
+          "v60": 0.0429,
+          "v_vorlauf": 0.2212,
+          "treffer": 3,
+          "trefferquote": 0.6
+        }
+      }
+    },
+    "MP": {
+      "name": "MP Materials",
+      "achse": "magnet",
+      "rolle": "beobachtung",
+      "erster_kurs": "2020-06-22",
+      "urteil": "nicht bestanden",
+      "gruppen": {
+        "verschaerfung_eigene": {
+          "n": 5,
+          "offen": 0,
+          "v0": 0.018,
+          "v5": 0.0208,
+          "v20": -0.0993,
+          "v60": -0.162,
+          "v_vorlauf": -0.0102,
+          "treffer": 0,
+          "trefferquote": 0.0
+        },
+        "verschaerfung_alle": {
+          "n": 10,
+          "offen": 0,
+          "v0": 0.0311,
+          "v5": 0.0231,
+          "v20": -0.0393,
+          "v60": -0.0378,
+          "v_vorlauf": 0.0128,
+          "treffer": 2,
+          "trefferquote": 0.2
+        },
+        "lockerung_eigene": {
+          "n": 2,
+          "offen": 0,
+          "v0": 0.0642,
+          "v5": 0.0003,
+          "v20": 0.0373,
+          "v60": -0.2252,
+          "v_vorlauf": -0.1253,
+          "treffer": 0,
+          "trefferquote": 0.0
+        },
+        "lockerung_alle": {
+          "n": 3,
+          "offen": 0,
+          "v0": 0.0685,
+          "v5": 0.0033,
+          "v20": 0.0107,
+          "v60": -0.2381,
+          "v_vorlauf": -0.1433,
+          "treffer": 0,
+          "trefferquote": 0.0
+        },
+        "gegenseite_eigene": {
+          "n": 2,
+          "offen": 0,
+          "v0": -0.0156,
+          "v5": 0.0037,
+          "v20": -0.0739,
+          "v60": -0.131,
+          "v_vorlauf": -0.0408,
+          "treffer": 0,
+          "trefferquote": 0.0
+        },
+        "gegenseite_alle": {
+          "n": 5,
+          "offen": 0,
+          "v0": -0.007,
+          "v5": -0.0108,
+          "v20": -0.0792,
+          "v60": -0.086,
+          "v_vorlauf": -0.0197,
+          "treffer": 0,
+          "trefferquote": 0.0
+        }
+      }
+    },
+    "LYC.AX": {
+      "name": "Lynas Rare Earths",
+      "achse": "magnet",
+      "rolle": "beobachtung",
+      "erster_kurs": "2008-01-02",
+      "urteil": "nicht bestanden",
+      "gruppen": {
+        "verschaerfung_eigene": {
+          "n": 5,
+          "offen": 0,
+          "v0": 0.0269,
+          "v5": 0.0568,
+          "v20": -0.0399,
+          "v60": -0.0806,
+          "v_vorlauf": -0.0277,
+          "treffer": 1,
+          "trefferquote": 0.2
+        },
+        "verschaerfung_alle": {
+          "n": 10,
+          "offen": 0,
+          "v0": 0.0042,
+          "v5": 0.0565,
+          "v20": 0.0035,
+          "v60": -0.0087,
+          "v_vorlauf": -0.049,
+          "treffer": 3,
+          "trefferquote": 0.3
+        },
+        "lockerung_eigene": {
+          "n": 2,
+          "offen": 0,
+          "v0": -0.0063,
+          "v5": 0.0013,
+          "v20": -0.0226,
+          "v60": -0.1996,
+          "v_vorlauf": -0.1914,
+          "treffer": 0,
+          "trefferquote": 0.0
+        },
+        "lockerung_alle": {
+          "n": 3,
+          "offen": 0,
+          "v0": 0.0058,
+          "v5": 0.0487,
+          "v20": -0.0339,
+          "v60": -0.2176,
+          "v_vorlauf": -0.2092,
+          "treffer": 0,
+          "trefferquote": 0.0
+        },
+        "gegenseite_eigene": {
+          "n": 2,
+          "offen": 0,
+          "v0": -0.0299,
+          "v5": 0.1065,
+          "v20": 0.1004,
+          "v60": -0.2235,
+          "v_vorlauf": 0.0403,
+          "treffer": 1,
+          "trefferquote": 0.5
+        },
+        "gegenseite_alle": {
+          "n": 5,
+          "offen": 0,
+          "v0": -0.01,
+          "v5": 0.0624,
+          "v20": 0.0763,
+          "v60": -0.107,
+          "v_vorlauf": -0.0367,
+          "treffer": 2,
+          "trefferquote": 0.4
+        }
+      }
+    }
+  },
+  "standorte": {
+    "lengshuijiang": "Lengshuijiang in Hunan",
+    "hechi": "Hechi in Guangxi",
+    "lincang": "Lincang in Yunnan",
+    "qujing": "Qujing in Yunnan",
+    "pingguo": "Pingguo in Guangxi",
+    "zibo": "Zibo in Shandong",
+    "baotou": "Baotou in der Inneren Mongolei",
+    "ganzhou": "Ganzhou in Jiangxi",
+    "jixi": "Jixi in Heilongjiang"
+  },
+  "quellen": {
+    "bundesregister": {
+      "name": "US-Bundesregister (Federal Register), Suche",
+      "status": "ok",
+      "meldung": null
+    },
+    "usgs_beben": {
+      "name": "USGS · Erdbeben",
+      "status": "ok",
+      "meldung": null
+    },
+    "openmeteo_vorhersage": {
+      "name": "Open-Meteo · Regen der letzten Tage und Vorhersage",
+      "status": "ok",
+      "meldung": null
+    },
+    "openmeteo": {
+      "name": "Open-Meteo · ERA5-Reanalyse (Regen, Wind)",
+      "status": "ok",
+      "meldung": null
+    },
+    "yahoo": {
+      "name": "Yahoo Finance über yfinance (Kurse, Volumen)",
+      "status": "ok",
+      "meldung": null
+    }
+  }
+}

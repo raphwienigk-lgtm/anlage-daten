@@ -1,0 +1,26 @@
+Stand: 26.09.2026, 19:38
+Teil 1 von 1
+
+Der Metall-Wächter China-Ausfuhr, Datenteil für Samstag, den sechsundzwanzigsten September. Stufen je Achse aus Fristen, US-Maßnahmen und Störungen an den Standorten. Rot setzt nur der Wächter in der Cloud, wenn eine Meldung aus Peking dazukommt. Die Wucht sagt, wie stark China ein Metall beherrscht und wie schwer es zu ersetzen ist, von null bis eins.
+
+Chip-Achse, der Pilot: Grün. Wucht null Komma acht acht, getragen von Gallium.
+
+Magnet-Achse: Grün. Wucht null Komma acht eins, getragen von den seltenen Erden.
+
+Werkzeug-Achse: Grün. Wucht null Komma sechs vier, getragen von Wolfram.
+
+Batterie-Achse: Grün. Wucht null Komma fünf vier, getragen von Graphit.
+
+Fristen. Die Aussetzung der Oktober-Maßnahmen für seltene Erden, Graphit-Anoden und Batteriematerial (Bekanntmachung Nummer siebzig) läuft am zehnten November aus, in fünfundvierzig Tagen. Stand: USA melden am vierundzwanzigsten September zweitausendsechsundzwanzig eine Verlängerung des Waffenstillstands bis zum zehnten Januar zweitausendsiebenundzwanzig; die formelle Bekanntmachung aus Peking steht aus. Die Aussetzung des Ausfuhrverbots in die USA für Gallium, Germanium, Antimon und superharte Materialien (Bekanntmachung Nummer zweiundsiebzig) läuft am siebenundzwanzigsten November aus, in zweiundsechzig Tagen. Stand: offen; die Meldungen vom vierundzwanzigsten September zweitausendsechsundzwanzig nennen diese Frist nicht.
+
+Gegenseite. In den letzten dreißig Tagen stehen einundzwanzig Einträge zu den Suchbegriffen im US-Bundesregister, davon keiner gewichtig.
+
+Störungen an den Förder- und Hüttenstandorten. Kein Erdbeben in Reichweite der Standorte in den letzten dreißig Tagen. Kein Starkregen gemessen oder vorhergesagt. Lincang in Yunnan: in neunzig Tagen einhundertfünf Prozent des normalen Regens. Qujing in Yunnan: Das Regen-Normal wird noch geladen, bisher fünf von dreißig Jahren.
+
+Preisprobe gegen Metall- und Bergbau-Aktien USA (Vergleichsmaßstab). Perpetua Resources ist in fünf Handelstagen um ein Prozent gestiegen, in zwanzig um zehn Prozent gefallen, gegen den Vergleich zwei Prozentpunkte vorn. Der Markt schläft noch. United States Antimony ist in fünf Handelstagen um drei Prozent gefallen, in zwanzig um dreizehn Prozent gefallen, gegen den Vergleich ein Prozentpunkt zurück. Der Markt schläft noch. MP Materials ist in fünf Handelstagen um drei Prozent gestiegen, in zwanzig um siebzehn Prozent gefallen, gegen den Vergleich fünf Prozentpunkte zurück. Der Markt schläft noch. Lynas Rare Earths ist in fünf Handelstagen um ein Prozent gefallen, in zwanzig um dreizehn Prozent gefallen, gegen den Vergleich ein Prozentpunkt zurück. Der Markt schläft noch.
+
+Ereignis-Rückblick: Vorsprung gegen den Vergleich zwanzig Handelstage nach der Ankündigung. Perpetua Resources: nach Verschärfungen auf der eigenen Achse in drei Fällen im Mittel vierundzwanzig Prozentpunkte vorn, Treffer in zwei; nach Lockerungen in zwei Fällen im Mittel zwölf Prozentpunkte vorn; nach US-Maßnahmen in drei Fällen im Mittel sieben Prozentpunkte vorn, Treffer in einem. In den zwanzig Tagen davor lag der Wert dreizehn Prozentpunkte zurück. Nach der vorläufigen Regel bestanden. United States Antimony: nach Verschärfungen auf der eigenen Achse in drei Fällen im Mittel einundneunzig Prozentpunkte vorn, Treffer in drei; nach Lockerungen in zwei Fällen im Mittel achtundzwanzig Prozentpunkte zurück, Treffer in zwei; nach US-Maßnahmen in drei Fällen im Mittel zweiundvierzig Prozentpunkte vorn, Treffer in einem. In den zwanzig Tagen davor lag der Wert sieben Prozentpunkte vorn. Nach der vorläufigen Regel bestanden. MP Materials: nach Verschärfungen auf der eigenen Achse in fünf Fällen im Mittel zehn Prozentpunkte zurück; nach Lockerungen in zwei Fällen im Mittel vier Prozentpunkte vorn; nach US-Maßnahmen in zwei Fällen im Mittel sieben Prozentpunkte zurück. In den zwanzig Tagen davor lag der Wert ein Prozentpunkt zurück. Nach der vorläufigen Regel nicht bestanden. Lynas Rare Earths: nach Verschärfungen auf der eigenen Achse in fünf Fällen im Mittel vier Prozentpunkte zurück, Treffer in einem; nach Lockerungen in zwei Fällen im Mittel zwei Prozentpunkte zurück; nach US-Maßnahmen in zwei Fällen im Mittel zehn Prozentpunkte vorn, Treffer in einem. In den zwanzig Tagen davor lag der Wert drei Prozentpunkte zurück. Nach der vorläufigen Regel nicht bestanden.
+
+Alle Quellen waren erreichbar.
+
+Die Stufen sind vorläufig, bis der Rückblick bestanden ist. Das ist eine Denkhilfe, keine Anlageberatung.
