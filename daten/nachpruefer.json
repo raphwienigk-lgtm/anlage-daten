@@ -1,0 +1,45 @@
+{
+  "stand": "2026-09-26T13:05:58+02:00",
+  "version": "0.1.0",
+  "hinweis": "Denkhilfe, keine Anlageberatung.",
+  "woche": {
+    "von": "2026-09-20",
+    "bis": "2026-09-26"
+  },
+  "laufkontrolle": {
+    "stand_datum": null,
+    "zustand": null,
+    "hinweise": [],
+    "tage_mit_lauf": 0,
+    "fehlende_tage": [
+      "2026-09-20",
+      "2026-09-21",
+      "2026-09-22",
+      "2026-09-23",
+      "2026-09-24",
+      "2026-09-25",
+      "2026-09-26"
+    ]
+  },
+  "rohstoffe": {
+    "palmoel": {
+      "name": "Palmöl",
+      "ampel": {
+        "farbe": null,
+        "seit": null,
+        "wechsel": []
+      },
+      "positionen": [],
+      "signale": {
+        "anzahl": 0,
+        "treffer": 0,
+        "fehlalarme": 0,
+        "offen": 0,
+        "liste": []
+      },
+      "rueckblick": null,
+      "vorschlag_faellig": false,
+      "mindest_signale": 5
+    }
+  }
+}
