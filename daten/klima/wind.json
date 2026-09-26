@@ -1,0 +1,12 @@
+{
+  "punkte": {},
+  "orte": {},
+  "zeitraum": "1991–2020",
+  "modell": "era5",
+  "monate": [
+    5,
+    6
+  ],
+  "einheit": "m/s, negativ = Wind aus Osten",
+  "fertig": false
+}
