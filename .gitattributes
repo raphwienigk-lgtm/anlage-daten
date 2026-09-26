@@ -1,0 +1,2 @@
+# Das Logbuch wird nur ergänzt: bei gleichzeitigen Läufen beide Seiten behalten.
+daten/signale.jsonl merge=union

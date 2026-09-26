@@ -1,0 +1,49 @@
+# Palmöl: das ausgefüllte Formular des universellen Gerüsts.
+# Ein neuer Rohstoff ist eine neue Datei nach diesem Muster.
+
+name: Palmöl
+kennung: palmoel
+familie: A                 # A Agrar, B Metall
+treiber: klima             # klima | politik | struktur (bestimmt den Rechenweg)
+rolle: kandidat            # kandidat | sensor | verworfen
+handelbar: ja
+dipol_seite: ost           # west | ost | mitte | keine (Palmöl ist der Ostanker)
+
+kernregionen:              # grobe Anteile, beim Ausbau prüfen
+  - {land: Indonesien, anteil: 0.58}
+  - {land: Malaysia, anteil: 0.25}
+
+kanaele: [wetter, politik, energie]
+kopplungen: [enso, dipol]
+ereignistyp: langsame_welle
+vorlauf_T_monate: 12       # Preisgipfel etwa vier Quartale nach dem El-Niño-Höhepunkt
+ausloeser: enso            # Auslöser der Checkliste: El Niño ab +0,5
+
+indikator:                 # rohstoffspezifischer Wetterindikator
+  variable: Niederschlag
+  region: ost              # siehe konfig/regionen.yaml
+  fenster: ganzjährig
+  tage: 90
+
+schaedlinge: []            # noch zu ergänzen, mit Auslösebedingung
+lauernde_krankheit: "Ganoderma, aggressivere Ausbreitung in jüngere Bestände"
+politische_hebel:
+  - "Exportabgaben und Exportstopps Indonesien"
+  - "Exportabgaben Malaysia"
+  - "Biodiesel-Mandate (B35, B40)"
+
+gegenkraefte:              # gehen in Punkt 3 der Checkliste ein
+  - {kennung: brent, art: oelpreis, text: "Ölpreis (Brent)"}
+  - {kennung: sojaoel, art: konkurrenz, text: "Sojaöl als Konkurrenzöl"}
+
+preis:                     # Preis des Rohstoffs selbst, für die Preisprobe
+  quelle: fred
+  serie: PPOILUSDM
+  einheit: "US-Dollar je Tonne"
+  z_fenster_monate: 36
+
+instrumente:               # Reihenfolge der Handelswege: ETC, dann Aktie, Future später
+  - {art: Aktie, name: "Wilmar International", ticker: F34.SI, boerse: SGX, hinweis: "vor allem Verarbeitung und Handel"}
+  - {art: Aktie, name: "Golden Agri-Resources", ticker: E5H.SI, boerse: SGX, hinweis: "mit großer Verarbeitungssparte"}
+  - {art: Aktie, name: "First Resources", ticker: EB5.SI, boerse: SGX, hinweis: "reinerer Plantagenwert"}
+  - {art: Aktie, name: "Bumitama Agri", ticker: P8Z.SI, boerse: SGX, hinweis: "reinerer Plantagenwert"}

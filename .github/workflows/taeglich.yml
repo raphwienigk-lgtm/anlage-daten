@@ -1,0 +1,49 @@
+# Täglicher Lauf: holt die Daten, rechnet die Ampel, legt Stand und Vorlesetext ab.
+# 02:30 UTC = 04:30 Uhr Sommerzeit, 03:30 Uhr Winterzeit. GitHub startet geplante
+# Läufe manchmal bis zu einer halben Stunde später.
+name: Täglicher Lauf
+
+on:
+  schedule:
+    - cron: "30 2 * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: anlage-lauf
+  cancel-in-progress: false
+
+jobs:
+  lauf:
+    runs-on: ubuntu-latest
+    timeout-minutes: 45
+    steps:
+      - uses: actions/checkout@v5
+        with:
+          ref: ${{ github.ref_name }}
+      - uses: actions/setup-python@v6
+        with:
+          python-version: "3.12"
+          cache: pip
+      - name: Pakete installieren
+        run: pip install -r requirements.txt
+      - name: Lauf
+        run: python -m anlage.lauf
+      - name: Ergebnis sichern
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add daten abgabe
+          if git diff --cached --quiet; then
+            echo "Keine Änderungen."
+            exit 0
+          fi
+          git commit -m "Lauf $(date -u +%Y-%m-%dT%H:%MZ)"
+          for versuch in 1 2 3; do
+            git pull --rebase && git push && exit 0
+            git rebase --abort 2>/dev/null || true
+            sleep $((versuch * 10))
+          done
+          exit 1

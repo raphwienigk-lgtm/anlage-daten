@@ -1,0 +1,5 @@
+# Obergrenzen verhindern, dass eine neue Hauptversion den täglichen Lauf still verändert.
+requests>=2.32,<3
+PyYAML>=6.0,<7
+yfinance>=1.7,<2
+tzdata

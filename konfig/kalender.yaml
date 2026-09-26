@@ -1,0 +1,16 @@
+# Kalender der großen Marktberichte. Der Überblick nennt, was in den nächsten Tagen ansteht.
+# „genau: false“ heißt: Faustregel, der echte Termin kann ein paar Tage abweichen.
+# Genaue Termine als Liste unter „termine“ eintragen, dann gilt die Liste.
+
+vorschau_tage: 7
+
+berichte:
+  - name: "Monatsbericht des malaysischen Palmölrats (MPOB)"
+    rohstoffe: [palmoel]
+    tag_im_monat: 10
+    genau: false
+  # Beispiel mit genauen Terminen:
+  # - name: "WASDE-Bericht des US-Landwirtschaftsministeriums"
+  #   rohstoffe: [soja, weizen]
+  #   termine: [2026-10-09, 2026-11-10]
+  #   genau: true

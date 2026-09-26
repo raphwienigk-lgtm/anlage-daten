@@ -1,0 +1,27 @@
+# Tests bei jeder Änderung: fängt Tippfehler in den Formularen und Rechenfehler ab.
+name: Tests
+
+on:
+  push:
+    paths-ignore:
+      - "daten/**"
+      - "abgabe/**"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  tests:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v5
+      - uses: actions/setup-python@v6
+        with:
+          python-version: "3.12"
+          cache: pip
+      - name: Pakete installieren
+        run: pip install -r requirements-dev.txt
+      - name: Tests
+        run: python -m pytest -q

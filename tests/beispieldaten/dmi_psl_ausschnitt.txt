@@ -1,0 +1,7 @@
+# Testdaten im Format der Quelle; Werte gerundet, nicht amtlich.
+ 1870 2024
+ 2023   -0.210   -0.100    0.020    0.150    0.300    0.450    0.620    0.850    1.100    1.250    0.900    0.400
+ 2024    0.100   -0.050    0.120    0.200    0.180    0.050   -0.120   -0.200   -0.350   -0.300 -9999.000 -9999.000
+  -9999
+  DMI HadISST1.1  Indian Ocean Dipole Mode Index
+  https://psl.noaa.gov/data/timeseries/month/

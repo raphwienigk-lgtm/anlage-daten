@@ -1,0 +1,40 @@
+# Alle Schwellen an einer Stelle. VORLÄUFIG: noch nicht kalibriert.
+# Später schlägt der Nachprüfer Änderungen vor, entschieden wird von Hand.
+
+enso:
+  el_nino_ab: 0.5          # ONI ab +0,5 gilt als El Niño
+  mindest_jahreszeiten: 5   # so viele Jahreszeiten in Folge machen eine Episode (NOAA)
+  la_nina_bis: -0.5
+  staerke_voll_bei: 2.0    # ONI +2,0 entspricht Stärke 1,0
+  hoehepunkt_bestaetigt_nach: 2   # so viele Jahreszeiten unter dem Maximum
+
+dipol:
+  positiv_ab: 0.4          # Dipol-Index ab +0,4 °C gilt als positiv (Stufe 3)
+  wind_anomalie_ms: -1.0   # Stufe 2: Ostwinde mindestens 1 m/s stärker als normal (Mai/Juni)
+  wind_monate: [5, 6]
+  wind_mindest_tage: 14     # vorher kein Urteil über die Ostwinde
+
+zeugen:
+  ost:
+    tage: 90               # Regen der letzten 90 Tage
+    trocken_bis_anteil: 0.75   # höchstens 75 % des Normalen gilt als trocken
+  west:
+    monate: [10, 11, 12]   # kurze Regenzeit Ostafrika; außerhalb schweigt der Zeuge
+    nass_ab_anteil: 1.25   # mindestens 125 % des Normalen gilt als nass
+    mindest_tage: 21       # vorher ist die Saison zu jung für ein Urteil
+
+agrar_ampel:
+  zeitfenster_knapp_ab: 0.5        # Zeitfenster höchstens 0,5 gilt als knapp
+  gegenkraefte_ueberwiegen_ab: 0.6
+  markt_schlaeft_bis_z: 1.0        # Z-Wert unter 1,0: der Markt schläft noch
+  z_voll_bei: 3.0                  # Z-Wert 3 entspricht voller Abzug im Score
+  gegen_voll_bei: 0.20             # 20 % Preisrückgang in drei Monaten entspricht voller Gegenkraft
+  gewichte: {staerke: 0.25, zeitfenster: 0.25, zwert: 0.25, gegenkraefte: 0.25}
+  # Beschluss 26.09.2026: Die Farbe sagt, wann es so weit ist (Checkliste und Zeitfenster),
+  # die Zahl dahinter nur, wie gut der Kandidat ist (Stärke, Preisprobe, Gegenkräfte).
+  # false wäre der Score wie im Konzept, mit dem Zeitfenster in der Zahl.
+  zahl_ohne_zeitfenster: true
+
+kurse:
+  z_fenster_tage: 200
+  historie: 2y             # so viel Kurshistorie holt der erste Lauf (yfinance kennt 1y, 2y, 5y, 10y, max)

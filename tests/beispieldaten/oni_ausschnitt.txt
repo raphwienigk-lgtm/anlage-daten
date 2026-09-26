@@ -1,0 +1,20 @@
+# Testdaten im Format der Quelle; Werte gerundet, nicht amtlich.
+ SEAS  YR   TOTAL   ANOM
+  DJF 2023  25.84  -0.68
+  JFM 2023  26.26  -0.43
+  FMA 2023  26.93  -0.13
+  MAM 2023  27.71   0.17
+  AMJ 2023  28.24   0.48
+  MJJ 2023  28.59   0.82
+  JJA 2023  28.58   1.09
+  JAS 2023  28.39   1.31
+  ASO 2023  28.33   1.57
+  SON 2023  28.35   1.77
+  OND 2023  28.38   1.92
+  NDJ 2023  28.29   1.95
+  DJF 2024  28.17   1.79
+  JFM 2024  28.13   1.50
+  FMA 2024  28.29   1.16
+  MAM 2024  28.44   0.77
+  AMJ 2024  28.37   0.39
+  MJJ 2024  28.07   0.08

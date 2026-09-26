@@ -1,0 +1,39 @@
+# Alle Datenquellen. Topf 1 = maschinenlesbar. Der Prüflauf schreibt den Zustand
+# jeder Quelle nach daten/quellen-status.json.
+
+oni:
+  name: "NOAA CPC · El-Niño-Index (ONI)"
+  url: "https://www.cpc.ncep.noaa.gov/data/indices/oni.ascii.txt"
+  topf: 1
+  takt: monatlich
+
+dmi:
+  name: "Dipol-Index (DMI)"
+  urls:                    # Reihenfolge beim ersten Mal; danach wird die zuletzt benutzte zuerst gefragt
+    - {name: "JMA, Basis 1991–2020", url: "https://ds.data.jma.go.jp/tcc/tcc/products/elnino/index/sstindex/base_period_9120/DMI/anomaly"}
+    - {name: "NOAA PSL (HadISST)", url: "https://psl.noaa.gov/data/timeseries/month/data/dmi.had.long.data"}
+    - {name: "NOAA PSL GCOS (HadISST)", url: "https://psl.noaa.gov/gcos_wgsp/Timeseries/Data/dmi.had.long.data"}
+  topf: 1
+  takt: monatlich
+
+openmeteo:
+  name: "Open-Meteo · ERA5-Reanalyse (Regen, Wind)"
+  url: "https://archive-api.open-meteo.com/v1/archive"
+  modell: era5             # fest gewählt, damit Normalwerte und heutige Werte aus demselben Modell stammen
+  topf: 1
+  takt: täglich
+  gewicht_pro_minute: 75   # gedrosselt: Open-Meteo erlaubt 600/Minute, 5000/Stunde, 10000/Tag
+
+fred:
+  name: "FRED · Rohstoffpreise monatlich (IMF)"
+  url: "https://fred.stlouisfed.org/graph/fredgraph.csv"
+  topf: 1
+  takt: monatlich
+
+yahoo:
+  name: "Yahoo Finance über yfinance (Kurse, Volumen)"
+  topf: 1
+  takt: täglich
+  gegenkraefte:
+    brent: "BZ=F"
+    sojaoel: "ZL=F"

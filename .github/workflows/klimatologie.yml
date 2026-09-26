@@ -1,0 +1,61 @@
+# Klimatologie 1991 bis 2020: einmal von Hand starten (Actions → Klimatologie → Run workflow).
+# Dauer etwa zwei Stunden. Hält der Lauf vorher an, einfach noch einmal starten:
+# fertige Messpunkte werden übersprungen. Der tägliche Lauf darf parallel laufen;
+# er rechnet dann eben noch ohne die fehlenden Normalwerte.
+name: Klimatologie
+
+on:
+  workflow_dispatch:
+    inputs:
+      nur:
+        description: "nur regen oder nur wind (leer = beides)"
+        required: false
+        default: ""
+
+permissions:
+  contents: write
+
+concurrency:
+  group: anlage-klimatologie
+  cancel-in-progress: false
+
+jobs:
+  klimatologie:
+    runs-on: ubuntu-latest
+    timeout-minutes: 180
+    steps:
+      - uses: actions/checkout@v5
+        with:
+          ref: ${{ github.ref_name }}
+      - uses: actions/setup-python@v6
+        with:
+          python-version: "3.12"
+          cache: pip
+      - name: Pakete installieren
+        run: pip install -r requirements.txt
+      - name: Klimatologie bauen
+        env:
+          NUR: ${{ github.event.inputs.nur }}
+        run: |
+          if [ -n "$NUR" ]; then
+            python -m anlage.klimatologie --nur "$NUR" --budget-minuten 150
+          else
+            python -m anlage.klimatologie --budget-minuten 150
+          fi
+      - name: Ergebnis sichern
+        if: always()
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add daten/klima
+          if git diff --cached --quiet; then
+            echo "Keine Änderungen."
+            exit 0
+          fi
+          git commit -m "Klimatologie $(date -u +%Y-%m-%dT%H:%MZ)"
+          for versuch in 1 2 3; do
+            git pull --rebase && git push && exit 0
+            git rebase --abort 2>/dev/null || true
+            sleep $((versuch * 10))
+          done
+          exit 1
