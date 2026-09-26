@@ -366,6 +366,45 @@ def mofcom_robots() -> str:
                         for h in ("exportcontrol.mofcom.gov.cn", "english.mofcom.gov.cn", "www.mofcom.gov.cn"))
 
 
+def psd_nuesse() -> str:
+    """Führt USDA PSD Haselnüsse (Filberts)? Für den Rückblick des Haselnuss-Sensors (Ernte der Türkei je Jahr)."""
+    zeilen = []
+    for datei in ("psd_fruits_vegetables_csv.zip", "psd_treenuts_csv.zip", "psd_alldata_csv.zip"):
+        url = f"https://apps.fas.usda.gov/psdonline/downloads/{datei}"
+        try:
+            r = _hole(url, timeout=180)
+        except Exception as fehler:  # noqa: BLE001
+            zeilen.append(f"{datei}: {type(fehler).__name__}: {fehler}")
+            continue
+        zeilen.append(f"{datei}: Status {r.status_code}, {len(r.content)} Bytes")
+        if r.status_code != 200:
+            continue
+        try:
+            with zipfile.ZipFile(io.BytesIO(r.content)) as z:
+                name = z.namelist()[0]
+                text = z.read(name).decode("utf-8", errors="replace")
+        except Exception as fehler:  # noqa: BLE001
+            zeilen.append(f"  kein Zip: {fehler}")
+            continue
+        kopf, *rest = text.splitlines()
+        zeilen.append("  Kopf: " + kopf[:300])
+        waren = Counter(z.split(",")[1] for z in rest if re.search(r"Filbert|Hazel|Almond", z, flags=re.I))
+        zeilen.append(f"  Waren: {dict(waren)}")
+        tuerkei = [z for z in rest if re.search(r"Filbert|Hazel", z, flags=re.I) and "Turkey" in z
+                   and "Production" in z][-8:]
+        zeilen += ["  " + z[:250] for z in tuerkei]
+        if waren:
+            break
+    return "\n".join(zeilen)
+
+
+def openmeteo_frost() -> str:
+    """Tagesminima Ende März 2014 in Giresun (400 m, ERA5): Zeigt das Archiv den bekannten Frost?"""
+    return _text("https://archive-api.open-meteo.com/v1/archive?latitude=40.85&longitude=38.35&elevation=400"
+                 "&start_date=2014-03-25&end_date=2014-04-05&daily=temperature_2m_min&timezone=Europe%2FIstanbul"
+                 "&models=era5", auszug=1500)
+
+
 PROBEN = {
     "ersst_box": ersst_box, "ersst_info": ersst_info, "caag_ozean": caag_ozean, "hadsst": hadsst,
     "amoc_metoffice": amoc_metoffice, "rapid": rapid, "gpcc_uebersicht": gpcc_uebersicht,
@@ -375,7 +414,7 @@ PROBEN = {
     "mpob_2026": mpob_2026, "mpob_tabelle": mpob_tabelle, "mpob_2021": mpob_2021, "fpma_liste": fpma_liste, "fpma_reihen": fpma_reihen,
     "fca": fca, "eppo": eppo, "ippc": ippc,
     "bundesregister": bundesregister, "usgs_beben": usgs_beben, "openmeteo_vorhersage": openmeteo_vorhersage,
-    "mofcom_robots": mofcom_robots,
+    "mofcom_robots": mofcom_robots, "psd_nuesse": psd_nuesse, "openmeteo_frost": openmeteo_frost,
 }
 
 

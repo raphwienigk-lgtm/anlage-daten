@@ -164,6 +164,7 @@ def lauf(land: str, heute: date, zeitpunkt: datetime, budget_minuten: float = 25
     preise = {}
     for i in k["instrumente"]:
         preise[i["ticker"]] = {"name": i["name"], "achse": i["achse"], "rolle": i["rolle"], "hinweis": i.get("hinweis"),
+                               "waehrung": i.get("waehrung", "USD"),
                                **rechnen.preisprobe(reihen.get(i["ticker"]) or [], vergleich, k["preisprobe"], heute)}
     rueck = rechnen.rueckblick(k["ereignisse"], k["instrumente"], reihen, k["vergleich"]["ticker"], k["rueckblick"])
     speicher.schreibe_json(o / "rueckblick.json", {"stand": zeitpunkt.isoformat(timespec="seconds"),

@@ -37,6 +37,17 @@ def _veraendert(anteil: float) -> str:
     return f"um {zahl} Prozent {'gestiegen' if p > 0 else 'gefallen'}"
 
 
+WAEHRUNG = {"USD": "Dollar", "AUD": "australische Dollar", "SGD": "Singapur-Dollar", "EUR": "Euro"}
+
+
+def _umsatz(betrag: float, waehrung: str) -> str:
+    """1 234 567 → „rund eins Komma zwei Millionen Dollar“; kleine Beträge in Tausend."""
+    name = WAEHRUNG.get(waehrung, waehrung)
+    if betrag >= 1_000_000:
+        return f"rund {sprache.komma(round(betrag / 1_000_000, 1), 1)} Millionen {name}"
+    return f"rund {sprache.wort(round(betrag, -3))} {name}"
+
+
 def _bekanntmachung(f: dict) -> str:
     return f" (Bekanntmachung Nummer {sprache.wort(f['nummer'])})" if f.get("nummer") else ""
 
@@ -180,6 +191,9 @@ def _preise(stand: dict) -> str:
         if p.get("vorsprung_lang") is not None:
             satz += f", gegen den Vergleich {_punkte(p['vorsprung_lang'])}"
         satz += "."
+        if p.get("handel"):
+            satz += f" Umsatz zuletzt {_umsatz(p['handel'], p.get('waehrung', 'USD'))} am Tag"
+            satz += ", das ist dünn." if p.get("duenn") else "."
         if p["urteil"] == "schläft":
             satz += " Der Markt schläft noch."
         elif p["urteil"] == "gelaufen":
@@ -289,7 +303,7 @@ def zusammenfassung(stand: dict) -> str:
                   f"Regen höchst {s['regen_hoechst_mm']}; trocken {s['trocken']}")
     for t, p in stand["preise"].items():
         zeilen.append(f"- {t}: {p['urteil']}, r5 {p.get('r_kurz')}, r20 {p.get('r_lang')}, v20 {p.get('vorsprung_lang')}, "
-                      f"letzter {p.get('letzter')}")
+                      f"Handel {p.get('handel')} {p.get('waehrung')}{' dünn' if p.get('duenn') else ''}, letzter {p.get('letzter')}")
     for t, r in stand["rueckblick"].items():
         g = r["gruppen"]
         zeilen.append(f"- Rückblick {t}: {r['urteil']}; verschärfung eigene {g['verschaerfung_eigene']}; "

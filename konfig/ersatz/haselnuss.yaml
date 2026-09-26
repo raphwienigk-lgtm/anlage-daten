@@ -1,0 +1,55 @@
+# Ersatz-Sensor Haselnuss → Mandel (Beschluss 26.09.2026, Protokoll „substitution-ersatzrohstoffe“).
+# Grundsatz: Der Sensor schlägt beim Original aus, gekauft wird der handelbare Ersatz.
+# Haselnuss ist nicht handelbar (kein ETC, Ferrero privat). Wird sie knapp, weichen Schokoladen-
+# und Nusscreme-Hersteller auf Mandeln aus; Select Harvests ist der einzige reine Mandel-Wert.
+# Sensor: Spätfrost an der türkischen Schwarzmeerküste (rund 60 Prozent der Welternte).
+
+kennung: haselnuss
+name: Haselnuss
+familie: A
+treiber: klima
+rolle: sensor                 # Kandidat erst, wenn der Rückblick besteht (Regel für neue Rohstoffe)
+original:
+  name: "Haselnuss aus der Türkei"
+  hinweis: "kein Einzel-ETC; der größte Abnehmer Ferrero ist nicht börsennotiert"
+ersatz:
+  - {ticker: SHV.AX, name: "Select Harvests", waehrung: AUD, rolle: kandidat, hinweis: "Mandeln aus Australien"}
+vergleich: {ticker: "^AXJO", name: "australischer Aktienindex ASX 200", akkusativ: "den australischen Aktienindex ASX 200"}
+
+sensor:
+  art: spaetfrost
+  # Gefährdet sind junge Triebe, Blätter und Fruchtansätze nach dem Austrieb. 2014 kam der Frost Ende März
+  # (Schnee auf den Blättern am 30.3.), 2025 Anfang April.
+  saison: {von: "03-10", bis: "04-30"}
+  vorwarnung_tage: 14         # so lange vor Saisonbeginn zählt eine Frostvorhersage schon
+  vorhersage_tage: 10
+  hoehe_m: 400                # Obstgärten am Hang; 2014 fiel die Ernte oberhalb von 300 Metern ganz aus
+  schwelle_c: -1.0            # ERA5-Tagesminimum, auf die Höhe umgerechnet; das Raster glättet Kältelöcher
+  stark_c: -3.0
+  mindest_standorte: 2        # Frost an mindestens zwei Anbauorten in derselben Nacht
+  standorte:
+    - {kennung: ordu,    name: "Ordu",                     lat: 40.90, lon: 37.80}
+    - {kennung: giresun, name: "Giresun",                  lat: 40.85, lon: 38.35}
+    - {kennung: trabzon, name: "Trabzon",                  lat: 40.95, lon: 39.60}
+    - {kennung: samsun,  name: "Samsun (Terme, Çarşamba)", lat: 41.18, lon: 36.85, hoehe_m: 100}
+    - {kennung: duzce,   name: "Düzce",                    lat: 40.84, lon: 31.16, hoehe_m: 250}
+
+# Belegte Frostjahre (Erdogan und Aygün 2017, NUCIS-Newsletter 17; Frost April 2025):
+# 2004 verlor Giresun rund 90 Prozent, 2014 rund 75 Prozent der Ernte.
+bekannte_frostjahre: [2004, 2014, 2025]
+
+rueckblick:
+  jahre_ab: 1991
+  horizonte: [20, 60, 120]    # Handelstage nach dem ersten Frost; Ersatz wirkt langsamer als eine Ausfuhrsperre
+  haupt: 60
+  vorlauf: 20
+  treffer_ab: 0.10
+  bestanden: {mindestens: 3, trefferquote: 0.5}
+  kurse_ab: 2000-01-01
+
+preisprobe:
+  tage_kurz: 5
+  tage_lang: 20
+  gelaufen_ab: 0.15
+  handel_tage: 60
+  duenn_unter: 1000000

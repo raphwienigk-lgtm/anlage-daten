@@ -213,7 +213,18 @@ def preisprobe(reihe: list[dict], vergleich: list[dict], p: dict, heute: date) -
     else:
         ergebnis["urteil"] = "gelaufen" if v >= p["gelaufen_ab"] else "schläft"
     ergebnis["markt_schlaeft"] = ergebnis["urteil"] == "schläft"
+    ergebnis.update(handel(reihe, p.get("handel_tage", 60), p.get("duenn_unter")))
     return ergebnis
+
+
+def handel(reihe: list[dict], tage: int, duenn_unter: float | None) -> dict:
+    """Mittlerer Tagesumsatz (Schlusskurs mal Stückzahl, Median) der letzten `tage` Handelstage mit Volumen."""
+    umsaetze = sorted(e["schluss"] * e["volumen"] for e in reihe[-tage:] if e.get("volumen"))
+    if len(umsaetze) < tage // 3:
+        return {"handel": None, "duenn": None}
+    mitte = len(umsaetze) // 2
+    median = umsaetze[mitte] if len(umsaetze) % 2 else (umsaetze[mitte - 1] + umsaetze[mitte]) / 2
+    return {"handel": round(median), "duenn": bool(duenn_unter) and median < duenn_unter}
 
 
 # ------------------------------------------------------------------ Ereignis-Rückblick

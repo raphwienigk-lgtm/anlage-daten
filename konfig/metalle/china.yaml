@@ -44,10 +44,10 @@ achsen:
 
 # Reihenfolge der Handelswege: ETC, dann Aktie. Für diese Metalle gibt es keinen Einzel-ETC.
 instrumente:
-  - {ticker: PPTA,   name: "Perpetua Resources",      achse: chip,   rolle: kandidat,    hinweis: "Antimon-Projekt Stibnite in Idaho, noch ohne Förderung"}
-  - {ticker: UAMY,   name: "United States Antimony",  achse: chip,   rolle: kandidat,    hinweis: "kleiner Antimon-Verarbeiter in den USA und Mexiko"}
-  - {ticker: MP,     name: "MP Materials",            achse: magnet, rolle: beobachtung, hinweis: "seltene Erden USA; seit 22.06.2026 selbst auf Chinas Exportkontrollliste"}
-  - {ticker: LYC.AX, name: "Lynas Rare Earths",       achse: magnet, rolle: beobachtung, hinweis: "größter Produzent seltener Erden außerhalb Chinas"}
+  - {ticker: PPTA,   name: "Perpetua Resources",      achse: chip,   rolle: kandidat,    waehrung: USD,    hinweis: "Antimon-Projekt Stibnite in Idaho, noch ohne Förderung"}
+  - {ticker: UAMY,   name: "United States Antimony",  achse: chip,   rolle: kandidat,    waehrung: USD,    hinweis: "kleiner Antimon-Verarbeiter in den USA und Mexiko"}
+  - {ticker: MP,     name: "MP Materials",            achse: magnet, rolle: beobachtung, waehrung: USD, hinweis: "seltene Erden USA; seit 22.06.2026 selbst auf Chinas Exportkontrollliste"}
+  - {ticker: LYC.AX, name: "Lynas Rare Earths",       achse: magnet, rolle: beobachtung, waehrung: AUD, hinweis: "größter Produzent seltener Erden außerhalb Chinas"}
 vergleich: {ticker: XME, name: "Metall- und Bergbau-Aktien USA (Vergleichsmaßstab)"}
 
 # Förder- und Hüttenstandorte für den Störungskanal (ungefähre Lage).
@@ -129,6 +129,8 @@ preisprobe:
   tage_kurz: 5
   tage_lang: 20
   gelaufen_ab: 0.15             # ab 15 Prozent Vorsprung gilt der Kurs als schon gelaufen
+  handel_tage: 60               # mittlerer Tagesumsatz (Median) über so viele Handelstage
+  duenn_unter: 1000000          # darunter gilt der Handel als dünn (in der Währung des Werts)
 
 # Ereignisse für den Rückblick (Ankündigungstag in Peking bzw. Washington).
 # Quellen: Kanzlei- und Fachberichte (Pillsbury, Morgan Lewis, Greenberg Traurig, Referently); bei Zweifel prüfen.

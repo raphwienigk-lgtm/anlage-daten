@@ -213,6 +213,7 @@ def test_ganzer_lauf(ablage, metall_netz):
 
     p = stand["preise"]
     assert p["PPTA"]["urteil"] == "schläft" and p["LYC.AX"]["urteil"] == "keine Kurse"
+    assert p["PPTA"]["duenn"] is True and 5000 < p["PPTA"]["handel"] < 10000
     assert stand["quellen"]["yahoo"]["status"] == "Warnung" and stand["zustand"] == "Warnung"
 
     r = stand["rueckblick"]
@@ -242,6 +243,7 @@ def test_ganzer_lauf(ablage, metall_netz):
     assert "Erdbeben der Stärke sechs Komma eins am zwölften Oktober" in gesamt
     assert "Bekanntmachung Nummer siebzig) läuft am zehnten November aus, in einundzwanzig Tagen" in gesamt
     assert "Perpetua Resources: nach Verschärfungen auf der eigenen Achse in drei Fällen" in gesamt
+    assert "Dollar am Tag, das ist dünn." in gesamt
     assert gesamt.rstrip().endswith("Das ist eine Denkhilfe, keine Anlageberatung.")
     status = (konfig.ABGABE / "status-metall-china.md").read_text(encoding="utf-8")
     assert "Zustand: Warnung" in status and "Chip-Achse Gelb" in status
@@ -284,3 +286,10 @@ def test_formular_stimmig():
     assert sum(1 for a in k["achsen"].values() if a.get("pilot")) == 1
     for e in k["ereignisse"]:
         assert rechnen.tag(e["datum"]).weekday() < 5, f"{e['datum']} ist ein Wochenende"
+
+
+def test_handel():
+    reihe = [{"datum": f"2026-01-{i:02d}", "schluss": 2.0, "volumen": 1_000_000 * (i % 3 + 1)} for i in range(1, 31)]
+    h = rechnen.handel(reihe, 30, 1_000_000)
+    assert h == {"handel": 4_000_000, "duenn": False}
+    assert rechnen.handel(reihe[:5], 30, 1_000_000) == {"handel": None, "duenn": None}

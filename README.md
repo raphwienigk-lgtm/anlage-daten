@@ -102,7 +102,8 @@ Stunde später. Schlägt ein Lauf fehl, schickt GitHub eine Mail.
 Befehle: `python -m anlage.lauf` (täglicher Lauf), `python -m anlage.pruefen` (Prüflauf),
 `python -m anlage.klimatologie` (Normal bauen), `python -m anlage.geschichte` (Geschichtsdaten),
 `python -m anlage.rueckblick` (Rückblick), `python -m anlage.nachpruefer` (Nachprüfer),
-`python -m anlage.metall` (Metall-Agent China), `python -m pytest -q` (Tests).
+`python -m anlage.metall` (Metall-Agent China), `python -m anlage.ersatz` (Ersatz-Sensor),
+`python -m pytest -q` (Tests).
 
 ---
 
@@ -249,6 +250,28 @@ Ankündigung). Ein neues Land: `konfig/metalle/china.yaml` kopieren und `--land`
 | `daten/metall/china/stoerungen.json` | Protokoll gemessener Starkregen (hält die Achse 30 Tage auf Gelb) |
 | `daten/metall/china/klima/`, `kurse/` | Regen-Normal der Wasserkraft-Standorte, Kursarchiv |
 | `abgabe/metall-china-teil-N.md`, `abgabe/status-metall-china.md` | Vorlesetext und Status |
+
+---
+
+## Ersatz-Sensor Haselnuss → Select Harvests
+
+Grundsatz: Der Sensor schlägt beim Original aus, gekauft wird der handelbare Ersatz. Haselnuss
+ist nicht handelbar; wird sie knapp, weichen die Hersteller auf Mandeln aus. Select Harvests
+(SHV.AX) ist der einzige reine Mandel-Wert, Vergleichsmaßstab ist der ASX 200.
+
+- **Sensor:** Spätfrost an fünf Anbauorten der Schwarzmeerküste (Ordu, Giresun, Trabzon, Samsun,
+  Düzce), ERA5-Tagesminimum auf die Höhe der Obstgärten umgerechnet. Frostnacht: mindestens zwei
+  Orte bei −1 °C oder kälter; stark ab −3 °C. Saison 10. März bis 30. April, Vorhersagen zählen
+  14 Tage vorher.
+- **Stufe:** Gelb bei vorhergesagtem oder gemessenem Frost und nach einem Frostjahr bis
+  30. September; Rot nur bei gemessenem starkem Frost, bestandenem Rückblick und schlafendem Markt.
+- **Rückblick:** alle Frostsaisons ab 1991, abgeglichen mit den belegten Frostjahren 2004, 2014 und
+  2025; danach, wie Select Harvests 20, 60 und 120 Handelstage nach der ersten Frostnacht gegen den
+  ASX 200 lief.
+- Formular `konfig/ersatz/haselnuss.yaml`, Lauf `python -m anlage.ersatz`, Workflow „Ersatz
+  Haselnuss“ täglich 02:07 UTC; schreibt `daten/ersatz/haselnuss/` und
+  `abgabe/ersatz-haselnuss-teil-N.md`. Weitere Paare (etwa Palladium ↔ Platin) bekommen ein
+  eigenes Formular unter `konfig/ersatz/`.
 
 ---
 
