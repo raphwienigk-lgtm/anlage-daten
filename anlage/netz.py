@@ -12,12 +12,13 @@ class AbrufFehler(RuntimeError):
     """Eine Quelle war nicht erreichbar oder lieferte nichts Brauchbares."""
 
 
-def _abruf(url: str, params: dict | None = None, versuche: int = 3, timeout: int = 45) -> requests.Response:
+def _abruf(url: str, params: dict | None = None, versuche: int = 3, timeout: int = 45,
+           kopf: dict | None = None) -> requests.Response:
     letzter = None
     for nr in range(versuche):
         try:
             antwort = requests.get(url, params=params, timeout=timeout,
-                                   headers={"User-Agent": KENNUNG})
+                                   headers={"User-Agent": KENNUNG, **(kopf or {})})
             if antwort.status_code == 429:
                 raise AbrufFehler(f"Tageslimit oder Ratenlimit erreicht (429) bei {url}")
             if 400 <= antwort.status_code < 500:
@@ -35,16 +36,16 @@ def _abruf(url: str, params: dict | None = None, versuche: int = 3, timeout: int
     raise letzter or AbrufFehler(f"Abruf fehlgeschlagen: {url}")
 
 
-def hole_text(url: str, params: dict | None = None) -> str:
-    return _abruf(url, params).text
+def hole_text(url: str, params: dict | None = None, kopf: dict | None = None) -> str:
+    return _abruf(url, params, kopf=kopf).text
 
 
 def hole_bytes(url: str, params: dict | None = None, timeout: int = 120) -> bytes:
     return _abruf(url, params, timeout=timeout).content
 
 
-def hole_json(url: str, params: dict | None = None):
-    antwort = _abruf(url, params)
+def hole_json(url: str, params: dict | None = None, kopf: dict | None = None):
+    antwort = _abruf(url, params, kopf=kopf)
     try:
         return antwort.json()
     except ValueError as fehler:

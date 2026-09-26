@@ -175,3 +175,11 @@ def test_schlusssatz_nennt_den_rueckblick():
     mit = {"rohstoffe": {"palmoel": {"name": "Palmöl", "rueckblick": {
         "lernzeit_bestanden": False, "pruefzeit": "verschlossen", "pruefzeit_bestanden": None}}}}
     assert vorlesen._rueckblick_satz(mit) == "Rückblick Palmöl: Lernzeit nicht bestanden, Prüfzeit noch verschlossen."
+
+
+def test_tage_liste_nennt_den_monat_einmal():
+    from datetime import date as _d
+    from anlage.ausgabe import sprache as _s
+    assert _s.tage([_d(2026, 9, 21), _d(2026, 9, 20)]) == "zwanzigsten und einundzwanzigsten September"
+    assert _s.tage([_d(2026, 9, 30), _d(2026, 10, 1), _d(2026, 10, 2)]) == \
+        "dreißigsten September und ersten und zweiten Oktober"

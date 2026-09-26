@@ -91,7 +91,7 @@ class FalschesNetz:
         self.s = szenario
         self.abrufe: list[tuple[str, dict | None]] = []
 
-    def hole_text(self, url: str, params: dict | None = None) -> str:
+    def hole_text(self, url: str, params: dict | None = None, kopf: dict | None = None) -> str:
         self.abrufe.append((url, params))
         if "oni.ascii" in url:
             return oni_text(self.s.oni)
@@ -105,7 +105,7 @@ class FalschesNetz:
             return fred_text(params["id"], self.s.fred)
         raise AbrufFehler(f"Unbekannte Adresse im Test: {url}")
 
-    def hole_json(self, url: str, params: dict | None = None):
+    def hole_json(self, url: str, params: dict | None = None, kopf: dict | None = None):
         self.abrufe.append((url, params))
         start = date.fromisoformat(params["start_date"])
         ende = date.fromisoformat(params["end_date"])
@@ -200,6 +200,7 @@ def ablage(tmp_path, monkeypatch):
     monkeypatch.setattr(konfig, "ABGABE", tmp_path / "abgabe")
     monkeypatch.setattr(konfig, "GESCHICHTE", daten / "geschichte")
     monkeypatch.setattr(konfig, "RUECKBLICK", daten / "rueckblick")
+    monkeypatch.setattr(konfig, "INLAND", daten / "inland")
     return tmp_path
 
 

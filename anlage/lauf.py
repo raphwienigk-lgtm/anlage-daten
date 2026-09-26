@@ -285,6 +285,18 @@ def rueckblick_stand(kennung: str) -> dict | None:
         return None
 
 
+# ------------------------------------------------------------------ Inlandspreise
+def inland_stand(kennung: str, heute: date) -> dict | None:
+    """Letztes Ergebnis von anlage.inlandspreise für diesen Rohstoff, sofern höchstens drei Tage alt."""
+    e = speicher.lies_json(konfig.DATEN / "inlandspreise.json")
+    if not e or not e.get("datum"):
+        return None
+    if (heute - date.fromisoformat(e["datum"])).days > 3:
+        return {"veraltet": e["datum"], "reihen": {}}
+    reihen = {k: v for k, v in (e.get("reihen") or {}).items() if v.get("rohstoff") == kennung}
+    return {"datum": e["datum"], "reihen": reihen} if reihen else None
+
+
 # ------------------------------------------------------------------ Lauf
 def zustand(buch: Quellenbuch, enso_lage, hinweise: list[str]) -> str:
     if enso_lage is None:
@@ -372,6 +384,7 @@ def lauf(heute: date | None = None, pro_minute: float | None = None) -> dict:
             hinweise.append(f"{r['name']}: Bewertung fehlgeschlagen ({type(fehler).__name__}: {fehler})")
             b = {"name": r["name"], "kennung": kennung, "ampel": None, "hinweis": "Bewertung fehlgeschlagen"}
         b["rueckblick"] = rueckblick_stand(kennung)
+        b["inlandspreise"] = inland_stand(kennung, heute)
         for text in (b.get("ampel") or {}).get("veto_fehler", []):
             if text not in hinweise:
                 hinweise.append(text)

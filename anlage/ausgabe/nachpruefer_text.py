@@ -24,13 +24,21 @@ def _datum(text: str) -> str:
 
 def _lauf_absatz(lk: dict) -> str:
     teile = []
+    gezaehlt = lk.get("tage_gezaehlt", 7 if lk.get("tage_mit_lauf") is not None else None)
     if lk.get("tage_mit_lauf") is None:
         teile.append("Wie oft der tägliche Lauf diese Woche gelang, ist heute nicht bekannt.")
-    elif lk["tage_mit_lauf"] == 7:
-        teile.append("Der tägliche Lauf gelang an allen sieben Tagen.")
+    elif gezaehlt == 0:
+        seit = lk.get("betrieb_seit")
+        teile.append("Der tägliche Lauf ist noch nicht in Betrieb"
+                     + (f"; der erste ist für den {_datum(seit)} geplant." if seit else "."))
+    elif lk["tage_mit_lauf"] == gezaehlt:
+        teile.append("Der tägliche Lauf gelang an allen sieben Tagen." if gezaehlt == 7 else
+                     f"Der tägliche Lauf gelang an allen {sprache.wort(gezaehlt)} Tagen seit Betriebsbeginn."
+                     if gezaehlt > 1 else "Der tägliche Lauf gelang am ersten Tag seit Betriebsbeginn.")
     else:
-        fehlend = ", ".join(_datum(t) for t in lk["fehlende_tage"])
-        teile.append(f"Der tägliche Lauf gelang an {sprache.wort(lk['tage_mit_lauf'])} von sieben Tagen; "
+        fehlend = sprache.tage([date.fromisoformat(t) for t in lk["fehlende_tage"]])
+        basis = "sieben Tagen" if gezaehlt == 7 else f"{sprache.wort(gezaehlt)} Tagen seit Betriebsbeginn"
+        teile.append(f"Der tägliche Lauf gelang an {sprache.wort(lk['tage_mit_lauf'])} von {basis}; "
                      f"es fehlte am {fehlend}.")
     if lk.get("zustand"):
         teile.append(f"Zustand beim letzten Lauf: {lk['zustand']}.")
@@ -134,15 +142,14 @@ def schreibe(e: dict, ordner: Path) -> list[Path]:
     pfade = vorlesen.schreibe_teile(ordner, "nachpruefer", stuecke)
     zeit = datetime.fromisoformat(e["stand"])
     lk = e["laufkontrolle"]
-    zustand = "in Ordnung" if (lk.get("tage_mit_lauf") in (None, 7) and lk.get("zustand") != "Fehler") else "Warnung"
+    zustand = "in Ordnung" if (not lk.get("fehlende_tage") and lk.get("zustand") != "Fehler") else "Warnung"
     status = (f"Agent: Nachprüfer (wöchentlich, GitHub)\n"
               f"Stand: {zeit.strftime('%d.%m.%Y, %H:%M')}\n"
               f"Zustand: {zustand}\n"
               f"Ergebnis: abgabe/nachpruefer-teil-1.md"
               + (f" bis nachpruefer-teil-{len(stuecke)}.md" if len(stuecke) > 1 else "")
               + ", daten/nachpruefer.json\n"
-              f"Umfang: {len(stuecke)} Teil{'e' if len(stuecke) > 1 else ''}, "
-              f"etwa {vorlesen.vorlesezeit_minuten(stuecke)} Minuten Vorlesezeit\n")
+              + vorlesen.umfang_zeile(stuecke))
     speicher.schreibe_text(ordner / "status-nachpruefer.md", status)
     return pfade
 

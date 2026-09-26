@@ -1,0 +1,48 @@
+# Inlandspreise als Frühzeichen: täglich vor dem Tageslauf (01:53 UTC = 03:53 Uhr Sommerzeit).
+# Der erste Lauf holt die Geschichte ab 2018 in Jahresstücken, danach nur noch die letzten dreißig Tage.
+name: Inlandspreise
+
+on:
+  schedule:
+    - cron: "53 1 * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: anlage-inland
+  cancel-in-progress: false
+
+jobs:
+  inland:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v5
+        with:
+          ref: ${{ github.ref_name }}
+      - uses: actions/setup-python@v6
+        with:
+          python-version: "3.12"
+          cache: pip
+      - name: Pakete installieren
+        run: pip install -r requirements.txt
+      - name: Inlandspreise
+        run: python -m anlage.inlandspreise
+      - name: Ergebnis sichern
+        if: always()
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add -A daten abgabe
+          if git diff --cached --quiet; then
+            exit 0
+          fi
+          git commit -m "Inlandspreise $(date -u +%Y-%m-%dT%H:%MZ)"
+          for versuch in 1 2 3; do
+            git pull --rebase && git push && exit 0
+            git rebase --abort 2>/dev/null || true
+            sleep $((versuch * 10))
+          done
+          exit 1

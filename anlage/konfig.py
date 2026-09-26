@@ -15,6 +15,7 @@ PREISE = DATEN / "preise"
 ABGABE = BASIS / "abgabe"
 GESCHICHTE = DATEN / "geschichte"
 RUECKBLICK = DATEN / "rueckblick"
+INLAND = DATEN / "inland"
 ZEITZONE = ZoneInfo("Europe/Berlin")
 
 

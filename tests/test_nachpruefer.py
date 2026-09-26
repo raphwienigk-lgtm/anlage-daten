@@ -111,3 +111,21 @@ def test_ohne_logbuch(ablage):
     assert nachpruefer.main(["--heute", "2026-09-27"]) == 0
     text = (konfig.ABGABE / "nachpruefer-teil-1.md").read_text(encoding="utf-8")
     assert "noch kein Eintrag im Logbuch" in text and "keine gedachte Position" in text
+
+
+def test_laufkontrolle_zaehlt_erst_ab_betriebsbeginn():
+    heute = date(2026, 9, 29)
+    laeufe = [{"conclusion": "success", "createdAt": "2026-09-27T02:41:00Z"},
+              {"conclusion": "success", "createdAt": "2026-09-29T02:41:00Z"}]
+    lk = nachpruefer.laufkontrolle(laeufe, heute, None, date(2026, 9, 27))
+    assert lk["tage_gezaehlt"] == 3 and lk["tage_mit_lauf"] == 2 and lk["fehlende_tage"] == ["2026-09-28"]
+    vorher = nachpruefer.laufkontrolle([], date(2026, 9, 26), None, date(2026, 9, 27))
+    assert vorher["tage_gezaehlt"] == 0 and vorher["fehlende_tage"] == []
+
+
+def test_text_vor_betriebsbeginn(ablage):
+    assert nachpruefer.main(["--heute", "2026-09-26", "--laeufe", _laeufe(ablage, date(2026, 9, 26), set(range(7)))]) == 0
+    text = (konfig.ABGABE / "nachpruefer-teil-1.md").read_text(encoding="utf-8")
+    assert "noch nicht in Betrieb; der erste ist für den siebenundzwanzigsten September geplant" in text
+    assert "Zustand: in Ordnung" in (konfig.ABGABE / "status-nachpruefer.md").read_text(encoding="utf-8")
+    assert "etwa 1 Minute Vorlesezeit" in (konfig.ABGABE / "status-nachpruefer.md").read_text(encoding="utf-8")

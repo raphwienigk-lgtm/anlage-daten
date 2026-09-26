@@ -325,8 +325,7 @@ def schreibe(e: dict, ordner: Path) -> list[Path]:
               f"Ergebnis: abgabe/{praefix}-teil-1.md"
               + (f" bis {praefix}-teil-{len(stuecke)}.md" if len(stuecke) > 1 else "")
               + f", daten/rueckblick/{e['rohstoff']}.json\n"
-              f"Umfang: {len(stuecke)} Teil{'e' if len(stuecke) > 1 else ''}, "
-              f"etwa {vorlesen.vorlesezeit_minuten(stuecke)} Minuten Vorlesezeit\n")
+              + vorlesen.umfang_zeile(stuecke))
     speicher.schreibe_text(ordner / f"status-{praefix}.md", status)
     return pfade
 

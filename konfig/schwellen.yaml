@@ -39,8 +39,18 @@ kurse:
   z_fenster_tage: 200
   historie: 2y             # so viel Kurshistorie holt der erste Lauf (yfinance kennt 1y, 2y, 5y, 10y, max)
 
+inlandspreise:              # Frühzeichen, nicht am Rückblick geprüft (die Reihen beginnen erst 2017)
+  mittel_tage: 28            # Mittel der letzten vier Wochen …
+  abstand_tage: 84           # … gegen dasselbe Mittel zwölf Wochen früher
+  mindest_werte: 8           # so viele Tageswerte je Fenster, sonst kein Urteil
+  anstieg_ab: 0.10           # ab plus 10 Prozent: Frühzeichen
+  stark_ab: 0.20             # ab plus 20 Prozent: starkes Frühzeichen
+  veraltet_nach_tage: 21     # älterer letzter Wert: kein Urteil
+  pihps_ab: 2018-01-01       # erster Abruf holt die Geschichte ab hier, in Jahresstücken
+
 nachpruefer:
   mindest_signale_fuer_vorschlag: 5   # erst ab so vielen abgeschlossenen echten Signalen schlägt er vor, die Regeln zu prüfen
+  betrieb_seit: 2026-09-27            # erster geplanter Tageslauf; Tage davor zählen in der Laufkontrolle nicht als Ausfall
 
 rueckblick:
   beginn: 1960-01

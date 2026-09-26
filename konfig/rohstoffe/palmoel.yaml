@@ -36,6 +36,12 @@ gegenkraefte:              # gehen in Punkt 3 der Checkliste ein
   - {kennung: brent, art: oelpreis, text: "Ölpreis (Brent)"}
   - {kennung: sojaoel, art: konkurrenz, text: "Sojaöl als Konkurrenzöl"}
 
+inlandspreise:             # Frühzeichen Politik: Regierungen greifen ein, wenn es im Inland teuer wird
+  - {kennung: speiseoel_id_lose, name: "Speiseöl lose in Indonesien", land: Indonesien, quelle: pihps, ware: com_17, preisart: 1, einheit: "Rupiah", rolle: fruehzeichen}
+  - {kennung: speiseoel_id_marke, name: "Speiseöl in Markenflaschen in Indonesien", land: Indonesien, quelle: pihps, ware: com_18, preisart: 1, einheit: "Rupiah", rolle: fruehzeichen}
+  - {kennung: pflanzenoel_id_monat, name: "Pflanzenöl in Indonesien, Monatsmittel der Statistikbehörde", land: Indonesien, quelle: fpma, serie: c0b2e88d-8010-4f45-b989-fdf1eb126c10, einheit: "Rupiah je Liter", rolle: ersatz}
+  - {kennung: cpo_my_tag, name: "Rohpalmöl frei Werk in Malaysia", land: Malaysia, quelle: mpob, einheit: "Ringgit je Tonne", rolle: tagespreis}
+
 preis:                     # Preis des Rohstoffs selbst, für die Preisprobe
   quelle: fred
   serie: PPOILUSDM

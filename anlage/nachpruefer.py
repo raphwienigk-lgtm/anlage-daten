@@ -35,16 +35,25 @@ def _tag(zeit: str) -> date:
 
 
 # ------------------------------------------------------------------ Bausteine
-def laufkontrolle(laeufe: list[dict] | None, heute: date, stand: dict | None) -> dict:
-    """laeufe: Ausgabe von `gh run list --json conclusion,createdAt` für den täglichen Lauf."""
+def laufkontrolle(laeufe: list[dict] | None, heute: date, stand: dict | None,
+                  betrieb_seit: date | None = None) -> dict:
+    """laeufe: Ausgabe von `gh run list --json conclusion,createdAt` für den täglichen Lauf.
+
+    Gezählt werden nur Tage ab `betrieb_seit` (erster geplanter Lauf); davor gab es
+    den täglichen Lauf noch nicht, und das ist kein Ausfall.
+    """
     ergebnis = {"stand_datum": (stand or {}).get("datum"), "zustand": (stand or {}).get("zustand"),
-                "hinweise": (stand or {}).get("hinweise") or []}
+                "hinweise": (stand or {}).get("hinweise") or [],
+                "betrieb_seit": betrieb_seit.isoformat() if betrieb_seit else None}
     if laeufe is None:
-        return {**ergebnis, "tage_mit_lauf": None, "fehlende_tage": None}
+        return {**ergebnis, "tage_mit_lauf": None, "tage_gezaehlt": None, "fehlende_tage": None}
     tage = [heute - timedelta(days=k) for k in range(7)]
+    if betrieb_seit:
+        tage = [t for t in tage if t >= betrieb_seit]
     erfolgreich = {e["createdAt"][:10] for e in laeufe if e.get("conclusion") == "success"}
     fehlend = [t.isoformat() for t in tage if t.isoformat() not in erfolgreich]
-    return {**ergebnis, "tage_mit_lauf": 7 - len(fehlend), "fehlende_tage": sorted(fehlend)}
+    return {**ergebnis, "tage_mit_lauf": len(tage) - len(fehlend), "tage_gezaehlt": len(tage),
+            "fehlende_tage": sorted(fehlend)}
 
 
 def ampel_woche(eintraege: list[dict], kennung: str, heute: date) -> dict:
@@ -123,6 +132,13 @@ def rueckblick_vergleich(kennung: str) -> dict | None:
         return None
 
 
+def _betrieb_seit(s: dict) -> date | None:
+    wert = (s.get("nachpruefer") or {}).get("betrieb_seit")
+    if not wert:
+        return None
+    return wert if isinstance(wert, date) else date.fromisoformat(str(wert))
+
+
 # ------------------------------------------------------------------ Gesamt
 def nachpruefung(k: dict, heute: date, laeufe: list[dict] | None, zeitpunkt: datetime) -> dict:
     eintraege = logbuch.lies(konfig.DATEN / "signale.jsonl")
@@ -159,7 +175,7 @@ def nachpruefung(k: dict, heute: date, laeufe: list[dict] | None, zeitpunkt: dat
         "version": __version__,
         "hinweis": HINWEIS,
         "woche": {"von": (heute - timedelta(days=6)).isoformat(), "bis": heute.isoformat()},
-        "laufkontrolle": laufkontrolle(laeufe, heute, stand),
+        "laufkontrolle": laufkontrolle(laeufe, heute, stand, _betrieb_seit(s)),
         "rohstoffe": rohstoffe,
     }
 

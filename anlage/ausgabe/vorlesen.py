@@ -231,6 +231,54 @@ def _preis_absatz(b: dict) -> str:
     return " ".join(teile)
 
 
+def _inland_satz(i: dict) -> str | None:
+    urteil = i.get("urteil")
+    if urteil in (None, "keine Daten"):
+        return None
+    letzter = i.get("letzter") or {}
+    satz = i["name"]
+    if urteil == "veraltet":
+        return f"{satz}: der letzte Wert ist vom {sprache.datum(date.fromisoformat(letzter['datum']))}, zu alt für ein Urteil."
+    if urteil == "zu kurz":
+        return f"{satz}: noch zu wenige Werte für einen Vergleich."
+    if i.get("art") == "monatlich":
+        d = date.fromisoformat(letzter["datum"])
+        satz += f", Stand {sprache.MONATE[d.month - 1]}: in drei Monaten {sprache.veraenderung(i['veraenderung'])}"
+    else:
+        satz += f": im Mittel der letzten vier Wochen {sprache.veraenderung(i['veraenderung'])} gegenüber drei Monaten zuvor"
+    if i.get("status") == "Fehler":
+        satz += "; heute nicht erreichbar, das ist der letzte Stand"
+    return satz + "."
+
+
+def _inland_absatz(b: dict) -> str:
+    ip = b.get("inlandspreise") or {}
+    if ip.get("veraltet"):
+        return f"Die Inlandspreise sind seit dem {sprache.datum(date.fromisoformat(ip['veraltet']))} nicht erneuert worden."
+    reihen = list((ip.get("reihen") or {}).values())
+    if not reihen:
+        return ""
+    brauchbar = {i.get("land") for i in reihen
+                 if i["rolle"] == "fruehzeichen" and i.get("urteil") in ("ruhig", "Frühzeichen", "starkes Frühzeichen")}
+    saetze = []
+    for i in reihen:
+        if i["rolle"] == "ersatz" and i.get("land") in brauchbar:
+            continue
+        satz = _inland_satz(i)
+        if satz:
+            saetze.append(satz)
+    if not saetze:
+        return ""
+    text = "Inlandspreise als Frühzeichen für Eingriffe der Regierung: " + " ".join(saetze)
+    zeichen = [i for i in reihen if i["rolle"] in ("fruehzeichen", "ersatz")
+               and i.get("urteil") in ("Frühzeichen", "starkes Frühzeichen")]
+    if zeichen:
+        stark = any(i["urteil"] == "starkes Frühzeichen" for i in zeichen)
+        text += (f" Das ist ein {'starkes ' if stark else ''}Frühzeichen: Wird es im Inland teuer, greift die Regierung oft ein,"
+                 " etwa mit Exportbeschränkungen, und das belastet die Plantagenwerte. Die Ampel ändert es nicht.")
+    return text
+
+
 def _kalender_absatz(kalender: list[dict]) -> str:
     if not kalender:
         return ""
@@ -292,9 +340,9 @@ def absaetze(stand: dict) -> list[str]:
         if text:
             liste.append(text)
     for b in stand["rohstoffe"].values():
-        text = _preis_absatz(b)
-        if text:
-            liste.append(text)
+        for text in (_preis_absatz(b), _inland_absatz(b)):
+            if text:
+                liste.append(text)
     for text in (_kalender_absatz(stand.get("kalender") or []), _quellen_absatz(stand.get("quellen") or {})):
         if text:
             liste.append(text)
@@ -360,6 +408,13 @@ def schreibe_teile(ordner: Path, praefix: str, stuecke: list[str]) -> list[Path]
     return pfade
 
 
+def umfang_zeile(stuecke: list[str]) -> str:
+    """„Umfang: 1 Teil, etwa 1 Minute Vorlesezeit“ für die Statusdateien."""
+    minuten = vorlesezeit_minuten(stuecke)
+    return (f"Umfang: {len(stuecke)} Teil{'e' if len(stuecke) > 1 else ''}, "
+            f"etwa {minuten} Minute{'n' if minuten != 1 else ''} Vorlesezeit\n")
+
+
 def vorlesezeit_minuten(stuecke: list[str]) -> int:
     return max(1, round(sum(len(t) for t in stuecke) / 900))
 
@@ -368,7 +423,6 @@ def schreibe(stand: dict, ordner: Path) -> list[Path]:
     """Schreibt anlage-teil-1.md usw. und status-anlage.md. Alte Teile werden vorher entfernt."""
     stuecke = teile(stand)
     pfade = schreibe_teile(ordner, "anlage", stuecke)
-    minuten = vorlesezeit_minuten(stuecke)
     zeit = datetime.fromisoformat(stand["stand"])
     ergebnis = ("abgabe/anlage-teil-1.md" if len(stuecke) == 1
                 else f"abgabe/anlage-teil-1.md bis anlage-teil-{len(stuecke)}.md")
@@ -376,6 +430,6 @@ def schreibe(stand: dict, ordner: Path) -> list[Path]:
               f"Stand: {zeit.strftime('%d.%m.%Y, %H:%M')}\n"
               f"Zustand: {stand['zustand']}\n"
               f"Ergebnis: {ergebnis}, daten/stand.json\n"
-              f"Umfang: {len(stuecke)} Teil{'e' if len(stuecke) > 1 else ''}, etwa {minuten} Minuten Vorlesezeit\n")
+              + umfang_zeile(stuecke))
     speicher.schreibe_text(ordner / "status-anlage.md", status)
     return pfade

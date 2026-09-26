@@ -104,6 +104,26 @@ def datum(d: date, mit_jahr: bool = False) -> str:
     return text + (f" {jahr(d.year)}" if mit_jahr else "")
 
 
+def aufzaehlung(teile: list[str]) -> str:
+    """„a“, „a und b“, „a, b und c“."""
+    if not teile:
+        return ""
+    if len(teile) == 1:
+        return teile[0]
+    return ", ".join(teile[:-1]) + " und " + teile[-1]
+
+
+def tage(liste: list[date]) -> str:
+    """Mehrere Tage, der Monat nur einmal je Gruppe: „zwanzigsten und einundzwanzigsten September“."""
+    gruppen: list[tuple[int, list[str]]] = []
+    for d in sorted(liste):
+        if gruppen and gruppen[-1][0] == d.month:
+            gruppen[-1][1].append(ordnungszahl(d.day))
+        else:
+            gruppen.append((d.month, [ordnungszahl(d.day)]))
+    return aufzaehlung([f"{aufzaehlung(t)} {MONATE[m - 1]}" for m, t in gruppen])
+
+
 def monat(jahr_nr: int, monat_nr: int) -> str:
     return f"{MONATE[monat_nr - 1]} {jahr(jahr_nr)}"
 
