@@ -1,0 +1,43 @@
+Stationen: 36
+{"stationTriplet": "301:CA:SNTL", "name": "Adin Mtn", "latitude": 41.23583, "longitude": -120.79192, "elevation": 6170.0, "beginDate": "1983-10-01 00:00"}
+{"stationTriplet": "356:CA:SNTL", "name": "Blue Lakes", "latitude": 38.60801, "longitude": -119.92455, "elevation": 8060.0, "beginDate": "1980-10-01 00:00"}
+{"stationTriplet": "1051:CA:SNTL", "name": "Burnside Lake", "latitude": 38.71943, "longitude": -119.8942, "elevation": 8180.0, "beginDate": "2003-10-01 00:00"}
+{"stationTriplet": "1067:CA:SNTL", "name": "Carson Pass", "latitude": 38.6927, "longitude": -120.0022, "elevation": 8360.0, "beginDate": "2004-10-01 00:00"}
+{"stationTriplet": "391:CA:SNTL", "name": "Cedar Pass", "latitude": 41.58216, "longitude": -120.30253, "elevation": 7060.0, "beginDate": "1977-10-01 00:00"}
+{"stationTriplet": "977:CA:SNTL", "name": "Crowder Flat", "latitude": 41.89318, "longitude": -120.75202, "elevation": 5180.0, "beginDate": "1999-10-01 00:00"}
+{"stationTriplet": "428:CA:SNTL", "name": "Css Lab", "latitude": 39.32565, "longitude": -120.36807, "elevation": 6890.0, "beginDate": "1980-10-01 00:00"}
+{"stationTriplet": "446:CA:SNTL", "name": "Dismal Swamp", "latitude": 41.99127, "longitude": -120.18033, "elevation": 7370.0, "beginDate": "1979-10-01 00:00"}
+{"stationTriplet": "462:CA:SNTL", "name": "Ebbetts Pass", "latitude": 38.5497, "longitude": -119.80468, "elevation": 8660.0, "beginDate": "1978-10-01 00:00"}
+{"stationTriplet": "463:CA:SNTL", "name": "Echo Peak", "latitude": 38.849, "longitude": -120.0795, "elevation": 7650.0, "beginDate": "1980-10-01 00:00"}
+{"stationTriplet": "473:CA:SNTL", "name": "Fallen Leaf", "latitude": 38.93403, "longitude": -120.0545, "elevation": 6250.0, "beginDate": "1979-10-01 00:00"}
+{"stationTriplet": "1049:CA:SNTL", "name": "Forestdale Creek", "latitude": 38.68245, "longitude": -119.9597, "elevation": 8050.0, "beginDate": "2003-10-01 00:00"}
+{"stationTriplet": "1277:CA:SNTL", "name": "Fredonyer Peak", "latitude": 40.68799, "longitude": -120.60805, "elevation": 7220.0, "beginDate": "2016-10-07 00:00"}
+{"stationTriplet": "508:CA:SNTL", "name": "Hagans Meadow", "latitude": 38.8519, "longitude": -119.9374, "elevation": 7740.0, "beginDate": "1978-10-01 00:00"}
+{"stationTriplet": "518:CA:SNTL", "name": "Heavenly Valley", "latitude": 38.92431, "longitude": -119.91641, "elevation": 8540.0, "beginDate": "1978-10-01 00:00"}
+{"stationTriplet": "1050:CA:SNTL", "name": "Horse Meadow", "latitude": 38.83652, "longitude": -119.88732, "elevation": 8580.0, "beginDate": "2003-10-10 00:00"}
+{"stationTriplet": "539:CA:SNTL", "name": "Independence Camp", "latitude": 39.45269, "longitude": -120.29367, "elevation": 6970.0, "beginDate": "1978-10-01 00:00"}
+{"stationTriplet": "540:CA:SNTL", "name": "Independence Creek", "latitude": 39.49001, "longitude": -120.28226, "elevation": 6440.0, "beginDate": "1980-10-01 00:00"}
+{"stationTriplet": "541:CA:SNTL", "name": "Independence Lake", "latitude": 39.42752, "longitude": -120.31342, "elevation": 8340.0, "beginDate": "1978-10-01 00:00"}
+{"stationTriplet": "574:CA:SNTL", "name": "Leavitt Lake", "latitude": 38.27594, "longitude": -119.61281, "elevation": 9600.0, "beginDate": "1989-10-01 00:00"}
+{"stationTriplet": "575:CA:SNTL", "name": "Leavitt Meadows", "latitude": 38.30367, "longitude": -119.55111, "elevation": 7200.0, "beginDate": "1980-10-01 00:00"}
+{"stationTriplet": "587:CA:SNTL", "name": "Lobdell Lake", "latitude": 38.43745, "longitude": -119.36572, "elevation": 9260.0, "beginDate": "1978-10-01 00:00"}
+{"stationTriplet": "1331:CA:SNTL", "name": "Lost Lakes", "latitude": 38.64745, "longitude": -119.95141, "elevation": 8640.0, "beginDate": "2024-09-16 00:00"}
+{"stationTriplet": "633:CA:SNTL", "name": "Monitor Pass", "latitude": 38.6683, "longitude": -119.6087, "elevation": 8320.0, "beginDate": "1990-10-01 00:00"}
+{"stationTriplet": "784:CA:SNTL", "name": "Palisades Tahoe", "latitude": 39.18986, "longitude": -120.26576, "elevation": 8010.0, "beginDate": "1979-10-01 00:00"}
+{"stationTriplet": "697:CA:SNTL", "name": "Poison Flat", "latitude": 38.50576, "longitude": -119.62624, "elevation": 7730.0, "beginDate": "1980-10-01 00:00"}
+{"stationTriplet": "724:CA:SNTL", "name": "Rubicon #2", "latitude": 38.99927, "longitude": -120.13139, "elevation": 7560.0, "beginDate": "1980-10-01 00:00"}
+{"stationTriplet": "771:CA:SNTL", "name": "Sonora Pass", "latitude": 38.31021, "longitude": -119.6003, "elevation": 8770.0, "beginDate": "1978-10-01 00:00"}
+{"stationTriplet": "778:CA:SNTL", "name": "Spratt Creek", "latitude": 38.66627, "longitude": -119.81741, "elevation": 6060.0, "beginDate": "1983-10-01 00:00"}
+{"stationTriplet": "1258:CA:SNTL", "name": "State Line", "latitude": 41.98609, "longitude": -120.71574, "elevation": 5690.0, "beginDate": "2014-06-17 00:00"}
+{"stationTriplet": "1052:CA:SNTL", "name": "Summit Meadow", "latitude": 38.39747, "longitude": -119.53522, "elevation": 9360.0, "beginDate": "2003-10-01 00:00"}
+{"stationTriplet": "809:CA:SNTL", "name": "Tahoe City Cross", "latitude": 39.17162, "longitude": -120.15362, "elevation": 6760.0, "beginDate": "1980-10-01 00:00"}
+{"stationTriplet": "834:CA:SNTL", "name": "Truckee #2", "latitude": 39.30087, "longitude": -120.18407, "elevation": 6500.0, "beginDate": "1980-10-01 00:00"}
+{"stationTriplet": "846:CA:SNTL", "name": "Virginia Lakes Ridge", "latitude": 38.07298, "longitude": -119.23433, "elevation": 9400.0, "beginDate": "1978-10-01 00:00"}
+{"stationTriplet": "848:CA:SNTL", "name": "Ward Creek #3", "latitude": 39.13545, "longitude": -120.21865, "elevation": 6750.0, "beginDate": "1979-10-01 00:00"}
+{"stationTriplet": "1317:CA:SNTL", "name": "Willow Flat CA", "latitude": 38.27203, "longitude": -119.45124, "elevation": 8220.0, "beginDate": "2023-09-13 00:00"}
+URL: https://wcc.sc.egov.usda.gov/awdbRestApi/services/v1/data?stationTriplets=301:CA:SNTL,356:CA:SNTL,1051:CA:SNTL,1067:CA:SNTL,391:CA:SNTL&elements=WTEQ&duration=DAILY&beginDate=1985-04-01&endDate=1985-04-01&centralTendencyType=MEDIAN
+Status: 200
+Typ: application/json
+Größe: 1425 Bytes
+
+[{"stationTriplet":"301:CA:SNTL","data":[{"stationElement":{"elementCode":"WTEQ","ordinal":1,"durationName":"DAILY","dataPrecision":1,"storedUnitCode":"in","originalUnitCode":"in","beginDate":"1984-10-01 00:00","endDate":"2100-01-01 00:00","derivedData":false},"timingCentralTendencies":{"medianPeak":{"month":3,"day":17,"value":12.800000},"medianOnset":{"month":11,"day":13},"medianMeltout":{"month":4,"day":30}},"values":[{"date":"1985-04-01","value":19.0,"median":10.7}]}]},{"stationTriplet":"356:CA:SNTL","data":[{"stationElement":{"elementCode":"WTEQ","ordinal":1,"durationName":"DAILY","dataPrecision":1,"storedUnitCode":"in","originalUnitCode":"in","beginDate":"1979-10-01 00:00","endDate":"2100-01-01 00:00","derivedData":false},"timingCentralTendencies":{"medianPeak":{"month":4,"day":14,"value":29.200000},"medianOnset":{"month":11,"day":5},"medianMeltout":{"month":6,"day":6}},"values":[{"date":"1985-04-01","value":32.0,"median":26.5}]}]},{"stationTriplet":"391:CA:SNTL","data":[{"stationElement":{"elementCode":"WTEQ","ordinal":1,"durationName":"DAILY","dataPrecision":1,"storedUnitCode":"in","originalUnitCode":"in","beginDate":"1978-10-01 00:00","endDate":"2100-01-01 00:00","derivedData":false},"timingCentralTendencies":{"medianPeak":{"month":4,"day":5,"value":19.600000},"medianOnset":{"month":11,"day":8},"medianMeltout":{"month":5,"day":15}},"values":[{"date":"1985-04-01","value":20.0,"median":17.0}]}]}]

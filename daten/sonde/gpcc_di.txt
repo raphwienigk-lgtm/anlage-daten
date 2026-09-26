@@ -1,0 +1,57 @@
+Verzeichnis: https://opendata.dwd.de/climate_environment/GPCC/GPCC_DI/2026/
+URL: https://opendata.dwd.de/climate_environment/GPCC/GPCC_DI/2026/GPCC_DI_202608.nc.gz
+Status: 200
+Typ: application/octet-stream
+Größe: 244078 Bytes
+
+Magische Bytes: b'\x1f\x8b\x08\x08\xdc+\xa2j'
+entpackt: 1823540 Bytes, magische Bytes b'CDF\x01\x00\x00\x00\x01'
+Format: NETCDF3_CLASSIC
+Globale Attribute:
+  CDI = Climate Data Interface version 1.7.0 (http://mpimet.mpg.de/cdi)
+  Conventions = CF-1.4
+  history = Thu Sep 10 04:02:36 2026: cdo merge /media/x18914/GPCC_DI/TEMP/GPCC_DI_01_Month_202608.nc /media/x18914/GPCC_DI/TEMP/GPCC_DI_03_Month_202608.nc /media/x18914/GPCC_DI/TEMP/GPCC_DI_06_Month_202608.nc /m
+  institution = Deutscher Wetterdienst
+  DOI = 10.5676/DWD_GPCC/DI_M_100
+  title = GPCC drought index, version 1.0
+  summary = The Global Precipitation Climatology Centre drought index (GPCC_DI) is a combination of the DWD modified SPI (McKee et al., 1993, Pietzsch et al., 2011) and SPEI (Vicento-Serrano et al., 2009). The GP
+  usage = Main application purpose is to serve as input for near-real-time monitoring of droughts
+  keywords = gpcc,global,gpcp,monthly,drought index,SPI,SPEI
+  id = GPCC_drought_index
+  creator_url = http://gpcc.dwd.de
+  creator_name = GPCC/DWD
+  creator_email = gpcc@dwd.de
+  date_created = Thu Sep 10 04:02:34 UTC 2026
+  time_coverage_start = 2026-08
+  time_coverage_end = 2026-08
+  time_coverage_resolution = month
+  geospatial_lat_min = -90.
+  geospatial_lat_max = 90.
+  geospatial_lon_min = -180.
+  geospatial_lon_max = 180.
+  CDO = Climate Data Operators version 1.7.0 (http://mpimet.mpg.de/cdo)
+Dimensionen:
+  lon: 360
+  lat: 180
+  time: 1
+Variablen:
+  lon ('lon',) float64 {'standard_name': 'longitude', 'long_name': 'longitude', 'units': 'degrees_east', 'axis': 'X'}
+    erste: [np.float64(-179.5), np.float64(-178.5), np.float64(-177.5)]  letzte: [np.float64(177.5), np.float64(178.5), np.float64(179.5)]
+  lat ('lat',) float64 {'standard_name': 'latitude', 'long_name': 'latitude', 'units': 'degrees_north', 'axis': 'Y'}
+    erste: [np.float64(-89.5), np.float64(-88.5), np.float64(-87.5)]  letzte: [np.float64(87.5), np.float64(88.5), np.float64(89.5)]
+  time ('time',) float64 {'standard_name': 'time', 'units': 'months since 2026-8-1 00:00:00', 'calendar': 'proleptic_gregorian', 'axis': 'T'}
+    erste: [np.float64(0.0)]  letzte: [np.float64(0.0)]
+  di_01 ('time', 'lat', 'lon') float32 {'long_name': 'Global Precipitation Climatology Centre Drought Index version 1 averaging time 1', 'code': '1', '_FillValue': '-99999.99', 'missing_value': '-99999.99'}
+  di_03 ('time', 'lat', 'lon') float32 {'long_name': 'Global Precipitation Climatology Centre Drought Index version 1 averaging time 3', 'code': '3', '_FillValue': '-99999.99', 'missing_value': '-99999.99'}
+  di_06 ('time', 'lat', 'lon') float32 {'long_name': 'Global Precipitation Climatology Centre Drought Index version 1 averaging time 6', 'code': '6', '_FillValue': '-99999.99', 'missing_value': '-99999.99'}
+  di_09 ('time', 'lat', 'lon') float32 {'long_name': 'Global Precipitation Climatology Centre Drought Index version 1 averaging time 9', 'code': '9', '_FillValue': '-99999.99', 'missing_value': '-99999.99'}
+  di_12 ('time', 'lat', 'lon') float32 {'long_name': 'Global Precipitation Climatology Centre Drought Index version 1 averaging time 1', 'code': '12', '_FillValue': '-99999.99', 'missing_value': '-99999.99'}
+  di_24 ('time', 'lat', 'lon') float32 {'long_name': 'Global Precipitation Climatology Centre Drought Index version 1 averaging time 2', 'code': '24', '_FillValue': '-99999.99', 'missing_value': '-99999.99'}
+  di_48 ('time', 'lat', 'lon') float32 {'long_name': 'Global Precipitation Climatology Centre Drought Index version 1 averaging time 4', 'code': '48', '_FillValue': '-99999.99', 'missing_value': '-99999.99'}
+  Probe di_01[0,...,:3,:3]: [[None, None, None], [None, None, None], [None, None, None]]
+  Probe di_03[0,...,:3,:3]: [[None, None, None], [None, None, None], [None, None, None]]
+  Probe di_06[0,...,:3,:3]: [[None, None, None], [None, None, None], [None, None, None]]
+  Probe di_09[0,...,:3,:3]: [[None, None, None], [None, None, None], [None, None, None]]
+  Probe di_12[0,...,:3,:3]: [[None, None, None], [None, None, None], [None, None, None]]
+  Probe di_24[0,...,:3,:3]: [[None, None, None], [None, None, None], [None, None, None]]
+  Probe di_48[0,...,:3,:3]: [[None, None, None], [None, None, None], [None, None, None]]

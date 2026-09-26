@@ -1,0 +1,122 @@
+URL: https://fcainfoweb.nic.in/
+Status: 200
+Typ: text/html; charset=utf-8
+Größe: 99298 Bytes
+
+Treffer für 'Rice': 5
+--- Ausschnitt ---
+ html>
+
+<html xmlns="http://www.w3.org/1999/xhtml"  lang="en">
+<head><meta charset="utf-8" /><meta http-equiv="X-UA-Compatible" content="IE=edge" /><meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" /><meta name="format-detection" content="telephone=no" /><meta name="description" /><meta name="author" /><link rel="apple-touch-icon" href="ThemeAccessibilityOptions/template07/assets/images/favicon/apple-touch-icon.png" /><link rel="icon" href="ThemeAccessibilityOptions/template07/assets/images/favicon/favicon.png" /><title>
+	Home |  Ministry | Department | Price Monitoring System
+</title>
+<!-- Custom styles for this template -->
+<link href="ThemeAccessibilityOptions/template07/assets/css/base.css" rel="stylesheet" media="all" /><link href="ThemeAccessibilityOptions/template07/assets/css/base-responsive.css" rel="stylesheet" media="all" /><link href="ThemeAccessibilityOptions/template07/assets/css/grid.css" rel="stylesheet" media="all" /><link href="ThemeAccessibilityOptions/template07/assets/css/font.css" rel="stylesheet" media="all" /><link href="ThemeAccessibilityOptions/template07/assets/css/font-awesome.min.css" rel="stylesheet" media="all" /><link href="ThemeAccessibilityOptions/template07/assets/css/flexslider.css" rel="stylesheet" media="all" /><link href="ThemeAccessibilityOptions/template07/assets/css/megamenu.css" rel="stylesheet" media="all" /><link href="ThemeAccessibilityOptions/template07/assets/css/print.css" rel="stylesheet" media="print" />
+<!-- Theme styles for this template -->
+<link href="ThemeAccessibilityOptions/template07/assets/css/megamenu.css" rel="stylesheet" media="all" /><link href="ThemeAccessibilityOptions/template07/theme/css/site.css" rel="stylesheet" media="all" /><link href="ThemeAccessibilityOptions/template07/theme/css/site-responsive.css" rel="stylesheet" media="all" /><link href="ThemeAccessibilityOptions/template07/theme/css/ma5gallery.css" rel="stylesheet" type="text/css" /><link href=
+--- Ausschnitt ---
+="logo">
+                                    <h1><div lang="hi" class="header__logo">उपभोक्ता मामले विभाग<br />
+                                        DEPARTMENT OF CONSUMER AFFAIRS
+                                    </div></h1>
+                                </a>
+                                
+                                <div>
+                                    <a class="text-decoration-none" style="color: white;" href="https://fcainfoweb.nic.in/"
+                                        target="_blank" rel="noopener noreferrer">
+                                        <h1>Price Monitoring System (Version 4.2) </h1>
+                                    </a>
+                                </div>
+                            </b>
+                            
+                            
+                        </div>
+                        <div class="header-right clearfix">
+                            <div class="right-content clearfix">
+                                <div class="float-element">
+                                    
+                                    <a class="sw-logo" target="_blank" href="https://swachhbharat.mygov.in/" title="Swachh Bharat" >
+                                        <img src="ThemeAccessibilityOptions/template07/assets/images/swach-bharat.png" alt="Swachh Bharat" />
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <!--/.header-wrapper-->
+                
+                <nav class="navbar navbar-expand-lg navbar-dark bg-dark" aria-label="Primary navigation" >
+                    <div class="container-fluid" style="margin-left:250px;">
+
+                        
+
+                        <button class="navbar-toggler"
+                            type="button"
+                            data-bs-toggle="collapse"
+          
+--- Ausschnitt ---
+       <li><a class="dropdown-item moreBlack" target="_blank" title="External Link that opens in a new window" role="menuitem" href="http://www.eaindustry.nic.in/">WPI</a></li>
+                                        <li><a class="dropdown-item moreBlack" target="_blank" title="External Link that opens in a new window" role="menuitem" href="https://mospi.gov.in/dashboard/dashboard/cpi">CPI</a></li>
+                                        <li><a class="dropdown-item moreBlack" target="_blank" title="External Link that opens in a new window" role="menuitem" href="http://nhb.gov.in/statistics/price-arrival-statistics.html">Price of Major Vegetables</a></li>
+                                        <li><a class="dropdown-item moreBlack" target="_blank" title="External Link that opens in a new window" role="menuitem" href="http://eands.dacnet.nic.in/MSP.htm">Production of Major Crops & MSP</a></li>
+                                        <li><a class="dropdown-item moreBlack" target="_blank" title="External Link that opens in a new window" role="menuitem" href="https://tradestat.commerce.gov.in/eidb/default.asp">Imports & Exports</a></li>
+                                        <li><a class="dropdown-item moreBlack" target="_blank" title="External Link that opens in a new window" role="menuitem" href="http://www.ncdex.com/">Spot and Future Prices</a></li>
+                                    </ul>
+                                </li>
+
+                                <li class="nav-item dropdown">
+                                    <button
+                                        class="nav-link dropdown-toggle btn btn-link moreNew fontwhite"
+                                        id="ContactUsMenu"
+                                        data-bs-toggle="dropdown"
+                                        aria-expanded="false"
+                                        aria-haspopup="true">
+                                        Contact Us
+                   
+--- Ausschnitt ---
+tem moreBlack" target="_blank" title="External Link that opens in a new window" role="menuitem" href="http://www.eaindustry.nic.in/">WPI</a></li>
+                                        <li><a class="dropdown-item moreBlack" target="_blank" title="External Link that opens in a new window" role="menuitem" href="https://mospi.gov.in/dashboard/dashboard/cpi">CPI</a></li>
+                                        <li><a class="dropdown-item moreBlack" target="_blank" title="External Link that opens in a new window" role="menuitem" href="http://nhb.gov.in/statistics/price-arrival-statistics.html">Price of Major Vegetables</a></li>
+                                        <li><a class="dropdown-item moreBlack" target="_blank" title="External Link that opens in a new window" role="menuitem" href="http://eands.dacnet.nic.in/MSP.htm">Production of Major Crops & MSP</a></li>
+                                        <li><a class="dropdown-item moreBlack" target="_blank" title="External Link that opens in a new window" role="menuitem" href="https://tradestat.commerce.gov.in/eidb/default.asp">Imports & Exports</a></li>
+                                        <li><a class="dropdown-item moreBlack" target="_blank" title="External Link that opens in a new window" role="menuitem" href="http://www.ncdex.com/">Spot and Future Prices</a></li>
+                                    </ul>
+                                </li>
+
+                                <li class="nav-item dropdown">
+                                    <button
+                                        class="nav-link dropdown-toggle btn btn-link moreNew fontwhite"
+                                        id="ContactUsMenu"
+                                        data-bs-toggle="dropdown"
+                                        aria-expanded="false"
+                                        aria-haspopup="true">
+                                        Contact Us
+                                    </button>
+
+ 
+--- Ausschnitt ---
+itle="External Link that opens in a new window" role="menuitem" href="http://eands.dacnet.nic.in/MSP.htm">Production of Major Crops & MSP</a></li>
+                                        <li><a class="dropdown-item moreBlack" target="_blank" title="External Link that opens in a new window" role="menuitem" href="https://tradestat.commerce.gov.in/eidb/default.asp">Imports & Exports</a></li>
+                                        <li><a class="dropdown-item moreBlack" target="_blank" title="External Link that opens in a new window" role="menuitem" href="http://www.ncdex.com/">Spot and Future Prices</a></li>
+                                    </ul>
+                                </li>
+
+                                <li class="nav-item dropdown">
+                                    <button
+                                        class="nav-link dropdown-toggle btn btn-link moreNew fontwhite"
+                                        id="ContactUsMenu"
+                                        data-bs-toggle="dropdown"
+                                        aria-expanded="false"
+                                        aria-haspopup="true">
+                                        Contact Us
+                                    </button>
+
+                                    <ul class="dropdown-menu" role="menu" aria-labelledby="ContactUsMenu">
+                                        <li><a class="dropdown-item moreBlack" target="_blank" title="External Link that opens in a new window" role="menuitem" href="https://fcainfoweb.nic.in/Telephone_List.aspx">Telephone Directory</a></li>
+                                        <li><a class="dropdown-item moreBlack" target="_blank" title="External Link that opens in a new window" role="menuitem" href="https://fcainfoweb.nic.in/Email_List.aspx">Email List</a></li>
+                                    </ul>
+                                </li>
+
+                                <li class="nav-item dropdown">
+   

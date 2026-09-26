@@ -1,0 +1,74 @@
+URL: https://opendata.dwd.de/climate_environment/GPCC/
+Status: 200
+Typ: text/html
+Größe: 7581 Bytes
+
+<html>
+<head><title>Index of /climate_environment/GPCC/</title></head>
+<body>
+<h1>Index of /climate_environment/GPCC/</h1><hr><pre><a href="../">../</a>
+<a href="DAPACLIP/">DAPACLIP/</a>                                          02-Dec-2025 12:27:53                   -
+<a href="DAPAGLOCO/">DAPAGLOCO/</a>                                         02-Dec-2025 12:37:05                   -
+<a href="GIF/">GIF/</a>                                               03-Sep-2026 11:50:18                   -
+<a href="GPCC-DI_retro_Analyses/">GPCC-DI_retro_Analyses/</a>                            02-Dec-2025 12:28:06                   -
+<a href="GPCC_BW/">GPCC_BW/</a>                                           02-Dec-2025 12:28:16                   -
+<a href="GPCC_DI/">GPCC_DI/</a>                                           10-Feb-2026 04:05:17                   -
+<a href="GPCC_DI_MP/">GPCC_DI_MP/</a>                                        22-Jun-2026 16:20:17                   -
+<a href="GPCC_Precipitation_Analysis_Climatology/">GPCC_Precipitation_Analysis_Climatology/</a>           28-Aug-2025 11:05:19                   -
+<a href="GPCC_Precipitation_Analysis_Daily/">GPCC_Precipitation_Analysis_Daily/</a>                 01-Sep-2026 06:50:19                   -
+<a href="GPCC_Precipitation_Analysis_Monthly/">GPCC_Precipitation_Analysis_Monthly/</a>               01-Dec-2025 09:15:18                   -
+<a href="GPCC_Quantile/">GPCC_Quantile/</a>                                     30-Mar-2023 13:20:12                   -
+<a href="GRADS/">GRADS/</a>                                             02-Dec-2025 12:28:28                   -
+<a href="GSNMC/">GSNMC/</a>                                             25-Sep-2026 06:35:17                   -
+<a href="JPEG/">JPEG/</a>                                              02-Dec-2025 12:28:25                   -
+<a href="KML/">KML/</a>                                               02-Dec-2025 12:28:25                   -
+<a href="Movies/">Movies/</a>                                            02-Dec-2025 12:28:45                   -
+<a href="PDF/">PDF/</a>                                               02-Dec-2025 12:28:40                   -
+<a href="PDPA/">PDPA/</a>                                              26-Sep-2026 06:49:08                   -
+<a href="PNG/">PNG/</a>                                               02-Dec-2025 12:28:40                   -
+<a href="Risikoanalyse_Duerre/">Risikoanalyse_Duerre/</a>                              02-Dec-2025 12:36:47                   -
+<a href="Sort-out_Drought_WORKSHOP/">Sort-out_Drought_WORKSHOP/</a>                         02-Dec-2025 12:28:55                   -
+<a href="TXT/">TXT/</a>                                               02-Dec-2025 12:28:45                   -
+<a href="XML/">XML/</a>                                               02-Dec-2025 12:29:01                   -
+<a href="css/">css/</a>                                               17-Dec-2025 12:00:19                   -
+<a href="first_guess/">first_guess/</a>                                       05-Feb-2026 08:20:17                   -
+<a href="first_guess_daily/">first_guess_daily/</a>                                 05-Feb-2026 08:45:18                   -
+<a href="full_data/">full_data/</a>                                         02-Dec-2025 12:36:14                   -
+<a href="full_data_2018/">full_data_2018/</a>                                    02-Dec-2025 12:31:33                   -
+<a href="full_data_daily_V1/">full_data_daily_V1/</a>                                02-Dec-2025 12:26:58                   -
+<a href="full_data_daily_V2018/">full_data_daily_V2018/</a>                             02-Dec-2025 12:55:23                   -
+<a href="full_data_daily_V2018_05/">full_data_daily_V2018_05/</a>                          02-Dec-2025 12:45:30                   -
+<a href="full_data_daily_V2018_25/">full_data_daily_V2018_25/</a>                          02-Dec-2025 12:25:59                   -
+<a href="full_data_daily_v2020/">full_data_daily_v2020/</a>                             02-Dec-2025 12:26:40                   -
+<a href="full_data_daily_v2022/">full_data_daily_v2022/</a>                             02-Dec-2025 12:26:56                   -
+<a href="full_data_monthly_v2020/">full_data_monthly_v2020/</a>                           15-Dec-2020 08:10:17                   -
+<a href="full_data_monthly_v2022/">full_data_monthly_v2022/</a>                           01-Aug-2022 08:16:27                   -
+<a href="gpcc_normals_1981_2010/">gpcc_normals_1981_2010/</a>                            02-Dec-2025 12:28:06                   -
+<a href="gpcc_normals_6190/">gpcc_normals_6190/</a>                                 02-Dec-2025 12:28:06                   -
+<a href="gpcc_normals_v2008/">gpcc_normals_v2008/</a>                                02-Dec-2025 12:28:08                   -
+<a href="gpcc_normals_v2010/">gpcc_normals_v2010/</a>                                02-Dec-2025 12:28:17                   -
+<a href="gpcc_normals_v2011/">gpcc_normals_v2011/</a>                                02-Dec-2025 12:28:09                   -
+<a href="gpcc_normals_v2015/">gpcc_normals_v2015/</a>                                02-Dec-2025 12:28:10                   -
+<a href="gpcc_normals_v2018/">gpcc_normals_v2018/</a>                                02-Dec-2025 12:28:12                   -
+<a href="gpcc_normals_v2020/">gpcc_normals_v2020/</a>                                02-Dec-2025 12:28:13                   -
+<a href="gpcc_normals_v2022/">gpcc_normals_v2022/</a>                                02-Dec-2025 12:28:25                   -
+<a href="hompra_europe_v1/">hompra_europe_v1/</a>                                  02-Dec-2025 12:28:25                   -
+<a href="hompra_europe_v2/">hompra_europe_v2/</a>                                  02-Dec-2025 12:28:44                   -
+<a href="html/">html/</a
+... (1581 Zeichen mehr) ...
+     -
+<a href="images_logos/">images_logos/</a>                                      17-Dec-2025 07:00:22                   -
+<a href="interpolation_test_dataset/">interpolation_test_dataset/</a>                        02-Dec-2025 12:28:25                   -
+<a href="legates/">legates/</a>                                           02-Dec-2025 12:28:26                   -
+<a href="monitoring/">monitoring/</a>                                        02-Dec-2025 12:28:29                   -
+<a href="monitoring_v2020/">monitoring_v2020/</a>                                  27-Mar-2026 10:30:16                   -
+<a href="monitoring_v2022/">monitoring_v2022/</a>                                  27-Mar-2026 10:20:17                   -
+<a href="monitoring_v5/">monitoring_v5/</a>                                     06-Feb-2019 12:33:40                   -
+<a href="monitoring_v6/">monitoring_v6/</a>                                     07-Apr-2020 13:10:16                   -
+<a href="oWLK/">oWLK/</a>                                              02-Dec-2025 12:28:41                   -
+<a href="radarklimatologie/">radarklimatologie/</a>                                 02-Dec-2025 12:28:40                   -
+<a href="vasclimo/">vasclimo/</a>                                          02-Dec-2025 12:29:02                   -
+<a href="content.log.bz2">content.log.bz2</a>                                    26-Sep-2026 12:10:24               62896
+</pre><hr></body>
+</html>
+

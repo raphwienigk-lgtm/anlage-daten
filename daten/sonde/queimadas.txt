@@ -1,0 +1,17 @@
+Verzeichnis: https://dataserver-coids.inpe.br/queimadas/queimadas/focos/csv/anual/Brasil_sat_ref/
+Dateien: focos_br_ref_2003.zip, focos_br_ref_2004.zip, focos_br_ref_2005.zip, focos_br_ref_2006.zip, focos_br_ref_2007.zip, focos_br_ref_2008.zip, focos_br_ref_2009.zip, focos_br_ref_2010.zip, focos_br_ref_2011.zip, focos_br_ref_2012.zip, focos_br_ref_2013.zip, focos_br_ref_2014.zip, focos_br_ref_2015.zip, focos_br_ref_2016.zip, focos_br_ref_2017.zip, focos_br_ref_2018.zip, focos_br_ref_2019.zip, focos_br_ref_2020.zip, focos_br_ref_2021.zip, focos_br_ref_2022.zip, focos_br_ref_2023.zip, focos_br_ref_2024.zip, focos_br_ref_2025.zip
+URL: https://dataserver-coids.inpe.br/queimadas/queimadas/focos/csv/anual/Brasil_sat_ref/focos_br_ref_2024.zip
+Status: 200
+Typ: application/zip
+Größe: 10727110 Bytes
+
+Inhalt: ['focos_br_ref_2024.csv']
+Zeilen: 278300
+id_bdq,foco_id,lat,lon,data_pas,pais,estado,municipio,bioma
+1666218617,fad5577f-02dc-3339-807e-5828b10f4ef4, -15.895720, -38.899570,2024-01-02 17:04:00,Brasil,BAHIA,BELMONTE,Mata Atlântica
+1666218597,178ca94b-abf3-30d0-893a-4f2263fcbb11,  -7.491880, -38.883160,2024-01-02 17:06:00,Brasil,CEARÁ,BREJO SANTO,Caatinga
+1666218598,06bb202f-af6d-34d1-a2e5-8069c4a17c3a,  -6.505640, -39.441220,2024-01-02 17:06:00,Brasil,CEARÁ,CARIÚS,Caatinga
+1666218599,dcc86463-c1e0-3f88-b1a0-d5fb82575af8,  -6.504090, -39.434220,2024-01-02 17:06:00,Brasil,CEARÁ,CARIÚS,Caatinga
+1666218600,8f6cb82e-6cdd-3a88-8c4e-64721a7c7dd4,  -5.741660, -39.593520,2024-01-02 17:06:00,Brasil,CEARÁ,MOMBAÇA,Caatinga
+Satelliten: {}
+Biome: {'Mata Atlântica': 21328, 'Caatinga': 20235, 'Cerrado': 81468, 'Amazônia': 140346, 'Pantanal': 14498, 'Pampa': 424}

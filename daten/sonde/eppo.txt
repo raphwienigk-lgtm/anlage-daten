@@ -1,0 +1,77 @@
+URL: https://gd.eppo.int/reporting/Rse-2026-08
+Status: 200
+Typ: text/html; charset=UTF-8
+Größe: 15577 Bytes
+
+Treffer für 'Indonesia|Malaysia|palm|Elaeis': 1
+--- Ausschnitt ---
+ermany</a></td>
+</tr>
+<tr>
+	<td>191</td>
+	<td><a href="/reporting/article-8487">Update of the situation of Bursaphelenchus xylophilus in France</a></td>
+</tr>
+<tr>
+	<td>192</td>
+	<td><a href="/reporting/article-8488">First report of Curtobacterium flaccumfaciens pv. flaccumfaciens in Croatia</a></td>
+</tr>
+<tr>
+	<td>193</td>
+	<td><a href="/reporting/article-8489">First report of Fusarium oxysporum f. sp. cubense Tropical race 4 in Bangladesh</a></td>
+</tr>
+<tr>
+	<td>194</td>
+	<td><a href="/reporting/article-8490">First report of cucurbit yellow stunting disorder virus in Java, Indonesia</a></td>
+</tr>
+<tr>
+	<td>195</td>
+	<td><a href="/reporting/article-8491">Plant diseases newly reported from Romania</a></td>
+</tr>
+<tr>
+	<td>196</td>
+	<td><a href="/reporting/article-8492">Physiological host range of Istocheta aldrichi: a biological control agent of Popillia japonica</a></td>
+</tr>
+<tr>
+	<td>197</td>
+	<td><a href="/reporting/article-8493">Biological control in Latin America and the Caribbean</a></td>
+</tr>
+<tr>
+	<td>198</td>
+	<td><a href="/reporting/article-8494">Biological control agents added to EPPO Standard PM 6/3</a></td>
+</tr>
+<tr>
+	<td>199</td>
+	<td><a href="/reporting/article-8495">Reynoutria multiflora in the EPPO region: addition to the EPPO Alert List</a></td>
+</tr>
+<tr>
+	<td>200</td>
+	<td><a href="/reporting/article-8496">EUCAMED: an inventory of eucalypts introduced to the Mediterranean Basin</a></td>
+</tr>
+<tr>
+	<td>201</td>
+	<td><a href="/reporting/article-8497">First report of Digitaria violascens in Belgium </a></td>
+</tr>
+</tbody>
+</table>
+
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+  </div>
+</div>
+<!-- Content end -->
+
+<footer>
+  <div class="container">
+    <div class="row  hidden-print">
+      <div class="col-md-2">
+      <ul>
+      	<li><a href="/contact">Contact EPPO</a></li>
+      </ul>
+      </div>
+      <div class="col-md-2">
+      <ul>
+        <li><a href="http

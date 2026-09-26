@@ -1,0 +1,6 @@
+URL: https://bepi.mpob.gov.my/admin2/price_local_daily_view_cpo_msia.php?more=Y&jenis=1Y&tahun=2021
+Status: 200
+Typ: text/html; charset=UTF-8
+Größe: 0 Bytes
+
+

@@ -1,0 +1,171 @@
+URL: https://bepi.mpob.gov.my/admin2/price_local_daily_view_cpo_msia.php?more=Y&jenis=1Y&tahun=2026
+Status: 200
+Typ: text/html; charset=UTF-8
+Größe: 60127 Bytes
+
+<link rel="stylesheet" href="css/style.css" type="text/css" title="default" />
+
+<style type="text/css" media="print">
+.print-icon{
+    display:none;
+}
+</style>
+<style type="text/css">
+.print-icon{
+    margin:10px;
+    cursor:pointer;
+}
+</style>
+<body onload="parent.scrollTo(0,0)">
+<div id="main">
+
+    <table id="hor-kosong" style="width:100%;" >
+        <tr >
+            <th colspan="13" style="text-align:center;">
+                <img src="../images/mpob-logo-md.png" width="100" align="center"/>
+                <!--<span style="style1"><strong>MPOB DAILY MALAYSIA PRICES OF CRUDE PALM OIL (RM/TONNE)</strong><br /><strong><em>Harga Harian Minyak Sawit Mentah -  Malaysia (RM/Tan)</em></strong><br />-->
+                </span>
+            </th>
+            <tbody>
+
+				 <tr>
+                    <td colspan="13"> <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>MALAYSIA PRICES OF CRUDE PALM OIL</title>
+<script type="text/javascript" src="js/jquery/jquery-latest.pack.js"></script>
+<script type="text/javascript">
+function loadBack(tahun){
+    location.href="price_local_daily_view_cpo_msia.php?more=Y&jenis=1Y&tahun="+tahun;   
+}
+</script>
+<script type="text/javascript">
+$(function () {
+    var chart;
+
+    $(document).ready(function() {
+	
+	    Highcharts.setOptions({
+		lang: {
+        decimalPoint: '.',
+        thousandsSep: ','
+		}
+		});	   
+		
+        chart = new Highcharts.Chart({
+            chart: {
+                renderTo: 'container',
+                type: 'line',
+				plotBackgroundImage: 'bggraph4.png',
+				marginBottom: 60
+            },
+			credits: {
+			enabled: false
+			},
+			
+            title: {
+                text: 'MPOB: DAILY MALAYSIA PRICES OF CRUDE PALM OIL (RM/TONNE)-2026',
+                style : {
+                            fontWeight : 'bold',
+                            color : '#232323',
+                            fontFamily : 'Arial',
+                            fontSize : '12px'
+                },
+                x: 0 //center
+            },
+            subtitle: {
+                text: 'MPOB: Harga Harian Minyak Sawit Mentah - Malaysia (RM/Tan)- 2026',
+                style : {
+                            fontWeight : 'bold',
+                            color : '#0066FF',
+                            fontFamily : 'Arial',
+                            fontSize : '12px'
+                },
+                x: 0
+            },
+            plotOptions:{
+                line:{showInLegend:false},
+            },
+            xAxis: {
+				labels: {
+                staggerLines: 2},
+				tickPositioner: function () {
+                var positions = [],
+                    tick = Math.floor(this.dataMin),
+                    increment = Math.ceil((this.dataMax - this.dataMin) / 11);
+
+                if (this.dataMax !== null && this.dataMin !== null) {
+                    for (tick; tick - increment <= this.dataMax; tick += increment) {
+                        positions.push(tick);
+                    }
+                }
+                return positions;
+				},
+               
+                title :{ text : 'Date'},
+				
+                categories: [
+                                'Dec 31, 2025',
+                                'Jan 02, 2026',
+                                'Jan 05, 2026',
+                                'Jan 06, 2026',
+                                'Jan 07, 2026',
+                                'Jan 08, 2026',
+                                'Jan 09, 2026',
+                                'Jan 12, 2026',
+                                'Jan 13, 2026',
+                                'Jan 14, 2026',
+                                'Jan 15, 2026',
+                                'Jan 16, 2026',
+                                'Jan 19, 2026',
+                                'Jan 20, 2026',
+                                'Jan 21, 2026',
+                                'Jan 22, 2026',
+                                'Jan 23, 2026',
+                                'Jan 26, 2026',
+                                'Jan 27, 2026',
+                                'Jan 28, 2026',
+                                'Jan 29, 2026',
+                                'Feb 03, 2026',
+                                'Feb 04, 2026',
+                                'Feb 05, 2026',
+                                'Feb 06, 2026',
+                                'Feb 09, 2026',
+                                'Feb 10, 2026',
+                                'Feb 11, 2026',
+                                'Feb 12, 2026',
+                                'Feb 13, 2026',
+                                'Feb 16, 2026',
+                                'Feb 19, 2026',
+                                'Feb 2
+... (55127 Zeichen mehr) ...
+<td width="7%"  bgcolor="#FFFF00" align="center" class="style2"><strong><div align="center">August</div></strong></td>
+                    <td width="7%"  bgcolor="#FFFF00" align="center" class="style2"><strong><div align="center">September</div></strong></td>
+                    <td width="7%"  bgcolor="#FFFF00" align="center" class="style2"><strong><div align="center">October</div></strong></td>
+                    <td width="7%"  bgcolor="#FFFF00" align="center" class="style2"><strong><div align="center">November</div></strong></td>
+                    <td width="7%" bgcolor="#FFFF00" align="center" class="style2"><strong><div align="center">December</div></strong></td>
+                </tr>
+				-->
+            </tbody>
+        </tr>
+    </table>
+    <p><br /></p>
+    <div style="padding-left:0px;">
+        <p>Note : </p>
+ 		&nbsp;&nbsp;&nbsp;&nbsp; 1) All prices are weighted average / Semua harga dalam purata wajaran <br>
+		&nbsp;&nbsp;&nbsp;&nbsp; 2) Price to be revised accordingly at 8.30am & 4.30pm / Harga akan dikemaskini pada jam 8.30 pagi & 4.30 petang.<br>
+
+		<p>Legend : </p>
+		&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;<font color=red>**</font> - Price as at 8.30 AM / Harga adalah sehingga 8.30 pagi.<br>
+        &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;NT - No Trade / Tiada Urusniaga <br>
+        &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;<font color=red>PH </font>: Public Holiday / Cuti Am
+
+        <p>Last update : 25/09/2026 &nbsp;
+							4.30 pm        </p>
+    </div>
+</div>
+
+
+</body>
+

@@ -1,0 +1,41 @@
+URL: https://rapid.ac.uk/sites/default/files/rapid_data/moc_transports.nc
+Status: 200
+Typ: application/x-netcdf
+Größe: 1182284 Bytes
+
+Magische Bytes: b'\x89HDF\r\n\x1a\n'
+Format: NETCDF4
+Globale Attribute:
+  Title = RAPID MOC timeseries
+  Institution = National Oceanography Centre,UK
+  Website = http://www.rapid.ac.uk/
+  Acknowledgement = Data from the RAPID AMOC observing project is funded by the Natural Environment Research Council, U.S. National Science Foundation (NSF) with support from NOAA. They are freely available from https://
+  Created_by = Ben Moat
+  Creation_date = 22-Jan-2026
+  version = v2024.1a
+  Principle_investigator = Ben Moat
+  Principle_investigator_email = ben.moat@noc.ac.uk
+  DOI = doi: 10.5285/48d0bf43-0598-ceb2-e063-7086abc062f1
+Dimensionen:
+  time: 14599
+Variablen:
+  time ('time',) float64 {'long_name': 'time in days', 'units': 'days since 2004-4-1 00:00:00'}
+    erste: [np.float64(1.0), np.float64(1.5), np.float64(2.0)]  letzte: [np.float64(7299.0), np.float64(7299.5), np.float64(7300.0)]
+  t_therm10 ('time',) float64 {'_FillValue': '-99999.0', 'long_name': 'thermocline recirculation 0-800m', 'units': 'Sv'}
+    erste: [masked, masked, masked]  letzte: [masked, masked, masked]
+  t_aiw10 ('time',) float64 {'_FillValue': '-99999.0', 'long_name': 'intermediate water 800-1100m', 'units': 'Sv'}
+    erste: [masked, masked, masked]  letzte: [masked, masked, masked]
+  t_ud10 ('time',) float64 {'_FillValue': '-99999.0', 'long_name': 'upper NADW 1100-3000m', 'units': 'Sv'}
+    erste: [masked, masked, masked]  letzte: [masked, masked, masked]
+  t_ld10 ('time',) float64 {'_FillValue': '-99999.0', 'long_name': 'lower NADW 3000-5000m', 'units': 'Sv'}
+    erste: [masked, masked, masked]  letzte: [masked, masked, masked]
+  t_bw10 ('time',) float64 {'_FillValue': '-99999.0', 'long_name': 'AABW >5000m', 'units': 'Sv'}
+    erste: [masked, masked, masked]  letzte: [masked, masked, masked]
+  t_gs10 ('time',) float64 {'_FillValue': '-99999.0', 'long_name': 'Florida Straits transport', 'units': 'Sv'}
+    erste: [masked, masked, masked]  letzte: [masked, masked, masked]
+  t_ek10 ('time',) float64 {'_FillValue': '-99999.0', 'long_name': 'Ekman transport', 'units': 'Sv'}
+    erste: [masked, masked, masked]  letzte: [masked, masked, masked]
+  t_umo10 ('time',) float64 {'_FillValue': '-99999.0', 'long_name': ' upper Mid-Ocean transport', 'units': 'Sv'}
+    erste: [masked, masked, masked]  letzte: [masked, masked, masked]
+  moc_mar_hc10 ('time',) float64 {'_FillValue': '-99999.0', 'long_name': 'overturning transport ', 'units': 'Sv'}
+    erste: [masked, masked, masked]  letzte: [masked, masked, masked]

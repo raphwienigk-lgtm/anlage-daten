@@ -1,0 +1,59 @@
+Verzeichnis: https://opendata.dwd.de/climate_environment/GPCC/monitoring_v2022/2026/
+URL: https://opendata.dwd.de/climate_environment/GPCC/monitoring_v2022/2026/monitoring_v2022_10_2026_06.nc.gz
+Status: 200
+Typ: application/octet-stream
+Größe: 258530 Bytes
+
+Magische Bytes: b'\x1f\x8b\x08\x08\xc8\x9e\x95j'
+entpackt: 2083332 Bytes, magische Bytes b'CDF\x02\x00\x00\x00\x01'
+Format: NETCDF3_64BIT_OFFSET
+Globale Attribute:
+  CDI = Climate Data Interface version 2.2.1 (https://mpimet.mpg.de/cdi)
+  Conventions = CF-1.6
+  history = Mon Aug 31 15:33:28 2026: cdo -setattribute,FILE=gattfile_10 TMP/monitoring_v2022_10.nc TMP/monitoring_10.nc
+Mon Aug 31 15:33:27 2026: cdo -merge TMP/temp_1_10.nc TMP/temp_2_10.nc TMP/temp_8_10.nc TMP
+  DOI = 10.5676/DWD_GPCC/MP_M_V2022_100
+  title = GPCC Monitoring Monthly Product version 2022, precipitation in mm/month, 1.0 degree
+  summary = This is the GPCC Monitoring Product of monthly global land-surface precipitation based on the station database (SYNOP, CLIMAT) available via the Global Telecommunication System (GTS) of the World Mete
+  keywords = precipitation climatology,gpcc,global,gpcp,
+  id = monitoring_data_precipitation_10
+  creator_url = http://gpcc.dwd.de
+  creator_name = GPCC/DWD
+  creator_email = gpcc@dwd.de
+  institution = Deutscher Wetterdienst
+  date_created = Mo 31. Aug 15:33:28 UTC 2026
+  time_coverage_start = 2026-06
+  time_coverage_end = 2026-06
+  time_coverage_resolution = month
+  geospatial_lat_min = -90.0
+  geospatial_lat_max = 90.0
+  geospatial_lon_min = -180.0
+  geospatial_lon_max = 180.0
+  CDO = Climate Data Operators version 2.2.0 (https://mpimet.mpg.de/cdo)
+Dimensionen:
+  time: 1
+  lon: 360
+  lat: 180
+Variablen:
+  time ('time',) float64 {'standard_name': 'time', 'units': 'day as %Y%m%d.%f', 'calendar': 'proleptic_gregorian', 'axis': 'T'}
+    erste: [np.float64(20260601.0)]  letzte: [np.float64(20260601.0)]
+  lon ('lon',) float64 {'standard_name': 'longitude', 'long_name': 'longitude', 'units': 'degrees_east', 'axis': 'X'}
+    erste: [np.float64(-179.5), np.float64(-178.5), np.float64(-177.5)]  letzte: [np.float64(177.5), np.float64(178.5), np.float64(179.5)]
+  lat ('lat',) float64 {'standard_name': 'latitude', 'long_name': 'latitude', 'units': 'degrees_north', 'axis': 'Y'}
+    erste: [np.float64(89.5), np.float64(88.5), np.float64(87.5)]  letzte: [np.float64(-87.5), np.float64(-88.5), np.float64(-89.5)]
+  p ('time', 'lat', 'lon') float32 {'long_name': 'gpcc monitoring monthly product version 2022, precipitation per grid', 'units': 'mm/month', 'code': '20', '_FillValue': '-99999.99', 'missing_value': '-99999.99'}
+  s ('time', 'lat', 'lon') float32 {'long_name': 'gpcc monitoring monthly product version 2022, number of stations per grid', 'units': 'gauges per grid', 'code': '21', '_FillValue': '-99999.99', 'missing_value': '-99999.99'}
+  interpolation_error ('time', 'lat', 'lon') float32 {'long_name': 'gpcc monitoring monthly product version 2022, interpolation error (YAMAMOTO) per', 'units': 'mm/month', 'code': '27', '_FillValue': '-99999.99', 'missing_value': '-99999.99'}
+  solid_p ('time', 'lat', 'lon') float32 {'long_name': 'gpcc monitoring monthly product version 2022, proportion of solid precipitation ', 'units': '%', 'code': '22', '_FillValue': '-99999.99', 'missing_value': '-99999.99'}
+  liquid_p ('time', 'lat', 'lon') float32 {'long_name': 'gpcc monitoring monthly product version 2022, proportion of liquid  precipitatio', 'units': '%', 'code': '23', '_FillValue': '-99999.99', 'missing_value': '-99999.99'}
+  abs_gauge_err ('time', 'lat', 'lon') float32 {'long_name': 'gpcc monitoring monthly product version 2022, absolute systematic gauge error pe', 'units': 'mm/month', 'code': '24', '_FillValue': '-99999.99', 'missing_value': '-99999.99'}
+  rel_gauge_err ('time', 'lat', 'lon') float32 {'long_name': 'gpcc monitoring monthly product version 2022, relativ systematic gauge error per', 'units': '%', 'code': '25', '_FillValue': '-99999.99', 'missing_value': '-99999.99'}
+  corr_fac ('time', 'lat', 'lon') float32 {'long_name': 'gpcc monitoring monthly product version 2022, systematic gauge error correction ', 'code': '26', '_FillValue': '-99999.99', 'missing_value': '-99999.99'}
+  Probe p[0,...,:3,:3]: [[None, None, None], [None, None, None], [None, None, None]]
+  Probe s[0,...,:3,:3]: [[0.0, 0.0, 0.0], [0.0, 0.0, 0.0], [0.0, 0.0, 0.0]]
+  Probe interpolation_error[0,...,:3,:3]: [[None, None, None], [None, None, None], [None, None, None]]
+  Probe solid_p[0,...,:3,:3]: [[None, None, None], [None, None, None], [None, None, None]]
+  Probe liquid_p[0,...,:3,:3]: [[None, None, None], [None, None, None], [None, None, None]]
+  Probe abs_gauge_err[0,...,:3,:3]: [[None, None, None], [None, None, None], [None, None, None]]
+  Probe rel_gauge_err[0,...,:3,:3]: [[None, None, None], [None, None, None], [None, None, None]]
+  Probe corr_fac[0,...,:3,:3]: [[None, None, None], [None, None, None], [None, None, None]]

@@ -1,0 +1,44 @@
+URL: https://opendata.dwd.de/climate_environment/GPCC/monitoring_v2022/1982/
+Status: 200
+Typ: text/html
+Größe: 3613 Bytes
+
+<html>
+<head><title>Index of /climate_environment/GPCC/monitoring_v2022/1982/</title></head>
+<body>
+<h1>Index of /climate_environment/GPCC/monitoring_v2022/1982/</h1><hr><pre><a href="../">../</a>
+<a href="monitoring_v2022_10_1982_01.nc.gz">monitoring_v2022_10_1982_01.nc.gz</a>                  02-Dec-2025 12:28:34              273206
+<a href="monitoring_v2022_10_1982_02.nc.gz">monitoring_v2022_10_1982_02.nc.gz</a>                  02-Dec-2025 12:28:34              273582
+<a href="monitoring_v2022_10_1982_03.nc.gz">monitoring_v2022_10_1982_03.nc.gz</a>                  02-Dec-2025 12:28:34              280940
+<a href="monitoring_v2022_10_1982_04.nc.gz">monitoring_v2022_10_1982_04.nc.gz</a>                  02-Dec-2025 12:28:34              284008
+<a href="monitoring_v2022_10_1982_05.nc.gz">monitoring_v2022_10_1982_05.nc.gz</a>                  02-Dec-2025 12:28:34              276813
+<a href="monitoring_v2022_10_1982_06.nc.gz">monitoring_v2022_10_1982_06.nc.gz</a>                  02-Dec-2025 12:28:34              260092
+<a href="monitoring_v2022_10_1982_07.nc.gz">monitoring_v2022_10_1982_07.nc.gz</a>                  02-Dec-2025 12:28:34              241913
+<a href="monitoring_v2022_10_1982_08.nc.gz">monitoring_v2022_10_1982_08.nc.gz</a>                  02-Dec-2025 12:28:34              250533
+<a href="monitoring_v2022_10_1982_09.nc.gz">monitoring_v2022_10_1982_09.nc.gz</a>                  02-Dec-2025 12:28:34              265489
+<a href="monitoring_v2022_10_1982_10.nc.gz">monitoring_v2022_10_1982_10.nc.gz</a>                  02-Dec-2025 12:28:34              280495
+<a href="monitoring_v2022_10_1982_11.nc.gz">monitoring_v2022_10_1982_11.nc.gz</a>                  02-Dec-2025 12:28:34              280654
+<a href="monitoring_v2022_10_1982_12.nc.gz">monitoring_v2022_10_1982_12.nc.gz</a>                  02-Dec-2025 12:28:34              277578
+<a href="monitoring_v2022_25_1982_01.nc.gz">monitoring_v2022_25_1982_01.nc.gz</a>                  02-Dec-2025 12:28:34               62166
+<a href="monitoring_v2022_25_1982_02.nc.gz">monitoring_v2022_25_1982_02.nc.gz</a>                  02-Dec-2025 12:28:34               62197
+<a href="monitoring_v2022_25_1982_03.nc.gz">monitoring_v2022_25_1982_03.nc.gz</a>                  02-Dec-2025 12:28:34               63363
+<a href="monitoring_v2022_25_1982_04.nc.gz">monitoring_v2022_25_1982_04.nc.gz</a>                  02-Dec-2025 12:28:34               64084
+<a href="monitoring_v2022_25_1982_05.nc.gz">monitoring_v2022_25_1982_05.nc.gz</a>                  02-Dec-2025 12:28:34               62550
+<a href="monitoring_v2022_25_1982_06.nc.gz">monitoring_v2022_25_1982_06.nc.gz</a>                  02-Dec-2025 12:28:34               59748
+<a href="monitoring_v2022_25_1982_07.nc.gz">monitoring_v2022_25_1982_07.nc.gz</a>                  02-Dec-2025 12:28:34               56305
+<a href="monitoring_v2022_25_1982_08.nc.gz">monitoring_v2022_25_1982_08.nc.gz</a>                  02-Dec-2025 12:28:34 
+... (613 Zeichen mehr) ...
+a>                  02-Dec-2025 12:28:34               62197
+<a href="monitoring_v2022_25_1982_03.nc.gz">monitoring_v2022_25_1982_03.nc.gz</a>                  02-Dec-2025 12:28:34               63363
+<a href="monitoring_v2022_25_1982_04.nc.gz">monitoring_v2022_25_1982_04.nc.gz</a>                  02-Dec-2025 12:28:34               64084
+<a href="monitoring_v2022_25_1982_05.nc.gz">monitoring_v2022_25_1982_05.nc.gz</a>                  02-Dec-2025 12:28:34               62550
+<a href="monitoring_v2022_25_1982_06.nc.gz">monitoring_v2022_25_1982_06.nc.gz</a>                  02-Dec-2025 12:28:34               59748
+<a href="monitoring_v2022_25_1982_07.nc.gz">monitoring_v2022_25_1982_07.nc.gz</a>                  02-Dec-2025 12:28:34               56305
+<a href="monitoring_v2022_25_1982_08.nc.gz">monitoring_v2022_25_1982_08.nc.gz</a>                  02-Dec-2025 12:28:34               58010
+<a href="monitoring_v2022_25_1982_09.nc.gz">monitoring_v2022_25_1982_09.nc.gz</a>                  02-Dec-2025 12:28:34               60716
+<a href="monitoring_v2022_25_1982_10.nc.gz">monitoring_v2022_25_1982_10.nc.gz</a>                  02-Dec-2025 12:28:34               63464
+<a href="monitoring_v2022_25_1982_11.nc.gz">monitoring_v2022_25_1982_11.nc.gz</a>                  02-Dec-2025 12:28:34               63473
+<a href="monitoring_v2022_25_1982_12.nc.gz">monitoring_v2022_25_1982_12.nc.gz</a>                  02-Dec-2025 12:28:34               63190
+</pre><hr></body>
+</html>
+
