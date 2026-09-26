@@ -105,7 +105,7 @@ class FalschesNetz:
             return fred_text(params["id"], self.s.fred)
         raise AbrufFehler(f"Unbekannte Adresse im Test: {url}")
 
-    def hole_json(self, url: str, params: dict | None = None, kopf: dict | None = None):
+    def hole_json(self, url: str, params: dict | None = None, kopf: dict | None = None, timeout: int = 45):
         self.abrufe.append((url, params))
         start = date.fromisoformat(params["start_date"])
         ende = date.fromisoformat(params["end_date"])

@@ -43,7 +43,7 @@ def test_klimatologie_verliert_nichts_und_ueberspringt_kaputte_punkte(ablage, ne
     jambi = k["regionen"]["ost"]["punkte"][1]
     zaehler = {"jambi": 0}
 
-    def launisch(url, params=None):
+    def launisch(url, params=None, **_):
         if params["latitude"] == bengkulu["lat"]:
             raise AbrufFehler("Fehler 400 bei Open-Meteo: kaputter Punkt")
         if params["latitude"] == jambi["lat"] and "daily" in params:

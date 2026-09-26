@@ -29,19 +29,22 @@ def drossel(abrufe: float, pro_minute: float) -> None:
         time.sleep(60.0 * abrufe / pro_minute)
 
 
+STUNDEN_TIMEOUT = 120      # Sekunden Wartezeit für Abrufe mit Stundenwerten
 _SPANNE = re.compile(r"out of allowed range from \d{4}-\d{2}-\d{2} to (\d{4}-\d{2}-\d{2})")
 
 
-def _hole(url: str, parameter: dict) -> dict:
+def _hole(url: str, parameter: dict, timeout: int | None = None) -> dict:
     """Abruf mit einer Korrektur: Liegt das Enddatum hinter den verfügbaren Daten,
-    nennt Open-Meteo die erlaubte Spanne. Dann einmal mit diesem Enddatum neu versuchen."""
+    nennt Open-Meteo die erlaubte Spanne. Dann einmal mit diesem Enddatum neu versuchen.
+    Stundenwerte antworten manchmal langsam; dafür gibt es eine längere Wartezeit."""
+    extra = {"timeout": timeout} if timeout else {}
     try:
-        return netz.hole_json(url, parameter)
+        return netz.hole_json(url, parameter, **extra)
     except AbrufFehler as fehler:
         treffer = _SPANNE.search(str(fehler))
         if not treffer or treffer.group(1) >= parameter["end_date"] or treffer.group(1) < parameter["start_date"]:
             raise
-        return netz.hole_json(url, {**parameter, "end_date": treffer.group(1)})
+        return netz.hole_json(url, {**parameter, "end_date": treffer.group(1)}, **extra)
 
 
 def _pruefe(antwort: dict, punkt: dict) -> dict:
@@ -86,7 +89,7 @@ def hole_mittleren_zonalwind(url: str, punkt: dict, start: date, ende: date,
     """Mittlerer Ost-West-Wind in 10 m Höhe über den Zeitraum, in m/s, und die Zahl der Stunden."""
     antwort = _pruefe(_hole(url, _parameter(
         punkt, start, ende, modell,
-        hourly="wind_speed_10m,wind_direction_10m", wind_speed_unit="ms")), punkt)
+        hourly="wind_speed_10m,wind_direction_10m", wind_speed_unit="ms"), timeout=STUNDEN_TIMEOUT), punkt)
     stuendlich = antwort.get("hourly") or {}
     tempo = stuendlich.get("wind_speed_10m") or []
     richtung = stuendlich.get("wind_direction_10m") or []

@@ -108,6 +108,8 @@ def test_fruehzeichen_taeglich_und_monatlich(schwellen):
     fm = inlandspreise.fruehzeichen(monat, date(2026, 9, 20), s)
     assert fm["art"] == "monatlich" and fm["vergleich"]["datum"] == "2026-04-01"
     assert fm["veraenderung"] == pytest.approx(25600 / 23200 - 1, abs=1e-4)
+    assert fm["urteil"] == "Frühzeichen"                                   # elf Wochen alt ist für Monatswerte normal
+    assert inlandspreise.fruehzeichen(monat, date(2026, 11, 1), s)["urteil"] == "veraltet"
 
 
 def test_lauf_mit_erfundenem_netz(ablage, monkeypatch):

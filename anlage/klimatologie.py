@@ -160,22 +160,30 @@ def wind(k: dict, budget_ende: float, pro_minute: float, melde=print) -> dict:
         je_jahr = zwischen.hole("wind", punkt)
         melde(f"Wind {punkt['name']}: hole Mai und Juni {VON} bis {BIS} …" if not je_jahr
               else f"Wind {punkt['name']}: mache weiter, {BIS - VON + 1 - len(je_jahr)} Jahre fehlen …")
-        try:
-            for jahr in range(VON, BIS + 1):
-                if str(jahr) in je_jahr:
-                    continue
-                _pruefe_budget(budget_ende, gewicht_jahr, pro_minute, f"Wind {punkt['name']} {jahr}")
-                start = date(jahr, monate[0], 1)
-                ende = date(jahr, monate[-1], calendar.monthrange(jahr, monate[-1])[1])
-                try:
-                    mittel, _ = openmeteo.hole_mittleren_zonalwind(om["url"], punkt, start, ende,
-                                                                   modell=om.get("modell"))
-                finally:
-                    openmeteo.drossel(gewicht_jahr, pro_minute)
-                je_jahr[str(jahr)] = round(mittel, 3)
-                zwischen.merke("wind", punkt, je_jahr)
-        except AbrufFehler as fehler:
-            _fehler_behandeln(fehler, f"Wind {punkt['name']}", melde)
+        fehlschlaege = 0
+        for jahr in range(VON, BIS + 1):
+            if str(jahr) in je_jahr:
+                continue
+            _pruefe_budget(budget_ende, gewicht_jahr, pro_minute, f"Wind {punkt['name']} {jahr}")
+            start = date(jahr, monate[0], 1)
+            ende = date(jahr, monate[-1], calendar.monthrange(jahr, monate[-1])[1])
+            try:
+                mittel, _ = openmeteo.hole_mittleren_zonalwind(om["url"], punkt, start, ende,
+                                                               modell=om.get("modell"))
+            except AbrufFehler as fehler:
+                # Ein langsames Jahr hält den Punkt nicht auf: nächstes Jahr, erst nach drei Fehlschlägen in Folge Schluss.
+                _fehler_behandeln(fehler, f"Wind {punkt['name']} {jahr}", melde)
+                fehlschlaege += 1
+                if fehlschlaege >= 3:
+                    break
+                continue
+            finally:
+                openmeteo.drossel(gewicht_jahr, pro_minute)
+            fehlschlaege = 0
+            je_jahr[str(jahr)] = round(mittel, 3)
+            zwischen.merke("wind", punkt, je_jahr)
+        if len(je_jahr) < BIS - VON + 1:
+            melde(f"Wind {punkt['name']}: {BIS - VON + 1 - len(je_jahr)} Jahre fehlen noch; beim nächsten Start weiter")
             continue
         daten["punkte"][punkt["name"]] = {"mittel_ms": round(mean(je_jahr.values()), 3),
                                           "jahre": len(je_jahr), "je_jahr": je_jahr}

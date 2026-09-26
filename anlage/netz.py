@@ -44,8 +44,8 @@ def hole_bytes(url: str, params: dict | None = None, timeout: int = 120) -> byte
     return _abruf(url, params, timeout=timeout).content
 
 
-def hole_json(url: str, params: dict | None = None, kopf: dict | None = None):
-    antwort = _abruf(url, params, kopf=kopf)
+def hole_json(url: str, params: dict | None = None, kopf: dict | None = None, timeout: int = 45):
+    antwort = _abruf(url, params, kopf=kopf, timeout=timeout)
     try:
         return antwort.json()
     except ValueError as fehler:

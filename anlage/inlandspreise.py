@@ -81,7 +81,8 @@ def fruehzeichen(reihe: list[dict], heute: date, s: dict) -> dict:
         veraenderung = jetzt / damals - 1
         ergebnis.update({"art": "täglich", "mittel_jetzt": round(jetzt, 2), "mittel_damals": round(damals, 2)})
     ergebnis["veraenderung"] = round(veraenderung, 4)
-    if alter > s["veraltet_nach_tage"]:
+    grenze = s.get("veraltet_nach_tage_monat", 100) if ergebnis["art"] == "monatlich" else s["veraltet_nach_tage"]
+    if alter > grenze:
         ergebnis["urteil"] = "veraltet"
     elif veraenderung >= s["stark_ab"]:
         ergebnis["urteil"] = "starkes Frühzeichen"
