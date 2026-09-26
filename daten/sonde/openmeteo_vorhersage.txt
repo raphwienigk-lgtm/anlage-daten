@@ -1,0 +1,7 @@
+URL: https://api.open-meteo.com/v1/forecast?latitude=24.69,23.88&longitude=108.08,100.09&daily=precipitation_sum&past_days=7&forecast_days=7&timezone=Asia%2FShanghai
+Status: 503
+Typ: application/json; charset=utf-8
+Größe: 51 Bytes
+
+{"error":true,"reason":"The service is overloaded"}
+--- Leser: AbrufFehler: Open-Meteo-Vorhersage: 1 Antworten für 2 Orte

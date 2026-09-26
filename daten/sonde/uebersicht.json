@@ -142,5 +142,29 @@
     "sekunden": 1.6,
     "zeit": "2026-09-26T14:46:27+02:00",
     "erste_zeile": "URL: https://bepi.mpob.gov.my/admin2/price_local_daily_view_cpo_msia.php?more=Y&jenis=1Y&tahun=2026"
+  },
+  "bundesregister": {
+    "status": "ok",
+    "sekunden": 0.2,
+    "zeit": "2026-09-26T19:38:45+02:00",
+    "erste_zeile": "URL: https://www.federalregister.gov/api/v1/documents.json?conditions%5Bterm%5D=antimony&conditions%5Bpublication_date%5D%5Bgte%5D=2025-09-26&per_page=20&order=newest&fields%5B%5D=title&fields%5B%5D=p"
+  },
+  "usgs_beben": {
+    "status": "ok",
+    "sekunden": 0.5,
+    "zeit": "2026-09-26T19:38:45+02:00",
+    "erste_zeile": "URL: https://earthquake.usgs.gov/fdsnws/event/1/query?format=geojson&minmagnitude=5&starttime=2026-06-28&minlatitude=18&maxlatitude=50&minlongitude=95&maxlongitude=135&orderby=time"
+  },
+  "openmeteo_vorhersage": {
+    "status": "ok",
+    "sekunden": 0.2,
+    "zeit": "2026-09-26T19:38:45+02:00",
+    "erste_zeile": "URL: https://api.open-meteo.com/v1/forecast?latitude=24.69,23.88&longitude=108.08,100.09&daily=precipitation_sum&past_days=7&forecast_days=7&timezone=Asia%2FShanghai"
+  },
+  "mofcom_robots": {
+    "status": "Fehler",
+    "sekunden": 3.8,
+    "zeit": "2026-09-26T19:38:49+02:00",
+    "erste_zeile": "Fehler: ConnectionError: ('Connection aborted.', ConnectionResetError(104, 'Connection reset by peer'))"
   }
 }
