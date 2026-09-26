@@ -1,0 +1,70 @@
+{
+  "stand": "2026-09-26T10:06:52+02:00",
+  "quellen": [
+    {
+      "name": "NOAA CPC · El-Niño-Index (ONI)",
+      "status": "ok",
+      "stand": "JJA 2026: +1.80"
+    },
+    {
+      "name": "Dipol-Index, JMA, Basis 1991–2020",
+      "status": "ok",
+      "stand": "2026-08: +0.37"
+    },
+    {
+      "name": "Dipol-Index, NOAA PSL (HadISST)",
+      "status": "ok",
+      "stand": "2026-05: +0.15"
+    },
+    {
+      "name": "Dipol-Index, NOAA PSL GCOS (HadISST)",
+      "status": "ok",
+      "stand": "2026-05: +0.15"
+    },
+    {
+      "name": "Open-Meteo Regen",
+      "status": "ok",
+      "stand": "Riau, Sumatra: 7 von 11 Tagen, letzter Messtag 2026-09-20"
+    },
+    {
+      "name": "Open-Meteo Wind",
+      "status": "ok",
+      "stand": "vor Bengkulu: Ost-West-Wind -5.4 m/s aus 96 Stunden"
+    },
+    {
+      "name": "FRED PPOILUSDM",
+      "status": "ok",
+      "stand": "2026-07-01: 1106.469929089015"
+    },
+    {
+      "name": "Yahoo BZ=F",
+      "status": "ok",
+      "stand": "2026-09-25: 104.32"
+    },
+    {
+      "name": "Yahoo E5H.SI",
+      "status": "ok",
+      "stand": "2026-09-25: 0.33"
+    },
+    {
+      "name": "Yahoo EB5.SI",
+      "status": "ok",
+      "stand": "2026-09-25: 4.62"
+    },
+    {
+      "name": "Yahoo F34.SI",
+      "status": "ok",
+      "stand": "2026-09-25: 3.68"
+    },
+    {
+      "name": "Yahoo P8Z.SI",
+      "status": "ok",
+      "stand": "2026-09-25: 2.16"
+    },
+    {
+      "name": "Yahoo ZL=F",
+      "status": "ok",
+      "stand": "2026-09-25: 67.26"
+    }
+  ]
+}
