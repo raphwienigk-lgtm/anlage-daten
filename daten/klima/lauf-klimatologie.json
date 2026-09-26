@@ -1,35 +1,17 @@
 {
-  "stand": "2026-09-26T14:23:49+02:00",
+  "stand": "2026-09-26T14:51:27+02:00",
   "ergebnis": "Einzelne Punkte fehlen noch (siehe Meldungen). Einfach noch einmal starten.",
   "fertig": {
     "wind": false,
-    "regen": false
+    "regen": true
   },
   "meldungen": [
-    "Wind vor Bengkulu: hole Mai und Juni 1991 bis 2020 …",
+    "Wind vor Bengkulu: mache weiter, 23 Jahre fehlen …",
     "Fehler bei Wind vor Bengkulu: ReadTimeout bei https://archive-api.open-meteo.com/v1/archive: HTTPSConnectionPool(host='archive-api.open-meteo.com', port=443): Read timed out. (read timeout=45)",
-    "Wind südlich der Sundastraße: hole Mai und Juni 1991 bis 2020 …",
+    "Wind südlich der Sundastraße: mache weiter, 25 Jahre fehlen …",
     "Fehler bei Wind südlich der Sundastraße: ReadTimeout bei https://archive-api.open-meteo.com/v1/archive: HTTPSConnectionPool(host='archive-api.open-meteo.com', port=443): Read timed out. (read timeout=45)",
-    "Regen Riau, Sumatra: hole 1991 bis 2020 …",
-    "Regen Riau, Sumatra: fertig (30 Jahre)",
-    "Regen Jambi, Sumatra: hole 1991 bis 2020 …",
-    "Regen Jambi, Sumatra: fertig (30 Jahre)",
-    "Regen Zentral-Kalimantan: hole 1991 bis 2020 …",
-    "Regen Zentral-Kalimantan: fertig (30 Jahre)",
-    "Regen West-Kalimantan: hole 1991 bis 2020 …",
-    "Regen West-Kalimantan: fertig (30 Jahre)",
-    "Regen Sabah: hole 1991 bis 2020 …",
-    "Regen Sabah: fertig (30 Jahre)",
-    "Regen Nairobi, Kenia: hole 1991 bis 2020 …",
-    "Regen Nairobi, Kenia: fertig (30 Jahre)",
-    "Regen Garissa, Kenia: hole 1991 bis 2020 …",
-    "Regen Garissa, Kenia: fertig (30 Jahre)",
-    "Regen Beledweyne, Somalia: hole 1991 bis 2020 …",
-    "Regen Beledweyne, Somalia: fertig (30 Jahre)",
-    "Regen Moyale, Äthiopien: hole 1991 bis 2020 …",
-    "Fehler bei Regen Moyale, Äthiopien: Keine JSON-Antwort von https://archive-api.open-meteo.com/v1/archive",
-    "Regen Arusha, Tansania: hole 1991 bis 2020 …",
-    "Regen Arusha, Tansania: fertig (30 Jahre)",
+    "Regen Moyale, Äthiopien: mache weiter, 4 von 6 Blöcken fehlen …",
+    "Regen Moyale, Äthiopien: fertig (30 Jahre)",
     "Einzelne Punkte fehlen noch (siehe Meldungen). Einfach noch einmal starten."
   ]
 }
