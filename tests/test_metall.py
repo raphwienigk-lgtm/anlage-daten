@@ -79,9 +79,14 @@ def test_gegenseite_gewicht_und_achsen():
               "zusammenfassung": "gallium"}
     innen = {"nummer": "2026-3", "titel": "Critical Mineral Mapping", "datum": "2026-10-12", "art": "Notice",
              "behoerden": ["interior-department"], "zusammenfassung": "Graphite deposits in Alaska"}
-    d = rechnen.gegenseite({"gallium": [bis, beirat], "critical mineral": [innen, bis]}, k["gegenseite"], {"2026-1"})
+    zoll = {"nummer": "2026-4", "titel": "Active Anode Material From the People's Republic of China: Final Determination",
+            "datum": "2026-10-13", "art": "Notice", "behoerden": ["commerce-department", "international-trade-administration"],
+            "zusammenfassung": ""}
+    d = rechnen.gegenseite({"gallium": [bis, beirat], "critical mineral": [innen, bis], "graphite": [zoll]},
+                           k["gegenseite"], {"2026-1"})
     nach = {x["nummer"]: x for x in d}
-    assert len(d) == 3 and nach["2026-1"]["begriffe"] == ["gallium", "critical mineral"]
+    assert nach["2026-4"]["gewichtig"] and nach["2026-4"]["achsen"] == ["batterie"]
+    assert len(d) == 4 and nach["2026-1"]["begriffe"] == ["gallium", "critical mineral"]
     assert nach["2026-1"]["gewichtig"] and not nach["2026-1"]["neu"]
     assert not nach["2026-2"]["gewichtig"] and nach["2026-2"]["neu"]
     assert nach["2026-3"]["achsen"] == ["batterie"] and not nach["2026-3"]["gewichtig"]
@@ -131,6 +136,7 @@ class Netz:
     def hole_json(self, url, params=None, kopf=None, timeout=45):
         self.abrufe.append(url)
         if "federalregister" in url:
+            assert "industry-and-security-bureau" in params["conditions[agencies][]"]
             if params["conditions[term]"] == "gallium":
                 return {"count": 2, "results": [
                     {"document_number": "2026-20001", "title": "Revisions to the Export Administration Regulations: "

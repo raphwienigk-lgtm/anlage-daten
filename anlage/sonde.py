@@ -336,7 +336,10 @@ def bundesregister() -> str:
     ab = (date.today() - timedelta(days=365)).isoformat()
     url = ("https://www.federalregister.gov/api/v1/documents.json?conditions%5Bterm%5D=antimony"
            f"&conditions%5Bpublication_date%5D%5Bgte%5D={ab}&per_page=20&order=newest"
-           + "".join(f"&fields%5B%5D={f}" for f in mq.FELDER))
+           + "".join(f"&fields%5B%5D={f}" for f in mq.FELDER)
+           + "".join(f"&conditions%5Bagencies%5D%5B%5D={b}" for b in ("industry-and-security-bureau",
+                     "trade-representative-office-of-united-states", "commerce-department",
+                     "international-trade-administration", "executive-office-of-the-president")))
     return _mit_leser(url, mq.lies_bundesregister)
 
 

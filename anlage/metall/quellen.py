@@ -36,11 +36,14 @@ def lies_bundesregister(antwort: dict) -> list[dict]:
     return [d for d in dokumente if d["nummer"]]
 
 
-def hole_bundesregister(url: str, begriff: str, ab: date) -> list[dict]:
-    """Einträge ab `ab`, deren Volltext den Begriff enthält. Mehrwortbegriffe als Wortgruppe."""
+def hole_bundesregister(url: str, begriff: str, ab: date, behoerden: list[str] | None = None) -> list[dict]:
+    """Einträge ab `ab`, deren Volltext den Begriff enthält. Mehrwortbegriffe als Wortgruppe.
+    Mit `behoerden` nur Einträge dieser Stellen (Kürzel wie im Bundesregister)."""
     suche = f'"{begriff}"' if " " in begriff else begriff
     params = {"conditions[term]": suche, "conditions[publication_date][gte]": ab.isoformat(),
               "per_page": 100, "order": "newest", "fields[]": FELDER}
+    if behoerden:
+        params["conditions[agencies][]"] = list(behoerden)
     return lies_bundesregister(netz.hole_json(url, params))
 
 
@@ -90,6 +93,8 @@ def suchrechteck(standorte: list[dict], rand_grad: float = 4.0) -> tuple[float, 
 # ------------------------------------------------------------------ Regen
 def lies_vorhersage(antwort, standorte: list[dict]) -> dict[str, dict[str, float | None]]:
     """Open-Meteo antwortet bei mehreren Orten mit einer Liste in derselben Reihenfolge."""
+    if isinstance(antwort, dict) and antwort.get("error"):
+        raise AbrufFehler(f"Open-Meteo-Vorhersage meldet: {antwort.get('reason')}")
     liste = antwort if isinstance(antwort, list) else [antwort]
     if len(liste) != len(standorte):
         raise AbrufFehler(f"Open-Meteo-Vorhersage: {len(liste)} Antworten für {len(standorte)} Orte")

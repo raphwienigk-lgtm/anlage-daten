@@ -41,7 +41,7 @@ def _gegenseite(k, url, heute, alt, status):
     treffer, fehler = {}, []
     for begriff in g["begriffe"]:
         try:
-            treffer[begriff] = q.hole_bundesregister(url, begriff, ab)
+            treffer[begriff] = q.hole_bundesregister(url, begriff, ab, g.get("behoerden_suche"))
         except AbrufFehler as f:
             fehler.append(f"{begriff}: {_fehler(f)}")
     alte = ((alt or {}).get("gegenseite") or {}).get("dokumente") or []

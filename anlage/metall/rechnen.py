@@ -71,6 +71,8 @@ def _gewichtig(d: dict, regeln: list[dict], ausschluss: list[str]) -> bool:
             continue
         if "arten" in r and d.get("art") not in r["arten"]:
             continue
+        if "titel_enthaelt" in r and not any(w.lower() in titel for w in r["titel_enthaelt"]):
+            continue
         return True
     return False
 

@@ -107,12 +107,16 @@ gegenseite:
     graphite: [batterie]
     tungsten: [werkzeug]
     "critical mineral": []      # leer = alle Achsen, deren Metalle im Titel oder in der Zusammenfassung stehen
+  # Gesucht wird nur bei diesen Stellen; die Volltextsuche findet die Wörter sonst in jedem Umwelt- oder Atomerlass.
+  behoerden_suche: [industry-and-security-bureau, trade-representative-office-of-united-states, commerce-department,
+                    international-trade-administration, executive-office-of-the-president]
   # Gewichtig heißt: kann eine Achse auf Gelb setzen. Alles andere wird nur gezählt.
   gewichtig:
     - {art: "Presidential Document"}                              # Erlasse und Proklamationen, etwa nach Abschnitt 232
     - {behoerde: "industry-and-security-bureau"}                  # BIS: Ausfuhrkontrollen, Sperrliste, 232-Untersuchungen
     - {behoerde: "trade-representative-office-of-united-states"}  # USTR: Zölle nach Abschnitt 301
     - {behoerde: "commerce-department", arten: ["Rule", "Proposed Rule"]}
+    - {behoerde: "international-trade-administration", titel_enthaelt: ["People's Republic of China"]}   # Antidumping- und Ausgleichszölle
   ausschluss_titel: ["Advisory Committee", "Meeting"]
   suchwoerter:                  # welche englischen Wörter auf welche Achse zeigen (für „critical mineral“)
     chip: [gallium, germanium, antimony, semiconductor]
