@@ -1,5 +1,5 @@
 {
-  "stand": "2026-09-26T22:07:17+02:00",
+  "stand": "2026-09-26T23:14:55+02:00",
   "regeln": {
     "jahre_ab": 1991,
     "horizonte": [
@@ -21,19 +21,140 @@
       "name": "Select Harvests",
       "rolle": "kandidat",
       "erster_kurs": "2000-01-03",
-      "urteil": "zu wenige Fälle",
+      "urteil": "nicht bestanden",
       "haupt": 60,
       "zusammen": {
-        "n": 0,
+        "n": 8,
         "offen": 0,
-        "v20": null,
-        "v60": null,
-        "v120": null,
-        "v_vorlauf": null,
-        "treffer": 0,
-        "trefferquote": 0.0
+        "v20": -0.0021,
+        "v60": -0.0016,
+        "v120": 0.1824,
+        "v_vorlauf": 0.0177,
+        "treffer": 2,
+        "trefferquote": 0.25
       },
-      "faelle": []
+      "faelle": [
+        {
+          "datum": "2000-03-13",
+          "jahr": 2000,
+          "urteil": "starker Spätfrost",
+          "tag0": "2000-03-13",
+          "r20": -0.0363,
+          "r60": 0.0,
+          "r120": 0.4846,
+          "vorlauf": -0.0266,
+          "v20": -0.0401,
+          "v60": 0.0134,
+          "v120": 0.4351,
+          "v_vorlauf": -0.0335,
+          "treffer": false
+        },
+        {
+          "datum": "2003-03-21",
+          "jahr": 2003,
+          "urteil": "starker Spätfrost",
+          "tag0": "2003-03-21",
+          "r20": 0.0983,
+          "r60": 0.2977,
+          "r120": 0.633,
+          "vorlauf": -0.0254,
+          "v20": 0.0584,
+          "v60": 0.2147,
+          "v120": 0.5186,
+          "v_vorlauf": -0.0421,
+          "treffer": true
+        },
+        {
+          "datum": "2004-04-04",
+          "jahr": 2004,
+          "urteil": "starker Spätfrost",
+          "tag0": "2004-04-05",
+          "r20": -0.073,
+          "r60": -0.0307,
+          "r120": 0.1358,
+          "vorlauf": -0.0087,
+          "v20": -0.0592,
+          "v60": -0.0548,
+          "v120": 0.0802,
+          "v_vorlauf": -0.0178,
+          "treffer": false
+        },
+        {
+          "datum": "2005-03-25",
+          "jahr": 2005,
+          "urteil": "starker Spätfrost",
+          "tag0": "2005-03-29",
+          "r20": -0.0426,
+          "r60": 0.0191,
+          "r120": 0.3351,
+          "vorlauf": -0.0208,
+          "v20": -0.0142,
+          "v60": -0.0132,
+          "v120": 0.2438,
+          "v_vorlauf": -0.0304,
+          "treffer": false
+        },
+        {
+          "datum": "2010-03-20",
+          "jahr": 2010,
+          "urteil": "Spätfrost",
+          "tag0": "2010-03-22",
+          "r20": -0.0179,
+          "r60": -0.1566,
+          "r120": -0.2124,
+          "vorlauf": 0.0347,
+          "v20": -0.0348,
+          "v60": -0.1033,
+          "v120": -0.1596,
+          "v_vorlauf": -0.0165,
+          "treffer": false
+        },
+        {
+          "datum": "2012-03-11",
+          "jahr": 2012,
+          "urteil": "starker Spätfrost",
+          "tag0": "2012-03-12",
+          "r20": 0.0161,
+          "r60": -0.1226,
+          "r120": -0.1936,
+          "vorlauf": -0.1621,
+          "v20": -0.0002,
+          "v60": -0.0874,
+          "v120": -0.2215,
+          "v_vorlauf": -0.1543,
+          "treffer": false
+        },
+        {
+          "datum": "2013-03-20",
+          "jahr": 2013,
+          "urteil": "Spätfrost",
+          "tag0": "2013-03-20",
+          "r20": 0.149,
+          "r60": 0.2313,
+          "r120": 0.7176,
+          "vorlauf": 0.4326,
+          "v20": 0.1601,
+          "v60": 0.266,
+          "v120": 0.6747,
+          "v_vorlauf": 0.4512,
+          "treffer": true
+        },
+        {
+          "datum": "2014-03-31",
+          "jahr": 2014,
+          "urteil": "starker Spätfrost",
+          "tag0": "2014-03-31",
+          "r20": -0.0714,
+          "r60": -0.2336,
+          "r120": -0.0997,
+          "vorlauf": -0.0218,
+          "v20": -0.0867,
+          "v60": -0.2482,
+          "v120": -0.112,
+          "v_vorlauf": -0.0148,
+          "treffer": false
+        }
+      ]
     }
   }
 }

@@ -1,0 +1,172 @@
+{
+  "stand": "2026-09-26T23:14:55+02:00",
+  "datum": "2026-09-26",
+  "version": "0.1.0",
+  "kennung": "palladium",
+  "name": "Palladium",
+  "rolle": "sensor",
+  "hinweis": "Denkhilfe, keine Anlageberatung. Der Sensor schlägt beim Original aus, gekauft würde der Ersatz.",
+  "sensor_art": "preisabstand",
+  "original": {
+    "name": "Palladium",
+    "hinweis": "rund 40 Prozent der Minenförderung aus Russland; im Benzin-Katalysator gegen Platin austauschbar",
+    "ticker": "PALL"
+  },
+  "ersatz": [
+    {
+      "ticker": "PPLT",
+      "name": "Platin-ETF",
+      "waehrung": "USD",
+      "rolle": "kandidat",
+      "hinweis": "physisch hinterlegtes Platin, in Dollar gehandelt"
+    }
+  ],
+  "vergleich": {
+    "ticker": "GLD",
+    "name": "Gold-ETF",
+    "akkusativ": "den Gold-ETF"
+  },
+  "ersatz_name": "Platin",
+  "phase": "ganzjährig",
+  "schwellen": {
+    "anstieg_tage": 60,
+    "anstieg_ab": 0.3,
+    "verhaeltnis_ab": 1.0,
+    "pause_tage": 120,
+    "gelb_tage": 180,
+    "rot_tage": 30
+  },
+  "stufe": "Gelb",
+  "gruende": [
+    {
+      "art": "teurer",
+      "verhaeltnis": 1.428
+    }
+  ],
+  "wechsel": null,
+  "lage": {
+    "datum": "2026-09-25",
+    "anstieg": 0.0431,
+    "verhaeltnis": 1.428
+  },
+  "signale": [
+    {
+      "datum": "2010-04-22",
+      "art": "Sprung",
+      "wert": 0.3237,
+      "verhaeltnis": 0.649
+    },
+    {
+      "datum": "2010-10-12",
+      "art": "Sprung",
+      "wert": 0.3028,
+      "verhaeltnis": 0.693
+    },
+    {
+      "datum": "2013-05-17",
+      "art": "Verhältnis",
+      "wert": 1.015,
+      "verhaeltnis": 1.015
+    },
+    {
+      "datum": "2016-08-18",
+      "art": "Sprung",
+      "wert": 0.3288,
+      "verhaeltnis": 1.26
+    },
+    {
+      "datum": "2018-11-08",
+      "art": "Sprung",
+      "wert": 0.3379,
+      "verhaeltnis": 2.624
+    },
+    {
+      "datum": "2020-01-16",
+      "art": "Sprung",
+      "wert": 0.3185,
+      "verhaeltnis": 4.611
+    },
+    {
+      "datum": "2021-04-27",
+      "art": "Sprung",
+      "wert": 0.3237,
+      "verhaeltnis": 4.792
+    },
+    {
+      "datum": "2022-02-23",
+      "art": "Sprung",
+      "wert": 0.4109,
+      "verhaeltnis": 4.545
+    },
+    {
+      "datum": "2024-10-25",
+      "art": "Sprung",
+      "wert": 0.3115,
+      "verhaeltnis": 2.332
+    },
+    {
+      "datum": "2025-07-17",
+      "art": "Sprung",
+      "wert": 0.3683,
+      "verhaeltnis": 1.764
+    },
+    {
+      "datum": "2026-01-22",
+      "art": "Sprung",
+      "wert": 0.3502,
+      "verhaeltnis": 1.463
+    }
+  ],
+  "erster_kurs": "2010-01-08",
+  "preise": {
+    "PPLT": {
+      "name": "Platin-ETF",
+      "rolle": "kandidat",
+      "hinweis": "physisch hinterlegtes Platin, in Dollar gehandelt",
+      "waehrung": "USD",
+      "letzter": "2026-09-25",
+      "schluss": 16.09,
+      "alter_tage": 1,
+      "r_kurz": -0.0135,
+      "vorsprung_kurz": 0.0059,
+      "r_lang": -0.04,
+      "vorsprung_lang": 0.0291,
+      "urteil": "schläft",
+      "markt_schlaeft": true,
+      "handel": 33925733,
+      "duenn": false
+    }
+  },
+  "rueckblick": {
+    "PPLT": {
+      "name": "Platin-ETF",
+      "rolle": "kandidat",
+      "erster_kurs": "2010-01-08",
+      "urteil": "nicht bestanden",
+      "haupt": 120,
+      "zusammen": {
+        "n": 11,
+        "offen": 0,
+        "v20": -0.0871,
+        "v60": -0.1172,
+        "v120": -0.099,
+        "v250": -0.1328,
+        "v_vorlauf": 0.0461,
+        "treffer": 1,
+        "trefferquote": 0.09
+      }
+    }
+  },
+  "schattendepot": {
+    "offen": false,
+    "seit": null,
+    "positionen": 0
+  },
+  "zustand": "in Ordnung",
+  "quellen": {
+    "yahoo": {
+      "status": "ok",
+      "meldung": null
+    }
+  }
+}

@@ -1,11 +1,12 @@
 {
-  "stand": "2026-09-26T22:07:17+02:00",
+  "stand": "2026-09-26T23:14:55+02:00",
   "datum": "2026-09-26",
   "version": "0.1.0",
   "kennung": "haselnuss",
   "name": "Haselnuss",
   "rolle": "sensor",
   "hinweis": "Denkhilfe, keine Anlageberatung. Der Sensor schlägt beim Original aus, gekauft würde der Ersatz.",
+  "sensor_art": "spaetfrost",
   "original": {
     "name": "Haselnuss aus der Türkei",
     "hinweis": "kein Einzel-ETC; der größte Abnehmer Ferrero ist nicht börsennotiert"
@@ -56,12 +57,12 @@
     "tiefste": null
   },
   "letzte_saison": {
-    "jahr": 1996,
+    "jahr": 2016,
     "urteil": "ruhig",
     "frostnaechte": 0,
     "erste": null,
     "erste_starke": null,
-    "tiefste": -8.4
+    "tiefste": -2.4
   },
   "saisons": [
     {
@@ -71,6 +72,14 @@
       "erste": "1991-03-10",
       "erste_starke": null,
       "tiefste": -2.7
+    },
+    {
+      "jahr": 1992,
+      "urteil": "Spätfrost",
+      "frostnaechte": 3,
+      "erste": "1992-03-10",
+      "erste_starke": null,
+      "tiefste": -4.8
     },
     {
       "jahr": 1993,
@@ -89,36 +98,226 @@
       "tiefste": -2.2
     },
     {
+      "jahr": 1995,
+      "urteil": "ruhig",
+      "frostnaechte": 0,
+      "erste": null,
+      "erste_starke": null,
+      "tiefste": -4.4
+    },
+    {
       "jahr": 1996,
       "urteil": "ruhig",
       "frostnaechte": 0,
       "erste": null,
       "erste_starke": null,
       "tiefste": -8.4
+    },
+    {
+      "jahr": 1997,
+      "urteil": "starker Spätfrost",
+      "frostnaechte": 10,
+      "erste": "1997-03-18",
+      "erste_starke": "1997-03-19",
+      "tiefste": -9.4
+    },
+    {
+      "jahr": 1998,
+      "urteil": "starker Spätfrost",
+      "frostnaechte": 2,
+      "erste": "1998-03-25",
+      "erste_starke": "1998-03-25",
+      "tiefste": -12.2
+    },
+    {
+      "jahr": 1999,
+      "urteil": "Spätfrost",
+      "frostnaechte": 2,
+      "erste": "1999-03-16",
+      "erste_starke": null,
+      "tiefste": -3.5
+    },
+    {
+      "jahr": 2000,
+      "urteil": "starker Spätfrost",
+      "frostnaechte": 3,
+      "erste": "2000-03-12",
+      "erste_starke": "2000-03-15",
+      "tiefste": -8.7
+    },
+    {
+      "jahr": 2001,
+      "urteil": "ruhig",
+      "frostnaechte": 0,
+      "erste": null,
+      "erste_starke": null,
+      "tiefste": 1.8
+    },
+    {
+      "jahr": 2002,
+      "urteil": "ruhig",
+      "frostnaechte": 0,
+      "erste": null,
+      "erste_starke": null,
+      "tiefste": 0.4
+    },
+    {
+      "jahr": 2003,
+      "urteil": "starker Spätfrost",
+      "frostnaechte": 8,
+      "erste": "2003-03-20",
+      "erste_starke": "2003-03-21",
+      "tiefste": -6.6
+    },
+    {
+      "jahr": 2004,
+      "urteil": "starker Spätfrost",
+      "frostnaechte": 3,
+      "erste": "2004-04-03",
+      "erste_starke": "2004-04-04",
+      "tiefste": -5.9
+    },
+    {
+      "jahr": 2005,
+      "urteil": "starker Spätfrost",
+      "frostnaechte": 2,
+      "erste": "2005-03-24",
+      "erste_starke": "2005-03-26",
+      "tiefste": -8.5
+    },
+    {
+      "jahr": 2006,
+      "urteil": "ruhig",
+      "frostnaechte": 0,
+      "erste": null,
+      "erste_starke": null,
+      "tiefste": -8.8
+    },
+    {
+      "jahr": 2007,
+      "urteil": "ruhig",
+      "frostnaechte": 0,
+      "erste": null,
+      "erste_starke": null,
+      "tiefste": -0.3
+    },
+    {
+      "jahr": 2008,
+      "urteil": "ruhig",
+      "frostnaechte": 0,
+      "erste": null,
+      "erste_starke": null,
+      "tiefste": -0.9
+    },
+    {
+      "jahr": 2009,
+      "urteil": "ruhig",
+      "frostnaechte": 0,
+      "erste": null,
+      "erste_starke": null,
+      "tiefste": -4.8
+    },
+    {
+      "jahr": 2010,
+      "urteil": "Spätfrost",
+      "frostnaechte": 2,
+      "erste": "2010-03-19",
+      "erste_starke": null,
+      "tiefste": -4.7
+    },
+    {
+      "jahr": 2011,
+      "urteil": "ruhig",
+      "frostnaechte": 0,
+      "erste": null,
+      "erste_starke": null,
+      "tiefste": -7.0
+    },
+    {
+      "jahr": 2012,
+      "urteil": "starker Spätfrost",
+      "frostnaechte": 5,
+      "erste": "2012-03-10",
+      "erste_starke": "2012-03-16",
+      "tiefste": -7.4
+    },
+    {
+      "jahr": 2013,
+      "urteil": "Spätfrost",
+      "frostnaechte": 1,
+      "erste": "2013-03-19",
+      "erste_starke": null,
+      "tiefste": -2.3
+    },
+    {
+      "jahr": 2014,
+      "urteil": "starker Spätfrost",
+      "frostnaechte": 2,
+      "erste": "2014-03-30",
+      "erste_starke": "2014-03-30",
+      "tiefste": -4.6
+    },
+    {
+      "jahr": 2015,
+      "urteil": "ruhig",
+      "frostnaechte": 0,
+      "erste": null,
+      "erste_starke": null,
+      "tiefste": -5.3
+    },
+    {
+      "jahr": 2016,
+      "urteil": "ruhig",
+      "frostnaechte": 0,
+      "erste": null,
+      "erste_starke": null,
+      "tiefste": -2.4
     }
   ],
   "abgleich": {
     "erkannte_jahre": [
       1991,
+      1992,
       1993,
-      1994
+      1994,
+      1997,
+      1998,
+      1999,
+      2000,
+      2003,
+      2004,
+      2005,
+      2010,
+      2012,
+      2013,
+      2014
     ],
-    "bekannte_getroffen": [],
+    "bekannte_getroffen": [
+      2004,
+      2014
+    ],
     "bekannte_verfehlt": [],
     "weitere": [
       1991,
+      1992,
       1993,
-      1994
+      1994,
+      1997,
+      1998,
+      1999,
+      2000,
+      2003,
+      2005,
+      2010,
+      2012,
+      2013
     ],
-    "jahre_geprueft": 4
+    "jahre_geprueft": 26
   },
   "saisons_geladen": {
-    "geladen": 4,
+    "geladen": 26,
     "von": 36,
-    "fehler": [
-      "Ordu 1992: AbrufFehler: ReadTimeout bei https://archive-api.open-meteo.com/v1/archive: HTTPSConnectionPool(host='archive-api.open-meteo.com', port=443): Read timed out. (read timeout=45)",
-      "Samsun (Terme, Çarşamba) 1995: AbrufFehler: ReadTimeout bei https://archive-api.open-meteo.com/v1/archive: HTTPSConnectionPool(host='archive-api.open-meteo.com', port=443): Read timed out. (read timeout=45)"
-    ]
+    "fehler": []
   },
   "preise": {
     "SHV.AX": {
@@ -144,25 +343,30 @@
       "name": "Select Harvests",
       "rolle": "kandidat",
       "erster_kurs": "2000-01-03",
-      "urteil": "zu wenige Fälle",
+      "urteil": "nicht bestanden",
       "haupt": 60,
       "zusammen": {
-        "n": 0,
+        "n": 8,
         "offen": 0,
-        "v20": null,
-        "v60": null,
-        "v120": null,
-        "v_vorlauf": null,
-        "treffer": 0,
-        "trefferquote": 0.0
+        "v20": -0.0021,
+        "v60": -0.0016,
+        "v120": 0.1824,
+        "v_vorlauf": 0.0177,
+        "treffer": 2,
+        "trefferquote": 0.25
       }
     }
   },
-  "zustand": "Warnung",
+  "schattendepot": {
+    "offen": false,
+    "seit": null,
+    "positionen": 0
+  },
+  "zustand": "in Ordnung",
   "quellen": {
     "openmeteo": {
-      "status": "Warnung",
-      "meldung": "Ordu 1992: AbrufFehler: ReadTimeout bei https://archive-api.open-meteo.com/v1/archive: HTTPSConnectionPool(host='archive-api.open-meteo.com', port=443): Read timed out. (read timeout=45); Samsun (Terme, Çarşamba) 1995: AbrufFehler: ReadTimeout bei https://archive-api.open-meteo.com/v1/archive: HTTPS"
+      "status": "ok",
+      "meldung": null
     },
     "yahoo": {
       "status": "ok",
