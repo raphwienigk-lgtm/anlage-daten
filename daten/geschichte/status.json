@@ -1,0 +1,26 @@
+{
+  "preise": {
+    "stand": "2026-09-26",
+    "herkunft": {
+      "palmoel": "Weltbank Pink Sheet (CMO-Historical-Data-Monthly.xlsx)",
+      "brent": "Weltbank Pink Sheet (CMO-Historical-Data-Monthly.xlsx)",
+      "sojaoel": "Weltbank Pink Sheet (CMO-Historical-Data-Monthly.xlsx)"
+    },
+    "fehler": [],
+    "fertig": true
+  },
+  "ernte": {
+    "stand": "2026-09-26",
+    "fertig": true
+  },
+  "stand": "2026-09-26",
+  "gewicht_heute": 0,
+  "meldungen": [
+    "Preise palmoel: 1960-01 bis 2025-12 (Weltbank Pink Sheet (CMO-Historical-Data-Monthly.xlsx))",
+    "Preise brent: 1960-01 bis 2025-12 (Weltbank Pink Sheet (CMO-Historical-Data-Monthly.xlsx))",
+    "Preise sojaoel: 1960-01 bis 2025-12 (Weltbank Pink Sheet (CMO-Historical-Data-Monthly.xlsx))",
+    "Ernte Indonesia: 1964 bis 2026 (63 Jahre)",
+    "Ernte Malaysia: 1964 bis 2026 (63 Jahre)",
+    "Verbraucht: etwa 0 gewichtete Open-Meteo-Abrufe."
+  ]
+}
