@@ -1,11 +1,7 @@
-Stand: 26.09.2026, 23:15
+Stand: 27.09.2026, 01:23
 Teil 1 von 1
 
-Der Metall-Wächter China-Ausfuhr, Datenteil für Samstag, den sechsundzwanzigsten September. Stufen je Achse aus Fristen, US-Maßnahmen und Störungen an den Standorten. Rot setzt nur der Wächter in der Cloud, wenn eine Meldung aus Peking dazukommt. Die Wucht sagt, wie stark China ein Metall beherrscht und wie schwer es zu ersetzen ist, von null bis eins.
-
-Neu seit dem letzten Lauf: Die Batterie-Achse ist von Grün auf Gelb gesprungen.
-
-Neu seit dem letzten Lauf: Die Werkzeug-Achse ist von Grün auf Gelb gesprungen.
+Der Metall-Wächter China-Ausfuhr, Datenteil für Sonntag, den siebenundzwanzigsten September. Stufen je Achse aus Fristen, US-Maßnahmen und Störungen an den Standorten. Rot setzt nur der Wächter in der Cloud, wenn eine Meldung aus Peking dazukommt. Die Wucht sagt, wie stark China ein Metall beherrscht und wie schwer es zu ersetzen ist, von null bis eins.
 
 Werkzeug-Achse: Gelb. Anlass: US-Maßnahme vom ersten September. Wucht null Komma sechs vier, getragen von Wolfram.
 
@@ -15,7 +11,7 @@ Chip-Achse, der Pilot: Grün. Wucht null Komma acht acht, getragen von Gallium.
 
 Magnet-Achse: Grün. Wucht null Komma acht eins, getragen von den seltenen Erden.
 
-Fristen. Die Aussetzung der Oktober-Maßnahmen für seltene Erden, Graphit-Anoden und Batteriematerial (Bekanntmachung Nummer siebzig) läuft am zehnten November aus, in fünfundvierzig Tagen. Stand: USA melden am vierundzwanzigsten September zweitausendsechsundzwanzig eine Verlängerung des Waffenstillstands bis zum zehnten Januar zweitausendsiebenundzwanzig; die formelle Bekanntmachung aus Peking steht aus. Die Aussetzung des Ausfuhrverbots in die USA für Gallium, Germanium, Antimon und superharte Materialien (Bekanntmachung Nummer zweiundsiebzig) läuft am siebenundzwanzigsten November aus, in zweiundsechzig Tagen. Stand: offen; die Meldungen vom vierundzwanzigsten September zweitausendsechsundzwanzig nennen diese Frist nicht.
+Fristen. Die Aussetzung der Oktober-Maßnahmen für seltene Erden, Graphit-Anoden und Batteriematerial (Bekanntmachung Nummer siebzig) läuft am zehnten November aus, in vierundvierzig Tagen. Stand: USA melden am vierundzwanzigsten September zweitausendsechsundzwanzig eine Verlängerung des Waffenstillstands bis zum zehnten Januar zweitausendsiebenundzwanzig; die formelle Bekanntmachung aus Peking steht aus. Die Aussetzung des Ausfuhrverbots in die USA für Gallium, Germanium, Antimon und superharte Materialien (Bekanntmachung Nummer zweiundsiebzig) läuft am siebenundzwanzigsten November aus, in einundsechzig Tagen. Stand: offen; die Meldungen vom vierundzwanzigsten September zweitausendsechsundzwanzig nennen diese Frist nicht.
 
 Gegenseite. In den letzten dreißig Tagen stehen vierzehn Einträge zu den Suchbegriffen im US-Bundesregister, davon vier gewichtig. Vom vierundzwanzigsten September: Large Diameter Graphite Electrodes From the People's Republic of China: Preliminary Affirmative Critical Circumstances Determination in Countervailing Duty Investigation. Vom zweiundzwanzigsten September: Certain Brake Drums From the People's Republic of China: Preliminary Affirmative Determination of Circumvention of the Antidumping Duty and Countervailing Duty Orders. Vom zehnten September: Certain Cased Pencils From the People's Republic of China: Preliminary Results of Antidumping Duty Administrative Review; zweitausendvierundzwanzig-zweitausendfünfundzwanzig. Dazu eins weitere gewichtige Einträge.
 
