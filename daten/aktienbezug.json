@@ -1,0 +1,89 @@
+{
+  "stand": "2026-09-26T14:58:27+02:00",
+  "datum": "2026-09-26",
+  "version": "0.1.0",
+  "hinweis": "Denkhilfe, keine Anlageberatung. Messwerte ohne Empfehlung.",
+  "stark_ab": 0.2,
+  "rohstoffe": {
+    "palmoel": {
+      "name": "Palmöl",
+      "rohstoff_bis": "2025-12",
+      "aktien": [
+        {
+          "ticker": "F34.SI",
+          "name": "Wilmar International",
+          "hinweis": "vor allem Verarbeitung und Handel",
+          "status": "ok",
+          "von": "2006-07",
+          "bis": "2025-12",
+          "monate": 234,
+          "korrelation_1": 0.393,
+          "korrelation_12": 0.494,
+          "mitnahme": 0.701,
+          "stark_spannen": 70,
+          "stark_mittel": 0.351,
+          "alle_mittel": 0.086,
+          "handel": 21869855,
+          "erster_tag": "2006-07-17"
+        },
+        {
+          "ticker": "E5H.SI",
+          "name": "Golden Agri-Resources",
+          "hinweis": "mit großer Verarbeitungssparte",
+          "status": "ok",
+          "von": "2007-09",
+          "bis": "2025-12",
+          "monate": 220,
+          "korrelation_1": 0.599,
+          "korrelation_12": 0.593,
+          "mitnahme": 0.772,
+          "stark_spannen": 57,
+          "stark_mittel": 0.293,
+          "alle_mittel": 0.003,
+          "handel": 4075478,
+          "erster_tag": "2007-09-11"
+        },
+        {
+          "ticker": "EB5.SI",
+          "name": "First Resources",
+          "hinweis": "reinerer Plantagenwert",
+          "status": "ok",
+          "von": "2007-12",
+          "bis": "2025-12",
+          "monate": 217,
+          "korrelation_1": 0.565,
+          "korrelation_12": 0.348,
+          "mitnahme": 0.593,
+          "stark_spannen": 57,
+          "stark_mittel": 0.324,
+          "alle_mittel": 0.112,
+          "handel": 6209759,
+          "erster_tag": "2007-12-10"
+        },
+        {
+          "ticker": "P8Z.SI",
+          "name": "Bumitama Agri",
+          "hinweis": "reinerer Plantagenwert",
+          "status": "ok",
+          "von": "2012-04",
+          "bis": "2025-12",
+          "monate": 165,
+          "korrelation_1": 0.576,
+          "korrelation_12": 0.296,
+          "mitnahme": 0.248,
+          "stark_spannen": 38,
+          "stark_mittel": 0.097,
+          "alle_mittel": 0.018,
+          "handel": 3109870,
+          "erster_tag": "2012-04-12"
+        }
+      ],
+      "reihenfolge": [
+        "E5H.SI",
+        "F34.SI",
+        "EB5.SI",
+        "P8Z.SI"
+      ]
+    }
+  }
+}
