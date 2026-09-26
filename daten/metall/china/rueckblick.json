@@ -1,5 +1,5 @@
 {
-  "stand": "2026-09-26T19:38:34+02:00",
+  "stand": "2026-09-26T23:15:00+02:00",
   "vergleich": {
     "ticker": "XME",
     "name": "Metall- und Bergbau-Aktien USA (Vergleichsmaßstab)"
@@ -501,15 +501,15 @@
           "trefferquote": 1.0
         },
         "verschaerfung_alle": {
-          "n": 10,
+          "n": 14,
           "offen": 0,
-          "v0": 0.0699,
-          "v5": 0.2262,
-          "v20": 0.2533,
-          "v60": 0.1348,
-          "v_vorlauf": 0.1433,
+          "v0": 0.04,
+          "v5": 0.1666,
+          "v20": 0.1486,
+          "v60": 0.075,
+          "v_vorlauf": 0.139,
           "treffer": 4,
-          "trefferquote": 0.4
+          "trefferquote": 0.29
         },
         "lockerung_eigene": {
           "n": 2,
@@ -523,14 +523,14 @@
           "trefferquote": 1.0
         },
         "lockerung_alle": {
-          "n": 3,
+          "n": 5,
           "offen": 0,
-          "v0": 0.022,
-          "v5": -0.0635,
-          "v20": -0.2432,
-          "v60": -0.2142,
-          "v_vorlauf": -0.1348,
-          "treffer": 3,
+          "v0": 0.0189,
+          "v5": -0.0909,
+          "v20": -0.2369,
+          "v60": -0.1593,
+          "v_vorlauf": 0.0921,
+          "treffer": 5,
           "trefferquote": 1.0
         },
         "gegenseite_eigene": {
@@ -545,18 +545,207 @@
           "trefferquote": 0.33
         },
         "gegenseite_alle": {
-          "n": 5,
+          "n": 8,
           "offen": 0,
-          "v0": -0.014,
-          "v5": 0.2958,
-          "v20": 0.431,
-          "v60": 0.0429,
-          "v_vorlauf": 0.2212,
-          "treffer": 3,
-          "trefferquote": 0.6
+          "v0": -0.0134,
+          "v5": 0.1855,
+          "v20": 0.3111,
+          "v60": 0.0406,
+          "v_vorlauf": 0.1585,
+          "treffer": 5,
+          "trefferquote": 0.62
         }
       },
       "faelle": [
+        {
+          "datum": "2010-07-09",
+          "art": "verschaerfung",
+          "achsen": [
+            "magnet"
+          ],
+          "text": "Ausfuhrquote für seltene Erden im zweiten Halbjahr 2010 um 72 Prozent gekürzt",
+          "eigene_achse": false,
+          "tag0": "2010-07-09",
+          "r0": 0.0256,
+          "r5": 0.1538,
+          "r20": 0.0256,
+          "r60": 0.4872,
+          "vorlauf": -0.1333,
+          "v0": -0.003,
+          "v5": 0.1824,
+          "v20": -0.0773,
+          "v60": 0.3726,
+          "v_vorlauf": -0.1283,
+          "treffer": false
+        },
+        {
+          "datum": "2010-09-23",
+          "art": "verschaerfung",
+          "achsen": [
+            "magnet"
+          ],
+          "text": "Faktischer Ausfuhrstopp seltener Erden nach Japan nach dem Zwischenfall bei den Senkaku-Inseln",
+          "eigene_achse": false,
+          "tag0": "2010-09-23",
+          "r0": 0.0909,
+          "r5": 0.0,
+          "r20": -0.1273,
+          "r60": -0.1273,
+          "vorlauf": 0.4474,
+          "v0": 0.1035,
+          "v5": -0.0175,
+          "v20": -0.1697,
+          "v60": -0.3954,
+          "v_vorlauf": 0.3312,
+          "treffer": false
+        },
+        {
+          "datum": "2010-10-20",
+          "art": "verschaerfung",
+          "achsen": [
+            "magnet"
+          ],
+          "text": "Lieferstopp auf die USA und Europa ausgeweitet",
+          "eigene_achse": false,
+          "tag0": "2010-10-20",
+          "r0": -0.08,
+          "r5": -0.1,
+          "r20": -0.18,
+          "r60": 0.16,
+          "vorlauf": -0.0566,
+          "v0": -0.1061,
+          "v5": -0.1175,
+          "v20": -0.2452,
+          "v60": -0.1028,
+          "v_vorlauf": -0.0992,
+          "treffer": false
+        },
+        {
+          "datum": "2010-12-28",
+          "art": "verschaerfung",
+          "achsen": [
+            "magnet"
+          ],
+          "text": "Erste Ausfuhrquote für 2011 um 35 Prozent gekürzt",
+          "eigene_achse": false,
+          "tag0": "2010-12-28",
+          "r0": -0.1273,
+          "r5": 0.0545,
+          "r20": 0.0727,
+          "r60": -0.0909,
+          "vorlauf": 0.5278,
+          "v0": -0.1335,
+          "v5": 0.0231,
+          "v20": 0.0403,
+          "v60": -0.1722,
+          "v_vorlauf": 0.4102,
+          "treffer": false
+        },
+        {
+          "datum": "2012-03-13",
+          "art": "gegenseite",
+          "achsen": [
+            "magnet"
+          ],
+          "text": "USA, EU und Japan klagen bei der WTO gegen Chinas Ausfuhrbeschränkungen",
+          "eigene_achse": false,
+          "tag0": "2012-03-13",
+          "r0": 0.0623,
+          "r5": 0.1148,
+          "r20": 0.318,
+          "r60": 0.2557,
+          "vorlauf": 0.0167,
+          "v0": 0.0343,
+          "v5": 0.0808,
+          "v20": 0.3591,
+          "v60": 0.4354,
+          "v_vorlauf": 0.0899,
+          "treffer": true
+        },
+        {
+          "datum": "2014-03-26",
+          "art": "gegenseite",
+          "achsen": [
+            "magnet"
+          ],
+          "text": "WTO-Panel gibt den Klägern recht",
+          "eigene_achse": false,
+          "tag0": "2014-03-26",
+          "r0": -0.0055,
+          "r5": 0.0442,
+          "r20": 0.1105,
+          "r60": -0.1547,
+          "vorlauf": -0.0423,
+          "v0": 0.022,
+          "v5": 0.0395,
+          "v20": 0.1105,
+          "v60": -0.1447,
+          "v_vorlauf": -0.0771,
+          "treffer": true
+        },
+        {
+          "datum": "2014-08-07",
+          "art": "gegenseite",
+          "achsen": [
+            "magnet"
+          ],
+          "text": "WTO-Berufungsinstanz bestätigt das Urteil",
+          "eigene_achse": false,
+          "tag0": "2014-08-07",
+          "r0": -0.0947,
+          "r5": -0.0947,
+          "r20": -0.1243,
+          "r60": -0.3491,
+          "vorlauf": 0.1575,
+          "v0": -0.0935,
+          "v5": -0.1153,
+          "v20": -0.1356,
+          "v60": -0.1809,
+          "v_vorlauf": 0.1492,
+          "treffer": false
+        },
+        {
+          "datum": "2015-01-05",
+          "art": "lockerung",
+          "achsen": [
+            "magnet"
+          ],
+          "text": "China schafft die Ausfuhrquoten für seltene Erden ab",
+          "eigene_achse": false,
+          "tag0": "2015-01-05",
+          "r0": 0.0132,
+          "r5": -0.0789,
+          "r20": -0.25,
+          "r60": -0.0921,
+          "vorlauf": -0.2083,
+          "v0": 0.0501,
+          "v5": -0.0271,
+          "v20": -0.1752,
+          "v60": 0.0576,
+          "v_vorlauf": -0.1415,
+          "treffer": true
+        },
+        {
+          "datum": "2015-04-23",
+          "art": "lockerung",
+          "achsen": [
+            "magnet"
+          ],
+          "text": "China schafft die Ausfuhrzölle auf seltene Erden ab (ab 1.5.2015)",
+          "eigene_achse": false,
+          "tag0": "2015-04-23",
+          "r0": 0.0,
+          "r5": -0.1912,
+          "r20": -0.25,
+          "r60": -0.4485,
+          "vorlauf": 1.0,
+          "v0": -0.0215,
+          "v5": -0.2371,
+          "v20": -0.28,
+          "v60": -0.2114,
+          "v_vorlauf": 1.0062,
+          "treffer": true
+        },
         {
           "datum": "2022-10-07",
           "art": "gegenseite",
@@ -1412,73 +1601,262 @@
       "urteil": "nicht bestanden",
       "gruppen": {
         "verschaerfung_eigene": {
+          "n": 9,
+          "offen": 0,
+          "v0": 0.033,
+          "v5": 0.0839,
+          "v20": 0.0578,
+          "v60": 0.1149,
+          "v_vorlauf": 0.0512,
+          "treffer": 4,
+          "trefferquote": 0.44
+        },
+        "verschaerfung_alle": {
+          "n": 14,
+          "offen": 0,
+          "v0": 0.0146,
+          "v5": 0.074,
+          "v20": 0.0539,
+          "v60": 0.0965,
+          "v_vorlauf": 0.0078,
+          "treffer": 6,
+          "trefferquote": 0.43
+        },
+        "lockerung_eigene": {
+          "n": 4,
+          "offen": 0,
+          "v0": -0.0188,
+          "v5": -0.0291,
+          "v20": -0.0953,
+          "v60": -0.1427,
+          "v_vorlauf": -0.006,
+          "treffer": 1,
+          "trefferquote": 0.25
+        },
+        "lockerung_alle": {
           "n": 5,
           "offen": 0,
-          "v0": 0.0269,
-          "v5": 0.0568,
-          "v20": -0.0399,
-          "v60": -0.0806,
-          "v_vorlauf": -0.0277,
+          "v0": -0.009,
+          "v5": 0.0054,
+          "v20": -0.0875,
+          "v60": -0.1649,
+          "v_vorlauf": -0.0538,
           "treffer": 1,
           "trefferquote": 0.2
         },
-        "verschaerfung_alle": {
-          "n": 10,
-          "offen": 0,
-          "v0": 0.0042,
-          "v5": 0.0565,
-          "v20": 0.0035,
-          "v60": -0.0087,
-          "v_vorlauf": -0.049,
-          "treffer": 3,
-          "trefferquote": 0.3
-        },
-        "lockerung_eigene": {
-          "n": 2,
-          "offen": 0,
-          "v0": -0.0063,
-          "v5": 0.0013,
-          "v20": -0.0226,
-          "v60": -0.1996,
-          "v_vorlauf": -0.1914,
-          "treffer": 0,
-          "trefferquote": 0.0
-        },
-        "lockerung_alle": {
-          "n": 3,
-          "offen": 0,
-          "v0": 0.0058,
-          "v5": 0.0487,
-          "v20": -0.0339,
-          "v60": -0.2176,
-          "v_vorlauf": -0.2092,
-          "treffer": 0,
-          "trefferquote": 0.0
-        },
         "gegenseite_eigene": {
-          "n": 2,
-          "offen": 0,
-          "v0": -0.0299,
-          "v5": 0.1065,
-          "v20": 0.1004,
-          "v60": -0.2235,
-          "v_vorlauf": 0.0403,
-          "treffer": 1,
-          "trefferquote": 0.5
-        },
-        "gegenseite_alle": {
           "n": 5,
           "offen": 0,
-          "v0": -0.01,
-          "v5": 0.0624,
-          "v20": 0.0763,
-          "v60": -0.107,
-          "v_vorlauf": -0.0367,
+          "v0": -0.0241,
+          "v5": 0.0415,
+          "v20": 0.0055,
+          "v60": -0.2335,
+          "v_vorlauf": -0.0618,
+          "treffer": 1,
+          "trefferquote": 0.2
+        },
+        "gegenseite_alle": {
+          "n": 8,
+          "offen": 0,
+          "v0": -0.0139,
+          "v5": 0.0383,
+          "v20": 0.026,
+          "v60": -0.157,
+          "v_vorlauf": -0.0716,
           "treffer": 2,
-          "trefferquote": 0.4
+          "trefferquote": 0.25
         }
       },
       "faelle": [
+        {
+          "datum": "2010-07-09",
+          "art": "verschaerfung",
+          "achsen": [
+            "magnet"
+          ],
+          "text": "Ausfuhrquote für seltene Erden im zweiten Halbjahr 2010 um 72 Prozent gekürzt",
+          "eigene_achse": true,
+          "tag0": "2010-07-09",
+          "r0": 0.0818,
+          "r5": 0.2455,
+          "r20": 0.5636,
+          "r60": 1.4546,
+          "vorlauf": 0.1111,
+          "v0": 0.0532,
+          "v5": 0.2741,
+          "v20": 0.4607,
+          "v60": 1.34,
+          "v_vorlauf": 0.1161,
+          "treffer": true
+        },
+        {
+          "datum": "2010-09-23",
+          "art": "verschaerfung",
+          "achsen": [
+            "magnet"
+          ],
+          "text": "Faktischer Ausfuhrstopp seltener Erden nach Japan nach dem Zwischenfall bei den Senkaku-Inseln",
+          "eigene_achse": true,
+          "tag0": "2010-09-23",
+          "r0": 0.0378,
+          "r5": 0.1471,
+          "r20": 0.479,
+          "r60": 0.2521,
+          "vorlauf": 0.3371,
+          "v0": 0.0504,
+          "v5": 0.1296,
+          "v20": 0.4366,
+          "v60": -0.016,
+          "v_vorlauf": 0.2209,
+          "treffer": true
+        },
+        {
+          "datum": "2010-10-20",
+          "art": "verschaerfung",
+          "achsen": [
+            "magnet"
+          ],
+          "text": "Lieferstopp auf die USA und Europa ausgeweitet",
+          "eigene_achse": true,
+          "tag0": "2010-10-20",
+          "r0": -0.0173,
+          "r5": -0.1614,
+          "r20": -0.219,
+          "r60": 0.1239,
+          "vorlauf": 0.4163,
+          "v0": -0.0434,
+          "v5": -0.1789,
+          "v20": -0.2842,
+          "v60": -0.1389,
+          "v_vorlauf": 0.3737,
+          "treffer": false
+        },
+        {
+          "datum": "2010-12-28",
+          "art": "verschaerfung",
+          "achsen": [
+            "magnet"
+          ],
+          "text": "Erste Ausfuhrquote für 2011 um 35 Prozent gekürzt",
+          "eigene_achse": true,
+          "tag0": "2010-12-29",
+          "r0": 0.108,
+          "r5": 0.2778,
+          "r20": 0.1389,
+          "r60": 0.3333,
+          "vorlauf": 0.0062,
+          "v0": 0.1018,
+          "v5": 0.2464,
+          "v20": 0.1065,
+          "v60": 0.252,
+          "v_vorlauf": -0.1114,
+          "treffer": true
+        },
+        {
+          "datum": "2012-03-13",
+          "art": "gegenseite",
+          "achsen": [
+            "magnet"
+          ],
+          "text": "USA, EU und Japan klagen bei der WTO gegen Chinas Ausfuhrbeschränkungen",
+          "eigene_achse": true,
+          "tag0": "2012-03-13",
+          "r0": 0.0385,
+          "r5": -0.0043,
+          "r20": -0.1197,
+          "r60": -0.1752,
+          "vorlauf": -0.1365,
+          "v0": 0.0105,
+          "v5": -0.0383,
+          "v20": -0.0786,
+          "v60": 0.0045,
+          "v_vorlauf": -0.0633,
+          "treffer": false
+        },
+        {
+          "datum": "2014-03-26",
+          "art": "gegenseite",
+          "achsen": [
+            "magnet"
+          ],
+          "text": "WTO-Panel gibt den Klägern recht",
+          "eigene_achse": true,
+          "tag0": "2014-03-26",
+          "r0": -0.1,
+          "r5": 0.025,
+          "r20": -0.15,
+          "r60": -0.35,
+          "vorlauf": -0.3548,
+          "v0": -0.0725,
+          "v5": 0.0203,
+          "v20": -0.15,
+          "v60": -0.34,
+          "v_vorlauf": -0.3896,
+          "treffer": false
+        },
+        {
+          "datum": "2014-08-07",
+          "art": "gegenseite",
+          "achsen": [
+            "magnet"
+          ],
+          "text": "WTO-Berufungsinstanz bestätigt das Urteil",
+          "eigene_achse": true,
+          "tag0": "2014-08-07",
+          "r0": 0.0,
+          "r5": 0.0333,
+          "r20": 0.0667,
+          "r60": -0.5533,
+          "vorlauf": 0.0714,
+          "v0": 0.0012,
+          "v5": 0.0127,
+          "v20": 0.0554,
+          "v60": -0.3851,
+          "v_vorlauf": 0.0631,
+          "treffer": false
+        },
+        {
+          "datum": "2015-01-05",
+          "art": "lockerung",
+          "achsen": [
+            "magnet"
+          ],
+          "text": "China schafft die Ausfuhrquoten für seltene Erden ab",
+          "eigene_achse": true,
+          "tag0": "2015-01-05",
+          "r0": -0.0556,
+          "r5": -0.125,
+          "r20": -0.4028,
+          "r60": -0.4028,
+          "vorlauf": 0.2857,
+          "v0": -0.0187,
+          "v5": -0.0732,
+          "v20": -0.328,
+          "v60": -0.2531,
+          "v_vorlauf": 0.3525,
+          "treffer": true
+        },
+        {
+          "datum": "2015-04-23",
+          "art": "lockerung",
+          "achsen": [
+            "magnet"
+          ],
+          "text": "China schafft die Ausfuhrzölle auf seltene Erden ab (ab 1.5.2015)",
+          "eigene_achse": true,
+          "tag0": "2015-04-23",
+          "r0": -0.0223,
+          "r5": 0.0,
+          "r20": 0.0221,
+          "r60": -0.1557,
+          "vorlauf": 0.0,
+          "v0": -0.0438,
+          "v5": -0.0459,
+          "v20": -0.0079,
+          "v60": 0.0814,
+          "v_vorlauf": 0.0062,
+          "treffer": false
+        },
         {
           "datum": "2022-10-07",
           "art": "gegenseite",
