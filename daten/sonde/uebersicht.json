@@ -166,5 +166,17 @@
     "sekunden": 3.8,
     "zeit": "2026-09-26T19:38:49+02:00",
     "erste_zeile": "Fehler: ConnectionError: ('Connection aborted.', ConnectionResetError(104, 'Connection reset by peer'))"
+  },
+  "psd_nuesse": {
+    "status": "ok",
+    "sekunden": 15.8,
+    "zeit": "2026-09-26T22:07:34+02:00",
+    "erste_zeile": "psd_fruits_vegetables_csv.zip: Status 200, 595573 Bytes"
+  },
+  "openmeteo_frost": {
+    "status": "ok",
+    "sekunden": 0.5,
+    "zeit": "2026-09-26T22:07:35+02:00",
+    "erste_zeile": "URL: https://archive-api.open-meteo.com/v1/archive?latitude=40.85&longitude=38.35&elevation=400&start_date=2014-03-25&end_date=2014-04-05&daily=temperature_2m_min&timezone=Europe%2FIstanbul&models=era"
   }
 }

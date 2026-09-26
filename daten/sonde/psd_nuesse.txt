@@ -1,0 +1,7 @@
+psd_fruits_vegetables_csv.zip: Status 200, 595573 Bytes
+  Kopf: Commodity_Code,Commodity_Description,Country_Code,Country_Name,Market_Year,Calendar_Year,Month,Attribute_ID,Attribute_Description,Unit_ID,Unit_Description,Value
+  Waren: {}
+psd_treenuts_csv.zip: Status 404, 0 Bytes
+psd_alldata_csv.zip: Status 200, 10444053 Bytes
+  Kopf: Commodity_Code,Commodity_Description,Country_Code,Country_Name,Market_Year,Calendar_Year,Month,Attribute_ID,Attribute_Description,Unit_ID,Unit_Description,Value
+  Waren: {'"Almonds': 11352}
