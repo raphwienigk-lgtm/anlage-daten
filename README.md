@@ -21,7 +21,7 @@ Urteile bei Claude.** Hier wird gerechnet, nicht entschieden und nichts gekauft.
 **1. Repository anlegen.** Auf github.com oben rechts „+“ → „New repository“.
 Name `anlage-daten`, Sichtbarkeit **Public**, sonst nichts ankreuzen (kein README).
 
-**2. Entpacken und einmal lokal testen.** Im Terminal:
+**2. Entpacken und einmal lokal testen (freiwillig, braucht Python 3.10 oder neuer; yfinance läuft nicht mehr unter 3.9).** Mit älterem Python diesen Schritt auslassen: Nach dem Hochladen laufen die Tests ohnehin auf GitHub. Im Terminal:
 
 ```bash
 cd ~/Downloads/anlage-daten        # dorthin, wo der Ordner entpackt liegt
@@ -85,6 +85,7 @@ Stunde später. Schlägt ein Lauf fehl, schickt GitHub eine Mail.
 | `konfig/quellen.yaml` | Adressen der Datenquellen |
 | `konfig/handeingaben.yaml` | Werte ohne Schnittstelle, z. B. die Dipol-Vorhersage des BOM |
 | `konfig/veto.yaml` | Politik-Veto: sperren, hochstufen, herabstufen |
+| `konfig/veto_regeln.yaml` | Regeltabelle, nach der der Meldungs-Wächter ein Veto setzen darf |
 | `konfig/kalender.yaml` | große Marktberichte (MPOB um den 10. des Monats) |
 | `daten/stand.json` | alles in Zahlen, für den Cloud-Bewerter |
 | `daten/signale.jsonl` | Logbuch: jeder Farbwechsel mit Grund und Kursen; Rot = Schattenkauf |
@@ -92,9 +93,14 @@ Stunde später. Schlägt ein Lauf fehl, schickt GitHub eine Mail.
 | `daten/klima/` | Normal 1991–2020 (`regen.json`, `wind.json`) und Messarchiv |
 | `abgabe/anlage-teil-N.md` | Vorlesetext im gemeinsamen Format, Rohfassung aus den Zahlen |
 | `abgabe/status-anlage.md` | fünf Zeilen Status |
+| `daten/geschichte/` | Geschichtsdaten für den Rückblick: Preise ab 1960, Ernte, Regen, Wind |
+| `daten/rueckblick/palmoel.json` | Ergebnis des Rückblicks: Verlauf je Monat, Bilanz, Varianten |
+| `daten/rueckblick/pruefzeit.json` | Buch über jedes Öffnen der Prüfzeit, mit Fingerabdruck der Regeln |
+| `abgabe/rueckblick-palmoel-teil-N.md` | Vorlesetext des Rückblicks |
 
 Befehle: `python -m anlage.lauf` (täglicher Lauf), `python -m anlage.pruefen` (Prüflauf),
-`python -m anlage.klimatologie` (Normal bauen), `python -m pytest -q` (Tests).
+`python -m anlage.klimatologie` (Normal bauen), `python -m anlage.geschichte` (Geschichtsdaten),
+`python -m anlage.rueckblick` (Rückblick), `python -m pytest -q` (Tests).
 
 ---
 
@@ -152,6 +158,52 @@ auf Gelb; Rot kommt nur aus der Checkliste.
 
 ---
 
+## Rückblick: die Ampel an der Geschichte prüfen
+
+Die Zeitmaschine rechnet die Ampel für jeden Monat ab 1960 neu, jeweils zum 15. und nur
+mit den Daten, die damals schon veröffentlicht waren. Es sind dieselben Module wie im
+täglichen Lauf. Danach zieht die Bilanz Bilanz: Was hätte Rot gebracht?
+
+**Einmal einrichten** (Reiter „Actions“, geht auch vom iPhone):
+
+1. **Geschichte** → „Run workflow“. Holt Preise (Weltbank ab 1960), Ernte (USDA), Regen und
+   Wind. Wegen des Tageslimits von Open-Meteo hält der erste Lauf nach gut zwei Stunden
+   sauber an. **Am nächsten Tag noch einmal starten**; er macht dort weiter.
+2. **Rückblick** → „Run workflow“, Häkchen „Prüfzeit öffnen“ **nicht** setzen. Dauert
+   wenige Minuten. Das Ergebnis liegt als Vorlesetext in `abgabe/rueckblick-palmoel-teil-N.md`.
+
+**Lernzeit und Prüfzeit.** Bis Ende 2015 ist Lernzeit: Hier darf man schauen und Regeln
+verbessern. Die Jahre danach bleiben als Prüfzeit verschlossen, auch die Preise darin. Erst
+wenn die Regeln feststehen, wird die Prüfzeit einmal geöffnet (Häkchen setzen). Jedes Öffnen
+landet mit einem Fingerabdruck der Regeln in `daten/rueckblick/pruefzeit.json`; maßgeblich ist
+das erste. Wer danach Regeln ändert und wieder öffnet, liest im Ergebnis „nicht mehr
+unabhängig“. Wer das Ende der Lernzeit nach hinten schiebt, hat damit ebenfalls geöffnet;
+auch das wird festgehalten.
+
+**Treffer und Bestehen** (beschlossen am 26.09.2026, vor dem ersten Lauf; steht in `konfig/schwellen.yaml`):
+
+- Treffer: Nach Rot steigt der Preis binnen zwölf Monaten um mindestens 20 %.
+- Mehrwert: Zwölf Monate nach Rot liegt der Preis im Mittel mindestens 10 Prozentpunkte
+  besser als über alle Monate.
+- Mindestens drei Signale, nicht mehr Fehlalarme als Treffer.
+- Zufallsprobe: Höchstens 10 von 100 Ziehungen gleich vieler zufälliger Monate dürfen
+  genauso gut sein.
+
+**Was der Rückblick auch zeigt:** alle großen Anstiege (mindestens 30 % binnen eines Jahres)
+und ob die Ampel sie rechtzeitig, zu spät, nur mit Gelb oder gar nicht erkannt hat; woran Rot
+am häufigsten scheiterte; jede El-Niño-Episode mit höchster Farbe und Preis danach; die
+Zeit vor und nach 1979 getrennt (vorher sind die Wetterdaten in den Tropen unsicherer); zwei
+vorher festgelegte Varianten des Zeitfensters zum Vergleich, nicht zum Aussuchen.
+
+**Grenzen:** kein Politik-Veto und keine Handeingaben; der El-Niño-Index ist der heutige,
+überarbeitete Stand; die Ostwinde gehen erst ab Juli als ganzes Jahr ein; Preise und
+Gegenkräfte sind Monatsdurchschnitte; das Normal stammt aus 1991 bis 2020.
+
+**Regel für neue Rohstoffe:** Ein neuer Rohstoff bleibt `rolle: sensor`, bis sein Rückblick
+bestanden ist. Erst dann wird er `kandidat`.
+
+---
+
 ## Pflegen und erweitern
 
 **Handeingabe ändern** (auch vom iPhone): auf GitHub die Datei öffnen, Stift-Symbol,
@@ -206,3 +258,4 @@ noch einmal starten. Er holt nur den neuen Punkt.
 - **Normalwerte** stammen aus demselben Modell (ERA5) wie die heutigen Werte. Das hält den
   Vergleich fair, ersetzt aber keine Stationsmessung.
 - **Die Testszenarien sind erfunden** und prüfen nur die Rechenwege, nicht die Treffsicherheit.
+  Die Treffsicherheit prüft der Rückblick.

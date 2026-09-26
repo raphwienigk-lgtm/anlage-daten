@@ -1,0 +1,45 @@
+# Veto-Regeltabelle für den Meldungs-Wächter (beschlossen 26.09.2026).
+#
+# Der Meldungs-Wächter (Cloud) liest Meldungen aus Gmail. Ein Veto setzt er nur, wenn
+# eine Regel passt UND die Maßnahme beschlossen ist: von Regierung oder Ministerium
+# verkündet, belegt durch die amtliche Quelle oder zwei unabhängige Medien.
+# Diskussionen, Pläne und Gerüchte werden nur gemeldet; dann entscheidet Raphael.
+#
+# Wirkungen wie in veto.yaml: sperren | hochstufen (höchstens Gelb) | herabstufen.
+# „beendet“ hebt ein laufendes Veto einer anderen Regel auf.
+# Hintergrund Palmöl: Die beobachteten Aktien ernten vor allem in Indonesien. Ein Exportstopp
+# treibt den Weltpreis, drückt aber den Inlandspreis, den diese Firmen bekommen.
+
+regeln:
+  - id: P1
+    rohstoff: palmoel
+    ausloeser: "Indonesien verhängt Exportstopp oder Exportquote für CPO oder Olein"
+    wirkung: sperren
+    dauer_tage: 60          # danach neu prüfen, ob die Maßnahme noch gilt
+  - id: P2
+    rohstoff: palmoel
+    ausloeser: "Indonesien erhöht Exportabgabe oder Exportzoll deutlich (um mehr als ein Viertel)"
+    wirkung: herabstufen
+    dauer_tage: 30
+  - id: P3
+    rohstoff: palmoel
+    ausloeser: "Pflichtverkauf im Inland (DMO) oder Preisdeckel für Erzeuger in Indonesien oder Malaysia"
+    wirkung: herabstufen
+    dauer_tage: 90          # oder bis zur Aufhebung, wenn früher
+  - id: P4
+    rohstoff: palmoel
+    ausloeser: "Höhere Biodiesel-Beimischung in Indonesien oder Malaysia beschlossen, mit Startdatum"
+    wirkung: hochstufen
+    dauer_tage: 90
+  - id: P5
+    rohstoff: palmoel
+    ausloeser: "Aufhebung eines Exportstopps"
+    wirkung: beendet
+    beendet: P1
+
+nur_melden:                 # passt keine Regel, wird nur gemeldet
+  - "Indische Einfuhrzölle auf Speiseöl"
+  - "EU-Entwaldungsverordnung (EUDR)"
+  - "Exportabgaben Malaysias"
+  - "Ganoderma und andere Krankheiten der Ölpalme"
+  - "alles, was nur geplant, diskutiert oder gerüchteweise gemeldet ist"

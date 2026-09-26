@@ -87,3 +87,19 @@ def test_openmeteo_kuerzt_enddatum_auf_erlaubte_spanne(monkeypatch):
     monkeypatch.setattr(netz, "hole_json", falsch)
     werte = openmeteo.hole_tage("http://x", {"name": "P", "lat": 0, "lon": 0}, date(2026, 9, 20), date(2026, 9, 24))
     assert gesehen == ["2026-09-24", "2026-09-21"] and werte == {"2026-09-20": 1.0, "2026-09-21": 2.0}
+
+
+def test_veto_regeln_sind_vollstaendig():
+    from anlage import konfig
+    daten = konfig.lade_yaml(konfig.KONFIG / "veto_regeln.yaml")
+    rohstoffe = set(konfig.konfiguration()["rohstoffe"])
+    ids = [r["id"] for r in daten["regeln"]]
+    assert len(ids) == len(set(ids))
+    for r in daten["regeln"]:
+        assert r["rohstoff"] in rohstoffe, r
+        assert r["wirkung"] in ("sperren", "hochstufen", "herabstufen", "beendet"), r
+        assert r.get("ausloeser"), r
+        if r["wirkung"] == "beendet":
+            assert r["beendet"] in ids, r
+        else:
+            assert isinstance(r["dauer_tage"], int) and r["dauer_tage"] > 0, r

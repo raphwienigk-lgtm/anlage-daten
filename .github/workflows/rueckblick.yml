@@ -1,0 +1,71 @@
+# Rückblick: die Ampel als Zeitmaschine über die Geschichte laufen lassen.
+# Voraussetzung: Workflow „Geschichte“ und „Klimatologie“ sind fertig. Dauer wenige Minuten.
+# Die Prüfzeit nur öffnen, wenn die Regeln feststehen. Jedes Öffnen wird festgehalten,
+# maßgeblich ist das erste.
+name: Rückblick
+
+on:
+  workflow_dispatch:
+    inputs:
+      rohstoff:
+        description: "Kennung des Rohstoffs (Dateiname in konfig/rohstoffe ohne .yaml)"
+        required: false
+        default: "palmoel"
+      pruefzeit_oeffnen:
+        description: "Prüfzeit öffnen (erst wenn die Regeln feststehen)"
+        type: boolean
+        required: false
+        default: false
+
+permissions:
+  contents: write
+
+concurrency:
+  group: anlage-geschichte   # dieselbe Gruppe wie „Geschichte“: beide schreiben daten/geschichte, nie gleichzeitig
+  cancel-in-progress: false
+
+jobs:
+  rueckblick:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v5
+        with:
+          ref: ${{ github.ref_name }}
+      - uses: actions/setup-python@v6
+        with:
+          python-version: "3.12"
+          cache: pip
+      - name: Pakete installieren
+        run: pip install -r requirements.txt
+      - name: Preise auffrischen
+        run: python -m anlage.geschichte --nur preise
+      - name: Zeitmaschine
+        env:
+          ROHSTOFF: ${{ github.event.inputs.rohstoff }}
+          OEFFNEN: ${{ github.event.inputs.pruefzeit_oeffnen }}
+        run: |
+          if [ "$OEFFNEN" = "true" ]; then
+            python -m anlage.rueckblick --rohstoff "${ROHSTOFF:-palmoel}" --pruefzeit-oeffnen
+          else
+            python -m anlage.rueckblick --rohstoff "${ROHSTOFF:-palmoel}"
+          fi
+      - name: Ergebnis sichern
+        if: always()
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add -A daten abgabe
+          if git diff --cached --quiet; then
+            echo "Keine Änderungen."
+            exit 0
+          fi
+          git commit -m "Rückblick ${ROHSTOFF:-palmoel} $(date -u +%Y-%m-%dT%H:%MZ)"
+          for versuch in 1 2 3; do
+            git pull --rebase && git push && exit 0
+            git rebase --abort 2>/dev/null || true
+            sleep $((versuch * 10))
+          done
+          exit 1
+        env:
+          ROHSTOFF: ${{ github.event.inputs.rohstoff }}

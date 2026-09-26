@@ -37,3 +37,22 @@ yahoo:
   gegenkraefte:
     brent: "BZ=F"
     sojaoel: "ZL=F"
+
+# Geschichtsdaten für den Rückblick (einmalig geholt mit `python -m anlage.geschichte`).
+geschichte:
+  weltbank:
+    name: "Weltbank Pink Sheet, Monatspreise ab 1960"
+    urls:                  # erste lesbare gewinnt; die Seite dient als Rückfall, falls die Datei umzieht
+      - "https://thedocs.worldbank.org/en/doc/18675f1d1639c7a34d463f59263ba0a2-0050012025/related/CMO-Historical-Data-Monthly.xlsx"
+    seite: "https://www.worldbank.org/en/research/commodity-markets"
+  preise:                  # Kennung → Spalte im Pink Sheet, Rückfall FRED (erst ab 1992)
+    palmoel: {weltbank: "Palm oil", fred: PPOILUSDM}
+    brent: {weltbank: "Crude oil, Brent", fred: POILBREUSDM}
+    sojaoel: {weltbank: "Soybean oil", fred: PSOILUSDM}
+  ernte:
+    name: "USDA PSD, Ölsaaten (Produktion Palmöl je Land)"
+    url: "https://apps.fas.usda.gov/psdonline/downloads/psd_oilseeds_csv.zip"
+    ware: "Oil, Palm"
+    laender: [Indonesia, Malaysia]
+  regen_ab: 1959-10-01     # 90 Tage Vorlauf vor dem ersten Rückblick-Monat
+  wind_ab: 1960

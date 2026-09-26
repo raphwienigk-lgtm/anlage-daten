@@ -1,0 +1,71 @@
+# Geschichtsdaten für den Rückblick: einmal von Hand starten (Actions → Geschichte → Run workflow).
+# Preise und Ernte sind in Minuten da. Regen und Wind brauchen wegen des Tageslimits von
+# Open-Meteo zwei Läufe an zwei Tagen: Der erste hält vor dem Limit sauber an, der zweite
+# macht dort weiter. Fertige Abschnitte werden nie doppelt geholt.
+name: Geschichte
+
+on:
+  schedule:
+    - cron: "47 13 * * *"   # täglich nur das Offene, bis alles da ist; danach endet der Lauf nach Sekunden
+  workflow_dispatch:
+    inputs:
+      nur:
+        description: "nur diese Teile, mit Komma getrennt: preise, ernte, regen, wind (leer = alles)"
+        required: false
+        default: ""
+      budget:
+        description: "gewichtete Open-Meteo-Abrufe für diesen Lauf (Tageslimit 10000, der tägliche Lauf braucht etwa 100)"
+        required: false
+        default: "9000"
+
+permissions:
+  contents: write
+
+concurrency:
+  group: anlage-geschichte
+  cancel-in-progress: false
+
+jobs:
+  geschichte:
+    runs-on: ubuntu-latest
+    timeout-minutes: 180
+    steps:
+      - uses: actions/checkout@v5
+        with:
+          ref: ${{ github.ref_name }}
+      - uses: actions/setup-python@v6
+        with:
+          python-version: "3.12"
+          cache: pip
+      - name: Pakete installieren
+        run: pip install -r requirements.txt
+      - name: Geschichtsdaten holen
+        env:
+          NUR: ${{ github.event.inputs.nur }}
+          BUDGET: ${{ github.event.inputs.budget }}
+          ZEITPLAN: ${{ github.event_name == 'schedule' }}
+        run: |
+          if [ "$ZEITPLAN" = "true" ]; then
+            python -m anlage.geschichte --nur-offene --budget-gewicht 9000 --budget-minuten 165
+          elif [ -n "$NUR" ]; then
+            python -m anlage.geschichte --nur "$NUR" --budget-gewicht "${BUDGET:-9000}" --budget-minuten 165
+          else
+            python -m anlage.geschichte --budget-gewicht "${BUDGET:-9000}" --budget-minuten 165
+          fi
+      - name: Ergebnis sichern
+        if: always()
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add -A daten
+          if git diff --cached --quiet; then
+            echo "Keine Änderungen."
+            exit 0
+          fi
+          git commit -m "Geschichte $(date -u +%Y-%m-%dT%H:%MZ)"
+          for versuch in 1 2 3; do
+            git pull --rebase && git push && exit 0
+            git rebase --abort 2>/dev/null || true
+            sleep $((versuch * 10))
+          done
+          exit 1

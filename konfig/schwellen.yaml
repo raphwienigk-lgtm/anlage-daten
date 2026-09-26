@@ -38,3 +38,28 @@ agrar_ampel:
 kurse:
   z_fenster_tage: 200
   historie: 2y             # so viel Kurshistorie holt der erste Lauf (yfinance kennt 1y, 2y, 5y, 10y, max)
+
+rueckblick:
+  beginn: 1960-01
+  lernzeit_bis: 2015-12    # danach Prüfzeit: bleibt weggeschlossen, bis sie einmal bewusst geöffnet wird
+  wetter_unsicher_bis: 1978   # ERA5 vor der Satellitenzeit in den Tropen unsicherer, wird getrennt ausgewiesen
+  # VORSCHLAG, von Raphael vor dem ersten Lauf festzulegen:
+  treffer_ab: 0.20         # Rot ist ein Treffer, wenn der Preis in den 12 Monaten danach um mindestens 20 % steigt
+  bewegung_ab: 0.30        # große Bewegung: Anstieg um mindestens 30 % innerhalb von 12 Monaten
+  erkannt_monate_vorher: 6 # Gelb höchstens so viele Monate vor Beginn einer großen Bewegung zählt als Vorwarnung;
+                           # „rechtzeitig“ heißt: eine gedachte Position (Rot) ist zu Beginn schon offen
+  bestehen:
+    mehrwert_ab: 0.10      # 12-Monats-Änderung nach Rot mindestens 10 Prozentpunkte über dem Mittel aller Monate
+    mindest_signale: 3
+    treffer_mindestens_wie_fehlalarme: true
+    zufall_hoechstens: 0.10   # höchstens 10 % gleich großer Zufallsziehungen von Monaten dürfen genauso gut sein
+  verzug:                  # was am 15. eines Monats schon veröffentlicht war
+    oni_monate: 2          # Jahreszeit mit Mitte im Monat m (JAS: August) gilt ab Monat m + 2
+    dmi_monate: 1
+    preis_monate: 2        # wie FRED im täglichen Lauf
+    gegen_monate: 1        # Monatsdurchschnitt statt Tageskurs
+    regen_tage: 6
+    wind_ab_monat: 7       # Mai und Juni gehen erst ab Juli als ganzes Jahr ein
+  varianten:               # wenige, vorher festgelegte Vergleiche; kein freies Optimieren
+    - {name: "Zeitfenster neun Monate", vorlauf_T_monate: 9}
+    - {name: "Zeitfenster fünfzehn Monate", vorlauf_T_monate: 15}

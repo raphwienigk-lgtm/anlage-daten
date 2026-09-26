@@ -140,6 +140,23 @@ def lage(reihe: list[dict], schwellen: dict, heute: date, vorlauf_monate: int = 
     return ergebnis
 
 
+def episoden(reihe: list[dict], schwellen: dict) -> list[dict]:
+    """Alle El-Niño-Episoden der Reihe mit mindestens fünf Jahreszeiten (für den Rückblick).
+    Eine Folge am Ende der Reihe zählt mit, sobald sie lang genug ist, und hat dann kein Ende."""
+    ab = schwellen["el_nino_ab"]
+    mindest = schwellen.get("mindest_jahreszeiten", 5)
+    liste = []
+    for beginn, ende in _folgen(reihe, ab):
+        if ende - beginn + 1 < mindest:
+            continue
+        hoch = max(range(beginn, ende + 1), key=lambda k: (reihe[k]["wert"], k))
+        laeuft = ende == len(reihe) - 1
+        liste.append({"beginn": _kurz(reihe[beginn]), "ende": None if laeuft else _kurz(reihe[ende]),
+                      "hoehepunkt": _kurz(reihe[hoch]), "laenge_jahreszeiten": ende - beginn + 1,
+                      "laeuft": laeuft})
+    return liste
+
+
 def episode_beginn(enso_lage: dict | None) -> date | None:
     """Ab diesem Tag zählen Wind, Dipol und Regenzeugen zur laufenden Episode."""
     if not enso_lage or not enso_lage.get("episode"):

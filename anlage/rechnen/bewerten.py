@@ -31,12 +31,17 @@ def _runde(x: float | None, stellen: int = 3) -> float | None:
 
 # ------------------------------------------------------------------ Checkliste
 def gegenkraefte(rohstoff: dict, reihen: dict[str, list[dict]], schwellen: dict) -> dict:
-    """Punkt 3. Druck je Gegenkraft = Preisrückgang in drei Monaten, 20 % Rückgang = voller Druck."""
+    """Punkt 3. Druck je Gegenkraft = Preisrückgang in drei Monaten, 20 % Rückgang = voller Druck.
+
+    Drei Monate sind 91 Kalendertage bei Tageskursen; der Rückblick rechnet mit
+    Monatswerten zum Ersten und setzt dafür gegen_tage auf 89 (sonst würden es manchmal vier Monate).
+    """
     voll = schwellen["gegen_voll_bei"]
+    tage = schwellen.get("gegen_tage", 91)
     einzeln = {}
     for g in rohstoff.get("gegenkraefte", []):
         reihe = reihen.get(g["kennung"])
-        d = veraenderung(reihe, 91) if reihe else None
+        d = veraenderung(reihe, tage) if reihe else None
         einzeln[g["kennung"]] = {
             "text": g.get("text", g["kennung"]),
             "veraenderung_3m": _runde(d),

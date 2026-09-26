@@ -269,6 +269,22 @@ def hole_kurse(tickers: list[str], historie: str, heute: date, buch: Quellenbuch
     return reihen, fehler
 
 
+# ------------------------------------------------------------------ Rückblick
+def rueckblick_stand(kennung: str) -> dict | None:
+    """Kurzfassung des letzten Rückblicks, damit die tägliche Ampel sagt, ob ihre Regel geprüft ist."""
+    e = speicher.lies_json(konfig.RUECKBLICK / f"{kennung}.json")
+    try:
+        b = e["lernzeit"]["bilanz"]
+        p = e.get("pruefzeit") or {}
+        erst = (p.get("oeffnungen") or [None])[0]
+        return {"stand": e["stand"][:10], "lernzeit_bestanden": b["urteil"]["bestanden"],
+                "signale": b["anzahl"], "treffer": b["treffer"], "fehlalarme": b["fehlalarme"],
+                "mehrwert": b["mehrwert"], "pruefzeit": p.get("status"),
+                "pruefzeit_bestanden": erst["ergebnis"]["urteil"]["bestanden"] if erst else None}
+    except (TypeError, KeyError, IndexError):
+        return None
+
+
 # ------------------------------------------------------------------ Lauf
 def zustand(buch: Quellenbuch, enso_lage, hinweise: list[str]) -> str:
     if enso_lage is None:
@@ -355,6 +371,7 @@ def lauf(heute: date | None = None, pro_minute: float | None = None) -> dict:
         except Exception as fehler:  # ein Rohstoff mit Fehler darf die anderen nicht mitreißen
             hinweise.append(f"{r['name']}: Bewertung fehlgeschlagen ({type(fehler).__name__}: {fehler})")
             b = {"name": r["name"], "kennung": kennung, "ampel": None, "hinweis": "Bewertung fehlgeschlagen"}
+        b["rueckblick"] = rueckblick_stand(kennung)
         for text in (b.get("ampel") or {}).get("veto_fehler", []):
             if text not in hinweise:
                 hinweise.append(text)

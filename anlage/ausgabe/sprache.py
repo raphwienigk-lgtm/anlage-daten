@@ -52,6 +52,15 @@ def wort(n: int) -> str:
     return teil
 
 
+def jahr(n: int) -> str:
+    """Jahreszahl, wie man sie spricht: 1998 → neunzehnhundertachtundneunzig, 2026 → zweitausendsechsundzwanzig."""
+    n = int(n)
+    if 1100 <= n <= 1999:
+        rest = n % 100
+        return wort(n // 100) + "hundert" + (wort(rest) if rest else "")
+    return wort(n)
+
+
 def komma(x: float, stellen: int = 1, vorzeichen: bool = False) -> str:
     """0,83 → „null Komma acht drei“. Mit vorzeichen: „plus eins Komma zwei“."""
     gerundet = round(x, stellen)
@@ -92,11 +101,11 @@ def ordnungszahl(n: int) -> str:
 
 def datum(d: date, mit_jahr: bool = False) -> str:
     text = f"{ordnungszahl(d.day)} {MONATE[d.month - 1]}"
-    return text + (f" {wort(d.year)}" if mit_jahr else "")
+    return text + (f" {jahr(d.year)}" if mit_jahr else "")
 
 
-def monat(jahr: int, monat_nr: int) -> str:
-    return f"{MONATE[monat_nr - 1]} {wort(jahr)}"
+def monat(jahr_nr: int, monat_nr: int) -> str:
+    return f"{MONATE[monat_nr - 1]} {jahr(jahr_nr)}"
 
 
 JAHRESZEITEN_TEXT = {
@@ -107,10 +116,10 @@ JAHRESZEITEN_TEXT = {
 }
 
 
-def jahreszeit(kuerzel: str, jahr: int) -> str:
+def jahreszeit(kuerzel: str, jahr_nr: int) -> str:
     """NOAA-Schreibweise: NDJ 2026 = November 2026 bis Januar 2027, DJF 2027 = Dezember 2026 bis Februar 2027."""
     text = JAHRESZEITEN_TEXT.get(kuerzel, kuerzel)
     if kuerzel == "NDJ":
         anfang, _, ende = text.partition(" bis ")
-        return f"{anfang} {wort(jahr)} bis {ende}"
-    return f"{text} {wort(jahr)}"
+        return f"{anfang} {jahr(jahr_nr)} bis {ende}"
+    return f"{text} {jahr(jahr_nr)}"

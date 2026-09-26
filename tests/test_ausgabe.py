@@ -149,3 +149,29 @@ def test_yahoo_tabelle_ohne_laufenden_handelstag():
     assert [e["datum"] for e in vormittag] == ["2026-09-24"]
     abend = kurse.tabelle_zu_reihe(tabelle, datetime(2026, 9, 26, 19, 0, tzinfo=ZoneInfo(zone)))
     assert [(e["datum"], e["volumen"]) for e in abend] == [("2026-09-24", 100), ("2026-09-26", 50)]
+
+
+@pytest.mark.parametrize("zahl, text", [(1998, "neunzehnhundertachtundneunzig"), (1900, "neunzehnhundert"),
+                                        (2026, "zweitausendsechsundzwanzig"), (1960, "neunzehnhundertsechzig")])
+def test_jahreszahlen(zahl, text):
+    assert sprache.jahr(zahl) == text
+
+
+def test_aufteilen_teilt_zu_lange_absaetze_an_satzenden():
+    from anlage.ausgabe import vorlesen
+    lang = " ".join(f"Satz Nummer {'eins' * 40} steht hier." for _ in range(60))
+    teile = vorlesen.aufteilen(["Kurz.", lang, "Ende."], "Stand: 26.09.2026, 05:47", grenze=1500)
+    assert len(teile) > 2
+    for nr, text in enumerate(teile, start=1):
+        assert len(text) <= 1500
+        assert text.split("\n")[1] == f"Teil {nr} von {len(teile)}"
+    assert "Ende." in teile[-1]
+
+
+def test_schlusssatz_nennt_den_rueckblick():
+    from anlage.ausgabe import vorlesen
+    ohne = {"rohstoffe": {"palmoel": {"name": "Palmöl"}}}
+    assert vorlesen._rueckblick_satz(ohne) == "Die Zahl hinter der Farbe ist vorläufig, bis der Rückblick steht."
+    mit = {"rohstoffe": {"palmoel": {"name": "Palmöl", "rueckblick": {
+        "lernzeit_bestanden": False, "pruefzeit": "verschlossen", "pruefzeit_bestanden": None}}}}
+    assert vorlesen._rueckblick_satz(mit) == "Rückblick Palmöl: Lernzeit nicht bestanden, Prüfzeit noch verschlossen."

@@ -39,6 +39,10 @@ def hole_text(url: str, params: dict | None = None) -> str:
     return _abruf(url, params).text
 
 
+def hole_bytes(url: str, params: dict | None = None, timeout: int = 120) -> bytes:
+    return _abruf(url, params, timeout=timeout).content
+
+
 def hole_json(url: str, params: dict | None = None):
     antwort = _abruf(url, params)
     try:

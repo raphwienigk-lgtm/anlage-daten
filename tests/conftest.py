@@ -198,6 +198,8 @@ def ablage(tmp_path, monkeypatch):
     monkeypatch.setattr(konfig, "KLIMA", daten / "klima")
     monkeypatch.setattr(konfig, "PREISE", daten / "preise")
     monkeypatch.setattr(konfig, "ABGABE", tmp_path / "abgabe")
+    monkeypatch.setattr(konfig, "GESCHICHTE", daten / "geschichte")
+    monkeypatch.setattr(konfig, "RUECKBLICK", daten / "rueckblick")
     return tmp_path
 
 

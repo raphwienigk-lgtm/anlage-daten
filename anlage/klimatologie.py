@@ -4,8 +4,11 @@ Wird einmal gebaut und danach nur noch gelesen:
 - daten/klima/regen.json  mittlerer Tagesregen je Kalendertag und Messpunkt (Ost und West)
 - daten/klima/wind.json   mittlerer Ost-West-Wind im Mai und Juni je Punkt vor Sumatra
 
-Fortsetzbar: Nach jedem fertigen Punkt wird gespeichert. Bricht der Lauf ab (Zeitbudget,
-Tageslimit von Open-Meteo), macht der nächste Start beim ersten fehlenden Punkt weiter.
+Fortsetzbar: Jeder geholte Fünfjahresblock (Regen) und jedes Jahr (Wind) wird sofort in
+daten/klima/teilweise.json gesichert; ein fertiger Punkt wandert ins Normal. Bricht der
+Lauf ab (Zeitbudget, Tageslimit von Open-Meteo), macht der nächste Start dort weiter.
+Scheitert ein einzelner Punkt, geht es mit dem nächsten weiter. Was passiert ist, steht
+in daten/klima/lauf-klimatologie.json (lesbar ohne Anmeldung bei GitHub).
 Dauer insgesamt etwa zwei Stunden, weil Open-Meteo lange Zeiträume mehrfach anrechnet.
 
 Aufruf: python -m anlage.klimatologie [--nur regen|wind] [--budget-minuten 150]
@@ -38,6 +41,39 @@ def _ort(punkt: dict) -> dict:
     return {"lat": punkt["lat"], "lon": punkt["lon"]}
 
 
+class Zwischenstand:
+    """Teilergebnisse je Punkt, damit ein Abbruch nichts verliert."""
+
+    def __init__(self):
+        self.pfad = konfig.KLIMA / "teilweise.json"
+        self.daten = speicher.lies_json(self.pfad, {}) or {}
+
+    def hole(self, art: str, punkt: dict) -> dict:
+        eintrag = self.daten.get(art, {}).get(punkt["name"])
+        if not eintrag or eintrag.get("ort") != _ort(punkt):
+            return {}
+        return dict(eintrag["werte"])
+
+    def merke(self, art: str, punkt: dict, werte: dict) -> None:
+        self.daten.setdefault(art, {})[punkt["name"]] = {"ort": _ort(punkt), "werte": werte}
+        speicher.schreibe_json(self.pfad, self.daten, kompakt=True)
+
+    def fertig(self, art: str, punkt: dict) -> None:
+        self.daten.get(art, {}).pop(punkt["name"], None)
+        self.daten = {a: e for a, e in self.daten.items() if e}
+        if self.daten:
+            speicher.schreibe_json(self.pfad, self.daten, kompakt=True)
+        elif self.pfad.exists():
+            self.pfad.unlink()
+
+
+def _fehler_behandeln(fehler: AbrufFehler, was: str, melde) -> None:
+    """429 heißt Limit: anhalten, morgen weiter. Alles andere: melden, nächster Punkt."""
+    if "429" in str(fehler):
+        raise Abbruch(f"Open-Meteo-Limit erreicht bei {was}. Später noch einmal starten; nichts geht verloren.")
+    melde(f"Fehler bei {was}: {fehler}")
+
+
 def ist_fertig(daten: dict | None, punkt: dict) -> bool:
     """Liegt für diesen Punkt (an diesem Ort) schon ein Normalwert vor?"""
     daten = daten or {}
@@ -64,29 +100,42 @@ def regen(k: dict, budget_ende: float, pro_minute: float, melde=print) -> dict:
     daten.update({"zeitraum": f"{VON}–{BIS}", "modell": om.get("modell"), "einheit": "mm je Tag"})
     punkte = k["regionen"]["ost"]["punkte"] + k["regionen"]["west"]["punkte"]
     daten["fertig"] = all(ist_fertig(daten, p) for p in punkte)
-    gewicht_punkt = sum(openmeteo.gewicht((e - s).days + 1) for s, e in _abschnitte())
+    zwischen = Zwischenstand()
     for punkt in punkte:
         if ist_fertig(daten, punkt):
             continue
-        _pruefe_budget(budget_ende, gewicht_punkt, pro_minute, f"Regen {punkt['name']}")
-        melde(f"Regen {punkt['name']}: hole {VON} bis {BIS} …")
-        tageswerte = {}
-        for start, ende in _abschnitte():
-            try:
-                tageswerte.update(openmeteo.hole_tage(om["url"], punkt, start, ende, modell=om.get("modell")))
-            finally:
-                openmeteo.drossel(openmeteo.gewicht((ende - start).days + 1), pro_minute)
+        tageswerte = zwischen.hole("regen", punkt)
+        schon = {d[:4] for d in tageswerte}
+        offen = [(s, e) for s, e in _abschnitte() if str(s.year) not in schon]
+        melde(f"Regen {punkt['name']}: hole {VON} bis {BIS} …" if not schon
+              else f"Regen {punkt['name']}: mache weiter, {len(offen)} von {len(_abschnitte())} Blöcken fehlen …")
+        try:
+            for start, ende in offen:
+                gewicht = openmeteo.gewicht((ende - start).days + 1)
+                _pruefe_budget(budget_ende, gewicht, pro_minute, f"Regen {punkt['name']} ab {start.year}")
+                try:
+                    tageswerte.update(openmeteo.hole_tage(om["url"], punkt, start, ende, modell=om.get("modell")))
+                finally:
+                    openmeteo.drossel(gewicht, pro_minute)
+                zwischen.merke("regen", punkt, tageswerte)
+        except AbrufFehler as fehler:
+            _fehler_behandeln(fehler, f"Regen {punkt['name']}", melde)
+            continue
         jahre = Counter(d[:4] for d, w in tageswerte.items() if w is not None)
         volle_jahre = sum(1 for n in jahre.values() if n >= 300)
         if volle_jahre < MINDEST_JAHRE:
-            raise Abbruch(f"Regen {punkt['name']}: nur {volle_jahre} vollständige Jahre, erwartet {MINDEST_JAHRE}")
+            melde(f"Regen {punkt['name']}: nur {volle_jahre} vollständige Jahre, erwartet {MINDEST_JAHRE}; "
+                  "der Punkt wird beim nächsten Start neu geholt")
+            zwischen.fertig("regen", punkt)
+            continue
         daten["punkte"][punkt["name"]] = regenzeugen.klimatologie(tageswerte)
         daten["orte"][punkt["name"]] = _ort(punkt)
         daten["jahre_je_punkt"][punkt["name"]] = volle_jahre
         daten["fertig"] = all(ist_fertig(daten, p) for p in punkte)
         speicher.schreibe_json(pfad, daten, kompakt=True)
+        zwischen.fertig("regen", punkt)
         melde(f"Regen {punkt['name']}: fertig ({volle_jahre} Jahre)")
-    daten["fertig"] = True
+    daten["fertig"] = all(ist_fertig(daten, p) for p in punkte)
     speicher.schreibe_json(pfad, daten, kompakt=True)
     return daten
 
@@ -103,29 +152,39 @@ def wind(k: dict, budget_ende: float, pro_minute: float, melde=print) -> dict:
     punkte = k["regionen"]["wind_sumatra"]["punkte"]
     daten["fertig"] = all(ist_fertig(daten, p) for p in punkte)
     tage = (date(2001, monate[-1], calendar.monthrange(2001, monate[-1])[1]) - date(2001, monate[0], 1)).days + 1
-    gewicht_punkt = (BIS - VON + 1) * openmeteo.gewicht(tage, 2)
+    gewicht_jahr = openmeteo.gewicht(tage, 2)
+    zwischen = Zwischenstand()
     for punkt in punkte:
         if ist_fertig(daten, punkt):
             continue
-        _pruefe_budget(budget_ende, gewicht_punkt, pro_minute, f"Wind {punkt['name']}")
-        melde(f"Wind {punkt['name']}: hole Mai und Juni {VON} bis {BIS} …")
-        je_jahr = {}
-        for jahr in range(VON, BIS + 1):
-            start = date(jahr, monate[0], 1)
-            ende = date(jahr, monate[-1], calendar.monthrange(jahr, monate[-1])[1])
-            try:
-                mittel, _ = openmeteo.hole_mittleren_zonalwind(om["url"], punkt, start, ende,
-                                                               modell=om.get("modell"))
+        je_jahr = zwischen.hole("wind", punkt)
+        melde(f"Wind {punkt['name']}: hole Mai und Juni {VON} bis {BIS} …" if not je_jahr
+              else f"Wind {punkt['name']}: mache weiter, {BIS - VON + 1 - len(je_jahr)} Jahre fehlen …")
+        try:
+            for jahr in range(VON, BIS + 1):
+                if str(jahr) in je_jahr:
+                    continue
+                _pruefe_budget(budget_ende, gewicht_jahr, pro_minute, f"Wind {punkt['name']} {jahr}")
+                start = date(jahr, monate[0], 1)
+                ende = date(jahr, monate[-1], calendar.monthrange(jahr, monate[-1])[1])
+                try:
+                    mittel, _ = openmeteo.hole_mittleren_zonalwind(om["url"], punkt, start, ende,
+                                                                   modell=om.get("modell"))
+                finally:
+                    openmeteo.drossel(gewicht_jahr, pro_minute)
                 je_jahr[str(jahr)] = round(mittel, 3)
-            finally:
-                openmeteo.drossel(openmeteo.gewicht(tage, 2), pro_minute)
+                zwischen.merke("wind", punkt, je_jahr)
+        except AbrufFehler as fehler:
+            _fehler_behandeln(fehler, f"Wind {punkt['name']}", melde)
+            continue
         daten["punkte"][punkt["name"]] = {"mittel_ms": round(mean(je_jahr.values()), 3),
                                           "jahre": len(je_jahr), "je_jahr": je_jahr}
         daten["orte"][punkt["name"]] = _ort(punkt)
         daten["fertig"] = all(ist_fertig(daten, p) for p in punkte)
         speicher.schreibe_json(pfad, daten)
+        zwischen.fertig("wind", punkt)
         melde(f"Wind {punkt['name']}: fertig, Mittel {daten['punkte'][punkt['name']]['mittel_ms']} m/s")
-    daten["fertig"] = True
+    daten["fertig"] = all(ist_fertig(daten, p) for p in punkte)
     speicher.schreibe_json(pfad, daten)
     return daten
 
@@ -141,23 +200,37 @@ def main(argv: list[str] | None = None) -> int:
     pro_minute = args.pro_minute if args.pro_minute is not None else k["quellen"]["openmeteo"]["gewicht_pro_minute"]
     budget_ende = time.monotonic() + args.budget_minuten * 60
     meldungen = []
+    regionen = k["regionen"]
+    noetig = {"wind": (konfig.KLIMA / "wind.json", regionen["wind_sumatra"]["punkte"]),
+              "regen": (konfig.KLIMA / "regen.json", regionen["ost"]["punkte"] + regionen["west"]["punkte"])}
+    offen = [art for art, (pfad, punkte) in noetig.items() if args.nur in (None, art)
+             and not all(ist_fertig(speicher.lies_json(pfad), p) for p in punkte)]
+    if not offen:
+        print("Klimatologie ist vollständig, nichts zu tun.")
+        return 0
 
     def melde(text: str) -> None:
         print(text, flush=True)
         meldungen.append(text)
 
-    ergebnis = "Klimatologie vollständig."
+    fertig = {}
+    ergebnis = None
     try:
         if args.nur in (None, "wind"):
-            wind(k, budget_ende, pro_minute, melde)
+            fertig["wind"] = wind(k, budget_ende, pro_minute, melde)["fertig"]
         if args.nur in (None, "regen"):
-            regen(k, budget_ende, pro_minute, melde)
+            fertig["regen"] = regen(k, budget_ende, pro_minute, melde)["fertig"]
     except Abbruch as grund:
         ergebnis = f"Angehalten: {grund}"
-    except AbrufFehler as fehler:
-        ergebnis = (f"Angehalten wegen Abruffehler: {fehler}. Der Fortschritt ist gespeichert; "
-                    "bei Limit (429) morgen erneut starten.")
+    except Exception as fehler:                     # auch Unerwartetes landet in der Statusdatei
+        ergebnis = f"Angehalten wegen {type(fehler).__name__}: {fehler}. Der Fortschritt ist gespeichert."
+    if ergebnis is None:
+        ergebnis = ("Klimatologie vollständig." if all(fertig.values())
+                    else "Einzelne Punkte fehlen noch (siehe Meldungen). Einfach noch einmal starten.")
     melde(ergebnis)
+    speicher.schreibe_json(konfig.KLIMA / "lauf-klimatologie.json",
+                           {"stand": konfig.jetzt().isoformat(timespec="seconds"), "ergebnis": ergebnis,
+                            "fertig": fertig, "meldungen": meldungen})
     if os.environ.get("GITHUB_STEP_SUMMARY"):
         with open(os.environ["GITHUB_STEP_SUMMARY"], "a", encoding="utf-8") as f:
             f.write("## Klimatologie\n\n" + "\n".join(f"- {m}" for m in meldungen) + "\n")

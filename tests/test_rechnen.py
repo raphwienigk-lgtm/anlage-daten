@@ -297,3 +297,14 @@ def test_ampel_ohne_urteil_wenn_ausloeser_unbekannt(schwellen):
     assert a["farbe"] == bewerten.OHNE_URTEIL
     assert bewerten.veto_anwenden(a, "palmoel", {"aktiv": [{"rohstoff": "palmoel", "wirkung": "hochstufen"}]},
                                   date(2026, 1, 1))["farbe"] == bewerten.OHNE_URTEIL
+
+
+def test_gegenkraefte_mit_monatswerten_genau_drei_monate():
+    from anlage.rechnen import bewerten
+    rohstoff = {"gegenkraefte": [{"kennung": "brent", "text": "Brent"}]}
+    reihe = [{"datum": f"2026-{m:02d}-01", "schluss": w} for m, w in ((1, 100.0), (2, 90.0), (3, 90.0), (4, 80.0))]
+    s = {"gegen_voll_bei": 0.20, "gegenkraefte_ueberwiegen_ab": 0.6}
+    tageskurs = bewerten.gegenkraefte(rohstoff, {"brent": reihe}, s)            # 91 Tage: April → Dezember fehlt
+    monatlich = bewerten.gegenkraefte(rohstoff, {"brent": reihe}, {**s, "gegen_tage": 89})
+    assert tageskurs["einzeln"]["brent"]["veraenderung_3m"] is None
+    assert monatlich["einzeln"]["brent"]["veraenderung_3m"] == pytest.approx(-0.2)

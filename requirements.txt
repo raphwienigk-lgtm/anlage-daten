@@ -2,4 +2,5 @@
 requests>=2.32,<3
 PyYAML>=6.0,<7
 yfinance>=1.7,<2
+openpyxl>=3.1,<4          # liest das Pink Sheet der Weltbank (Rückblick)
 tzdata

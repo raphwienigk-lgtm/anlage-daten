@@ -130,7 +130,7 @@ def _dipol_absatz(d: dict | None) -> str:
     if werte:
         w = next((e for e in reversed(werte) if e.get("an")), werte[-1])
         richtung = "stärker" if w["anomalie_ms"] < 0 else "schwächer"
-        teile.append(f"Stufe zwei, Ostwinde vor Sumatra im Mai und Juni {sprache.wort(w['jahr'])}: "
+        teile.append(f"Stufe zwei, Ostwinde vor Sumatra im Mai und Juni {sprache.jahr(w['jahr'])}: "
                      f"{sprache.komma(abs(w['anomalie_ms']), 1)} Meter pro Sekunde {richtung} als normal, "
                      f"{_stufe(s2['an'])}.")
     else:
@@ -249,6 +249,23 @@ def _quellen_absatz(quellen: dict) -> str:
             + ". Wo es geht, stehen die Werte vom letzten erfolgreichen Abruf.")
 
 
+def _rueckblick_satz(stand: dict) -> str:
+    saetze = []
+    for b in stand["rohstoffe"].values():
+        r = b.get("rueckblick")
+        if not r:
+            continue
+        satz = f"Rückblick {b['name']}: Lernzeit {'bestanden' if r['lernzeit_bestanden'] else 'nicht bestanden'}"
+        if r.get("pruefzeit_bestanden") is not None:
+            satz += f", Prüfzeit {'bestanden' if r['pruefzeit_bestanden'] else 'nicht bestanden'}"
+        elif r.get("pruefzeit") == "verschlossen":
+            satz += ", Prüfzeit noch verschlossen"
+        saetze.append(satz + ".")
+    if not saetze:
+        return "Die Zahl hinter der Farbe ist vorläufig, bis der Rückblick steht."
+    return " ".join(saetze)
+
+
 # ------------------------------------------------------------------ Aufbau
 def absaetze(stand: dict) -> list[str]:
     heute = date.fromisoformat(stand["datum"])
@@ -283,18 +300,37 @@ def absaetze(stand: dict) -> list[str]:
             liste.append(text)
     if stand.get("hinweise"):
         liste.append("Hinweis zur Einrichtung: " + " ".join(stand["hinweise"]))
-    liste.append("Das ist eine Denkhilfe, keine Anlageberatung. Die Zahl hinter der Farbe ist vorläufig, "
-                 "bis das Backtesting steht.")
+    liste.append(_rueckblick_satz(stand) + " Das ist eine Denkhilfe, keine Anlageberatung.")
     return liste
 
 
-def teile(stand: dict, grenze: int = GRENZE) -> list[str]:
-    """Teilt die Absätze auf Teile von höchstens `grenze` Zeichen, Kopfzeilen eingerechnet."""
-    zeit = datetime.fromisoformat(stand["stand"])
-    stempel = f"Stand: {zeit.strftime('%d.%m.%Y, %H:%M')}"
-    kopf_platz = len(stempel) + len("\nTeil 99 von 99\n\n")
+def stempel(zeit: datetime) -> str:
+    return f"Stand: {zeit.strftime('%d.%m.%Y, %H:%M')}"
+
+
+def _zerlege(absatz: str, platz: int) -> list[str]:
+    """Ein zu langer Absatz wird an Satzenden geteilt."""
+    if len(absatz) <= platz:
+        return [absatz]
+    stuecke, aktuell = [], ""
+    for satz in absatz.replace(". ", ".\x00").split("\x00"):
+        kandidat = f"{aktuell} {satz}" if aktuell else satz
+        if aktuell and len(kandidat) > platz:
+            stuecke.append(aktuell)
+            aktuell = satz
+        else:
+            aktuell = kandidat
+    if aktuell:
+        stuecke.append(aktuell)
+    return stuecke
+
+
+def aufteilen(absaetze_liste: list[str], kopf: str, grenze: int = GRENZE) -> list[str]:
+    """Teilt Absätze auf Teile von höchstens `grenze` Zeichen, Kopfzeilen eingerechnet.
+    Zeile 1 ist `kopf` („Stand: …“), Zeile 2 „Teil x von y“."""
+    kopf_platz = len(kopf) + len("\nTeil 99 von 99\n\n") + 1
     koerper, aktuell = [], ""
-    for absatz in absaetze(stand):
+    for absatz in (s for a in absaetze_liste for s in _zerlege(a, grenze - kopf_platz)):
         kandidat = f"{aktuell}\n\n{absatz}" if aktuell else absatz
         if aktuell and len(kandidat) + kopf_platz > grenze:
             koerper.append(aktuell)
@@ -304,21 +340,35 @@ def teile(stand: dict, grenze: int = GRENZE) -> list[str]:
     if aktuell:
         koerper.append(aktuell)
     n = len(koerper)
-    return [f"{stempel}\nTeil {i} von {n}\n\n{text}\n" for i, text in enumerate(koerper, start=1)]
+    return [f"{kopf}\nTeil {i} von {n}\n\n{text}\n" for i, text in enumerate(koerper, start=1)]
+
+
+def teile(stand: dict, grenze: int = GRENZE) -> list[str]:
+    return aufteilen(absaetze(stand), stempel(datetime.fromisoformat(stand["stand"])), grenze)
+
+
+def schreibe_teile(ordner: Path, praefix: str, stuecke: list[str]) -> list[Path]:
+    """Schreibt <praefix>-teil-1.md usw.; alte Teile mit demselben Präfix werden vorher entfernt."""
+    ordner.mkdir(parents=True, exist_ok=True)
+    for alt in ordner.glob(f"{praefix}-teil-*.md"):
+        alt.unlink()
+    pfade = []
+    for i, text in enumerate(stuecke, start=1):
+        pfad = ordner / f"{praefix}-teil-{i}.md"
+        speicher.schreibe_text(pfad, text)
+        pfade.append(pfad)
+    return pfade
+
+
+def vorlesezeit_minuten(stuecke: list[str]) -> int:
+    return max(1, round(sum(len(t) for t in stuecke) / 900))
 
 
 def schreibe(stand: dict, ordner: Path) -> list[Path]:
     """Schreibt anlage-teil-1.md usw. und status-anlage.md. Alte Teile werden vorher entfernt."""
-    ordner.mkdir(parents=True, exist_ok=True)
-    for alt in ordner.glob("anlage-teil-*.md"):
-        alt.unlink()
-    pfade = []
     stuecke = teile(stand)
-    for i, text in enumerate(stuecke, start=1):
-        pfad = ordner / f"anlage-teil-{i}.md"
-        speicher.schreibe_text(pfad, text)
-        pfade.append(pfad)
-    minuten = max(1, round(sum(len(t) for t in stuecke) / 900))
+    pfade = schreibe_teile(ordner, "anlage", stuecke)
+    minuten = vorlesezeit_minuten(stuecke)
     zeit = datetime.fromisoformat(stand["stand"])
     ergebnis = ("abgabe/anlage-teil-1.md" if len(stuecke) == 1
                 else f"abgabe/anlage-teil-1.md bis anlage-teil-{len(stuecke)}.md")

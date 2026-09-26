@@ -13,6 +13,8 @@ DATEN = BASIS / "daten"
 KLIMA = DATEN / "klima"
 PREISE = DATEN / "preise"
 ABGABE = BASIS / "abgabe"
+GESCHICHTE = DATEN / "geschichte"
+RUECKBLICK = DATEN / "rueckblick"
 ZEITZONE = ZoneInfo("Europe/Berlin")
 
 

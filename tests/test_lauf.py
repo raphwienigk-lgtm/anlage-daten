@@ -28,8 +28,47 @@ def test_klimatologie_baut_normal_und_ist_fortsetzbar(ablage, netz_mit):
 
 def test_klimatologie_haelt_bei_knappem_budget_an(ablage, netz_mit):
     netz_mit(szenario_rot())
-    assert klimatologie.main(["--pro-minute", "75", "--budget-minuten", "1"]) == 0
+    assert klimatologie.main(["--pro-minute", "75", "--budget-minuten", "0.01"]) == 0
     assert not (konfig.KLIMA / "regen.json").exists()
+    status = speicher.lies_json(konfig.KLIMA / "lauf-klimatologie.json")
+    assert status["ergebnis"].startswith("Angehalten: Zeitbudget")
+
+
+def test_klimatologie_verliert_nichts_und_ueberspringt_kaputte_punkte(ablage, netz_mit, monkeypatch):
+    from anlage import netz as netzmodul
+    from anlage.netz import AbrufFehler
+    falsch = netz_mit(szenario_rot())
+    k = konfig.konfiguration()
+    bengkulu = k["regionen"]["wind_sumatra"]["punkte"][0]
+    jambi = k["regionen"]["ost"]["punkte"][1]
+    zaehler = {"jambi": 0}
+
+    def launisch(url, params=None):
+        if params["latitude"] == bengkulu["lat"]:
+            raise AbrufFehler("Fehler 400 bei Open-Meteo: kaputter Punkt")
+        if params["latitude"] == jambi["lat"] and "daily" in params:
+            zaehler["jambi"] += 1
+            if zaehler["jambi"] == 4:
+                raise AbrufFehler("Tageslimit oder Ratenlimit erreicht (429) bei Open-Meteo")
+        return falsch.hole_json(url, params)
+
+    monkeypatch.setattr(netzmodul, "hole_json", launisch)
+    _klimatologie_bauen()
+    status = speicher.lies_json(konfig.KLIMA / "lauf-klimatologie.json")
+    assert any("Fehler bei Wind vor Bengkulu" in m for m in status["meldungen"])
+    assert status["ergebnis"].startswith("Angehalten: Open-Meteo-Limit")
+    wind = speicher.lies_json(konfig.KLIMA / "wind.json")
+    assert list(wind["punkte"]) == ["südlich der Sundastraße"] and wind["fertig"] is False
+    teilweise = speicher.lies_json(konfig.KLIMA / "teilweise.json")
+    assert len({d[:4] for d in teilweise["regen"]["Jambi, Sumatra"]["werte"]}) == 15   # drei Blöcke gesichert
+
+    # Zweiter Start: Jambi macht beim vierten Block weiter, ohne die ersten drei neu zu holen
+    vorher = zaehler["jambi"]
+    _klimatologie_bauen()
+    assert zaehler["jambi"] - vorher == 3
+    regen = speicher.lies_json(konfig.KLIMA / "regen.json")
+    assert regen["fertig"] and regen["jahre_je_punkt"]["Jambi, Sumatra"] == 30
+    assert not (konfig.KLIMA / "teilweise.json").exists() or "regen" not in speicher.lies_json(konfig.KLIMA / "teilweise.json")
 
 
 def test_rot_mit_allen_bedingungen(ablage, netz_mit):
