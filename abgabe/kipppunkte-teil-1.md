@@ -1,11 +1,11 @@
-Stand: 26.09.2026, 14:46
+Stand: 26.09.2026, 17:35
 Teil 1 von 1
 
 Das Kipppunkt-Register für das dritte Quartal zweitausendsechsundzwanzig. Es zeigt langsame Messreihen, an denen sich Grundannahmen über Anbauregionen verschieben können. Es schaltet keine Ampel und handelt nicht; bewertet wird gemeinsam im Quartal.
 
 Noch nicht alle Reihen sind gesammelt. Der Bericht wird in den nächsten Tagen ergänzt.
 
-Kaltfleck südlich von Grönland. Kipppunkt: Umwälzströmung im Atlantik (AMOC). Betrifft Westafrika (Kakao), Sahel, Brasilien, Europa. Gemessen am Weltozean war das Meer dort in den fünf Jahren bis zweitausendfünfundzwanzig null Komma eins eins Grad wärmer als in der Vergleichszeit neunzehnhunderteinundfünfzig bis neunzehnhundertachtzig. Für sich allein betrachtet lag es null Komma acht sieben Grad über der Vergleichszeit. Über die letzten dreißig Jahre wird es dort gegenüber dem Weltozean um null Komma eins Grad je Jahrzehnt kühler. Die Trägheit der Reihe nach Abzug des Trends liegt in den letzten dreißig Jahren bei null Komma vier zwei, in den dreißig Jahren davor bei null Komma eins drei. Steigende Trägheit gilt in der Forschung als mögliches Frühzeichen eines Kipppunkts. Letzter Monatswert: August zweitausendsechsundzwanzig.
+Kaltfleck südlich von Grönland: Diesmal fehlen die Daten, die Quelle war nicht erreichbar oder hat ihr Format geändert.
 
 Umwälzströmung bei sechsundzwanzigeinhalb Grad Nord (RAPID-Messkette). Kipppunkt: Umwälzströmung im Atlantik (AMOC). Betrifft Westafrika (Kakao), Sahel, Brasilien, Europa. Die Messkette misst seit April zweitausendvier; ein Sverdrup ist eine Million Kubikmeter Wasser je Sekunde. In den ersten vier Jahren lag die Strömung im Mittel bei achtzehn Komma sieben Sverdrup, in den letzten zwölf Monaten bis März zweitausendvierundzwanzig bei sechzehn Komma vier Sverdrup. Über die ganze Reihe nimmt die Strömung um null Komma neun Sverdrup je Jahrzehnt ab. Die Messkette veröffentlicht mit ein bis zwei Jahren Verzögerung.
 
@@ -17,7 +17,9 @@ Brandherde im Amazonasgebiet. Kipppunkt: Waldsterben im Amazonas. Betrifft Brasi
 
 Jaén in Andalusien. Kipppunkt: Austrocknung des Mittelmeerraums. Betrifft Olivenöl. Regen im Wasserjahr von Oktober bis September: sechshundertsechs Millimeter im Wasserjahr bis September zweitausendfünfundzwanzig, im Mittel der letzten zehn Jahre fünfhundertvierzig, in der Zeit von neunzehnhundertzweiundachtzig bis zweitausendelf im Mittel sechshundertfünf, Trend minus neunundvierzig Komma sieben Millimeter je Jahrzehnt. Mittlere Tageshöchsttemperatur von Juni bis August: sechsunddreißig Komma drei Grad im Sommer zweitausendsechsundzwanzig, im Mittel der letzten zehn Jahre vierunddreißig Komma acht, in der Zeit von neunzehnhunderteinundachtzig bis zweitausendzehn im Mittel einunddreißig Komma drei, Trend plus eins Komma sechs Grad je Jahrzehnt.
 
-Süden von Minas Gerais. Kipppunkt: Temperaturfenster für Arabica wandert bergauf. Betrifft Kaffee. Jahresmitteltemperatur: zwanzig Komma sechs Grad im Jahr neunzehnhundertdreiundneunzig, im Mittel der letzten zehn Jahre zwanzig Komma vier, in der Zeit von neunzehnhunderteinundachtzig bis zweitausendzehn im Mittel zwanzig Komma drei, Trend plus null Komma drei Grad je Jahrzehnt. Tage mit mindestens dreißig Grad: fünfundzwanzig Tage im Jahr neunzehnhundertdreiundneunzig, im Mittel der letzten zehn Jahre neunzehn, in der Zeit von neunzehnhunderteinundachtzig bis zweitausendzehn im Mittel sechzehn, Trend plus drei Komma eins Tage je Jahrzehnt.
+Süden von Minas Gerais. Kipppunkt: Temperaturfenster für Arabica wandert bergauf. Betrifft Kaffee. Jahresmitteltemperatur: zwanzig Komma acht Grad im Jahr zweitausendfünfundzwanzig, im Mittel der letzten zehn Jahre einundzwanzig, in der Zeit von neunzehnhunderteinundachtzig bis zweitausendzehn im Mittel zwanzig Komma vier, Trend plus null Komma drei Grad je Jahrzehnt. Tage mit mindestens dreißig Grad: fünfundsechzig Tage im Jahr zweitausendfünfundzwanzig, im Mittel der letzten zehn Jahre achtundfünfzig, in der Zeit von neunzehnhunderteinundachtzig bis zweitausendzehn im Mittel vierundzwanzig, Trend plus fünfzehn Komma acht Tage je Jahrzehnt.
+
+Giresun an der Schwarzmeerküste. Kipppunkt: Kältebedarf der Haselnuss. Betrifft Haselnuss. Wintertage von November bis Februar mit einem Tagesmittel bis sieben Grad: siebenundsechzig Tage im Winter bis Februar neunzehnhundertsechsundneunzig, im Mittel der letzten zehn Jahre fünfundsechzig, in der Zeit von neunzehnhundertzweiundachtzig bis zweitausendelf im Mittel sechzig, Trend plus vierzehn Komma sechs Tage je Jahrzehnt.
 
 Bei den Temperatur- und Regenreihen fehlen noch Jahre; sie werden an den nächsten Tagen nachgeladen.
 
