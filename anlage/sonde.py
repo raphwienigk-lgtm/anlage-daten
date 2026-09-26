@@ -248,6 +248,28 @@ def mpob_2026() -> str:
                  auszug=5000)
 
 
+def mpob_tabelle() -> str:
+    """Wie liest das Modul die MPOB-Seite? Dazu Ausschnitte um die Grafikdaten und die Tabelle."""
+    from .quellen import inland
+    url = "https://bepi.mpob.gov.my/admin2/price_local_daily_view_cpo_msia.php?more=Y&jenis=1Y&tahun=2026"
+    text = _hole(url).text
+    zeilen = [f"URL: {url}", f"Größe: {len(text)} Zeichen"]
+    try:
+        reihe = inland.lies_mpob(text, 2026)
+        zeilen.append(f"lies_mpob: {len(reihe)} Werte, erste {reihe[:2]}, letzte {reihe[-2:]}")
+    except Exception as fehler:  # noqa: BLE001
+        zeilen.append(f"lies_mpob: {type(fehler).__name__}: {fehler}")
+    tab = inland.tabellenzeilen(text)
+    zeilen.append(f"Tabellenzeilen: {len(tab)}")
+    zeilen += ["  " + " | ".join(z)[:300] for z in tab[:12]]
+    for muster in (r"series\s*:", r"data\s*:\s*\[", r"<!--", r"<td[^>]*>\s*0?1\s*</td>"):
+        treffer = [m.start() for m in re.finditer(muster, text)][:3]
+        zeilen.append(f"--- {muster}: {len(treffer)} Treffer")
+        for t in treffer[:2]:
+            zeilen.append(text[max(0, t - 200):t + 1200])
+    return "\n".join(zeilen)
+
+
 def mpob_2021() -> str:
     return _text("https://bepi.mpob.gov.my/admin2/price_local_daily_view_cpo_msia.php?more=Y&jenis=1Y&tahun=2021",
                  auszug=1500)
@@ -299,7 +321,7 @@ PROBEN = {
     "gpcc_monitoring": gpcc_monitoring, "gpcc_monitoring_1982": gpcc_monitoring_1982, "gpcc_di": gpcc_di,
     "queimadas": queimadas, "nrcs": nrcs, "openmeteo": openmeteo,
     "pihps_baum": pihps_baum, "pihps_curah": pihps_curah, "pihps_monat": pihps_monat,
-    "mpob_2026": mpob_2026, "mpob_2021": mpob_2021, "fpma_liste": fpma_liste, "fpma_reihen": fpma_reihen,
+    "mpob_2026": mpob_2026, "mpob_tabelle": mpob_tabelle, "mpob_2021": mpob_2021, "fpma_liste": fpma_liste, "fpma_reihen": fpma_reihen,
     "fca": fca, "eppo": eppo, "ippc": ippc,
 }
 

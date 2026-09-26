@@ -50,6 +50,34 @@ def test_mpob_tabelle_mit_und_ohne_tagesspalte():
         inland.lies_mpob("<table><tr><td>nichts</td></tr></table>", 2026)
 
 
+MPOB_GRAFIK = """<script>chart = new Highcharts.Chart({ xAxis: { title :{ text : 'Date'},
+    categories: [
+        'Dec 31, 2025',
+        'Jan 02, 2026',
+        'Jan 05, 2026'
+    ] },
+    series: [{ name: 'CPO', data: [3950.00, 4010.50, null] }] });</script>
+<table><tr><td>Legend</td></tr></table>"""
+
+
+def test_mpob_grafik_und_tabelle_ohne_kopf(monkeypatch):
+    reihe = inland.lies_mpob_grafik(MPOB_GRAFIK)
+    assert reihe == [{"datum": "2025-12-31", "wert": 3950.0}, {"datum": "2026-01-02", "wert": 4010.5}]
+    monkeypatch.setattr(netz, "hole_text", lambda url, params=None, kopf=None: MPOB_GRAFIK)
+    assert inland.hole_mpob(2026) == [{"datum": "2026-01-02", "wert": 4010.5}]    # nur das verlangte Jahr
+    with pytest.raises(inland.FormatFehler):
+        inland.lies_mpob_grafik(MPOB_GRAFIK.replace("null", "null, 1.0"))          # Längen passen nicht
+    zeilen = "".join(f"<tr><td>{t:02d}</td>" + "".join(f"<td>{4000 + t + m}.00</td>" for m in range(1, 13)) + "</tr>"
+                     for t in range(1, 32))
+    ohne_kopf = f"<table><!-- <tr><td>January</td><td>February</td></tr> -->{zeilen}</table>"
+    tabelle = inland.lies_mpob(ohne_kopf, 2026)
+    assert {"datum": "2026-03-05", "wert": 4008.0} in tabelle
+    assert not any(e["datum"].startswith("2026-02-30") for e in tabelle)
+    monkeypatch.setattr(netz, "hole_text", lambda url, params=None, kopf=None: "  ")
+    with pytest.raises(inland.FormatFehler):
+        inland.hole_mpob(2021)
+
+
 def test_fpma():
     reihe = inland.lies_fpma({"datapoints": [{"date": "2026-07-01", "price_value": 21932.0},
                                              {"date": "2026-06-01", "price_value": 21500.0}]})
@@ -111,9 +139,10 @@ def test_lauf_mit_erfundenem_netz(ablage, monkeypatch):
     assert lose["status"] == "ok" and lose["urteil"] in ("Frühzeichen", "starkes Frühzeichen")
     assert "speiseoel_id_lose" in e["fruehzeichen"]
     assert e["reihen"]["cpo_my_tag"]["status"] == "Fehler"
-    # Erstabruf in Jahresstücken ab 2018
+    # Erst die jüngsten hundertfünfzig Tage, dann rückwärts in Stücken bis 2018
     starts = [p["start_date"] for u, p in abrufe if "hargapangan" in u and p["comcat_id"] == "com_17"]
-    assert starts[0] == "2018-01-01" and len(starts) == 5
+    assert starts[:2] == ["2021-10-02", "2022-01-02"] and min(starts) == "2018-01-01"
+    assert speicher.lies_json(inlandspreise.archiv_pfad("speiseoel_id_lose"))[0]["datum"] == "2018-01-01"
     status = (konfig.ABGABE / "status-inlandspreise.md").read_text(encoding="utf-8")
     assert "Zustand: Warnung" in status
     # Zweiter Lauf holt nur noch die letzten dreißig Tage
@@ -146,3 +175,28 @@ def test_vorlesetext_nennt_das_fruehzeichen(ablage, netz_mit):
         text = teil.read_text(encoding="utf-8").split("\n", 2)[2]
         assert len(teil.read_text(encoding="utf-8")) <= vorlesen.GRENZE
         assert not re.search(r"\d", text)
+
+
+def test_geschichte_wird_ueber_mehrere_laeufe_nachgeholt(ablage, monkeypatch, schwellen):
+    s = schwellen["inlandspreise"]
+    abrufe = []
+
+    def falsches_json(url, params=None, kopf=None):
+        abrufe.append(params["start_date"])
+        von, bis = date.fromisoformat(params["start_date"]), date.fromisoformat(params["end_date"])
+        return _pihps_antwort({d: 14000 for d in (von + timedelta(days=i) for i in range((bis - von).days + 1))
+                               if d.weekday() < 5})
+
+    monkeypatch.setattr(netz, "hole_json", falsches_json)
+    monkeypatch.setattr(inlandspreise.time, "sleep", lambda s: None)
+    eintrag = {"kennung": "probe", "quelle": "pihps", "ware": "com_17"}
+    heute = date(2022, 3, 1)
+    abgelaufen = inlandspreise.time.monotonic() - 1
+    inlandspreise.aktualisiere(eintrag, heute, s, pause=0, frist=abgelaufen)
+    assert abrufe == ["2021-10-02", "2022-01-02"]                      # nur das Jüngste, Frist vorbei
+    assert speicher.lies_json(inlandspreise._rueckwaerts_pfad()) in (None, {})
+    abrufe.clear()
+    reihe = inlandspreise.aktualisiere(eintrag, heute + timedelta(days=1), s, pause=0)
+    assert abrufe[0] == "2022-01-30" and min(abrufe) == "2018-01-01"
+    assert reihe[0]["datum"] == "2018-01-01"
+    assert speicher.lies_json(inlandspreise._rueckwaerts_pfad())["probe"] == "2018-01-01"

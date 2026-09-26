@@ -23,6 +23,8 @@ PIHPS_KOPF = {
     "Accept": "application/json, text/javascript, */*; q=0.01",
 }
 MPOB_URL = "https://bepi.mpob.gov.my/admin2/price_local_daily_view_cpo_msia.php"
+# FPMA (hinter einer Schutzschicht) und MPOB antworten der Kennung des Beobachters mit 403; wie ein Browser geht es.
+BROWSER_KOPF = {"User-Agent": PIHPS_KOPF["User-Agent"], "Accept": "text/html,application/json;q=0.9,*/*;q=0.8"}
 FPMA_URL = "https://fpma.fao.org/giews/v4/price_module/api/v1/FpmaSeriePrice/{uuid}/"
 
 _TAG = re.compile(r"^(\d{2})/(\d{2})/(\d{4})$")
@@ -130,7 +132,11 @@ def lies_mpob(html: str, jahr: int) -> list[dict]:
             kopf_index, spalten = i, monate
             break
     if kopf_index is None:
-        raise FormatFehler("MPOB: keine Kopfzeile mit Monaten gefunden")
+        # Die Kopfzeile kann auskommentiert sein: dann Zeilen „Tag + zwölf Monate“ annehmen.
+        tagzeilen = [z for z in zeilen if len(z) == 13 and re.fullmatch(r"\d{1,2}", z[0].strip())]
+        if len(tagzeilen) < 20:
+            raise FormatFehler("MPOB: keine Kopfzeile mit Monaten gefunden")
+        kopf_index, spalten = -1, {j: j for j in range(1, 13)}
     versatz = 0
     reihe = []
     for zeile in zeilen[kopf_index + 1:]:
@@ -157,9 +163,46 @@ def lies_mpob(html: str, jahr: int) -> list[dict]:
     return sorted(reihe, key=lambda e: e["datum"])
 
 
+_KATEGORIEN = re.compile(r"categories\s*:\s*\[(.*?)\]", re.S)
+_DATEN = re.compile(r"data\s*:\s*\[(.*?)\]", re.S)
+_DATUM_EN = re.compile(r"([A-Za-z]{3})\w*\s+(\d{1,2}),\s*(\d{4})")
+
+
+def lies_mpob_grafik(html: str) -> list[dict]:
+    """Die Seite zeichnet die Tagespreise als Highcharts-Grafik: Datumsliste unter
+    „categories“, Werte unter dem ersten „data“ danach. Beide müssen gleich lang sein."""
+    kat = _KATEGORIEN.search(html)
+    if not kat:
+        raise FormatFehler("MPOB: keine Datumsliste in der Grafik")
+    daten = _DATEN.search(html, kat.end())
+    if not daten:
+        raise FormatFehler("MPOB: keine Werte in der Grafik")
+    tage = []
+    for teil in re.findall(r"['\"]([^'\"]+)['\"]", kat.group(1)):
+        t = _DATUM_EN.search(teil)
+        monat = MONATE_KURZ.get(t.group(1).lower()) if t else None
+        if not t or not monat:
+            raise FormatFehler(f"MPOB: unbekanntes Datum „{teil}“")
+        tage.append(date(int(t.group(3)), monat, int(t.group(2))))
+    werte = [w.strip().strip("'\"") for w in daten.group(1).split(",") if w.strip()]
+    if len(werte) != len(tage) or not tage:
+        raise FormatFehler(f"MPOB: {len(tage)} Tage, aber {len(werte)} Werte in der Grafik")
+    reihe = [{"datum": d.isoformat(), "wert": zahl(w)} for d, w in zip(tage, werte)]
+    return sorted((e for e in reihe if e["wert"] is not None), key=lambda e: e["datum"])
+
+
 def hole_mpob(jahr: int) -> list[dict]:
-    html = netz.hole_text(MPOB_URL, {"more": "Y", "jenis": "1Y", "tahun": jahr})
-    return lies_mpob(html, jahr)
+    html = netz.hole_text(MPOB_URL, {"more": "Y", "jenis": "1Y", "tahun": jahr}, kopf=BROWSER_KOPF)
+    if not html.strip():
+        raise FormatFehler(f"MPOB: leere Seite für {jahr}")
+    try:
+        reihe = lies_mpob(html, jahr)
+    except FormatFehler:
+        reihe = []
+    if not reihe:
+        reihe = lies_mpob_grafik(html)
+    # Die Grafik beginnt mit dem letzten Handelstag des Vorjahrs; nur das verlangte Jahr zählt.
+    return [e for e in reihe if e["datum"].startswith(str(jahr))] or reihe
 
 
 # ------------------------------------------------------------------ FAO FPMA
@@ -173,4 +216,4 @@ def lies_fpma(antwort: dict) -> list[dict]:
 
 
 def hole_fpma(uuid: str) -> list[dict]:
-    return lies_fpma(netz.hole_json(FPMA_URL.format(uuid=uuid)))
+    return lies_fpma(netz.hole_json(FPMA_URL.format(uuid=uuid), kopf=BROWSER_KOPF))

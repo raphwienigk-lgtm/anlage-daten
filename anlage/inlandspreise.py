@@ -1,7 +1,9 @@
 """Inlandspreise als Frühzeichen für den Politik-Kanal.
 
 Täglich vor dem Tageslauf: holt die Inlandspreise, die in den Rohstoff-Formularen unter
-`inlandspreise` stehen, ergänzt die Archive unter daten/inland/ und rechnet je Reihe:
+`inlandspreise` stehen, ergänzt die Archive unter daten/inland/ und rechnet je Reihe.
+Die Geschichte von Bank Indonesia wird in kleinen Stücken rückwärts nachgeholt, je Lauf
+höchstens `--budget-minuten` lang. Je Reihe:
 
 - Frühzeichen (Rolle „fruehzeichen“): Mittel der letzten vier Wochen gegen dasselbe
   Mittel zwölf Wochen früher. Ab plus 10 Prozent gilt es als Frühzeichen, ab plus
@@ -13,7 +15,7 @@ Das Frühzeichen ändert die Ampel nicht; es ist nicht am Rückblick geprüft (d
 beginnen erst 2017). Es steht im Stand und im Vorlesetext.
 
 Schreibt daten/inland/<kennung>.json, daten/inlandspreise.json, abgabe/status-inlandspreise.md.
-Aufruf: python -m anlage.inlandspreise [--heute JJJJ-MM-TT]
+Aufruf: python -m anlage.inlandspreise [--heute JJJJ-MM-TT] [--budget-minuten 10]
 """
 from __future__ import annotations
 
@@ -90,31 +92,56 @@ def fruehzeichen(reihe: list[dict], heute: date, s: dict) -> dict:
     return ergebnis
 
 
-def _jahresstuecke(start: date, ende: date) -> list[tuple[date, date]]:
+def _stuecke(start: date, ende: date, tage: int = 92) -> list[tuple[date, date]]:
+    """Zeitraum in Stücke zu höchstens `tage` Tagen: kleine Abfragen antworten schnell."""
     stuecke, von = [], start
     while von <= ende:
-        bis = min(date(von.year, 12, 31), ende)
+        bis = min(von + timedelta(days=tage - 1), ende)
         stuecke.append((von, bis))
         von = bis + timedelta(days=1)
     return stuecke
 
 
-def aktualisiere(eintrag: dict, heute: date, s: dict, pause: float = 1.5) -> list[dict]:
-    """Holt, was im Archiv fehlt, und gibt die ganze Reihe zurück."""
+def _rueckwaerts_pfad():
+    return konfig.INLAND / "_rueckwaerts.json"
+
+
+def aktualisiere(eintrag: dict, heute: date, s: dict, pause: float = 1.5, frist: float | None = None) -> list[dict]:
+    """Holt, was im Archiv fehlt, und gibt die ganze Reihe zurück.
+
+    PIHPS: zuerst die jüngsten Monate (Pflicht für das Frühzeichen), danach rückwärts die
+    Geschichte bis `pihps_ab`, solange die Frist reicht. Wie weit zurück schon geholt ist,
+    steht in daten/inland/_rueckwaerts.json; so geht es am nächsten Tag dort weiter.
+    """
     pfad = archiv_pfad(eintrag["kennung"])
     vorhanden = speicher.lies_json(pfad, []) or []
     quelle = eintrag["quelle"]
     if quelle == "pihps":
+        ware, preisart = eintrag["ware"], eintrag.get("preisart", 1)
         if vorhanden:
             start = date.fromisoformat(vorhanden[-1]["datum"]) - timedelta(days=30)
         else:
-            start = date.fromisoformat(str(s["pihps_ab"]))
+            start = heute - timedelta(days=s.get("pihps_erst_tage", 150))
         neu = []
-        for nr, (von, bis) in enumerate(_jahresstuecke(start, heute)):
+        for nr, (von, bis) in enumerate(_stuecke(start, heute)):
             if nr:
                 time.sleep(pause)
-            neu += inland.hole_pihps(eintrag["ware"], eintrag.get("preisart", 1), von, bis)
-        return ergaenze(pfad, neu)
+            neu += inland.hole_pihps(ware, preisart, von, bis)
+        reihe = ergaenze(pfad, neu)
+        ab = date.fromisoformat(str(s["pihps_ab"]))
+        stand = speicher.lies_json(_rueckwaerts_pfad(), {}) or {}
+        cursor = date.fromisoformat(stand.get(eintrag["kennung"], min(start, date.fromisoformat(reihe[0]["datum"])
+                                                                       if reihe else start).isoformat()))
+        while cursor > ab and (frist is None or time.monotonic() < frist):
+            von = max(ab, cursor - timedelta(days=92))
+            time.sleep(pause)
+            teil = inland.hole_pihps(ware, preisart, von, cursor - timedelta(days=1))
+            if teil:
+                reihe = ergaenze(pfad, teil)
+            cursor = von
+            stand[eintrag["kennung"]] = cursor.isoformat()
+            speicher.schreibe_json(_rueckwaerts_pfad(), stand)
+        return reihe
     if quelle == "mpob":
         jahre = [heute.year]
         if not vorhanden or heute.month == 1:
@@ -123,14 +150,19 @@ def aktualisiere(eintrag: dict, heute: date, s: dict, pause: float = 1.5) -> lis
         for nr, jahr in enumerate(jahre):
             if nr:
                 time.sleep(pause)
-            neu += inland.hole_mpob(jahr)
+            try:
+                neu += inland.hole_mpob(jahr)
+            except inland.FormatFehler:
+                # Frühere Jahre liefert die Seite zum Teil leer aus; nur das laufende Jahr ist Pflicht.
+                if jahr == heute.year:
+                    raise
         return ergaenze(pfad, neu)
     if quelle == "fpma":
         return ergaenze(pfad, inland.hole_fpma(eintrag["serie"]))
     raise ValueError(f"unbekannte Quelle {quelle}")
 
 
-def rechne(k: dict, heute: date, zeitpunkt, holen: bool = True) -> dict:
+def rechne(k: dict, heute: date, zeitpunkt, holen: bool = True, frist: float | None = None) -> dict:
     s = k["schwellen"]["inlandspreise"]
     reihen = {}
     for kennung_r, r in k["rohstoffe"].items():
@@ -138,7 +170,7 @@ def rechne(k: dict, heute: date, zeitpunkt, holen: bool = True) -> dict:
             info = {"rohstoff": kennung_r, "name": e["name"], "land": e.get("land"), "quelle": e["quelle"],
                     "einheit": e.get("einheit"), "rolle": e.get("rolle", "fruehzeichen")}
             try:
-                reihe = aktualisiere(e, heute, s) if holen else (speicher.lies_json(archiv_pfad(e["kennung"]), []) or [])
+                reihe = aktualisiere(e, heute, s, frist=frist) if holen else (speicher.lies_json(archiv_pfad(e["kennung"]), []) or [])
                 info["status"] = "ok"
             except Exception as fehler:  # eine Quelle darf die anderen nicht mitreißen
                 reihe = speicher.lies_json(archiv_pfad(e["kennung"]), []) or []
@@ -170,13 +202,15 @@ def status_text(e: dict) -> str:
 def main(argv: list[str] | None = None) -> int:
     teiler = argparse.ArgumentParser(description="Inlandspreise als Frühzeichen")
     teiler.add_argument("--heute", help="Stichtag JJJJ-MM-TT (nur Tests)")
+    teiler.add_argument("--budget-minuten", type=float, default=10.0,
+                        help="so lange wird höchstens die Geschichte nachgeholt")
     args = teiler.parse_args(argv)
     k = konfig.konfiguration()
     zeitpunkt = konfig.jetzt()
     if args.heute:
         zeitpunkt = datetime.combine(date.fromisoformat(args.heute), zeitpunkt.timetz())
     heute = zeitpunkt.date()
-    ergebnis = rechne(k, heute, zeitpunkt)
+    ergebnis = rechne(k, heute, zeitpunkt, frist=time.monotonic() + 60.0 * args.budget_minuten)
     speicher.schreibe_json(konfig.DATEN / "inlandspreise.json", ergebnis)
     text = status_text(ergebnis)
     speicher.schreibe_text(konfig.ABGABE / "status-inlandspreise.md", text)

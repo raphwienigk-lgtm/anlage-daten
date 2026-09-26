@@ -46,7 +46,8 @@ inlandspreise:              # Frühzeichen, nicht am Rückblick geprüft (die Re
   anstieg_ab: 0.10           # ab plus 10 Prozent: Frühzeichen
   stark_ab: 0.20             # ab plus 20 Prozent: starkes Frühzeichen
   veraltet_nach_tage: 21     # älterer letzter Wert: kein Urteil
-  pihps_ab: 2018-01-01       # erster Abruf holt die Geschichte ab hier, in Jahresstücken
+  pihps_ab: 2018-01-01       # so weit zurück wird die Geschichte nachgeholt
+  pihps_erst_tage: 150       # erster Lauf: so viele Tage zuerst, die Geschichte folgt rückwärts in Stücken
 
 nachpruefer:
   mindest_signale_fuer_vorschlag: 5   # erst ab so vielen abgeschlossenen echten Signalen schlägt er vor, die Regeln zu prüfen

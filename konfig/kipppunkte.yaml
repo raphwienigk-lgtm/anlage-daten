@@ -1,0 +1,63 @@
+# Wächter 3 · Kipppunkt-Register. Die langsame Ebene: Sie handelt nicht und schaltet
+# keine Ampel, sie zeigt, ob sich Grundannahmen über eine Anbauregion verschieben.
+# Hier stehen nur Messwerte und Trends. Bewertet wird gemeinsam im Quartal.
+# Jede Region hat ihren eigenen dominanten Kipppunkt (Beschluss 25.09.2026).
+
+quartal_monate: [1, 4, 7, 10]   # der erste Lauf in diesen Monaten schreibt den Bericht
+referenz: {von: 1951, bis: 1980}  # Vergleichszeit für Abweichungen
+fenster_jahre: 30                 # Trends und Trägheit über so viele abgeschlossene Jahre
+
+kaltfleck:
+  name: "Kaltfleck südlich von Grönland"
+  kipppunkt: "Umwälzströmung im Atlantik (AMOC)"
+  region: "Westafrika (Kakao), Sahel, Brasilien, Europa"
+  # Subpolarer Wirbel, grob nach Caesar und anderen (2018): 44 bis 62 Grad Nord, 60 bis 20 Grad West.
+  # ERSSTv5 auf 2-Grad-Gitter; Längen in 0 bis 360 Grad Ost.
+  box: {lat: [44, 62], lon: [300, 340]}
+  ab_jahr: 1900
+
+amoc:
+  name: "Umwälzströmung bei sechsundzwanzigeinhalb Grad Nord (RAPID-Messkette)"
+  kipppunkt: "Umwälzströmung im Atlantik (AMOC)"
+  region: "Westafrika (Kakao), Sahel, Brasilien, Europa"
+
+el_nino:
+  name: "Häufung starker El Niños"
+  kipppunkt: "häufigere und stärkere El Niños"
+  region: "Südostasien (Palmöl, Kautschuk)"
+  stark_ab: 1.5
+  sehr_stark_ab: 2.0
+
+sierra_schnee:
+  name: "Schnee in der Sierra Nevada am ersten April"
+  kipppunkt: "schrumpfende Schneedecke als Wasserspeicher"
+  region: "Kalifornien (Mandel)"
+  stationen: "*:CA:SNTL"
+  ab_jahr: 1985
+  schwach_bis: 0.5                  # unter 50 Prozent des Normalen gilt als schneearmes Jahr
+
+amazonas_braende:
+  name: "Brandherde im Amazonasgebiet"
+  kipppunkt: "Waldsterben im Amazonas"
+  region: "Brasilien (Zucker, Soja, Kaffee)"
+  bioma: "Amazônia"
+  ab_jahr: 2003
+  vergleich_bis: 2022               # Mittel 2003 bis 2022 als Vergleich
+
+punkte:                             # ERA5 über Open-Meteo, Monatswerte ab ab_jahr
+  ab_jahr: 1981
+  liste:
+    - {kennung: jaen, name: "Jaén in Andalusien", lat: 37.77, lon: -3.79,
+       kipppunkt: "Austrocknung des Mittelmeerraums", region: "Olivenöl",
+       masse: [jahresregen, sommer_tmax]}
+    - {kennung: sul_de_minas, name: "Süden von Minas Gerais", lat: -21.55, lon: -45.43,
+       kipppunkt: "Temperaturfenster für Arabica wandert bergauf", region: "Kaffee",
+       masse: [jahres_tmittel, heisse_tage]}
+    - {kennung: giresun, name: "Giresun an der Schwarzmeerküste", lat: 40.91, lon: 38.39,
+       kipppunkt: "Kältebedarf der Haselnuss", region: "Haselnuss",
+       masse: [kaeltetage]}
+    - {kennung: central_valley, name: "Modesto im kalifornischen Längstal", lat: 37.64, lon: -120.99,
+       kipppunkt: "Kältebedarf der Mandel", region: "Mandel",
+       masse: [kaeltetage]}
+  heiss_ab: 30.0                    # Tageshöchstwert ab 30 Grad: Hitzestress für Arabica
+  kalt_bis: 7.0                     # Tagesmittel bis 7 Grad zählt als Kältetag (grobe Näherung für Kältestunden)
