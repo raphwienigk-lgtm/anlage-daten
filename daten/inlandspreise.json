@@ -1,0 +1,73 @@
+{
+  "stand": "2026-09-26T14:10:51+02:00",
+  "datum": "2026-09-26",
+  "version": "0.1.0",
+  "hinweis": "Denkhilfe, keine Anlageberatung. Frühzeichen, nicht am Rückblick geprüft.",
+  "reihen": {
+    "speiseoel_id_lose": {
+      "rohstoff": "palmoel",
+      "name": "Speiseöl lose in Indonesien",
+      "land": "Indonesien",
+      "quelle": "pihps",
+      "einheit": "Rupiah",
+      "rolle": "fruehzeichen",
+      "status": "ok",
+      "werte": 2260,
+      "letzter": {
+        "datum": "2026-09-25",
+        "wert": 20400.0
+      },
+      "alter_tage": 1,
+      "art": "täglich",
+      "mittel_jetzt": 20427.5,
+      "mittel_damals": 20585.0,
+      "veraenderung": -0.0077,
+      "urteil": "ruhig"
+    },
+    "speiseoel_id_marke": {
+      "rohstoff": "palmoel",
+      "name": "Speiseöl in Markenflaschen in Indonesien",
+      "land": "Indonesien",
+      "quelle": "pihps",
+      "einheit": "Rupiah",
+      "rolle": "fruehzeichen",
+      "status": "ok",
+      "werte": 2263,
+      "letzter": {
+        "datum": "2026-09-25",
+        "wert": 24350.0
+      },
+      "alter_tage": 1,
+      "art": "täglich",
+      "mittel_jetzt": 24347.5,
+      "mittel_damals": 24207.5,
+      "veraenderung": 0.0058,
+      "urteil": "ruhig"
+    },
+    "pflanzenoel_id_monat": {
+      "rohstoff": "palmoel",
+      "name": "Pflanzenöl in Indonesien, Monatsmittel der Statistikbehörde",
+      "land": "Indonesien",
+      "quelle": "fpma",
+      "einheit": "Rupiah je Liter",
+      "rolle": "ersatz",
+      "status": "Fehler",
+      "meldung": "AbrufFehler: Fehler 403 bei https://fpma.fao.org/giews/v4/price_module/api/v1/FpmaSeriePrice/c0b2e88d-8010-4f45-b989-fdf1eb126c10/: <!DOCTYPE html> <!--[if lt IE 7]> <html class=\"no-js ie6 oldie\" lang=\"en-US\"> <![endif]--> <!--[if IE 7]> <html class=\"no-js ie7 oldie\" lang=\"en-US\"> <![endif]--> <!--[",
+      "werte": 0,
+      "urteil": "keine Daten"
+    },
+    "cpo_my_tag": {
+      "rohstoff": "palmoel",
+      "name": "Rohpalmöl frei Werk in Malaysia",
+      "land": "Malaysia",
+      "quelle": "mpob",
+      "einheit": "Ringgit je Tonne",
+      "rolle": "tagespreis",
+      "status": "Fehler",
+      "meldung": "FormatFehler: MPOB: keine Kopfzeile mit Monaten gefunden",
+      "werte": 0,
+      "urteil": "keine Daten"
+    }
+  },
+  "fruehzeichen": []
+}
