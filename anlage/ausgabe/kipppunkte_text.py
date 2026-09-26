@@ -183,8 +183,14 @@ def _zahl(x: float, stellen: int) -> str:
     return sprache.wort(round(x)) if stellen == 0 else sprache.komma(x, stellen)
 
 
+TREND_STELLEN = {"jahresregen": 0}   # Regen in ganzen Millimetern je Jahrzehnt
+
+
 def _punkt(p: dict) -> str:
     satz = _kopf(p)
+    if p.get("vollstaendig") is False:
+        bis = f", bisher bis {_monat(p['bis'])}" if p.get("bis") else ""
+        return satz + f" Die Reihe wird noch geladen{bis}; die Werte folgen, sobald sie vollständig ist."
     stuecke = []
     for name, b in (p.get("masse") or {}).items():
         text, einheit, stellen, zeitraum = MASSE.get(name, (name, "", 1, "im Jahr"))
@@ -196,11 +202,13 @@ def _punkt(p: dict) -> str:
         stuecke.append(teil)
         if b.get("trend_30") is not None:
             t = b["trend_30"]
-            stellen_t = max(1, stellen)
+            stellen_t = TREND_STELLEN.get(name, max(1, stellen))
             if round(t, stellen_t) == 0:
                 stuecke[-1] += ", ohne erkennbaren Trend über dreißig Jahre"
             else:
-                stuecke[-1] += (f", Trend {'plus' if t > 0 else 'minus'} {_menge(abs(t), stellen_t)} "
+                menge = sprache.wort(round(abs(t))) if stellen_t == 0 else _menge(abs(t), stellen_t)
+                menge = "ein" if menge == "eins" else menge
+                stuecke[-1] += (f", Trend {'plus' if t > 0 else 'minus'} {menge} "
                                 f"{einheit} je Jahrzehnt")
     if stuecke:
         satz += " " + ". ".join(s[0].upper() + s[1:] for s in stuecke) + "."

@@ -493,7 +493,8 @@ def punkte(k: dict, heute: date, budget_ende: float, pro_minute: float, url: str
                              "mittel_10": _r(_mittel(reihe, letzt - 9, letzt), 2),
                              "trend_30": _r(trend_je_jahrzehnt(reihe, letzt - 29, letzt), 3)}
         ergebnis[p["kennung"]] = {"name": p["name"], "kipppunkt": p["kipppunkt"], "region": p["region"],
-                                  "masse": befunde, "monate": len(monate)}
+                                  "masse": befunde, "monate": len(monate), "vollstaendig": not offen,
+                                  "bis": max(monate) if monate else None}
         if offen:
             break
     return {"status": "unvollständig" if offen else "ok", "punkte": ergebnis}

@@ -245,3 +245,15 @@ def test_zusammenfassung_ist_json_frei():
     assert "amoc: Fehler" in text
     assert kipppunkte_text.zustand(bericht) == "Fehler"
     assert json.dumps(kipppunkte_text.absaetze(bericht))
+
+
+def test_knappes_budget_meldet_ladende_reihen(register):
+    assert kipppunkte.main(["--heute", HEUTE.isoformat(), "--pro-minute", "1000", "--budget-minuten", "0.001"]) == 0
+    b = speicher.lies_json(konfig.DATEN / "kipppunkte.json")
+    assert not b["vollstaendig"] and b["indikatoren"]["punkte"]["status"] == "unvollständig"
+    assert b["indikatoren"]["punkte"]["punkte"]["jaen"]["vollstaendig"] is False
+    text = " ".join(p.read_text(encoding="utf-8") for p in konfig.ABGABE.glob("kipppunkte-teil-*.md"))
+    assert "Jaén in Andalusien" in text and "Die Reihe wird noch geladen" in text
+    assert "Noch nicht alle Reihen sind gesammelt" in text
+    lauf = speicher.lies_json(kipppunkte.ordner() / "lauf.json")
+    assert lauf["offen"] is True                                        # am nächsten Tag geht es weiter

@@ -1,6 +1,7 @@
 """Zahlen und Daten zum Vorlesen: ausgeschrieben, wie im Vorlese-Format verlangt."""
 from __future__ import annotations
 
+import re
 from datetime import date
 
 _EINER = ["null", "eins", "zwei", "drei", "vier", "fünf", "sechs", "sieben", "acht", "neun",
@@ -143,3 +144,29 @@ def jahreszeit(kuerzel: str, jahr_nr: int) -> str:
         anfang, _, ende = text.partition(" bis ")
         return f"{anfang} {jahr(jahr_nr)} bis {ende}"
     return f"{text} {jahr(jahr_nr)}"
+
+
+_DATUM = re.compile(r"\b(\d{1,2})\.(\d{1,2})\.(\d{4})\b")
+_NR_JAHR = re.compile(r"\bNr\.\s*(\d+)/(\d{4})\b")
+_NR = re.compile(r"\bNr\.\s*(\d+)")
+_ZAHL = re.compile(r"\d+(?:,\d+)?")
+
+
+def _zahl_wort(text: str) -> str:
+    if "," in text:
+        ganz, nach = text.split(",")
+        return wort(int(ganz)) + " Komma " + " ".join(_EINER[int(z)] for z in nach)
+    n = int(text)
+    if 1100 <= n <= 1999:
+        return jahr(n)
+    if n >= 1_000_000:
+        return " ".join(_EINER[int(z)] for z in text)
+    return wort(n)
+
+
+def ausschreiben(text: str) -> str:
+    """Ziffern in freiem Text (Formular, Titel) ausschreiben: Daten, „Nr. 72“, Jahre, Zahlen."""
+    text = _DATUM.sub(lambda m: datum(date(int(m[3]), int(m[2]), int(m[1])), mit_jahr=True), text)
+    text = _NR_JAHR.sub(lambda m: f"Nummer {wort(int(m[1]))} aus dem Jahr {jahr(int(m[2]))}", text)
+    text = _NR.sub(lambda m: "Nummer " + wort(int(m[1])), text)
+    return _ZAHL.sub(lambda m: _zahl_wort(m.group(0)), text)

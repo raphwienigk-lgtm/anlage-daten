@@ -56,3 +56,21 @@ geschichte:
     laender: [Indonesia, Malaysia]
   regen_ab: 1959-10-01     # 90 Tage Vorlauf vor dem ersten Rückblick-Monat
   wind_ab: 1960
+
+# Metall-Agent (China-Pilot). Die Meldungen selbst liest der Metall-Wächter aus Gmail;
+# hier stehen nur die maschinenlesbaren Kanäle.
+bundesregister:
+  name: "US-Bundesregister (Federal Register), Suche"
+  url: "https://www.federalregister.gov/api/v1/documents.json"
+  topf: 1
+  takt: täglich
+usgs_beben:
+  name: "USGS · Erdbeben"
+  url: "https://earthquake.usgs.gov/fdsnws/event/1/query"
+  topf: 1
+  takt: täglich
+openmeteo_vorhersage:
+  name: "Open-Meteo · Regen der letzten Tage und Vorhersage"
+  url: "https://api.open-meteo.com/v1/forecast"
+  topf: 1
+  takt: täglich

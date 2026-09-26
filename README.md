@@ -101,7 +101,8 @@ Stunde später. Schlägt ein Lauf fehl, schickt GitHub eine Mail.
 
 Befehle: `python -m anlage.lauf` (täglicher Lauf), `python -m anlage.pruefen` (Prüflauf),
 `python -m anlage.klimatologie` (Normal bauen), `python -m anlage.geschichte` (Geschichtsdaten),
-`python -m anlage.rueckblick` (Rückblick), `python -m anlage.nachpruefer` (Nachprüfer), `python -m pytest -q` (Tests).
+`python -m anlage.rueckblick` (Rückblick), `python -m anlage.nachpruefer` (Nachprüfer),
+`python -m anlage.metall` (Metall-Agent China), `python -m pytest -q` (Tests).
 
 ---
 
@@ -202,6 +203,52 @@ Gegenkräfte sind Monatsdurchschnitte; das Normal stammt aus 1991 bis 2020.
 
 **Regel für neue Rohstoffe:** Ein neuer Rohstoff bleibt `rolle: sensor`, bis sein Rückblick
 bestanden ist. Erst dann wird er `kandidat`.
+
+---
+
+## Metall-Agent China (Pilot Chip-Achse)
+
+Bei Metallen treibt Politik den Preis, nicht Wetter. Der gemeinsame Nenner ist das Land:
+eine Bekanntmachung des chinesischen Handelsministeriums trifft mehrere Metalle zugleich.
+Der Datenlauf `python -m anlage.metall` (täglich 23:17 UTC, Workflow „Metall China“) liest
+fünf maschinenlesbare Teile, die Meldungen selbst liest der Metall-Wächter in der Cloud aus
+dem Gmail-Label „Metall-Meldungen“.
+
+| Kanal | Quelle | Gelb, wenn |
+|---|---|---|
+| Fristen | `fristen` im Formular | eine Aussetzung ohne formelle Verlängerung in höchstens 30 Tagen ausläuft oder ausgelaufen ist |
+| Gegenseite | US-Bundesregister, letzte 30 Tage | ein gewichtiger Eintrag (BIS, USTR, Präsident, Regeln des Handelsministeriums) eine Achse trifft |
+| Störung: Erdbeben | USGS | Stärke 5 bis 50 km, 6 bis 150 km oder 7 bis 300 km an einem Standort |
+| Störung: Starkregen | Open-Meteo, letzte 7 und nächste 7 Tage | mindestens 100 mm an einem Tag; gemessen hält 30 Tage |
+| Störung: Trockenheit | ERA5, 90 Tage gegen 1991–2020 | unter 60 Prozent an den Wasserkraft-Standorten in Yunnan |
+
+**Achsen** bündeln Metalle, die im selben chinesischen Paket kommen: Chip (Gallium,
+Germanium, Antimon), Magnet (seltene Erden), Batterie (Graphit), Werkzeug (Wolfram).
+Die **Wucht** (Konzentration mal Unersetzlichkeit) ordnet sie. Schlagen mehrere Kanäle
+auf derselben Achse an, gilt das als bestätigt.
+
+**Stufen:** Grün = beobachten; Gelb = ein Vorbote ist da, bereit machen, noch nicht
+kaufen; Rot setzt nur der Wächter, wenn eine Verschärfung aus Peking gemeldet wird und
+die **Preisprobe** zeigt, dass der Markt schläft (weniger als 15 Prozentpunkte Vorsprung
+gegen XME in 20 Handelstagen).
+
+**Ereignis-Rückblick:** Für jedes Ereignis unter `ereignisse` misst der Lauf, wie die Werte
+0, 5, 20 und 60 Handelstage danach gegen XME lagen, dazu die 20 Tage davor. Vorläufige
+Prüfregel für den Schritt vom Sensor zum Kandidaten: mindestens drei Verschärfungen auf
+der eigenen Achse, in mindestens der Hälfte ein Vorsprung von 10 Prozentpunkten.
+
+**Pflege:** Verlängert Peking eine Aussetzung formell, das neue Datum unter
+`verlaengert_bis` eintragen. Neue Ereignisse unter `ereignisse` ergänzen (Datum der
+Ankündigung). Ein neues Land: `konfig/metalle/china.yaml` kopieren und `--land` setzen.
+
+| Pfad | Inhalt |
+|---|---|
+| `konfig/metalle/china.yaml` | Formular: Metalle, Achsen, Werte, Standorte, Fristen, Ereignisse |
+| `daten/metall/china/stand.json` | Stufen je Achse mit Gründen, alle Kanäle, Preisprobe, Rückblick in Kürze |
+| `daten/metall/china/rueckblick.json` | jeder Fall des Rückblicks einzeln |
+| `daten/metall/china/stoerungen.json` | Protokoll gemessener Starkregen (hält die Achse 30 Tage auf Gelb) |
+| `daten/metall/china/klima/`, `kurse/` | Regen-Normal der Wasserkraft-Standorte, Kursarchiv |
+| `abgabe/metall-china-teil-N.md`, `abgabe/status-metall-china.md` | Vorlesetext und Status |
 
 ---
 

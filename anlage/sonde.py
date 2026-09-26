@@ -315,6 +315,54 @@ def ippc() -> str:
     return _text("https://www.ippc.int/en/countries/all/pestreport/", auszug=3000)
 
 
+# ------------------------------------------------------------------ Metall-Agent
+def _mit_leser(url: str, leser, *args) -> str:
+    """Rohauszug und das, was der Leser des Metall-Moduls daraus macht."""
+    r = _hole(url)
+    zeilen = _kopf(url, r) + [r.text[:2500]]
+    try:
+        ergebnis = leser(r.json(), *args)
+        zeilen.append(f"--- Leser: {len(ergebnis)} Einträge")
+        zeilen += [json.dumps(e, ensure_ascii=False, default=str)[:400] for e in list(ergebnis)[:5]]
+        if isinstance(ergebnis, dict):
+            zeilen += [f"{k}: {json.dumps(v, default=str)[:300]}" for k, v in ergebnis.items()]
+    except Exception as fehler:  # noqa: BLE001
+        zeilen.append(f"--- Leser: {type(fehler).__name__}: {fehler}")
+    return "\n".join(zeilen)
+
+
+def bundesregister() -> str:
+    from .metall import quellen as mq
+    ab = (date.today() - timedelta(days=365)).isoformat()
+    url = ("https://www.federalregister.gov/api/v1/documents.json?conditions%5Bterm%5D=antimony"
+           f"&conditions%5Bpublication_date%5D%5Bgte%5D={ab}&per_page=20&order=newest"
+           + "".join(f"&fields%5B%5D={f}" for f in mq.FELDER))
+    return _mit_leser(url, mq.lies_bundesregister)
+
+
+def usgs_beben() -> str:
+    from .metall import quellen as mq
+    ab = (date.today() - timedelta(days=90)).isoformat()
+    url = ("https://earthquake.usgs.gov/fdsnws/event/1/query?format=geojson&minmagnitude=5"
+           f"&starttime={ab}&minlatitude=18&maxlatitude=50&minlongitude=95&maxlongitude=135&orderby=time")
+    return _mit_leser(url, mq.lies_erdbeben)
+
+
+def openmeteo_vorhersage() -> str:
+    from .metall import quellen as mq
+    orte = [{"kennung": "hechi", "name": "Hechi", "lat": 24.69, "lon": 108.08},
+            {"kennung": "lincang", "name": "Lincang", "lat": 23.88, "lon": 100.09}]
+    url = ("https://api.open-meteo.com/v1/forecast?latitude=24.69,23.88&longitude=108.08,100.09"
+           "&daily=precipitation_sum&past_days=7&forecast_days=7&timezone=Asia%2FShanghai")
+    return _mit_leser(url, mq.lies_vorhersage, orte)
+
+
+def mofcom_robots() -> str:
+    """Nur die Regeln lesen: Welche MOFCOM-Seiten dürfen Maschinen abrufen?"""
+    return "\n\n".join(_text(f"https://{h}/robots.txt", auszug=1500)
+                        for h in ("exportcontrol.mofcom.gov.cn", "english.mofcom.gov.cn", "www.mofcom.gov.cn"))
+
+
 PROBEN = {
     "ersst_box": ersst_box, "ersst_info": ersst_info, "caag_ozean": caag_ozean, "hadsst": hadsst,
     "amoc_metoffice": amoc_metoffice, "rapid": rapid, "gpcc_uebersicht": gpcc_uebersicht,
@@ -323,6 +371,8 @@ PROBEN = {
     "pihps_baum": pihps_baum, "pihps_curah": pihps_curah, "pihps_monat": pihps_monat,
     "mpob_2026": mpob_2026, "mpob_tabelle": mpob_tabelle, "mpob_2021": mpob_2021, "fpma_liste": fpma_liste, "fpma_reihen": fpma_reihen,
     "fca": fca, "eppo": eppo, "ippc": ippc,
+    "bundesregister": bundesregister, "usgs_beben": usgs_beben, "openmeteo_vorhersage": openmeteo_vorhersage,
+    "mofcom_robots": mofcom_robots,
 }
 
 

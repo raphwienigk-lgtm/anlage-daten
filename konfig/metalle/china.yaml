@@ -1,0 +1,159 @@
+# Metall-Agent · China-Pilot (Beschluss 26.09.2026, Protokoll „metall-agent-china-pilot“).
+# Bei Metallen treibt Politik den Preis, nicht Wetter. Der gemeinsame Nenner ist das Land:
+# ein chinesisches Ausfuhrsignal trifft mehrere Metalle zugleich (Kreuzbestätigung).
+# Hier stehen nur Zahlen- und Kalenderteile; die Meldungen (Ausfuhr, Reserve, Struktur)
+# liest der Metall-Wächter in der Cloud aus dem Gmail-Label „Metall-Meldungen“.
+
+kennung: china
+name: "China-Ausfuhr"
+familie: B
+treiber: politik
+rolle: sensor                 # Kandidat erst, wenn der Ereignis-Rückblick besteht (Regel für neue Rohstoffe)
+laenderpaar: "China ↔ USA über Halbleiter"
+
+# Wuchtwert = Konzentration × Unersetzlichkeit (0 bis 1). Richtwerte, grob nach USGS;
+# beim nächsten USGS-Bericht (Ende Januar) prüfen.
+metalle:
+  gallium:     {name: Gallium,        konzentration: 0.98, unersetzlichkeit: 0.90, achse: chip}
+  germanium:   {name: Germanium,      konzentration: 0.90, unersetzlichkeit: 0.80, achse: chip}
+  antimon:     {name: Antimon,        konzentration: 0.50, unersetzlichkeit: 0.80, achse: chip}
+  seltene_erden: {name: "seltene Erden", dativ: "den seltenen Erden", konzentration: 0.90, unersetzlichkeit: 0.90, achse: magnet}
+  graphit:     {name: Graphit,        konzentration: 0.90, unersetzlichkeit: 0.60, achse: batterie}
+  wolfram:     {name: Wolfram,        konzentration: 0.80, unersetzlichkeit: 0.80, achse: werkzeug}
+
+# Achsen: Metalle, die im selben chinesischen Paket kommen. Rot braucht einen Treffer auf der Achse;
+# zwei Metalle derselben Achse zugleich gelten als bestätigt.
+achsen:
+  chip:
+    name: "Chip-Achse"
+    beschreibung: "Gallium und Germanium für Halbleiter; Antimon kommt im selben Paket"
+    metalle: [gallium, germanium, antimon]
+    pilot: true
+  magnet:
+    name: "Magnet-Achse"
+    beschreibung: "Seltene Erden für Dauermagnete; Ersatz über Produzenten außerhalb Chinas"
+    metalle: [seltene_erden]
+  batterie:
+    name: "Batterie-Achse"
+    beschreibung: "Graphit für Anoden"
+    metalle: [graphit]
+  werkzeug:
+    name: "Werkzeug-Achse"
+    beschreibung: "Wolfram für Hartmetall und Rüstung"
+    metalle: [wolfram]
+
+# Reihenfolge der Handelswege: ETC, dann Aktie. Für diese Metalle gibt es keinen Einzel-ETC.
+instrumente:
+  - {ticker: PPTA,   name: "Perpetua Resources",      achse: chip,   rolle: kandidat,    hinweis: "Antimon-Projekt Stibnite in Idaho, noch ohne Förderung"}
+  - {ticker: UAMY,   name: "United States Antimony",  achse: chip,   rolle: kandidat,    hinweis: "kleiner Antimon-Verarbeiter in den USA und Mexiko"}
+  - {ticker: MP,     name: "MP Materials",            achse: magnet, rolle: beobachtung, hinweis: "seltene Erden USA; seit 22.06.2026 selbst auf Chinas Exportkontrollliste"}
+  - {ticker: LYC.AX, name: "Lynas Rare Earths",       achse: magnet, rolle: beobachtung, hinweis: "größter Produzent seltener Erden außerhalb Chinas"}
+vergleich: {ticker: XME, name: "Metall- und Bergbau-Aktien USA (Vergleichsmaßstab)"}
+
+# Förder- und Hüttenstandorte für den Störungskanal (ungefähre Lage).
+standorte:
+  - {kennung: lengshuijiang, name: "Lengshuijiang in Hunan",   lat: 27.69, lon: 111.43, metalle: [antimon],                  art: "größte Antimonmine der Welt (Xikuangshan)"}
+  - {kennung: hechi,         name: "Hechi in Guangxi",         lat: 24.69, lon: 108.08, metalle: [antimon],                  art: "Antimon, Zinn und Indium"}
+  - {kennung: lincang,       name: "Lincang in Yunnan",        lat: 23.88, lon: 100.09, metalle: [germanium],                art: "Germanium aus Braunkohle; Hütten hängen an Wasserkraft", wasserkraft: true}
+  - {kennung: qujing,        name: "Qujing in Yunnan",         lat: 25.49, lon: 103.80, metalle: [germanium],                art: "Zink- und Germaniumhütte; Wasserkraft", wasserkraft: true}
+  - {kennung: pingguo,       name: "Pingguo in Guangxi",       lat: 23.33, lon: 107.58, metalle: [gallium],                  art: "Tonerdewerk mit Gallium-Gewinnung"}
+  - {kennung: zibo,          name: "Zibo in Shandong",         lat: 36.81, lon: 118.05, metalle: [gallium],                  art: "Tonerdewerke mit Gallium-Gewinnung"}
+  - {kennung: baotou,        name: "Baotou in der Inneren Mongolei", lat: 40.66, lon: 109.84, metalle: [seltene_erden],      art: "Bayan Obo, größte Lagerstätte seltener Erden"}
+  - {kennung: ganzhou,       name: "Ganzhou in Jiangxi",       lat: 25.83, lon: 114.93, metalle: [seltene_erden, wolfram],   art: "schwere seltene Erden aus Tonlagerstätten, Wolfram"}
+  - {kennung: jixi,          name: "Jixi in Heilongjiang",     lat: 45.30, lon: 130.97, metalle: [graphit],                  art: "Naturgraphit"}
+
+stoerung:
+  # Erdbeben: je stärker, desto weiter reicht die Wirkung. Suche in China der letzten `gelb_tage` Tage.
+  erdbeben:
+    - {ab: 5.0, km: 50}
+    - {ab: 6.0, km: 150}
+    - {ab: 7.0, km: 300}
+  starkregen_ab_mm: 100       # Tagessumme („großer Starkregen“ nach chinesischer Einteilung); letzte sieben Tage und Vorhersage
+  trocken_fenster_tage: 90    # Regen der letzten 90 Tage gegen dasselbe Fenster 1991–2020 (nur Wasserkraft-Standorte)
+  trocken_unter: 0.6          # unter 60 Prozent des Normalen gilt als trocken
+  trocken_normal_ab_mm: 50    # in der Trockenzeit ist das Normale zu klein für ein Urteil
+  gelb_tage: 30               # so lange hält eine gemessene Störung die Achse auf Gelb
+
+# Fristen: Aussetzungen, die auslaufen. Ab `gelb_ab_tage` vor Ablauf ohne formelle Verlängerung → Gelb.
+fristen_gelb_ab_tage: 30
+fristen:
+  - kennung: aussetzung_okt2025
+    name: "Aussetzung der Oktober-Maßnahmen für seltene Erden, Graphit-Anoden und Batteriematerial"
+    nummer: 70                # Bekanntmachung des Handelsministeriums
+    achsen: [magnet, batterie]
+    bis: 2026-11-10
+    stand: "USA melden am 24.09.2026 eine Verlängerung des Waffenstillstands bis zum 10.01.2027; die formelle Bekanntmachung aus Peking steht aus"
+    verlaengert_bis: null     # erst eintragen, wenn MOFCOM die Verlängerung bekannt gibt
+  - kennung: aussetzung_usa_ga_ge_sb
+    name: "Aussetzung des Ausfuhrverbots in die USA für Gallium, Germanium, Antimon und superharte Materialien"
+    nummer: 72
+    achsen: [chip]
+    bis: 2026-11-27
+    stand: "offen; die Meldungen vom 24.09.2026 nennen diese Frist nicht"
+    verlaengert_bis: null
+
+# Gegenseiten-Kanal: US-Bundesregister (Federal Register), Suche der letzten `tage` Tage.
+# Gewichtig sind Einträge der Ausfuhrbehörde (BIS), des Handelsbeauftragten, des Handelsministeriums
+# und Erlasse des Präsidenten; nur sie setzen eine Achse auf Gelb.
+gegenseite:
+  tage: 30
+  begriffe:
+    gallium: [chip]
+    germanium: [chip]
+    antimony: [chip]
+    "semiconductor manufacturing": [chip]
+    "rare earth": [magnet]
+    "permanent magnet": [magnet]
+    graphite: [batterie]
+    tungsten: [werkzeug]
+    "critical mineral": []      # leer = alle Achsen, deren Metalle im Titel oder in der Zusammenfassung stehen
+  # Gewichtig heißt: kann eine Achse auf Gelb setzen. Alles andere wird nur gezählt.
+  gewichtig:
+    - {art: "Presidential Document"}                              # Erlasse und Proklamationen, etwa nach Abschnitt 232
+    - {behoerde: "industry-and-security-bureau"}                  # BIS: Ausfuhrkontrollen, Sperrliste, 232-Untersuchungen
+    - {behoerde: "trade-representative-office-of-united-states"}  # USTR: Zölle nach Abschnitt 301
+    - {behoerde: "commerce-department", arten: ["Rule", "Proposed Rule"]}
+  ausschluss_titel: ["Advisory Committee", "Meeting"]
+  suchwoerter:                  # welche englischen Wörter auf welche Achse zeigen (für „critical mineral“)
+    chip: [gallium, germanium, antimony, semiconductor]
+    magnet: ["rare earth", magnet]
+    batterie: [graphite, battery, anode]
+    werkzeug: [tungsten]
+
+# Preisprobe: Veränderung gegen den Vergleichsmaßstab über 20 Handelstage.
+preisprobe:
+  tage_kurz: 5
+  tage_lang: 20
+  gelaufen_ab: 0.15             # ab 15 Prozent Vorsprung gilt der Kurs als schon gelaufen
+
+# Ereignisse für den Rückblick (Ankündigungstag in Peking bzw. Washington).
+# Quellen: Kanzlei- und Fachberichte (Pillsbury, Morgan Lewis, Greenberg Traurig, Referently); bei Zweifel prüfen.
+ereignisse:
+  - {datum: 2023-07-03, art: verschaerfung, achsen: [chip],             text: "Lizenzpflicht für Gallium und Germanium angekündigt (gültig ab 1.8.2023)"}
+  - {datum: 2023-10-20, art: verschaerfung, achsen: [batterie],         text: "Lizenzpflicht für Graphit angekündigt (gültig ab 1.12.2023)"}
+  - {datum: 2023-12-21, art: verschaerfung, achsen: [magnet],           text: "Ausfuhrverbot für Technik zur Gewinnung und Verarbeitung seltener Erden"}
+  - {datum: 2024-08-15, art: verschaerfung, achsen: [chip],             text: "Lizenzpflicht für Antimon angekündigt (gültig ab 15.9.2024)"}
+  - {datum: 2024-12-03, art: verschaerfung, achsen: [chip],             text: "Ausfuhrverbot in die USA für Gallium, Germanium und Antimon (Nr. 46)"}
+  - {datum: 2025-02-04, art: verschaerfung, achsen: [werkzeug],         text: "Lizenzpflicht für Wolfram, Tellur, Bismut, Molybdän, Indium (Nr. 10)"}
+  - {datum: 2025-04-04, art: verschaerfung, achsen: [magnet],           text: "Lizenzpflicht für sieben seltene Erden und Magnete (Nr. 18)"}
+  - {datum: 2025-10-09, art: verschaerfung, achsen: [magnet, batterie], text: "Ausweitung auf fünf weitere seltene Erden, Batteriematerial, Graphit-Anoden (Nr. 55 bis 62)"}
+  - {datum: 2026-01-06, art: verschaerfung, achsen: [magnet, werkzeug], text: "Ausfuhrkontrollen für Doppelverwendungsgüter an Japan (Nr. 1/2026)"}
+  - {datum: 2026-06-22, art: verschaerfung, achsen: [magnet],           text: "zehn US-Firmen auf Chinas Exportkontrollliste, darunter MP Materials"}
+  - {datum: 2025-10-30, art: lockerung,     achsen: [chip, magnet, batterie], text: "Treffen Trump–Xi in Busan: Pause der Ausfuhrkontrollen vereinbart"}
+  - {datum: 2025-11-07, art: lockerung,     achsen: [magnet, batterie], text: "Aussetzung der Oktober-Maßnahmen bis 10.11.2026 (Nr. 70)"}
+  - {datum: 2025-11-10, art: lockerung,     achsen: [chip],             text: "Aussetzung des US-Verbots für Gallium, Germanium, Antimon bis 27.11.2026 (Nr. 72; Sonntag, 9.11.)"}
+  - {datum: 2022-10-07, art: gegenseite,    achsen: [chip],             text: "USA: umfassende Ausfuhrkontrollen für Chips und Chipanlagen nach China"}
+  - {datum: 2023-10-17, art: gegenseite,    achsen: [chip],             text: "USA: Verschärfung der Chip-Ausfuhrkontrollen"}
+  - {datum: 2024-12-02, art: gegenseite,    achsen: [chip],             text: "USA: Ausfuhrkontrollen für Speicherchips (HBM) und neue Firmen auf der Sperrliste"}
+  - {datum: 2025-04-02, art: gegenseite,    achsen: [magnet],           text: "USA: Gegenzölle gegen fast alle Handelspartner"}
+  - {datum: 2025-09-29, art: gegenseite,    achsen: [magnet, batterie], text: "USA: Tochterfirmen-Regel (50 Prozent) für die Sperrliste"}
+
+rueckblick:
+  horizonte: [0, 5, 20, 60]   # Handelstage nach dem Ereignis; 0 = erster Handelstag ab dem Ankündigungstag
+  vorlauf: 20                 # Handelstage vor dem Ereignis, um zu sehen, ob der Markt es vorwegnahm
+  haupt: 20                   # nach diesem Horizont wird geurteilt
+  treffer_ab: 0.10            # Aktie binnen 20 Handelstagen mindestens 10 Prozent über dem Vergleichsmaßstab
+  # Vorläufige Prüfregel für den Schritt vom Sensor zum Kandidaten: Verschärfungen auf der eigenen Achse,
+  # mindestens drei Fälle, in mindestens der Hälfte ein Treffer, im Mittel ein Vorsprung.
+  bestanden: {mindestens: 3, trefferquote: 0.5}
+  kurse_ab: 2008-01-01        # älter wird nicht gespeichert
