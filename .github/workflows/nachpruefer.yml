@@ -1,6 +1,6 @@
 # Nachprüfer: jeden Sonntag nach dem täglichen Lauf. Rechnet die Bilanz der echten Signale
 # (Schattendepot) und prüft, ob der tägliche Lauf und die anderen täglichen Workflows (Metall,
-# Ersatz, Inlandspreise) an allen sieben Tagen gelangen. Danach der Ausstiegs-Vergleich.
+# Ersatz, Inlandspreise, Schattendepot) an allen sieben Tagen gelangen. Danach der Ausstiegs-Vergleich.
 # Er verstellt nichts. Den Bericht holt der Nachprüfer in der Cloud ab und ergänzt die Mail-Vetos.
 name: Nachprüfer
 
@@ -36,7 +36,7 @@ jobs:
           GH_TOKEN: ${{ github.token }}
         run: |
           mkdir -p "$RUNNER_TEMP/laeufe"
-          for w in taeglich metall ersatz inlandspreise; do
+          for w in taeglich metall ersatz inlandspreise depot; do
             gh run list --workflow "$w.yml" --limit 30 --json conclusion,createdAt > "$RUNNER_TEMP/laeufe/$w.json" || rm -f "$RUNNER_TEMP/laeufe/$w.json"
           done
       - name: Nachprüfen

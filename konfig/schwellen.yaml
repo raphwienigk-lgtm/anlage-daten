@@ -57,6 +57,7 @@ nachpruefer:
     - {workflow: metall,        name: "Metall China",     betrieb_seit: 2026-09-27}
     - {workflow: ersatz,        name: "Ersatz-Sensoren",  betrieb_seit: 2026-09-28}
     - {workflow: inlandspreise, name: "Inlandspreise",    betrieb_seit: 2026-09-27}
+    - {workflow: depot,         name: "Schattendepot",    betrieb_seit: 2026-09-29}
 
 rueckblick:
   beginn: 1960-01

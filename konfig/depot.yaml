@@ -1,0 +1,20 @@
+# Gesamt-Schattendepot (Auftrag 27.09.2026): alle gedachten Positionen der Zweige an einem Ort.
+# Jeder gedachte Kauf eines Werts bekommt denselben erfundenen Betrag, umgerechnet zum Devisenkurs am
+# Kauftag. Reine Rechnung, kein echtes Geld. Echte Depotdaten gehören nie in dieses öffentliche Repository.
+
+betrag: 1000                 # Euro je Wert und gedachtem Kauf
+basis: EUR
+
+# Devisenkurse von Yahoo: Einheiten der Fremdwährung je Euro (EURUSD=X heißt Dollar je Euro)
+devisen:
+  USD: "EURUSD=X"
+  SGD: "EURSGD=X"
+  AUD: "EURAUD=X"
+kurse_ab: 2010-01-04
+
+# Währung der Agrar-Werte nach Börse (die Formulare der Rohstoffe nennen nur die Börse)
+boerse_waehrung:
+  SGX: SGD
+  ASX: AUD
+  NYSE: USD
+  NASDAQ: USD

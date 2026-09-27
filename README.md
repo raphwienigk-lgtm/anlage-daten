@@ -100,6 +100,7 @@ ein Mail-Veto darüber und schreibt den Bericht ins Projekt, Stichwort „Anlage
 | `abgabe/rueckblick-palmoel-teil-N.md` | Vorlesetext des Rückblicks |
 | `daten/nachpruefer.json`, `abgabe/nachpruefer-teil-N.md` | Nachprüfer, jeden Sonntag: Laufkontrolle aller täglichen Workflows, Stufen der Woche je Zweig, Schattendepots, Bilanz der echten Signale |
 | `daten/ausstieg.json`, `abgabe/ausstieg-teil-N.md` | Ausstiegsregeln im Vergleich (sonntags nach dem Nachprüfer) |
+| `konfig/depot.yaml`, `daten/depot/`, `werkzeuge/schattendepot.py` | Gesamt-Schattendepot: Betrag, Devisenarchiv, Index aller Werte, Rechenwerkzeug |
 
 Befehle: `python -m anlage.lauf` (täglicher Lauf), `python -m anlage.pruefen` (Prüflauf),
 `python -m anlage.klimatologie` (Normal bauen), `python -m anlage.geschichte` (Geschichtsdaten),
@@ -312,6 +313,25 @@ und werden nicht nach dem Ergebnis nachgestellt. Verglichen werden nur Fälle, d
 Regeln abgeschlossen sind. Welche Regel gilt (`gilt:`), legt Raphael fest; bis dahin gilt überall
 die bisherige, und erst danach wird sie in die Schattendepots eingebaut. Palmöl rechnet nur mit den
 Signalen der Lernzeit, die Prüfzeit bleibt verschlossen.
+
+## Gesamt-Schattendepot
+
+Alle gedachten Positionen der Zweige an einem Ort (Auftrag 27.09.2026): Palmöl aus dem Logbuch,
+die Ersatz-Sensoren aus ihrem `schattendepot.json` und die Metall-Positionen, die der Metall-Wächter
+in der Cloud führt. Jeder gedachte Kauf eines Werts bekommt denselben erfundenen Betrag
+(`konfig/depot.yaml`, 1.000 Euro), umgerechnet zum Devisenkurs am Kurstag. Bewertet wird zum letzten
+Schlusskurs, zurück in Euro zum Devisenkurs desselben Tages, mit dem Vergleichsmaßstab des Zweigs und
+der Frist nach der geltenden Ausstiegsregel. Reine Rechnung, kein echtes Geld; echte Depotdaten
+gehören nie in dieses Repository.
+
+- `python -m anlage.depot` (Workflow „Schattendepot“, täglich 03:07 UTC) holt die Devisenkurse,
+  schreibt `daten/depot/index.json` und rechnet zur Probe ohne die Metall-Positionen.
+- Gerechnet wird mit `werkzeuge/schattendepot.py`, das nur die Standardbibliothek braucht. Der
+  Depot-Agent in der Cloud lädt es mit den Dateien aus `dateien` herunter, legt das Metall-Logbuch als
+  Zusatz dazu und schreibt daraus den Bericht ins Projekt:
+  `python3 schattendepot.py rechnen --basis . --heute JJJJ-MM-TT --zusatz metall.json --aus depot.json`.
+- Regel-Hinweise sagen, was die geltenden Regeln ergeben (Frist bald oder erreicht, neu gekauft, neu
+  geschlossen). Sie sind keine Empfehlung; entschieden wird von Raphael.
 
 ---
 

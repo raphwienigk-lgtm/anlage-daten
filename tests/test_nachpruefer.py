@@ -178,7 +178,7 @@ def test_andere_zweige(ablage):
     gesamt = " ".join(p.read_text(encoding="utf-8").split("\n", 2)[2] for p in teile)
     assert not re.search(r"\d", gesamt)
     assert ("Die anderen täglichen Läufe: Metall China an allen sieben Tagen; Ersatz-Sensoren an sechs von sieben Tagen, "
-            "es fehlte am dreißigsten September; Inlandspreise unbekannt.") in gesamt
+            "es fehlte am dreißigsten September; Inlandspreise unbekannt; Schattendepot unbekannt.") in gesamt
     assert "Chip-Achse steht auf Gelb seit dem ersten Oktober" in gesamt
     assert "Wechsel in dieser Woche: Chip-Achse am ersten Oktober von Grün auf Gelb." in gesamt
     assert "Ersatz-Sensor Haselnuss steht auf Grün seit Beginn der Aufzeichnung am achtundzwanzigsten September." in gesamt
