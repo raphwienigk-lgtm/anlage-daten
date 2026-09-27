@@ -1,0 +1,191 @@
+{
+  "stand": "2026-09-27T20:51:15+02:00",
+  "version": "0.1.0",
+  "hinweis": "Reine Rechnung mit einem erfundenen Betrag, kein echtes Geld. Denkhilfe, keine Anlageberatung.",
+  "betrag": 1000,
+  "basis": "EUR",
+  "devisen": {
+    "USD": "daten/depot/kurse/EURUSD_X.csv",
+    "SGD": "daten/depot/kurse/EURSGD_X.csv",
+    "AUD": "daten/depot/kurse/EURAUD_X.csv"
+  },
+  "werte": {
+    "F34.SI": {
+      "name": "Wilmar International",
+      "zweig": "palmoel",
+      "waehrung": "SGD",
+      "archiv": "daten/preise/F34_SI.csv",
+      "vergleich": null
+    },
+    "E5H.SI": {
+      "name": "Golden Agri-Resources",
+      "zweig": "palmoel",
+      "waehrung": "SGD",
+      "archiv": "daten/preise/E5H_SI.csv",
+      "vergleich": null
+    },
+    "EB5.SI": {
+      "name": "First Resources",
+      "zweig": "palmoel",
+      "waehrung": "SGD",
+      "archiv": "daten/preise/EB5_SI.csv",
+      "vergleich": null
+    },
+    "P8Z.SI": {
+      "name": "Bumitama Agri",
+      "zweig": "palmoel",
+      "waehrung": "SGD",
+      "archiv": "daten/preise/P8Z_SI.csv",
+      "vergleich": null
+    },
+    "PPTA": {
+      "name": "Perpetua Resources",
+      "zweig": "metall",
+      "waehrung": "USD",
+      "archiv": "daten/metall/china/kurse/PPTA.csv",
+      "vergleich": "XME",
+      "achse": "chip",
+      "rolle": "kandidat"
+    },
+    "UAMY": {
+      "name": "United States Antimony",
+      "zweig": "metall",
+      "waehrung": "USD",
+      "archiv": "daten/metall/china/kurse/UAMY.csv",
+      "vergleich": "XME",
+      "achse": "chip",
+      "rolle": "kandidat"
+    },
+    "MP": {
+      "name": "MP Materials",
+      "zweig": "metall",
+      "waehrung": "USD",
+      "archiv": "daten/metall/china/kurse/MP.csv",
+      "vergleich": "XME",
+      "achse": "magnet",
+      "rolle": "beobachtung"
+    },
+    "LYC.AX": {
+      "name": "Lynas Rare Earths",
+      "zweig": "metall",
+      "waehrung": "AUD",
+      "archiv": "daten/metall/china/kurse/LYC_AX.csv",
+      "vergleich": "XME",
+      "achse": "magnet",
+      "rolle": "beobachtung"
+    },
+    "SHV.AX": {
+      "name": "Select Harvests",
+      "zweig": "ersatz_haselnuss",
+      "waehrung": "AUD",
+      "archiv": "daten/ersatz/haselnuss/kurse/SHV_AX.csv",
+      "vergleich": "^AXJO",
+      "rolle": "kandidat"
+    },
+    "PPLT": {
+      "name": "Platin-ETF",
+      "zweig": "ersatz_palladium",
+      "waehrung": "USD",
+      "archiv": "daten/ersatz/palladium/kurse/PPLT.csv",
+      "vergleich": "GLD",
+      "rolle": "kandidat"
+    }
+  },
+  "vergleiche": {
+    "XME": {
+      "name": "Metall- und Bergbau-Aktien USA (Vergleichsmaßstab)",
+      "archiv": "daten/metall/china/kurse/XME.csv"
+    },
+    "^AXJO": {
+      "name": "australischer Aktienindex ASX 200",
+      "archiv": "daten/ersatz/haselnuss/kurse/_AXJO.csv"
+    },
+    "GLD": {
+      "name": "Gold-ETF",
+      "archiv": "daten/ersatz/palladium/kurse/GLD.csv"
+    }
+  },
+  "zweige": {
+    "palmoel": {
+      "name": "Palmöl",
+      "quelle": {
+        "art": "logbuch",
+        "pfad": "daten/signale.jsonl",
+        "rohstoff": "palmoel"
+      },
+      "gilt": "bisher",
+      "regel": {
+        "name": "bisherige Regel: bis die Ampel auf Grün springt",
+        "kurz": "Bisherige Regel, bis Grün",
+        "gruen": true
+      },
+      "regel_name": "bisherige Regel: bis die Ampel auf Grün springt"
+    },
+    "metall": {
+      "name": "Metall China-Ausfuhr",
+      "quelle": {
+        "art": "zusatz",
+        "herkunft": "metall-logbuch.md (Metall-Wächter)"
+      },
+      "gilt": "bisher",
+      "regel": {
+        "name": "bisherige Regel: Lockerung auf der Achse oder nach 90 Tagen",
+        "kurz": "Bisherige Regel, Lockerung oder 90 Tage",
+        "kalendertage": 90,
+        "lockerung": true
+      },
+      "regel_name": "bisherige Regel: Lockerung auf der Achse oder nach 90 Tagen"
+    },
+    "ersatz_haselnuss": {
+      "name": "Ersatz Haselnuss",
+      "quelle": {
+        "art": "ersatz",
+        "pfad": "daten/ersatz/haselnuss/schattendepot.json"
+      },
+      "gilt": "bisher",
+      "regel": {
+        "name": "bisherige Regel: bis zum Ende der Ernte am 30. September",
+        "kurz": "Bisherige Regel, bis zum Ende der Ernte",
+        "bis_monat_tag": "09-30"
+      },
+      "regel_name": "bisherige Regel: bis zum Ende der Ernte am 30. September"
+    },
+    "ersatz_palladium": {
+      "name": "Ersatz Palladium",
+      "quelle": {
+        "art": "ersatz",
+        "pfad": "daten/ersatz/palladium/schattendepot.json"
+      },
+      "gilt": "bisher",
+      "regel": {
+        "name": "bisherige Regel: nach 180 Tagen",
+        "kurz": "Bisherige Regel, nach 180 Tagen",
+        "kalendertage": 180
+      },
+      "regel_name": "bisherige Regel: nach 180 Tagen"
+    }
+  },
+  "dateien": [
+    "daten/depot/index.json",
+    "werkzeuge/schattendepot.py",
+    "daten/ersatz/haselnuss/schattendepot.json",
+    "daten/ersatz/palladium/schattendepot.json",
+    "daten/signale.jsonl",
+    "daten/depot/kurse/EURAUD_X.csv",
+    "daten/depot/kurse/EURSGD_X.csv",
+    "daten/depot/kurse/EURUSD_X.csv",
+    "daten/ersatz/haselnuss/kurse/SHV_AX.csv",
+    "daten/ersatz/haselnuss/kurse/_AXJO.csv",
+    "daten/ersatz/palladium/kurse/GLD.csv",
+    "daten/ersatz/palladium/kurse/PPLT.csv",
+    "daten/metall/china/kurse/LYC_AX.csv",
+    "daten/metall/china/kurse/MP.csv",
+    "daten/metall/china/kurse/PPTA.csv",
+    "daten/metall/china/kurse/UAMY.csv",
+    "daten/metall/china/kurse/XME.csv",
+    "daten/preise/E5H_SI.csv",
+    "daten/preise/EB5_SI.csv",
+    "daten/preise/F34_SI.csv",
+    "daten/preise/P8Z_SI.csv"
+  ]
+}
