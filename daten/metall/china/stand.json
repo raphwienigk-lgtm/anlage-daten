@@ -1,6 +1,6 @@
 {
-  "stand": "2026-09-27T19:19:15+02:00",
-  "datum": "2026-09-27",
+  "stand": "2026-09-28T01:23:27+02:00",
+  "datum": "2026-09-28",
   "version": "0.1.0",
   "land": "china",
   "name": "China-Ausfuhr",
@@ -119,13 +119,7 @@
       "instrumente": []
     }
   },
-  "wechsel": [
-    {
-      "achse": "werkzeug",
-      "vorher": "Gelb",
-      "jetzt": "Grün"
-    }
-  ],
+  "wechsel": [],
   "fristen": [
     {
       "kennung": "aussetzung_okt2025",
@@ -138,7 +132,7 @@
       "bis": "2026-11-10",
       "urspruenglich_bis": "2026-11-10",
       "verlaengert": false,
-      "tage": 44,
+      "tage": 43,
       "zustand": "läuft",
       "gelb": false,
       "rot_pruefen": false,
@@ -154,7 +148,7 @@
       "bis": "2026-11-27",
       "urspruenglich_bis": "2026-11-27",
       "verlaengert": false,
-      "tage": 61,
+      "tage": 60,
       "zustand": "läuft",
       "gelb": false,
       "rot_pruefen": false,
@@ -505,18 +499,18 @@
   },
   "stoerung": {
     "erdbeben": [],
-    "erdbeben_gesamt": 9,
+    "erdbeben_gesamt": 8,
     "starkregen_gemessen": [],
     "starkregen_vorhergesagt": [],
     "regen_hoechst_mm": {
-      "lengshuijiang": 21.0,
-      "hechi": 24.3,
-      "lincang": 26.4,
-      "qujing": 19.8,
-      "pingguo": 19.5,
-      "zibo": 1.0,
-      "baotou": 4.8,
-      "ganzhou": 9.0,
+      "lengshuijiang": 76.8,
+      "hechi": 24.6,
+      "lincang": 24.7,
+      "qujing": 32.7,
+      "pingguo": 12.9,
+      "zibo": 1.5,
+      "baotou": 2.8,
+      "ganzhou": 37.5,
       "jixi": 9.9
     },
     "trocken": {
@@ -550,7 +544,7 @@
       "waehrung": "USD",
       "letzter": "2026-09-25",
       "schluss": 23.49,
-      "alter_tage": 2,
+      "alter_tage": 3,
       "r_kurz": 0.0108,
       "vorsprung_kurz": 0.014,
       "r_lang": -0.1028,
@@ -568,7 +562,7 @@
       "waehrung": "USD",
       "letzter": "2026-09-25",
       "schluss": 4.5,
-      "alter_tage": 2,
+      "alter_tage": 3,
       "r_kurz": -0.0281,
       "vorsprung_kurz": -0.0249,
       "r_lang": -0.1279,
@@ -586,7 +580,7 @@
       "waehrung": "USD",
       "letzter": "2026-09-25",
       "schluss": 48.83,
-      "alter_tage": 2,
+      "alter_tage": 3,
       "r_kurz": 0.0332,
       "vorsprung_kurz": 0.0364,
       "r_lang": -0.1728,
@@ -604,7 +598,7 @@
       "waehrung": "AUD",
       "letzter": "2026-09-25",
       "schluss": 14.22,
-      "alter_tage": 2,
+      "alter_tage": 3,
       "r_kurz": -0.0091,
       "vorsprung_kurz": -0.0058,
       "r_lang": -0.1255,
