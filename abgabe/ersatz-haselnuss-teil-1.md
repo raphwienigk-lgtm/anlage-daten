@@ -1,4 +1,4 @@
-Stand: 27.09.2026, 04:15
+Stand: 27.09.2026, 19:19
 Teil 1 von 1
 
 Der Ersatz-Sensor Haselnuss, Datenteil für Sonntag, den siebenundzwanzigsten September. Der Sensor schlägt beim Original aus, gekauft würde der Ersatz: Select Harvests, Mandeln aus Australien. Das Original, Haselnuss aus der Türkei, ist nicht handelbar: kein Einzel-ETC; der größte Abnehmer Ferrero ist nicht börsennotiert.

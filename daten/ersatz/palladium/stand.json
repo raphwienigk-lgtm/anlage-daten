@@ -1,5 +1,5 @@
 {
-  "stand": "2026-09-27T04:15:57+02:00",
+  "stand": "2026-09-27T19:19:17+02:00",
   "datum": "2026-09-27",
   "version": "0.1.0",
   "kennung": "palladium",
@@ -10,7 +10,7 @@
   "original": {
     "name": "Palladium",
     "hinweis": "rund 40 Prozent der Minenförderung aus Russland; im Benzin-Katalysator gegen Platin austauschbar",
-    "ticker": "PALL"
+    "ticker": "PA=F"
   },
   "ersatz": [
     {
@@ -36,88 +36,104 @@
     "gelb_tage": 180,
     "rot_tage": 30
   },
-  "stufe": "Gelb",
+  "stufe": "Grün",
   "gruende": [
     {
-      "art": "teurer",
-      "verhaeltnis": 1.428
+      "art": "ruhig",
+      "anstieg": 0.0521,
+      "verhaeltnis": 0.71
     }
   ],
-  "wechsel": null,
+  "wechsel": {
+    "vorher": "Gelb",
+    "jetzt": "Grün"
+  },
   "lage": {
     "datum": "2026-09-25",
-    "anstieg": 0.0431,
-    "verhaeltnis": 1.428
+    "anstieg": 0.0521,
+    "verhaeltnis": 0.71
   },
   "signale": [
     {
-      "datum": "2010-04-22",
+      "datum": "2010-04-23",
       "art": "Sprung",
-      "wert": 0.3237,
-      "verhaeltnis": 0.649
+      "wert": 0.3392,
+      "verhaeltnis": 0.323
     },
     {
-      "datum": "2010-10-12",
+      "datum": "2010-10-13",
       "art": "Sprung",
-      "wert": 0.3028,
-      "verhaeltnis": 0.693
+      "wert": 0.3175,
+      "verhaeltnis": 0.349
     },
     {
-      "datum": "2013-05-17",
+      "datum": "2016-08-19",
+      "art": "Sprung",
+      "wert": 0.3174,
+      "verhaeltnis": 0.635
+    },
+    {
+      "datum": "2017-09-27",
       "art": "Verhältnis",
-      "wert": 1.015,
-      "verhaeltnis": 1.015
+      "wert": 1.004,
+      "verhaeltnis": 1.004
     },
     {
-      "datum": "2016-08-18",
-      "art": "Sprung",
-      "wert": 0.3288,
-      "verhaeltnis": 1.26
+      "datum": "2018-04-03",
+      "art": "Verhältnis",
+      "wert": 1.004,
+      "verhaeltnis": 1.004
     },
     {
       "datum": "2018-11-08",
       "art": "Sprung",
-      "wert": 0.3379,
-      "verhaeltnis": 2.624
+      "wert": 0.3402,
+      "verhaeltnis": 1.307
     },
     {
-      "datum": "2020-01-16",
+      "datum": "2020-01-21",
       "art": "Sprung",
-      "wert": 0.3185,
-      "verhaeltnis": 4.611
+      "wert": 0.3087,
+      "verhaeltnis": 2.241
     },
     {
       "datum": "2021-04-27",
       "art": "Sprung",
-      "wert": 0.3237,
-      "verhaeltnis": 4.792
+      "wert": 0.3354,
+      "verhaeltnis": 2.364
     },
     {
       "datum": "2022-02-23",
       "art": "Sprung",
-      "wert": 0.4109,
-      "verhaeltnis": 4.545
+      "wert": 0.3651,
+      "verhaeltnis": 2.237
     },
     {
-      "datum": "2024-10-25",
-      "art": "Sprung",
-      "wert": 0.3115,
-      "verhaeltnis": 2.332
+      "datum": "2024-02-12",
+      "art": "Verhältnis",
+      "wert": 1.003,
+      "verhaeltnis": 1.003
     },
     {
-      "datum": "2025-07-17",
-      "art": "Sprung",
-      "wert": 0.3683,
-      "verhaeltnis": 1.764
+      "datum": "2024-08-28",
+      "art": "Verhältnis",
+      "wert": 1.0,
+      "verhaeltnis": 1.0
     },
     {
-      "datum": "2026-01-22",
+      "datum": "2025-04-01",
+      "art": "Verhältnis",
+      "wert": 1.004,
+      "verhaeltnis": 1.004
+    },
+    {
+      "datum": "2025-11-10",
       "art": "Sprung",
-      "wert": 0.3502,
-      "verhaeltnis": 1.463
+      "wert": 0.3029,
+      "verhaeltnis": 0.907
     }
   ],
-  "erster_kurs": "2010-01-08",
+  "erster_kurs": "2010-01-04",
   "preise": {
     "PPLT": {
       "name": "Platin-ETF",
@@ -145,15 +161,15 @@
       "urteil": "nicht bestanden",
       "haupt": 120,
       "zusammen": {
-        "n": 11,
+        "n": 13,
         "offen": 0,
-        "v20": -0.0871,
-        "v60": -0.1172,
-        "v120": -0.099,
-        "v250": -0.1328,
-        "v_vorlauf": 0.0461,
-        "treffer": 1,
-        "trefferquote": 0.09
+        "v20": -0.0475,
+        "v60": -0.047,
+        "v120": -0.0548,
+        "v250": -0.1014,
+        "v_vorlauf": -0.0097,
+        "treffer": 2,
+        "trefferquote": 0.15
       }
     }
   },
