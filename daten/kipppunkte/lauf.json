@@ -1,9 +1,9 @@
 {
   "quartal": "2026-Q3",
   "offen": true,
-  "versuche": 2,
+  "versuche": 3,
   "versuche_quartal": "2026-Q3",
-  "letzter_lauf": "2026-09-26T17:35:51+02:00",
+  "letzter_lauf": "2026-09-27T17:35:09+02:00",
   "status": {
     "kaltfleck": "Fehler",
     "amoc": "ok",

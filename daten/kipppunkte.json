@@ -1,6 +1,6 @@
 {
-  "stand": "2026-09-26T17:35:51+02:00",
-  "datum": "2026-09-26",
+  "stand": "2026-09-27T17:35:09+02:00",
+  "datum": "2026-09-27",
   "quartal": "2026-Q3",
   "version": "0.1.0",
   "hinweis": "Denkhilfe, keine Anlageberatung. Messwerte ohne Bewertung; bewertet wird gemeinsam im Quartal.",
@@ -8,7 +8,7 @@
   "indikatoren": {
     "kaltfleck": {
       "status": "Fehler",
-      "meldung": "AbrufFehler: ConnectionError bei https://coastwatch.pfeg.noaa.gov/erddap/griddap/nceiErsstv5.csv?ssta%5B(2026-05-01):1:(last)%5D%5B(0.0)%5D%5B(44):1:(62)%5D%5B(300):1:(340)%5D: HTTPSConnectionPool(host='coastwatch.pfeg.noaa.gov', port=443): Max retries exceeded with url: /erddap/griddap/nceiErsstv5."
+      "meldung": "AbrufFehler: Fehler 403 bei https://coastwatch.pfeg.noaa.gov/erddap/griddap/nceiErsstv5.csv?ssta%5B(2026-05-01):1:(last)%5D%5B(0.0)%5D%5B(44):1:(62)%5D%5B(300):1:(340)%5D: Error { code=403; message=\"Forbidden: Access Forbidden -- Your IP address is on this ERDDAP's request blacklist. Did you often s"
     },
     "amoc": {
       "name": "Umwälzströmung bei sechsundzwanzigeinhalb Grad Nord (RAPID-Messkette)",
@@ -202,7 +202,9 @@
               "trend_30": 1.556
             }
           },
-          "monate": 549
+          "monate": 549,
+          "vollstaendig": true,
+          "bis": "2026-09"
         },
         "sul_de_minas": {
           "name": "Süden von Minas Gerais",
@@ -232,7 +234,9 @@
               "trend_30": 15.76
             }
           },
-          "monate": 549
+          "monate": 549,
+          "vollstaendig": true,
+          "bis": "2026-09"
         },
         "giresun": {
           "name": "Giresun an der Schwarzmeerküste",
@@ -240,18 +244,41 @@
           "region": "Haselnuss",
           "masse": {
             "kaeltetage": {
-              "letztes_jahr": 1996,
-              "letzter_wert": 67,
-              "mittel_anfang": 60,
+              "letztes_jahr": 2026,
+              "letzter_wert": 28,
+              "mittel_anfang": 54.5,
               "anfang": [
                 1982,
                 2011
               ],
-              "mittel_10": 64.8,
-              "trend_30": 14.571
+              "mittel_10": 32.2,
+              "trend_30": -8.879
             }
           },
-          "monate": 192
+          "monate": 549,
+          "vollstaendig": true,
+          "bis": "2026-09"
+        },
+        "central_valley": {
+          "name": "Modesto im kalifornischen Längstal",
+          "kipppunkt": "Kältebedarf der Mandel",
+          "region": "Mandel",
+          "masse": {
+            "kaeltetage": {
+              "letztes_jahr": 1999,
+              "letzter_wert": 33,
+              "mittel_anfang": 24,
+              "anfang": [
+                1982,
+                2011
+              ],
+              "mittel_10": 20.1,
+              "trend_30": -10.258
+            }
+          },
+          "monate": 228,
+          "vollstaendig": false,
+          "bis": "1999-12"
         }
       }
     }
