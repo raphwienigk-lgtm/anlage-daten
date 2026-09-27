@@ -1,0 +1,597 @@
+{
+  "stand": "2026-09-27T04:36:46+02:00",
+  "datum": "2026-09-27",
+  "version": "0.1.0",
+  "hinweis": "Denkhilfe, keine Anlageberatung. Score und Schwellen sind vorläufig, bis das Backtesting steht.",
+  "zustand": "in Ordnung",
+  "hinweise": [],
+  "quellen": {
+    "oni": {
+      "name": "NOAA CPC · El-Niño-Index (ONI)",
+      "status": "ok",
+      "stand": "JJA 2026",
+      "meldung": null
+    },
+    "dmi": {
+      "name": "Dipol-Index (DMI)",
+      "status": "ok",
+      "stand": "2026-08 (JMA, Basis 1991–2020)",
+      "meldung": null
+    },
+    "regen": {
+      "name": "Open-Meteo Regen",
+      "status": "ok",
+      "stand": "2026-09-25",
+      "meldung": null
+    },
+    "wind": {
+      "name": "Open-Meteo Wind",
+      "status": "ok",
+      "stand": "2026-06-30",
+      "meldung": null
+    },
+    "yahoo:BZ=F": {
+      "name": "Yahoo BZ=F",
+      "status": "ok",
+      "stand": "2026-09-25",
+      "meldung": null
+    },
+    "yahoo:E5H.SI": {
+      "name": "Yahoo E5H.SI",
+      "status": "ok",
+      "stand": "2026-09-25",
+      "meldung": null
+    },
+    "yahoo:EB5.SI": {
+      "name": "Yahoo EB5.SI",
+      "status": "ok",
+      "stand": "2026-09-25",
+      "meldung": null
+    },
+    "yahoo:F34.SI": {
+      "name": "Yahoo F34.SI",
+      "status": "ok",
+      "stand": "2026-09-25",
+      "meldung": null
+    },
+    "yahoo:P8Z.SI": {
+      "name": "Yahoo P8Z.SI",
+      "status": "ok",
+      "stand": "2026-09-25",
+      "meldung": null
+    },
+    "yahoo:ZL=F": {
+      "name": "Yahoo ZL=F",
+      "status": "ok",
+      "stand": "2026-09-25",
+      "meldung": null
+    },
+    "fred:PPOILUSDM": {
+      "name": "FRED PPOILUSDM",
+      "status": "ok",
+      "stand": "2026-07-01",
+      "meldung": null
+    }
+  },
+  "klima": {
+    "enso": {
+      "aktuell": {
+        "jahreszeit": "JJA",
+        "jahr": 2026,
+        "monat": 7,
+        "wert": 1.8
+      },
+      "phase": "El Niño",
+      "staerke_text": "stark",
+      "episode": {
+        "beginn": {
+          "jahreszeit": "AMJ",
+          "jahr": 2026,
+          "monat": 5,
+          "wert": 0.95
+        },
+        "ab": "2026-04-01",
+        "ende": null,
+        "bis": null,
+        "laeuft": true,
+        "beginnend": true,
+        "laenge_jahreszeiten": 3,
+        "hoehepunkt": {
+          "jahreszeit": "JJA",
+          "jahr": 2026,
+          "monat": 7,
+          "wert": 1.8
+        },
+        "hoehepunkt_bestaetigt": false,
+        "monate_seit_hoehepunkt": null
+      },
+      "neue_erwaermung": null,
+      "staerke": 0.9,
+      "stufe1": true
+    },
+    "dipol": {
+      "grundlage": "Episode",
+      "episode_ab": "2026-04-01",
+      "episode_zaehlt_bis": null,
+      "stufe1": {
+        "an": true,
+        "status": "El Niño läuft"
+      },
+      "stufe2": {
+        "an": false,
+        "grundlage": "Episode",
+        "aktuell": {
+          "jahr": 2026,
+          "status": "gemessen",
+          "an": false,
+          "anomalie_ms": -0.31
+        },
+        "episode": [
+          {
+            "jahr": 2026,
+            "status": "gemessen",
+            "an": false,
+            "anomalie_ms": -0.31
+          }
+        ]
+      },
+      "stufe3": {
+        "status": "gemessen",
+        "quelle": "JMA, Basis 1991–2020",
+        "aktuell": {
+          "an": false,
+          "wert": 0.37,
+          "monat": "2026-08",
+          "monate_in_folge": 0
+        },
+        "an": false,
+        "grundlage": "Episode",
+        "hoechster_seit_beginn": {
+          "wert": 0.37,
+          "monat": "2026-08"
+        }
+      },
+      "prognose": {
+        "status": "nicht eingetragen"
+      },
+      "ostende_bestaetigt": false,
+      "zeugen": {
+        "ost": {
+          "aktuell": {
+            "status": "gemessen",
+            "an": true,
+            "anteil": 0.525,
+            "zeitraum_tage": 90,
+            "bis": "2026-09-21",
+            "punkte": {
+              "Riau, Sumatra": {
+                "tage": 90,
+                "summe_mm": 521.6,
+                "normal_mm": 436.6,
+                "anteil": 1.195,
+                "bis": "2026-09-21"
+              },
+              "Jambi, Sumatra": {
+                "tage": 90,
+                "summe_mm": 96.0,
+                "normal_mm": 366.4,
+                "anteil": 0.262,
+                "bis": "2026-09-21"
+              },
+              "Zentral-Kalimantan": {
+                "tage": 90,
+                "summe_mm": 30.6,
+                "normal_mm": 291.5,
+                "anteil": 0.105,
+                "bis": "2026-09-21"
+              },
+              "West-Kalimantan": {
+                "tage": 90,
+                "summe_mm": 183.7,
+                "normal_mm": 470.9,
+                "anteil": 0.39,
+                "bis": "2026-09-21"
+              },
+              "Sabah": {
+                "tage": 90,
+                "summe_mm": 318.5,
+                "normal_mm": 472.9,
+                "anteil": 0.673,
+                "bis": "2026-09-21"
+              }
+            },
+            "fehlend": []
+          },
+          "episode": {
+            "status": "gemessen",
+            "an": true,
+            "ab": "2026-05-16",
+            "bis": "2026-09-21",
+            "erster_trockener_tag": "2026-08-22",
+            "trockene_tage": 31,
+            "tiefster_anteil": 0.519,
+            "tiefster_tag": "2026-09-20"
+          }
+        },
+        "west": {
+          "aktuell": {
+            "status": "außer Saison",
+            "an": null,
+            "anteil": null,
+            "in_saison": false,
+            "saison_ab": "2026-10-01",
+            "letzte_saison": {
+              "jahr": 2025,
+              "von": "2025-10-01",
+              "bis_ende": "2025-12-31",
+              "status": "abgeschlossen",
+              "an": false,
+              "anteil": 0.448,
+              "tage": 92,
+              "punkte": {
+                "Nairobi, Kenia": {
+                  "tage": 92,
+                  "summe_mm": 134.5,
+                  "normal_mm": 170.5,
+                  "anteil": 0.789,
+                  "bis": "2025-12-31"
+                },
+                "Garissa, Kenia": {
+                  "tage": 92,
+                  "summe_mm": 19.2,
+                  "normal_mm": 124.2,
+                  "anteil": 0.155,
+                  "bis": "2025-12-31"
+                },
+                "Beledweyne, Somalia": {
+                  "tage": 92,
+                  "summe_mm": 9.7,
+                  "normal_mm": 108.9,
+                  "anteil": 0.089,
+                  "bis": "2025-12-31"
+                },
+                "Moyale, Äthiopien": {
+                  "tage": 92,
+                  "summe_mm": 68.0,
+                  "normal_mm": 232.6,
+                  "anteil": 0.292,
+                  "bis": "2025-12-31"
+                },
+                "Arusha, Tansania": {
+                  "tage": 92,
+                  "summe_mm": 220.5,
+                  "normal_mm": 241.0,
+                  "anteil": 0.915,
+                  "bis": "2025-12-31"
+                }
+              },
+              "fehlend": []
+            }
+          },
+          "episode": {
+            "status": "seit Beginn der Episode noch keine Regenzeit",
+            "an": null,
+            "saisons": []
+          }
+        }
+      },
+      "kreuz": {
+        "urteil": "Westzeuge ohne Urteil",
+        "bestaetigt": false,
+        "ost_status": "gemessen",
+        "west_status": "seit Beginn der Episode noch keine Regenzeit"
+      }
+    }
+  },
+  "rohstoffe": {
+    "palmoel": {
+      "name": "Palmöl",
+      "kennung": "palmoel",
+      "familie": "A",
+      "treiber": "klima",
+      "rolle": "kandidat",
+      "ampel": {
+        "farbe": "Gelb",
+        "zahl": 8,
+        "gruende": [
+          "Zeitfenster knapp: nein",
+          "Markt schläft noch: nein",
+          "Ostende der Kaskade bestätigt: nein",
+          "Kreuzbestätigung West und Ost: Westzeuge ohne Urteil"
+        ],
+        "rot_bedingungen": [
+          {
+            "name": "Zeitfenster knapp",
+            "erfuellt": false
+          },
+          {
+            "name": "Gegenkräfte überwiegen nicht",
+            "erfuellt": true
+          },
+          {
+            "name": "Markt schläft noch",
+            "erfuellt": false
+          },
+          {
+            "name": "Ostende der Kaskade bestätigt",
+            "erfuellt": false
+          },
+          {
+            "name": "Kreuzbestätigung West und Ost",
+            "erfuellt": false,
+            "stand": "Westzeuge ohne Urteil"
+          }
+        ],
+        "farbe_rechnung": "Gelb",
+        "gesperrt": false,
+        "anzeige": "Gelb, 8",
+        "veto": [],
+        "veto_fehler": []
+      },
+      "checkliste": [
+        {
+          "nr": 1,
+          "punkt": "Auslöser",
+          "frage": "Wirkt ein El Niño?",
+          "status": "ja",
+          "text": "El Niño läuft, bisher höchster Wert +1.8 (JJA 2026)"
+        },
+        {
+          "nr": 2,
+          "punkt": "Zeitfenster",
+          "frage": "Ist das Zeitfenster noch offen?",
+          "status": "ja",
+          "text": "Zeitfenster 1.00 (Höhepunkt noch nicht erreicht, Uhr läuft noch nicht)"
+        },
+        {
+          "nr": 3,
+          "punkt": "Gegenkräfte",
+          "frage": "Überwiegen die Gegenkräfte nicht?",
+          "status": "ja",
+          "text": "Druck der Gegenkräfte 0.14"
+        },
+        {
+          "nr": 4,
+          "punkt": "Preisprobe",
+          "frage": "Schläft der Markt noch?",
+          "status": "nein",
+          "text": "Z-Wert des Preises +1.24"
+        }
+      ],
+      "zeitfenster": {
+        "wert": 1.0,
+        "status": "Höhepunkt noch nicht erreicht, Uhr läuft noch nicht",
+        "t_monate": 0,
+        "T_monate": 12
+      },
+      "gegenkraefte": {
+        "wert": 0.141,
+        "ueberwiegen": false,
+        "einzeln": {
+          "brent": {
+            "text": "Ölpreis (Brent)",
+            "veraenderung_3m": 0.449,
+            "druck": 0.0
+          },
+          "sojaoel": {
+            "text": "Sojaöl als Konkurrenzöl",
+            "veraenderung_3m": -0.057,
+            "druck": 0.283
+          }
+        },
+        "fehlend": []
+      },
+      "preisprobe": {
+        "z": 1.24,
+        "markt_schlaeft": false,
+        "status": "gerechnet",
+        "letzter": {
+          "datum": "2026-07-01",
+          "wert": 1106.469929089015
+        },
+        "fenster_monate": 36,
+        "einheit": "US-Dollar je Tonne"
+      },
+      "score": {
+        "wert": 0.086,
+        "zahl": 8,
+        "vorlaeufig": true,
+        "fehlend": [],
+        "ohne_zeitfenster": true
+      },
+      "instrumente": [
+        {
+          "art": "Aktie",
+          "name": "Wilmar International",
+          "ticker": "F34.SI",
+          "boerse": "SGX",
+          "hinweis": "vor allem Verarbeitung und Handel",
+          "status": "ok",
+          "kurs": 3.68,
+          "datum": "2026-09-25",
+          "z_200": 0.25,
+          "veraenderung_3m": 0.005,
+          "volumen_trend": 0.88
+        },
+        {
+          "art": "Aktie",
+          "name": "Golden Agri-Resources",
+          "ticker": "E5H.SI",
+          "boerse": "SGX",
+          "hinweis": "mit großer Verarbeitungssparte",
+          "status": "ok",
+          "kurs": 0.33,
+          "datum": "2026-09-25",
+          "z_200": 1.73,
+          "veraenderung_3m": 0.222,
+          "volumen_trend": 2.64
+        },
+        {
+          "art": "Aktie",
+          "name": "First Resources",
+          "ticker": "EB5.SI",
+          "boerse": "SGX",
+          "hinweis": "reinerer Plantagenwert",
+          "status": "ok",
+          "kurs": 4.62,
+          "datum": "2026-09-25",
+          "z_200": 1.89,
+          "veraenderung_3m": 0.481,
+          "volumen_trend": 1.18
+        },
+        {
+          "art": "Aktie",
+          "name": "Bumitama Agri",
+          "ticker": "P8Z.SI",
+          "boerse": "SGX",
+          "hinweis": "reinerer Plantagenwert",
+          "status": "ok",
+          "kurs": 2.16,
+          "datum": "2026-09-25",
+          "z_200": 1.64,
+          "veraenderung_3m": 0.325,
+          "volumen_trend": 1.34
+        }
+      ],
+      "rueckblick": null,
+      "inlandspreise": {
+        "datum": "2026-09-27",
+        "reihen": {
+          "speiseoel_id_lose": {
+            "rohstoff": "palmoel",
+            "name": "Speiseöl lose in Indonesien",
+            "land": "Indonesien",
+            "quelle": "pihps",
+            "einheit": "Rupiah",
+            "rolle": "fruehzeichen",
+            "status": "ok",
+            "werte": 2260,
+            "letzter": {
+              "datum": "2026-09-25",
+              "wert": 20400.0
+            },
+            "alter_tage": 2,
+            "art": "täglich",
+            "mittel_jetzt": 20427.5,
+            "mittel_damals": 20585.0,
+            "veraenderung": -0.0077,
+            "urteil": "ruhig"
+          },
+          "speiseoel_id_marke": {
+            "rohstoff": "palmoel",
+            "name": "Speiseöl in Markenflaschen in Indonesien",
+            "land": "Indonesien",
+            "quelle": "pihps",
+            "einheit": "Rupiah",
+            "rolle": "fruehzeichen",
+            "status": "ok",
+            "werte": 2263,
+            "letzter": {
+              "datum": "2026-09-25",
+              "wert": 24350.0
+            },
+            "alter_tage": 2,
+            "art": "täglich",
+            "mittel_jetzt": 24347.5,
+            "mittel_damals": 24207.5,
+            "veraenderung": 0.0058,
+            "urteil": "ruhig"
+          },
+          "pflanzenoel_id_monat": {
+            "rohstoff": "palmoel",
+            "name": "Pflanzenöl in Indonesien, Monatsmittel der Statistikbehörde",
+            "land": "Indonesien",
+            "quelle": "fpma",
+            "einheit": "Rupiah je Liter",
+            "rolle": "ersatz",
+            "status": "ok",
+            "werte": 69,
+            "letzter": {
+              "datum": "2026-07-01",
+              "wert": 21932.0
+            },
+            "alter_tage": 88,
+            "art": "monatlich",
+            "vergleich": {
+              "datum": "2026-04-01",
+              "wert": 21027.0
+            },
+            "veraenderung": 0.043,
+            "urteil": "ruhig"
+          },
+          "cpo_my_tag": {
+            "rohstoff": "palmoel",
+            "name": "Rohpalmöl frei Werk in Malaysia",
+            "land": "Malaysia",
+            "quelle": "mpob",
+            "einheit": "Ringgit je Tonne",
+            "rolle": "tagespreis",
+            "status": "ok",
+            "werte": 416,
+            "letzter": {
+              "datum": "2026-09-24",
+              "wert": 4570.0
+            },
+            "alter_tage": 3,
+            "art": "täglich",
+            "mittel_jetzt": 4624.94,
+            "mittel_damals": 4485.78,
+            "veraenderung": 0.031,
+            "urteil": "ruhig"
+          }
+        }
+      }
+    }
+  },
+  "kalender": [],
+  "handeingaben": {
+    "bom_iod_prognose": {
+      "stand": null,
+      "aussage": null,
+      "richtung": null,
+      "quelle": "BOM Climate Driver Update"
+    }
+  },
+  "logbuch_neu": [
+    {
+      "zeit": "2026-09-27T04:36:46+02:00",
+      "rohstoff": "palmoel",
+      "farbe": "Gelb",
+      "zahl": 8,
+      "gesperrt": false,
+      "vorher": null,
+      "anlass": "Start",
+      "gruende": [
+        "Zeitfenster knapp: nein",
+        "Markt schläft noch: nein",
+        "Ostende der Kaskade bestätigt: nein",
+        "Kreuzbestätigung West und Ost: Westzeuge ohne Urteil"
+      ],
+      "schattenkauf": false,
+      "schattenschluss": false,
+      "rohstoffpreis": {
+        "datum": "2026-07-01",
+        "wert": 1106.469929089015
+      },
+      "kurse": {
+        "F34.SI": {
+          "kurs": 3.68,
+          "datum": "2026-09-25"
+        },
+        "E5H.SI": {
+          "kurs": 0.33,
+          "datum": "2026-09-25"
+        },
+        "EB5.SI": {
+          "kurs": 4.62,
+          "datum": "2026-09-25"
+        },
+        "P8Z.SI": {
+          "kurs": 2.16,
+          "datum": "2026-09-25"
+        }
+      }
+    }
+  ],
+  "laufzeit_sekunden": 456.2
+}

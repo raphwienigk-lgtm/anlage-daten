@@ -1,0 +1,13 @@
+{
+  "jahre": {
+    "2026": {
+      "punkte": {
+        "vor Bengkulu": -2.785,
+        "südlich der Sundastraße": -5.582
+      },
+      "bis": "2026-06-30",
+      "tage": 61,
+      "vollstaendig": true
+    }
+  }
+}
