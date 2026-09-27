@@ -1,6 +1,6 @@
 {
-  "stand": "2026-09-26T23:14:55+02:00",
-  "datum": "2026-09-26",
+  "stand": "2026-09-27T04:15:57+02:00",
+  "datum": "2026-09-27",
   "version": "0.1.0",
   "kennung": "palladium",
   "name": "Palladium",
@@ -126,7 +126,7 @@
       "waehrung": "USD",
       "letzter": "2026-09-25",
       "schluss": 16.09,
-      "alter_tage": 1,
+      "alter_tage": 2,
       "r_kurz": -0.0135,
       "vorsprung_kurz": 0.0059,
       "r_lang": -0.04,

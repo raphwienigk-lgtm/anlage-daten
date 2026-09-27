@@ -1,6 +1,6 @@
 {
-  "stand": "2026-09-26T23:14:55+02:00",
-  "datum": "2026-09-26",
+  "stand": "2026-09-27T04:15:57+02:00",
+  "datum": "2026-09-27",
   "version": "0.1.0",
   "kennung": "haselnuss",
   "name": "Haselnuss",
@@ -57,12 +57,12 @@
     "tiefste": null
   },
   "letzte_saison": {
-    "jahr": 2016,
+    "jahr": 2026,
     "urteil": "ruhig",
     "frostnaechte": 0,
     "erste": null,
     "erste_starke": null,
-    "tiefste": -2.4
+    "tiefste": 0.4
   },
   "saisons": [
     {
@@ -272,6 +272,86 @@
       "erste": null,
       "erste_starke": null,
       "tiefste": -2.4
+    },
+    {
+      "jahr": 2017,
+      "urteil": "ruhig",
+      "frostnaechte": 0,
+      "erste": null,
+      "erste_starke": null,
+      "tiefste": -0.2
+    },
+    {
+      "jahr": 2018,
+      "urteil": "ruhig",
+      "frostnaechte": 0,
+      "erste": null,
+      "erste_starke": null,
+      "tiefste": 1.8
+    },
+    {
+      "jahr": 2019,
+      "urteil": "ruhig",
+      "frostnaechte": 0,
+      "erste": null,
+      "erste_starke": null,
+      "tiefste": -1.2
+    },
+    {
+      "jahr": 2020,
+      "urteil": "ruhig",
+      "frostnaechte": 0,
+      "erste": null,
+      "erste_starke": null,
+      "tiefste": -1.0
+    },
+    {
+      "jahr": 2021,
+      "urteil": "ruhig",
+      "frostnaechte": 0,
+      "erste": null,
+      "erste_starke": null,
+      "tiefste": -0.6
+    },
+    {
+      "jahr": 2022,
+      "urteil": "starker Spätfrost",
+      "frostnaechte": 9,
+      "erste": "2022-03-11",
+      "erste_starke": "2022-03-12",
+      "tiefste": -14.7
+    },
+    {
+      "jahr": 2023,
+      "urteil": "Spätfrost",
+      "frostnaechte": 1,
+      "erste": "2023-03-31",
+      "erste_starke": null,
+      "tiefste": -2.6
+    },
+    {
+      "jahr": 2024,
+      "urteil": "ruhig",
+      "frostnaechte": 0,
+      "erste": null,
+      "erste_starke": null,
+      "tiefste": 0.5
+    },
+    {
+      "jahr": 2025,
+      "urteil": "ruhig",
+      "frostnaechte": 0,
+      "erste": null,
+      "erste_starke": null,
+      "tiefste": -2.2
+    },
+    {
+      "jahr": 2026,
+      "urteil": "ruhig",
+      "frostnaechte": 0,
+      "erste": null,
+      "erste_starke": null,
+      "tiefste": 0.4
     }
   ],
   "abgleich": {
@@ -290,13 +370,17 @@
       2010,
       2012,
       2013,
-      2014
+      2014,
+      2022,
+      2023
     ],
     "bekannte_getroffen": [
       2004,
       2014
     ],
-    "bekannte_verfehlt": [],
+    "bekannte_verfehlt": [
+      2025
+    ],
     "weitere": [
       1991,
       1992,
@@ -310,12 +394,14 @@
       2005,
       2010,
       2012,
-      2013
+      2013,
+      2022,
+      2023
     ],
-    "jahre_geprueft": 26
+    "jahre_geprueft": 36
   },
   "saisons_geladen": {
-    "geladen": 26,
+    "geladen": 36,
     "von": 36,
     "fehler": []
   },
@@ -327,7 +413,7 @@
       "waehrung": "AUD",
       "letzter": "2026-09-25",
       "schluss": 4.31,
-      "alter_tage": 1,
+      "alter_tage": 2,
       "r_kurz": -0.0293,
       "vorsprung_kurz": -0.0217,
       "r_lang": -0.063,
@@ -346,14 +432,14 @@
       "urteil": "nicht bestanden",
       "haupt": 60,
       "zusammen": {
-        "n": 8,
+        "n": 10,
         "offen": 0,
-        "v20": -0.0021,
-        "v60": -0.0016,
-        "v120": 0.1824,
-        "v_vorlauf": 0.0177,
-        "treffer": 2,
-        "trefferquote": 0.25
+        "v20": 0.0189,
+        "v60": 0.0088,
+        "v120": 0.1452,
+        "v_vorlauf": 0.0109,
+        "treffer": 3,
+        "trefferquote": 0.3
       }
     }
   },
