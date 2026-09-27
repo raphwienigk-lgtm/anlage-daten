@@ -1,6 +1,6 @@
 {
-  "stand": "2026-09-26T23:15:02+02:00",
-  "datum": "2026-09-26",
+  "stand": "2026-09-27T05:26:11+02:00",
+  "datum": "2026-09-27",
   "version": "0.1.0",
   "hinweis": "Denkhilfe, keine Anlageberatung. Welche Ausstiegsregel gilt, entscheidest du.",
   "gilt": {
@@ -1209,86 +1209,591 @@
         "Select Harvests"
       ],
       "status": "ok",
-      "faelle_gesamt": 0,
-      "verglichen": 0,
+      "faelle_gesamt": 10,
+      "verglichen": 10,
       "offen": 0,
-      "massstab": "mittel",
-      "vorn": null,
+      "massstab": "vorsprung",
+      "vorn": "bisher",
       "vorn_gleichauf": [],
-      "gipfel_mittel": null,
+      "gipfel_mittel": 0.2943,
       "varianten": [
         {
           "kennung": "bisher",
           "name": "bisherige Regel: bis zum Ende der Ernte am 30. September",
           "kurz": "Bisherige Regel, bis zum Ende der Ernte",
-          "n": 0,
-          "mittel": null,
-          "median": null,
-          "vorsprung": null,
-          "im_plus": 0,
-          "schlechtester": null,
-          "bester": null,
-          "dauer": null,
-          "gruende": {}
+          "n": 10,
+          "mittel": 0.1618,
+          "median": 0.0839,
+          "vorsprung": 0.1376,
+          "im_plus": 6,
+          "schlechtester": -0.2813,
+          "bester": 0.7328,
+          "dauer": 134.2,
+          "gruende": {
+            "Ende der Ernte": 10
+          }
         },
         {
           "kennung": "zeit",
           "name": "nach 60 Handelstagen",
           "kurz": "Nach 60 Handelstagen",
-          "n": 0,
-          "mittel": null,
-          "median": null,
-          "vorsprung": null,
-          "im_plus": 0,
-          "schlechtester": null,
-          "bester": null,
-          "dauer": null,
-          "gruende": {}
+          "n": 10,
+          "mittel": 0.0099,
+          "median": 0.0012,
+          "vorsprung": 0.0091,
+          "im_plus": 5,
+          "schlechtester": -0.2161,
+          "bester": 0.2977,
+          "dauer": 60,
+          "gruende": {
+            "Haltedauer": 10
+          }
         },
         {
           "kennung": "ziel",
           "name": "Gewinnziel 20 Prozent, spätestens nach 126 Handelstagen",
           "kurz": "Gewinnziel 20 Prozent",
-          "n": 0,
-          "mittel": null,
-          "median": null,
-          "vorsprung": null,
-          "im_plus": 0,
-          "schlechtester": null,
-          "bester": null,
-          "dauer": null,
-          "gruende": {}
+          "n": 10,
+          "mittel": 0.0823,
+          "median": 0.1846,
+          "vorsprung": 0.0577,
+          "im_plus": 6,
+          "schlechtester": -0.2625,
+          "bester": 0.2659,
+          "dauer": 94.2,
+          "gruende": {
+            "Gewinnziel": 5,
+            "Haltedauer": 5
+          }
         },
         {
           "kennung": "nachlauf",
           "name": "15 Prozent unter dem Höchststand, spätestens nach 126 Handelstagen",
           "kurz": "Grenze 15 Prozent unter dem Höchststand",
-          "n": 0,
-          "mittel": null,
-          "median": null,
-          "vorsprung": null,
-          "im_plus": 0,
-          "schlechtester": null,
-          "bester": null,
-          "dauer": null,
-          "gruende": {}
+          "n": 10,
+          "mittel": 0.1029,
+          "median": 0.0159,
+          "vorsprung": 0.0785,
+          "im_plus": 5,
+          "schlechtester": -0.175,
+          "bester": 0.6185,
+          "dauer": 79.7,
+          "gruende": {
+            "nachgezogene Grenze": 6,
+            "Haltedauer": 4
+          }
         },
         {
           "kennung": "kombi",
           "name": "Verlustgrenze 15 Prozent, ab 20 Prozent Gewinn 10 Prozent unter dem Höchststand, spätestens nach 126 Handelstagen",
           "kurz": "Verlustgrenze 15 Prozent, ab 20 Prozent Gewinn Grenze 10 Prozent unter dem Höchststand",
-          "n": 0,
-          "mittel": null,
-          "median": null,
-          "vorsprung": null,
-          "im_plus": 0,
-          "schlechtester": null,
-          "bester": null,
-          "dauer": null,
-          "gruende": {}
+          "n": 10,
+          "mittel": 0.0942,
+          "median": 0.1142,
+          "vorsprung": 0.0683,
+          "im_plus": 6,
+          "schlechtester": -0.175,
+          "bester": 0.3819,
+          "dauer": 79.3,
+          "gruende": {
+            "Haltedauer": 4,
+            "nachgezogene Grenze": 3,
+            "Verlustgrenze": 3
+          }
         }
       ],
-      "faelle": []
+      "faelle": [
+        {
+          "name": "Select Harvests",
+          "ticker": "SHV.AX",
+          "datum": "2000-03-13",
+          "jahr": 2000,
+          "gipfel": 0.5,
+          "ergebnis": {
+            "bisher": {
+              "offen": false,
+              "schritt": 145,
+              "grund": "Ende der Ernte",
+              "rendite": 0.3637,
+              "vergleich": 0.036,
+              "vorsprung": 0.3277
+            },
+            "zeit": {
+              "offen": false,
+              "schritt": 60,
+              "grund": "Haltedauer",
+              "rendite": 0.0,
+              "vergleich": -0.0116,
+              "vorsprung": 0.0116
+            },
+            "ziel": {
+              "offen": false,
+              "schritt": 108,
+              "grund": "Gewinnziel",
+              "rendite": 0.2546,
+              "vergleich": 0.0406,
+              "vorsprung": 0.214
+            },
+            "nachlauf": {
+              "offen": false,
+              "schritt": 126,
+              "grund": "Haltedauer",
+              "rendite": 0.3819,
+              "vergleich": 0.0507,
+              "vorsprung": 0.3312
+            },
+            "kombi": {
+              "offen": false,
+              "schritt": 126,
+              "grund": "Haltedauer",
+              "rendite": 0.3819,
+              "vergleich": 0.0507,
+              "vorsprung": 0.3312
+            }
+          }
+        },
+        {
+          "name": "Select Harvests",
+          "ticker": "SHV.AX",
+          "datum": "2003-03-21",
+          "jahr": 2003,
+          "gipfel": 0.6474,
+          "ergebnis": {
+            "bisher": {
+              "offen": false,
+              "schritt": 137,
+              "grund": "Ende der Ernte",
+              "rendite": 0.578,
+              "vergleich": 0.1056,
+              "vorsprung": 0.4724
+            },
+            "zeit": {
+              "offen": false,
+              "schritt": 60,
+              "grund": "Haltedauer",
+              "rendite": 0.2977,
+              "vergleich": 0.0771,
+              "vorsprung": 0.2206
+            },
+            "ziel": {
+              "offen": false,
+              "schritt": 52,
+              "grund": "Gewinnziel",
+              "rendite": 0.2659,
+              "vergleich": 0.0558,
+              "vorsprung": 0.2101
+            },
+            "nachlauf": {
+              "offen": false,
+              "schritt": 126,
+              "grund": "Haltedauer",
+              "rendite": 0.6185,
+              "vergleich": 0.1127,
+              "vorsprung": 0.5058
+            },
+            "kombi": {
+              "offen": false,
+              "schritt": 80,
+              "grund": "nachgezogene Grenze",
+              "rendite": 0.2833,
+              "vergleich": 0.0618,
+              "vorsprung": 0.2215
+            }
+          }
+        },
+        {
+          "name": "Select Harvests",
+          "ticker": "SHV.AX",
+          "datum": "2004-04-05",
+          "jahr": 2004,
+          "gipfel": 0.1791,
+          "ergebnis": {
+            "bisher": {
+              "offen": false,
+              "schritt": 128,
+              "grund": "Ende der Ernte",
+              "rendite": 0.1582,
+              "vergleich": 0.0616,
+              "vorsprung": 0.0966
+            },
+            "zeit": {
+              "offen": false,
+              "schritt": 60,
+              "grund": "Haltedauer",
+              "rendite": -0.009,
+              "vergleich": 0.0203,
+              "vorsprung": -0.0293
+            },
+            "ziel": {
+              "offen": false,
+              "schritt": 126,
+              "grund": "Haltedauer",
+              "rendite": 0.1478,
+              "vergleich": 0.0507,
+              "vorsprung": 0.0971
+            },
+            "nachlauf": {
+              "offen": false,
+              "schritt": 126,
+              "grund": "Haltedauer",
+              "rendite": 0.1478,
+              "vergleich": 0.0507,
+              "vorsprung": 0.0971
+            },
+            "kombi": {
+              "offen": false,
+              "schritt": 126,
+              "grund": "Haltedauer",
+              "rendite": 0.1478,
+              "vergleich": 0.0507,
+              "vorsprung": 0.0971
+            }
+          }
+        },
+        {
+          "name": "Select Harvests",
+          "ticker": "SHV.AX",
+          "datum": "2005-03-29",
+          "jahr": 2005,
+          "gipfel": 0.4043,
+          "ergebnis": {
+            "bisher": {
+              "offen": false,
+              "schritt": 131,
+              "grund": "Ende der Ernte",
+              "rendite": 0.3513,
+              "vergleich": 0.1332,
+              "vorsprung": 0.2181
+            },
+            "zeit": {
+              "offen": false,
+              "schritt": 60,
+              "grund": "Haltedauer",
+              "rendite": 0.0357,
+              "vergleich": 0.0426,
+              "vorsprung": -0.0069
+            },
+            "ziel": {
+              "offen": false,
+              "schritt": 104,
+              "grund": "Gewinnziel",
+              "rendite": 0.2649,
+              "vergleich": 0.0857,
+              "vorsprung": 0.1792
+            },
+            "nachlauf": {
+              "offen": false,
+              "schritt": 126,
+              "grund": "Haltedauer",
+              "rendite": 0.3676,
+              "vergleich": 0.114,
+              "vorsprung": 0.2536
+            },
+            "kombi": {
+              "offen": false,
+              "schritt": 126,
+              "grund": "Haltedauer",
+              "rendite": 0.3676,
+              "vergleich": 0.114,
+              "vorsprung": 0.2536
+            }
+          }
+        },
+        {
+          "name": "Select Harvests",
+          "ticker": "SHV.AX",
+          "datum": "2010-03-22",
+          "jahr": 2010,
+          "gipfel": 0.0067,
+          "ergebnis": {
+            "bisher": {
+              "offen": false,
+              "schritt": 134,
+              "grund": "Ende der Ernte",
+              "rendite": -0.1999,
+              "vergleich": -0.0512,
+              "vorsprung": -0.1487
+            },
+            "zeit": {
+              "offen": false,
+              "schritt": 60,
+              "grund": "Haltedauer",
+              "rendite": -0.1566,
+              "vergleich": -0.0576,
+              "vorsprung": -0.099
+            },
+            "ziel": {
+              "offen": false,
+              "schritt": 126,
+              "grund": "Haltedauer",
+              "rendite": -0.2274,
+              "vergleich": -0.0412,
+              "vorsprung": -0.1862
+            },
+            "nachlauf": {
+              "offen": false,
+              "schritt": 55,
+              "grund": "nachgezogene Grenze",
+              "rendite": -0.1543,
+              "vergleich": -0.0818,
+              "vorsprung": -0.0725
+            },
+            "kombi": {
+              "offen": false,
+              "schritt": 55,
+              "grund": "Verlustgrenze",
+              "rendite": -0.1543,
+              "vergleich": -0.0818,
+              "vorsprung": -0.0725
+            }
+          }
+        },
+        {
+          "name": "Select Harvests",
+          "ticker": "SHV.AX",
+          "datum": "2012-03-12",
+          "jahr": 2012,
+          "gipfel": 0.0312,
+          "ergebnis": {
+            "bisher": {
+              "offen": false,
+              "schritt": 141,
+              "grund": "Ende der Ernte",
+              "rendite": -0.2813,
+              "vergleich": 0.0457,
+              "vorsprung": -0.327
+            },
+            "zeit": {
+              "offen": false,
+              "schritt": 60,
+              "grund": "Haltedauer",
+              "rendite": -0.15,
+              "vergleich": -0.021,
+              "vorsprung": -0.129
+            },
+            "ziel": {
+              "offen": false,
+              "schritt": 126,
+              "grund": "Haltedauer",
+              "rendite": -0.2625,
+              "vergleich": 0.0327,
+              "vorsprung": -0.2952
+            },
+            "nachlauf": {
+              "offen": false,
+              "schritt": 30,
+              "grund": "nachgezogene Grenze",
+              "rendite": -0.1437,
+              "vergleich": 0.0425,
+              "vorsprung": -0.1862
+            },
+            "kombi": {
+              "offen": false,
+              "schritt": 40,
+              "grund": "Verlustgrenze",
+              "rendite": -0.15,
+              "vergleich": 0.0236,
+              "vorsprung": -0.1736
+            }
+          }
+        },
+        {
+          "name": "Select Harvests",
+          "ticker": "SHV.AX",
+          "datum": "2013-03-20",
+          "jahr": 2013,
+          "gipfel": 0.729,
+          "ergebnis": {
+            "bisher": {
+              "offen": false,
+              "schritt": 134,
+              "grund": "Ende der Ernte",
+              "rendite": 0.7328,
+              "vergleich": 0.0506,
+              "vorsprung": 0.6822
+            },
+            "zeit": {
+              "offen": false,
+              "schritt": 60,
+              "grund": "Haltedauer",
+              "rendite": 0.1985,
+              "vergleich": -0.0308,
+              "vorsprung": 0.2293
+            },
+            "ziel": {
+              "offen": false,
+              "schritt": 22,
+              "grund": "Gewinnziel",
+              "rendite": 0.2214,
+              "vergleich": 0.0098,
+              "vorsprung": 0.2116
+            },
+            "nachlauf": {
+              "offen": false,
+              "schritt": 10,
+              "grund": "nachgezogene Grenze",
+              "rendite": -0.0458,
+              "vergleich": -0.0153,
+              "vorsprung": -0.0305
+            },
+            "kombi": {
+              "offen": false,
+              "schritt": 36,
+              "grund": "nachgezogene Grenze",
+              "rendite": 0.1985,
+              "vergleich": 0.0511,
+              "vorsprung": 0.1474
+            }
+          }
+        },
+        {
+          "name": "Select Harvests",
+          "ticker": "SHV.AX",
+          "datum": "2014-03-31",
+          "jahr": 2014,
+          "gipfel": 0.0396,
+          "ergebnis": {
+            "bisher": {
+              "offen": false,
+              "schritt": 127,
+              "grund": "Ende der Ernte",
+              "rendite": -0.0563,
+              "vergleich": -0.0189,
+              "vorsprung": -0.0374
+            },
+            "zeit": {
+              "offen": false,
+              "schritt": 60,
+              "grund": "Haltedauer",
+              "rendite": -0.2161,
+              "vergleich": 0.0093,
+              "vorsprung": -0.2254
+            },
+            "ziel": {
+              "offen": false,
+              "schritt": 126,
+              "grund": "Haltedauer",
+              "rendite": -0.0411,
+              "vergleich": -0.0242,
+              "vorsprung": -0.0169
+            },
+            "nachlauf": {
+              "offen": false,
+              "schritt": 27,
+              "grund": "nachgezogene Grenze",
+              "rendite": -0.175,
+              "vergleich": 0.0099,
+              "vorsprung": -0.1849
+            },
+            "kombi": {
+              "offen": false,
+              "schritt": 27,
+              "grund": "Verlustgrenze",
+              "rendite": -0.175,
+              "vergleich": 0.0099,
+              "vorsprung": -0.1849
+            }
+          }
+        },
+        {
+          "name": "Select Harvests",
+          "ticker": "SHV.AX",
+          "datum": "2022-03-14",
+          "jahr": 2022,
+          "gipfel": 0.261,
+          "ergebnis": {
+            "bisher": {
+              "offen": false,
+              "schritt": 139,
+              "grund": "Ende der Ernte",
+              "rendite": 0.0096,
+              "vergleich": -0.0944,
+              "vorsprung": 0.104
+            },
+            "zeit": {
+              "offen": false,
+              "schritt": 60,
+              "grund": "Haltedauer",
+              "rendite": 0.096,
+              "vergleich": -0.0181,
+              "vorsprung": 0.1141
+            },
+            "ziel": {
+              "offen": false,
+              "schritt": 26,
+              "grund": "Gewinnziel",
+              "rendite": 0.238,
+              "vergleich": 0.062,
+              "vorsprung": 0.176
+            },
+            "nachlauf": {
+              "offen": false,
+              "schritt": 61,
+              "grund": "nachgezogene Grenze",
+              "rendite": 0.0633,
+              "vergleich": -0.0304,
+              "vorsprung": 0.0937
+            },
+            "kombi": {
+              "offen": false,
+              "schritt": 51,
+              "grund": "nachgezogene Grenze",
+              "rendite": 0.0806,
+              "vergleich": 0.0047,
+              "vorsprung": 0.0759
+            }
+          }
+        },
+        {
+          "name": "Select Harvests",
+          "ticker": "SHV.AX",
+          "datum": "2023-04-03",
+          "jahr": 2023,
+          "gipfel": 0.1449,
+          "ergebnis": {
+            "bisher": {
+              "offen": false,
+              "schritt": 126,
+              "grund": "Ende der Ernte",
+              "rendite": -0.0386,
+              "vergleich": -0.0263,
+              "vorsprung": -0.0123
+            },
+            "zeit": {
+              "offen": false,
+              "schritt": 60,
+              "grund": "Haltedauer",
+              "rendite": 0.0024,
+              "vergleich": -0.0027,
+              "vorsprung": 0.0051
+            },
+            "ziel": {
+              "offen": false,
+              "schritt": 126,
+              "grund": "Haltedauer",
+              "rendite": -0.0386,
+              "vergleich": -0.0263,
+              "vorsprung": -0.0123
+            },
+            "nachlauf": {
+              "offen": false,
+              "schritt": 110,
+              "grund": "nachgezogene Grenze",
+              "rendite": -0.0314,
+              "vergleich": -0.0092,
+              "vorsprung": -0.0222
+            },
+            "kombi": {
+              "offen": false,
+              "schritt": 126,
+              "grund": "Haltedauer",
+              "rendite": -0.0386,
+              "vergleich": -0.0263,
+              "vorsprung": -0.0123
+            }
+          }
+        }
+      ]
     },
     "ersatz_palladium": {
       "art": "ersatz",
@@ -1300,7 +1805,641 @@
       "ersatz": [
         "Platin-ETF"
       ],
-      "status": "Rückblick fehlt"
+      "status": "ok",
+      "faelle_gesamt": 11,
+      "verglichen": 10,
+      "offen": 1,
+      "massstab": "vorsprung",
+      "vorn": null,
+      "vorn_gleichauf": [
+        "bisher",
+        "zeit"
+      ],
+      "gipfel_mittel": 0.2149,
+      "varianten": [
+        {
+          "kennung": "bisher",
+          "name": "bisherige Regel: nach 180 Tagen",
+          "kurz": "Bisherige Regel, nach 180 Tagen",
+          "n": 10,
+          "mittel": 0.0006,
+          "median": -0.0514,
+          "vorsprung": -0.0796,
+          "im_plus": 3,
+          "schlechtester": -0.1864,
+          "bester": 0.6842,
+          "dauer": 123.9,
+          "gruende": {
+            "nach 180 Tagen": 10
+          }
+        },
+        {
+          "kennung": "zeit",
+          "name": "nach 120 Handelstagen",
+          "kurz": "Nach 120 Handelstagen",
+          "n": 10,
+          "mittel": -0.0042,
+          "median": -0.0478,
+          "vorsprung": -0.08,
+          "im_plus": 3,
+          "schlechtester": -0.1874,
+          "bester": 0.5783,
+          "dauer": 120,
+          "gruende": {
+            "Haltedauer": 10
+          }
+        },
+        {
+          "kennung": "ziel",
+          "name": "Gewinnziel 20 Prozent, spätestens nach 250 Handelstagen",
+          "kurz": "Gewinnziel 20 Prozent",
+          "n": 10,
+          "mittel": -0.0061,
+          "median": -0.0075,
+          "vorsprung": -0.1346,
+          "im_plus": 5,
+          "schlechtester": -0.251,
+          "bester": 0.2243,
+          "dauer": 225.7,
+          "gruende": {
+            "Haltedauer": 8,
+            "Gewinnziel": 2
+          }
+        },
+        {
+          "kennung": "nachlauf",
+          "name": "15 Prozent unter dem Höchststand, spätestens nach 250 Handelstagen",
+          "kurz": "Grenze 15 Prozent unter dem Höchststand",
+          "n": 10,
+          "mittel": 0.0394,
+          "median": -0.0456,
+          "vorsprung": -0.0884,
+          "im_plus": 4,
+          "schlechtester": -0.1573,
+          "bester": 0.5263,
+          "dauer": 148.1,
+          "gruende": {
+            "nachgezogene Grenze": 6,
+            "Haltedauer": 4
+          }
+        },
+        {
+          "kennung": "kombi",
+          "name": "Verlustgrenze 15 Prozent, ab 20 Prozent Gewinn 10 Prozent unter dem Höchststand, spätestens nach 250 Handelstagen",
+          "kurz": "Verlustgrenze 15 Prozent, ab 20 Prozent Gewinn Grenze 10 Prozent unter dem Höchststand",
+          "n": 10,
+          "mittel": 0.0014,
+          "median": -0.0694,
+          "vorsprung": -0.1008,
+          "im_plus": 4,
+          "schlechtester": -0.1646,
+          "bester": 0.4842,
+          "dauer": 151.9,
+          "gruende": {
+            "Haltedauer": 4,
+            "Verlustgrenze": 4,
+            "nachgezogene Grenze": 2
+          }
+        }
+      ],
+      "faelle": [
+        {
+          "name": "Platin-ETF",
+          "ticker": "PPLT",
+          "datum": "2010-04-23",
+          "jahr": 2010,
+          "gipfel": 0.0629,
+          "ergebnis": {
+            "bisher": {
+              "offen": false,
+              "schritt": 125,
+              "grund": "nach 180 Tagen",
+              "rendite": -0.0368,
+              "vergleich": 0.1602,
+              "vorsprung": -0.197
+            },
+            "zeit": {
+              "offen": false,
+              "schritt": 120,
+              "grund": "Haltedauer",
+              "rendite": -0.0227,
+              "vergleich": 0.1845,
+              "vorsprung": -0.2072
+            },
+            "ziel": {
+              "offen": false,
+              "schritt": 250,
+              "grund": "Haltedauer",
+              "rendite": 0.0112,
+              "vergleich": 0.2892,
+              "vorsprung": -0.278
+            },
+            "nachlauf": {
+              "offen": false,
+              "schritt": 250,
+              "grund": "Haltedauer",
+              "rendite": 0.0112,
+              "vergleich": 0.2892,
+              "vorsprung": -0.278
+            },
+            "kombi": {
+              "offen": false,
+              "schritt": 250,
+              "grund": "Haltedauer",
+              "rendite": 0.0112,
+              "vergleich": 0.2892,
+              "vorsprung": -0.278
+            }
+          }
+        },
+        {
+          "name": "Platin-ETF",
+          "ticker": "PPLT",
+          "datum": "2010-10-13",
+          "jahr": 2010,
+          "gipfel": 0.1132,
+          "ergebnis": {
+            "bisher": {
+              "offen": false,
+              "schritt": 124,
+              "grund": "nach 180 Tagen",
+              "rendite": 0.0423,
+              "vergleich": 0.0639,
+              "vorsprung": -0.0216
+            },
+            "zeit": {
+              "offen": false,
+              "schritt": 120,
+              "grund": "Haltedauer",
+              "rendite": 0.0473,
+              "vergleich": 0.0595,
+              "vorsprung": -0.0122
+            },
+            "ziel": {
+              "offen": false,
+              "schritt": 250,
+              "grund": "Haltedauer",
+              "rendite": -0.1126,
+              "vergleich": 0.2178,
+              "vorsprung": -0.3304
+            },
+            "nachlauf": {
+              "offen": false,
+              "schritt": 239,
+              "grund": "nachgezogene Grenze",
+              "rendite": -0.0649,
+              "vergleich": 0.1919,
+              "vorsprung": -0.2568
+            },
+            "kombi": {
+              "offen": false,
+              "schritt": 250,
+              "grund": "Haltedauer",
+              "rendite": -0.1126,
+              "vergleich": 0.2178,
+              "vorsprung": -0.3304
+            }
+          }
+        },
+        {
+          "name": "Platin-ETF",
+          "ticker": "PPLT",
+          "datum": "2013-05-20",
+          "jahr": 2013,
+          "gipfel": 0.0339,
+          "ergebnis": {
+            "bisher": {
+              "offen": false,
+              "schritt": 127,
+              "grund": "nach 180 Tagen",
+              "rendite": -0.0583,
+              "vergleich": -0.0904,
+              "vorsprung": 0.0321
+            },
+            "zeit": {
+              "offen": false,
+              "schritt": 120,
+              "grund": "Haltedauer",
+              "rendite": -0.0286,
+              "vergleich": -0.0663,
+              "vorsprung": 0.0377
+            },
+            "ziel": {
+              "offen": false,
+              "schritt": 250,
+              "grund": "Haltedauer",
+              "rendite": -0.0262,
+              "vergleich": -0.0786,
+              "vorsprung": 0.0524
+            },
+            "nachlauf": {
+              "offen": false,
+              "schritt": 250,
+              "grund": "Haltedauer",
+              "rendite": -0.0262,
+              "vergleich": -0.0786,
+              "vorsprung": 0.0524
+            },
+            "kombi": {
+              "offen": false,
+              "schritt": 250,
+              "grund": "Haltedauer",
+              "rendite": -0.0262,
+              "vergleich": -0.0786,
+              "vorsprung": 0.0524
+            }
+          }
+        },
+        {
+          "name": "Platin-ETF",
+          "ticker": "PPLT",
+          "datum": "2016-08-19",
+          "jahr": 2016,
+          "gipfel": -0.0095,
+          "ergebnis": {
+            "bisher": {
+              "offen": false,
+              "schritt": 123,
+              "grund": "nach 180 Tagen",
+              "rendite": -0.0969,
+              "vergleich": -0.0822,
+              "vorsprung": -0.0147
+            },
+            "zeit": {
+              "offen": false,
+              "schritt": 120,
+              "grund": "Haltedauer",
+              "rendite": -0.0958,
+              "vergleich": -0.081,
+              "vorsprung": -0.0148
+            },
+            "ziel": {
+              "offen": false,
+              "schritt": 250,
+              "grund": "Haltedauer",
+              "rendite": -0.1316,
+              "vergleich": -0.0428,
+              "vorsprung": -0.0888
+            },
+            "nachlauf": {
+              "offen": false,
+              "schritt": 36,
+              "grund": "nachgezogene Grenze",
+              "rendite": -0.1507,
+              "vergleich": -0.0658,
+              "vorsprung": -0.0849
+            },
+            "kombi": {
+              "offen": false,
+              "schritt": 36,
+              "grund": "Verlustgrenze",
+              "rendite": -0.1507,
+              "vergleich": -0.0658,
+              "vorsprung": -0.0849
+            }
+          }
+        },
+        {
+          "name": "Platin-ETF",
+          "ticker": "PPLT",
+          "datum": "2018-11-09",
+          "jahr": 2018,
+          "gipfel": 0.15,
+          "ergebnis": {
+            "bisher": {
+              "offen": false,
+              "schritt": 121,
+              "grund": "nach 180 Tagen",
+              "rendite": 0.0056,
+              "vergleich": 0.0562,
+              "vorsprung": -0.0506
+            },
+            "zeit": {
+              "offen": false,
+              "schritt": 120,
+              "grund": "Haltedauer",
+              "rendite": 0.0158,
+              "vergleich": 0.0588,
+              "vorsprung": -0.043
+            },
+            "ziel": {
+              "offen": false,
+              "schritt": 250,
+              "grund": "Haltedauer",
+              "rendite": 0.0323,
+              "vergleich": 0.2001,
+              "vorsprung": -0.1678
+            },
+            "nachlauf": {
+              "offen": false,
+              "schritt": 250,
+              "grund": "Haltedauer",
+              "rendite": 0.0323,
+              "vergleich": 0.2001,
+              "vorsprung": -0.1678
+            },
+            "kombi": {
+              "offen": false,
+              "schritt": 250,
+              "grund": "Haltedauer",
+              "rendite": 0.0323,
+              "vergleich": 0.2001,
+              "vorsprung": -0.1678
+            }
+          }
+        },
+        {
+          "name": "Platin-ETF",
+          "ticker": "PPLT",
+          "datum": "2020-01-17",
+          "jahr": 2020,
+          "gipfel": 0.092,
+          "ergebnis": {
+            "bisher": {
+              "offen": false,
+              "schritt": 123,
+              "grund": "nach 180 Tagen",
+              "rendite": -0.1864,
+              "vergleich": 0.1621,
+              "vorsprung": -0.3485
+            },
+            "zeit": {
+              "offen": false,
+              "schritt": 120,
+              "grund": "Haltedauer",
+              "rendite": -0.1874,
+              "vergleich": 0.1543,
+              "vorsprung": -0.3417
+            },
+            "ziel": {
+              "offen": false,
+              "schritt": 250,
+              "grund": "Haltedauer",
+              "rendite": 0.0899,
+              "vergleich": 0.1822,
+              "vorsprung": -0.0923
+            },
+            "nachlauf": {
+              "offen": false,
+              "schritt": 28,
+              "grund": "nachgezogene Grenze",
+              "rendite": -0.1573,
+              "vergleich": 0.0123,
+              "vorsprung": -0.1696
+            },
+            "kombi": {
+              "offen": false,
+              "schritt": 28,
+              "grund": "Verlustgrenze",
+              "rendite": -0.1573,
+              "vergleich": 0.0123,
+              "vorsprung": -0.1696
+            }
+          }
+        },
+        {
+          "name": "Platin-ETF",
+          "ticker": "PPLT",
+          "datum": "2021-04-28",
+          "jahr": 2021,
+          "gipfel": 0.0285,
+          "ergebnis": {
+            "bisher": {
+              "offen": false,
+              "schritt": 125,
+              "grund": "nach 180 Tagen",
+              "rendite": -0.1367,
+              "vergleich": 0.0121,
+              "vorsprung": -0.1488
+            },
+            "zeit": {
+              "offen": false,
+              "schritt": 120,
+              "grund": "Haltedauer",
+              "rendite": -0.1543,
+              "vergleich": -0.0119,
+              "vorsprung": -0.1424
+            },
+            "ziel": {
+              "offen": false,
+              "schritt": 250,
+              "grund": "Haltedauer",
+              "rendite": -0.251,
+              "vergleich": 0.0608,
+              "vorsprung": -0.3118
+            },
+            "nachlauf": {
+              "offen": false,
+              "schritt": 35,
+              "grund": "nachgezogene Grenze",
+              "rendite": -0.1286,
+              "vergleich": -0.0064,
+              "vorsprung": -0.1222
+            },
+            "kombi": {
+              "offen": false,
+              "schritt": 68,
+              "grund": "Verlustgrenze",
+              "rendite": -0.1646,
+              "vergleich": 0.0157,
+              "vorsprung": -0.1803
+            }
+          }
+        },
+        {
+          "name": "Platin-ETF",
+          "ticker": "PPLT",
+          "datum": "2022-02-24",
+          "jahr": 2022,
+          "gipfel": 0.0941,
+          "ergebnis": {
+            "bisher": {
+              "offen": false,
+              "schritt": 124,
+              "grund": "nach 180 Tagen",
+              "rendite": -0.1663,
+              "vergleich": -0.0811,
+              "vorsprung": -0.0852
+            },
+            "zeit": {
+              "offen": false,
+              "schritt": 120,
+              "grund": "Haltedauer",
+              "rendite": -0.1273,
+              "vergleich": -0.0722,
+              "vorsprung": -0.0551
+            },
+            "ziel": {
+              "offen": false,
+              "schritt": 250,
+              "grund": "Haltedauer",
+              "rendite": -0.1072,
+              "vergleich": -0.0427,
+              "vorsprung": -0.0645
+            },
+            "nachlauf": {
+              "offen": false,
+              "schritt": 28,
+              "grund": "nachgezogene Grenze",
+              "rendite": -0.0832,
+              "vergleich": 0.0119,
+              "vorsprung": -0.0951
+            },
+            "kombi": {
+              "offen": false,
+              "schritt": 87,
+              "grund": "Verlustgrenze",
+              "rendite": -0.1553,
+              "vergleich": -0.049,
+              "vorsprung": -0.1063
+            }
+          }
+        },
+        {
+          "name": "Platin-ETF",
+          "ticker": "PPLT",
+          "datum": "2024-10-28",
+          "jahr": 2024,
+          "gipfel": 0.6419,
+          "ergebnis": {
+            "bisher": {
+              "offen": false,
+              "schritt": 123,
+              "grund": "nach 180 Tagen",
+              "rendite": -0.0446,
+              "vergleich": 0.22,
+              "vorsprung": -0.2646
+            },
+            "zeit": {
+              "offen": false,
+              "schritt": 120,
+              "grund": "Haltedauer",
+              "rendite": -0.067,
+              "vergleich": 0.1986,
+              "vorsprung": -0.2656
+            },
+            "ziel": {
+              "offen": false,
+              "schritt": 154,
+              "grund": "Gewinnziel",
+              "rendite": 0.2101,
+              "vergleich": 0.2173,
+              "vorsprung": -0.0072
+            },
+            "nachlauf": {
+              "offen": false,
+              "schritt": 250,
+              "grund": "Haltedauer",
+              "rendite": 0.5263,
+              "vergleich": 0.4384,
+              "vorsprung": 0.0879
+            },
+            "kombi": {
+              "offen": false,
+              "schritt": 187,
+              "grund": "nachgezogene Grenze",
+              "rendite": 0.2529,
+              "vergleich": 0.188,
+              "vorsprung": 0.0649
+            }
+          }
+        },
+        {
+          "name": "Platin-ETF",
+          "ticker": "PPLT",
+          "datum": "2025-07-18",
+          "jahr": 2025,
+          "gipfel": 0.942,
+          "ergebnis": {
+            "bisher": {
+              "offen": false,
+              "schritt": 124,
+              "grund": "nach 180 Tagen",
+              "rendite": 0.6842,
+              "vergleich": 0.3812,
+              "vorsprung": 0.303
+            },
+            "zeit": {
+              "offen": false,
+              "schritt": 120,
+              "grund": "Haltedauer",
+              "rendite": 0.5783,
+              "vergleich": 0.3343,
+              "vorsprung": 0.244
+            },
+            "ziel": {
+              "offen": false,
+              "schritt": 103,
+              "grund": "Gewinnziel",
+              "rendite": 0.2243,
+              "vergleich": 0.2823,
+              "vorsprung": -0.058
+            },
+            "nachlauf": {
+              "offen": false,
+              "schritt": 115,
+              "grund": "nachgezogene Grenze",
+              "rendite": 0.4353,
+              "vergleich": 0.2851,
+              "vorsprung": 0.1502
+            },
+            "kombi": {
+              "offen": false,
+              "schritt": 113,
+              "grund": "nachgezogene Grenze",
+              "rendite": 0.4842,
+              "vergleich": 0.2925,
+              "vorsprung": 0.1917
+            }
+          }
+        },
+        {
+          "name": "Platin-ETF",
+          "ticker": "PPLT",
+          "datum": "2026-01-23",
+          "jahr": 2026,
+          "gipfel": -0.0218,
+          "ergebnis": {
+            "bisher": {
+              "offen": false,
+              "schritt": 123,
+              "grund": "nach 180 Tagen",
+              "rendite": -0.4101,
+              "vergleich": -0.1722,
+              "vorsprung": -0.2379
+            },
+            "zeit": {
+              "offen": false,
+              "schritt": 120,
+              "grund": "Haltedauer",
+              "rendite": -0.4252,
+              "vergleich": -0.1956,
+              "vorsprung": -0.2296
+            },
+            "ziel": {
+              "offen": true,
+              "schritt": 169,
+              "rendite": -0.3621
+            },
+            "nachlauf": {
+              "offen": false,
+              "schritt": 5,
+              "grund": "nachgezogene Grenze",
+              "rendite": -0.2268,
+              "vergleich": -0.0285,
+              "vorsprung": -0.1983
+            },
+            "kombi": {
+              "offen": false,
+              "schritt": 5,
+              "grund": "Verlustgrenze",
+              "rendite": -0.2268,
+              "vergleich": -0.0285,
+              "vorsprung": -0.1983
+            }
+          }
+        }
+      ]
     },
     "palmoel": {
       "art": "palmoel",

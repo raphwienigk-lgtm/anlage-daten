@@ -1,18 +1,18 @@
 {
-  "stand": "2026-09-26T23:15:02+02:00",
+  "stand": "2026-09-27T05:26:11+02:00",
   "version": "0.1.0",
   "hinweis": "Denkhilfe, keine Anlageberatung.",
   "woche": {
-    "von": "2026-09-20",
-    "bis": "2026-09-26"
+    "von": "2026-09-21",
+    "bis": "2026-09-27"
   },
   "laufkontrolle": {
-    "stand_datum": null,
-    "zustand": null,
+    "stand_datum": "2026-09-27",
+    "zustand": "in Ordnung",
     "hinweise": [],
     "betrieb_seit": "2026-09-27",
-    "tage_mit_lauf": 0,
-    "tage_gezaehlt": 0,
+    "tage_mit_lauf": 1,
+    "tage_gezaehlt": 1,
     "fehlende_tage": []
   },
   "weitere_laeufe": [
@@ -20,8 +20,8 @@
       "workflow": "metall",
       "name": "Metall China",
       "betrieb_seit": "2026-09-27",
-      "tage_mit_lauf": 0,
-      "tage_gezaehlt": 0,
+      "tage_mit_lauf": 1,
+      "tage_gezaehlt": 1,
       "fehlende_tage": []
     },
     {
@@ -36,8 +36,8 @@
       "workflow": "inlandspreise",
       "name": "Inlandspreise",
       "betrieb_seit": "2026-09-27",
-      "tage_mit_lauf": 0,
-      "tage_gezaehlt": 0,
+      "tage_mit_lauf": 1,
+      "tage_gezaehlt": 1,
       "fehlende_tage": []
     }
   ],
@@ -45,9 +45,19 @@
     "palmoel": {
       "name": "Palmöl",
       "ampel": {
-        "farbe": null,
-        "seit": null,
-        "wechsel": []
+        "farbe": "Gelb",
+        "zahl": 8,
+        "gesperrt": false,
+        "seit": "2026-09-27",
+        "wechsel": [
+          {
+            "tag": "2026-09-27",
+            "vorher": null,
+            "farbe": "Gelb",
+            "anlass": "Start",
+            "gesperrt": false
+          }
+        ]
       },
       "positionen": [],
       "signale": {
@@ -66,34 +76,34 @@
     "metall_china": {
       "art": "metall",
       "name": "Metall China-Ausfuhr",
-      "laeufe": 0,
+      "laeufe": 2,
       "achsen": {
         "chip": {
           "name": "Chip-Achse",
-          "jetzt": null,
-          "seit": null,
-          "seit_beginn": false,
+          "jetzt": "Grün",
+          "seit": "2026-09-26",
+          "seit_beginn": true,
           "wechsel": []
         },
         "magnet": {
           "name": "Magnet-Achse",
-          "jetzt": null,
-          "seit": null,
-          "seit_beginn": false,
+          "jetzt": "Grün",
+          "seit": "2026-09-26",
+          "seit_beginn": true,
           "wechsel": []
         },
         "batterie": {
           "name": "Batterie-Achse",
-          "jetzt": null,
-          "seit": null,
-          "seit_beginn": false,
+          "jetzt": "Gelb",
+          "seit": "2026-09-26",
+          "seit_beginn": true,
           "wechsel": []
         },
         "werkzeug": {
           "name": "Werkzeug-Achse",
-          "jetzt": null,
-          "seit": null,
-          "seit_beginn": false,
+          "jetzt": "Gelb",
+          "seit": "2026-09-26",
+          "seit_beginn": true,
           "wechsel": []
         }
       }
@@ -101,22 +111,22 @@
     "ersatz_haselnuss": {
       "art": "ersatz",
       "name": "Ersatz-Sensor Haselnuss",
-      "laeufe": 0,
+      "laeufe": 2,
       "vergleich": "australischer Aktienindex ASX 200",
-      "jetzt": null,
-      "seit": null,
-      "seit_beginn": false,
+      "jetzt": "Grün",
+      "seit": "2026-09-26",
+      "seit_beginn": true,
       "wechsel": [],
       "positionen": []
     },
     "ersatz_palladium": {
       "art": "ersatz",
       "name": "Ersatz-Sensor Palladium",
-      "laeufe": 0,
+      "laeufe": 2,
       "vergleich": "Gold-ETF",
-      "jetzt": null,
-      "seit": null,
-      "seit_beginn": false,
+      "jetzt": "Gelb",
+      "seit": "2026-09-26",
+      "seit_beginn": true,
       "wechsel": [],
       "positionen": []
     }

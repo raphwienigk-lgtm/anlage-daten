@@ -1,7 +1,7 @@
-Stand: 26.09.2026, 23:15
-Teil 1 von 1
+Stand: 27.09.2026, 05:26
+Teil 1 von 2
 
-Ausstiegsregeln im Vergleich, gerechnet am Samstag, dem sechsundzwanzigsten September. Das System sagt, wann sich ein Blick lohnt. Hier steht, wann man jeweils wieder ausgestiegen wäre: wenige, vorher festgelegte Regeln an denselben Fällen wie im Rückblick. Gemessen wird bis zum Ausstieg; verglichen werden nur Fälle, die unter allen Regeln schon abgeschlossen sind.
+Ausstiegsregeln im Vergleich, gerechnet am Sonntag, dem siebenundzwanzigsten September. Das System sagt, wann sich ein Blick lohnt. Hier steht, wann man jeweils wieder ausgestiegen wäre: wenige, vorher festgelegte Regeln an denselben Fällen wie im Rückblick. Gemessen wird bis zum Ausstieg; verglichen werden nur Fälle, die unter allen Regeln schon abgeschlossen sind.
 
 Metall China-Ausfuhr. Einstieg: Schlusskurs am ersten Handelstag ab der Ankündigung, bei jeder Verschärfung auf der eigenen Achse. Vergleich: Metall- und Bergbau-Aktien USA. Gewinnziel und Grenzen schließen spätestens nach sechs Monaten.
 
@@ -11,10 +11,6 @@ Magnet-Achse mit Lynas Rare Earths und MP Materials: vierzehn Fälle. Zwei sind 
 
 Ersatz Haselnuss. Einstieg: Schlusskurs am ersten Handelstag nach der ersten Frostnacht, in jedem Frostjahr. Vergleich: australischer Aktienindex ASX zweihundert. Gewinnziel und Grenzen schließen spätestens nach sechs Monaten.
 
-Ersatz Haselnuss: noch keine auswertbaren Fälle.
+Ersatz Haselnuss: zehn Fälle. Im Mittel bis zum Ausstieg. Bisherige Regel, bis zum Ende der Ernte: plus sechzehn Prozent, gegen den Vergleich vierzehn Prozentpunkte vorn, sechs von zehn im Plus, gehalten einhundertvierunddreißig Handelstage, schlechtester Fall minus achtundzwanzig Prozent. Nach sechzig Handelstagen: plus ein Prozent, gegen den Vergleich ein Prozentpunkt vorn, fünf von zehn im Plus, gehalten sechzig Handelstage, schlechtester Fall minus zweiundzwanzig Prozent. Gewinnziel zwanzig Prozent: plus acht Prozent, gegen den Vergleich sechs Prozentpunkte vorn, sechs von zehn im Plus, gehalten vierundneunzig Handelstage, schlechtester Fall minus sechsundzwanzig Prozent. Grenze fünfzehn Prozent unter dem Höchststand: plus zehn Prozent, gegen den Vergleich acht Prozentpunkte vorn, fünf von zehn im Plus, gehalten achtzig Handelstage, schlechtester Fall minus achtzehn Prozent. Verlustgrenze fünfzehn Prozent, ab zwanzig Prozent Gewinn Grenze zehn Prozent unter dem Höchststand: plus neun Prozent, gegen den Vergleich sieben Prozentpunkte vorn, sechs von zehn im Plus, gehalten neunundsiebzig Handelstage, schlechtester Fall minus achtzehn Prozent. Vorn beim Vorsprung: Bisherige Regel, bis zum Ende der Ernte. Der beste denkbare Ausstieg hätte im Mittel plus neunundzwanzig Prozent gebracht; den trifft keine Regel.
 
-Ersatz Palladium: folgt, sobald der erste Rückblick gelaufen ist.
-
-Palmöl: folgt, sobald der erste Rückblick gelaufen ist.
-
-Überall gilt noch die bisherige Regel. Welche gilt, legst du fest; dann baue ich sie ins Schattendepot ein. Das ist eine Denkhilfe, keine Anlageberatung.
+Ersatz Palladium. Einstieg: Schlusskurs des Platin-ETF am ersten Handelstag nach jedem Signal am Palladium. Vergleich: Gold-ETF. Gewinnziel und Grenzen schließen spätestens nach einem Jahr.
