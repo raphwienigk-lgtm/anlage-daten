@@ -116,7 +116,7 @@ gegenseite:
     - {behoerde: "industry-and-security-bureau"}                  # BIS: Ausfuhrkontrollen, Sperrliste, 232-Untersuchungen
     - {behoerde: "trade-representative-office-of-united-states"}  # USTR: Zölle nach Abschnitt 301
     - {behoerde: "commerce-department", arten: ["Rule", "Proposed Rule"]}
-    - {behoerde: "international-trade-administration", titel_enthaelt: ["People's Republic of China"]}   # Antidumping- und Ausgleichszölle
+    - {behoerde: "international-trade-administration", titel_enthaelt: ["People's Republic of China"], titel_nennt_achse: true}   # Antidumping- und Ausgleichszölle, nur wenn der Titel das Metall nennt
   ausschluss_titel: ["Advisory Committee", "Meeting"]
   suchwoerter:                  # welche englischen Wörter auf welche Achse zeigen (für „critical mineral“)
     chip: [gallium, germanium, antimony, semiconductor]

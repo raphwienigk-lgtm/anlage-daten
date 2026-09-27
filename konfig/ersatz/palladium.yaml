@@ -20,8 +20,9 @@ vergleich: {ticker: GLD, name: "Gold-ETF", akkusativ: "den Gold-ETF"}
 sensor:
   art: preisabstand
   ersatz_name: Platin          # Metall des Ersatzes, für den Vorlesetext
-  original_ticker: PALL       # physisch hinterlegtes Palladium; beide ETFs starteten 2010 mit einer Zehntelunze je Anteil,
-                              # das Verhältnis der Anteilspreise entspricht deshalb ungefähr dem der Metallpreise
+  original_ticker: PA=F       # Palladium-Terminkontrakt (Dollar je Unze) für Sprung und Verhältnis
+  verhaeltnis_ticker: PL=F    # Platin-Terminkontrakt; die bereinigten ETF-Kurse taugen dafür nicht: Ihr Verhältnis
+                              # liegt etwa beim Doppelten des Metallverhältnisses (erster Lauf 26.09.2026)
   anstieg_tage: 60            # Palladium steigt binnen 60 Handelstagen …
   anstieg_ab: 0.30            # … um mindestens 30 Prozent: Sprung
   verhaeltnis_ab: 1.0         # Palladium wird teurer als Platin: ab hier lohnt die Umstellung

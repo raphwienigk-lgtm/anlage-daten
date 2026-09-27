@@ -250,9 +250,11 @@ def lauf_preis(k: dict, heute: date, zeitpunkt: datetime, holen) -> dict:
     o = ordner(k["kennung"])
     alt = speicher.lies_json(o / "stand.json", None)
     status: dict[str, dict] = {}
-    reihen = _kurse(k, o, holen, status, [s["original_ticker"]])
+    weitere = [s["original_ticker"]] + ([s["verhaeltnis_ticker"]] if s.get("verhaeltnis_ticker") else [])
+    reihen = _kurse(k, o, holen, status, weitere)
     original = reihen.get(s["original_ticker"]) or []
-    ersatz_reihe = reihen.get(k["ersatz"][0]["ticker"]) or []
+    # Das Verhältnis braucht Preise je Unze beider Metalle; ohne eigenen Ticker nimmt es den Ersatz selbst.
+    ersatz_reihe = reihen.get(s.get("verhaeltnis_ticker") or k["ersatz"][0]["ticker"]) or []
     liste = preis.signale(original, ersatz_reihe, s)
     jetzt = preis.lage(original, ersatz_reihe, s)
     preise = _preisproben(k, reihen, heute)

@@ -12,7 +12,7 @@ Urteile bei Claude.** Hier wird gerechnet, nicht entschieden und nichts gekauft.
 
 > **Achtung, öffentlich:** Das Repository ist öffentlich, damit Claude die Dateien ohne
 > Schlüssel lesen kann. Hier gehören keine Depotstände, Kaufkurse oder persönlichen
-> Daten hinein. Die bleiben beim Cloud-Bewerter.
+> Daten hinein. Die bleiben in der Cloud (später beim Depot-Agenten).
 
 ---
 
@@ -70,8 +70,9 @@ Ab dann läuft der tägliche Lauf von selbst um **02:30 UTC** (04:30 Uhr Sommerz
 03:30 Uhr Winterzeit). GitHub startet geplante Läufe manchmal bis zu einer halben
 Stunde später. Schlägt ein Lauf fehl, schickt GitHub eine Mail.
 
-**Sonntag** (im Chat mit Claude): Cloud-Bewerter als Zeitplan einrichten, den Abholer um
-`anlage-teil-N.md` erweitern, Stichwort „Anlagen“.
+**In der Cloud** holt der Wächter Agrarrohstoffe (alle drei Stunden, seit 27.09.2026; vorher
+Meldungs-Wächter und Anlage-Bewerter) die Ergebnisse ab, sobald ein neuer Stand da ist, legt
+ein Mail-Veto darüber und schreibt den Bericht ins Projekt, Stichwort „Anlagen“.
 
 ---
 
@@ -85,9 +86,9 @@ Stunde später. Schlägt ein Lauf fehl, schickt GitHub eine Mail.
 | `konfig/quellen.yaml` | Adressen der Datenquellen |
 | `konfig/handeingaben.yaml` | Werte ohne Schnittstelle, z. B. die Dipol-Vorhersage des BOM |
 | `konfig/veto.yaml` | Politik-Veto: sperren, hochstufen, herabstufen |
-| `konfig/veto_regeln.yaml` | Regeltabelle, nach der der Meldungs-Wächter ein Veto setzen darf |
+| `konfig/veto_regeln.yaml` | Regeltabelle, nach der der Wächter Agrarrohstoffe ein Veto setzen darf |
 | `konfig/kalender.yaml` | große Marktberichte (MPOB um den 10. des Monats) |
-| `daten/stand.json` | alles in Zahlen, für den Cloud-Bewerter |
+| `daten/stand.json` | alles in Zahlen, für den Wächter Agrarrohstoffe in der Cloud |
 | `daten/signale.jsonl` | Logbuch: jeder Farbwechsel mit Grund und Kursen; Rot = Schattenkauf |
 | `daten/preise/` | Preisarchiv je Aktie und Gegenkraft, FRED-Monatspreise |
 | `daten/klima/` | Normal 1991–2020 (`regen.json`, `wind.json`) und Messarchiv |
@@ -288,11 +289,12 @@ ist nicht handelbar; wird sie knapp, weichen die Hersteller auf Mandeln aus. Sel
 
 Beide Metalle sitzen im Autokatalysator und sind dort austauschbar. Wird Palladium zu teuer
 (etwa weil Lieferungen aus Russland ausfallen), stellen die Hersteller auf Platin um. Hier sind
-beide handelbar; der Sensor ist der Preis des Originals (Palladium-ETF PALL), gekauft würde der
-Platin-ETF PPLT, Vergleichsmaßstab ist der Gold-ETF GLD.
+beide handelbar; der Sensor ist der Preis des Originals (Terminkontrakte PA=F und PL=F, Dollar je
+Unze), gekauft würde der Platin-ETF PPLT, Vergleichsmaßstab ist der Gold-ETF GLD. Die bereinigten ETF-Kurse
+taugen nicht für das Verhältnis: Ihr Verhältnis liegt etwa beim Doppelten des Metallverhältnisses.
 
 - **Signal:** Palladium steigt binnen 60 Handelstagen um mindestens 30 Prozent (Sprung), oder es
-  wird teurer als Platin (Verhältnis der Anteilspreise über 1). Nach einem Signal zählt das nächste
+  wird teurer als Platin (Verhältnis der Preise je Unze über 1). Nach einem Signal zählt das nächste
   erst nach 120 Handelstagen.
 - **Stufe:** Gelb 180 Tage nach einem Signal und solange Palladium teurer ist als Platin; Rot nur bei
   einem höchstens 30 Tage alten Signal, bestandenem Rückblick und schlafendem Markt.

@@ -92,6 +92,23 @@ def test_gegenseite_gewicht_und_achsen():
     assert nach["2026-3"]["achsen"] == ["batterie"] and not nach["2026-3"]["gewichtig"]
 
 
+def test_antidumping_nur_wenn_der_titel_das_metall_nennt():
+    """Erster echter Lauf am 26.09.2026: Bleistifte, Bremstrommeln und Stahlrohre aus China setzten Gelb."""
+    k = metall.lade("china")
+    ita = ["commerce-department", "international-trade-administration"]
+
+    def dok(nr, titel):
+        return {"nummer": nr, "titel": titel, "datum": "2026-09-20", "art": "Notice", "behoerden": ita, "zusammenfassung": ""}
+    d = rechnen.gegenseite({
+        "graphite": [dok("a", "Large Diameter Graphite Electrodes From the People's Republic of China: Preliminary Determination"),
+                     dok("b", "Certain Brake Drums From the People's Republic of China: Preliminary Affirmative Determination"),
+                     dok("c", "Certain Cased Pencils From the People's Republic of China: Preliminary Results")],
+        "tungsten": [dok("d", "Light-Walled Rectangular Pipe and Tube From the People's Republic of China, Mexico")],
+    }, k["gegenseite"])
+    gewicht = {x["nummer"]: x["gewichtig"] for x in d}
+    assert gewicht == {"a": True, "b": False, "c": False, "d": False}
+
+
 # ------------------------------------------------------------------ Ganzer Lauf
 CHIP_VERSCHAERFUNG = [date(2023, 7, 3), date(2024, 8, 15), date(2024, 12, 3)]
 CHIP_LOCKERUNG = [date(2025, 10, 30), date(2025, 11, 10)]

@@ -35,7 +35,7 @@ def falsche_kurse(ticker: str, zeitraum: str):
     tage = _tage(date(2010, 1, 4), date(2027, 3, 26))
     if ticker == "GLD":
         return _reihe([(d, 180.0) for d in tage])
-    if ticker == "PALL":
+    if ticker == "PA=F":
         werte, stand = [], 50.0
         for d in tage:
             for beginn, von, bis in RAMPEN:
@@ -44,7 +44,7 @@ def falsche_kurse(ticker: str, zeitraum: str):
                     stand = von + (bis - von) * i / 20
             werte.append((d, stand))
         return _reihe(werte)
-    if ticker == "PPLT":
+    if ticker in ("PPLT", "PL=F"):
         spruenge = [beginn + timedelta(days=42) for beginn, _, _ in RAMPEN[:3]]
         return _reihe([(d, 150.0 * 1.25 ** sum(1 for s in spruenge if d >= s)) for d in tage])
     raise AssertionError(ticker)
@@ -108,3 +108,13 @@ def test_main_laeuft_alle_sensoren(ablage, monkeypatch):
     monkeypatch.setattr(ersatz, "lauf", lambda kennung, *a, **k: aufgerufen.append(kennung) or (_ for _ in ()).throw(RuntimeError("Test")))
     assert ersatz.main(["--heute", "2026-09-27"]) == 1                    # beide abgebrochen: Fehler
     assert aufgerufen == ["haselnuss", "palladium"]
+
+
+def test_verhaeltnis_aus_den_metallpreisen_nicht_aus_den_etf(ablage):
+    """Erster echter Lauf: Das Verhältnis der bereinigten ETF-Kurse lag beim Doppelten des Metallverhältnisses
+    und zeigte Palladium fälschlich teurer als Platin."""
+    tage = _tage(date(2025, 1, 2), date(2026, 9, 25))
+    werte = {"PA=F": 1200.0, "PL=F": 1500.0, "PPLT": 15.0, "GLD": 380.0}
+    holen = lambda ticker, zeitraum: _reihe([(d, werte[ticker]) for d in tage])
+    stand = ersatz.lauf("palladium", date(2026, 9, 25), datetime(2026, 9, 25, 4, 7, tzinfo=konfig.ZEITZONE), holen=holen)
+    assert stand["lage"]["verhaeltnis"] == 0.8 and stand["stufe"] == "Grün"

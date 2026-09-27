@@ -60,7 +60,7 @@ def fristen(liste: list[dict], heute: date, gelb_ab: int) -> list[dict]:
 
 
 # ------------------------------------------------------------------ Gegenseite
-def _gewichtig(d: dict, regeln: list[dict], ausschluss: list[str]) -> bool:
+def _gewichtig(d: dict, regeln: list[dict], ausschluss: list[str], suchwoerter: dict | None = None) -> bool:
     titel = (d.get("titel") or "").lower()
     if any(w.lower() in titel for w in ausschluss or []):
         return False
@@ -72,6 +72,11 @@ def _gewichtig(d: dict, regeln: list[dict], ausschluss: list[str]) -> bool:
         if "arten" in r and d.get("art") not in r["arten"]:
             continue
         if "titel_enthaelt" in r and not any(w.lower() in titel for w in r["titel_enthaelt"]):
+            continue
+        # Der Titel selbst muss das Metall der Achse nennen: Die Volltextsuche findet „graphite“ sonst auch in
+        # Bleistiften und Bremstrommeln, „tungsten“ in Stahlrohren (erster Lauf mit der Antidumping-Regel, 26.09.2026).
+        if r.get("titel_nennt_achse") and not any(w.lower() in titel for a in d.get("achsen") or []
+                                                  for w in (suchwoerter or {}).get(a, [])):
             continue
         return True
     return False
@@ -92,7 +97,7 @@ def gegenseite(treffer: dict[str, list[dict]], g: dict, bekannt: set[str] | None
                 if a not in eintrag["achsen"]:
                     eintrag["achsen"].append(a)
     for e in alle.values():
-        e["gewichtig"] = _gewichtig(e, g.get("gewichtig") or [], g.get("ausschluss_titel") or [])
+        e["gewichtig"] = _gewichtig(e, g.get("gewichtig") or [], g.get("ausschluss_titel") or [], g.get("suchwoerter"))
         e["neu"] = bekannt is not None and e["nummer"] not in bekannt
     return sorted(alle.values(), key=lambda e: (e.get("datum") or "", e["nummer"]), reverse=True)
 
