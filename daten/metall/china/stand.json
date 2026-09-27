@@ -1,5 +1,5 @@
 {
-  "stand": "2026-09-27T01:23:23+02:00",
+  "stand": "2026-09-27T19:19:15+02:00",
   "datum": "2026-09-27",
   "version": "0.1.0",
   "land": "china",
@@ -9,10 +9,10 @@
   "hinweis": "Denkhilfe, keine Anlageberatung. Rot setzt nur der Metall-Wächter in der Cloud.",
   "zustand": "in Ordnung",
   "reihenfolge": [
-    "werkzeug",
     "batterie",
     "chip",
-    "magnet"
+    "magnet",
+    "werkzeug"
   ],
   "achsen": {
     "chip": {
@@ -91,18 +91,6 @@
           "nummer": "2026-19518",
           "datum": "2026-09-24",
           "titel": "Large Diameter Graphite Electrodes From the People's Republic of China: Preliminary Affirmative Critical Circumstances Determination in Countervailing Duty Investigation"
-        },
-        {
-          "kanal": "gegenseite",
-          "nummer": "2026-19372",
-          "datum": "2026-09-22",
-          "titel": "Certain Brake Drums From the People's Republic of China: Preliminary Affirmative Determination of Circumvention of the Antidumping Duty and Countervailing Duty Orders"
-        },
-        {
-          "kanal": "gegenseite",
-          "nummer": "2026-18496",
-          "datum": "2026-09-10",
-          "titel": "Certain Cased Pencils From the People's Republic of China: Preliminary Results of Antidumping Duty Administrative Review; 2024-2025"
         }
       ],
       "kanaele": [
@@ -124,23 +112,20 @@
         }
       ],
       "wucht": 0.64,
-      "stufe": "Gelb",
-      "gruende": [
-        {
-          "kanal": "gegenseite",
-          "nummer": "2026-17772",
-          "datum": "2026-09-01",
-          "titel": "Light-Walled Rectangular Pipe and Tube From the People's Republic of China, Mexico, the Republic of Korea, and the Republic of Türkiye: Continuation of Antidumping Duty Orders and Countervailing Duty Order"
-        }
-      ],
-      "kanaele": [
-        "gegenseite"
-      ],
+      "stufe": "Grün",
+      "gruende": [],
+      "kanaele": [],
       "mehrfach": false,
       "instrumente": []
     }
   },
-  "wechsel": [],
+  "wechsel": [
+    {
+      "achse": "werkzeug",
+      "vorher": "Gelb",
+      "jetzt": "Grün"
+    }
+  ],
   "fristen": [
     {
       "kennung": "aussetzung_okt2025",
@@ -249,7 +234,7 @@
         "achsen": [
           "batterie"
         ],
-        "gewichtig": true,
+        "gewichtig": false,
         "neu": false
       },
       {
@@ -441,7 +426,7 @@
         "achsen": [
           "batterie"
         ],
-        "gewichtig": true,
+        "gewichtig": false,
         "neu": false
       },
       {
@@ -513,44 +498,44 @@
         "achsen": [
           "werkzeug"
         ],
-        "gewichtig": true,
+        "gewichtig": false,
         "neu": false
       }
     ]
   },
   "stoerung": {
     "erdbeben": [],
-    "erdbeben_gesamt": 8,
+    "erdbeben_gesamt": 9,
     "starkregen_gemessen": [],
     "starkregen_vorhergesagt": [],
     "regen_hoechst_mm": {
-      "lengshuijiang": 16.2,
-      "hechi": 36.0,
-      "lincang": 15.8,
-      "qujing": 10.8,
-      "pingguo": 19.8,
-      "zibo": 0.7,
-      "baotou": 2.8,
-      "ganzhou": 11.7,
+      "lengshuijiang": 21.0,
+      "hechi": 24.3,
+      "lincang": 26.4,
+      "qujing": 19.8,
+      "pingguo": 19.5,
+      "zibo": 1.0,
+      "baotou": 4.8,
+      "ganzhou": 9.0,
       "jixi": 9.9
     },
     "trocken": {
       "lincang": {
-        "von": "2026-06-23",
-        "bis": "2026-09-20",
-        "summe_mm": 820,
-        "normal_mm": 783,
+        "von": "2026-06-24",
+        "bis": "2026-09-21",
+        "summe_mm": 818,
+        "normal_mm": 782,
         "urteil": "normal",
         "anteil": 1.05,
         "trocken": false
       },
       "qujing": {
-        "von": "2026-06-23",
-        "bis": "2026-09-20",
-        "summe_mm": 579,
-        "normal_mm": 543,
+        "von": "2026-06-24",
+        "bis": "2026-09-21",
+        "summe_mm": 572,
+        "normal_mm": 539,
         "urteil": "normal",
-        "anteil": 1.07,
+        "anteil": 1.06,
         "trocken": false
       }
     },
