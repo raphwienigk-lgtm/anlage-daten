@@ -1,6 +1,6 @@
 {
-  "stand": "2026-09-27T04:02:34+02:00",
-  "datum": "2026-09-27",
+  "stand": "2026-09-28T04:02:52+02:00",
+  "datum": "2026-09-28",
   "version": "0.1.0",
   "hinweis": "Denkhilfe, keine Anlageberatung. Frühzeichen, nicht am Rückblick geprüft.",
   "reihen": {
@@ -12,16 +12,16 @@
       "einheit": "Rupiah",
       "rolle": "fruehzeichen",
       "status": "ok",
-      "werte": 2260,
+      "werte": 2261,
       "letzter": {
-        "datum": "2026-09-25",
-        "wert": 20400.0
+        "datum": "2026-09-28",
+        "wert": 20100.0
       },
-      "alter_tage": 2,
+      "alter_tage": 0,
       "art": "täglich",
-      "mittel_jetzt": 20427.5,
-      "mittel_damals": 20585.0,
-      "veraenderung": -0.0077,
+      "mittel_jetzt": 20410.0,
+      "mittel_damals": 20582.5,
+      "veraenderung": -0.0084,
       "urteil": "ruhig"
     },
     "speiseoel_id_marke": {
@@ -32,16 +32,16 @@
       "einheit": "Rupiah",
       "rolle": "fruehzeichen",
       "status": "ok",
-      "werte": 2263,
+      "werte": 2264,
       "letzter": {
-        "datum": "2026-09-25",
-        "wert": 24350.0
+        "datum": "2026-09-28",
+        "wert": 25800.0
       },
-      "alter_tage": 2,
+      "alter_tage": 0,
       "art": "täglich",
-      "mittel_jetzt": 24347.5,
-      "mittel_damals": 24207.5,
-      "veraenderung": 0.0058,
+      "mittel_jetzt": 24422.5,
+      "mittel_damals": 24215.0,
+      "veraenderung": 0.0086,
       "urteil": "ruhig"
     },
     "pflanzenoel_id_monat": {
@@ -57,7 +57,7 @@
         "datum": "2026-07-01",
         "wert": 21932.0
       },
-      "alter_tage": 88,
+      "alter_tage": 89,
       "art": "monatlich",
       "vergleich": {
         "datum": "2026-04-01",
@@ -79,7 +79,7 @@
         "datum": "2026-09-24",
         "wert": 4570.0
       },
-      "alter_tage": 3,
+      "alter_tage": 4,
       "art": "täglich",
       "mittel_jetzt": 4624.94,
       "mittel_damals": 4485.78,
