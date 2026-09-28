@@ -1,11 +1,9 @@
-Stand: 27.09.2026, 17:35
+Stand: 28.09.2026, 17:38
 Teil 1 von 1
 
 Das Kipppunkt-Register für das dritte Quartal zweitausendsechsundzwanzig. Es zeigt langsame Messreihen, an denen sich Grundannahmen über Anbauregionen verschieben können. Es schaltet keine Ampel und handelt nicht; bewertet wird gemeinsam im Quartal.
 
-Noch nicht alle Reihen sind gesammelt. Der Bericht wird in den nächsten Tagen ergänzt.
-
-Kaltfleck südlich von Grönland: Diesmal fehlen die Daten, die Quelle war nicht erreichbar oder hat ihr Format geändert.
+Kaltfleck südlich von Grönland. Kipppunkt: Umwälzströmung im Atlantik (AMOC). Betrifft Westafrika (Kakao), Sahel, Brasilien, Europa. Gemessen am Weltozean war das Meer dort in den fünf Jahren bis zweitausendfünfundzwanzig null Komma eins eins Grad wärmer als in der Vergleichszeit neunzehnhunderteinundfünfzig bis neunzehnhundertachtzig. Für sich allein betrachtet lag es null Komma acht sieben Grad über der Vergleichszeit. Über die letzten dreißig Jahre wird es dort gegenüber dem Weltozean um null Komma eins Grad je Jahrzehnt kühler. Die Trägheit der Reihe nach Abzug des Trends liegt in den letzten dreißig Jahren bei null Komma vier zwei, in den dreißig Jahren davor bei null Komma eins drei. Steigende Trägheit gilt in der Forschung als mögliches Frühzeichen eines Kipppunkts. Letzter Monatswert: August zweitausendsechsundzwanzig.
 
 Umwälzströmung bei sechsundzwanzigeinhalb Grad Nord (RAPID-Messkette). Kipppunkt: Umwälzströmung im Atlantik (AMOC). Betrifft Westafrika (Kakao), Sahel, Brasilien, Europa. Die Messkette misst seit April zweitausendvier; ein Sverdrup ist eine Million Kubikmeter Wasser je Sekunde. In den ersten vier Jahren lag die Strömung im Mittel bei achtzehn Komma sieben Sverdrup, in den letzten zwölf Monaten bis März zweitausendvierundzwanzig bei sechzehn Komma vier Sverdrup. Über die ganze Reihe nimmt die Strömung um null Komma neun Sverdrup je Jahrzehnt ab. Die Messkette veröffentlicht mit ein bis zwei Jahren Verzögerung.
 
@@ -21,8 +19,6 @@ Süden von Minas Gerais. Kipppunkt: Temperaturfenster für Arabica wandert berga
 
 Giresun an der Schwarzmeerküste. Kipppunkt: Kältebedarf der Haselnuss. Betrifft Haselnuss. Wintertage von November bis Februar mit einem Tagesmittel bis sieben Grad: achtundzwanzig Tage im Winter bis Februar zweitausendsechsundzwanzig, im Mittel der letzten zehn Jahre zweiunddreißig, in der Zeit von neunzehnhundertzweiundachtzig bis zweitausendelf im Mittel vierundfünfzig, Trend minus acht Komma neun Tage je Jahrzehnt.
 
-Modesto im kalifornischen Längstal. Kipppunkt: Kältebedarf der Mandel. Betrifft Mandel. Die Reihe wird noch geladen, bisher bis Dezember neunzehnhundertneunundneunzig; die Werte folgen, sobald sie vollständig ist.
-
-Bei den Temperatur- und Regenreihen fehlen noch Jahre; sie werden an den nächsten Tagen nachgeladen.
+Modesto im kalifornischen Längstal. Kipppunkt: Kältebedarf der Mandel. Betrifft Mandel. Wintertage von November bis Februar mit einem Tagesmittel bis sieben Grad: dreiundzwanzig Tage im Winter bis Februar zweitausendsechsundzwanzig, im Mittel der letzten zehn Jahre zwölf, in der Zeit von neunzehnhundertzweiundachtzig bis zweitausendelf im Mittel einundzwanzig, Trend minus eins Komma eins Tage je Jahrzehnt.
 
 Bewertet wird gemeinsam im Quartal. Das ist eine Denkhilfe, keine Anlageberatung.

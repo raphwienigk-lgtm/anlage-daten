@@ -1,15 +1,15 @@
 {
   "quartal": "2026-Q3",
-  "offen": true,
-  "versuche": 3,
+  "offen": false,
+  "versuche": 4,
   "versuche_quartal": "2026-Q3",
-  "letzter_lauf": "2026-09-27T17:35:09+02:00",
+  "letzter_lauf": "2026-09-28T17:38:31+02:00",
   "status": {
-    "kaltfleck": "Fehler",
+    "kaltfleck": "ok",
     "amoc": "ok",
     "el_nino": "ok",
     "sierra_schnee": "ok",
     "amazonas_braende": "ok",
-    "punkte": "unvollständig"
+    "punkte": "ok"
   }
 }
