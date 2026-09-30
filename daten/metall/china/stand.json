@@ -1,6 +1,6 @@
 {
-  "stand": "2026-09-30T01:24:15+02:00",
-  "datum": "2026-09-30",
+  "stand": "2026-10-01T01:24:55+02:00",
+  "datum": "2026-10-01",
   "version": "0.1.0",
   "land": "china",
   "name": "China-Ausfuhr",
@@ -88,6 +88,12 @@
       "gruende": [
         {
           "kanal": "gegenseite",
+          "nummer": "2026-20030",
+          "datum": "2026-09-30",
+          "titel": "Large Diameter Graphite Electrodes From the People's Republic of China: Preliminary Affirmative Determination of Sales at Less Than Fair Value and Preliminary Affirmative Determination of Critical Circumstances"
+        },
+        {
+          "kanal": "gegenseite",
           "nummer": "2026-19518",
           "datum": "2026-09-24",
           "titel": "Large Diameter Graphite Electrodes From the People's Republic of China: Preliminary Affirmative Critical Circumstances Determination in Countervailing Duty Investigation"
@@ -132,7 +138,7 @@
       "bis": "2026-11-10",
       "urspruenglich_bis": "2026-11-10",
       "verlaengert": false,
-      "tage": 41,
+      "tage": 40,
       "zustand": "läuft",
       "gelb": false,
       "rot_pruefen": false,
@@ -148,7 +154,7 @@
       "bis": "2026-11-27",
       "urspruenglich_bis": "2026-11-27",
       "verlaengert": false,
-      "tage": 58,
+      "tage": 57,
       "zustand": "läuft",
       "gelb": false,
       "rot_pruefen": false,
@@ -159,6 +165,54 @@
     "herkunft": "frisch",
     "tage": 30,
     "dokumente": [
+      {
+        "nummer": "2026-20031",
+        "titel": "Large Diameter Graphite Electrodes From India: Preliminary Affirmative Determination of Sales at Less-Than-Fair-Value, Preliminary Affirmative Determination of Critical Circumstances, Postponement of Final Determination, and Extension of Provisional Measures",
+        "datum": "2026-09-30",
+        "art": "Notice",
+        "behoerden": [
+          "commerce-department",
+          "international-trade-administration"
+        ],
+        "behoerden_namen": [
+          "Commerce Department",
+          "International Trade Administration"
+        ],
+        "url": "https://www.federalregister.gov/documents/2026/09/30/2026-20031/large-diameter-graphite-electrodes-from-india-preliminary-affirmative-determination-of-sales-at",
+        "zusammenfassung": "The U.S. Department of Commerce (Commerce) preliminarily determines that large diameter graphite electrodes (large graphite electrodes) from India are being, or are likely to be, sold in the United States at less-than-fair-value (LTFV). The period of investigation (POI) is January 1, 2025, through December 31, 2025. Interested parties are invited to comment on this preliminary determination.",
+        "begriffe": [
+          "graphite"
+        ],
+        "achsen": [
+          "batterie"
+        ],
+        "gewichtig": false,
+        "neu": true
+      },
+      {
+        "nummer": "2026-20030",
+        "titel": "Large Diameter Graphite Electrodes From the People's Republic of China: Preliminary Affirmative Determination of Sales at Less Than Fair Value and Preliminary Affirmative Determination of Critical Circumstances",
+        "datum": "2026-09-30",
+        "art": "Notice",
+        "behoerden": [
+          "commerce-department",
+          "international-trade-administration"
+        ],
+        "behoerden_namen": [
+          "Commerce Department",
+          "International Trade Administration"
+        ],
+        "url": "https://www.federalregister.gov/documents/2026/09/30/2026-20030/large-diameter-graphite-electrodes-from-the-peoples-republic-of-china-preliminary-affirmative",
+        "zusammenfassung": "The U.S. Department of Commerce (Commerce) preliminarily determines that large diameter graphite electrodes (LDGE) from the People's Republic of China (China) are being, or are likely to be, sold in the United States at less than fair value (LTFV). The period of investigation (POI) is July 1, 2025, through December 31, 2025. Interested parties are invited to comment on this preliminary determination.",
+        "begriffe": [
+          "graphite"
+        ],
+        "achsen": [
+          "batterie"
+        ],
+        "gewichtig": true,
+        "neu": true
+      },
       {
         "nummer": "2026-19591",
         "titel": "Foreign-Trade Zone (FTZ) 272, Notification of Proposed Production Activity; Infinera Corporation; (Telecommunications Devices); Allentown, Pennsylvania",
@@ -499,37 +553,37 @@
   },
   "stoerung": {
     "erdbeben": [],
-    "erdbeben_gesamt": 8,
+    "erdbeben_gesamt": 9,
     "starkregen_gemessen": [],
     "starkregen_vorhergesagt": [],
     "regen_hoechst_mm": {
-      "lengshuijiang": 20.8,
-      "hechi": 21.9,
-      "lincang": 11.9,
-      "qujing": 17.7,
-      "pingguo": 5.4,
-      "zibo": 1.2,
-      "baotou": 2.8,
-      "ganzhou": 12.6,
-      "jixi": 9.9
+      "lengshuijiang": 36.3,
+      "hechi": 33.7,
+      "lincang": 16.8,
+      "qujing": 26.8,
+      "pingguo": 13.1,
+      "zibo": 1.7,
+      "baotou": 3.7,
+      "ganzhou": 15.8,
+      "jixi": 12.6
     },
     "trocken": {
       "lincang": {
-        "von": "2026-06-26",
-        "bis": "2026-09-23",
-        "summe_mm": 816,
-        "normal_mm": 781,
+        "von": "2026-06-27",
+        "bis": "2026-09-24",
+        "summe_mm": 799,
+        "normal_mm": 779,
         "urteil": "normal",
-        "anteil": 1.04,
+        "anteil": 1.03,
         "trocken": false
       },
       "qujing": {
-        "von": "2026-06-26",
-        "bis": "2026-09-23",
-        "summe_mm": 519,
-        "normal_mm": 527,
+        "von": "2026-06-27",
+        "bis": "2026-09-24",
+        "summe_mm": 508,
+        "normal_mm": 523,
         "urteil": "normal",
-        "anteil": 0.98,
+        "anteil": 0.97,
         "trocken": false
       }
     },
@@ -542,13 +596,13 @@
       "rolle": "kandidat",
       "hinweis": "Antimon-Projekt Stibnite in Idaho, noch ohne Förderung",
       "waehrung": "USD",
-      "letzter": "2026-09-29",
-      "schluss": 21.53,
+      "letzter": "2026-09-30",
+      "schluss": 21.57,
       "alter_tage": 1,
-      "r_kurz": -0.1305,
-      "vorsprung_kurz": -0.0586,
-      "r_lang": -0.1367,
-      "vorsprung_lang": -0.0163,
+      "r_kurz": -0.075,
+      "vorsprung_kurz": -0.0201,
+      "r_lang": -0.0821,
+      "vorsprung_lang": 0.0233,
       "urteil": "schläft",
       "markt_schlaeft": true,
       "handel": 23136556,
@@ -560,16 +614,16 @@
       "rolle": "kandidat",
       "hinweis": "kleiner Antimon-Verarbeiter in den USA und Mexiko",
       "waehrung": "USD",
-      "letzter": "2026-09-29",
-      "schluss": 4.18,
+      "letzter": "2026-09-30",
+      "schluss": 4.17,
       "alter_tage": 1,
-      "r_kurz": -0.1292,
-      "vorsprung_kurz": -0.0573,
-      "r_lang": -0.1417,
-      "vorsprung_lang": -0.0212,
+      "r_kurz": -0.0935,
+      "vorsprung_kurz": -0.0385,
+      "r_lang": -0.109,
+      "vorsprung_lang": -0.0035,
       "urteil": "schläft",
       "markt_schlaeft": true,
-      "handel": 29147079,
+      "handel": 29073181,
       "duenn": false
     },
     "MP": {
@@ -578,16 +632,16 @@
       "rolle": "beobachtung",
       "hinweis": "seltene Erden USA; seit 22.06.2026 selbst auf Chinas Exportkontrollliste",
       "waehrung": "USD",
-      "letzter": "2026-09-29",
-      "schluss": 45.43,
+      "letzter": "2026-09-30",
+      "schluss": 47.29,
       "alter_tage": 1,
-      "r_kurz": -0.1099,
-      "vorsprung_kurz": -0.0381,
-      "r_lang": -0.1702,
-      "vorsprung_lang": -0.0498,
+      "r_kurz": -0.0327,
+      "vorsprung_kurz": 0.0222,
+      "r_lang": -0.12,
+      "vorsprung_lang": -0.0146,
       "urteil": "schläft",
       "markt_schlaeft": true,
-      "handel": 286993790,
+      "handel": 285889350,
       "duenn": false
     },
     "LYC.AX": {
@@ -596,16 +650,16 @@
       "rolle": "beobachtung",
       "hinweis": "größter Produzent seltener Erden außerhalb Chinas",
       "waehrung": "AUD",
-      "letzter": "2026-09-29",
-      "schluss": 13.64,
+      "letzter": "2026-09-30",
+      "schluss": 13.83,
       "alter_tage": 1,
-      "r_kurz": -0.06,
-      "vorsprung_kurz": 0.0119,
-      "r_lang": -0.1194,
-      "vorsprung_lang": 0.001,
+      "r_kurz": -0.0573,
+      "vorsprung_kurz": -0.0023,
+      "r_lang": -0.0853,
+      "vorsprung_lang": 0.0202,
       "urteil": "schläft",
       "markt_schlaeft": true,
-      "handel": 51085956,
+      "handel": 50265346,
       "duenn": false
     }
   },
