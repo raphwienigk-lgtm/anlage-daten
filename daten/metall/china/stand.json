@@ -1,6 +1,6 @@
 {
-  "stand": "2026-10-01T01:24:55+02:00",
-  "datum": "2026-10-01",
+  "stand": "2026-10-02T01:24:03+02:00",
+  "datum": "2026-10-02",
   "version": "0.1.0",
   "land": "china",
   "name": "China-Ausfuhr",
@@ -138,7 +138,7 @@
       "bis": "2026-11-10",
       "urspruenglich_bis": "2026-11-10",
       "verlaengert": false,
-      "tage": 40,
+      "tage": 39,
       "zustand": "läuft",
       "gelb": false,
       "rot_pruefen": false,
@@ -154,7 +154,7 @@
       "bis": "2026-11-27",
       "urspruenglich_bis": "2026-11-27",
       "verlaengert": false,
-      "tage": 57,
+      "tage": 56,
       "zustand": "läuft",
       "gelb": false,
       "rot_pruefen": false,
@@ -165,6 +165,30 @@
     "herkunft": "frisch",
     "tage": 30,
     "dokumente": [
+      {
+        "nummer": "2026-20162",
+        "titel": "Large Diameter Graphite Electrodes From India: Preliminary Affirmative Critical Circumstances Determination in Countervailing Duty Investigation",
+        "datum": "2026-10-01",
+        "art": "Notice",
+        "behoerden": [
+          "commerce-department",
+          "international-trade-administration"
+        ],
+        "behoerden_namen": [
+          "Commerce Department",
+          "International Trade Administration"
+        ],
+        "url": "https://www.federalregister.gov/documents/2026/10/01/2026-20162/large-diameter-graphite-electrodes-from-india-preliminary-affirmative-critical-circumstances",
+        "zusammenfassung": "The U.S. Department of Commerce (Commerce) preliminarily determines that critical circumstances exist with respect to imports of large diameter graphite electrodes (large graphite electrodes) from India. The period of investigation is January 1, 2025, through December 31, 2025. Interested parties are invited to comment on this preliminary determination of critical circumstances.",
+        "begriffe": [
+          "graphite"
+        ],
+        "achsen": [
+          "batterie"
+        ],
+        "gewichtig": false,
+        "neu": true
+      },
       {
         "nummer": "2026-20031",
         "titel": "Large Diameter Graphite Electrodes From India: Preliminary Affirmative Determination of Sales at Less-Than-Fair-Value, Preliminary Affirmative Determination of Critical Circumstances, Postponement of Final Determination, and Extension of Provisional Measures",
@@ -187,7 +211,7 @@
           "batterie"
         ],
         "gewichtig": false,
-        "neu": true
+        "neu": false
       },
       {
         "nummer": "2026-20030",
@@ -211,7 +235,7 @@
           "batterie"
         ],
         "gewichtig": true,
-        "neu": true
+        "neu": false
       },
       {
         "nummer": "2026-19591",
@@ -476,96 +500,24 @@
         ],
         "gewichtig": false,
         "neu": false
-      },
-      {
-        "nummer": "2026-17819",
-        "titel": "Perfluoroalkoxy Alkane From India: Initiation of Less-Than-Fair-Value Investigation",
-        "datum": "2026-09-01",
-        "art": "Notice",
-        "behoerden": [
-          "commerce-department",
-          "international-trade-administration"
-        ],
-        "behoerden_namen": [
-          "Commerce Department",
-          "International Trade Administration"
-        ],
-        "url": "https://www.federalregister.gov/documents/2026/09/01/2026-17819/perfluoroalkoxy-alkane-from-india-initiation-of-less-than-fair-value-investigation",
-        "zusammenfassung": "",
-        "begriffe": [
-          "graphite"
-        ],
-        "achsen": [
-          "batterie"
-        ],
-        "gewichtig": false,
-        "neu": false
-      },
-      {
-        "nummer": "2026-17817",
-        "titel": "Perfluoroalkoxy Alkane From India: Initiation of Countervailing Duty Investigation",
-        "datum": "2026-09-01",
-        "art": "Notice",
-        "behoerden": [
-          "commerce-department",
-          "international-trade-administration"
-        ],
-        "behoerden_namen": [
-          "Commerce Department",
-          "International Trade Administration"
-        ],
-        "url": "https://www.federalregister.gov/documents/2026/09/01/2026-17817/perfluoroalkoxy-alkane-from-india-initiation-of-countervailing-duty-investigation",
-        "zusammenfassung": "",
-        "begriffe": [
-          "graphite"
-        ],
-        "achsen": [
-          "batterie"
-        ],
-        "gewichtig": false,
-        "neu": false
-      },
-      {
-        "nummer": "2026-17772",
-        "titel": "Light-Walled Rectangular Pipe and Tube From the People's Republic of China, Mexico, the Republic of Korea, and the Republic of Türkiye: Continuation of Antidumping Duty Orders and Countervailing Duty Order",
-        "datum": "2026-09-01",
-        "art": "Notice",
-        "behoerden": [
-          "commerce-department",
-          "international-trade-administration"
-        ],
-        "behoerden_namen": [
-          "Commerce Department",
-          "International Trade Administration"
-        ],
-        "url": "https://www.federalregister.gov/documents/2026/09/01/2026-17772/light-walled-rectangular-pipe-and-tube-from-the-peoples-republic-of-china-mexico-the-republic-of",
-        "zusammenfassung": "As a result of the determinations by the U.S. Department of Commerce (Commerce) and the U.S. International Trade Commission (ITC) that revocation of the antidumping duty (AD) orders and countervailing duty (CVD) order on light-walled rectangular pipe and tube (light- walled pipe and tube) from the People's Republic of China (China) (AD/ CVD), Mexico (AD), the Republic of Korea (Korea) (AD) and the Republic of T[uuml]rkiye (T[uuml]rkiye) (AD) would likely lead to the continuation or recurrence of dumping, countervailable subsidies, and material injury to an industry in the United States, Commer",
-        "begriffe": [
-          "tungsten"
-        ],
-        "achsen": [
-          "werkzeug"
-        ],
-        "gewichtig": false,
-        "neu": false
       }
     ]
   },
   "stoerung": {
     "erdbeben": [],
-    "erdbeben_gesamt": 9,
+    "erdbeben_gesamt": 8,
     "starkregen_gemessen": [],
     "starkregen_vorhergesagt": [],
     "regen_hoechst_mm": {
-      "lengshuijiang": 36.3,
-      "hechi": 33.7,
-      "lincang": 16.8,
-      "qujing": 26.8,
-      "pingguo": 13.1,
+      "lengshuijiang": 28.5,
+      "hechi": 18.9,
+      "lincang": 11.7,
+      "qujing": 19.0,
+      "pingguo": 17.4,
       "zibo": 1.7,
-      "baotou": 3.7,
-      "ganzhou": 15.8,
-      "jixi": 12.6
+      "baotou": 2.8,
+      "ganzhou": 14.5,
+      "jixi": 27.1
     },
     "trocken": {
       "lincang": {
@@ -596,13 +548,13 @@
       "rolle": "kandidat",
       "hinweis": "Antimon-Projekt Stibnite in Idaho, noch ohne Förderung",
       "waehrung": "USD",
-      "letzter": "2026-09-30",
-      "schluss": 21.57,
+      "letzter": "2026-10-01",
+      "schluss": 20.93,
       "alter_tage": 1,
-      "r_kurz": -0.075,
-      "vorsprung_kurz": -0.0201,
-      "r_lang": -0.0821,
-      "vorsprung_lang": 0.0233,
+      "r_kurz": -0.1063,
+      "vorsprung_kurz": -0.0723,
+      "r_lang": -0.1447,
+      "vorsprung_lang": -0.0177,
       "urteil": "schläft",
       "markt_schlaeft": true,
       "handel": 23136556,
@@ -614,16 +566,16 @@
       "rolle": "kandidat",
       "hinweis": "kleiner Antimon-Verarbeiter in den USA und Mexiko",
       "waehrung": "USD",
-      "letzter": "2026-09-30",
-      "schluss": 4.17,
+      "letzter": "2026-10-01",
+      "schluss": 4.13,
       "alter_tage": 1,
-      "r_kurz": -0.0935,
-      "vorsprung_kurz": -0.0385,
-      "r_lang": -0.109,
-      "vorsprung_lang": -0.0035,
+      "r_kurz": -0.0963,
+      "vorsprung_kurz": -0.0623,
+      "r_lang": -0.2193,
+      "vorsprung_lang": -0.0923,
       "urteil": "schläft",
       "markt_schlaeft": true,
-      "handel": 29073181,
+      "handel": 29008258,
       "duenn": false
     },
     "MP": {
@@ -632,16 +584,16 @@
       "rolle": "beobachtung",
       "hinweis": "seltene Erden USA; seit 22.06.2026 selbst auf Chinas Exportkontrollliste",
       "waehrung": "USD",
-      "letzter": "2026-09-30",
-      "schluss": 47.29,
+      "letzter": "2026-10-01",
+      "schluss": 46.09,
       "alter_tage": 1,
-      "r_kurz": -0.0327,
-      "vorsprung_kurz": 0.0222,
-      "r_lang": -0.12,
-      "vorsprung_lang": -0.0146,
+      "r_kurz": -0.0651,
+      "vorsprung_kurz": -0.0311,
+      "r_lang": -0.1574,
+      "vorsprung_lang": -0.0304,
       "urteil": "schläft",
       "markt_schlaeft": true,
-      "handel": 285889350,
+      "handel": 286559000,
       "duenn": false
     },
     "LYC.AX": {
@@ -650,16 +602,16 @@
       "rolle": "beobachtung",
       "hinweis": "größter Produzent seltener Erden außerhalb Chinas",
       "waehrung": "AUD",
-      "letzter": "2026-09-30",
-      "schluss": 13.83,
+      "letzter": "2026-10-01",
+      "schluss": 12.64,
       "alter_tage": 1,
-      "r_kurz": -0.0573,
-      "vorsprung_kurz": -0.0023,
-      "r_lang": -0.0853,
-      "vorsprung_lang": 0.0202,
+      "r_kurz": -0.1216,
+      "vorsprung_kurz": -0.0876,
+      "r_lang": -0.1717,
+      "vorsprung_lang": -0.0447,
       "urteil": "schläft",
       "markt_schlaeft": true,
-      "handel": 50265346,
+      "handel": 51085956,
       "duenn": false
     }
   },
