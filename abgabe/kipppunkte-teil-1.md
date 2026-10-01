@@ -1,7 +1,7 @@
-Stand: 28.09.2026, 17:38
+Stand: 01.10.2026, 17:39
 Teil 1 von 1
 
-Das Kipppunkt-Register für das dritte Quartal zweitausendsechsundzwanzig. Es zeigt langsame Messreihen, an denen sich Grundannahmen über Anbauregionen verschieben können. Es schaltet keine Ampel und handelt nicht; bewertet wird gemeinsam im Quartal.
+Das Kipppunkt-Register für das vierte Quartal zweitausendsechsundzwanzig. Es zeigt langsame Messreihen, an denen sich Grundannahmen über Anbauregionen verschieben können. Es schaltet keine Ampel und handelt nicht; bewertet wird gemeinsam im Quartal.
 
 Kaltfleck südlich von Grönland. Kipppunkt: Umwälzströmung im Atlantik (AMOC). Betrifft Westafrika (Kakao), Sahel, Brasilien, Europa. Gemessen am Weltozean war das Meer dort in den fünf Jahren bis zweitausendfünfundzwanzig null Komma eins eins Grad wärmer als in der Vergleichszeit neunzehnhunderteinundfünfzig bis neunzehnhundertachtzig. Für sich allein betrachtet lag es null Komma acht sieben Grad über der Vergleichszeit. Über die letzten dreißig Jahre wird es dort gegenüber dem Weltozean um null Komma eins Grad je Jahrzehnt kühler. Die Trägheit der Reihe nach Abzug des Trends liegt in den letzten dreißig Jahren bei null Komma vier zwei, in den dreißig Jahren davor bei null Komma eins drei. Steigende Trägheit gilt in der Forschung als mögliches Frühzeichen eines Kipppunkts. Letzter Monatswert: August zweitausendsechsundzwanzig.
 
