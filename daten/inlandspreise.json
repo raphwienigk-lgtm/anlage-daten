@@ -1,6 +1,6 @@
 {
-  "stand": "2026-09-30T04:03:31+02:00",
-  "datum": "2026-09-30",
+  "stand": "2026-10-01T04:03:40+02:00",
+  "datum": "2026-10-01",
   "version": "0.1.0",
   "hinweis": "Denkhilfe, keine Anlageberatung. Frühzeichen, nicht am Rückblick geprüft.",
   "reihen": {
@@ -12,16 +12,16 @@
       "einheit": "Rupiah",
       "rolle": "fruehzeichen",
       "status": "ok",
-      "werte": 2263,
+      "werte": 2264,
       "letzter": {
-        "datum": "2026-09-30",
-        "wert": 21100.0
+        "datum": "2026-10-01",
+        "wert": 20100.0
       },
       "alter_tage": 0,
       "art": "täglich",
-      "mittel_jetzt": 20455.0,
-      "mittel_damals": 20577.5,
-      "veraenderung": -0.006,
+      "mittel_jetzt": 20405.0,
+      "mittel_damals": 20575.0,
+      "veraenderung": -0.0083,
       "urteil": "ruhig"
     },
     "speiseoel_id_marke": {
@@ -32,16 +32,16 @@
       "einheit": "Rupiah",
       "rolle": "fruehzeichen",
       "status": "ok",
-      "werte": 2266,
+      "werte": 2267,
       "letzter": {
-        "datum": "2026-09-30",
-        "wert": 26100.0
+        "datum": "2026-10-01",
+        "wert": 24450.0
       },
       "alter_tage": 0,
       "art": "täglich",
-      "mittel_jetzt": 24437.5,
-      "mittel_damals": 24225.0,
-      "veraenderung": 0.0088,
+      "mittel_jetzt": 24352.5,
+      "mittel_damals": 24227.5,
+      "veraenderung": 0.0052,
       "urteil": "ruhig"
     },
     "pflanzenoel_id_monat": {
@@ -52,18 +52,18 @@
       "einheit": "Rupiah je Liter",
       "rolle": "ersatz",
       "status": "ok",
-      "werte": 69,
+      "werte": 70,
       "letzter": {
-        "datum": "2026-07-01",
-        "wert": 21932.0
+        "datum": "2026-08-01",
+        "wert": 21781.0
       },
-      "alter_tage": 91,
+      "alter_tage": 61,
       "art": "monatlich",
       "vergleich": {
-        "datum": "2026-04-01",
-        "wert": 21027.0
+        "datum": "2026-05-01",
+        "wert": 21653.0
       },
-      "veraenderung": 0.043,
+      "veraenderung": 0.0059,
       "urteil": "ruhig"
     },
     "cpo_my_tag": {
@@ -74,16 +74,16 @@
       "einheit": "Ringgit je Tonne",
       "rolle": "tagespreis",
       "status": "ok",
-      "werte": 418,
+      "werte": 419,
       "letzter": {
-        "datum": "2026-09-28",
-        "wert": 4474.0
+        "datum": "2026-09-29",
+        "wert": 4443.0
       },
       "alter_tage": 2,
       "art": "täglich",
-      "mittel_jetzt": 4609.87,
-      "mittel_damals": 4482.19,
-      "veraenderung": 0.0285,
+      "mittel_jetzt": 4598.34,
+      "mittel_damals": 4484.83,
+      "veraenderung": 0.0253,
       "urteil": "ruhig"
     }
   },
