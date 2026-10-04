@@ -1,6 +1,6 @@
 {
-  "stand": "2026-10-03T04:46:45+02:00",
-  "datum": "2026-10-03",
+  "stand": "2026-10-04T06:16:10+02:00",
+  "datum": "2026-10-04",
   "version": "0.1.0",
   "hinweis": "Denkhilfe, keine Anlageberatung. Score und Schwellen sind vorläufig, bis das Backtesting steht.",
   "zustand": "in Ordnung",
@@ -9,7 +9,7 @@
     "oni": {
       "name": "NOAA CPC · El-Niño-Index (ONI)",
       "status": "ok",
-      "stand": "JJA 2026",
+      "stand": "JAS 2026",
       "meldung": null
     },
     "dmi": {
@@ -21,7 +21,7 @@
     "regen": {
       "name": "Open-Meteo Regen",
       "status": "ok",
-      "stand": "2026-10-01",
+      "stand": "2026-10-02",
       "meldung": null
     },
     "wind": {
@@ -76,13 +76,13 @@
   "klima": {
     "enso": {
       "aktuell": {
-        "jahreszeit": "JJA",
+        "jahreszeit": "JAS",
         "jahr": 2026,
-        "monat": 7,
-        "wert": 1.8
+        "monat": 8,
+        "wert": 2.16
       },
       "phase": "El Niño",
-      "staerke_text": "stark",
+      "staerke_text": "sehr stark",
       "episode": {
         "beginn": {
           "jahreszeit": "AMJ",
@@ -95,18 +95,18 @@
         "bis": null,
         "laeuft": true,
         "beginnend": true,
-        "laenge_jahreszeiten": 3,
+        "laenge_jahreszeiten": 4,
         "hoehepunkt": {
-          "jahreszeit": "JJA",
+          "jahreszeit": "JAS",
           "jahr": 2026,
-          "monat": 7,
-          "wert": 1.8
+          "monat": 8,
+          "wert": 2.16
         },
         "hoehepunkt_bestaetigt": false,
         "monate_seit_hoehepunkt": null
       },
       "neue_erwaermung": null,
-      "staerke": 0.9,
+      "staerke": 1.0,
       "stufe1": true
     },
     "dipol": {
@@ -160,44 +160,44 @@
           "aktuell": {
             "status": "gemessen",
             "an": true,
-            "anteil": 0.473,
+            "anteil": 0.412,
             "zeitraum_tage": 90,
-            "bis": "2026-09-27",
+            "bis": "2026-09-28",
             "punkte": {
               "Riau, Sumatra": {
                 "tage": 90,
-                "summe_mm": 416.0,
-                "normal_mm": 457.2,
-                "anteil": 0.91,
-                "bis": "2026-09-27"
+                "summe_mm": 305.3,
+                "normal_mm": 462.5,
+                "anteil": 0.66,
+                "bis": "2026-09-28"
               },
               "Jambi, Sumatra": {
                 "tage": 90,
-                "summe_mm": 87.6,
-                "normal_mm": 375.2,
-                "anteil": 0.233,
-                "bis": "2026-09-27"
+                "summe_mm": 88.0,
+                "normal_mm": 376.5,
+                "anteil": 0.234,
+                "bis": "2026-09-28"
               },
               "Zentral-Kalimantan": {
                 "tage": 90,
-                "summe_mm": 28.2,
-                "normal_mm": 292.1,
-                "anteil": 0.097,
-                "bis": "2026-09-27"
+                "summe_mm": 27.7,
+                "normal_mm": 292.3,
+                "anteil": 0.095,
+                "bis": "2026-09-28"
               },
               "West-Kalimantan": {
                 "tage": 90,
-                "summe_mm": 220.5,
-                "normal_mm": 481.1,
-                "anteil": 0.458,
-                "bis": "2026-09-27"
+                "summe_mm": 215.5,
+                "normal_mm": 482.4,
+                "anteil": 0.447,
+                "bis": "2026-09-28"
               },
               "Sabah": {
                 "tage": 90,
-                "summe_mm": 316.7,
-                "normal_mm": 473.4,
-                "anteil": 0.669,
-                "bis": "2026-09-27"
+                "summe_mm": 294.1,
+                "normal_mm": 472.5,
+                "anteil": 0.622,
+                "bis": "2026-09-28"
               }
             },
             "fehlend": []
@@ -206,11 +206,11 @@
             "status": "gemessen",
             "an": true,
             "ab": "2026-05-16",
-            "bis": "2026-09-27",
+            "bis": "2026-09-28",
             "erster_trockener_tag": "2026-08-22",
-            "trockene_tage": 37,
-            "tiefster_anteil": 0.473,
-            "tiefster_tag": "2026-09-27"
+            "trockene_tage": 38,
+            "tiefster_anteil": 0.412,
+            "tiefster_tag": "2026-09-28"
           }
         },
         "west": {
@@ -263,7 +263,7 @@
       "rolle": "kandidat",
       "ampel": {
         "farbe": "Gelb",
-        "zahl": 8,
+        "zahl": 9,
         "gruende": [
           "Zeitfenster knapp: nein",
           "Markt schläft noch: nein",
@@ -295,7 +295,7 @@
         ],
         "farbe_rechnung": "Gelb",
         "gesperrt": false,
-        "anzeige": "Gelb, 8",
+        "anzeige": "Gelb, 9",
         "veto": [],
         "veto_fehler": []
       },
@@ -305,7 +305,7 @@
           "punkt": "Auslöser",
           "frage": "Wirkt ein El Niño?",
           "status": "ja",
-          "text": "El Niño läuft, bisher höchster Wert +1.8 (JJA 2026)"
+          "text": "El Niño läuft, bisher höchster Wert +2.2 (JAS 2026)"
         },
         {
           "nr": 2,
@@ -341,7 +341,7 @@
         "einzeln": {
           "brent": {
             "text": "Ölpreis (Brent)",
-            "veraenderung_3m": 0.43,
+            "veraenderung_3m": 0.424,
             "druck": 0.0
           },
           "sojaoel": {
@@ -364,8 +364,8 @@
         "einheit": "US-Dollar je Tonne"
       },
       "score": {
-        "wert": 0.122,
-        "zahl": 8,
+        "wert": 0.147,
+        "zahl": 9,
         "vorlaeufig": true,
         "fehlend": [],
         "ohne_zeitfenster": true
@@ -426,7 +426,7 @@
       ],
       "rueckblick": null,
       "inlandspreise": {
-        "datum": "2026-10-03",
+        "datum": "2026-10-04",
         "reihen": {
           "speiseoel_id_lose": {
             "rohstoff": "palmoel",
@@ -441,7 +441,7 @@
               "datum": "2026-10-02",
               "wert": 20300.0
             },
-            "alter_tage": 1,
+            "alter_tage": 2,
             "art": "täglich",
             "mittel_jetzt": 20412.5,
             "mittel_damals": 20572.5,
@@ -461,7 +461,7 @@
               "datum": "2026-10-02",
               "wert": 24350.0
             },
-            "alter_tage": 1,
+            "alter_tage": 2,
             "art": "täglich",
             "mittel_jetzt": 24347.5,
             "mittel_damals": 24230.0,
@@ -481,7 +481,7 @@
               "datum": "2026-08-01",
               "wert": 21781.0
             },
-            "alter_tage": 63,
+            "alter_tage": 64,
             "art": "monatlich",
             "vergleich": {
               "datum": "2026-05-01",
@@ -503,7 +503,7 @@
               "datum": "2026-10-01",
               "wert": 4390.5
             },
-            "alter_tage": 2,
+            "alter_tage": 3,
             "art": "täglich",
             "mittel_jetzt": 4572.97,
             "mittel_damals": 4485.97,
@@ -533,5 +533,5 @@
     }
   },
   "logbuch_neu": [],
-  "laufzeit_sekunden": 302.6
+  "laufzeit_sekunden": 255.9
 }
