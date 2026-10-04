@@ -1,6 +1,6 @@
 {
-  "stand": "2026-10-03T04:17:43+02:00",
-  "datum": "2026-10-03",
+  "stand": "2026-10-04T06:07:42+02:00",
+  "datum": "2026-10-04",
   "version": "0.1.0",
   "kennung": "palladium",
   "name": "Palladium",
@@ -40,15 +40,15 @@
   "gruende": [
     {
       "art": "ruhig",
-      "anstieg": -0.0737,
-      "verhaeltnis": 0.687
+      "anstieg": -0.0743,
+      "verhaeltnis": 0.69
     }
   ],
   "wechsel": null,
   "lage": {
     "datum": "2026-10-02",
-    "anstieg": -0.0737,
-    "verhaeltnis": 0.687
+    "anstieg": -0.0743,
+    "verhaeltnis": 0.69
   },
   "signale": [
     {
@@ -139,7 +139,7 @@
       "waehrung": "USD",
       "letzter": "2026-10-02",
       "schluss": 15.43,
-      "alter_tage": 1,
+      "alter_tage": 2,
       "r_kurz": -0.041,
       "vorsprung_kurz": -0.0073,
       "r_lang": -0.0643,

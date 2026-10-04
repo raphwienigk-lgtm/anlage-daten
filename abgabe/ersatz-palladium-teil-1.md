@@ -1,7 +1,7 @@
-Stand: 03.10.2026, 04:17
+Stand: 04.10.2026, 06:07
 Teil 1 von 1
 
-Der Ersatz-Sensor Palladium, Datenteil für Samstag, den dritten Oktober. Der Sensor schlägt beim Original aus, gekauft würde der Ersatz: Platin-ETF, physisch hinterlegtes Platin, in Dollar gehandelt. Das Original, Palladium: rund vierzig Prozent der Minenförderung aus Russland; im Benzin-Katalysator gegen Platin austauschbar. Hier sind beide handelbar; der Sensor ist der Preis des Originals.
+Der Ersatz-Sensor Palladium, Datenteil für Sonntag, den vierten Oktober. Der Sensor schlägt beim Original aus, gekauft würde der Ersatz: Platin-ETF, physisch hinterlegtes Platin, in Dollar gehandelt. Das Original, Palladium: rund vierzig Prozent der Minenförderung aus Russland; im Benzin-Katalysator gegen Platin austauschbar. Hier sind beide handelbar; der Sensor ist der Preis des Originals.
 
 Stufe Grün. Palladium ist in sechzig Handelstagen um sieben Prozent gefallen und kostet null Komma sechs neun mal so viel wie Platin.
 
