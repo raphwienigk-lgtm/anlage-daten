@@ -1,7 +1,7 @@
-Stand: 27.09.2026, 05:26
+Stand: 04.10.2026, 07:17
 Teil 1 von 2
 
-Ausstiegsregeln im Vergleich, gerechnet am Sonntag, dem siebenundzwanzigsten September. Das System sagt, wann sich ein Blick lohnt. Hier steht, wann man jeweils wieder ausgestiegen wäre: wenige, vorher festgelegte Regeln an denselben Fällen wie im Rückblick. Gemessen wird bis zum Ausstieg; verglichen werden nur Fälle, die unter allen Regeln schon abgeschlossen sind.
+Ausstiegsregeln im Vergleich, gerechnet am Sonntag, dem vierten Oktober. Das System sagt, wann sich ein Blick lohnt. Hier steht, wann man jeweils wieder ausgestiegen wäre: wenige, vorher festgelegte Regeln an denselben Fällen wie im Rückblick. Gemessen wird bis zum Ausstieg; verglichen werden nur Fälle, die unter allen Regeln schon abgeschlossen sind.
 
 Metall China-Ausfuhr. Einstieg: Schlusskurs am ersten Handelstag ab der Ankündigung, bei jeder Verschärfung auf der eigenen Achse. Vergleich: Metall- und Bergbau-Aktien USA. Gewinnziel und Grenzen schließen spätestens nach sechs Monaten.
 

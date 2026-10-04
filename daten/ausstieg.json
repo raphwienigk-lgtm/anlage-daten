@@ -1,6 +1,6 @@
 {
-  "stand": "2026-09-27T05:26:11+02:00",
-  "datum": "2026-09-27",
+  "stand": "2026-10-04T07:17:42+02:00",
+  "datum": "2026-10-04",
   "version": "0.1.0",
   "hinweis": "Denkhilfe, keine Anlageberatung. Welche Ausstiegsregel gilt, entscheidest du.",
   "gilt": {
@@ -734,8 +734,8 @@
                 },
                 "ziel": {
                   "offen": true,
-                  "schritt": 67,
-                  "rendite": -0.1901
+                  "schritt": 72,
+                  "rendite": -0.2209
                 },
                 "nachlauf": {
                   "offen": false,
@@ -1172,8 +1172,8 @@
                 },
                 "ziel": {
                   "offen": true,
-                  "schritt": 69,
-                  "rendite": -0.2363
+                  "schritt": 74,
+                  "rendite": -0.3045
                 },
                 "nachlauf": {
                   "offen": false,
@@ -1806,99 +1806,96 @@
         "Platin-ETF"
       ],
       "status": "ok",
-      "faelle_gesamt": 11,
-      "verglichen": 10,
-      "offen": 1,
+      "faelle_gesamt": 13,
+      "verglichen": 13,
+      "offen": 0,
       "massstab": "vorsprung",
-      "vorn": null,
-      "vorn_gleichauf": [
-        "bisher",
-        "zeit"
-      ],
-      "gipfel_mittel": 0.2149,
+      "vorn": "nachlauf",
+      "vorn_gleichauf": [],
+      "gipfel_mittel": 0.3105,
       "varianten": [
         {
           "kennung": "bisher",
           "name": "bisherige Regel: nach 180 Tagen",
           "kurz": "Bisherige Regel, nach 180 Tagen",
-          "n": 10,
-          "mittel": 0.0006,
-          "median": -0.0514,
-          "vorsprung": -0.0796,
-          "im_plus": 3,
-          "schlechtester": -0.1864,
-          "bester": 0.6842,
-          "dauer": 123.9,
+          "n": 13,
+          "mittel": 0.0338,
+          "median": 0.0056,
+          "vorsprung": -0.0413,
+          "im_plus": 7,
+          "schlechtester": -0.1663,
+          "bester": 0.6419,
+          "dauer": 123.8,
           "gruende": {
-            "nach 180 Tagen": 10
+            "nach 180 Tagen": 13
           }
         },
         {
           "kennung": "zeit",
           "name": "nach 120 Handelstagen",
           "kurz": "Nach 120 Handelstagen",
-          "n": 10,
-          "mittel": -0.0042,
-          "median": -0.0478,
-          "vorsprung": -0.08,
-          "im_plus": 3,
-          "schlechtester": -0.1874,
-          "bester": 0.5783,
+          "n": 13,
+          "mittel": 0.021,
+          "median": 0.0158,
+          "vorsprung": -0.0496,
+          "im_plus": 7,
+          "schlechtester": -0.186,
+          "bester": 0.5142,
           "dauer": 120,
           "gruende": {
-            "Haltedauer": 10
+            "Haltedauer": 13
           }
         },
         {
           "kennung": "ziel",
           "name": "Gewinnziel 20 Prozent, spätestens nach 250 Handelstagen",
           "kurz": "Gewinnziel 20 Prozent",
-          "n": 10,
-          "mittel": -0.0061,
-          "median": -0.0075,
-          "vorsprung": -0.1346,
-          "im_plus": 5,
+          "n": 13,
+          "mittel": 0.0141,
+          "median": 0.0266,
+          "vorsprung": -0.0918,
+          "im_plus": 7,
           "schlechtester": -0.251,
-          "bester": 0.2243,
-          "dauer": 225.7,
+          "bester": 0.2165,
+          "dauer": 198.2,
           "gruende": {
-            "Haltedauer": 8,
-            "Gewinnziel": 2
+            "Haltedauer": 9,
+            "Gewinnziel": 4
           }
         },
         {
           "kennung": "nachlauf",
           "name": "15 Prozent unter dem Höchststand, spätestens nach 250 Handelstagen",
           "kurz": "Grenze 15 Prozent unter dem Höchststand",
-          "n": 10,
-          "mittel": 0.0394,
-          "median": -0.0456,
-          "vorsprung": -0.0884,
-          "im_plus": 4,
-          "schlechtester": -0.1573,
-          "bester": 0.5263,
-          "dauer": 148.1,
+          "n": 13,
+          "mittel": 0.0866,
+          "median": -0.0685,
+          "vorsprung": -0.0282,
+          "im_plus": 6,
+          "schlechtester": -0.1637,
+          "bester": 1.0999,
+          "dauer": 133.2,
           "gruende": {
-            "nachgezogene Grenze": 6,
-            "Haltedauer": 4
+            "nachgezogene Grenze": 10,
+            "Haltedauer": 3
           }
         },
         {
           "kennung": "kombi",
           "name": "Verlustgrenze 15 Prozent, ab 20 Prozent Gewinn 10 Prozent unter dem Höchststand, spätestens nach 250 Handelstagen",
           "kurz": "Verlustgrenze 15 Prozent, ab 20 Prozent Gewinn Grenze 10 Prozent unter dem Höchststand",
-          "n": 10,
-          "mittel": 0.0014,
-          "median": -0.0694,
-          "vorsprung": -0.1008,
-          "im_plus": 4,
-          "schlechtester": -0.1646,
-          "bester": 0.4842,
-          "dauer": 151.9,
+          "n": 13,
+          "mittel": 0.0104,
+          "median": -0.1177,
+          "vorsprung": -0.0619,
+          "im_plus": 6,
+          "schlechtester": -0.1728,
+          "bester": 0.3776,
+          "dauer": 131,
           "gruende": {
-            "Haltedauer": 4,
-            "Verlustgrenze": 4,
-            "nachgezogene Grenze": 2
+            "Verlustgrenze": 6,
+            "nachgezogene Grenze": 4,
+            "Haltedauer": 3
           }
         }
       ],
@@ -1906,196 +1903,245 @@
         {
           "name": "Platin-ETF",
           "ticker": "PPLT",
-          "datum": "2010-04-23",
+          "datum": "2010-04-26",
           "jahr": 2010,
-          "gipfel": 0.0629,
-          "ergebnis": {
-            "bisher": {
-              "offen": false,
-              "schritt": 125,
-              "grund": "nach 180 Tagen",
-              "rendite": -0.0368,
-              "vergleich": 0.1602,
-              "vorsprung": -0.197
-            },
-            "zeit": {
-              "offen": false,
-              "schritt": 120,
-              "grund": "Haltedauer",
-              "rendite": -0.0227,
-              "vergleich": 0.1845,
-              "vorsprung": -0.2072
-            },
-            "ziel": {
-              "offen": false,
-              "schritt": 250,
-              "grund": "Haltedauer",
-              "rendite": 0.0112,
-              "vergleich": 0.2892,
-              "vorsprung": -0.278
-            },
-            "nachlauf": {
-              "offen": false,
-              "schritt": 250,
-              "grund": "Haltedauer",
-              "rendite": 0.0112,
-              "vergleich": 0.2892,
-              "vorsprung": -0.278
-            },
-            "kombi": {
-              "offen": false,
-              "schritt": 250,
-              "grund": "Haltedauer",
-              "rendite": 0.0112,
-              "vergleich": 0.2892,
-              "vorsprung": -0.278
-            }
-          }
-        },
-        {
-          "name": "Platin-ETF",
-          "ticker": "PPLT",
-          "datum": "2010-10-13",
-          "jahr": 2010,
-          "gipfel": 0.1132,
-          "ergebnis": {
-            "bisher": {
-              "offen": false,
-              "schritt": 124,
-              "grund": "nach 180 Tagen",
-              "rendite": 0.0423,
-              "vergleich": 0.0639,
-              "vorsprung": -0.0216
-            },
-            "zeit": {
-              "offen": false,
-              "schritt": 120,
-              "grund": "Haltedauer",
-              "rendite": 0.0473,
-              "vergleich": 0.0595,
-              "vorsprung": -0.0122
-            },
-            "ziel": {
-              "offen": false,
-              "schritt": 250,
-              "grund": "Haltedauer",
-              "rendite": -0.1126,
-              "vergleich": 0.2178,
-              "vorsprung": -0.3304
-            },
-            "nachlauf": {
-              "offen": false,
-              "schritt": 239,
-              "grund": "nachgezogene Grenze",
-              "rendite": -0.0649,
-              "vergleich": 0.1919,
-              "vorsprung": -0.2568
-            },
-            "kombi": {
-              "offen": false,
-              "schritt": 250,
-              "grund": "Haltedauer",
-              "rendite": -0.1126,
-              "vergleich": 0.2178,
-              "vorsprung": -0.3304
-            }
-          }
-        },
-        {
-          "name": "Platin-ETF",
-          "ticker": "PPLT",
-          "datum": "2013-05-20",
-          "jahr": 2013,
-          "gipfel": 0.0339,
+          "gipfel": 0.06,
           "ergebnis": {
             "bisher": {
               "offen": false,
               "schritt": 127,
               "grund": "nach 180 Tagen",
-              "rendite": -0.0583,
-              "vergleich": -0.0904,
-              "vorsprung": 0.0321
+              "rendite": -0.0314,
+              "vergleich": 0.1605,
+              "vorsprung": -0.1919
             },
             "zeit": {
               "offen": false,
               "schritt": 120,
               "grund": "Haltedauer",
-              "rendite": -0.0286,
-              "vergleich": -0.0663,
-              "vorsprung": 0.0377
+              "rendite": -0.0216,
+              "vergleich": 0.1951,
+              "vorsprung": -0.2167
             },
             "ziel": {
               "offen": false,
               "schritt": 250,
               "grund": "Haltedauer",
-              "rendite": -0.0262,
-              "vergleich": -0.0786,
-              "vorsprung": 0.0524
+              "rendite": 0.0266,
+              "vergleich": 0.2993,
+              "vorsprung": -0.2727
             },
             "nachlauf": {
               "offen": false,
               "schritt": 250,
               "grund": "Haltedauer",
-              "rendite": -0.0262,
-              "vergleich": -0.0786,
-              "vorsprung": 0.0524
+              "rendite": 0.0266,
+              "vergleich": 0.2993,
+              "vorsprung": -0.2727
             },
             "kombi": {
               "offen": false,
               "schritt": 250,
               "grund": "Haltedauer",
-              "rendite": -0.0262,
-              "vergleich": -0.0786,
-              "vorsprung": 0.0524
+              "rendite": 0.0266,
+              "vergleich": 0.2993,
+              "vorsprung": -0.2727
             }
           }
         },
         {
           "name": "Platin-ETF",
           "ticker": "PPLT",
-          "datum": "2016-08-19",
-          "jahr": 2016,
-          "gipfel": -0.0095,
+          "datum": "2010-10-14",
+          "jahr": 2010,
+          "gipfel": 0.1089,
           "ergebnis": {
             "bisher": {
               "offen": false,
-              "schritt": 123,
+              "schritt": 124,
               "grund": "nach 180 Tagen",
-              "rendite": -0.0969,
-              "vergleich": -0.0822,
-              "vorsprung": -0.0147
+              "rendite": 0.0303,
+              "vergleich": 0.0509,
+              "vorsprung": -0.0206
             },
             "zeit": {
               "offen": false,
               "schritt": 120,
               "grund": "Haltedauer",
-              "rendite": -0.0958,
-              "vergleich": -0.081,
-              "vorsprung": -0.0148
+              "rendite": 0.0455,
+              "vergleich": 0.0566,
+              "vorsprung": -0.0111
             },
             "ziel": {
               "offen": false,
               "schritt": 250,
               "grund": "Haltedauer",
-              "rendite": -0.1316,
-              "vergleich": -0.0428,
-              "vorsprung": -0.0888
+              "rendite": -0.1177,
+              "vergleich": 0.203,
+              "vorsprung": -0.3207
             },
             "nachlauf": {
               "offen": false,
-              "schritt": 36,
+              "schritt": 238,
               "grund": "nachgezogene Grenze",
-              "rendite": -0.1507,
-              "vergleich": -0.0658,
-              "vorsprung": -0.0849
+              "rendite": -0.0685,
+              "vergleich": 0.1859,
+              "vorsprung": -0.2544
             },
             "kombi": {
               "offen": false,
-              "schritt": 36,
+              "schritt": 250,
+              "grund": "Haltedauer",
+              "rendite": -0.1177,
+              "vergleich": 0.203,
+              "vorsprung": -0.3207
+            }
+          }
+        },
+        {
+          "name": "Platin-ETF",
+          "ticker": "PPLT",
+          "datum": "2016-08-22",
+          "jahr": 2016,
+          "gipfel": 0.0022,
+          "ergebnis": {
+            "bisher": {
+              "offen": false,
+              "schritt": 125,
+              "grund": "nach 180 Tagen",
+              "rendite": -0.0926,
+              "vergleich": -0.0785,
+              "vorsprung": -0.0141
+            },
+            "zeit": {
+              "offen": false,
+              "schritt": 120,
+              "grund": "Haltedauer",
+              "rendite": -0.0962,
+              "vergleich": -0.0859,
+              "vorsprung": -0.0103
+            },
+            "ziel": {
+              "offen": false,
+              "schritt": 250,
+              "grund": "Haltedauer",
+              "rendite": -0.1166,
+              "vergleich": -0.0429,
+              "vorsprung": -0.0737
+            },
+            "nachlauf": {
+              "offen": false,
+              "schritt": 37,
+              "grund": "nachgezogene Grenze",
+              "rendite": -0.1506,
+              "vergleich": -0.0607,
+              "vorsprung": -0.0899
+            },
+            "kombi": {
+              "offen": false,
+              "schritt": 37,
               "grund": "Verlustgrenze",
-              "rendite": -0.1507,
-              "vergleich": -0.0658,
-              "vorsprung": -0.0849
+              "rendite": -0.1506,
+              "vergleich": -0.0607,
+              "vorsprung": -0.0899
+            }
+          }
+        },
+        {
+          "name": "Platin-ETF",
+          "ticker": "PPLT",
+          "datum": "2017-09-28",
+          "jahr": 2017,
+          "gipfel": 0.0972,
+          "ergebnis": {
+            "bisher": {
+              "offen": false,
+              "schritt": 123,
+              "grund": "nach 180 Tagen",
+              "rendite": 0.0178,
+              "vergleich": 0.0432,
+              "vorsprung": -0.0254
+            },
+            "zeit": {
+              "offen": false,
+              "schritt": 120,
+              "grund": "Haltedauer",
+              "rendite": 0.0249,
+              "vergleich": 0.0308,
+              "vorsprung": -0.0059
+            },
+            "ziel": {
+              "offen": false,
+              "schritt": 250,
+              "grund": "Haltedauer",
+              "rendite": -0.1148,
+              "vergleich": -0.075,
+              "vorsprung": -0.0398
+            },
+            "nachlauf": {
+              "offen": false,
+              "schritt": 183,
+              "grund": "nachgezogene Grenze",
+              "rendite": -0.0697,
+              "vergleich": -0.0177,
+              "vorsprung": -0.052
+            },
+            "kombi": {
+              "offen": false,
+              "schritt": 221,
+              "grund": "Verlustgrenze",
+              "rendite": -0.1728,
+              "vergleich": -0.0902,
+              "vorsprung": -0.0826
+            }
+          }
+        },
+        {
+          "name": "Platin-ETF",
+          "ticker": "PPLT",
+          "datum": "2018-04-04",
+          "jahr": 2018,
+          "gipfel": 0.0265,
+          "ergebnis": {
+            "bisher": {
+              "offen": false,
+              "schritt": 125,
+              "grund": "nach 180 Tagen",
+              "rendite": -0.1047,
+              "vergleich": -0.1098,
+              "vorsprung": 0.0051
+            },
+            "zeit": {
+              "offen": false,
+              "schritt": 120,
+              "grund": "Haltedauer",
+              "rendite": -0.1005,
+              "vergleich": -0.1026,
+              "vorsprung": 0.0021
+            },
+            "ziel": {
+              "offen": false,
+              "schritt": 250,
+              "grund": "Haltedauer",
+              "rendite": -0.0775,
+              "vergleich": -0.0353,
+              "vorsprung": -0.0422
+            },
+            "nachlauf": {
+              "offen": false,
+              "schritt": 93,
+              "grund": "nachgezogene Grenze",
+              "rendite": -0.1637,
+              "vergleich": -0.1207,
+              "vorsprung": -0.043
+            },
+            "kombi": {
+              "offen": false,
+              "schritt": 93,
+              "grund": "Verlustgrenze",
+              "rendite": -0.1637,
+              "vergleich": -0.1207,
+              "vorsprung": -0.043
             }
           }
         },
@@ -2151,49 +2197,49 @@
         {
           "name": "Platin-ETF",
           "ticker": "PPLT",
-          "datum": "2020-01-17",
+          "datum": "2020-01-22",
           "jahr": 2020,
-          "gipfel": 0.092,
+          "gipfel": 0.1005,
           "ergebnis": {
             "bisher": {
               "offen": false,
-              "schritt": 123,
+              "schritt": 124,
               "grund": "nach 180 Tagen",
-              "rendite": -0.1864,
-              "vergleich": 0.1621,
-              "vorsprung": -0.3485
+              "rendite": -0.1597,
+              "vergleich": 0.1645,
+              "vorsprung": -0.3242
             },
             "zeit": {
               "offen": false,
               "schritt": 120,
               "grund": "Haltedauer",
-              "rendite": -0.1874,
-              "vergleich": 0.1543,
-              "vorsprung": -0.3417
+              "rendite": -0.186,
+              "vergleich": 0.1594,
+              "vorsprung": -0.3454
             },
             "ziel": {
               "offen": false,
               "schritt": 250,
               "grund": "Haltedauer",
-              "rendite": 0.0899,
-              "vergleich": 0.1822,
-              "vorsprung": -0.0923
+              "rendite": 0.0641,
+              "vergleich": 0.1757,
+              "vorsprung": -0.1116
             },
             "nachlauf": {
               "offen": false,
-              "schritt": 28,
+              "schritt": 26,
               "grund": "nachgezogene Grenze",
-              "rendite": -0.1573,
-              "vergleich": 0.0123,
-              "vorsprung": -0.1696
+              "rendite": -0.1508,
+              "vergleich": 0.0108,
+              "vorsprung": -0.1616
             },
             "kombi": {
               "offen": false,
-              "schritt": 28,
+              "schritt": 26,
               "grund": "Verlustgrenze",
-              "rendite": -0.1573,
-              "vergleich": 0.0123,
-              "vorsprung": -0.1696
+              "rendite": -0.1508,
+              "vergleich": 0.0108,
+              "vorsprung": -0.1616
             }
           }
         },
@@ -2298,144 +2344,196 @@
         {
           "name": "Platin-ETF",
           "ticker": "PPLT",
-          "datum": "2024-10-28",
+          "datum": "2024-02-13",
           "jahr": 2024,
-          "gipfel": 0.6419,
-          "ergebnis": {
-            "bisher": {
-              "offen": false,
-              "schritt": 123,
-              "grund": "nach 180 Tagen",
-              "rendite": -0.0446,
-              "vergleich": 0.22,
-              "vorsprung": -0.2646
-            },
-            "zeit": {
-              "offen": false,
-              "schritt": 120,
-              "grund": "Haltedauer",
-              "rendite": -0.067,
-              "vergleich": 0.1986,
-              "vorsprung": -0.2656
-            },
-            "ziel": {
-              "offen": false,
-              "schritt": 154,
-              "grund": "Gewinnziel",
-              "rendite": 0.2101,
-              "vergleich": 0.2173,
-              "vorsprung": -0.0072
-            },
-            "nachlauf": {
-              "offen": false,
-              "schritt": 250,
-              "grund": "Haltedauer",
-              "rendite": 0.5263,
-              "vergleich": 0.4384,
-              "vorsprung": 0.0879
-            },
-            "kombi": {
-              "offen": false,
-              "schritt": 187,
-              "grund": "nachgezogene Grenze",
-              "rendite": 0.2529,
-              "vergleich": 0.188,
-              "vorsprung": 0.0649
-            }
-          }
-        },
-        {
-          "name": "Platin-ETF",
-          "ticker": "PPLT",
-          "datum": "2025-07-18",
-          "jahr": 2025,
-          "gipfel": 0.942,
+          "gipfel": 0.2405,
           "ergebnis": {
             "bisher": {
               "offen": false,
               "schritt": 124,
               "grund": "nach 180 Tagen",
-              "rendite": 0.6842,
-              "vergleich": 0.3812,
-              "vorsprung": 0.303
+              "rendite": 0.0751,
+              "vergleich": 0.2378,
+              "vorsprung": -0.1627
             },
             "zeit": {
               "offen": false,
               "schritt": 120,
               "grund": "Haltedauer",
-              "rendite": 0.5783,
-              "vergleich": 0.3343,
-              "vorsprung": 0.244
+              "rendite": 0.0445,
+              "vergleich": 0.196,
+              "vorsprung": -0.1515
             },
             "ziel": {
               "offen": false,
-              "schritt": 103,
+              "schritt": 64,
               "grund": "Gewinnziel",
-              "rendite": 0.2243,
-              "vergleich": 0.2823,
-              "vorsprung": -0.058
+              "rendite": 0.2165,
+              "vergleich": 0.197,
+              "vorsprung": 0.0195
             },
             "nachlauf": {
               "offen": false,
-              "schritt": 115,
+              "schritt": 119,
               "grund": "nachgezogene Grenze",
-              "rendite": 0.4353,
-              "vergleich": 0.2851,
-              "vorsprung": 0.1502
+              "rendite": 0.0401,
+              "vergleich": 0.2057,
+              "vorsprung": -0.1656
             },
             "kombi": {
               "offen": false,
-              "schritt": 113,
+              "schritt": 80,
               "grund": "nachgezogene Grenze",
-              "rendite": 0.4842,
-              "vergleich": 0.2925,
-              "vorsprung": 0.1917
+              "rendite": 0.1038,
+              "vergleich": 0.1467,
+              "vorsprung": -0.0429
             }
           }
         },
         {
           "name": "Platin-ETF",
           "ticker": "PPLT",
-          "datum": "2026-01-23",
-          "jahr": 2026,
-          "gipfel": -0.0218,
+          "datum": "2024-08-29",
+          "jahr": 2024,
+          "gipfel": 0.542,
           "ergebnis": {
             "bisher": {
               "offen": false,
-              "schritt": 123,
+              "schritt": 121,
               "grund": "nach 180 Tagen",
-              "rendite": -0.4101,
-              "vergleich": -0.1722,
-              "vorsprung": -0.2379
+              "rendite": 0.0258,
+              "vergleich": 0.1531,
+              "vorsprung": -0.1273
             },
             "zeit": {
               "offen": false,
               "schritt": 120,
               "grund": "Haltedauer",
-              "rendite": -0.4252,
-              "vergleich": -0.1956,
-              "vorsprung": -0.2296
+              "rendite": 0.0231,
+              "vergleich": 0.1685,
+              "vorsprung": -0.1454
             },
             "ziel": {
-              "offen": true,
-              "schritt": 169,
-              "rendite": -0.3621
+              "offen": false,
+              "schritt": 191,
+              "grund": "Gewinnziel",
+              "rendite": 0.2108,
+              "vergleich": 0.3279,
+              "vorsprung": -0.1171
             },
             "nachlauf": {
               "offen": false,
-              "schritt": 5,
-              "grund": "nachgezogene Grenze",
-              "rendite": -0.2268,
-              "vergleich": -0.0285,
-              "vorsprung": -0.1983
+              "schritt": 250,
+              "grund": "Haltedauer",
+              "rendite": 0.4525,
+              "vergleich": 0.3654,
+              "vorsprung": 0.0871
             },
             "kombi": {
               "offen": false,
-              "schritt": 5,
-              "grund": "Verlustgrenze",
-              "rendite": -0.2268,
-              "vergleich": -0.0285,
-              "vorsprung": -0.1983
+              "schritt": 228,
+              "grund": "nachgezogene Grenze",
+              "rendite": 0.3776,
+              "vergleich": 0.292,
+              "vorsprung": 0.0856
+            }
+          }
+        },
+        {
+          "name": "Platin-ETF",
+          "ticker": "PPLT",
+          "datum": "2025-04-02",
+          "jahr": 2025,
+          "gipfel": 1.8413,
+          "ergebnis": {
+            "bisher": {
+              "offen": false,
+              "schritt": 123,
+              "grund": "nach 180 Tagen",
+              "rendite": 0.6419,
+              "vergleich": 0.2231,
+              "vorsprung": 0.4188
+            },
+            "zeit": {
+              "offen": false,
+              "schritt": 120,
+              "grund": "Haltedauer",
+              "rendite": 0.5142,
+              "vergleich": 0.1914,
+              "vorsprung": 0.3228
+            },
+            "ziel": {
+              "offen": false,
+              "schritt": 45,
+              "grund": "Gewinnziel",
+              "rendite": 0.2052,
+              "vergleich": 0.0591,
+              "vorsprung": 0.1461
+            },
+            "nachlauf": {
+              "offen": false,
+              "schritt": 188,
+              "grund": "nachgezogene Grenze",
+              "rendite": 1.0999,
+              "vergleich": 0.3753,
+              "vorsprung": 0.7246
+            },
+            "kombi": {
+              "offen": false,
+              "schritt": 81,
+              "grund": "nachgezogene Grenze",
+              "rendite": 0.3377,
+              "vergleich": 0.0444,
+              "vorsprung": 0.2933
+            }
+          }
+        },
+        {
+          "name": "Platin-ETF",
+          "ticker": "PPLT",
+          "datum": "2025-11-11",
+          "jahr": 2025,
+          "gipfel": 0.7445,
+          "ergebnis": {
+            "bisher": {
+              "offen": false,
+              "schritt": 123,
+              "grund": "nach 180 Tagen",
+              "rendite": 0.3344,
+              "vergleich": 0.1442,
+              "vorsprung": 0.1902
+            },
+            "zeit": {
+              "offen": false,
+              "schritt": 120,
+              "grund": "Haltedauer",
+              "rendite": 0.2911,
+              "vergleich": 0.1345,
+              "vorsprung": 0.1566
+            },
+            "ziel": {
+              "offen": false,
+              "schritt": 26,
+              "grund": "Gewinnziel",
+              "rendite": 0.2126,
+              "vergleich": 0.0492,
+              "vorsprung": 0.1634
+            },
+            "nachlauf": {
+              "offen": false,
+              "schritt": 34,
+              "grund": "nachgezogene Grenze",
+              "rendite": 0.2893,
+              "vergleich": 0.0433,
+              "vorsprung": 0.246
+            },
+            "kombi": {
+              "offen": false,
+              "schritt": 32,
+              "grund": "nachgezogene Grenze",
+              "rendite": 0.3332,
+              "vergleich": 0.0493,
+              "vorsprung": 0.2839
             }
           }
         }

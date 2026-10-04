@@ -1,18 +1,18 @@
 {
-  "stand": "2026-09-27T05:26:11+02:00",
+  "stand": "2026-10-04T07:17:42+02:00",
   "version": "0.1.0",
   "hinweis": "Denkhilfe, keine Anlageberatung.",
   "woche": {
-    "von": "2026-09-21",
-    "bis": "2026-09-27"
+    "von": "2026-09-28",
+    "bis": "2026-10-04"
   },
   "laufkontrolle": {
-    "stand_datum": "2026-09-27",
+    "stand_datum": "2026-10-04",
     "zustand": "in Ordnung",
     "hinweise": [],
     "betrieb_seit": "2026-09-27",
-    "tage_mit_lauf": 1,
-    "tage_gezaehlt": 1,
+    "tage_mit_lauf": 7,
+    "tage_gezaehlt": 7,
     "fehlende_tage": []
   },
   "weitere_laeufe": [
@@ -20,24 +20,32 @@
       "workflow": "metall",
       "name": "Metall China",
       "betrieb_seit": "2026-09-27",
-      "tage_mit_lauf": 1,
-      "tage_gezaehlt": 1,
+      "tage_mit_lauf": 7,
+      "tage_gezaehlt": 7,
       "fehlende_tage": []
     },
     {
       "workflow": "ersatz",
       "name": "Ersatz-Sensoren",
       "betrieb_seit": "2026-09-28",
-      "tage_mit_lauf": 0,
-      "tage_gezaehlt": 0,
+      "tage_mit_lauf": 7,
+      "tage_gezaehlt": 7,
       "fehlende_tage": []
     },
     {
       "workflow": "inlandspreise",
       "name": "Inlandspreise",
       "betrieb_seit": "2026-09-27",
-      "tage_mit_lauf": 1,
-      "tage_gezaehlt": 1,
+      "tage_mit_lauf": 7,
+      "tage_gezaehlt": 7,
+      "fehlende_tage": []
+    },
+    {
+      "workflow": "depot",
+      "name": "Schattendepot",
+      "betrieb_seit": "2026-09-29",
+      "tage_mit_lauf": 6,
+      "tage_gezaehlt": 6,
       "fehlende_tage": []
     }
   ],
@@ -49,15 +57,7 @@
         "zahl": 8,
         "gesperrt": false,
         "seit": "2026-09-27",
-        "wechsel": [
-          {
-            "tag": "2026-09-27",
-            "vorher": null,
-            "farbe": "Gelb",
-            "anlass": "Start",
-            "gesperrt": false
-          }
-        ]
+        "wechsel": []
       },
       "positionen": [],
       "signale": {
@@ -76,7 +76,7 @@
     "metall_china": {
       "art": "metall",
       "name": "Metall China-Ausfuhr",
-      "laeufe": 2,
+      "laeufe": 10,
       "achsen": {
         "chip": {
           "name": "Chip-Achse",
@@ -101,9 +101,9 @@
         },
         "werkzeug": {
           "name": "Werkzeug-Achse",
-          "jetzt": "Gelb",
-          "seit": "2026-09-26",
-          "seit_beginn": true,
+          "jetzt": "Grün",
+          "seit": "2026-09-27",
+          "seit_beginn": false,
           "wechsel": []
         }
       }
@@ -111,7 +111,7 @@
     "ersatz_haselnuss": {
       "art": "ersatz",
       "name": "Ersatz-Sensor Haselnuss",
-      "laeufe": 2,
+      "laeufe": 10,
       "vergleich": "australischer Aktienindex ASX 200",
       "jetzt": "Grün",
       "seit": "2026-09-26",
@@ -122,11 +122,11 @@
     "ersatz_palladium": {
       "art": "ersatz",
       "name": "Ersatz-Sensor Palladium",
-      "laeufe": 2,
+      "laeufe": 10,
       "vergleich": "Gold-ETF",
-      "jetzt": "Gelb",
-      "seit": "2026-09-26",
-      "seit_beginn": true,
+      "jetzt": "Grün",
+      "seit": "2026-09-27",
+      "seit_beginn": false,
       "wechsel": [],
       "positionen": []
     }
