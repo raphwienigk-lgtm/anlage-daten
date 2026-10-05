@@ -1,6 +1,6 @@
 {
-  "stand": "2026-10-04T06:16:10+02:00",
-  "datum": "2026-10-04",
+  "stand": "2026-10-05T04:39:56+02:00",
+  "datum": "2026-10-05",
   "version": "0.1.0",
   "hinweis": "Denkhilfe, keine Anlageberatung. Score und Schwellen sind vorläufig, bis das Backtesting steht.",
   "zustand": "in Ordnung",
@@ -21,7 +21,7 @@
     "regen": {
       "name": "Open-Meteo Regen",
       "status": "ok",
-      "stand": "2026-10-02",
+      "stand": "2026-10-03",
       "meldung": null
     },
     "wind": {
@@ -33,7 +33,7 @@
     "yahoo:BZ=F": {
       "name": "Yahoo BZ=F",
       "status": "ok",
-      "stand": "2026-10-02",
+      "stand": "2026-10-04",
       "meldung": null
     },
     "yahoo:E5H.SI": {
@@ -63,7 +63,7 @@
     "yahoo:ZL=F": {
       "name": "Yahoo ZL=F",
       "status": "ok",
-      "stand": "2026-10-02",
+      "stand": "2026-10-04",
       "meldung": null
     },
     "fred:PPOILUSDM": {
@@ -160,44 +160,44 @@
           "aktuell": {
             "status": "gemessen",
             "an": true,
-            "anteil": 0.412,
+            "anteil": 0.403,
             "zeitraum_tage": 90,
-            "bis": "2026-09-28",
+            "bis": "2026-09-29",
             "punkte": {
               "Riau, Sumatra": {
                 "tage": 90,
-                "summe_mm": 305.3,
-                "normal_mm": 462.5,
-                "anteil": 0.66,
-                "bis": "2026-09-28"
+                "summe_mm": 297.7,
+                "normal_mm": 466.3,
+                "anteil": 0.638,
+                "bis": "2026-09-29"
               },
               "Jambi, Sumatra": {
                 "tage": 90,
-                "summe_mm": 88.0,
-                "normal_mm": 376.5,
-                "anteil": 0.234,
-                "bis": "2026-09-28"
+                "summe_mm": 84.2,
+                "normal_mm": 380.2,
+                "anteil": 0.221,
+                "bis": "2026-09-29"
               },
               "Zentral-Kalimantan": {
                 "tage": 90,
-                "summe_mm": 27.7,
-                "normal_mm": 292.3,
-                "anteil": 0.095,
-                "bis": "2026-09-28"
+                "summe_mm": 28.8,
+                "normal_mm": 293.0,
+                "anteil": 0.098,
+                "bis": "2026-09-29"
               },
               "West-Kalimantan": {
                 "tage": 90,
-                "summe_mm": 215.5,
-                "normal_mm": 482.4,
-                "anteil": 0.447,
-                "bis": "2026-09-28"
+                "summe_mm": 214.9,
+                "normal_mm": 482.6,
+                "anteil": 0.445,
+                "bis": "2026-09-29"
               },
               "Sabah": {
                 "tage": 90,
-                "summe_mm": 294.1,
-                "normal_mm": 472.5,
-                "anteil": 0.622,
-                "bis": "2026-09-28"
+                "summe_mm": 290.1,
+                "normal_mm": 472.9,
+                "anteil": 0.614,
+                "bis": "2026-09-29"
               }
             },
             "fehlend": []
@@ -206,11 +206,11 @@
             "status": "gemessen",
             "an": true,
             "ab": "2026-05-16",
-            "bis": "2026-09-28",
+            "bis": "2026-09-29",
             "erster_trockener_tag": "2026-08-22",
-            "trockene_tage": 38,
-            "tiefster_anteil": 0.412,
-            "tiefster_tag": "2026-09-28"
+            "trockene_tage": 39,
+            "tiefster_anteil": 0.403,
+            "tiefster_tag": "2026-09-29"
           }
         },
         "west": {
@@ -341,12 +341,12 @@
         "einzeln": {
           "brent": {
             "text": "Ölpreis (Brent)",
-            "veraenderung_3m": 0.424,
+            "veraenderung_3m": 0.414,
             "druck": 0.0
           },
           "sojaoel": {
             "text": "Sojaöl als Konkurrenzöl",
-            "veraenderung_3m": 0.025,
+            "veraenderung_3m": 0.03,
             "druck": 0.0
           }
         },
@@ -426,7 +426,7 @@
       ],
       "rueckblick": null,
       "inlandspreise": {
-        "datum": "2026-10-04",
+        "datum": "2026-10-05",
         "reihen": {
           "speiseoel_id_lose": {
             "rohstoff": "palmoel",
@@ -436,16 +436,16 @@
             "einheit": "Rupiah",
             "rolle": "fruehzeichen",
             "status": "ok",
-            "werte": 2265,
+            "werte": 2266,
             "letzter": {
-              "datum": "2026-10-02",
-              "wert": 20300.0
+              "datum": "2026-10-05",
+              "wert": 22250.0
             },
-            "alter_tage": 2,
+            "alter_tage": 0,
             "art": "täglich",
-            "mittel_jetzt": 20412.5,
-            "mittel_damals": 20572.5,
-            "veraenderung": -0.0078,
+            "mittel_jetzt": 20502.5,
+            "mittel_damals": 20567.5,
+            "veraenderung": -0.0032,
             "urteil": "ruhig"
           },
           "speiseoel_id_marke": {
@@ -456,16 +456,16 @@
             "einheit": "Rupiah",
             "rolle": "fruehzeichen",
             "status": "ok",
-            "werte": 2268,
+            "werte": 2269,
             "letzter": {
-              "datum": "2026-10-02",
-              "wert": 24350.0
+              "datum": "2026-10-05",
+              "wert": 26150.0
             },
-            "alter_tage": 2,
+            "alter_tage": 0,
             "art": "täglich",
-            "mittel_jetzt": 24347.5,
-            "mittel_damals": 24230.0,
-            "veraenderung": 0.0048,
+            "mittel_jetzt": 24437.5,
+            "mittel_damals": 24235.0,
+            "veraenderung": 0.0084,
             "urteil": "ruhig"
           },
           "pflanzenoel_id_monat": {
@@ -481,7 +481,7 @@
               "datum": "2026-08-01",
               "wert": 21781.0
             },
-            "alter_tage": 64,
+            "alter_tage": 65,
             "art": "monatlich",
             "vergleich": {
               "datum": "2026-05-01",
@@ -503,7 +503,7 @@
               "datum": "2026-10-01",
               "wert": 4390.5
             },
-            "alter_tage": 3,
+            "alter_tage": 4,
             "art": "täglich",
             "mittel_jetzt": 4572.97,
             "mittel_damals": 4485.97,
@@ -533,5 +533,5 @@
     }
   },
   "logbuch_neu": [],
-  "laufzeit_sekunden": 255.9
+  "laufzeit_sekunden": 349.6
 }
