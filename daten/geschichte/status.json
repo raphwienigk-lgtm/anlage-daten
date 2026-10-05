@@ -13,32 +13,120 @@
     "stand": "2026-09-26",
     "fertig": true
   },
-  "stand": "2026-10-04",
-  "gewicht_heute": 293,
+  "stand": "2026-10-05",
+  "gewicht_heute": 464,
   "meldungen": [
     "Regen Riau, Sumatra: 2025-2029 geholt",
     "Regen Jambi, Sumatra: 2025-2029 geholt",
     "Regen Zentral-Kalimantan: 2025-2029 geholt",
     "Regen West-Kalimantan: 2025-2029 geholt",
     "Regen Sabah: 2025-2029 geholt",
-    "Regen Arusha, Tansania: 1981 geholt",
-    "Regen Arusha, Tansania: 1982 geholt",
-    "Regen Arusha, Tansania: 1983 geholt",
-    "Regen Arusha, Tansania: 1984 geholt",
-    "Regen Arusha, Tansania: 1985 geholt",
-    "Regen Arusha, Tansania: 1986 geholt",
-    "Regen Arusha, Tansania: 1987 geholt",
-    "Regen Arusha, Tansania: 1988 geholt",
-    "Regen Arusha, Tansania: 1989 geholt",
-    "Fehler bei regen: AbrufFehler: ReadTimeout bei https://archive-api.open-meteo.com/v1/archive: HTTPSConnectionPool(host='archive-api.open-meteo.com', port=443): Read timed out. (read timeout=45)",
-    "Verbraucht: etwa 293 gewichtete Open-Meteo-Abrufe."
+    "Regen Arusha, Tansania: 1990 geholt",
+    "Regen Arusha, Tansania: 1991 geholt",
+    "Regen Arusha, Tansania: 1992 geholt",
+    "Regen Arusha, Tansania: 1993 geholt",
+    "Regen Arusha, Tansania: 1994 geholt",
+    "Regen Arusha, Tansania: 1995 geholt",
+    "Regen Arusha, Tansania: 1996 geholt",
+    "Regen Arusha, Tansania: 1997 geholt",
+    "Regen Arusha, Tansania: 1998 geholt",
+    "Regen Arusha, Tansania: 1999 geholt",
+    "Regen Arusha, Tansania: 2000 geholt",
+    "Regen Arusha, Tansania: 2001 geholt",
+    "Regen Arusha, Tansania: 2002 geholt",
+    "Regen Arusha, Tansania: 2003 geholt",
+    "Regen Arusha, Tansania: 2004 geholt",
+    "Regen Arusha, Tansania: 2005 geholt",
+    "Regen Arusha, Tansania: 2006 geholt",
+    "Regen Arusha, Tansania: 2007 geholt",
+    "Regen Arusha, Tansania: 2008 geholt",
+    "Regen Arusha, Tansania: 2009 geholt",
+    "Regen Arusha, Tansania: 2010 geholt",
+    "Regen Arusha, Tansania: 2011 geholt",
+    "Regen Arusha, Tansania: 2012 geholt",
+    "Regen Arusha, Tansania: 2013 geholt",
+    "Regen Arusha, Tansania: 2014 geholt",
+    "Regen Arusha, Tansania: 2015 geholt",
+    "Regen Arusha, Tansania: 2016 geholt",
+    "Regen Arusha, Tansania: 2017 geholt",
+    "Regen Arusha, Tansania: 2018 geholt",
+    "Regen Arusha, Tansania: 2019 geholt",
+    "Regen Arusha, Tansania: 2020 geholt",
+    "Regen Arusha, Tansania: 2021 geholt",
+    "Regen Arusha, Tansania: 2022 geholt",
+    "Regen Arusha, Tansania: 2023 geholt",
+    "Regen Arusha, Tansania: 2024 geholt",
+    "Regen Arusha, Tansania: 2025 geholt",
+    "Verbraucht: etwa 464 gewichtete Open-Meteo-Abrufe."
   ],
   "wind": {
     "stand": "2026-09-26",
     "fertig": true
   },
   "regen": {
-    "fertig": false,
-    "fehler_heute": "AbrufFehler: ReadTimeout bei https://archive-api.open-meteo.com/v1/archive: HTTPSConnectionPool(host='archive-api.open-meteo.com', port=443): Read timed out. (read timeout=45)"
+    "stand": "2026-10-05",
+    "fertig": true,
+    "punkte": {
+      "Riau, Sumatra": {
+        "region": "ost",
+        "von": "1959-10-01",
+        "bis": "2026-09-29",
+        "tage": 24471
+      },
+      "Jambi, Sumatra": {
+        "region": "ost",
+        "von": "1959-10-01",
+        "bis": "2026-09-29",
+        "tage": 24471
+      },
+      "Zentral-Kalimantan": {
+        "region": "ost",
+        "von": "1959-10-01",
+        "bis": "2026-09-29",
+        "tage": 24471
+      },
+      "West-Kalimantan": {
+        "region": "ost",
+        "von": "1959-10-01",
+        "bis": "2026-09-29",
+        "tage": 24471
+      },
+      "Sabah": {
+        "region": "ost",
+        "von": "1959-10-01",
+        "bis": "2026-09-29",
+        "tage": 24471
+      },
+      "Nairobi, Kenia": {
+        "region": "west",
+        "von": "1959-10-01",
+        "bis": "2025-12-31",
+        "tage": 6164
+      },
+      "Garissa, Kenia": {
+        "region": "west",
+        "von": "1959-10-01",
+        "bis": "2025-12-31",
+        "tage": 6164
+      },
+      "Beledweyne, Somalia": {
+        "region": "west",
+        "von": "1959-10-01",
+        "bis": "2025-12-31",
+        "tage": 6164
+      },
+      "Moyale, Äthiopien": {
+        "region": "west",
+        "von": "1959-10-01",
+        "bis": "2025-12-31",
+        "tage": 6164
+      },
+      "Arusha, Tansania": {
+        "region": "west",
+        "von": "1959-10-01",
+        "bis": "2025-12-31",
+        "tage": 6164
+      }
+    }
   }
 }
