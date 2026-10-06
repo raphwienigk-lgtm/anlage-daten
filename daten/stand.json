@@ -1,6 +1,6 @@
 {
-  "stand": "2026-10-05T04:39:56+02:00",
-  "datum": "2026-10-05",
+  "stand": "2026-10-06T04:39:54+02:00",
+  "datum": "2026-10-06",
   "version": "0.1.0",
   "hinweis": "Denkhilfe, keine Anlageberatung. Score und Schwellen sind vorläufig, bis das Backtesting steht.",
   "zustand": "in Ordnung",
@@ -21,8 +21,8 @@
     "regen": {
       "name": "Open-Meteo Regen",
       "status": "ok",
-      "stand": "2026-10-03",
-      "meldung": null
+      "stand": "2026-10-04",
+      "meldung": "teilweise: Beledweyne, Somalia: ReadTimeout bei https://archive-api.open-meteo.com/v1/archive: HTTPSConnectionPool(host='archive-api.open-meteo.com', port=443): Read timed out. (read timeout=45)"
     },
     "wind": {
       "name": "Open-Meteo Wind",
@@ -33,37 +33,37 @@
     "yahoo:BZ=F": {
       "name": "Yahoo BZ=F",
       "status": "ok",
-      "stand": "2026-10-04",
+      "stand": "2026-10-05",
       "meldung": null
     },
     "yahoo:E5H.SI": {
       "name": "Yahoo E5H.SI",
       "status": "ok",
-      "stand": "2026-10-02",
+      "stand": "2026-10-05",
       "meldung": null
     },
     "yahoo:EB5.SI": {
       "name": "Yahoo EB5.SI",
       "status": "ok",
-      "stand": "2026-10-02",
+      "stand": "2026-10-05",
       "meldung": null
     },
     "yahoo:F34.SI": {
       "name": "Yahoo F34.SI",
       "status": "ok",
-      "stand": "2026-10-02",
+      "stand": "2026-10-05",
       "meldung": null
     },
     "yahoo:P8Z.SI": {
       "name": "Yahoo P8Z.SI",
       "status": "ok",
-      "stand": "2026-10-02",
+      "stand": "2026-10-05",
       "meldung": null
     },
     "yahoo:ZL=F": {
       "name": "Yahoo ZL=F",
       "status": "ok",
-      "stand": "2026-10-04",
+      "stand": "2026-10-05",
       "meldung": null
     },
     "fred:PPOILUSDM": {
@@ -160,44 +160,44 @@
           "aktuell": {
             "status": "gemessen",
             "an": true,
-            "anteil": 0.403,
+            "anteil": 0.41,
             "zeitraum_tage": 90,
-            "bis": "2026-09-29",
+            "bis": "2026-09-30",
             "punkte": {
               "Riau, Sumatra": {
                 "tage": 90,
-                "summe_mm": 297.7,
-                "normal_mm": 466.3,
-                "anteil": 0.638,
-                "bis": "2026-09-29"
+                "summe_mm": 302.4,
+                "normal_mm": 469.0,
+                "anteil": 0.645,
+                "bis": "2026-09-30"
               },
               "Jambi, Sumatra": {
                 "tage": 90,
-                "summe_mm": 84.2,
-                "normal_mm": 380.2,
-                "anteil": 0.221,
-                "bis": "2026-09-29"
+                "summe_mm": 86.9,
+                "normal_mm": 379.3,
+                "anteil": 0.229,
+                "bis": "2026-09-30"
               },
               "Zentral-Kalimantan": {
                 "tage": 90,
-                "summe_mm": 28.8,
-                "normal_mm": 293.0,
-                "anteil": 0.098,
-                "bis": "2026-09-29"
+                "summe_mm": 33.1,
+                "normal_mm": 294.6,
+                "anteil": 0.112,
+                "bis": "2026-09-30"
               },
               "West-Kalimantan": {
                 "tage": 90,
-                "summe_mm": 214.9,
-                "normal_mm": 482.6,
-                "anteil": 0.445,
-                "bis": "2026-09-29"
+                "summe_mm": 227.2,
+                "normal_mm": 484.4,
+                "anteil": 0.469,
+                "bis": "2026-09-30"
               },
               "Sabah": {
                 "tage": 90,
-                "summe_mm": 290.1,
-                "normal_mm": 472.9,
-                "anteil": 0.614,
-                "bis": "2026-09-29"
+                "summe_mm": 282.1,
+                "normal_mm": 473.9,
+                "anteil": 0.595,
+                "bis": "2026-09-30"
               }
             },
             "fehlend": []
@@ -206,9 +206,9 @@
             "status": "gemessen",
             "an": true,
             "ab": "2026-05-16",
-            "bis": "2026-09-29",
+            "bis": "2026-09-30",
             "erster_trockener_tag": "2026-08-22",
-            "trockene_tage": 39,
+            "trockene_tage": 40,
             "tiefster_anteil": 0.403,
             "tiefster_tag": "2026-09-29"
           }
@@ -341,12 +341,12 @@
         "einzeln": {
           "brent": {
             "text": "Ölpreis (Brent)",
-            "veraenderung_3m": 0.414,
+            "veraenderung_3m": 0.4,
             "druck": 0.0
           },
           "sojaoel": {
             "text": "Sojaöl als Konkurrenzöl",
-            "veraenderung_3m": 0.03,
+            "veraenderung_3m": 0.017,
             "druck": 0.0
           }
         },
@@ -378,11 +378,11 @@
           "boerse": "SGX",
           "hinweis": "vor allem Verarbeitung und Handel",
           "status": "ok",
-          "kurs": 3.47,
-          "datum": "2026-10-02",
-          "z_200": -0.63,
-          "veraenderung_3m": -0.067,
-          "volumen_trend": 0.73
+          "kurs": 3.48,
+          "datum": "2026-10-05",
+          "z_200": -0.61,
+          "veraenderung_3m": -0.065,
+          "volumen_trend": 0.76
         },
         {
           "art": "Aktie",
@@ -392,10 +392,10 @@
           "hinweis": "mit großer Verarbeitungssparte",
           "status": "ok",
           "kurs": 0.31,
-          "datum": "2026-10-02",
+          "datum": "2026-10-05",
           "z_200": 0.7,
-          "veraenderung_3m": 0.17,
-          "volumen_trend": 2.17
+          "veraenderung_3m": 0.127,
+          "volumen_trend": 1.93
         },
         {
           "art": "Aktie",
@@ -404,11 +404,11 @@
           "boerse": "SGX",
           "hinweis": "reinerer Plantagenwert",
           "status": "ok",
-          "kurs": 4.13,
-          "datum": "2026-10-02",
-          "z_200": 1.21,
-          "veraenderung_3m": 0.215,
-          "volumen_trend": 1.2
+          "kurs": 4.3,
+          "datum": "2026-10-05",
+          "z_200": 1.4,
+          "veraenderung_3m": 0.28,
+          "volumen_trend": 1.26
         },
         {
           "art": "Aktie",
@@ -418,15 +418,15 @@
           "hinweis": "reinerer Plantagenwert",
           "status": "ok",
           "kurs": 1.92,
-          "datum": "2026-10-02",
-          "z_200": 0.73,
-          "veraenderung_3m": 0.097,
-          "volumen_trend": 1.32
+          "datum": "2026-10-05",
+          "z_200": 0.72,
+          "veraenderung_3m": 0.116,
+          "volumen_trend": 1.26
         }
       ],
       "rueckblick": null,
       "inlandspreise": {
-        "datum": "2026-10-05",
+        "datum": "2026-10-06",
         "reihen": {
           "speiseoel_id_lose": {
             "rohstoff": "palmoel",
@@ -436,16 +436,16 @@
             "einheit": "Rupiah",
             "rolle": "fruehzeichen",
             "status": "ok",
-            "werte": 2266,
+            "werte": 2267,
             "letzter": {
-              "datum": "2026-10-05",
-              "wert": 22250.0
+              "datum": "2026-10-06",
+              "wert": 20850.0
             },
             "alter_tage": 0,
             "art": "täglich",
-            "mittel_jetzt": 20502.5,
+            "mittel_jetzt": 20430.0,
             "mittel_damals": 20567.5,
-            "veraenderung": -0.0032,
+            "veraenderung": -0.0067,
             "urteil": "ruhig"
           },
           "speiseoel_id_marke": {
@@ -456,16 +456,16 @@
             "einheit": "Rupiah",
             "rolle": "fruehzeichen",
             "status": "ok",
-            "werte": 2269,
+            "werte": 2270,
             "letzter": {
-              "datum": "2026-10-05",
-              "wert": 26150.0
+              "datum": "2026-10-06",
+              "wert": 24600.0
             },
             "alter_tage": 0,
             "art": "täglich",
-            "mittel_jetzt": 24437.5,
+            "mittel_jetzt": 24360.0,
             "mittel_damals": 24235.0,
-            "veraenderung": 0.0084,
+            "veraenderung": 0.0052,
             "urteil": "ruhig"
           },
           "pflanzenoel_id_monat": {
@@ -481,7 +481,7 @@
               "datum": "2026-08-01",
               "wert": 21781.0
             },
-            "alter_tage": 65,
+            "alter_tage": 66,
             "art": "monatlich",
             "vergleich": {
               "datum": "2026-05-01",
@@ -498,16 +498,16 @@
             "einheit": "Ringgit je Tonne",
             "rolle": "tagespreis",
             "status": "ok",
-            "werte": 421,
+            "werte": 422,
             "letzter": {
-              "datum": "2026-10-01",
-              "wert": 4390.5
+              "datum": "2026-10-02",
+              "wert": 4364.5
             },
             "alter_tage": 4,
             "art": "täglich",
-            "mittel_jetzt": 4572.97,
-            "mittel_damals": 4485.97,
-            "veraenderung": 0.0194,
+            "mittel_jetzt": 4559.21,
+            "mittel_damals": 4487.86,
+            "veraenderung": 0.0159,
             "urteil": "ruhig"
           }
         }
@@ -533,5 +533,5 @@
     }
   },
   "logbuch_neu": [],
-  "laufzeit_sekunden": 349.6
+  "laufzeit_sekunden": 354.8
 }
