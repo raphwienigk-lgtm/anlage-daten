@@ -1,8 +1,14 @@
-# Metall-Agent China: täglich um 23:17 UTC, nach Börsenschluss in New York (die Kurse des Tages
+# Metall-Agenten: täglich um 23:17 UTC, nach Börsenschluss in New York (die Kurse des Tages
 # gelten erst ab 18 Uhr Ortszeit als fest). Fristen, US-Bundesregister, Erdbeben, Regen, Kurse,
 # Ereignis-Rückblick. Die ersten Läufe laden zusätzlich das Regen-Normal 1991–2020 für die
-# Wasserkraft-Standorte in Yunnan (etwa zwanzig Minuten, danach nur noch Sekunden).
-name: Metall China
+# Wasserkraft-Standorte (etwa zwanzig Minuten je Land, danach nur noch Sekunden).
+#
+# Seit 08.10.2026 laufen fünf Länder nacheinander in EINEM Job: getrennte Formulare und
+# getrennte Statuszeilen, aber eine gemeinsame Rechenmaschine. Nacheinander statt parallel,
+# weil alle in dieselbe Ablage schreiben und sich sonst beim Zurückschreiben in die Quere kämen.
+# Jeder Schritt hat `continue-on-error`, damit ein Land das nächste nicht mitreißt; gesichert
+# wird am Ende in jedem Fall.
+name: Metall-Agenten
 
 on:
   schedule:
@@ -19,7 +25,7 @@ concurrency:
 jobs:
   metall:
     runs-on: ubuntu-latest
-    timeout-minutes: 45
+    timeout-minutes: 120
     steps:
       - uses: actions/checkout@v5
         with:
@@ -31,7 +37,20 @@ jobs:
       - name: Pakete installieren
         run: pip install -r requirements.txt
       - name: Metall-Agent China
-        run: python -m anlage.metall --land china --budget-minuten 25
+        continue-on-error: true
+        run: python -m anlage.metall --land china --budget-minuten 20
+      - name: Metall-Agent Indonesien
+        continue-on-error: true
+        run: python -m anlage.metall --land indonesien --budget-minuten 20
+      - name: Metall-Agent Chile
+        continue-on-error: true
+        run: python -m anlage.metall --land chile --budget-minuten 15
+      - name: Metall-Agent Marokko
+        continue-on-error: true
+        run: python -m anlage.metall --land marokko --budget-minuten 15
+      - name: Metall-Agent Kongo
+        continue-on-error: true
+        run: python -m anlage.metall --land kongo --budget-minuten 15
       - name: Ergebnis sichern
         if: always()
         run: |

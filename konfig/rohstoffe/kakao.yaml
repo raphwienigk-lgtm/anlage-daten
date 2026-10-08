@@ -1,0 +1,74 @@
+# Kakao: ausgefülltes Formular nach dem Muster von Palmöl.
+# Beschluss aus der Sprachnotiz vom 08.10.2026.
+#
+# NEUES KLIMA-MODUL: Kakao kommt zu rund zwei Dritteln aus Westafrika. Der Indische-Ozean-Dipol,
+# das Herzstück beim Palmöl, hilft hier nicht. Der Schalter für Westafrika ist der
+# Atlantik-Niño (Index ATL3) plus der Harmattan — der trockene Saharawind von Dezember bis
+# Februar — und die Frage, wie stark die Regenzeit ausfällt. Das ist mehr Neubau als bei
+# Kautschuk, aber genau der vorgesehene Fall: ein neuer Schalter als eigenes Modul, das später
+# auch der westafrikanische Kaffee erben kann.
+# Der Atlantik-Niño steht bereits als Schwester-Kaskade im Konzept; seine Schwäche ist bekannt:
+# weniger gut vorhersagbar als der Dipol, eher Kontrolllämpchen als sauberer Langfrist-Frühwarner.
+#
+# KRANKHEITSKANAL — bei Kakao fast wichtiger als das Wetter. Das Swollen-Shoot-Virus vernichtet
+# ganze Pflanzungen, dazu die Schwarzfäule. Beide waren Haupttreiber der jüngsten Preisexplosion.
+#
+# KIPPPUNKT: Kakao hängt im Register am Atlantik-Kaltfleck (AMOC). Eine Abschwächung verschiebt
+# die tropische Regenmaschine nach Süden und trifft Westafrika — langsam, über Jahrzehnte.
+
+name: Kakao
+kennung: kakao
+familie: A
+treiber: klima
+rolle: sensor              # Kandidat erst, wenn der Ereignis-Rückblick besteht
+handelbar: ja
+dipol_seite: keine         # Kakao hängt am Atlantik, nicht am Indischen Ozean
+
+kernregionen:
+  - {land: Elfenbeinküste, anteil: 0.40}
+  - {land: Ghana, anteil: 0.20}
+  - {land: Ecuador, anteil: 0.09}
+  - {land: Nigeria, anteil: 0.06}
+
+kanaele: [wetter, krankheit, politik]
+kopplungen: [enso, atlantik]
+ereignistyp: mittelschnelle_welle    # langsamer als der Kaffee-Frost, schneller als Palmöl
+vorlauf_T_monate: 6
+ausloeser: enso
+
+indikator:
+  variable: Niederschlag
+  region: westafrika
+  fenster: "Haupternte Oktober bis März; Harmattan-Wachfenster Dezember bis Februar"
+  tage: 90
+
+schaedlinge:
+  - {name: "Cacao Swollen Shoot Virus (CSSV)", ausloeser: "von Schmierläusen übertragen; befallene Bäume müssen gerodet werden, Wirkung über Jahre"}
+  - {name: "Schwarzfäule (Phytophthora)", ausloeser: "anhaltende Nässe in der Regenzeit"}
+lauernde_krankheit: "Frosty Pod Rot (Moniliophthora roreri) aus Südamerika — Westafrika ist bisher verschont; eine Ersteinschleppung wäre ein Struktursignal wie die Kautschukblattkrankheit"
+
+politische_hebel:
+  - "Abnahmepreise und Aufkaufsysteme in der Elfenbeinküste (CCC) und Ghana (COCOBOD)"
+  - "EU-Entwaldungsverordnung (EUDR) — Kakao ist ausdrücklich erfasst"
+  - "Exportbeschränkungen oder Terminverkaufspolitik der beiden Aufkaufstellen"
+
+gegenkraefte:
+  - {kennung: brent, art: oelpreis, text: "Ölpreis als Hintergrundpegel für Transport und Verarbeitung — bei Kakao schwächer als bei Palmöl, mangels echtem Substitut"}
+
+inlandspreise: []          # Erzeugerpreise setzen CCC und COCOBOD saisonal fest; als eigener Politikkanal zu führen
+
+preis:
+  quelle: fred
+  serie: PCOCOUSDM         # Weltmarktpreis Kakao (IMF über FRED)
+  einheit: "US-Dollar je Tonne"
+  z_fenster_monate: 36
+
+# Anders als bei Palmöl und Kautschuk gibt es hier einen sauberen Einzel-ETC.
+# Handelbarkeit am 08.10.2026 bei Interactive Brokers geprüft: COCO an der LSE
+# und an der Borsa Italiana gelistet.
+# Große reine Kakao-Produzenten fehlen an der Börse, weil der Anbau in der Hand von
+# Millionen Kleinbauern liegt. Barry Callebaut ist Verarbeiter und LEIDET unter hohen
+# Kakaopreisen — Sensor, nicht Kauf.
+instrumente:
+  - {art: ETC,   name: "WisdomTree Cocoa (ETC)", ticker: COCO.L,  boerse: LSE,  hinweis: "bildet den Weltmarktpreis direkt ab, keine Firma dazwischen"}
+  - {art: Aktie, name: "Barry Callebaut",        ticker: BARN.SW, boerse: SIX,  hinweis: "Verarbeiter; hoher Kakaopreis drückt die Marge — ausdrücklich Sensor, kein Kauf"}

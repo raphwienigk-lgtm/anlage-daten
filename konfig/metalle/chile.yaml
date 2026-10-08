@@ -1,0 +1,136 @@
+# Metall-Agent · Chile (Lithium). Beschluss aus der Sprachnotiz vom 08.10.2026.
+# Meldungen liest der Chile-Wächter in der Cloud aus dem Gmail-Label „Chile-Meldungen“.
+#
+# BESONDERHEIT gegenüber Indonesien: Chile verknappt selten durch einen Exportstopp (Schock),
+# sondern durch AUSBLEIBENDE EXPANSION — blockierte, verzögerte oder verstaatlichte Projekte
+# lassen das erwartete Angebot nicht wachsen. Das ist eine Nicht-Handlung ohne klares
+# Startdatum und deshalb maschinell schwer zu fassen. Behelf: Jede staatliche Entscheidung
+# über eine Konzession (CEOL), eine Quote oder ein Salar-Projekt ist ein datierbares Ereignis
+# und wird als solches geführt; das Ausbleiben selbst wird NICHT geraten.
+#
+# ZWIESPALT: Eine Verstaatlichung hebt den Weltpreis und drückt zugleich den Kurs der
+# chilenischen Förderer. SQM und Albemarle sind hier SENSOR, nicht Kauf.
+
+kennung: chile
+name: "Chile-Lithium"
+familie: B
+treiber: politik
+rolle: sensor
+laenderpaar: "Chile ↔ Weltmarkt über die staatliche Lithium-Strategie"
+
+metalle:
+  lithium: {name: Lithium, konzentration: 0.25, unersetzlichkeit: 0.70, achse: lithium}
+
+achsen:
+  lithium:
+    name: "Lithium-Achse"
+    beschreibung: "Salar-Sole aus der Atacama; Batteriezellen als Nachfrageseite"
+    metalle: [lithium]
+    pilot: true
+
+# Kein geprüfter Einzel-ETC auf Lithium — offener Punkt, im Prüflauf nachzutragen.
+# Bis dahin: ein Produzent AUSSERHALB Chiles als Kandidat, die chilenischen Förderer
+# ausdrücklich nur als Sensor.
+instrumente:
+  - {ticker: PLS.AX, name: "Pilbara Minerals",  achse: lithium, rolle: beobachtung, waehrung: AUD, hinweis: "Spodumen in Australien, profitiert von chilenischer Verknappung"}
+  - {ticker: SQM,    name: "SQM",               achse: lithium, rolle: sensor,      waehrung: USD, hinweis: "fördert im Salar de Atacama — leidet unter Verstaatlichung, kein Kauf"}
+  - {ticker: ALB,    name: "Albemarle",         achse: lithium, rolle: sensor,      waehrung: USD, hinweis: "fördert im Salar de Atacama — gleicher Zwiespalt wie SQM"}
+vergleich: {ticker: AIGI.L, name: "Industriemetall-Korb (WisdomTree Industrial Metals, Vergleichsmaßstab)"}
+
+standorte:
+  - {kennung: atacama,     name: "Salar de Atacama",            lat: -23.50, lon: -68.25, metalle: [lithium], art: "Kernstandort, SQM und Albemarle, jetzt Nova Andino Litio"}
+  - {kennung: maricunga,   name: "Salar de Maricunga",          lat: -26.99, lon: -69.13, metalle: [lithium], art: "Codelco-Konzession mit Rio Tinto"}
+  - {kennung: altoandinos, name: "Salares Altoandinos",         lat: -26.17, lon: -69.07, metalle: [lithium], art: "ENAMI-Projekt mit Rio Tinto"}
+  - {kennung: la_negra,    name: "La Negra, Antofagasta",       lat: -23.75, lon: -70.30, metalle: [lithium], art: "Verarbeitungsanlage Albemarle"}
+  - {kennung: carmen,      name: "Salar del Carmen, Antofagasta", lat: -23.57, lon: -70.33, metalle: [lithium], art: "Verarbeitungsanlage SQM"}
+
+stoerung:
+  erdbeben:
+    - {ab: 5.5, km: 80}
+    - {ab: 6.5, km: 200}
+    - {ab: 7.5, km: 400}
+  starkregen_ab_mm: 25        # In der Atacama ist das bereits ein Extremereignis (invierno boliviano)
+  trocken_fenster_tage: 180
+  trocken_unter: 0.6
+  trocken_normal_ab_mm: 10
+  gelb_tage: 30
+
+fristen_gelb_ab_tage: 30
+fristen:
+  - kennung: corfo_sqm_2030
+    name: "CORFO-Pachtvertrag mit SQM für den Salar de Atacama"
+    nummer: null
+    achsen: [lithium]
+    bis: 2030-12-31
+    stand: "Läuft Ende 2030 aus; abgelöst durch die Beteiligung von Codelco über Nova Andino Litio bis 2060."
+    verlaengert_bis: 2060-12-31
+  - kennung: corfo_albemarle_2043
+    name: "CORFO-Quote für Albemarle"
+    nummer: null
+    achsen: [lithium]
+    bis: 2043-12-31
+    stand: "Option auf 240.000 Tonnen zusätzliche Quote seit Mai 2024."
+    verlaengert_bis: null
+  - kennung: salar_schutzgebiete
+    name: "Schutzgebiete für zehn Salare und sechs Lagunen (Dekrete vom 29.01.2026)"
+    nummer: null
+    achsen: [lithium]
+    bis: 2027-12-31
+    stand: "Offener Risikofaktor: Nach dem Regierungswechsel im März 2026 wird eine Abschwächung befürchtet. Eine Rücknahme wäre eine Lockerung nach C4."
+    verlaengert_bis: null
+
+gegenseite:
+  tage: 30
+  begriffe:
+    lithium: [lithium]
+    "battery materials": [lithium]
+    "critical mineral": []
+  behoerden_suche: [industry-and-security-bureau, trade-representative-office-of-united-states, commerce-department,
+                    international-trade-administration, executive-office-of-the-president]
+  gewichtig:
+    - {art: "Presidential Document"}
+    - {behoerde: "industry-and-security-bureau"}
+    - {behoerde: "trade-representative-office-of-united-states"}
+    - {behoerde: "commerce-department", arten: ["Rule", "Proposed Rule"]}
+    - {behoerde: "international-trade-administration", titel_enthaelt: ["Chile"], titel_nennt_achse: true}
+  ausschluss_titel: ["Advisory Committee", "Meeting"]
+  suchwoerter:
+    lithium: [lithium, spodumene, "lithium carbonate", "lithium hydroxide"]
+
+preisprobe:
+  tage_kurz: 5
+  tage_lang: 20
+  gelaufen_ab: 0.15
+  handel_tage: 60
+  duenn_unter: 1000000
+
+# Ereignisse für den Rückblick (Tag der Ankündigung). Recherchiert am 08.10.2026.
+# Zwei Daten sind nicht zweifelsfrei belegt und vor dem scharfen Einsatz zu prüfen:
+# 2018-03-09 (Tag aus „el pasado viernes“ abgeleitet) und 2024-05-15 (Quelle sagt nur „on Wednesday“).
+ereignisse:
+  - {datum: 2012-10-01, art: verschaerfung, achsen: [lithium], text: "Erste CEOL-Ausschreibung für ungültig erklärt, Zuschlag an SQM aufgehoben"}
+  - {datum: 2012-11-22, art: verschaerfung, achsen: [lithium], text: "Regierung beendet den Lithium-Ausschreibungsprozess endgültig"}
+  - {datum: 2014-06-11, art: gegenseite,    achsen: [lithium], text: "Dekret zur Gründung der nationalen Lithium-Kommission"}
+  - {datum: 2015-01-27, art: gegenseite,    achsen: [lithium], text: "Lithium-Kommission schlägt staatliche Beteiligung vor"}
+  - {datum: 2016-02-02, art: lockerung,     achsen: [lithium], text: "CORFO und Rockwood/Albemarle heben die Quote auf 70.000 Tonnen"}
+  - {datum: 2018-01-17, art: lockerung,     achsen: [lithium], text: "CORFO-SQM-Abkommen: Quote steigt auf 216.000 Tonnen bis 2030"}
+  - {datum: 2018-03-09, art: verschaerfung, achsen: [lithium], text: "Codelco erhält exklusiven CEOL für den Salar de Maricunga (Datum unsicher)"}
+  - {datum: 2023-04-20, art: verschaerfung, achsen: [lithium], text: "Boric kündigt die nationale Lithium-Strategie an, Staatsbeteiligung über Codelco"}
+  - {datum: 2023-12-27, art: verschaerfung, achsen: [lithium], text: "Codelco und SQM unterzeichnen die Absichtserklärung für den Salar de Atacama bis 2060"}
+  - {datum: 2024-03-14, art: verschaerfung, achsen: [lithium], text: "Codelco übernimmt Lithium Power International für 244 Millionen Dollar"}
+  - {datum: 2024-05-15, art: lockerung,     achsen: [lithium], text: "CORFO gibt Albemarle eine Option auf 240.000 Tonnen zusätzliche Quote (Datum unsicher)"}
+  - {datum: 2024-05-31, art: verschaerfung, achsen: [lithium], text: "Codelco und SQM unterzeichnen den definitiven Vertrag, Codelco hält 50 Prozent plus eine Aktie"}
+  - {datum: 2025-05-19, art: lockerung,     achsen: [lithium], text: "Codelco wählt Rio Tinto als Partner für Maricunga"}
+  - {datum: 2025-08-18, art: lockerung,     achsen: [lithium], text: "CEOL für das ENAMI-Projekt Salares Altoandinos unterschriftsreif"}
+  - {datum: 2025-11-10, art: gegenseite,    achsen: [lithium], text: "Chinas Kartellbehörde genehmigt das Codelco-SQM-Gemeinschaftsunternehmen nur unter Auflagen"}
+  - {datum: 2025-12-27, art: verschaerfung, achsen: [lithium], text: "Gründung von Nova Andino Litio mit staatlicher Mehrheit, Laufzeit bis 2060"}
+  - {datum: 2026-01-29, art: verschaerfung, achsen: [lithium], text: "Dekrete für sechs Schutzgebiete: zehn Salare und sechs Lagunen ohne Förderung"}
+  - {datum: 2026-02-12, art: lockerung,     achsen: [lithium], text: "Codelcos Maricunga-Konzession verlängert, Explorationsphase plus vier Jahre"}
+
+rueckblick:
+  horizonte: [0, 5, 20, 60]
+  vorlauf: 20
+  haupt: 20
+  treffer_ab: 0.10
+  bestanden: {mindestens: 3, trefferquote: 0.5}
+  kurse_ab: 2008-01-01

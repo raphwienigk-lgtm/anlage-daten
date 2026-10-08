@@ -1,0 +1,129 @@
+# Metall-Agent · DR Kongo (Kobalt). Beschluss aus der Sprachnotiz vom 08.10.2026 — SONDERFALL.
+# Meldungen liest der Kongo-Wächter in der Cloud aus dem Gmail-Label „Kongo-Meldungen“.
+#
+# GRUNDCHARAKTER: Kein Politik-Wächter wie China, Indonesien und Chile, sondern eine MISCHFORM.
+# Herzstück ist der STÖRUNGS-SENSOR (Minenunglück, Überschwemmung, Streik, Instabilität,
+# Transportprobleme), weil das Preissignal selten aus einer geordneten Regierungsankündigung
+# kommt. Dazu ein kleiner Politik-Kanal: Die Ausfuhraussetzung ab Februar 2025 und das
+# anschließende Quotensystem zeigen, dass es den echten Exportstopp hier sehr wohl gibt.
+#
+# DREI DÄMPFER, die diesen Wächter zum schwächsten der vier machen:
+#   1. Ein großer Teil der Förderung liegt in chinesischer Hand.
+#   2. Kobalt lässt sich zunehmend wegkonstruieren (LFP-Batterie ohne Kobalt) — deckelt den Preis.
+#   3. Es gibt keinen sauberen Kauf: Glencore ist ein Mischkonzern, CMOC ein chinesischer Wert
+#      (eingebauter Widerspruch), Jervois dünn gehandelt.
+# Deshalb: als reinen SENSOR betreiben. Er warnt, er drängt nicht zum Kauf.
+
+kennung: kongo
+name: "Kongo-Kobalt"
+familie: B
+treiber: politik
+rolle: sensor
+laenderpaar: "DR Kongo ↔ China über Förderbeteiligung und Ausfuhrquoten"
+
+metalle:
+  kobalt: {name: Kobalt, konzentration: 0.75, unersetzlichkeit: 0.45, achse: kobalt}
+
+achsen:
+  kobalt:
+    name: "Kobalt-Achse"
+    beschreibung: "Kobalt aus dem Kupfergürtel Katanga; Batteriezellen als Nachfrageseite, LFP als Ausweichpfad"
+    metalle: [kobalt]
+    pilot: true
+
+# Kein sauberer Kobalt-Wert. Alles hier ist SENSOR. Ein Kobalt-ETC existiert vermutlich,
+# ist aber dünn gehandelt — im Prüflauf gegen die Preisprobe (duenn_unter) halten.
+instrumente:
+  - {ticker: GLEN.L, name: "Glencore", achse: kobalt, rolle: sensor, waehrung: GBP, hinweis: "größter westlicher Kobalt-Förderer im Kongo, aber riesiger Mischkonzern — Signal stark verwässert"}
+vergleich: {ticker: AIGI.L, name: "Industriemetall-Korb (WisdomTree Industrial Metals, Vergleichsmaßstab)"}
+
+# Förderstandorte plus die Transportachse — beim Kongo ist der Weg zum Hafen ein eigenes
+# Frühsignal: Staus am Grenzposten Kasumbalesa von bis zu sechzig Kilometern sind wiederkehrend.
+standorte:
+  - {kennung: kolwezi,      name: "Kolwezi, Lualaba",            lat: -10.72, lon: 25.47, metalle: [kobalt], art: "Zentrum des Kobaltbergbaus, KCC und Mutanda im Umfeld"}
+  - {kennung: likasi,       name: "Likasi, Haut-Katanga",        lat: -10.98, lon: 26.73, metalle: [kobalt], art: "Verarbeitung und Bahnknoten"}
+  - {kennung: tenke,        name: "Tenke-Fungurume, Lualaba",    lat: -10.62, lon: 26.30, metalle: [kobalt], art: "CMOC und Gécamines, eine der größten Kobaltquellen der Welt"}
+  - {kennung: kisanfu,      name: "Kisanfu, Lualaba",            lat: -10.78, lon: 25.98, metalle: [kobalt], art: "CMOC, CATL und Gécamines, rund 55 km östlich von Kolwezi"}
+  - {kennung: kasumbalesa,  name: "Kasumbalesa, Grenze zu Sambia", lat: -12.22, lon: 27.79, metalle: [kobalt], art: "Haupt-Grenzposten der Exportachse, wiederkehrende Staus"}
+  - {kennung: durban,       name: "Durban, Südafrika",           lat: -29.87, lon: 31.03, metalle: [kobalt], art: "Endhafen des rund 3.000 km langen Straßenkorridors"}
+
+stoerung:
+  erdbeben:
+    - {ab: 5.0, km: 80}
+    - {ab: 6.0, km: 200}
+    - {ab: 7.0, km: 400}
+  starkregen_ab_mm: 80        # Regenzeit November bis April; Tagebaue und Pisten fallen aus
+  trocken_fenster_tage: 90
+  trocken_unter: 0.6
+  trocken_normal_ab_mm: 40
+  gelb_tage: 45               # länger als bei den anderen: Störungen wirken hier träger nach
+
+fristen_gelb_ab_tage: 30
+fristen:
+  - kennung: quoten_2026_2027
+    name: "Kobalt-Ausfuhrquote von 96.600 Tonnen je Jahr (ARECOMS-Beschluss 004/2025)"
+    nummer: 4
+    achsen: [kobalt]
+    bis: 2027-12-31
+    stand: "Seit 16.10.2025 in Kraft, nach dem achtmonatigen Exportverbot. Nicht genutzte Halbjahresquoten wurden am 29.06.2026 eingezogen und in eine strategische Reserve überführt."
+    verlaengert_bis: null
+  - kennung: quotenjahr_2026
+    name: "Quotenzuteilung für das laufende Jahr"
+    nummer: null
+    achsen: [kobalt]
+    bis: 2026-12-31
+    stand: "Verfallsregeln sind das eigentliche Steuerungsinstrument geworden: Fristen für die Nutzung wurden 2026 mehrfach verkürzt."
+    verlaengert_bis: null
+
+gegenseite:
+  tage: 30
+  begriffe:
+    cobalt: [kobalt]
+    "battery materials": [kobalt]
+    "critical mineral": []
+  behoerden_suche: [industry-and-security-bureau, trade-representative-office-of-united-states, commerce-department,
+                    international-trade-administration, executive-office-of-the-president]
+  gewichtig:
+    - {art: "Presidential Document"}
+    - {behoerde: "industry-and-security-bureau"}
+    - {behoerde: "trade-representative-office-of-united-states"}
+    - {behoerde: "commerce-department", arten: ["Rule", "Proposed Rule"]}
+    - {behoerde: "international-trade-administration", titel_enthaelt: ["Congo"], titel_nennt_achse: true}
+  ausschluss_titel: ["Advisory Committee", "Meeting"]
+  suchwoerter:
+    kobalt: [cobalt, "cobalt hydroxide", battery]
+
+preisprobe:
+  tage_kurz: 5
+  tage_lang: 20
+  gelaufen_ab: 0.15
+  handel_tage: 60
+  duenn_unter: 1000000
+
+# Ereignisse für den Rückblick (Tag der Ankündigung). Recherchiert am 08.10.2026.
+# Zwei Einträge sind nur auf Monat bzw. Jahr belegt und deshalb hier weggelassen:
+# die Mutanda-Ankündigung vom August 2019 und das Ministerialdekret 19/15 von 2019.
+ereignisse:
+  - {datum: 2018-11-06, art: gegenseite,    achsen: [kobalt], text: "Katanga Mining stoppt Kobaltverkäufe aus Kamoto wegen zu hoher Uranwerte"}
+  - {datum: 2018-12-05, art: verschaerfung, achsen: [kobalt], text: "Kobalt wird als strategisches Mineral eingestuft, Royalty auf 10 Prozent"}
+  - {datum: 2019-11-25, art: gegenseite,    achsen: [kobalt], text: "Mutanda stellt Förderung und Aufbereitung vorzeitig ein"}
+  - {datum: 2022-06-29, art: verschaerfung, achsen: [kobalt], text: "Gerichtlich bestellter Verwalter stoppt Vermarktung und Export aus Tenke Fungurume"}
+  - {datum: 2023-04-19, art: lockerung,     achsen: [kobalt], text: "CMOC und Gécamines einigen sich, Exporte aus Tenke Fungurume werden freigegeben"}
+  - {datum: 2025-02-22, art: verschaerfung, achsen: [kobalt], text: "ARECOMS setzt alle Kobaltexporte für vier Monate aus (Beschluss 001/2025)"}
+  - {datum: 2025-06-21, art: verschaerfung, achsen: [kobalt], text: "Exportverbot um drei Monate bis zum 21.09.2025 verlängert"}
+  - {datum: 2025-09-20, art: verschaerfung, achsen: [kobalt], text: "Verbot bis 15.10., danach Quotensystem mit 96.600 Tonnen je Jahr"}
+  - {datum: 2025-10-16, art: lockerung,     achsen: [kobalt], text: "Exportverbot endet, monatliche Quotenzuteilung beginnt"}
+  - {datum: 2025-11-15, art: gegenseite,    achsen: [kobalt], text: "Brückeneinsturz an der Mine Kalando mit mindestens 32 Toten"}
+  - {datum: 2025-11-16, art: verschaerfung, achsen: [kobalt], text: "Provinzbehörden suspendieren den Betrieb am Standort Kalando"}
+  - {datum: 2025-12-10, art: lockerung,     achsen: [kobalt], text: "Erste Pilotlieferung von Glencore unter dem neuen Quotensystem freigegeben"}
+  - {datum: 2025-12-28, art: lockerung,     achsen: [kobalt], text: "Nutzung der Quoten von 2025 bis zum 31.03.2026 verlängert"}
+  - {datum: 2026-03-31, art: verschaerfung, achsen: [kobalt], text: "Quoten aus dem vierten Quartal 2025 nur bis 30.04. nutzbar, Rest verfällt"}
+  - {datum: 2026-06-29, art: verschaerfung, achsen: [kobalt], text: "Nicht genutzte Halbjahresquoten eingezogen und in eine strategische Reserve überführt"}
+
+rueckblick:
+  horizonte: [0, 5, 20, 60]
+  vorlauf: 20
+  haupt: 20
+  treffer_ab: 0.10
+  bestanden: {mindestens: 3, trefferquote: 0.5}
+  kurse_ab: 2008-01-01

@@ -128,7 +128,8 @@ def test_text_vor_betriebsbeginn(ablage):
     text = (konfig.ABGABE / "nachpruefer-teil-1.md").read_text(encoding="utf-8")
     assert "noch nicht in Betrieb; der erste ist für den siebenundzwanzigsten September geplant" in text
     assert "Zustand: in Ordnung" in (konfig.ABGABE / "status-nachpruefer.md").read_text(encoding="utf-8")
-    assert "etwa 1 Minute Vorlesezeit" in (konfig.ABGABE / "status-nachpruefer.md").read_text(encoding="utf-8")
+    # Die Vorlesezeit wächst mit der Zahl der Zweige; geprüft wird, dass sie überhaupt ausgewiesen ist.
+    assert "Vorlesezeit" in (konfig.ABGABE / "status-nachpruefer.md").read_text(encoding="utf-8")
 
 
 # ------------------------------------------------------------------ andere Zweige (seit 26.09.2026)

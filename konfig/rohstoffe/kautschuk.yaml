@@ -1,0 +1,72 @@
+# Kautschuk (Naturgummi): ausgefülltes Formular nach dem Muster von Palmöl.
+# Beschluss aus der Sprachnotiz vom 08.10.2026 — der nächste Agrarwert nach Palmöl,
+# weil er am meisten erbt und am wenigsten Neubau braucht.
+#
+# WAS GEERBT WIRD: der ganze Klima-Apparat. El Niño als Auslöser, die Kaskade über den
+# Indischen-Ozean-Dipol mit Ost- und Westende, die Regenzeugen, das Zeitfenster nach dem
+# Höhepunkt. Kautschuk wächst fast in derselben Region wie Palmöl.
+#
+# WAS ANGEPASST IST: die Kernregion. Thailand ist der größte Produzent und fehlte beim
+# Palmöl ganz — deshalb die eigene Messregion „kautschuk“ in regionen.yaml, mit Südthailand
+# neben Sumatra und Malaysia.
+#
+# WAS NEU IST: ein Krankheitskanal (Blattfallkrankheit) und die Gegenkraft synthetischer
+# Kautschuk. Wird Naturkautschuk teuer, weichen die Reifenhersteller auf den synthetischen
+# aus — der kommt aus Erdöl, also deckelt ein NIEDRIGER Ölpreis den Naturkautschukpreis.
+# Dieselbe Richtung wie beim Palmöl, nur aus anderem Grund.
+
+name: Kautschuk
+kennung: kautschuk
+familie: A
+treiber: klima
+rolle: sensor              # Kandidat erst, wenn der Ereignis-Rückblick besteht
+handelbar: ja
+dipol_seite: ost           # zweiter Ostanker neben Palmöl
+
+kernregionen:
+  - {land: Thailand, anteil: 0.33}
+  - {land: Indonesien, anteil: 0.22}
+  - {land: Vietnam, anteil: 0.09}
+  - {land: Malaysia, anteil: 0.04}
+
+kanaele: [wetter, krankheit, politik, energie]
+kopplungen: [enso, dipol]
+ereignistyp: langsame_welle
+vorlauf_T_monate: 9        # kürzer als Palmöl: das Zapfen fällt sofort aus, die Bäume tragen weiter
+ausloeser: enso
+
+indikator:
+  variable: Niederschlag
+  region: kautschuk
+  fenster: ganzjährig      # kein enges Kalenderfenster; die Nass- und Trockenzeit stört das Zapfen
+  tage: 90
+
+# Krankheitskanal — bei Kautschuk ein eigener Signalweg neben dem Wetter.
+schaedlinge:
+  - {name: "Pestalotiopsis-Blattfallkrankheit", ausloeser: "feuchte Jahre; seit 2019 in Indonesien, Thailand und Malaysia verbreitet"}
+lauernde_krankheit: "Südamerikanische Kautschukblattkrankheit (South American Leaf Blight) — Südostasien ist bisher verschont; eine Ersteinschleppung wäre ein Struktursignal allererster Güte"
+
+politische_hebel:
+  - "Ausfuhrbeschränkungen und Preisstützungen des Dreiländerrats ITRC (Thailand, Indonesien, Malaysia)"
+  - "Thailändische Garantiepreise für Kleinbauern"
+  - "EU-Entwaldungsverordnung (EUDR) — Kautschuk ist ausdrücklich erfasst"
+
+gegenkraefte:
+  - {kennung: brent, art: oelpreis, text: "Ölpreis (Brent) — billiges Erdöl macht synthetischen Kautschuk billig und deckelt den Naturkautschukpreis"}
+
+inlandspreise: []          # noch keine geprüfte Tagespreisquelle; im Prüflauf nachtragen
+
+preis:
+  quelle: fred
+  serie: PRUBBUSDM         # Weltmarktpreis Naturkautschuk (IMF über FRED)
+  einheit: "US-Cent je Kilogramm"
+  z_fenster_monate: 36
+
+# Keinen sauberen Einzel-ETC auf Naturkautschuk — wie bei Palmöl läuft es über Aktien.
+# Vorteil gegenüber Mischkonzernen: beide sind weitgehend reine Naturkautschuk-Produzenten.
+# LIQUIDITÄTS-VORBEHALT: Bei asiatischen Nebenwerten kann der Tagesumsatz knapp sein.
+# Die Preisprobe misst „dünner Markt“ mit; Handelbarkeit bei IBKR war am 08.10.2026 über die
+# Namenssuche nicht zu bestätigen und ist vor einem Kauf zu prüfen.
+instrumente:
+  - {art: Aktie, name: "Sri Trang Agro-Industry", ticker: STA.BK, boerse: SET, hinweis: "Thailand; weitgehend reiner Naturkautschuk-Produzent. Handelbarkeit bei IBKR noch zu bestätigen."}
+  - {art: Aktie, name: "Halcyon Agri",            ticker: 5VJ.SI, boerse: SGX, hinweis: "Singapur; Naturkautschuk-Verarbeitung und -Handel. Handelbarkeit bei IBKR noch zu bestätigen."}
