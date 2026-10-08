@@ -1,0 +1,137 @@
+# Metall-Agent · Marokko (Phosphat). Beschluss aus der Sprachnotiz vom 08.10.2026.
+# Meldungen liest der Marokko-Wächter in der Cloud aus dem Gmail-Label „Marokko-Meldungen“.
+#
+# BESONDERHEIT: Das Signal ist hier NICHT der plötzliche Stopp, sondern PREISSETZUNGSMACHT.
+# Der Staatskonzern OCP beherrscht einen großen Teil des Welthandels mit Phosphatdünger und
+# Marokko sitzt auf dem größten Teil der Weltreserven. Lesbare Ereignisse sind Exportverträge
+# mit Großabnehmern, Düngemittelpolitik und Zollentscheidungen der Abnehmerländer.
+#
+# EINORDNUNG: Das ist ein SENSOR-Fall plus Substitutions-Fall, kein sauberer Kauf-Fall —
+# vergleichbar mit Orangensaft und Haselnuss. OCP ist staatlich und nicht börsennotiert,
+# einen reinen Phosphat-ETC gibt es nach jetzigem Kenntnisstand nicht. Der Umweg führt über
+# Düngemittelkonzerne, die auch Kali und Stickstoff machen — ein unsauberer Hebel.
+#
+# SUBSTITUTION: Phosphatdünger konkurriert mit Kali und Stickstoff. Als Russland und Belarus
+# bei Kali unter Sanktionen fielen, zog die Nachfrage nach marokkanischem Phosphat an. Das ist
+# der eigentliche Hebel — und der Grund, warum Nutrien und Mosaic überhaupt mitlaufen.
+
+kennung: marokko
+name: "Marokko-Phosphat"
+familie: B
+treiber: politik
+rolle: sensor
+laenderpaar: "Marokko ↔ EU und USA über Westsahara, Cadmium und Ausgleichszölle"
+
+metalle:
+  phosphat: {name: Phosphat, konzentration: 0.70, unersetzlichkeit: 1.00, achse: duenger}
+
+achsen:
+  duenger:
+    name: "Dünger-Achse"
+    beschreibung: "Phosphatgestein und Phosphatdünger; unersetzlicher Pflanzennährstoff"
+    metalle: [phosphat]
+    pilot: true
+
+# Kein reiner Phosphat-Wert an der Börse. Beide Werte sind ausdrücklich SENSOR:
+# sie hängen auch an Kali und Stickstoff und verwässern das Signal.
+# Offener Prüfpunkt: Gibt es einen Kali- oder breiten Dünger-ETC als saubereren Zugang?
+instrumente:
+  - {ticker: NTR, name: "Nutrien",  achse: duenger, rolle: sensor, waehrung: USD, hinweis: "Kanada; größter Düngemittelkonzern, aber schwerpunktmäßig Kali — verwässert"}
+  - {ticker: MOS, name: "Mosaic",   achse: duenger, rolle: sensor, waehrung: USD, hinweis: "USA; Phosphat und Kali, zugleich Kläger in den Ausgleichszollverfahren gegen OCP"}
+vergleich: {ticker: AIGI.L, name: "Industriemetall-Korb (WisdomTree Industrial Metals, Vergleichsmaßstab)"}
+
+standorte:
+  - {kennung: khouribga,   name: "Khouribga",                 lat: 32.88, lon:  -6.91, metalle: [phosphat], art: "größtes Phosphat-Bergbaugebiet der Welt (Ouled Abdoun)"}
+  - {kennung: benguerir,   name: "Benguerir",                 lat: 32.24, lon:  -7.95, metalle: [phosphat], art: "Mine im Gantour-Becken, versorgt Safi"}
+  - {kennung: jorf_lasfar, name: "Jorf Lasfar",               lat: 33.11, lon:  -8.62, metalle: [phosphat], art: "weltgrößter Düngemittelkomplex und Exporthafen"}
+  - {kennung: safi,        name: "Safi",                      lat: 32.30, lon:  -9.24, metalle: [phosphat], art: "älterer Verarbeitungs- und Exportstandort"}
+  - {kennung: bou_craa,    name: "Bou Craa (Westsahara)",     lat: 26.32, lon: -12.85, metalle: [phosphat], art: "Phosboucraa, 100 km Förderband zum Hafen"}
+  - {kennung: laayoune,    name: "Laayoune / El Marsa",       lat: 27.15, lon: -13.20, metalle: [phosphat], art: "Verladehafen für Bou-Craa-Phosphat, politisch sensibelster Punkt"}
+
+stoerung:
+  erdbeben:
+    - {ab: 5.0, km: 80}
+    - {ab: 6.0, km: 200}
+    - {ab: 7.0, km: 400}
+  starkregen_ab_mm: 50        # Sturzfluten im Tagebau; in Marokko ist das bereits viel
+  trocken_fenster_tage: 180   # Dürre schlägt auf den Wasserbedarf der Aufbereitung durch
+  trocken_unter: 0.6
+  trocken_normal_ab_mm: 20
+  gelb_tage: 30
+
+fristen_gelb_ab_tage: 30
+fristen:
+  - kennung: cadmium_eu
+    name: "EU-Cadmiumgrenzwert von 60 mg/kg für Phosphatdünger (Verordnung 2019/1009)"
+    nummer: 1009
+    achsen: [duenger]
+    bis: 2027-12-31
+    stand: "In Kraft; eine Absenkung des Grenzwerts würde marokkanisches Gestein stärker treffen als russisches. Überprüfung steht an."
+    verlaengert_bis: null
+  - kennung: us_ausgleichszoll
+    name: "US-Ausgleichszoll auf marokkanischen Phosphatdünger"
+    nummer: null
+    achsen: [duenger]
+    bis: 2027-12-31
+    stand: "Seit 26.12.2024 bei 16,60 Prozent. Jede jährliche Überprüfung kann den Satz bewegen."
+    verlaengert_bis: null
+  - kennung: eu_agrarabkommen
+    name: "Geändertes EU-Marokko-Agrarabkommen mit Herkunftskennzeichnung für die Südprovinzen"
+    nummer: null
+    achsen: [duenger]
+    bis: 2027-10-03
+    stand: "Seit 03.10.2025 vorläufig angewandt; betrifft Phosphat nur mittelbar, ist aber der Gradmesser für die Westsahara-Frage."
+    verlaengert_bis: null
+
+gegenseite:
+  tage: 30
+  begriffe:
+    phosphate: [duenger]
+    fertilizer: [duenger]
+    "phosphoric acid": [duenger]
+    "critical mineral": []
+  behoerden_suche: [industry-and-security-bureau, trade-representative-office-of-united-states, commerce-department,
+                    international-trade-administration, executive-office-of-the-president]
+  gewichtig:
+    - {art: "Presidential Document"}
+    - {behoerde: "trade-representative-office-of-united-states"}
+    - {behoerde: "commerce-department", arten: ["Rule", "Proposed Rule"]}
+    - {behoerde: "international-trade-administration", titel_enthaelt: ["Morocco"], titel_nennt_achse: true}
+  ausschluss_titel: ["Advisory Committee", "Meeting"]
+  suchwoerter:
+    duenger: [phosphate, fertilizer, "phosphoric acid", DAP, MAP]
+
+preisprobe:
+  tage_kurz: 5
+  tage_lang: 20
+  gelaufen_ab: 0.15
+  handel_tage: 60
+  duenn_unter: 1000000
+
+# Ereignisse für den Rückblick (Tag der Ankündigung). Recherchiert am 08.10.2026.
+# Hinweis aus der Recherche: OCP veröffentlicht Preisentscheidungen NICHT mit Pressedatum.
+# Preisbewegungen sind nur über Marktberichte abgreifbar, nicht als datierbares Politikereignis.
+# Deshalb bestehen die Ereignisse hier aus Verträgen, Zöllen und Regelwerken.
+ereignisse:
+  - {datum: 2015-12-10, art: gegenseite,    achsen: [duenger], text: "EU-Gericht annulliert den Handelsbeschluss, soweit er die Westsahara einbezieht"}
+  - {datum: 2018-11-22, art: verschaerfung, achsen: [duenger], text: "EU einigt sich auf eine Cadmium-Obergrenze von 60 mg/kg für Phosphatdünger"}
+  - {datum: 2019-06-05, art: verschaerfung, achsen: [duenger], text: "EU-Düngemittelverordnung 2019/1009 mit Cadmiumgrenzwerten erlassen"}
+  - {datum: 2021-02-09, art: gegenseite,    achsen: [duenger], text: "USA setzen einen endgültigen Ausgleichszoll von 19,97 Prozent auf OCP-Dünger fest"}
+  - {datum: 2022-10-12, art: lockerung,     achsen: [duenger], text: "OCP kündigt über vier Millionen Tonnen Dünger für afrikanische Bauern an"}
+  - {datum: 2023-01-22, art: lockerung,     achsen: [duenger], text: "OCP und Indien vereinbaren 1,7 Millionen Tonnen Phosphatdünger"}
+  - {datum: 2024-09-19, art: lockerung,     achsen: [duenger], text: "Mosaic zieht den Antrag auf Zollprüfung zurück, OCP-Satz bleibt bei 7,42 Prozent"}
+  - {datum: 2024-10-04, art: gegenseite,    achsen: [duenger], text: "EuGH annulliert die EU-Marokko-Agrar- und Fischereiabkommen wegen der Westsahara"}
+  - {datum: 2024-12-26, art: lockerung,     achsen: [duenger], text: "USA senken den Ausgleichszoll auf marokkanischen Phosphatdünger auf 16,60 Prozent"}
+  - {datum: 2025-07-02, art: lockerung,     achsen: [duenger], text: "OCP Nutricrops und Bangladesch vereinbaren 1,1 Millionen Tonnen für 2025/26"}
+  - {datum: 2025-10-02, art: lockerung,     achsen: [duenger], text: "EU-Rat beschließt Unterzeichnung und vorläufige Anwendung des geänderten Agrarabkommens"}
+  - {datum: 2025-10-03, art: lockerung,     achsen: [duenger], text: "Marokko und EU unterzeichnen den Briefwechsel mit Herkunftskennzeichnung der Südprovinzen"}
+  - {datum: 2026-03-12, art: lockerung,     achsen: [duenger], text: "Indien sichert sich 2,5 Millionen Tonnen Dünger von OCP"}
+  - {datum: 2026-09-18, art: lockerung,     achsen: [duenger], text: "OCP Nutricrops und Brasilien zeichnen eine Absichtserklärung über 3,8 Millionen Tonnen"}
+
+rueckblick:
+  horizonte: [0, 5, 20, 60]
+  vorlauf: 20
+  haupt: 20
+  treffer_ab: 0.10
+  bestanden: {mindestens: 3, trefferquote: 0.5}
+  kurse_ab: 2008-01-01

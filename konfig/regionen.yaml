@@ -19,6 +19,26 @@ west:
     - {name: "Moyale, Äthiopien", lat: 3.5, lon: 39.05}
     - {name: "Arusha, Tansania", lat: -3.37, lon: 36.7}
 
+kautschuk:
+  name: "Südthailand, Nord-Sumatra und Malaysia (Naturkautschuk-Kerngebiet)"
+  punkte:
+    - {name: "Surat Thani, Südthailand", lat: 9.14, lon: 99.33}
+    - {name: "Songkhla, Südthailand", lat: 7.20, lon: 100.60}
+    - {name: "Narathiwat, Südthailand", lat: 6.43, lon: 101.82}
+    - {name: "Medan, Nord-Sumatra", lat: 3.59, lon: 98.67}
+    - {name: "Palembang, Süd-Sumatra", lat: -2.98, lon: 104.76}
+    - {name: "Johor, Malaysia", lat: 1.85, lon: 103.76}
+
+westafrika:
+  name: "Elfenbeinküste und Ghana (Kakao-Kerngebiet)"
+  punkte:
+    - {name: "San-Pédro, Elfenbeinküste", lat: 4.75, lon: -6.64}
+    - {name: "Daloa, Elfenbeinküste", lat: 6.88, lon: -6.45}
+    - {name: "Soubré, Elfenbeinküste", lat: 5.79, lon: -6.60}
+    - {name: "Kumasi, Ghana", lat: 6.69, lon: -1.62}
+    - {name: "Sefwi Wiawso, Ghana", lat: 6.21, lon: -2.49}
+    - {name: "Takoradi, Ghana", lat: 4.90, lon: -1.76}
+
 wind_sumatra:
   name: "Seegebiet vor Südwest-Sumatra und Java"
   punkte:

@@ -1,0 +1,193 @@
+# Metall-Agent · Indonesien (Nickel und Zinn). Beschluss aus den Sprachnotizen vom 08.10.2026.
+# Gleiche Rechenmaschine wie China, eigenes Formular und eigene Quellen.
+# Hier stehen nur Zahlen- und Kalenderteile; die Meldungen liest der Indonesien-Wächter
+# in der Cloud aus dem Gmail-Label „Indonesien-Meldungen“.
+#
+# WELTPREIS-LOGIK (der wichtigste Satz dieses Formulars): Ein indonesischer Exportstopp macht
+# Nickel und Zinn weltweit knapper, der Weltpreis steigt — im Inland staut sich das Erz und der
+# Inlandspreis fällt. Indonesische Produzenten verlieren dabei. Die handelbaren Werte müssen
+# deshalb AUSSERHALB Indonesiens liegen; ein ETC auf den Weltpreis umgeht den Zwiespalt ganz.
+
+kennung: indonesien
+name: "Indonesien-Ausfuhr"
+familie: B
+treiber: politik
+rolle: sensor                 # Kandidat erst, wenn der Ereignis-Rückblick besteht
+laenderpaar: "Indonesien ↔ EU und China über Verhüttungspflicht und Edelstahl"
+
+# Wuchtwert = Konzentration × Unersetzlichkeit (0 bis 1). Richtwerte nach USGS-Größenordnung;
+# beim nächsten USGS-Bericht (Ende Januar) prüfen.
+metalle:
+  nickel: {name: Nickel, konzentration: 0.60, unersetzlichkeit: 0.60, achse: nickel}
+  zinn:   {name: Zinn,   konzentration: 0.25, unersetzlichkeit: 0.80, achse: zinn}
+
+# Anders als bei China liegen die beiden Metalle auf getrennten Achsen: ein Erlass zu Nickel
+# betrifft Zinn meist nicht. Eine Kreuzbestätigung gibt es nur bei Erlassen, die beide nennen
+# (SIMBARA, DSI, Single-Gate) — die tragen dann beide Achsen.
+achsen:
+  nickel:
+    name: "Nickel-Achse"
+    beschreibung: "Nickelerz, NPI und Ferronickel; Edelstahl und Batterie als Nachfrageseite"
+    metalle: [nickel]
+    pilot: true
+  zinn:
+    name: "Zinn-Achse"
+    beschreibung: "Zinn aus Bangka und Belitung; Lot und Elektronik als Nachfrageseite"
+    metalle: [zinn]
+
+# Reihenfolge der Handelswege: ETC zuerst, Aktie später. Für Nickel und Zinn gibt es
+# Einzel-ETCs — der saubere Weg, weil sie den Weltpreis abbilden und keine Firma.
+# Handelbarkeit am 08.10.2026 bei Interactive Brokers geprüft: NICK und TINM an der LSE
+# und an der Borsa Italiana gelistet.
+instrumente:
+  - {ticker: NICK.L, name: "WisdomTree Nickel (ETC)", achse: nickel, rolle: beobachtung, waehrung: USD, hinweis: "bildet den LME-Nickelpreis ab, kein Länderrisiko, keine Verwässerung"}
+  - {ticker: TINM.L, name: "WisdomTree Tin (ETC)",    achse: zinn,   rolle: beobachtung, waehrung: USD, hinweis: "bildet den LME-Zinnpreis ab"}
+  # Zweite Stufe, erst nach bestandenem Rückblick aufnehmen (Hebel eines Produzenten):
+  # Vale (verwässert durch Eisenerz), Nickel Industries (ASX, sitzt aber in Indonesien →
+  # guter Sensor, gefährlicher Kauf), Malaysia Smelting (Region nebenan), Alphamin (Kongo).
+  # Norilsk fällt wegen der Sanktionen aus.
+vergleich: {ticker: AIGI.L, name: "Industriemetall-Korb (WisdomTree Industrial Metals, Vergleichsmaßstab)"}
+
+# Gegen einen ETC ist ein Bergbau-Aktienindex der falsche Maßstab — deshalb hier der
+# Industriemetall-Korb statt XME wie bei China.
+
+# Förder-, Hütten- und Verladestandorte für den Störungskanal (ungefähre Lage).
+standorte:
+  - {kennung: morowali,   name: "Morowali, Sulawesi",        lat: -2.83, lon: 122.17, metalle: [nickel], art: "größter Nickel-Industriepark (IMIP), kohlebefeuert"}
+  - {kennung: weda_bay,   name: "Weda Bay, Halmahera",       lat:  0.49, lon: 127.95, metalle: [nickel], art: "Industriepark IWIP, zweitgrößter Nickelstandort"}
+  - {kennung: sorowako,   name: "Sorowako, Sulawesi",        lat: -2.53, lon: 121.36, metalle: [nickel], art: "Mine und Hütte von Vale Indonesia, Wasserkraft", wasserkraft: true}
+  - {kennung: pomalaa,    name: "Pomalaa, Südost-Sulawesi",  lat: -4.18, lon: 121.61, metalle: [nickel], art: "Ferronickel und HPAL-Projekte"}
+  - {kennung: bangka,     name: "Pangkalpinang, Bangka",     lat: -2.13, lon: 106.11, metalle: [zinn],   art: "Zentrum des Zinnbergbaus, PT Timah"}
+  - {kennung: belitung,   name: "Tanjung Pandan, Belitung",  lat: -2.74, lon: 107.65, metalle: [zinn],   art: "zweites Zinngebiet, viel Kleinbergbau"}
+  - {kennung: muntok,     name: "Muntok, West-Bangka",       lat: -2.07, lon: 105.17, metalle: [zinn],   art: "Zinnhütte und Verladehafen"}
+
+stoerung:
+  # Indonesien liegt auf dem Feuerring: Erdbeben und Vulkane sind die häufigste physische Störung.
+  erdbeben:
+    - {ab: 5.0, km: 50}
+    - {ab: 6.0, km: 150}
+    - {ab: 7.0, km: 300}
+  starkregen_ab_mm: 100       # Tagessumme; Überschwemmungen legen Tagebaue und Zufahrten lahm
+  trocken_fenster_tage: 90    # nur für Wasserkraft-Standorte (Sorowako)
+  trocken_unter: 0.6
+  trocken_normal_ab_mm: 50
+  gelb_tage: 30
+
+# Fristen: Regelungen mit Ablauf- oder Starttermin. Ab `gelb_ab_tage` vor Ablauf ohne
+# formelle Verlängerung → Gelb.
+fristen_gelb_ab_tage: 30
+fristen:
+  - kennung: rkab_quote_2026
+    name: "Fördermengen-Quote RKAB für 2026 (Deckel ausdrücklich zur Preisstützung)"
+    nummer: 17                # Permen ESDM 17/2025: RKAB gilt wieder nur ein Jahr
+    achsen: [nickel]
+    bis: 2026-12-31
+    stand: "Am 10.07.2026 bestätigt: keine Erhöhung im laufenden Jahr. Die Quote für 2027 ist die nächste Weggabelung."
+    verlaengert_bis: null
+  - kennung: ausfuhrzoll_verschoben
+    name: "Ausfuhrzoll und Windfall-Steuer auf gering verarbeitetes Nickel"
+    nummer: null
+    achsen: [nickel]
+    bis: 2026-12-31
+    stand: "Am 07.05.2026 bestätigt, am 11.05.2026 auf unbestimmte Zeit verschoben. Wiederaufnahme ist ein Auslöser nach I2."
+    verlaengert_bis: null
+  - kennung: dsi_single_gate
+    name: "Export strategischer Rohstoffe nur über die Staatsfirma DSI (Single-Gate)"
+    nummer: 24                # PP 24/2026
+    achsen: [nickel, zinn]
+    bis: 2027-01-01
+    stand: "Seit 01.09.2026 in Kraft; ab 2027 soll Ferronickel und NPI nur noch über Staatsfirmen laufen. Ob Zinn tatsächlich unter DSI kommt, ist offen."
+    verlaengert_bis: null
+
+# Gegenseiten-Kanal: US-Bundesregister. Für Indonesien ist die EU der wichtigere Gegenspieler
+# (Antidumping Edelstahl, WTO DS592 und DS616); die EU-Seite kommt über die Google Alerts
+# ins Gmail-Label, nicht über diesen Kanal.
+gegenseite:
+  tage: 30
+  begriffe:
+    nickel: [nickel]
+    tin: [zinn]
+    "stainless steel": [nickel]
+    "critical mineral": []
+  behoerden_suche: [industry-and-security-bureau, trade-representative-office-of-united-states, commerce-department,
+                    international-trade-administration, executive-office-of-the-president]
+  gewichtig:
+    - {art: "Presidential Document"}
+    - {behoerde: "industry-and-security-bureau"}
+    - {behoerde: "trade-representative-office-of-united-states"}
+    - {behoerde: "commerce-department", arten: ["Rule", "Proposed Rule"]}
+    - {behoerde: "international-trade-administration", titel_enthaelt: ["Indonesia"], titel_nennt_achse: true}
+  ausschluss_titel: ["Advisory Committee", "Meeting"]
+  suchwoerter:
+    nickel: [nickel, "stainless steel", ferronickel, "nickel pig iron"]
+    zinn: [tin, solder]
+
+preisprobe:
+  tage_kurz: 5
+  tage_lang: 20
+  gelaufen_ab: 0.15
+  handel_tage: 60
+  duenn_unter: 1000000
+
+# Ereignisse für den Rückblick (Tag der ANKÜNDIGUNG, nicht des Inkrafttretens).
+# Grundlage: „metall-indonesien-ereignisse.md“ im Projekt, Stand 08.10.2026.
+# Wichtig zur Zeitzone: Meldungen aus Jakarta erscheinen vor LME-Eröffnung; je nach Instrument
+# landet die Reaktion am selben oder am folgenden Handelstag.
+#
+# REGIMEWECHSEL, der beim Lesen der Liste auffällt: Bis 2020 bewegte das Exportverbot den Preis,
+# ab 2024 bewegen ihn Fördermengen-Quoten (RKAB), Preisformeln (HPM), Royalties und der
+# staatliche Exportkanal. Ein Agent, der nur nach „Exportverbot“ sucht, verpasst die ganze
+# aktuelle Phase — deshalb stehen diese Begriffe in den Google Alerts.
+ereignisse:
+  - {datum: 2014-01-11, art: verschaerfung, achsen: [nickel],        text: "Exportverbot für unverarbeitete Erze angekündigt (Permen ESDM 1/2014)"}
+  - {datum: 2014-07-24, art: verschaerfung, achsen: [zinn],          text: "Permendag 44/2014: Börsenpflicht ICDX auf weitere Zinnprodukte ausgedehnt"}
+  - {datum: 2015-05-19, art: verschaerfung, achsen: [zinn],          text: "Permendag 33/2015: Export nur als Barren, ICDX auch im Inland"}
+  - {datum: 2017-01-12, art: lockerung,     achsen: [nickel],        text: "PP 1/2017: Erz unter 1,7 Prozent Nickel wieder exportierbar"}
+  - {datum: 2019-08-30, art: verschaerfung, achsen: [nickel],        text: "Permen 11/2019 zieht das Vollverbot auf den 31.12.2019 vor (LME rund plus 9 Prozent)"}
+  - {datum: 2019-09-02, art: verschaerfung, achsen: [nickel],        text: "ESDM verkündet das Exportende offiziell (plus 3 Prozent, Fünfjahreshoch)"}
+  - {datum: 2019-10-28, art: verschaerfung, achsen: [nickel],        text: "Exporte mit sofortiger Wirkung ausgesetzt"}
+  - {datum: 2019-10-29, art: lockerung,     achsen: [nickel],        text: "Aussetzung nach einem Tag zurückgenommen — das saubere Gegenpaar"}
+  - {datum: 2019-11-22, art: gegenseite,    achsen: [nickel],        text: "EU beantragt WTO-Konsultationen (DS592)"}
+  - {datum: 2020-04-14, art: verschaerfung, achsen: [nickel],        text: "Permen 11/2020: verbindlicher Inlands-Referenzpreis HPM als Untergrenze"}
+  - {datum: 2020-10-06, art: gegenseite,    achsen: [nickel],        text: "EU: endgültige Antidumpingzölle auf warmgewalzten Edelstahl"}
+  - {datum: 2021-01-14, art: gegenseite,    achsen: [nickel],        text: "EU beantragt WTO-Panel, eingesetzt am 22.02.2021"}
+  - {datum: 2021-03-23, art: lockerung,     achsen: [nickel],        text: "Exportgenehmigungen gelockert, Nickel ausdrücklich ausgenommen"}
+  - {datum: 2021-11-17, art: gegenseite,    achsen: [nickel],        text: "EU: endgültige Antidumpingzölle auf kaltgewalzten Edelstahl"}
+  - {datum: 2021-11-24, art: verschaerfung, achsen: [zinn],          text: "Jokowi: Zinnexporte könnten ab 2024 stoppen"}
+  - {datum: 2022-01-21, art: verschaerfung, achsen: [zinn],          text: "Exportlizenzen verzögert, Chinas Importe minus 76 Prozent im Monatsvergleich"}
+  - {datum: 2022-01-24, art: verschaerfung, achsen: [nickel],        text: "Progressive Ausfuhrzölle auf NPI und Ferronickel geplant"}
+  - {datum: 2022-03-15, art: gegenseite,    achsen: [nickel],        text: "EU: endgültige Ausgleichszölle, Rohstoffpolitik als Subvention gewertet"}
+  - {datum: 2022-11-30, art: gegenseite,    achsen: [nickel],        text: "WTO-Panel erklärt Verbot und Verarbeitungspflicht für GATT-widrig"}
+  - {datum: 2024-02-05, art: verschaerfung, achsen: [zinn],          text: "Zinn-Raffinadeexport im Januar minus 99 Prozent, RKAB nicht genehmigt"}
+  - {datum: 2024-03-05, art: lockerung,     achsen: [zinn],          text: "Börsenhandel wieder aufgenommen, erste Exportlizenzen erteilt"}
+  - {datum: 2024-07-22, art: verschaerfung, achsen: [nickel, zinn],  text: "Rückverfolgungssystem SIMBARA auf Nickel und Zinn ausgeweitet"}
+  - {datum: 2024-12-19, art: verschaerfung, achsen: [nickel],        text: "Erwägung, die Fördermenge auf bis zu 150 Millionen Tonnen zu kürzen"}
+  - {datum: 2025-01-10, art: verschaerfung, achsen: [nickel],        text: "RKAB-Quote 2025 auf rund 200 Millionen Tonnen gesetzt (zuvor 240)"}
+  - {datum: 2025-04-09, art: verschaerfung, achsen: [nickel],        text: "Royalties auf Erz von 10 auf preisabhängig 14 bis 19 Prozent (PP 19/2025)"}
+  - {datum: 2025-06-05, art: verschaerfung, achsen: [nickel],        text: "PP 28/2025: Moratorium für Hütten, die nur Zwischenprodukte herstellen"}
+  - {datum: 2025-09-29, art: verschaerfung, achsen: [zinn],          text: "Rund 1.000 illegale Zinnminen geschlossen (SHFE-Zinn plus 2,6 Prozent)"}
+  - {datum: 2025-10-02, art: gegenseite,    achsen: [nickel],        text: "WTO DS616: EU-Ausgleichszölle verstoßen gegen das Subventionsabkommen"}
+  - {datum: 2025-10-03, art: verschaerfung, achsen: [nickel, zinn],  text: "Permen 17/2025: RKAB wieder nur ein Jahr, Quoten 2026 und 2027 ungültig"}
+  - {datum: 2025-12-30, art: verschaerfung, achsen: [nickel],        text: "Quote 2026 bei rund 250 Millionen Tonnen geplant (SHFE plus 15.000 Yuan je Tonne)"}
+  - {datum: 2026-01-15, art: verschaerfung, achsen: [nickel],        text: "ESDM bestätigt das Quotenziel 2026 von 250 bis 260 Millionen Tonnen"}
+  - {datum: 2026-01-28, art: verschaerfung, achsen: [zinn],          text: "Mindest-Referenzpreis HPM für Zinn angekündigt"}
+  - {datum: 2026-02-13, art: verschaerfung, achsen: [zinn],          text: "Minister: Exportverbot für mehrere Rohstoffe wird geprüft, Zinn genannt"}
+  - {datum: 2026-03-25, art: verschaerfung, achsen: [nickel, zinn],  text: "Ausfuhrzölle auf Kohle und Nickel gebilligt, Start zum 01.04.2026"}
+  - {datum: 2026-03-30, art: lockerung,     achsen: [nickel, zinn],  text: "Start der Ausfuhrzölle verschoben, kein neuer Termin"}
+  - {datum: 2026-04-13, art: verschaerfung, achsen: [nickel],        text: "Neue HPM-Formel: der Satz für 1,5 Prozent Nickel springt von 26,66 auf 57 bis 62,5 Dollar"}
+  - {datum: 2026-05-07, art: verschaerfung, achsen: [nickel],        text: "Ausfuhrzoll und Windfall-Steuer bestätigt (SHFE plus 3,5, LME plus 2,1 Prozent)"}
+  - {datum: 2026-05-11, art: lockerung,     achsen: [nickel, zinn],  text: "Höhere Royalties und Ausfuhrzölle auf unbestimmte Zeit verschoben"}
+  - {datum: 2026-05-20, art: verschaerfung, achsen: [nickel, zinn],  text: "PP 24/2026: Export strategischer Rohstoffe nur über die Staatsfirma DSI"}
+  - {datum: 2026-05-26, art: verschaerfung, achsen: [nickel, zinn],  text: "Single-Gate-Exportsystem ab 01.09.2026, Übergang ab 01.06."}
+  - {datum: 2026-07-09, art: verschaerfung, achsen: [nickel],        text: "Exportkontrollen für Ferronickel und NPI; ab 2027 nur über Staatsfirmen"}
+  - {datum: 2026-07-10, art: verschaerfung, achsen: [nickel],        text: "Keine Quotenerhöhung 2026, Deckel bleibt ausdrücklich zur Preisstützung"}
+  - {datum: 2026-09-15, art: lockerung,     achsen: [nickel],        text: "HPM-Formel wieder gesenkt, der Satz für 1,2 Prozent Nickel fällt um 45 Prozent"}
+  - {datum: 2026-09-18, art: verschaerfung, achsen: [nickel, zinn],  text: "Neue Rohstoffbörse ICOMEX, erste Kontrakte Zinn und Ferronickel"}
+
+rueckblick:
+  horizonte: [0, 5, 20, 60]
+  vorlauf: 20
+  haupt: 20
+  treffer_ab: 0.10
+  bestanden: {mindestens: 3, trefferquote: 0.5}
+  kurse_ab: 2008-01-01

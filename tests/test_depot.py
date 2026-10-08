@@ -177,7 +177,8 @@ def test_kommandozeile(basis, capsys):
 def test_vorbereitung_auf_github(ablage):
     """Index aus den echten Formularen, Devisenarchive aus erfundenen Kursen, Probe mit einem Palmöl-Kauf."""
     def holen(ticker, zeitraum):
-        assert ticker in ("EURUSD=X", "EURSGD=X", "EURAUD=X")
+        # Seit 08.10.2026 kommen mit den neuen Formularen weitere Währungen dazu (GBP, CHF, THB).
+        assert ticker.startswith("EUR") and ticker.endswith("=X")
         if ticker == "EURAUD=X":
             raise RuntimeError("Yahoo antwortet nicht")
         return [{"datum": d, "schluss": 1.1 if ticker == "EURUSD=X" else 1.5, "volumen": None}
@@ -191,13 +192,14 @@ def test_vorbereitung_auf_github(ablage):
     e = depot.lauf(zeit, holen=holen)
 
     idx = json.loads((konfig.DATEN / "depot/index.json").read_text(encoding="utf-8"))
-    assert set(idx["zweige"]) == {"palmoel", "metall", "ersatz_haselnuss", "ersatz_palladium"}
+    # Seit 08.10.2026 kommen weitere Zweige dazu (neue Länder, neue Agrarwerte) — die vier Alten müssen da sein.
+    assert {"palmoel", "metall", "ersatz_haselnuss", "ersatz_palladium"} <= set(idx["zweige"])
     assert idx["werte"]["F34.SI"]["waehrung"] == "SGD" and idx["werte"]["F34.SI"]["archiv"] == "daten/preise/F34_SI.csv"
     assert idx["werte"]["LYC.AX"] == {**idx["werte"]["LYC.AX"], "waehrung": "AUD", "vergleich": "XME", "zweig": "metall"}
     assert idx["werte"]["SHV.AX"]["vergleich"] == "^AXJO" and idx["werte"]["PPLT"]["vergleich"] == "GLD"
     assert idx["zweige"]["metall"]["regel"]["kalendertage"] == 90 and idx["zweige"]["palmoel"]["regel"]["gruen"]
     assert idx["zweige"]["ersatz_palladium"]["quelle"]["pfad"] == "daten/ersatz/palladium/schattendepot.json"
-    assert set(idx["devisen"]) == {"USD", "SGD"}              # Australischer Dollar fehlte beim Abruf
+    assert {"USD", "SGD"} <= set(idx["devisen"]) and "AUD" not in idx["devisen"]   # Australischer Dollar fehlte beim Abruf
     assert "werkzeuge/schattendepot.py" in idx["dateien"] and "daten/depot/kurse/EURUSD_X.csv" in idx["dateien"]
     assert "daten/metall/china/kurse/XME.csv" in idx["dateien"]
     assert e["zustand"] == "Warnung" and e["devisen_fehler"][0].startswith("EURAUD=X")

@@ -89,7 +89,8 @@ def test_rot_mit_allen_bedingungen(ablage, netz_mit):
     assert stand["zustand"] == "in Ordnung", stand["quellen"]
     assert [p["status"] for p in palm["checkliste"]] == ["ja", "ja", "ja", "ja"]
     # Logbuch: Startzeile mit Schattenkauf und Kursen
-    eintraege = logbuch.lies(konfig.DATEN / "signale.jsonl")
+    # Seit 08.10.2026 liegen mehrere Agrar-Formulare vor (Kakao, Kautschuk) — auf Palmöl eingrenzen.
+    eintraege = [e for e in logbuch.lies(konfig.DATEN / "signale.jsonl") if e["rohstoff"] == "palmoel"]
     assert len(eintraege) == 1 and eintraege[0]["schattenkauf"] and len(eintraege[0]["kurse"]) == 4
     # Abgabe
     teil = (konfig.ABGABE / "anlage-teil-1.md").read_text()
@@ -112,7 +113,7 @@ def test_zweiter_lauf_holt_wenig_und_schreibt_kein_doppeltes_logbuch(ablage, net
     assert all(p["start_date"] >= "2027-05-07" for p in regenabrufe)      # nur die letzten 100 Tage
     windabrufe = [p for u, p in neue if p and "hourly" in p]
     assert windabrufe == []                                              # Mai/Juni 2026 und 2027 liegen im Zwischenspeicher
-    assert len(logbuch.lies(konfig.DATEN / "signale.jsonl")) == 1
+    assert len([e for e in logbuch.lies(konfig.DATEN / "signale.jsonl") if e["rohstoff"] == "palmoel"]) == 1
 
 
 def test_gelb_wenn_der_westen_nicht_nass_war(ablage, netz_mit):
@@ -238,7 +239,7 @@ def test_ausfall_des_el_nino_index_kippt_die_ampel_nicht(ablage, netz_mit, monke
     stand = lauf.lauf(s.heute, pro_minute=0)
     assert stand["quellen"]["oni"]["status"] == "Fehler" and "gespeicherte Stand" in stand["quellen"]["oni"]["meldung"]
     assert stand["rohstoffe"]["palmoel"]["ampel"]["farbe"] == "Rot"
-    assert len(logbuch.lies(konfig.DATEN / "signale.jsonl")) == 1
+    assert len([e for e in logbuch.lies(konfig.DATEN / "signale.jsonl") if e["rohstoff"] == "palmoel"]) == 1
 
 
 def test_tippfehler_in_handeingabe_und_veto_stoppen_den_lauf_nicht(ablage, netz_mit, monkeypatch):
