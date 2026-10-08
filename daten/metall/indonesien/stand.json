@@ -1,0 +1,612 @@
+{
+  "stand": "2026-10-09T01:27:27+02:00",
+  "datum": "2026-10-09",
+  "version": "0.1.0",
+  "land": "indonesien",
+  "name": "Indonesien-Ausfuhr",
+  "laenderpaar": "Indonesien ↔ EU und China über Verhüttungspflicht und Edelstahl",
+  "rolle": "sensor",
+  "hinweis": "Denkhilfe, keine Anlageberatung. Rot setzt nur der Metall-Wächter in der Cloud.",
+  "zustand": "Warnung",
+  "reihenfolge": [
+    "nickel",
+    "zinn"
+  ],
+  "achsen": {
+    "nickel": {
+      "name": "Nickel-Achse",
+      "beschreibung": "Nickelerz, NPI und Ferronickel; Edelstahl und Batterie als Nachfrageseite",
+      "pilot": true,
+      "metalle": [
+        {
+          "kennung": "nickel",
+          "name": "Nickel",
+          "dativ": null,
+          "wucht": 0.36
+        }
+      ],
+      "wucht": 0.36,
+      "stufe": "Grün",
+      "gruende": [],
+      "kanaele": [],
+      "mehrfach": false,
+      "instrumente": [
+        "NICK.L"
+      ]
+    },
+    "zinn": {
+      "name": "Zinn-Achse",
+      "beschreibung": "Zinn aus Bangka und Belitung; Lot und Elektronik als Nachfrageseite",
+      "pilot": false,
+      "metalle": [
+        {
+          "kennung": "zinn",
+          "name": "Zinn",
+          "dativ": null,
+          "wucht": 0.2
+        }
+      ],
+      "wucht": 0.2,
+      "stufe": "Grün",
+      "gruende": [],
+      "kanaele": [],
+      "mehrfach": false,
+      "instrumente": [
+        "TINM.L"
+      ]
+    }
+  },
+  "wechsel": [],
+  "fristen": [
+    {
+      "kennung": "rkab_quote_2026",
+      "name": "Fördermengen-Quote RKAB für 2026 (Deckel ausdrücklich zur Preisstützung)",
+      "nummer": 17,
+      "achsen": [
+        "nickel"
+      ],
+      "bis": "2026-12-31",
+      "urspruenglich_bis": "2026-12-31",
+      "verlaengert": false,
+      "tage": 83,
+      "zustand": "läuft",
+      "gelb": false,
+      "rot_pruefen": false,
+      "stand": "Am 10.07.2026 bestätigt: keine Erhöhung im laufenden Jahr. Die Quote für 2027 ist die nächste Weggabelung."
+    },
+    {
+      "kennung": "ausfuhrzoll_verschoben",
+      "name": "Ausfuhrzoll und Windfall-Steuer auf gering verarbeitetes Nickel",
+      "nummer": null,
+      "achsen": [
+        "nickel"
+      ],
+      "bis": "2026-12-31",
+      "urspruenglich_bis": "2026-12-31",
+      "verlaengert": false,
+      "tage": 83,
+      "zustand": "läuft",
+      "gelb": false,
+      "rot_pruefen": false,
+      "stand": "Am 07.05.2026 bestätigt, am 11.05.2026 auf unbestimmte Zeit verschoben. Wiederaufnahme ist ein Auslöser nach I2."
+    },
+    {
+      "kennung": "dsi_single_gate",
+      "name": "Export strategischer Rohstoffe nur über die Staatsfirma DSI (Single-Gate)",
+      "nummer": 24,
+      "achsen": [
+        "nickel",
+        "zinn"
+      ],
+      "bis": "2027-01-01",
+      "urspruenglich_bis": "2027-01-01",
+      "verlaengert": false,
+      "tage": 84,
+      "zustand": "läuft",
+      "gelb": false,
+      "rot_pruefen": false,
+      "stand": "Seit 01.09.2026 in Kraft; ab 2027 soll Ferronickel und NPI nur noch über Staatsfirmen laufen. Ob Zinn tatsächlich unter DSI kommt, ist offen."
+    }
+  ],
+  "gegenseite": {
+    "herkunft": "frisch",
+    "tage": 30,
+    "dokumente": [
+      {
+        "nummer": "2026-20481",
+        "titel": "Drawn Stainless Steel Sinks From the People's Republic of China: Final Results of the Expedited First and Second Sunset Reviews of the Countervailing Duty Order; Correction",
+        "datum": "2026-10-06",
+        "art": "Notice",
+        "behoerden": [
+          "commerce-department",
+          "international-trade-administration"
+        ],
+        "behoerden_namen": [
+          "Commerce Department",
+          "International Trade Administration"
+        ],
+        "url": "https://www.federalregister.gov/documents/2026/10/06/2026-20481/drawn-stainless-steel-sinks-from-the-peoples-republic-of-china-final-results-of-the-expedited-first",
+        "zusammenfassung": "The U.S. Department of Commerce (Commerce) published notice in the Federal Register of July 25, 2018 and October 20, 2023 in which Commerce announced the final results of the first and second sunset reviews of the countervailing duty (CVD) order on drawn stainless steel sinks from the People's Republic of China (China). These notices incorrectly stated an all-others rate of 8.61 percent.",
+        "begriffe": [
+          "stainless steel"
+        ],
+        "achsen": [
+          "nickel"
+        ],
+        "gewichtig": false,
+        "neu": false
+      },
+      {
+        "nummer": "2026-20269",
+        "titel": "Antidumping or Countervailing Duty Order, Finding, or Suspended Investigation; Opportunity To Request Administrative Review and Join Annual Inquiry Service List; Note Regarding Format of Review Requests",
+        "datum": "2026-10-02",
+        "art": "Notice",
+        "behoerden": [
+          "commerce-department",
+          "international-trade-administration"
+        ],
+        "behoerden_namen": [
+          "Commerce Department",
+          "International Trade Administration"
+        ],
+        "url": "https://www.federalregister.gov/documents/2026/10/02/2026-20269/antidumping-or-countervailing-duty-order-finding-or-suspended-investigation-opportunity-to-request",
+        "zusammenfassung": "",
+        "begriffe": [
+          "stainless steel"
+        ],
+        "achsen": [
+          "nickel"
+        ],
+        "gewichtig": false,
+        "neu": false
+      },
+      {
+        "nummer": "2026-20162",
+        "titel": "Large Diameter Graphite Electrodes From India: Preliminary Affirmative Critical Circumstances Determination in Countervailing Duty Investigation",
+        "datum": "2026-10-01",
+        "art": "Notice",
+        "behoerden": [
+          "commerce-department",
+          "international-trade-administration"
+        ],
+        "behoerden_namen": [
+          "Commerce Department",
+          "International Trade Administration"
+        ],
+        "url": "https://www.federalregister.gov/documents/2026/10/01/2026-20162/large-diameter-graphite-electrodes-from-india-preliminary-affirmative-critical-circumstances",
+        "zusammenfassung": "The U.S. Department of Commerce (Commerce) preliminarily determines that critical circumstances exist with respect to imports of large diameter graphite electrodes (large graphite electrodes) from India. The period of investigation is January 1, 2025, through December 31, 2025. Interested parties are invited to comment on this preliminary determination of critical circumstances.",
+        "begriffe": [
+          "stainless steel"
+        ],
+        "achsen": [
+          "nickel"
+        ],
+        "gewichtig": false,
+        "neu": false
+      },
+      {
+        "nummer": "2026-20160",
+        "titel": "Initiation of Antidumping and Countervailing Duty Administrative Reviews",
+        "datum": "2026-10-01",
+        "art": "Notice",
+        "behoerden": [
+          "commerce-department",
+          "international-trade-administration"
+        ],
+        "behoerden_namen": [
+          "Commerce Department",
+          "International Trade Administration"
+        ],
+        "url": "https://www.federalregister.gov/documents/2026/10/01/2026-20160/initiation-of-antidumping-and-countervailing-duty-administrative-reviews",
+        "zusammenfassung": "The U.S. Department of Commerce (Commerce) has received requests to conduct administrative reviews of various antidumping duty (AD) and countervailing duty (CVD) orders with August anniversary dates. In accordance with Commerce's regulations, we are initiating those administrative reviews.",
+        "begriffe": [
+          "tin"
+        ],
+        "achsen": [
+          "zinn"
+        ],
+        "gewichtig": false,
+        "neu": false
+      },
+      {
+        "nummer": "2026-19777",
+        "titel": "Foreign-Trade Zone (FTZ) 106, Notification of Proposed Production Activity; Hitachi Vantara Manufacturing; (Enterprise Datacenter Disk Storage System Hardware); Norman, Oklahoma",
+        "datum": "2026-09-28",
+        "art": "Notice",
+        "behoerden": [
+          "commerce-department",
+          "foreign-trade-zones-board"
+        ],
+        "behoerden_namen": [
+          "Commerce Department",
+          "Foreign-Trade Zones Board"
+        ],
+        "url": "https://www.federalregister.gov/documents/2026/09/28/2026-19777/foreign-trade-zone-ftz-106-notification-of-proposed-production-activity-hitachi-vantara",
+        "zusammenfassung": "",
+        "begriffe": [
+          "nickel",
+          "stainless steel"
+        ],
+        "achsen": [
+          "nickel"
+        ],
+        "gewichtig": false,
+        "neu": false
+      },
+      {
+        "nummer": "2026-19591",
+        "titel": "Foreign-Trade Zone (FTZ) 272, Notification of Proposed Production Activity; Infinera Corporation; (Telecommunications Devices); Allentown, Pennsylvania",
+        "datum": "2026-09-24",
+        "art": "Notice",
+        "behoerden": [
+          "commerce-department",
+          "foreign-trade-zones-board"
+        ],
+        "behoerden_namen": [
+          "Commerce Department",
+          "Foreign-Trade Zones Board"
+        ],
+        "url": "https://www.federalregister.gov/documents/2026/09/24/2026-19591/foreign-trade-zone-ftz-272-notification-of-proposed-production-activity-infinera-corporation",
+        "zusammenfassung": "",
+        "begriffe": [
+          "stainless steel"
+        ],
+        "achsen": [
+          "nickel"
+        ],
+        "gewichtig": false,
+        "neu": false
+      },
+      {
+        "nummer": "2026-19527",
+        "titel": "Foreign-Trade Zone (FTZ) 84, Notification of Proposed Production Activity; Enerflex Energy Systems Inc.; (Natural Gas Equipment); Houston, Texas",
+        "datum": "2026-09-24",
+        "art": "Notice",
+        "behoerden": [
+          "commerce-department",
+          "foreign-trade-zones-board"
+        ],
+        "behoerden_namen": [
+          "Commerce Department",
+          "Foreign-Trade Zones Board"
+        ],
+        "url": "https://www.federalregister.gov/documents/2026/09/24/2026-19527/foreign-trade-zone-ftz-84-notification-of-proposed-production-activity-enerflex-energy-systems-inc",
+        "zusammenfassung": "",
+        "begriffe": [
+          "stainless steel"
+        ],
+        "achsen": [
+          "nickel"
+        ],
+        "gewichtig": false,
+        "neu": false
+      },
+      {
+        "nummer": "2026-19274",
+        "titel": "Tin Mill Products From the People's Republic of China: Preliminary Affirmative Determination of Sales at Less Than Fair Value, Preliminary Affirmative Determination of Critical Circumstances and Extension of Provisional Measures",
+        "datum": "2026-09-21",
+        "art": "Notice",
+        "behoerden": [
+          "commerce-department",
+          "international-trade-administration"
+        ],
+        "behoerden_namen": [
+          "Commerce Department",
+          "International Trade Administration"
+        ],
+        "url": "https://www.federalregister.gov/documents/2026/09/21/2026-19274/tin-mill-products-from-the-peoples-republic-of-china-preliminary-affirmative-determination-of-sales",
+        "zusammenfassung": "The U.S. Department of Commerce (Commerce) preliminarily determines that tin mill products from the People's Republic of China (China) are being, or are likely to be, sold in the United States at less than fair value (LTFV). The period of investigation (POI) is October 1, 2025, through March 31, 2026. Interested parties are invited to comment on this preliminary determination.",
+        "begriffe": [
+          "tin"
+        ],
+        "achsen": [
+          "zinn"
+        ],
+        "gewichtig": false,
+        "neu": false
+      },
+      {
+        "nummer": "2026-19107",
+        "titel": "Carbon and Alloy Steel Wire Rod From Algeria: Final Affirmative Countervailing Duty Determination and Countervailing Duty Order",
+        "datum": "2026-09-18",
+        "art": "Notice",
+        "behoerden": [
+          "commerce-department",
+          "international-trade-administration"
+        ],
+        "behoerden_namen": [
+          "Commerce Department",
+          "International Trade Administration"
+        ],
+        "url": "https://www.federalregister.gov/documents/2026/09/18/2026-19107/carbon-and-alloy-steel-wire-rod-from-algeria-final-affirmative-countervailing-duty-determination-and",
+        "zusammenfassung": "The U.S. Department of Commerce (Commerce) determines that countervailable subsidies are being provided to producers and exporters of carbon and alloy steel wire rod (wire rod) from Algeria. The period of investigation (POI) is January 1, 2025, through December 31, 2025. In addition, Commerce is issuing the countervailing duty (CVD) order on wire rod form Algeria.",
+        "begriffe": [
+          "nickel",
+          "stainless steel"
+        ],
+        "achsen": [
+          "nickel"
+        ],
+        "gewichtig": false,
+        "neu": false
+      },
+      {
+        "nummer": "2026-18792",
+        "titel": "Tin Mill Products From the People's Republic of China: Preliminary Affirmative Countervailing Duty Determination, Preliminary Affirmative Critical Circumstances Determination, and Alignment of Final Determination With Final Antidumping Duty Determination",
+        "datum": "2026-09-15",
+        "art": "Notice",
+        "behoerden": [
+          "commerce-department",
+          "international-trade-administration"
+        ],
+        "behoerden_namen": [
+          "Commerce Department",
+          "International Trade Administration"
+        ],
+        "url": "https://www.federalregister.gov/documents/2026/09/15/2026-18792/tin-mill-products-from-the-peoples-republic-of-china-preliminary-affirmative-countervailing-duty",
+        "zusammenfassung": "The U.S. Department of Commerce (Commerce) preliminarily determines that countervailable subsidies are being provided to producers and exporters of tin mill products from the People's Republic of China (China). The period of investigation is January 1, 2025, through December 31, 2025. Interested parties are invited to comment on this preliminary determination.",
+        "begriffe": [
+          "tin"
+        ],
+        "achsen": [
+          "zinn"
+        ],
+        "gewichtig": false,
+        "neu": false
+      }
+    ]
+  },
+  "stoerung": {
+    "erdbeben": [],
+    "erdbeben_gesamt": 10,
+    "starkregen_gemessen": [],
+    "starkregen_vorhergesagt": [],
+    "regen_hoechst_mm": {
+      "morowali": 8.4,
+      "weda_bay": 15.0,
+      "sorowako": 5.9,
+      "pomalaa": 0.7,
+      "bangka": 3.7,
+      "belitung": 4.4,
+      "muntok": 3.6
+    },
+    "trocken": {
+      "sorowako": {
+        "urteil": "Normal wird geladen",
+        "jahre": 1,
+        "von": 30
+      }
+    },
+    "gelb_tage": 30
+  },
+  "preise": {
+    "NICK.L": {
+      "name": "WisdomTree Nickel (ETC)",
+      "achse": "nickel",
+      "rolle": "beobachtung",
+      "hinweis": "bildet den LME-Nickelpreis ab, kein Länderrisiko, keine Verwässerung",
+      "waehrung": "USD",
+      "letzter": "2026-10-07",
+      "schluss": 13.615,
+      "alter_tage": 2,
+      "r_kurz": -0.0141,
+      "vorsprung_kurz": -0.0075,
+      "r_lang": -0.0713,
+      "vorsprung_lang": -0.0238,
+      "urteil": "schläft",
+      "markt_schlaeft": true,
+      "handel": 30166,
+      "duenn": true
+    },
+    "TINM.L": {
+      "name": "WisdomTree Tin (ETC)",
+      "achse": "zinn",
+      "rolle": "beobachtung",
+      "hinweis": "bildet den LME-Zinnpreis ab",
+      "waehrung": "USD",
+      "letzter": "2026-10-08",
+      "schluss": 118.41,
+      "alter_tage": 1,
+      "r_kurz": null,
+      "vorsprung_kurz": null,
+      "r_lang": null,
+      "vorsprung_lang": null,
+      "urteil": "ohne Vergleich",
+      "markt_schlaeft": false,
+      "handel": null,
+      "duenn": null
+    }
+  },
+  "vergleich": {
+    "ticker": "AIGI.L",
+    "name": "Industriemetall-Korb (WisdomTree Industrial Metals, Vergleichsmaßstab)"
+  },
+  "rueckblick": {
+    "NICK.L": {
+      "name": "WisdomTree Nickel (ETC)",
+      "achse": "nickel",
+      "rolle": "beobachtung",
+      "erster_kurs": "2008-01-02",
+      "urteil": "nicht bestanden",
+      "gruppen": {
+        "verschaerfung_eigene": {
+          "n": 21,
+          "offen": 1,
+          "v0": 0.0035,
+          "v5": 0.0033,
+          "v20": -0.0094,
+          "v60": -0.0344,
+          "v_vorlauf": 0.0188,
+          "treffer": 0,
+          "trefferquote": 0.0
+        },
+        "verschaerfung_alle": {
+          "n": 29,
+          "offen": 1,
+          "v0": 0.0028,
+          "v5": -0.0007,
+          "v20": -0.0078,
+          "v60": -0.0211,
+          "v_vorlauf": 0.0195,
+          "treffer": 0,
+          "trefferquote": 0.0
+        },
+        "lockerung_eigene": {
+          "n": 5,
+          "offen": 1,
+          "v0": -0.0101,
+          "v5": -0.0284,
+          "v20": -0.0353,
+          "v60": -0.073,
+          "v_vorlauf": -0.0399,
+          "treffer": 0,
+          "trefferquote": 0.0
+        },
+        "lockerung_alle": {
+          "n": 6,
+          "offen": 1,
+          "v0": -0.0094,
+          "v5": -0.0231,
+          "v20": -0.0431,
+          "v60": -0.076,
+          "v_vorlauf": -0.0214,
+          "treffer": 0,
+          "trefferquote": 0.0
+        },
+        "gegenseite_eigene": {
+          "n": 7,
+          "offen": 0,
+          "v0": -0.0068,
+          "v5": 0.0022,
+          "v20": 0.0114,
+          "v60": -0.0422,
+          "v_vorlauf": 0.0251,
+          "treffer": 0,
+          "trefferquote": 0.0
+        },
+        "gegenseite_alle": {
+          "n": 7,
+          "offen": 0,
+          "v0": -0.0068,
+          "v5": 0.0022,
+          "v20": 0.0114,
+          "v60": -0.0422,
+          "v_vorlauf": 0.0251,
+          "treffer": 0,
+          "trefferquote": 0.0
+        }
+      }
+    },
+    "TINM.L": {
+      "name": "WisdomTree Tin (ETC)",
+      "achse": "zinn",
+      "rolle": "beobachtung",
+      "erster_kurs": "2026-10-08",
+      "urteil": "zu wenige Fälle",
+      "gruppen": {
+        "verschaerfung_eigene": {
+          "n": 0,
+          "offen": 0,
+          "v0": null,
+          "v5": null,
+          "v20": null,
+          "v60": null,
+          "v_vorlauf": null,
+          "treffer": 0,
+          "trefferquote": 0.0
+        },
+        "verschaerfung_alle": {
+          "n": 0,
+          "offen": 0,
+          "v0": null,
+          "v5": null,
+          "v20": null,
+          "v60": null,
+          "v_vorlauf": null,
+          "treffer": 0,
+          "trefferquote": 0.0
+        },
+        "lockerung_eigene": {
+          "n": 0,
+          "offen": 0,
+          "v0": null,
+          "v5": null,
+          "v20": null,
+          "v60": null,
+          "v_vorlauf": null,
+          "treffer": 0,
+          "trefferquote": 0.0
+        },
+        "lockerung_alle": {
+          "n": 0,
+          "offen": 0,
+          "v0": null,
+          "v5": null,
+          "v20": null,
+          "v60": null,
+          "v_vorlauf": null,
+          "treffer": 0,
+          "trefferquote": 0.0
+        },
+        "gegenseite_eigene": {
+          "n": 0,
+          "offen": 0,
+          "v0": null,
+          "v5": null,
+          "v20": null,
+          "v60": null,
+          "v_vorlauf": null,
+          "treffer": 0,
+          "trefferquote": 0.0
+        },
+        "gegenseite_alle": {
+          "n": 0,
+          "offen": 0,
+          "v0": null,
+          "v5": null,
+          "v20": null,
+          "v60": null,
+          "v_vorlauf": null,
+          "treffer": 0,
+          "trefferquote": 0.0
+        }
+      }
+    }
+  },
+  "standorte": {
+    "morowali": "Morowali, Sulawesi",
+    "weda_bay": "Weda Bay, Halmahera",
+    "sorowako": "Sorowako, Sulawesi",
+    "pomalaa": "Pomalaa, Südost-Sulawesi",
+    "bangka": "Pangkalpinang, Bangka",
+    "belitung": "Tanjung Pandan, Belitung",
+    "muntok": "Muntok, West-Bangka"
+  },
+  "quellen": {
+    "bundesregister": {
+      "name": "US-Bundesregister (Federal Register), Suche",
+      "status": "ok",
+      "meldung": null
+    },
+    "usgs_beben": {
+      "name": "USGS · Erdbeben",
+      "status": "ok",
+      "meldung": null
+    },
+    "openmeteo_vorhersage": {
+      "name": "Open-Meteo · Regen der letzten Tage und Vorhersage",
+      "status": "ok",
+      "meldung": null
+    },
+    "openmeteo": {
+      "name": "Open-Meteo · ERA5-Reanalyse (Regen, Wind)",
+      "status": "Warnung",
+      "meldung": "Sorowako, Sulawesi 1992: AbrufFehler: ReadTimeout bei https://archive-api.open-meteo.com/v1/archive: HTTPSConnectionPool(host='archive-api.open-meteo.com', port=443): Read timed out. (read timeout=45)"
+    },
+    "yahoo": {
+      "name": "Yahoo Finance über yfinance (Kurse, Volumen)",
+      "status": "ok",
+      "meldung": null
+    }
+  }
+}

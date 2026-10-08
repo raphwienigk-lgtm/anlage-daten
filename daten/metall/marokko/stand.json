@@ -1,0 +1,755 @@
+{
+  "stand": "2026-10-09T01:30:22+02:00",
+  "datum": "2026-10-09",
+  "version": "0.1.0",
+  "land": "marokko",
+  "name": "Marokko-Phosphat",
+  "laenderpaar": "Marokko ↔ EU und USA über Westsahara, Cadmium und Ausgleichszölle",
+  "rolle": "sensor",
+  "hinweis": "Denkhilfe, keine Anlageberatung. Rot setzt nur der Metall-Wächter in der Cloud.",
+  "zustand": "in Ordnung",
+  "reihenfolge": [
+    "duenger"
+  ],
+  "achsen": {
+    "duenger": {
+      "name": "Dünger-Achse",
+      "beschreibung": "Phosphatgestein und Phosphatdünger; unersetzlicher Pflanzennährstoff",
+      "pilot": true,
+      "metalle": [
+        {
+          "kennung": "phosphat",
+          "name": "Phosphat",
+          "dativ": null,
+          "wucht": 0.7
+        }
+      ],
+      "wucht": 0.7,
+      "stufe": "Gelb",
+      "gruende": [
+        {
+          "kanal": "gegenseite",
+          "nummer": "2026-20615",
+          "datum": "2026-10-08",
+          "titel": "Request for Comments on the Effect of the European Union's Carbon Border Adjustment Mechanism and the Proposals To Expand Coverage on U.S. Trade"
+        }
+      ],
+      "kanaele": [
+        "gegenseite"
+      ],
+      "mehrfach": false,
+      "instrumente": [
+        "NTR",
+        "MOS"
+      ]
+    }
+  },
+  "wechsel": [],
+  "fristen": [
+    {
+      "kennung": "cadmium_eu",
+      "name": "EU-Cadmiumgrenzwert von 60 mg/kg für Phosphatdünger (Verordnung 2019/1009)",
+      "nummer": 1009,
+      "achsen": [
+        "duenger"
+      ],
+      "bis": "2027-12-31",
+      "urspruenglich_bis": "2027-12-31",
+      "verlaengert": false,
+      "tage": 448,
+      "zustand": "läuft",
+      "gelb": false,
+      "rot_pruefen": false,
+      "stand": "In Kraft; eine Absenkung des Grenzwerts würde marokkanisches Gestein stärker treffen als russisches. Überprüfung steht an."
+    },
+    {
+      "kennung": "us_ausgleichszoll",
+      "name": "US-Ausgleichszoll auf marokkanischen Phosphatdünger",
+      "nummer": null,
+      "achsen": [
+        "duenger"
+      ],
+      "bis": "2027-12-31",
+      "urspruenglich_bis": "2027-12-31",
+      "verlaengert": false,
+      "tage": 448,
+      "zustand": "läuft",
+      "gelb": false,
+      "rot_pruefen": false,
+      "stand": "Seit 26.12.2024 bei 16,60 Prozent. Jede jährliche Überprüfung kann den Satz bewegen."
+    },
+    {
+      "kennung": "eu_agrarabkommen",
+      "name": "Geändertes EU-Marokko-Agrarabkommen mit Herkunftskennzeichnung für die Südprovinzen",
+      "nummer": null,
+      "achsen": [
+        "duenger"
+      ],
+      "bis": "2027-10-03",
+      "urspruenglich_bis": "2027-10-03",
+      "verlaengert": false,
+      "tage": 359,
+      "zustand": "läuft",
+      "gelb": false,
+      "rot_pruefen": false,
+      "stand": "Seit 03.10.2025 vorläufig angewandt; betrifft Phosphat nur mittelbar, ist aber der Gradmesser für die Westsahara-Frage."
+    }
+  ],
+  "gegenseite": {
+    "herkunft": "frisch",
+    "tage": 30,
+    "dokumente": [
+      {
+        "nummer": "2026-20698",
+        "titel": "Certain Corrosion-Resistant Steel Products From the Republic of Korea: Preliminary Results and Rescission, in Part, of Antidumping Duty Administrative Review; 2024-2025",
+        "datum": "2026-10-08",
+        "art": "Notice",
+        "behoerden": [
+          "commerce-department",
+          "international-trade-administration"
+        ],
+        "behoerden_namen": [
+          "Commerce Department",
+          "International Trade Administration"
+        ],
+        "url": "https://www.federalregister.gov/documents/2026/10/08/2026-20698/certain-corrosion-resistant-steel-products-from-the-republic-of-korea-preliminary-results-and",
+        "zusammenfassung": "The U.S. Department of Commerce (Commerce) preliminarily determines that producers/exporters subject to this review made sales of subject merchandise at less than normal value (NV) during the period of review (POR), July 1, 2024, through June 30, 2025. Interested parties are invited to comment on these preliminary results of review.",
+        "begriffe": [
+          "fertilizer"
+        ],
+        "achsen": [
+          "duenger"
+        ],
+        "gewichtig": false,
+        "neu": false
+      },
+      {
+        "nummer": "2026-20694",
+        "titel": "Certain Steel Nails From the Republic of Korea: Preliminary Results and Rescission, in Part of Antidumping Duty Administrative Review; 2024-2025",
+        "datum": "2026-10-08",
+        "art": "Notice",
+        "behoerden": [
+          "commerce-department",
+          "international-trade-administration"
+        ],
+        "behoerden_namen": [
+          "Commerce Department",
+          "International Trade Administration"
+        ],
+        "url": "https://www.federalregister.gov/documents/2026/10/08/2026-20694/certain-steel-nails-from-the-republic-of-korea-preliminary-results-and-rescission-in-part-of",
+        "zusammenfassung": "The U.S. Department of Commerce (Commerce) preliminarily determines that producers/exporters subject to this review made sales of subject merchandise at less than normal value (NV) during the period of review (POR), July 1, 2024, through June 30, 2025. In addition, we are rescinding the review with respect to three companies. Interested parties are invited to comment on these preliminary results of review.",
+        "begriffe": [
+          "fertilizer"
+        ],
+        "achsen": [
+          "duenger"
+        ],
+        "gewichtig": false,
+        "neu": false
+      },
+      {
+        "nummer": "2026-20615",
+        "titel": "Request for Comments on the Effect of the European Union's Carbon Border Adjustment Mechanism and the Proposals To Expand Coverage on U.S. Trade",
+        "datum": "2026-10-08",
+        "art": "Notice",
+        "behoerden": [
+          "trade-representative-office-of-united-states"
+        ],
+        "behoerden_namen": [
+          "Trade Representative, Office of United States"
+        ],
+        "url": "https://www.federalregister.gov/documents/2026/10/08/2026-20615/request-for-comments-on-the-effect-of-the-european-unions-carbon-border-adjustment-mechanism-and-the",
+        "zusammenfassung": "The Office of the United States Trade Representative (USTR) invites comments regarding the current and potential impact of the European Union's (EU) Carbon Border Adjustment Mechanism (CBAM) on U.S. producers, including small- and medium-sized producers; workers; U.S. direct and indirect exports; and overall U.S. trade with the EU. Under CBAM, EU importers of products covered by the CBAM (covered products) in the aluminum, cement, electricity, fertilizer, hydrogen, and iron and steel sectors are required to declare information on carbon dioxide and other specified greenhouse gas emissions gene",
+        "begriffe": [
+          "fertilizer"
+        ],
+        "achsen": [
+          "duenger"
+        ],
+        "gewichtig": true,
+        "neu": false
+      },
+      {
+        "nummer": "2026-20549",
+        "titel": "Certain Paper Shopping Bags From Malaysia: Preliminary Results, Preliminary Determination of No Shipments and Rescission, in Part, of Antidumping Duty Administrative Review; 2024-2025",
+        "datum": "2026-10-07",
+        "art": "Notice",
+        "behoerden": [
+          "commerce-department",
+          "international-trade-administration"
+        ],
+        "behoerden_namen": [
+          "Commerce Department",
+          "International Trade Administration"
+        ],
+        "url": "https://www.federalregister.gov/documents/2026/10/07/2026-20549/certain-paper-shopping-bags-from-malaysia-preliminary-results-preliminary-determination-of-no",
+        "zusammenfassung": "The U.S. Department of Commerce (Commerce) preliminarily determines that Hexachase Packaging Sdn. Bhd. (Hexachase) made sales of subject merchandise at less than normal value (NV) during the period of review (POR), January 3, 2024, through June 30, 2025. Commerce also preliminarily determines that Sin Boon Beng Printing Sdn. Bhd. (SBBP), made no shipments during the POR. Finally, we are rescinding the review with respect to two companies. Interested parties are invited to comment on these preliminary results of review.",
+        "begriffe": [
+          "fertilizer"
+        ],
+        "achsen": [
+          "duenger"
+        ],
+        "gewichtig": false,
+        "neu": false
+      },
+      {
+        "nummer": "2026-20547",
+        "titel": "Certain Paper Shopping Bags From India: Preliminary Results and Rescission, in Part of Antidumping Duty Administrative Review; 2024-2025",
+        "datum": "2026-10-07",
+        "art": "Notice",
+        "behoerden": [
+          "commerce-department",
+          "international-trade-administration"
+        ],
+        "behoerden_namen": [
+          "Commerce Department",
+          "International Trade Administration"
+        ],
+        "url": "https://www.federalregister.gov/documents/2026/10/07/2026-20547/certain-paper-shopping-bags-from-india-preliminary-results-and-rescission-in-part-of-antidumping",
+        "zusammenfassung": "The U.S. Department of Commerce (Commerce) preliminarily determines that Ckaari Packaging Private Limited (Ckaari) and Velvin Packaging Solution Private Limited, Velvin Paper Products, and the Velvin Group (collectively, Velvin) made sales of certain paper shopping bags (paper bags) from India at less than normal value (NV) during the period of review (POR), January 3, 2024, through June 30, 2025. In addition, we are rescinding the review, in part, with respect to seven companies. Interested parties are invited to comment on these preliminary results of review.",
+        "begriffe": [
+          "fertilizer"
+        ],
+        "achsen": [
+          "duenger"
+        ],
+        "gewichtig": false,
+        "neu": false
+      },
+      {
+        "nummer": "2026-20379",
+        "titel": "Certain Potassium Phosphate Salts From the People's Republic of China: Final Results of the Expedited Third Sunset Review of the Countervailing Duty Order",
+        "datum": "2026-10-05",
+        "art": "Notice",
+        "behoerden": [
+          "commerce-department",
+          "international-trade-administration"
+        ],
+        "behoerden_namen": [
+          "Commerce Department",
+          "International Trade Administration"
+        ],
+        "url": "https://www.federalregister.gov/documents/2026/10/05/2026-20379/certain-potassium-phosphate-salts-from-the-peoples-republic-of-china-final-results-of-the-expedited",
+        "zusammenfassung": "The U.S. Department of Commerce (Commerce) finds that revocation of the countervailing duty (CVD) order on certain potassium phosphate salts (phosphate salts) from the People's Republic of China (China) would be likely to lead to continuation or recurrence of countervailable subsidies at the levels indicated in the \"Final Results of Sunset Review\" section of this notice.",
+        "begriffe": [
+          "phosphate"
+        ],
+        "achsen": [
+          "duenger"
+        ],
+        "gewichtig": false,
+        "neu": false
+      },
+      {
+        "nummer": "2026-20378",
+        "titel": "Potassium Phosphate Salts From the People's Republic of China: Final Results of the Expedited Third Sunset Review of the Antidumping Duty Order",
+        "datum": "2026-10-05",
+        "art": "Notice",
+        "behoerden": [
+          "commerce-department",
+          "international-trade-administration"
+        ],
+        "behoerden_namen": [
+          "Commerce Department",
+          "International Trade Administration"
+        ],
+        "url": "https://www.federalregister.gov/documents/2026/10/05/2026-20378/potassium-phosphate-salts-from-the-peoples-republic-of-china-final-results-of-the-expedited-third",
+        "zusammenfassung": "The U.S. Department of Commerce (Commerce) finds that revocation of the antidumping duty (AD) order on certain potassium phosphate salts (salts) from the People's Republic of China (China) would be likely to lead to continuation or recurrence of dumping, at the levels indicated in the \"Final Results of Sunset Review\" section of this notice.",
+        "begriffe": [
+          "phosphate"
+        ],
+        "achsen": [
+          "duenger"
+        ],
+        "gewichtig": false,
+        "neu": false
+      },
+      {
+        "nummer": "2026-20294",
+        "titel": "Steel Concrete Reinforcing Bar From the Republic of Türkiye: Preliminary Results and Rescission, in Part, of Antidumping Duty Administrative Review; 2024-2025",
+        "datum": "2026-10-05",
+        "art": "Notice",
+        "behoerden": [
+          "commerce-department",
+          "international-trade-administration"
+        ],
+        "behoerden_namen": [
+          "Commerce Department",
+          "International Trade Administration"
+        ],
+        "url": "https://www.federalregister.gov/documents/2026/10/05/2026-20294/steel-concrete-reinforcing-bar-from-the-republic-of-trkiye-preliminary-results-and-rescission-in",
+        "zusammenfassung": "The U.S. Department of Commerce (Commerce) preliminarily determines that producers/exporters subject to this review made sales of subject merchandise at less than normal value (NV) during the period of review (POR), July 1, 2024, through June 30, 2025. In addition, we are rescinding the review with respect to three companies. Interested parties are invited to comment on these preliminary results of review.",
+        "begriffe": [
+          "fertilizer"
+        ],
+        "achsen": [
+          "duenger"
+        ],
+        "gewichtig": false,
+        "neu": false
+      },
+      {
+        "nummer": "2026-20024",
+        "titel": "Utility Scale Wind Towers From the Republic of Korea: Preliminary Results and Rescission, in Part of Antidumping Duty Administrative Review; 2024-2025",
+        "datum": "2026-09-30",
+        "art": "Notice",
+        "behoerden": [
+          "commerce-department",
+          "international-trade-administration"
+        ],
+        "behoerden_namen": [
+          "Commerce Department",
+          "International Trade Administration"
+        ],
+        "url": "https://www.federalregister.gov/documents/2026/09/30/2026-20024/utility-scale-wind-towers-from-the-republic-of-korea-preliminary-results-and-rescission-in-part-of",
+        "zusammenfassung": "The U.S. Department of Commerce (Commerce) preliminarily determines that Dongkuk S&C Co., Ltd. (Dongkuk) did not make sales of subject merchandise at less than normal value (NV) during the period of review (POR), August 1, 2024, through July 31, 2025. In addition, we are rescinding the review with respect to eight companies. Interested parties are invited to comment on these preliminary results of review.",
+        "begriffe": [
+          "fertilizer"
+        ],
+        "achsen": [
+          "duenger"
+        ],
+        "gewichtig": false,
+        "neu": false
+      },
+      {
+        "nummer": "2026-19779",
+        "titel": "Certain Frozen Warmwater Shrimp From India: Rescission of Antidumping Duty Administrative Review, In Part; 2025-2026",
+        "datum": "2026-09-28",
+        "art": "Notice",
+        "behoerden": [
+          "commerce-department",
+          "international-trade-administration"
+        ],
+        "behoerden_namen": [
+          "Commerce Department",
+          "International Trade Administration"
+        ],
+        "url": "https://www.federalregister.gov/documents/2026/09/28/2026-19779/certain-frozen-warmwater-shrimp-from-india-rescission-of-antidumping-duty-administrative-review-in",
+        "zusammenfassung": "On March 31, 2026, the U.S. Department of Commerce (Commerce) initiated an administrative review of the antidumping duty (AD) order on certain frozen warmwater shrimp (shrimp) from India for the period of review (POR) February 1, 2025, through January 31, 2026, for 393 companies. We are rescinding this administrative review with respect to certain companies because they had no reviewable entries of subject merchandise during the POR. For a list of the companies for which we are rescinding this review in the absence of suspended entries of subject merchandise during the POR, see Appendix I to t",
+        "begriffe": [
+          "fertilizer"
+        ],
+        "achsen": [
+          "duenger"
+        ],
+        "gewichtig": false,
+        "neu": false
+      },
+      {
+        "nummer": "2026-18925",
+        "titel": "Chlorinated Isocyanurates From the People's Republic of China: Preliminary Results, and Rescission, in Part of Antidumping Duty Administrative Review; 2024-2025",
+        "datum": "2026-09-16",
+        "art": "Notice",
+        "behoerden": [
+          "commerce-department",
+          "international-trade-administration"
+        ],
+        "behoerden_namen": [
+          "Commerce Department",
+          "International Trade Administration"
+        ],
+        "url": "https://www.federalregister.gov/documents/2026/09/16/2026-18925/chlorinated-isocyanurates-from-the-peoples-republic-of-china-preliminary-results-and-rescission-in",
+        "zusammenfassung": "The U.S. Department of Commerce (Commerce) preliminarily determines that chlorinated isocyanurates from the People's Republic of China (China) were sold in the United States at less than normal value during the period of review (POR) June 1, 2024, through May 31, 2025. Interested parties are invited to comment on these preliminary results.",
+        "begriffe": [
+          "fertilizer"
+        ],
+        "achsen": [
+          "duenger"
+        ],
+        "gewichtig": false,
+        "neu": false
+      },
+      {
+        "nummer": "2026-18791",
+        "titel": "Certain Steel Racks and Parts Thereof From the People's Republic of China: Final Results and Rescission, in Part, of Antidumping Duty Administrative Review; 2023-2024",
+        "datum": "2026-09-15",
+        "art": "Notice",
+        "behoerden": [
+          "commerce-department",
+          "international-trade-administration"
+        ],
+        "behoerden_namen": [
+          "Commerce Department",
+          "International Trade Administration"
+        ],
+        "url": "https://www.federalregister.gov/documents/2026/09/15/2026-18791/certain-steel-racks-and-parts-thereof-from-the-peoples-republic-of-china-final-results-and",
+        "zusammenfassung": "The U.S. Department of Commerce (Commerce) determines that the exporters under review either sold certain steel racks and parts thereof (steel racks) from the People's Republic of China (China) in the United States at prices below normal value (NV) during the period of review (POR) September 1, 2023, through August 31, 2024, or have not established their eligibility for a separate rate and are part of the China-wide entity.",
+        "begriffe": [
+          "fertilizer"
+        ],
+        "achsen": [
+          "duenger"
+        ],
+        "gewichtig": false,
+        "neu": false
+      },
+      {
+        "nummer": "2026-18719",
+        "titel": "Glycine From India: Preliminary Results and Rescission, in Part, of Countervailing Duty Administrative Review; 2024",
+        "datum": "2026-09-14",
+        "art": "Notice",
+        "behoerden": [
+          "commerce-department",
+          "international-trade-administration"
+        ],
+        "behoerden_namen": [
+          "Commerce Department",
+          "International Trade Administration"
+        ],
+        "url": "https://www.federalregister.gov/documents/2026/09/14/2026-18719/glycine-from-india-preliminary-results-and-rescission-in-part-of-countervailing-duty-administrative",
+        "zusammenfassung": "The U.S. Department of Commerce (Commerce) preliminarily determines that countervailable subsidies were provided to producers and exporters of glycine from India. In addition, Commerce is rescinding this review, in part, with respect to 27 companies. The period of review (POR) is January 1, 2024, through December 31, 2024. Interested parties are invited to comment on these preliminary results.",
+        "begriffe": [
+          "fertilizer"
+        ],
+        "achsen": [
+          "duenger"
+        ],
+        "gewichtig": false,
+        "neu": false
+      },
+      {
+        "nummer": "2026-18718",
+        "titel": "Raw Honey From Brazil: Preliminary Results of Antidumping Duty Administrative Review; 2024-2025",
+        "datum": "2026-09-14",
+        "art": "Notice",
+        "behoerden": [
+          "commerce-department",
+          "international-trade-administration"
+        ],
+        "behoerden_namen": [
+          "Commerce Department",
+          "International Trade Administration"
+        ],
+        "url": "https://www.federalregister.gov/documents/2026/09/14/2026-18718/raw-honey-from-brazil-preliminary-results-of-antidumping-duty-administrative-review-2024-2025",
+        "zusammenfassung": "The U.S. Department of Commerce (Commerce) preliminarily determines that Melbras Importadora E Exportadora Agroind[uacute]stria Ltda. (Melbras) and Minamel Agroind[uacute]stria Ltda. (Minamel) made sales of subject merchandise at less than normal value (NV) during the period of review (POR), June 1, 2024, through May 31, 2025. In addition, we are rescinding the review with respect to 11 companies. Interested parties are invited to comment on these preliminary results of review.",
+        "begriffe": [
+          "fertilizer"
+        ],
+        "achsen": [
+          "duenger"
+        ],
+        "gewichtig": false,
+        "neu": false
+      },
+      {
+        "nummer": "2026-18702",
+        "titel": "Raw Honey From the Socialist Republic of Vietnam: Preliminary Results and Rescission, in Part, of Antidumping Duty Administrative Review; 2024-2025",
+        "datum": "2026-09-14",
+        "art": "Notice",
+        "behoerden": [
+          "commerce-department",
+          "international-trade-administration"
+        ],
+        "behoerden_namen": [
+          "Commerce Department",
+          "International Trade Administration"
+        ],
+        "url": "https://www.federalregister.gov/documents/2026/09/14/2026-18702/raw-honey-from-the-socialist-republic-of-vietnam-preliminary-results-and-rescission-in-part-of",
+        "zusammenfassung": "The U.S. Department of Commerce (Commerce) preliminarily determines that exporters subject to this review made sales of subject merchandise at less than normal value (NV) during the period of review (POR), June 1, 2024, through May 31, 2025. In addition, we are rescinding the review with respect to 17 companies. Interested parties are invited to comment on these preliminary results of review.",
+        "begriffe": [
+          "fertilizer"
+        ],
+        "achsen": [
+          "duenger"
+        ],
+        "gewichtig": false,
+        "neu": false
+      },
+      {
+        "nummer": "2026-18700",
+        "titel": "Certain Quartz Surface Product From India: Preliminary Results, Intent To Rescind, in Part, and Rescission, in Part of Antidumping Duty Administrative Review; 2024-2025",
+        "datum": "2026-09-14",
+        "art": "Notice",
+        "behoerden": [
+          "commerce-department",
+          "international-trade-administration"
+        ],
+        "behoerden_namen": [
+          "Commerce Department",
+          "International Trade Administration"
+        ],
+        "url": "https://www.federalregister.gov/documents/2026/09/14/2026-18700/certain-quartz-surface-product-from-india-preliminary-results-intent-to-rescind-in-part-and",
+        "zusammenfassung": "The U.S. Department of Commerce (Commerce) preliminarily determines that Cuarzo and Beyyond Rocks Private Limited (Beyyond) (collectively, Cuarzo/Beyyond) made sales of subject merchandise at less than normal value (NV) during the period of review (POR), June 1, 2024, through May 31, 2025. Additionally, Commerce preliminarily determines that Pokarna Engineered Stone Limited (PESL) did not make sales of subject merchandise at less than NV during the POR. Furthermore, we are rescinding the review with respect to 53 companies and intend to rescind the review with respect to four companies. Intere",
+        "begriffe": [
+          "fertilizer"
+        ],
+        "achsen": [
+          "duenger"
+        ],
+        "gewichtig": false,
+        "neu": false
+      },
+      {
+        "nummer": "2026-18495",
+        "titel": "Prestressed Concrete Steel Wire Strand From Malaysia: Preliminary Results and Rescission, in Part, of Antidumping Duty Administrative Review; 2024-2025",
+        "datum": "2026-09-10",
+        "art": "Notice",
+        "behoerden": [
+          "commerce-department",
+          "international-trade-administration"
+        ],
+        "behoerden_namen": [
+          "Commerce Department",
+          "International Trade Administration"
+        ],
+        "url": "https://www.federalregister.gov/documents/2026/09/10/2026-18495/prestressed-concrete-steel-wire-strand-from-malaysia-preliminary-results-and-rescission-in-part-of",
+        "zusammenfassung": "The U.S. Department of Commerce (Commerce) preliminarily determines that producers/exporters subject to this review made sales of subject merchandise at less than normal value (NV) during the period of review (POR), June 1, 2024, through May 31, 2025. In addition, we are rescinding the review with respect to Southern Steel Sdn. Bhd. (Southern Steel). Interested parties are invited to comment on these preliminary results of review.",
+        "begriffe": [
+          "fertilizer"
+        ],
+        "achsen": [
+          "duenger"
+        ],
+        "gewichtig": false,
+        "neu": false
+      }
+    ]
+  },
+  "stoerung": {
+    "erdbeben": [],
+    "erdbeben_gesamt": 0,
+    "starkregen_gemessen": [],
+    "starkregen_vorhergesagt": [],
+    "regen_hoechst_mm": {
+      "khouribga": 7.9,
+      "benguerir": 4.0,
+      "jorf_lasfar": 1.1,
+      "safi": 0.4,
+      "bou_craa": 3.9,
+      "laayoune": 1.0
+    },
+    "trocken": {},
+    "gelb_tage": 30
+  },
+  "preise": {
+    "NTR": {
+      "name": "Nutrien",
+      "achse": "duenger",
+      "rolle": "sensor",
+      "hinweis": "Kanada; größter Düngemittelkonzern, aber schwerpunktmäßig Kali — verwässert",
+      "waehrung": "USD",
+      "letzter": "2026-10-08",
+      "schluss": 69.87,
+      "alter_tage": 1,
+      "r_kurz": 0.002,
+      "vorsprung_kurz": 0.0086,
+      "r_lang": -0.1126,
+      "vorsprung_lang": -0.0651,
+      "urteil": "schläft",
+      "markt_schlaeft": true,
+      "handel": 185809493,
+      "duenn": false
+    },
+    "MOS": {
+      "name": "Mosaic",
+      "achse": "duenger",
+      "rolle": "sensor",
+      "hinweis": "USA; Phosphat und Kali, zugleich Kläger in den Ausgleichszollverfahren gegen OCP",
+      "waehrung": "USD",
+      "letzter": "2026-10-08",
+      "schluss": 19.73,
+      "alter_tage": 1,
+      "r_kurz": -0.0845,
+      "vorsprung_kurz": -0.0778,
+      "r_lang": -0.2232,
+      "vorsprung_lang": -0.1757,
+      "urteil": "schläft",
+      "markt_schlaeft": true,
+      "handel": 171266540,
+      "duenn": false
+    }
+  },
+  "vergleich": {
+    "ticker": "AIGI.L",
+    "name": "Industriemetall-Korb (WisdomTree Industrial Metals, Vergleichsmaßstab)"
+  },
+  "rueckblick": {
+    "NTR": {
+      "name": "Nutrien",
+      "achse": "duenger",
+      "rolle": "sensor",
+      "erster_kurs": "2018-01-02",
+      "urteil": "zu wenige Fälle",
+      "gruppen": {
+        "verschaerfung_eigene": {
+          "n": 2,
+          "offen": 0,
+          "v0": -0.0017,
+          "v5": 0.0219,
+          "v20": -0.0444,
+          "v60": -0.0128,
+          "v_vorlauf": 0.0243,
+          "treffer": 0,
+          "trefferquote": 0.0
+        },
+        "verschaerfung_alle": {
+          "n": 2,
+          "offen": 0,
+          "v0": -0.0017,
+          "v5": 0.0219,
+          "v20": -0.0444,
+          "v60": -0.0128,
+          "v_vorlauf": 0.0243,
+          "treffer": 0,
+          "trefferquote": 0.0
+        },
+        "lockerung_eigene": {
+          "n": 8,
+          "offen": 1,
+          "v0": 0.0093,
+          "v5": 0.0045,
+          "v20": -0.0365,
+          "v60": -0.0459,
+          "v_vorlauf": 0.0041,
+          "treffer": 2,
+          "trefferquote": 0.25
+        },
+        "lockerung_alle": {
+          "n": 8,
+          "offen": 1,
+          "v0": 0.0093,
+          "v5": 0.0045,
+          "v20": -0.0365,
+          "v60": -0.0459,
+          "v_vorlauf": 0.0041,
+          "treffer": 2,
+          "trefferquote": 0.25
+        },
+        "gegenseite_eigene": {
+          "n": 2,
+          "offen": 0,
+          "v0": -0.0112,
+          "v5": -0.019,
+          "v20": 0.0048,
+          "v60": -0.064,
+          "v_vorlauf": 0.0098,
+          "treffer": 0,
+          "trefferquote": 0.0
+        },
+        "gegenseite_alle": {
+          "n": 2,
+          "offen": 0,
+          "v0": -0.0112,
+          "v5": -0.019,
+          "v20": 0.0048,
+          "v60": -0.064,
+          "v_vorlauf": 0.0098,
+          "treffer": 0,
+          "trefferquote": 0.0
+        }
+      }
+    },
+    "MOS": {
+      "name": "Mosaic",
+      "achse": "duenger",
+      "rolle": "sensor",
+      "erster_kurs": "2008-01-02",
+      "urteil": "zu wenige Fälle",
+      "gruppen": {
+        "verschaerfung_eigene": {
+          "n": 2,
+          "offen": 0,
+          "v0": -0.0137,
+          "v5": 0.0085,
+          "v20": -0.0562,
+          "v60": -0.1684,
+          "v_vorlauf": 0.0881,
+          "treffer": 0,
+          "trefferquote": 0.0
+        },
+        "verschaerfung_alle": {
+          "n": 2,
+          "offen": 0,
+          "v0": -0.0137,
+          "v5": 0.0085,
+          "v20": -0.0562,
+          "v60": -0.1684,
+          "v_vorlauf": 0.0881,
+          "treffer": 0,
+          "trefferquote": 0.0
+        },
+        "lockerung_eigene": {
+          "n": 8,
+          "offen": 1,
+          "v0": 0.0089,
+          "v5": -0.0341,
+          "v20": -0.0688,
+          "v60": -0.1557,
+          "v_vorlauf": -0.0085,
+          "treffer": 3,
+          "trefferquote": 0.38
+        },
+        "lockerung_alle": {
+          "n": 8,
+          "offen": 1,
+          "v0": 0.0089,
+          "v5": -0.0341,
+          "v20": -0.0688,
+          "v60": -0.1557,
+          "v_vorlauf": -0.0085,
+          "treffer": 3,
+          "trefferquote": 0.38
+        },
+        "gegenseite_eigene": {
+          "n": 3,
+          "offen": 0,
+          "v0": -0.0231,
+          "v5": -0.0224,
+          "v20": -0.0152,
+          "v60": -0.0205,
+          "v_vorlauf": 0.0005,
+          "treffer": 0,
+          "trefferquote": 0.0
+        },
+        "gegenseite_alle": {
+          "n": 3,
+          "offen": 0,
+          "v0": -0.0231,
+          "v5": -0.0224,
+          "v20": -0.0152,
+          "v60": -0.0205,
+          "v_vorlauf": 0.0005,
+          "treffer": 0,
+          "trefferquote": 0.0
+        }
+      }
+    }
+  },
+  "standorte": {
+    "khouribga": "Khouribga",
+    "benguerir": "Benguerir",
+    "jorf_lasfar": "Jorf Lasfar",
+    "safi": "Safi",
+    "bou_craa": "Bou Craa (Westsahara)",
+    "laayoune": "Laayoune / El Marsa"
+  },
+  "quellen": {
+    "bundesregister": {
+      "name": "US-Bundesregister (Federal Register), Suche",
+      "status": "ok",
+      "meldung": null
+    },
+    "usgs_beben": {
+      "name": "USGS · Erdbeben",
+      "status": "ok",
+      "meldung": null
+    },
+    "openmeteo_vorhersage": {
+      "name": "Open-Meteo · Regen der letzten Tage und Vorhersage",
+      "status": "ok",
+      "meldung": null
+    },
+    "openmeteo": {
+      "name": "Open-Meteo · ERA5-Reanalyse (Regen, Wind)",
+      "status": "ok",
+      "meldung": null
+    },
+    "yahoo": {
+      "name": "Yahoo Finance über yfinance (Kurse, Volumen)",
+      "status": "ok",
+      "meldung": null
+    }
+  }
+}

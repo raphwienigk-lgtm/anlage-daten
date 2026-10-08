@@ -1,0 +1,229 @@
+{
+  "stand": "2026-10-09T01:30:27+02:00",
+  "datum": "2026-10-09",
+  "version": "0.1.0",
+  "land": "kongo",
+  "name": "Kongo-Kobalt",
+  "laenderpaar": "DR Kongo ↔ China über Förderbeteiligung und Ausfuhrquoten",
+  "rolle": "sensor",
+  "hinweis": "Denkhilfe, keine Anlageberatung. Rot setzt nur der Metall-Wächter in der Cloud.",
+  "zustand": "in Ordnung",
+  "reihenfolge": [
+    "kobalt"
+  ],
+  "achsen": {
+    "kobalt": {
+      "name": "Kobalt-Achse",
+      "beschreibung": "Kobalt aus dem Kupfergürtel Katanga; Batteriezellen als Nachfrageseite, LFP als Ausweichpfad",
+      "pilot": true,
+      "metalle": [
+        {
+          "kennung": "kobalt",
+          "name": "Kobalt",
+          "dativ": null,
+          "wucht": 0.34
+        }
+      ],
+      "wucht": 0.34,
+      "stufe": "Grün",
+      "gruende": [],
+      "kanaele": [],
+      "mehrfach": false,
+      "instrumente": [
+        "GLEN.L"
+      ]
+    }
+  },
+  "wechsel": [],
+  "fristen": [
+    {
+      "kennung": "quoten_2026_2027",
+      "name": "Kobalt-Ausfuhrquote von 96.600 Tonnen je Jahr (ARECOMS-Beschluss 004/2025)",
+      "nummer": 4,
+      "achsen": [
+        "kobalt"
+      ],
+      "bis": "2027-12-31",
+      "urspruenglich_bis": "2027-12-31",
+      "verlaengert": false,
+      "tage": 448,
+      "zustand": "läuft",
+      "gelb": false,
+      "rot_pruefen": false,
+      "stand": "Seit 16.10.2025 in Kraft, nach dem achtmonatigen Exportverbot. Nicht genutzte Halbjahresquoten wurden am 29.06.2026 eingezogen und in eine strategische Reserve überführt."
+    },
+    {
+      "kennung": "quotenjahr_2026",
+      "name": "Quotenzuteilung für das laufende Jahr",
+      "nummer": null,
+      "achsen": [
+        "kobalt"
+      ],
+      "bis": "2026-12-31",
+      "urspruenglich_bis": "2026-12-31",
+      "verlaengert": false,
+      "tage": 83,
+      "zustand": "läuft",
+      "gelb": false,
+      "rot_pruefen": false,
+      "stand": "Verfallsregeln sind das eigentliche Steuerungsinstrument geworden: Fristen für die Nutzung wurden 2026 mehrfach verkürzt."
+    }
+  ],
+  "gegenseite": {
+    "herkunft": "frisch",
+    "tage": 30,
+    "dokumente": []
+  },
+  "stoerung": {
+    "erdbeben": [],
+    "erdbeben_gesamt": 0,
+    "starkregen_gemessen": [],
+    "starkregen_vorhergesagt": [],
+    "regen_hoechst_mm": {
+      "kolwezi": 8.5,
+      "likasi": 5.6,
+      "tenke": 8.0,
+      "kisanfu": 2.4,
+      "kasumbalesa": 3.7,
+      "durban": 2.9
+    },
+    "trocken": {},
+    "gelb_tage": 45
+  },
+  "preise": {
+    "GLEN.L": {
+      "name": "Glencore",
+      "achse": "kobalt",
+      "rolle": "sensor",
+      "hinweis": "größter westlicher Kobalt-Förderer im Kongo, aber riesiger Mischkonzern — Signal stark verwässert",
+      "waehrung": "GBP",
+      "letzter": "2026-10-07",
+      "schluss": 568.9,
+      "alter_tage": 2,
+      "r_kurz": 0.0247,
+      "vorsprung_kurz": 0.0313,
+      "r_lang": -0.0903,
+      "vorsprung_lang": -0.0428,
+      "urteil": "schläft",
+      "markt_schlaeft": true,
+      "handel": 19634572072,
+      "duenn": false
+    }
+  },
+  "vergleich": {
+    "ticker": "AIGI.L",
+    "name": "Industriemetall-Korb (WisdomTree Industrial Metals, Vergleichsmaßstab)"
+  },
+  "rueckblick": {
+    "GLEN.L": {
+      "name": "Glencore",
+      "achse": "kobalt",
+      "rolle": "sensor",
+      "erster_kurs": "2011-05-19",
+      "urteil": "nicht bestanden",
+      "gruppen": {
+        "verschaerfung_eigene": {
+          "n": 8,
+          "offen": 0,
+          "v0": -0.002,
+          "v5": -0.0092,
+          "v20": -0.0025,
+          "v60": 0.0297,
+          "v_vorlauf": -0.0043,
+          "treffer": 0,
+          "trefferquote": 0.0
+        },
+        "verschaerfung_alle": {
+          "n": 8,
+          "offen": 0,
+          "v0": -0.002,
+          "v5": -0.0092,
+          "v20": -0.0025,
+          "v60": 0.0297,
+          "v_vorlauf": -0.0043,
+          "treffer": 0,
+          "trefferquote": 0.0
+        },
+        "lockerung_eigene": {
+          "n": 4,
+          "offen": 0,
+          "v0": -0.0008,
+          "v5": -0.0076,
+          "v20": 0.0766,
+          "v60": 0.195,
+          "v_vorlauf": 0.0796,
+          "treffer": 0,
+          "trefferquote": 0.0
+        },
+        "lockerung_alle": {
+          "n": 4,
+          "offen": 0,
+          "v0": -0.0008,
+          "v5": -0.0076,
+          "v20": 0.0766,
+          "v60": 0.195,
+          "v_vorlauf": 0.0796,
+          "treffer": 0,
+          "trefferquote": 0.0
+        },
+        "gegenseite_eigene": {
+          "n": 3,
+          "offen": 0,
+          "v0": -0.0019,
+          "v5": -0.0348,
+          "v20": -0.0395,
+          "v60": 0.0544,
+          "v_vorlauf": 0.0539,
+          "treffer": 0,
+          "trefferquote": 0.0
+        },
+        "gegenseite_alle": {
+          "n": 3,
+          "offen": 0,
+          "v0": -0.0019,
+          "v5": -0.0348,
+          "v20": -0.0395,
+          "v60": 0.0544,
+          "v_vorlauf": 0.0539,
+          "treffer": 0,
+          "trefferquote": 0.0
+        }
+      }
+    }
+  },
+  "standorte": {
+    "kolwezi": "Kolwezi, Lualaba",
+    "likasi": "Likasi, Haut-Katanga",
+    "tenke": "Tenke-Fungurume, Lualaba",
+    "kisanfu": "Kisanfu, Lualaba",
+    "kasumbalesa": "Kasumbalesa, Grenze zu Sambia",
+    "durban": "Durban, Südafrika"
+  },
+  "quellen": {
+    "bundesregister": {
+      "name": "US-Bundesregister (Federal Register), Suche",
+      "status": "ok",
+      "meldung": null
+    },
+    "usgs_beben": {
+      "name": "USGS · Erdbeben",
+      "status": "ok",
+      "meldung": null
+    },
+    "openmeteo_vorhersage": {
+      "name": "Open-Meteo · Regen der letzten Tage und Vorhersage",
+      "status": "ok",
+      "meldung": null
+    },
+    "openmeteo": {
+      "name": "Open-Meteo · ERA5-Reanalyse (Regen, Wind)",
+      "status": "ok",
+      "meldung": null
+    },
+    "yahoo": {
+      "name": "Yahoo Finance über yfinance (Kurse, Volumen)",
+      "status": "ok",
+      "meldung": null
+    }
+  }
+}

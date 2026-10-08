@@ -1,0 +1,417 @@
+{
+  "stand": "2026-10-09T01:30:27+02:00",
+  "vergleich": {
+    "ticker": "AIGI.L",
+    "name": "Industriemetall-Korb (WisdomTree Industrial Metals, Vergleichsmaßstab)"
+  },
+  "regeln": {
+    "horizonte": [
+      0,
+      5,
+      20,
+      60
+    ],
+    "vorlauf": 20,
+    "haupt": 20,
+    "treffer_ab": 0.1,
+    "bestanden": {
+      "mindestens": 3,
+      "trefferquote": 0.5
+    },
+    "kurse_ab": "2008-01-01"
+  },
+  "werte": {
+    "GLEN.L": {
+      "name": "Glencore",
+      "achse": "kobalt",
+      "rolle": "sensor",
+      "erster_kurs": "2011-05-19",
+      "urteil": "nicht bestanden",
+      "gruppen": {
+        "verschaerfung_eigene": {
+          "n": 8,
+          "offen": 0,
+          "v0": -0.002,
+          "v5": -0.0092,
+          "v20": -0.0025,
+          "v60": 0.0297,
+          "v_vorlauf": -0.0043,
+          "treffer": 0,
+          "trefferquote": 0.0
+        },
+        "verschaerfung_alle": {
+          "n": 8,
+          "offen": 0,
+          "v0": -0.002,
+          "v5": -0.0092,
+          "v20": -0.0025,
+          "v60": 0.0297,
+          "v_vorlauf": -0.0043,
+          "treffer": 0,
+          "trefferquote": 0.0
+        },
+        "lockerung_eigene": {
+          "n": 4,
+          "offen": 0,
+          "v0": -0.0008,
+          "v5": -0.0076,
+          "v20": 0.0766,
+          "v60": 0.195,
+          "v_vorlauf": 0.0796,
+          "treffer": 0,
+          "trefferquote": 0.0
+        },
+        "lockerung_alle": {
+          "n": 4,
+          "offen": 0,
+          "v0": -0.0008,
+          "v5": -0.0076,
+          "v20": 0.0766,
+          "v60": 0.195,
+          "v_vorlauf": 0.0796,
+          "treffer": 0,
+          "trefferquote": 0.0
+        },
+        "gegenseite_eigene": {
+          "n": 3,
+          "offen": 0,
+          "v0": -0.0019,
+          "v5": -0.0348,
+          "v20": -0.0395,
+          "v60": 0.0544,
+          "v_vorlauf": 0.0539,
+          "treffer": 0,
+          "trefferquote": 0.0
+        },
+        "gegenseite_alle": {
+          "n": 3,
+          "offen": 0,
+          "v0": -0.0019,
+          "v5": -0.0348,
+          "v20": -0.0395,
+          "v60": 0.0544,
+          "v_vorlauf": 0.0539,
+          "treffer": 0,
+          "trefferquote": 0.0
+        }
+      },
+      "faelle": [
+        {
+          "datum": "2018-11-06",
+          "art": "gegenseite",
+          "achsen": [
+            "kobalt"
+          ],
+          "text": "Katanga Mining stoppt Kobaltverkäufe aus Kamoto wegen zu hoher Uranwerte",
+          "eigene_achse": true,
+          "tag0": "2018-11-06",
+          "r0": -0.0288,
+          "r5": -0.0822,
+          "r20": -0.0752,
+          "r60": -0.0466,
+          "vorlauf": -0.0017,
+          "v0": -0.0218,
+          "v5": -0.0585,
+          "v20": -0.0699,
+          "v60": -0.0626,
+          "v_vorlauf": 0.0265,
+          "treffer": false
+        },
+        {
+          "datum": "2018-12-05",
+          "art": "verschaerfung",
+          "achsen": [
+            "kobalt"
+          ],
+          "text": "Kobalt wird als strategisches Mineral eingestuft, Royalty auf 10 Prozent",
+          "eigene_achse": true,
+          "tag0": "2018-12-05",
+          "r0": -0.0387,
+          "r5": -0.0184,
+          "r20": -0.0325,
+          "r60": 0.0276,
+          "vorlauf": -0.0478,
+          "v0": -0.0405,
+          "v5": -0.0043,
+          "v20": 0.0041,
+          "v60": -0.0183,
+          "v_vorlauf": -0.0496,
+          "treffer": false
+        },
+        {
+          "datum": "2019-11-25",
+          "art": "gegenseite",
+          "achsen": [
+            "kobalt"
+          ],
+          "text": "Mutanda stellt Förderung und Aufbereitung vorzeitig ein",
+          "eigene_achse": true,
+          "tag0": "2019-11-25",
+          "r0": 0.0059,
+          "r5": -0.0085,
+          "r20": -0.046,
+          "r60": -0.0727,
+          "vorlauf": 0.054,
+          "v0": 0.0081,
+          "v5": 0.0,
+          "v20": -0.073,
+          "v60": -0.0147,
+          "v_vorlauf": 0.1029,
+          "treffer": false
+        },
+        {
+          "datum": "2022-06-29",
+          "art": "verschaerfung",
+          "achsen": [
+            "kobalt"
+          ],
+          "text": "Gerichtlich bestellter Verwalter stoppt Vermarktung und Export aus Tenke Fungurume",
+          "eigene_achse": true,
+          "tag0": "2022-06-29",
+          "r0": 0.0,
+          "r5": -0.1125,
+          "r20": -0.0288,
+          "r60": 0.0028,
+          "vorlauf": -0.1253,
+          "v0": -0.006,
+          "v5": -0.0425,
+          "v20": 0.0333,
+          "v60": 0.0839,
+          "v_vorlauf": 0.0194,
+          "treffer": false
+        },
+        {
+          "datum": "2023-04-19",
+          "art": "lockerung",
+          "achsen": [
+            "kobalt"
+          ],
+          "text": "CMOC und Gécamines einigen sich, Exporte aus Tenke Fungurume werden freigegeben",
+          "eigene_achse": true,
+          "tag0": "2023-04-19",
+          "r0": -0.0073,
+          "r5": -0.0333,
+          "r20": -0.1267,
+          "r60": -0.0891,
+          "vorlauf": 0.151,
+          "v0": -0.0021,
+          "v5": 0.0235,
+          "v20": -0.0314,
+          "v60": 0.0084,
+          "v_vorlauf": 0.1037,
+          "treffer": false
+        },
+        {
+          "datum": "2025-02-22",
+          "art": "verschaerfung",
+          "achsen": [
+            "kobalt"
+          ],
+          "text": "ARECOMS setzt alle Kobaltexporte für vier Monate aus (Beschluss 001/2025)",
+          "eigene_achse": true,
+          "tag0": "2025-02-24",
+          "r0": -0.0182,
+          "r5": -0.0012,
+          "r20": -0.0647,
+          "r60": -0.1759,
+          "vorlauf": -0.1373,
+          "v0": -0.0058,
+          "v5": 0.0068,
+          "v20": -0.1064,
+          "v60": -0.1425,
+          "v_vorlauf": -0.1675,
+          "treffer": false
+        },
+        {
+          "datum": "2025-06-21",
+          "art": "verschaerfung",
+          "achsen": [
+            "kobalt"
+          ],
+          "text": "Exportverbot um drei Monate bis zum 21.09.2025 verlängert",
+          "eigene_achse": true,
+          "tag0": "2025-06-23",
+          "r0": -0.0031,
+          "r5": -0.0096,
+          "r20": 0.0922,
+          "r60": 0.0693,
+          "vorlauf": 0.0729,
+          "v0": -0.0125,
+          "v5": -0.0426,
+          "v20": 0.0033,
+          "v60": 0.0418,
+          "v_vorlauf": 0.0596,
+          "treffer": false
+        },
+        {
+          "datum": "2025-09-20",
+          "art": "verschaerfung",
+          "achsen": [
+            "kobalt"
+          ],
+          "text": "Verbot bis 15.10., danach Quotensystem mit 96.600 Tonnen je Jahr",
+          "eigene_achse": true,
+          "tag0": "2025-09-22",
+          "r0": 0.0197,
+          "r5": 0.0911,
+          "r20": 0.1165,
+          "r60": 0.2168,
+          "vorlauf": 0.0705,
+          "v0": 0.0234,
+          "v5": 0.0675,
+          "v20": 0.0678,
+          "v60": 0.1356,
+          "v_vorlauf": 0.0398,
+          "treffer": false
+        },
+        {
+          "datum": "2025-10-16",
+          "art": "lockerung",
+          "achsen": [
+            "kobalt"
+          ],
+          "text": "Exportverbot endet, monatliche Quotenzuteilung beginnt",
+          "eigene_achse": true,
+          "tag0": "2025-10-16",
+          "r0": -0.005,
+          "r5": -0.0234,
+          "r20": 0.0562,
+          "r60": 0.3311,
+          "vorlauf": 0.1537,
+          "v0": -0.011,
+          "v5": -0.0503,
+          "v20": 0.0228,
+          "v60": 0.173,
+          "v_vorlauf": 0.1188,
+          "treffer": false
+        },
+        {
+          "datum": "2025-11-15",
+          "art": "gegenseite",
+          "achsen": [
+            "kobalt"
+          ],
+          "text": "Brückeneinsturz an der Mine Kalando mit mindestens 32 Toten",
+          "eigene_achse": true,
+          "tag0": "2025-11-17",
+          "r0": -0.0053,
+          "r5": -0.0611,
+          "r20": 0.041,
+          "r60": 0.3511,
+          "vorlauf": 0.0578,
+          "v0": 0.0079,
+          "v5": -0.046,
+          "v20": 0.0244,
+          "v60": 0.2404,
+          "v_vorlauf": 0.0324,
+          "treffer": false
+        },
+        {
+          "datum": "2025-11-16",
+          "art": "verschaerfung",
+          "achsen": [
+            "kobalt"
+          ],
+          "text": "Provinzbehörden suspendieren den Betrieb am Standort Kalando",
+          "eigene_achse": true,
+          "tag0": "2025-11-17",
+          "r0": -0.0053,
+          "r5": -0.0611,
+          "r20": 0.041,
+          "r60": 0.3511,
+          "vorlauf": 0.0578,
+          "v0": 0.0079,
+          "v5": -0.046,
+          "v20": 0.0244,
+          "v60": 0.2404,
+          "v_vorlauf": 0.0324,
+          "treffer": false
+        },
+        {
+          "datum": "2025-12-10",
+          "art": "lockerung",
+          "achsen": [
+            "kobalt"
+          ],
+          "text": "Erste Pilotlieferung von Glencore unter dem neuen Quotensystem freigegeben",
+          "eigene_achse": true,
+          "tag0": "2025-12-10",
+          "r0": -0.0003,
+          "r5": -0.0041,
+          "r20": 0.2313,
+          "r60": 0.3735,
+          "vorlauf": 0.0345,
+          "v0": -0.0009,
+          "v5": -0.0114,
+          "v20": 0.1087,
+          "v60": 0.2517,
+          "v_vorlauf": 0.0258,
+          "treffer": false
+        },
+        {
+          "datum": "2025-12-28",
+          "art": "lockerung",
+          "achsen": [
+            "kobalt"
+          ],
+          "text": "Nutzung der Quoten von 2025 bis zum 31.03.2026 verlängert",
+          "eigene_achse": true,
+          "tag0": "2025-12-29",
+          "r0": 0.0056,
+          "r5": 0.0853,
+          "r20": 0.2777,
+          "r60": 0.3627,
+          "vorlauf": 0.1264,
+          "v0": 0.0106,
+          "v5": 0.0076,
+          "v20": 0.2065,
+          "v60": 0.3469,
+          "v_vorlauf": 0.0703,
+          "treffer": false
+        },
+        {
+          "datum": "2026-03-31",
+          "art": "verschaerfung",
+          "achsen": [
+            "kobalt"
+          ],
+          "text": "Quoten aus dem vierten Quartal 2025 nur bis 30.04. nutzbar, Rest verfällt",
+          "eigene_achse": true,
+          "tag0": "2026-03-31",
+          "r0": 0.0217,
+          "r5": 0.0126,
+          "r20": 0.0258,
+          "r60": -0.0768,
+          "vorlauf": 0.0357,
+          "v0": 0.0127,
+          "v5": -0.0136,
+          "v20": -0.0329,
+          "v60": -0.0954,
+          "v_vorlauf": 0.0489,
+          "treffer": false
+        },
+        {
+          "datum": "2026-06-29",
+          "art": "verschaerfung",
+          "achsen": [
+            "kobalt"
+          ],
+          "text": "Nicht genutzte Halbjahresquoten eingezogen und in eine strategische Reserve überführt",
+          "eigene_achse": true,
+          "tag0": "2026-06-29",
+          "r0": -0.0072,
+          "r5": 0.0025,
+          "r20": 0.0085,
+          "r60": 0.06,
+          "vorlauf": -0.0935,
+          "v0": 0.0051,
+          "v5": 0.0008,
+          "v20": -0.0139,
+          "v60": -0.0082,
+          "v_vorlauf": -0.0173,
+          "treffer": false
+        }
+      ]
+    }
+  }
+}

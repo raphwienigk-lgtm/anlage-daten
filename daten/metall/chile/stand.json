@@ -1,0 +1,456 @@
+{
+  "stand": "2026-10-09T01:30:19+02:00",
+  "datum": "2026-10-09",
+  "version": "0.1.0",
+  "land": "chile",
+  "name": "Chile-Lithium",
+  "laenderpaar": "Chile ↔ Weltmarkt über die staatliche Lithium-Strategie",
+  "rolle": "sensor",
+  "hinweis": "Denkhilfe, keine Anlageberatung. Rot setzt nur der Metall-Wächter in der Cloud.",
+  "zustand": "in Ordnung",
+  "reihenfolge": [
+    "lithium"
+  ],
+  "achsen": {
+    "lithium": {
+      "name": "Lithium-Achse",
+      "beschreibung": "Salar-Sole aus der Atacama; Batteriezellen als Nachfrageseite",
+      "pilot": true,
+      "metalle": [
+        {
+          "kennung": "lithium",
+          "name": "Lithium",
+          "dativ": null,
+          "wucht": 0.17
+        }
+      ],
+      "wucht": 0.17,
+      "stufe": "Grün",
+      "gruende": [],
+      "kanaele": [],
+      "mehrfach": false,
+      "instrumente": [
+        "PLS.AX",
+        "SQM",
+        "ALB"
+      ]
+    }
+  },
+  "wechsel": [],
+  "fristen": [
+    {
+      "kennung": "corfo_sqm_2030",
+      "name": "CORFO-Pachtvertrag mit SQM für den Salar de Atacama",
+      "nummer": null,
+      "achsen": [
+        "lithium"
+      ],
+      "bis": "2060-12-31",
+      "urspruenglich_bis": "2030-12-31",
+      "verlaengert": true,
+      "tage": 12502,
+      "zustand": "läuft",
+      "gelb": false,
+      "rot_pruefen": false,
+      "stand": "Läuft Ende 2030 aus; abgelöst durch die Beteiligung von Codelco über Nova Andino Litio bis 2060."
+    },
+    {
+      "kennung": "corfo_albemarle_2043",
+      "name": "CORFO-Quote für Albemarle",
+      "nummer": null,
+      "achsen": [
+        "lithium"
+      ],
+      "bis": "2043-12-31",
+      "urspruenglich_bis": "2043-12-31",
+      "verlaengert": false,
+      "tage": 6292,
+      "zustand": "läuft",
+      "gelb": false,
+      "rot_pruefen": false,
+      "stand": "Option auf 240.000 Tonnen zusätzliche Quote seit Mai 2024."
+    },
+    {
+      "kennung": "salar_schutzgebiete",
+      "name": "Schutzgebiete für zehn Salare und sechs Lagunen (Dekrete vom 29.01.2026)",
+      "nummer": null,
+      "achsen": [
+        "lithium"
+      ],
+      "bis": "2027-12-31",
+      "urspruenglich_bis": "2027-12-31",
+      "verlaengert": false,
+      "tage": 448,
+      "zustand": "läuft",
+      "gelb": false,
+      "rot_pruefen": false,
+      "stand": "Offener Risikofaktor: Nach dem Regierungswechsel im März 2026 wird eine Abschwächung befürchtet. Eine Rücknahme wäre eine Lockerung nach C4."
+    }
+  ],
+  "gegenseite": {
+    "herkunft": "frisch",
+    "tage": 30,
+    "dokumente": [
+      {
+        "nummer": "2026-19777",
+        "titel": "Foreign-Trade Zone (FTZ) 106, Notification of Proposed Production Activity; Hitachi Vantara Manufacturing; (Enterprise Datacenter Disk Storage System Hardware); Norman, Oklahoma",
+        "datum": "2026-09-28",
+        "art": "Notice",
+        "behoerden": [
+          "commerce-department",
+          "foreign-trade-zones-board"
+        ],
+        "behoerden_namen": [
+          "Commerce Department",
+          "Foreign-Trade Zones Board"
+        ],
+        "url": "https://www.federalregister.gov/documents/2026/09/28/2026-19777/foreign-trade-zone-ftz-106-notification-of-proposed-production-activity-hitachi-vantara",
+        "zusammenfassung": "",
+        "begriffe": [
+          "lithium"
+        ],
+        "achsen": [
+          "lithium"
+        ],
+        "gewichtig": false,
+        "neu": false
+      }
+    ]
+  },
+  "stoerung": {
+    "erdbeben": [],
+    "erdbeben_gesamt": 0,
+    "starkregen_gemessen": [],
+    "starkregen_vorhergesagt": [],
+    "regen_hoechst_mm": {
+      "atacama": 0.0,
+      "maricunga": 5.9,
+      "altoandinos": 1.8,
+      "la_negra": 0.7,
+      "carmen": 0.2
+    },
+    "trocken": {},
+    "gelb_tage": 30
+  },
+  "preise": {
+    "PLS.AX": {
+      "name": "Pilbara Minerals",
+      "achse": "lithium",
+      "rolle": "beobachtung",
+      "hinweis": "Spodumen in Australien, profitiert von chilenischer Verknappung",
+      "waehrung": "AUD",
+      "letzter": "2026-10-08",
+      "schluss": 3.7,
+      "alter_tage": 1,
+      "r_kurz": 0.0137,
+      "vorsprung_kurz": 0.0203,
+      "r_lang": -0.2418,
+      "vorsprung_lang": -0.1943,
+      "urteil": "schläft",
+      "markt_schlaeft": true,
+      "handel": 102523426,
+      "duenn": false
+    },
+    "SQM": {
+      "name": "SQM",
+      "achse": "lithium",
+      "rolle": "sensor",
+      "hinweis": "fördert im Salar de Atacama — leidet unter Verstaatlichung, kein Kauf",
+      "waehrung": "USD",
+      "letzter": "2026-10-08",
+      "schluss": 64.52,
+      "alter_tage": 1,
+      "r_kurz": 0.0062,
+      "vorsprung_kurz": 0.0129,
+      "r_lang": -0.1099,
+      "vorsprung_lang": -0.0624,
+      "urteil": "schläft",
+      "markt_schlaeft": true,
+      "handel": 65659345,
+      "duenn": false
+    },
+    "ALB": {
+      "name": "Albemarle",
+      "achse": "lithium",
+      "rolle": "sensor",
+      "hinweis": "fördert im Salar de Atacama — gleicher Zwiespalt wie SQM",
+      "waehrung": "USD",
+      "letzter": "2026-10-08",
+      "schluss": 102.1,
+      "alter_tage": 1,
+      "r_kurz": -0.0279,
+      "vorsprung_kurz": -0.0213,
+      "r_lang": -0.1639,
+      "vorsprung_lang": -0.1164,
+      "urteil": "schläft",
+      "markt_schlaeft": true,
+      "handel": 264956661,
+      "duenn": false
+    }
+  },
+  "vergleich": {
+    "ticker": "AIGI.L",
+    "name": "Industriemetall-Korb (WisdomTree Industrial Metals, Vergleichsmaßstab)"
+  },
+  "rueckblick": {
+    "PLS.AX": {
+      "name": "Pilbara Minerals",
+      "achse": "lithium",
+      "rolle": "beobachtung",
+      "erster_kurs": "2008-01-02",
+      "urteil": "nicht bestanden",
+      "gruppen": {
+        "verschaerfung_eigene": {
+          "n": 9,
+          "offen": 0,
+          "v0": -0.0119,
+          "v5": 0.0421,
+          "v20": 0.0263,
+          "v60": 0.0377,
+          "v_vorlauf": 0.1305,
+          "treffer": 2,
+          "trefferquote": 0.22
+        },
+        "verschaerfung_alle": {
+          "n": 9,
+          "offen": 0,
+          "v0": -0.0119,
+          "v5": 0.0421,
+          "v20": 0.0263,
+          "v60": 0.0377,
+          "v_vorlauf": 0.1305,
+          "treffer": 2,
+          "trefferquote": 0.22
+        },
+        "lockerung_eigene": {
+          "n": 6,
+          "offen": 0,
+          "v0": -0.0192,
+          "v5": -0.023,
+          "v20": -0.0753,
+          "v60": 0.2424,
+          "v_vorlauf": 0.0702,
+          "treffer": 3,
+          "trefferquote": 0.5
+        },
+        "lockerung_alle": {
+          "n": 6,
+          "offen": 0,
+          "v0": -0.0192,
+          "v5": -0.023,
+          "v20": -0.0753,
+          "v60": 0.2424,
+          "v_vorlauf": 0.0702,
+          "treffer": 3,
+          "trefferquote": 0.5
+        },
+        "gegenseite_eigene": {
+          "n": 3,
+          "offen": 0,
+          "v0": 0.0352,
+          "v5": 0.4075,
+          "v20": 0.3561,
+          "v60": 0.5512,
+          "v_vorlauf": -0.0715,
+          "treffer": 2,
+          "trefferquote": 0.67
+        },
+        "gegenseite_alle": {
+          "n": 3,
+          "offen": 0,
+          "v0": 0.0352,
+          "v5": 0.4075,
+          "v20": 0.3561,
+          "v60": 0.5512,
+          "v_vorlauf": -0.0715,
+          "treffer": 2,
+          "trefferquote": 0.67
+        }
+      }
+    },
+    "SQM": {
+      "name": "SQM",
+      "achse": "lithium",
+      "rolle": "sensor",
+      "erster_kurs": "2008-01-02",
+      "urteil": "nicht bestanden",
+      "gruppen": {
+        "verschaerfung_eigene": {
+          "n": 9,
+          "offen": 0,
+          "v0": -0.011,
+          "v5": -0.0465,
+          "v20": -0.0394,
+          "v60": -0.0576,
+          "v_vorlauf": 0.0385,
+          "treffer": 0,
+          "trefferquote": 0.0
+        },
+        "verschaerfung_alle": {
+          "n": 9,
+          "offen": 0,
+          "v0": -0.011,
+          "v5": -0.0465,
+          "v20": -0.0394,
+          "v60": -0.0576,
+          "v_vorlauf": 0.0385,
+          "treffer": 0,
+          "trefferquote": 0.0
+        },
+        "lockerung_eigene": {
+          "n": 6,
+          "offen": 0,
+          "v0": -0.0162,
+          "v5": -0.0398,
+          "v20": -0.0392,
+          "v60": 0.082,
+          "v_vorlauf": 0.0156,
+          "treffer": 0,
+          "trefferquote": 0.0
+        },
+        "lockerung_alle": {
+          "n": 6,
+          "offen": 0,
+          "v0": -0.0162,
+          "v5": -0.0398,
+          "v20": -0.0392,
+          "v60": 0.082,
+          "v_vorlauf": 0.0156,
+          "treffer": 0,
+          "trefferquote": 0.0
+        },
+        "gegenseite_eigene": {
+          "n": 3,
+          "offen": 0,
+          "v0": 0.0287,
+          "v5": 0.0636,
+          "v20": 0.0553,
+          "v60": 0.0272,
+          "v_vorlauf": 0.1066,
+          "treffer": 1,
+          "trefferquote": 0.33
+        },
+        "gegenseite_alle": {
+          "n": 3,
+          "offen": 0,
+          "v0": 0.0287,
+          "v5": 0.0636,
+          "v20": 0.0553,
+          "v60": 0.0272,
+          "v_vorlauf": 0.1066,
+          "treffer": 1,
+          "trefferquote": 0.33
+        }
+      }
+    },
+    "ALB": {
+      "name": "Albemarle",
+      "achse": "lithium",
+      "rolle": "sensor",
+      "erster_kurs": "2008-01-02",
+      "urteil": "nicht bestanden",
+      "gruppen": {
+        "verschaerfung_eigene": {
+          "n": 9,
+          "offen": 0,
+          "v0": -0.0181,
+          "v5": -0.0263,
+          "v20": -0.0081,
+          "v60": -0.0022,
+          "v_vorlauf": 0.0351,
+          "treffer": 3,
+          "trefferquote": 0.33
+        },
+        "verschaerfung_alle": {
+          "n": 9,
+          "offen": 0,
+          "v0": -0.0181,
+          "v5": -0.0263,
+          "v20": -0.0081,
+          "v60": -0.0022,
+          "v_vorlauf": 0.0351,
+          "treffer": 3,
+          "trefferquote": 0.33
+        },
+        "lockerung_eigene": {
+          "n": 6,
+          "offen": 0,
+          "v0": -0.0265,
+          "v5": -0.0559,
+          "v20": -0.0728,
+          "v60": 0.0413,
+          "v_vorlauf": 0.045,
+          "treffer": 3,
+          "trefferquote": 0.5
+        },
+        "lockerung_alle": {
+          "n": 6,
+          "offen": 0,
+          "v0": -0.0265,
+          "v5": -0.0559,
+          "v20": -0.0728,
+          "v60": 0.0413,
+          "v_vorlauf": 0.045,
+          "treffer": 3,
+          "trefferquote": 0.5
+        },
+        "gegenseite_eigene": {
+          "n": 3,
+          "offen": 0,
+          "v0": 0.0191,
+          "v5": 0.0181,
+          "v20": 0.0736,
+          "v60": 0.1463,
+          "v_vorlauf": 0.0424,
+          "treffer": 1,
+          "trefferquote": 0.33
+        },
+        "gegenseite_alle": {
+          "n": 3,
+          "offen": 0,
+          "v0": 0.0191,
+          "v5": 0.0181,
+          "v20": 0.0736,
+          "v60": 0.1463,
+          "v_vorlauf": 0.0424,
+          "treffer": 1,
+          "trefferquote": 0.33
+        }
+      }
+    }
+  },
+  "standorte": {
+    "atacama": "Salar de Atacama",
+    "maricunga": "Salar de Maricunga",
+    "altoandinos": "Salares Altoandinos",
+    "la_negra": "La Negra, Antofagasta",
+    "carmen": "Salar del Carmen, Antofagasta"
+  },
+  "quellen": {
+    "bundesregister": {
+      "name": "US-Bundesregister (Federal Register), Suche",
+      "status": "ok",
+      "meldung": null
+    },
+    "usgs_beben": {
+      "name": "USGS · Erdbeben",
+      "status": "ok",
+      "meldung": null
+    },
+    "openmeteo_vorhersage": {
+      "name": "Open-Meteo · Regen der letzten Tage und Vorhersage",
+      "status": "ok",
+      "meldung": null
+    },
+    "openmeteo": {
+      "name": "Open-Meteo · ERA5-Reanalyse (Regen, Wind)",
+      "status": "ok",
+      "meldung": null
+    },
+    "yahoo": {
+      "name": "Yahoo Finance über yfinance (Kurse, Volumen)",
+      "status": "ok",
+      "meldung": null
+    }
+  }
+}

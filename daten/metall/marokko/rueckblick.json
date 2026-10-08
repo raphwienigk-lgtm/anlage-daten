@@ -1,0 +1,744 @@
+{
+  "stand": "2026-10-09T01:30:22+02:00",
+  "vergleich": {
+    "ticker": "AIGI.L",
+    "name": "Industriemetall-Korb (WisdomTree Industrial Metals, Vergleichsmaßstab)"
+  },
+  "regeln": {
+    "horizonte": [
+      0,
+      5,
+      20,
+      60
+    ],
+    "vorlauf": 20,
+    "haupt": 20,
+    "treffer_ab": 0.1,
+    "bestanden": {
+      "mindestens": 3,
+      "trefferquote": 0.5
+    },
+    "kurse_ab": "2008-01-01"
+  },
+  "werte": {
+    "NTR": {
+      "name": "Nutrien",
+      "achse": "duenger",
+      "rolle": "sensor",
+      "erster_kurs": "2018-01-02",
+      "urteil": "zu wenige Fälle",
+      "gruppen": {
+        "verschaerfung_eigene": {
+          "n": 2,
+          "offen": 0,
+          "v0": -0.0017,
+          "v5": 0.0219,
+          "v20": -0.0444,
+          "v60": -0.0128,
+          "v_vorlauf": 0.0243,
+          "treffer": 0,
+          "trefferquote": 0.0
+        },
+        "verschaerfung_alle": {
+          "n": 2,
+          "offen": 0,
+          "v0": -0.0017,
+          "v5": 0.0219,
+          "v20": -0.0444,
+          "v60": -0.0128,
+          "v_vorlauf": 0.0243,
+          "treffer": 0,
+          "trefferquote": 0.0
+        },
+        "lockerung_eigene": {
+          "n": 8,
+          "offen": 1,
+          "v0": 0.0093,
+          "v5": 0.0045,
+          "v20": -0.0365,
+          "v60": -0.0459,
+          "v_vorlauf": 0.0041,
+          "treffer": 2,
+          "trefferquote": 0.25
+        },
+        "lockerung_alle": {
+          "n": 8,
+          "offen": 1,
+          "v0": 0.0093,
+          "v5": 0.0045,
+          "v20": -0.0365,
+          "v60": -0.0459,
+          "v_vorlauf": 0.0041,
+          "treffer": 2,
+          "trefferquote": 0.25
+        },
+        "gegenseite_eigene": {
+          "n": 2,
+          "offen": 0,
+          "v0": -0.0112,
+          "v5": -0.019,
+          "v20": 0.0048,
+          "v60": -0.064,
+          "v_vorlauf": 0.0098,
+          "treffer": 0,
+          "trefferquote": 0.0
+        },
+        "gegenseite_alle": {
+          "n": 2,
+          "offen": 0,
+          "v0": -0.0112,
+          "v5": -0.019,
+          "v20": 0.0048,
+          "v60": -0.064,
+          "v_vorlauf": 0.0098,
+          "treffer": 0,
+          "trefferquote": 0.0
+        }
+      },
+      "faelle": [
+        {
+          "datum": "2018-11-22",
+          "art": "verschaerfung",
+          "achsen": [
+            "duenger"
+          ],
+          "text": "EU einigt sich auf eine Cadmium-Obergrenze von 60 mg/kg für Phosphatdünger",
+          "eigene_achse": true,
+          "tag0": "2018-11-23",
+          "r0": -0.0115,
+          "r5": 0.0066,
+          "r20": -0.138,
+          "r60": 0.058,
+          "vorlauf": 0.0103,
+          "v0": -0.0133,
+          "v5": 0.0128,
+          "v20": -0.1132,
+          "v60": 0.0319,
+          "v_vorlauf": 0.0366,
+          "treffer": false
+        },
+        {
+          "datum": "2019-06-05",
+          "art": "verschaerfung",
+          "achsen": [
+            "duenger"
+          ],
+          "text": "EU-Düngemittelverordnung 2019/1009 mit Cadmiumgrenzwerten erlassen",
+          "eigene_achse": true,
+          "tag0": "2019-06-05",
+          "r0": 0.0016,
+          "r5": 0.0328,
+          "r20": 0.0314,
+          "r60": -0.0273,
+          "vorlauf": -0.0377,
+          "v0": 0.0098,
+          "v5": 0.031,
+          "v20": 0.0245,
+          "v60": -0.0575,
+          "v_vorlauf": 0.0119,
+          "treffer": false
+        },
+        {
+          "datum": "2021-02-09",
+          "art": "gegenseite",
+          "achsen": [
+            "duenger"
+          ],
+          "text": "USA setzen einen endgültigen Ausgleichszoll von 19,97 Prozent auf OCP-Dünger fest",
+          "eigene_achse": true,
+          "tag0": "2021-02-09",
+          "r0": -0.0029,
+          "r5": 0.0197,
+          "r20": 0.0427,
+          "r60": 0.0876,
+          "vorlauf": 0.0656,
+          "v0": -0.0144,
+          "v5": -0.0222,
+          "v20": 0.0054,
+          "v60": -0.1032,
+          "v_vorlauf": 0.053,
+          "treffer": false
+        },
+        {
+          "datum": "2022-10-12",
+          "art": "lockerung",
+          "achsen": [
+            "duenger"
+          ],
+          "text": "OCP kündigt über vier Millionen Tonnen Dünger für afrikanische Bauern an",
+          "eigene_achse": true,
+          "tag0": "2022-10-12",
+          "r0": 0.0029,
+          "r5": -0.0098,
+          "r20": -0.0973,
+          "r60": -0.0684,
+          "vorlauf": -0.0791,
+          "v0": -0.005,
+          "v5": 0.0071,
+          "v20": -0.1575,
+          "v60": -0.2262,
+          "v_vorlauf": -0.0172,
+          "treffer": true
+        },
+        {
+          "datum": "2023-01-22",
+          "art": "lockerung",
+          "achsen": [
+            "duenger"
+          ],
+          "text": "OCP und Indien vereinbaren 1,7 Millionen Tonnen Phosphatdünger",
+          "eigene_achse": true,
+          "tag0": "2023-01-23",
+          "r0": 0.0036,
+          "r5": 0.0108,
+          "r20": -0.0473,
+          "r60": -0.0719,
+          "vorlauf": 0.0749,
+          "v0": 0.002,
+          "v5": 0.0072,
+          "v20": -0.0013,
+          "v60": 0.011,
+          "v_vorlauf": 0.0014,
+          "treffer": false
+        },
+        {
+          "datum": "2024-09-19",
+          "art": "lockerung",
+          "achsen": [
+            "duenger"
+          ],
+          "text": "Mosaic zieht den Antrag auf Zollprüfung zurück, OCP-Satz bleibt bei 7,42 Prozent",
+          "eigene_achse": true,
+          "tag0": "2024-09-19",
+          "r0": 0.0231,
+          "r5": 0.0393,
+          "r20": 0.0316,
+          "r60": 0.029,
+          "vorlauf": 0.0004,
+          "v0": 0.0169,
+          "v5": -0.0155,
+          "v20": 0.0106,
+          "v60": 0.0226,
+          "v_vorlauf": -0.0089,
+          "treffer": false
+        },
+        {
+          "datum": "2024-10-04",
+          "art": "gegenseite",
+          "achsen": [
+            "duenger"
+          ],
+          "text": "EuGH annulliert die EU-Marokko-Agrar- und Fischereiabkommen wegen der Westsahara",
+          "eigene_achse": true,
+          "tag0": "2024-10-04",
+          "r0": -0.0024,
+          "r5": -0.0178,
+          "r20": -0.0316,
+          "r60": -0.1039,
+          "vorlauf": 0.0737,
+          "v0": -0.0081,
+          "v5": -0.0158,
+          "v20": 0.0042,
+          "v60": -0.0247,
+          "v_vorlauf": -0.0333,
+          "treffer": false
+        },
+        {
+          "datum": "2024-12-26",
+          "art": "lockerung",
+          "achsen": [
+            "duenger"
+          ],
+          "text": "USA senken den Ausgleichszoll auf marokkanischen Phosphatdünger auf 16,60 Prozent",
+          "eigene_achse": true,
+          "tag0": "2024-12-26",
+          "r0": -0.0018,
+          "r5": 0.0524,
+          "r20": 0.1787,
+          "r60": 0.1351,
+          "vorlauf": -0.0491,
+          "v0": 0.0019,
+          "v5": 0.0675,
+          "v20": 0.175,
+          "v60": 0.0463,
+          "v_vorlauf": -0.0358,
+          "treffer": false
+        },
+        {
+          "datum": "2025-07-02",
+          "art": "lockerung",
+          "achsen": [
+            "duenger"
+          ],
+          "text": "OCP Nutricrops und Bangladesch vereinbaren 1,1 Millionen Tonnen für 2025/26",
+          "eigene_achse": true,
+          "tag0": "2025-07-02",
+          "r0": 0.0251,
+          "r5": 0.039,
+          "r20": 0.0137,
+          "r60": 0.0051,
+          "vorlauf": -0.0282,
+          "v0": 0.0135,
+          "v5": 0.0135,
+          "v20": -0.024,
+          "v60": 0.0148,
+          "v_vorlauf": -0.0613,
+          "treffer": false
+        },
+        {
+          "datum": "2025-10-02",
+          "art": "lockerung",
+          "achsen": [
+            "duenger"
+          ],
+          "text": "EU-Rat beschließt Unterzeichnung und vorläufige Anwendung des geänderten Agrarabkommens",
+          "eigene_achse": true,
+          "tag0": "2025-10-02",
+          "r0": 0.0551,
+          "r5": 0.0791,
+          "r20": -0.0408,
+          "r60": 0.107,
+          "vorlauf": -0.0026,
+          "v0": 0.0459,
+          "v5": 0.0412,
+          "v20": -0.0828,
+          "v60": 0.0152,
+          "v_vorlauf": -0.0386,
+          "treffer": false
+        },
+        {
+          "datum": "2025-10-03",
+          "art": "lockerung",
+          "achsen": [
+            "duenger"
+          ],
+          "text": "Marokko und EU unterzeichnen den Briefwechsel mit Herkunftskennzeichnung der Südprovinzen",
+          "eigene_achse": true,
+          "tag0": "2025-10-03",
+          "r0": -0.0067,
+          "r5": 0.0015,
+          "r20": -0.0887,
+          "r60": 0.0457,
+          "vorlauf": 0.0486,
+          "v0": -0.0224,
+          "v5": -0.0091,
+          "v20": -0.1221,
+          "v60": -0.0625,
+          "v_vorlauf": -0.0049,
+          "treffer": true
+        },
+        {
+          "datum": "2026-03-12",
+          "art": "lockerung",
+          "achsen": [
+            "duenger"
+          ],
+          "text": "Indien sichert sich 2,5 Millionen Tonnen Dünger von OCP",
+          "eigene_achse": true,
+          "tag0": "2026-03-12",
+          "r0": 0.0584,
+          "r5": -0.0411,
+          "r20": -0.0701,
+          "r60": -0.1517,
+          "vorlauf": 0.1148,
+          "v0": 0.056,
+          "v5": 0.0206,
+          "v20": -0.0901,
+          "v60": -0.1881,
+          "v_vorlauf": 0.0982,
+          "treffer": false
+        },
+        {
+          "datum": "2026-09-18",
+          "art": "lockerung",
+          "achsen": [
+            "duenger"
+          ],
+          "text": "OCP Nutricrops und Brasilien zeichnen eine Absichtserklärung über 3,8 Millionen Tonnen",
+          "eigene_achse": true,
+          "tag0": "2026-09-18",
+          "r0": -0.0232,
+          "r5": -0.0848,
+          "r20": null,
+          "r60": null,
+          "vorlauf": 0.1194,
+          "v0": -0.0247,
+          "v5": -0.0921,
+          "v20": null,
+          "v60": null,
+          "v_vorlauf": 0.1041
+        }
+      ]
+    },
+    "MOS": {
+      "name": "Mosaic",
+      "achse": "duenger",
+      "rolle": "sensor",
+      "erster_kurs": "2008-01-02",
+      "urteil": "zu wenige Fälle",
+      "gruppen": {
+        "verschaerfung_eigene": {
+          "n": 2,
+          "offen": 0,
+          "v0": -0.0137,
+          "v5": 0.0085,
+          "v20": -0.0562,
+          "v60": -0.1684,
+          "v_vorlauf": 0.0881,
+          "treffer": 0,
+          "trefferquote": 0.0
+        },
+        "verschaerfung_alle": {
+          "n": 2,
+          "offen": 0,
+          "v0": -0.0137,
+          "v5": 0.0085,
+          "v20": -0.0562,
+          "v60": -0.1684,
+          "v_vorlauf": 0.0881,
+          "treffer": 0,
+          "trefferquote": 0.0
+        },
+        "lockerung_eigene": {
+          "n": 8,
+          "offen": 1,
+          "v0": 0.0089,
+          "v5": -0.0341,
+          "v20": -0.0688,
+          "v60": -0.1557,
+          "v_vorlauf": -0.0085,
+          "treffer": 3,
+          "trefferquote": 0.38
+        },
+        "lockerung_alle": {
+          "n": 8,
+          "offen": 1,
+          "v0": 0.0089,
+          "v5": -0.0341,
+          "v20": -0.0688,
+          "v60": -0.1557,
+          "v_vorlauf": -0.0085,
+          "treffer": 3,
+          "trefferquote": 0.38
+        },
+        "gegenseite_eigene": {
+          "n": 3,
+          "offen": 0,
+          "v0": -0.0231,
+          "v5": -0.0224,
+          "v20": -0.0152,
+          "v60": -0.0205,
+          "v_vorlauf": 0.0005,
+          "treffer": 0,
+          "trefferquote": 0.0
+        },
+        "gegenseite_alle": {
+          "n": 3,
+          "offen": 0,
+          "v0": -0.0231,
+          "v5": -0.0224,
+          "v20": -0.0152,
+          "v60": -0.0205,
+          "v_vorlauf": 0.0005,
+          "treffer": 0,
+          "trefferquote": 0.0
+        }
+      },
+      "faelle": [
+        {
+          "datum": "2015-12-10",
+          "art": "gegenseite",
+          "achsen": [
+            "duenger"
+          ],
+          "text": "EU-Gericht annulliert den Handelsbeschluss, soweit er die Westsahara einbezieht",
+          "eigene_achse": true,
+          "tag0": "2015-12-10",
+          "r0": -0.025,
+          "r5": -0.0649,
+          "r20": -0.2283,
+          "r60": -0.023,
+          "vorlauf": -0.029,
+          "v0": -0.0192,
+          "v5": -0.0499,
+          "v20": -0.1844,
+          "v60": -0.0865,
+          "v_vorlauf": 0.0271,
+          "treffer": false
+        },
+        {
+          "datum": "2018-11-22",
+          "art": "verschaerfung",
+          "achsen": [
+            "duenger"
+          ],
+          "text": "EU einigt sich auf eine Cadmium-Obergrenze von 60 mg/kg für Phosphatdünger",
+          "eigene_achse": true,
+          "tag0": "2018-11-23",
+          "r0": -0.013,
+          "r5": 0.0152,
+          "r20": -0.2202,
+          "r60": -0.0891,
+          "vorlauf": 0.2012,
+          "v0": -0.0148,
+          "v5": 0.0214,
+          "v20": -0.1954,
+          "v60": -0.1152,
+          "v_vorlauf": 0.2275,
+          "treffer": false
+        },
+        {
+          "datum": "2019-06-05",
+          "art": "verschaerfung",
+          "achsen": [
+            "duenger"
+          ],
+          "text": "EU-Düngemittelverordnung 2019/1009 mit Cadmiumgrenzwerten erlassen",
+          "eigene_achse": true,
+          "tag0": "2019-06-05",
+          "r0": -0.0207,
+          "r5": -0.0026,
+          "r20": 0.0898,
+          "r60": -0.1915,
+          "vorlauf": -0.1009,
+          "v0": -0.0125,
+          "v5": -0.0044,
+          "v20": 0.0829,
+          "v60": -0.2217,
+          "v_vorlauf": -0.0513,
+          "treffer": false
+        },
+        {
+          "datum": "2021-02-09",
+          "art": "gegenseite",
+          "achsen": [
+            "duenger"
+          ],
+          "text": "USA setzen einen endgültigen Ausgleichszoll von 19,97 Prozent auf OCP-Dünger fest",
+          "eigene_achse": true,
+          "tag0": "2021-02-09",
+          "r0": -0.0382,
+          "r5": 0.0461,
+          "r20": 0.1365,
+          "r60": 0.219,
+          "vorlauf": 0.085,
+          "v0": -0.0497,
+          "v5": 0.0042,
+          "v20": 0.0992,
+          "v60": 0.0282,
+          "v_vorlauf": 0.0724,
+          "treffer": false
+        },
+        {
+          "datum": "2022-10-12",
+          "art": "lockerung",
+          "achsen": [
+            "duenger"
+          ],
+          "text": "OCP kündigt über vier Millionen Tonnen Dünger für afrikanische Bauern an",
+          "eigene_achse": true,
+          "tag0": "2022-10-12",
+          "r0": 0.0113,
+          "r5": 0.0234,
+          "r20": 0.0014,
+          "r60": -0.0476,
+          "vorlauf": -0.058,
+          "v0": 0.0034,
+          "v5": 0.0403,
+          "v20": -0.0588,
+          "v60": -0.2054,
+          "v_vorlauf": 0.0039,
+          "treffer": false
+        },
+        {
+          "datum": "2023-01-22",
+          "art": "lockerung",
+          "achsen": [
+            "duenger"
+          ],
+          "text": "OCP und Indien vereinbaren 1,7 Millionen Tonnen Phosphatdünger",
+          "eigene_achse": true,
+          "tag0": "2023-01-23",
+          "r0": 0.0071,
+          "r5": 0.0102,
+          "r20": 0.0177,
+          "r60": -0.0535,
+          "vorlauf": 0.0589,
+          "v0": 0.0055,
+          "v5": 0.0066,
+          "v20": 0.0637,
+          "v60": 0.0294,
+          "v_vorlauf": -0.0146,
+          "treffer": false
+        },
+        {
+          "datum": "2024-09-19",
+          "art": "lockerung",
+          "achsen": [
+            "duenger"
+          ],
+          "text": "Mosaic zieht den Antrag auf Zollprüfung zurück, OCP-Satz bleibt bei 7,42 Prozent",
+          "eigene_achse": true,
+          "tag0": "2024-09-19",
+          "r0": 0.0328,
+          "r5": 0.0251,
+          "r20": 0.0035,
+          "r60": 0.0352,
+          "vorlauf": -0.0506,
+          "v0": 0.0266,
+          "v5": -0.0297,
+          "v20": -0.0175,
+          "v60": 0.0288,
+          "v_vorlauf": -0.0599,
+          "treffer": false
+        },
+        {
+          "datum": "2024-10-04",
+          "art": "gegenseite",
+          "achsen": [
+            "duenger"
+          ],
+          "text": "EuGH annulliert die EU-Marokko-Agrar- und Fischereiabkommen wegen der Westsahara",
+          "eigene_achse": true,
+          "tag0": "2024-10-04",
+          "r0": 0.0052,
+          "r5": -0.0235,
+          "r20": 0.0037,
+          "r60": -0.0825,
+          "vorlauf": 0.009,
+          "v0": -0.0005,
+          "v5": -0.0215,
+          "v20": 0.0395,
+          "v60": -0.0033,
+          "v_vorlauf": -0.098,
+          "treffer": false
+        },
+        {
+          "datum": "2024-12-26",
+          "art": "lockerung",
+          "achsen": [
+            "duenger"
+          ],
+          "text": "USA senken den Ausgleichszoll auf marokkanischen Phosphatdünger auf 16,60 Prozent",
+          "eigene_achse": true,
+          "tag0": "2024-12-26",
+          "r0": -0.0078,
+          "r5": 0.0363,
+          "r20": 0.1611,
+          "r60": 0.1174,
+          "vorlauf": -0.0747,
+          "v0": -0.0041,
+          "v5": 0.0514,
+          "v20": 0.1574,
+          "v60": 0.0286,
+          "v_vorlauf": -0.0614,
+          "treffer": false
+        },
+        {
+          "datum": "2025-07-02",
+          "art": "lockerung",
+          "achsen": [
+            "duenger"
+          ],
+          "text": "OCP Nutricrops und Bangladesch vereinbaren 1,1 Millionen Tonnen für 2025/26",
+          "eigene_achse": true,
+          "tag0": "2025-07-02",
+          "r0": 0.028,
+          "r5": -0.0228,
+          "r20": -0.0209,
+          "r60": -0.0397,
+          "vorlauf": -0.0003,
+          "v0": 0.0164,
+          "v5": -0.0483,
+          "v20": -0.0586,
+          "v60": -0.03,
+          "v_vorlauf": -0.0334,
+          "treffer": false
+        },
+        {
+          "datum": "2025-10-02",
+          "art": "lockerung",
+          "achsen": [
+            "duenger"
+          ],
+          "text": "EU-Rat beschließt Unterzeichnung und vorläufige Anwendung des geänderten Agrarabkommens",
+          "eigene_achse": true,
+          "tag0": "2025-10-02",
+          "r0": 0.0278,
+          "r5": -0.0112,
+          "r20": -0.1807,
+          "r60": -0.2886,
+          "vorlauf": 0.0346,
+          "v0": 0.0186,
+          "v5": -0.0491,
+          "v20": -0.2227,
+          "v60": -0.3804,
+          "v_vorlauf": -0.0014,
+          "treffer": true
+        },
+        {
+          "datum": "2025-10-03",
+          "art": "lockerung",
+          "achsen": [
+            "duenger"
+          ],
+          "text": "Marokko und EU unterzeichnen den Briefwechsel mit Herkunftskennzeichnung der Südprovinzen",
+          "eigene_achse": true,
+          "tag0": "2025-10-03",
+          "r0": -0.0066,
+          "r5": -0.1269,
+          "r20": -0.2103,
+          "r60": -0.3052,
+          "vorlauf": 0.0656,
+          "v0": -0.0223,
+          "v5": -0.1375,
+          "v20": -0.2437,
+          "v60": -0.4134,
+          "v_vorlauf": 0.0121,
+          "treffer": true
+        },
+        {
+          "datum": "2026-03-12",
+          "art": "lockerung",
+          "achsen": [
+            "duenger"
+          ],
+          "text": "Indien sichert sich 2,5 Millionen Tonnen Dünger von OCP",
+          "eigene_achse": true,
+          "tag0": "2026-03-12",
+          "r0": 0.0758,
+          "r5": -0.1012,
+          "r20": -0.1506,
+          "r60": -0.2666,
+          "vorlauf": -0.0322,
+          "v0": 0.0734,
+          "v5": -0.0395,
+          "v20": -0.1706,
+          "v60": -0.303,
+          "v_vorlauf": -0.0488,
+          "treffer": true
+        },
+        {
+          "datum": "2026-09-18",
+          "art": "lockerung",
+          "achsen": [
+            "duenger"
+          ],
+          "text": "OCP Nutricrops und Brasilien zeichnen eine Absichtserklärung über 3,8 Millionen Tonnen",
+          "eigene_achse": true,
+          "tag0": "2026-09-18",
+          "r0": -0.0358,
+          "r5": -0.0937,
+          "r20": null,
+          "r60": null,
+          "vorlauf": 0.1422,
+          "v0": -0.0373,
+          "v5": -0.101,
+          "v20": null,
+          "v60": null,
+          "v_vorlauf": 0.1269
+        }
+      ]
+    }
+  }
+}

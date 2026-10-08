@@ -1,0 +1,1108 @@
+{
+  "stand": "2026-10-09T01:27:27+02:00",
+  "vergleich": {
+    "ticker": "AIGI.L",
+    "name": "Industriemetall-Korb (WisdomTree Industrial Metals, Vergleichsmaßstab)"
+  },
+  "regeln": {
+    "horizonte": [
+      0,
+      5,
+      20,
+      60
+    ],
+    "vorlauf": 20,
+    "haupt": 20,
+    "treffer_ab": 0.1,
+    "bestanden": {
+      "mindestens": 3,
+      "trefferquote": 0.5
+    },
+    "kurse_ab": "2008-01-01"
+  },
+  "werte": {
+    "NICK.L": {
+      "name": "WisdomTree Nickel (ETC)",
+      "achse": "nickel",
+      "rolle": "beobachtung",
+      "erster_kurs": "2008-01-02",
+      "urteil": "nicht bestanden",
+      "gruppen": {
+        "verschaerfung_eigene": {
+          "n": 21,
+          "offen": 1,
+          "v0": 0.0035,
+          "v5": 0.0033,
+          "v20": -0.0094,
+          "v60": -0.0344,
+          "v_vorlauf": 0.0188,
+          "treffer": 0,
+          "trefferquote": 0.0
+        },
+        "verschaerfung_alle": {
+          "n": 29,
+          "offen": 1,
+          "v0": 0.0028,
+          "v5": -0.0007,
+          "v20": -0.0078,
+          "v60": -0.0211,
+          "v_vorlauf": 0.0195,
+          "treffer": 0,
+          "trefferquote": 0.0
+        },
+        "lockerung_eigene": {
+          "n": 5,
+          "offen": 1,
+          "v0": -0.0101,
+          "v5": -0.0284,
+          "v20": -0.0353,
+          "v60": -0.073,
+          "v_vorlauf": -0.0399,
+          "treffer": 0,
+          "trefferquote": 0.0
+        },
+        "lockerung_alle": {
+          "n": 6,
+          "offen": 1,
+          "v0": -0.0094,
+          "v5": -0.0231,
+          "v20": -0.0431,
+          "v60": -0.076,
+          "v_vorlauf": -0.0214,
+          "treffer": 0,
+          "trefferquote": 0.0
+        },
+        "gegenseite_eigene": {
+          "n": 7,
+          "offen": 0,
+          "v0": -0.0068,
+          "v5": 0.0022,
+          "v20": 0.0114,
+          "v60": -0.0422,
+          "v_vorlauf": 0.0251,
+          "treffer": 0,
+          "trefferquote": 0.0
+        },
+        "gegenseite_alle": {
+          "n": 7,
+          "offen": 0,
+          "v0": -0.0068,
+          "v5": 0.0022,
+          "v20": 0.0114,
+          "v60": -0.0422,
+          "v_vorlauf": 0.0251,
+          "treffer": 0,
+          "trefferquote": 0.0
+        }
+      },
+      "faelle": [
+        {
+          "datum": "2014-01-11",
+          "art": "verschaerfung",
+          "achsen": [
+            "nickel"
+          ],
+          "text": "Exportverbot für unverarbeitete Erze angekündigt (Permen ESDM 1/2014)",
+          "eigene_achse": true,
+          "tag0": "2014-01-13",
+          "r0": 0.0275,
+          "r5": 0.0577,
+          "r20": 0.0255,
+          "r60": 0.1911,
+          "vorlauf": -0.0152,
+          "v0": 0.0221,
+          "v5": 0.0409,
+          "v20": 0.0523,
+          "v60": 0.2087,
+          "v_vorlauf": -0.0214,
+          "treffer": false
+        },
+        {
+          "datum": "2014-07-24",
+          "art": "verschaerfung",
+          "achsen": [
+            "zinn"
+          ],
+          "text": "Permendag 44/2014: Börsenpflicht ICDX auf weitere Zinnprodukte ausgedehnt",
+          "eigene_achse": false,
+          "tag0": "2014-07-24",
+          "r0": 0.0079,
+          "r5": -0.0218,
+          "r20": -0.014,
+          "r60": -0.1723,
+          "vorlauf": 0.0303,
+          "v0": -0.002,
+          "v5": -0.0147,
+          "v20": -0.0105,
+          "v60": -0.0937,
+          "v_vorlauf": -0.0117,
+          "treffer": false
+        },
+        {
+          "datum": "2015-05-19",
+          "art": "verschaerfung",
+          "achsen": [
+            "zinn"
+          ],
+          "text": "Permendag 33/2015: Export nur als Barren, ICDX auch im Inland",
+          "eigene_achse": false,
+          "tag0": "2015-05-19",
+          "r0": -0.0445,
+          "r5": -0.066,
+          "r20": -0.0688,
+          "r60": -0.23,
+          "vorlauf": 0.0893,
+          "v0": -0.0184,
+          "v5": -0.0153,
+          "v20": 0.0219,
+          "v60": -0.0421,
+          "v_vorlauf": 0.052,
+          "treffer": false
+        },
+        {
+          "datum": "2017-01-12",
+          "art": "lockerung",
+          "achsen": [
+            "nickel"
+          ],
+          "text": "PP 1/2017: Erz unter 1,7 Prozent Nickel wieder exportierbar",
+          "eigene_achse": true,
+          "tag0": "2017-01-12",
+          "r0": -0.0229,
+          "r5": -0.0468,
+          "r20": -0.0143,
+          "r60": -0.0325,
+          "vorlauf": -0.0873,
+          "v0": -0.0329,
+          "v5": -0.0532,
+          "v20": -0.0398,
+          "v60": -0.0598,
+          "v_vorlauf": -0.0703,
+          "treffer": false
+        },
+        {
+          "datum": "2019-08-30",
+          "art": "verschaerfung",
+          "achsen": [
+            "nickel"
+          ],
+          "text": "Permen 11/2019 zieht das Vollverbot auf den 31.12.2019 vor (LME rund plus 9 Prozent)",
+          "eigene_achse": true,
+          "tag0": "2019-08-30",
+          "r0": 0.0798,
+          "r5": 0.0684,
+          "r20": 0.0482,
+          "r60": -0.115,
+          "vorlauf": 0.146,
+          "v0": 0.0702,
+          "v5": 0.0364,
+          "v20": 0.0322,
+          "v60": -0.1046,
+          "v_vorlauf": 0.1506,
+          "treffer": false
+        },
+        {
+          "datum": "2019-09-02",
+          "art": "verschaerfung",
+          "achsen": [
+            "nickel"
+          ],
+          "text": "ESDM verkündet das Exportende offiziell (plus 3 Prozent, Fünfjahreshoch)",
+          "eigene_achse": true,
+          "tag0": "2019-09-02",
+          "r0": 0.0189,
+          "r5": 0.0035,
+          "r20": -0.0084,
+          "r60": -0.1841,
+          "vorlauf": 0.2285,
+          "v0": 0.0152,
+          "v5": -0.0209,
+          "v20": -0.0225,
+          "v60": -0.1621,
+          "v_vorlauf": 0.2212,
+          "treffer": false
+        },
+        {
+          "datum": "2019-10-28",
+          "art": "verschaerfung",
+          "achsen": [
+            "nickel"
+          ],
+          "text": "Exporte mit sofortiger Wirkung ausgesetzt",
+          "eigene_achse": true,
+          "tag0": "2019-10-28",
+          "r0": -0.0063,
+          "r5": -0.0264,
+          "r20": -0.139,
+          "r60": -0.211,
+          "vorlauf": -0.0238,
+          "v0": -0.0084,
+          "v5": -0.0298,
+          "v20": -0.0879,
+          "v60": -0.1627,
+          "v_vorlauf": -0.0479,
+          "treffer": false
+        },
+        {
+          "datum": "2019-10-29",
+          "art": "lockerung",
+          "achsen": [
+            "nickel"
+          ],
+          "text": "Aussetzung nach einem Tag zurückgenommen — das saubere Gegenpaar",
+          "eigene_achse": true,
+          "tag0": "2019-10-29",
+          "r0": 0.0032,
+          "r5": -0.0304,
+          "r20": -0.1365,
+          "r60": -0.2236,
+          "vorlauf": -0.0503,
+          "v0": 0.0,
+          "v5": -0.0325,
+          "v20": -0.0887,
+          "v60": -0.1643,
+          "v_vorlauf": -0.0688,
+          "treffer": false
+        },
+        {
+          "datum": "2019-11-22",
+          "art": "gegenseite",
+          "achsen": [
+            "nickel"
+          ],
+          "text": "EU beantragt WTO-Konsultationen (DS592)",
+          "eigene_achse": true,
+          "tag0": "2019-11-22",
+          "r0": 0.0055,
+          "r5": -0.0532,
+          "r20": -0.0043,
+          "r60": -0.123,
+          "vorlauf": -0.1394,
+          "v0": 0.0012,
+          "v5": -0.0467,
+          "v20": -0.0381,
+          "v60": -0.0749,
+          "v_vorlauf": -0.0907,
+          "treffer": false
+        },
+        {
+          "datum": "2020-04-14",
+          "art": "verschaerfung",
+          "achsen": [
+            "nickel"
+          ],
+          "text": "Permen 11/2020: verbindlicher Inlands-Referenzpreis HPM als Untergrenze",
+          "eigene_achse": true,
+          "tag0": "2020-04-14",
+          "r0": 0.0201,
+          "r5": 0.0443,
+          "r20": 0.0477,
+          "r60": 0.1289,
+          "vorlauf": -0.0165,
+          "v0": 0.0026,
+          "v5": 0.0382,
+          "v20": 0.0221,
+          "v60": -0.0361,
+          "v_vorlauf": 0.0521,
+          "treffer": false
+        },
+        {
+          "datum": "2020-10-06",
+          "art": "gegenseite",
+          "achsen": [
+            "nickel"
+          ],
+          "text": "EU: endgültige Antidumpingzölle auf warmgewalzten Edelstahl",
+          "eigene_achse": true,
+          "tag0": "2020-10-06",
+          "r0": 0.0031,
+          "r5": 0.0372,
+          "r20": 0.0531,
+          "r60": 0.1351,
+          "vorlauf": -0.043,
+          "v0": 0.0,
+          "v5": 0.0005,
+          "v20": -0.016,
+          "v60": -0.0229,
+          "v_vorlauf": -0.0018,
+          "treffer": false
+        },
+        {
+          "datum": "2021-01-14",
+          "art": "gegenseite",
+          "achsen": [
+            "nickel"
+          ],
+          "text": "EU beantragt WTO-Panel, eingesetzt am 22.02.2021",
+          "eigene_achse": true,
+          "tag0": "2021-01-14",
+          "r0": 0.0333,
+          "r5": 0.043,
+          "r20": 0.057,
+          "r60": -0.0888,
+          "vorlauf": 0.0186,
+          "v0": 0.0275,
+          "v5": 0.0424,
+          "v20": 0.0252,
+          "v60": -0.1368,
+          "v_vorlauf": 0.0075,
+          "treffer": false
+        },
+        {
+          "datum": "2021-03-23",
+          "art": "lockerung",
+          "achsen": [
+            "nickel"
+          ],
+          "text": "Exportgenehmigungen gelockert, Nickel ausdrücklich ausgenommen",
+          "eigene_achse": true,
+          "tag0": "2021-03-23",
+          "r0": -0.0037,
+          "r5": -0.0236,
+          "r20": -0.0221,
+          "r60": 0.0528,
+          "vorlauf": -0.158,
+          "v0": 0.0105,
+          "v5": 0.0021,
+          "v20": -0.037,
+          "v60": 0.0344,
+          "v_vorlauf": -0.141,
+          "treffer": false
+        },
+        {
+          "datum": "2021-11-17",
+          "art": "gegenseite",
+          "achsen": [
+            "nickel"
+          ],
+          "text": "EU: endgültige Antidumpingzölle auf kaltgewalzten Edelstahl",
+          "eigene_achse": true,
+          "tag0": "2021-11-17",
+          "r0": -0.0058,
+          "r5": 0.0883,
+          "r20": -0.0137,
+          "r60": 0.2019,
+          "vorlauf": -0.034,
+          "v0": -0.0026,
+          "v5": 0.0417,
+          "v20": -0.002,
+          "v60": 0.0653,
+          "v_vorlauf": 0.0697,
+          "treffer": false
+        },
+        {
+          "datum": "2021-11-24",
+          "art": "verschaerfung",
+          "achsen": [
+            "zinn"
+          ],
+          "text": "Jokowi: Zinnexporte könnten ab 2024 stoppen",
+          "eigene_achse": false,
+          "tag0": "2021-11-24",
+          "r0": 0.0379,
+          "r5": -0.0211,
+          "r20": -0.0205,
+          "r60": 0.2134,
+          "vorlauf": 0.0044,
+          "v0": 0.0235,
+          "v5": 0.0017,
+          "v20": -0.0418,
+          "v60": 0.0939,
+          "v_vorlauf": 0.0291,
+          "treffer": false
+        },
+        {
+          "datum": "2022-01-21",
+          "art": "verschaerfung",
+          "achsen": [
+            "zinn"
+          ],
+          "text": "Exportlizenzen verzögert, Chinas Importe minus 76 Prozent im Monatsvergleich",
+          "eigene_achse": false,
+          "tag0": "2022-01-21",
+          "r0": 0.0195,
+          "r5": -0.0592,
+          "r20": 0.0224,
+          "r60": 0.4372,
+          "vorlauf": 0.2322,
+          "v0": 0.0192,
+          "v5": -0.0295,
+          "v20": 0.0089,
+          "v60": 0.2841,
+          "v_vorlauf": 0.1104,
+          "treffer": false
+        },
+        {
+          "datum": "2022-01-24",
+          "art": "verschaerfung",
+          "achsen": [
+            "nickel"
+          ],
+          "text": "Progressive Ausfuhrzölle auf NPI und Ferronickel geplant",
+          "eigene_achse": true,
+          "tag0": "2022-01-24",
+          "r0": -0.0801,
+          "r5": -0.0778,
+          "r20": 0.0148,
+          "r60": 0.3809,
+          "vorlauf": 0.2392,
+          "v0": -0.0487,
+          "v5": -0.0389,
+          "v20": 0.0005,
+          "v60": 0.2429,
+          "v_vorlauf": 0.1373,
+          "treffer": false
+        },
+        {
+          "datum": "2022-03-15",
+          "art": "gegenseite",
+          "achsen": [
+            "nickel"
+          ],
+          "text": "EU: endgültige Ausgleichszölle, Rohstoffpolitik als Subvention gewertet",
+          "eigene_achse": true,
+          "tag0": "2022-03-15",
+          "r0": -0.0619,
+          "r5": 0.0105,
+          "r20": 0.146,
+          "r60": -0.1143,
+          "vorlauf": 0.2273,
+          "v0": -0.0475,
+          "v5": -0.0236,
+          "v20": 0.0801,
+          "v60": 0.0113,
+          "v_vorlauf": 0.1615,
+          "treffer": false
+        },
+        {
+          "datum": "2022-11-30",
+          "art": "gegenseite",
+          "achsen": [
+            "nickel"
+          ],
+          "text": "WTO-Panel erklärt Verbot und Verarbeitungspflicht für GATT-widrig",
+          "eigene_achse": true,
+          "tag0": "2022-11-30",
+          "r0": -0.0012,
+          "r5": 0.0842,
+          "r20": 0.1271,
+          "r60": -0.0657,
+          "vorlauf": 0.1585,
+          "v0": -0.0255,
+          "v5": 0.019,
+          "v20": 0.0693,
+          "v60": -0.085,
+          "v_vorlauf": 0.076,
+          "treffer": false
+        },
+        {
+          "datum": "2024-02-05",
+          "art": "verschaerfung",
+          "achsen": [
+            "zinn"
+          ],
+          "text": "Zinn-Raffinadeexport im Januar minus 99 Prozent, RKAB nicht genehmigt",
+          "eigene_achse": false,
+          "tag0": "2024-02-05",
+          "r0": -0.0183,
+          "r5": -0.0178,
+          "r20": 0.0989,
+          "r60": 0.157,
+          "vorlauf": -0.0012,
+          "v0": -0.0032,
+          "v5": 0.0097,
+          "v20": 0.0845,
+          "v60": -0.003,
+          "v_vorlauf": 0.0082,
+          "treffer": false
+        },
+        {
+          "datum": "2024-03-05",
+          "art": "lockerung",
+          "achsen": [
+            "zinn"
+          ],
+          "text": "Börsenhandel wieder aufgenommen, erste Exportlizenzen erteilt",
+          "eigene_achse": false,
+          "tag0": "2024-03-05",
+          "r0": -0.0095,
+          "r5": 0.0342,
+          "r20": -0.0108,
+          "r60": 0.0829,
+          "vorlauf": 0.1194,
+          "v0": -0.0052,
+          "v5": 0.0085,
+          "v20": -0.0822,
+          "v60": -0.0907,
+          "v_vorlauf": 0.0895,
+          "treffer": false
+        },
+        {
+          "datum": "2024-07-22",
+          "art": "verschaerfung",
+          "achsen": [
+            "nickel",
+            "zinn"
+          ],
+          "text": "Rückverfolgungssystem SIMBARA auf Nickel und Zinn ausgeweitet",
+          "eigene_achse": true,
+          "tag0": "2024-07-22",
+          "r0": -0.0044,
+          "r5": -0.0226,
+          "r20": 0.023,
+          "r60": 0.0688,
+          "vorlauf": -0.0584,
+          "v0": 0.0106,
+          "v5": 0.0168,
+          "v20": 0.0149,
+          "v60": 0.0127,
+          "v_vorlauf": -0.0109,
+          "treffer": false
+        },
+        {
+          "datum": "2024-12-19",
+          "art": "verschaerfung",
+          "achsen": [
+            "nickel"
+          ],
+          "text": "Erwägung, die Fördermenge auf bis zu 150 Millionen Tonnen zu kürzen",
+          "eigene_achse": true,
+          "tag0": "2024-12-19",
+          "r0": -0.027,
+          "r5": -0.0073,
+          "r20": 0.0368,
+          "r60": 0.0423,
+          "vorlauf": -0.0279,
+          "v0": -0.0131,
+          "v5": -0.0055,
+          "v20": 0.0043,
+          "v60": -0.0514,
+          "v_vorlauf": -0.0061,
+          "treffer": false
+        },
+        {
+          "datum": "2025-01-10",
+          "art": "verschaerfung",
+          "achsen": [
+            "nickel"
+          ],
+          "text": "RKAB-Quote 2025 auf rund 200 Millionen Tonnen gesetzt (zuvor 240)",
+          "eigene_achse": true,
+          "tag0": "2025-01-10",
+          "r0": 0.0106,
+          "r5": 0.0367,
+          "r20": 0.0143,
+          "r60": -0.0605,
+          "vorlauf": -0.034,
+          "v0": 0.0023,
+          "v5": 0.0017,
+          "v20": -0.0254,
+          "v60": -0.0395,
+          "v_vorlauf": -0.0071,
+          "treffer": false
+        },
+        {
+          "datum": "2025-04-09",
+          "art": "verschaerfung",
+          "achsen": [
+            "nickel"
+          ],
+          "text": "Royalties auf Erz von 10 auf preisabhängig 14 bis 19 Prozent (PP 19/2025)",
+          "eigene_achse": true,
+          "tag0": "2025-04-09",
+          "r0": -0.0037,
+          "r5": 0.1046,
+          "r20": 0.0985,
+          "r60": 0.0539,
+          "vorlauf": -0.1407,
+          "v0": -0.0028,
+          "v5": 0.0395,
+          "v20": 0.0222,
+          "v60": -0.0618,
+          "v_vorlauf": -0.0159,
+          "treffer": false
+        },
+        {
+          "datum": "2025-06-05",
+          "art": "verschaerfung",
+          "achsen": [
+            "nickel"
+          ],
+          "text": "PP 28/2025: Moratorium für Hütten, die nur Zwischenprodukte herstellen",
+          "eigene_achse": true,
+          "tag0": "2025-06-05",
+          "r0": 0.01,
+          "r5": -0.0157,
+          "r20": 0.0033,
+          "r60": -0.0013,
+          "vorlauf": -0.0219,
+          "v0": 0.0013,
+          "v5": -0.0104,
+          "v20": -0.0332,
+          "v60": 0.0073,
+          "v_vorlauf": -0.038,
+          "treffer": false
+        },
+        {
+          "datum": "2025-09-29",
+          "art": "verschaerfung",
+          "achsen": [
+            "zinn"
+          ],
+          "text": "Rund 1.000 illegale Zinnminen geschlossen (SHFE-Zinn plus 2,6 Prozent)",
+          "eigene_achse": false,
+          "tag0": "2025-09-29",
+          "r0": 0.0093,
+          "r5": 0.0178,
+          "r20": 0.0046,
+          "r60": 0.0009,
+          "vorlauf": -0.0179,
+          "v0": -0.0076,
+          "v5": -0.0237,
+          "v20": -0.0641,
+          "v60": -0.0991,
+          "v_vorlauf": -0.0384,
+          "treffer": false
+        },
+        {
+          "datum": "2025-10-02",
+          "art": "gegenseite",
+          "achsen": [
+            "nickel"
+          ],
+          "text": "WTO DS616: EU-Ausgleichszölle verstoßen gegen das Subventionsabkommen",
+          "eigene_achse": true,
+          "tag0": "2025-10-02",
+          "r0": 0.0084,
+          "r5": 0.0203,
+          "r20": 0.0032,
+          "r60": 0.0392,
+          "vorlauf": -0.0107,
+          "v0": -0.0008,
+          "v5": -0.0176,
+          "v20": -0.0388,
+          "v60": -0.0526,
+          "v_vorlauf": -0.0467,
+          "treffer": false
+        },
+        {
+          "datum": "2025-10-03",
+          "art": "verschaerfung",
+          "achsen": [
+            "nickel",
+            "zinn"
+          ],
+          "text": "Permen 17/2025: RKAB wieder nur ein Jahr, Quoten 2026 und 2027 ungültig",
+          "eigene_achse": true,
+          "tag0": "2025-10-03",
+          "r0": 0.0101,
+          "r5": -0.0035,
+          "r20": -0.0055,
+          "r60": 0.0951,
+          "vorlauf": 0.0028,
+          "v0": -0.0056,
+          "v5": -0.0141,
+          "v20": -0.0389,
+          "v60": -0.0131,
+          "v_vorlauf": -0.0507,
+          "treffer": false
+        },
+        {
+          "datum": "2025-12-30",
+          "art": "verschaerfung",
+          "achsen": [
+            "nickel"
+          ],
+          "text": "Quote 2026 bei rund 250 Millionen Tonnen geplant (SHFE plus 15.000 Yuan je Tonne)",
+          "eigene_achse": true,
+          "tag0": "2025-12-30",
+          "r0": 0.0626,
+          "r5": 0.1302,
+          "r20": 0.1513,
+          "r60": 0.0905,
+          "vorlauf": 0.0672,
+          "v0": 0.0382,
+          "v5": 0.0737,
+          "v20": 0.0669,
+          "v60": 0.0571,
+          "v_vorlauf": 0.0091,
+          "treffer": false
+        },
+        {
+          "datum": "2026-01-15",
+          "art": "verschaerfung",
+          "achsen": [
+            "nickel"
+          ],
+          "text": "ESDM bestätigt das Quotenziel 2026 von 250 bis 260 Millionen Tonnen",
+          "eigene_achse": true,
+          "tag0": "2026-01-15",
+          "r0": -0.0079,
+          "r5": -0.0367,
+          "r20": -0.0785,
+          "r60": -0.0608,
+          "vorlauf": 0.2795,
+          "v0": -0.0034,
+          "v5": -0.003,
+          "v20": -0.0453,
+          "v60": -0.0795,
+          "v_vorlauf": 0.1507,
+          "treffer": false
+        },
+        {
+          "datum": "2026-01-28",
+          "art": "verschaerfung",
+          "achsen": [
+            "zinn"
+          ],
+          "text": "Mindest-Referenzpreis HPM für Zinn angekündigt",
+          "eigene_achse": false,
+          "tag0": "2026-01-28",
+          "r0": 0.0088,
+          "r5": -0.0429,
+          "r20": -0.0036,
+          "r60": 0.0458,
+          "vorlauf": 0.1413,
+          "v0": 0.0016,
+          "v5": -0.0232,
+          "v20": -0.0071,
+          "v60": -0.0083,
+          "v_vorlauf": 0.0647,
+          "treffer": false
+        },
+        {
+          "datum": "2026-02-13",
+          "art": "verschaerfung",
+          "achsen": [
+            "zinn"
+          ],
+          "text": "Minister: Exportverbot für mehrere Rohstoffe wird geprüft, Zinn genannt",
+          "eigene_achse": false,
+          "tag0": "2026-02-13",
+          "r0": -0.0138,
+          "r5": 0.0038,
+          "r20": -0.0025,
+          "r60": 0.1076,
+          "vorlauf": -0.0712,
+          "v0": -0.0078,
+          "v5": 0.0022,
+          "v20": -0.0205,
+          "v60": -0.0204,
+          "v_vorlauf": -0.0424,
+          "treffer": false
+        },
+        {
+          "datum": "2026-03-25",
+          "art": "verschaerfung",
+          "achsen": [
+            "nickel",
+            "zinn"
+          ],
+          "text": "Ausfuhrzölle auf Kohle und Nickel gebilligt, Start zum 01.04.2026",
+          "eigene_achse": true,
+          "tag0": "2026-03-25",
+          "r0": 0.0233,
+          "r5": 0.0136,
+          "r20": 0.12,
+          "r60": 0.0074,
+          "vorlauf": -0.0526,
+          "v0": 0.0111,
+          "v5": -0.0387,
+          "v20": 0.0084,
+          "v60": -0.066,
+          "v_vorlauf": -0.0101,
+          "treffer": false
+        },
+        {
+          "datum": "2026-03-30",
+          "art": "lockerung",
+          "achsen": [
+            "nickel",
+            "zinn"
+          ],
+          "text": "Start der Ausfuhrzölle verschoben, kein neuer Termin",
+          "eigene_achse": true,
+          "tag0": "2026-03-30",
+          "r0": 0.0061,
+          "r5": 0.0083,
+          "r20": 0.118,
+          "r60": -0.0343,
+          "vorlauf": -0.0333,
+          "v0": -0.0097,
+          "v5": -0.0347,
+          "v20": 0.0456,
+          "v60": -0.0819,
+          "v_vorlauf": 0.0031,
+          "treffer": false
+        },
+        {
+          "datum": "2026-04-13",
+          "art": "verschaerfung",
+          "achsen": [
+            "nickel"
+          ],
+          "text": "Neue HPM-Formel: der Satz für 1,5 Prozent Nickel springt von 26,66 auf 57 bis 62,5 Dollar",
+          "eigene_achse": true,
+          "tag0": "2026-04-13",
+          "r0": 0.028,
+          "r5": 0.0624,
+          "r20": 0.1001,
+          "r60": -0.0568,
+          "vorlauf": -0.031,
+          "v0": 0.0092,
+          "v5": 0.0319,
+          "v20": 0.0273,
+          "v60": -0.038,
+          "v_vorlauf": -0.0322,
+          "treffer": false
+        },
+        {
+          "datum": "2026-05-07",
+          "art": "verschaerfung",
+          "achsen": [
+            "nickel"
+          ],
+          "text": "Ausfuhrzoll und Windfall-Steuer bestätigt (SHFE plus 3,5, LME plus 2,1 Prozent)",
+          "eigene_achse": true,
+          "tag0": "2026-05-07",
+          "r0": -0.0039,
+          "r5": -0.0147,
+          "r20": -0.0381,
+          "r60": -0.1071,
+          "vorlauf": 0.1302,
+          "v0": -0.0054,
+          "v5": -0.059,
+          "v20": -0.0535,
+          "v60": -0.0952,
+          "v_vorlauf": 0.0652,
+          "treffer": false
+        },
+        {
+          "datum": "2026-05-11",
+          "art": "lockerung",
+          "achsen": [
+            "nickel",
+            "zinn"
+          ],
+          "text": "Höhere Royalties und Ausfuhrzölle auf unbestimmte Zeit verschoben",
+          "eigene_achse": true,
+          "tag0": "2026-05-11",
+          "r0": 0.0172,
+          "r5": -0.0212,
+          "r20": -0.0508,
+          "r60": -0.0991,
+          "vorlauf": 0.1037,
+          "v0": -0.0044,
+          "v5": -0.0277,
+          "v20": -0.0566,
+          "v60": -0.0936,
+          "v_vorlauf": 0.0451,
+          "treffer": false
+        },
+        {
+          "datum": "2026-05-20",
+          "art": "verschaerfung",
+          "achsen": [
+            "nickel",
+            "zinn"
+          ],
+          "text": "PP 24/2026: Export strategischer Rohstoffe nur über die Staatsfirma DSI",
+          "eigene_achse": true,
+          "tag0": "2026-05-20",
+          "r0": 0.0071,
+          "r5": 0.0149,
+          "r20": -0.0538,
+          "r60": -0.1121,
+          "vorlauf": 0.0269,
+          "v0": -0.0065,
+          "v5": -0.0102,
+          "v20": -0.053,
+          "v60": -0.1059,
+          "v_vorlauf": 0.0094,
+          "treffer": false
+        },
+        {
+          "datum": "2026-05-26",
+          "art": "verschaerfung",
+          "achsen": [
+            "nickel",
+            "zinn"
+          ],
+          "text": "Single-Gate-Exportsystem ab 01.09.2026, Übergang ab 01.06.",
+          "eigene_achse": true,
+          "tag0": "2026-05-26",
+          "r0": -0.0005,
+          "r5": 0.0148,
+          "r20": -0.0939,
+          "r60": -0.1205,
+          "vorlauf": 0.0111,
+          "v0": -0.0048,
+          "v5": -0.0195,
+          "v20": -0.034,
+          "v60": -0.0832,
+          "v_vorlauf": -0.0137,
+          "treffer": false
+        },
+        {
+          "datum": "2026-07-09",
+          "art": "verschaerfung",
+          "achsen": [
+            "nickel"
+          ],
+          "text": "Exportkontrollen für Ferronickel und NPI; ab 2027 nur über Staatsfirmen",
+          "eigene_achse": true,
+          "tag0": "2026-07-09",
+          "r0": 0.0151,
+          "r5": 0.0531,
+          "r20": 0.0248,
+          "r60": -0.0482,
+          "vorlauf": -0.0797,
+          "v0": -0.0117,
+          "v5": 0.0185,
+          "v20": -0.0436,
+          "v60": -0.0801,
+          "v_vorlauf": -0.0276,
+          "treffer": false
+        },
+        {
+          "datum": "2026-07-10",
+          "art": "verschaerfung",
+          "achsen": [
+            "nickel"
+          ],
+          "text": "Keine Quotenerhöhung 2026, Deckel bleibt ausdrücklich zur Preisstützung",
+          "eigene_achse": true,
+          "tag0": "2026-07-10",
+          "r0": 0.0104,
+          "r5": 0.025,
+          "r20": 0.0239,
+          "r60": -0.0568,
+          "vorlauf": -0.0647,
+          "v0": 0.0131,
+          "v5": 0.0308,
+          "v20": -0.0109,
+          "v60": -0.0727,
+          "v_vorlauf": -0.0363,
+          "treffer": false
+        },
+        {
+          "datum": "2026-09-15",
+          "art": "lockerung",
+          "achsen": [
+            "nickel"
+          ],
+          "text": "HPM-Formel wieder gesenkt, der Satz für 1,2 Prozent Nickel fällt um 45 Prozent",
+          "eigene_achse": true,
+          "tag0": "2026-09-15",
+          "r0": -0.024,
+          "r5": 0.0145,
+          "r20": null,
+          "r60": null,
+          "vorlauf": -0.0261,
+          "v0": -0.0244,
+          "v5": -0.0241,
+          "v20": null,
+          "v60": null,
+          "v_vorlauf": -0.0076
+        },
+        {
+          "datum": "2026-09-18",
+          "art": "verschaerfung",
+          "achsen": [
+            "nickel",
+            "zinn"
+          ],
+          "text": "Neue Rohstoffbörse ICOMEX, erste Kontrakte Zinn und Ferronickel",
+          "eigene_achse": true,
+          "tag0": "2026-09-18",
+          "r0": -0.0065,
+          "r5": 0.0021,
+          "r20": null,
+          "r60": null,
+          "vorlauf": -0.0486,
+          "v0": -0.008,
+          "v5": -0.0052,
+          "v20": null,
+          "v60": null,
+          "v_vorlauf": -0.0639
+        }
+      ]
+    },
+    "TINM.L": {
+      "name": "WisdomTree Tin (ETC)",
+      "achse": "zinn",
+      "rolle": "beobachtung",
+      "erster_kurs": "2026-10-08",
+      "urteil": "zu wenige Fälle",
+      "gruppen": {
+        "verschaerfung_eigene": {
+          "n": 0,
+          "offen": 0,
+          "v0": null,
+          "v5": null,
+          "v20": null,
+          "v60": null,
+          "v_vorlauf": null,
+          "treffer": 0,
+          "trefferquote": 0.0
+        },
+        "verschaerfung_alle": {
+          "n": 0,
+          "offen": 0,
+          "v0": null,
+          "v5": null,
+          "v20": null,
+          "v60": null,
+          "v_vorlauf": null,
+          "treffer": 0,
+          "trefferquote": 0.0
+        },
+        "lockerung_eigene": {
+          "n": 0,
+          "offen": 0,
+          "v0": null,
+          "v5": null,
+          "v20": null,
+          "v60": null,
+          "v_vorlauf": null,
+          "treffer": 0,
+          "trefferquote": 0.0
+        },
+        "lockerung_alle": {
+          "n": 0,
+          "offen": 0,
+          "v0": null,
+          "v5": null,
+          "v20": null,
+          "v60": null,
+          "v_vorlauf": null,
+          "treffer": 0,
+          "trefferquote": 0.0
+        },
+        "gegenseite_eigene": {
+          "n": 0,
+          "offen": 0,
+          "v0": null,
+          "v5": null,
+          "v20": null,
+          "v60": null,
+          "v_vorlauf": null,
+          "treffer": 0,
+          "trefferquote": 0.0
+        },
+        "gegenseite_alle": {
+          "n": 0,
+          "offen": 0,
+          "v0": null,
+          "v5": null,
+          "v20": null,
+          "v60": null,
+          "v_vorlauf": null,
+          "treffer": 0,
+          "trefferquote": 0.0
+        }
+      },
+      "faelle": []
+    }
+  }
+}
