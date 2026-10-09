@@ -1,5 +1,5 @@
 {
-  "stand": "2026-10-08T05:21:42+02:00",
+  "stand": "2026-10-09T05:21:33+02:00",
   "version": "0.1.0",
   "hinweis": "Reine Rechnung mit einem erfundenen Betrag, kein echtes Geld. Denkhilfe, keine Anlageberatung.",
   "betrag": 1000,
@@ -10,6 +10,34 @@
     "AUD": "daten/depot/kurse/EURAUD_X.csv"
   },
   "werte": {
+    "COCO.L": {
+      "name": "WisdomTree Cocoa (ETC)",
+      "zweig": "kakao",
+      "waehrung": null,
+      "archiv": "daten/preise/COCO_L.csv",
+      "vergleich": null
+    },
+    "BARN.SW": {
+      "name": "Barry Callebaut",
+      "zweig": "kakao",
+      "waehrung": null,
+      "archiv": "daten/preise/BARN_SW.csv",
+      "vergleich": null
+    },
+    "STA.BK": {
+      "name": "Sri Trang Agro-Industry",
+      "zweig": "kautschuk",
+      "waehrung": null,
+      "archiv": "daten/preise/STA_BK.csv",
+      "vergleich": null
+    },
+    "5VJ.SI": {
+      "name": "Halcyon Agri",
+      "zweig": "kautschuk",
+      "waehrung": "SGD",
+      "archiv": "daten/preise/5VJ_SI.csv",
+      "vergleich": null
+    },
     "F34.SI": {
       "name": "Wilmar International",
       "zweig": "palmoel",
@@ -37,6 +65,33 @@
       "waehrung": "SGD",
       "archiv": "daten/preise/P8Z_SI.csv",
       "vergleich": null
+    },
+    "PLS.AX": {
+      "name": "Pilbara Minerals",
+      "zweig": "metall_chile",
+      "waehrung": "AUD",
+      "archiv": "daten/metall/chile/kurse/PLS_AX.csv",
+      "vergleich": "AIGI.L",
+      "achse": "lithium",
+      "rolle": "beobachtung"
+    },
+    "SQM": {
+      "name": "SQM",
+      "zweig": "metall_chile",
+      "waehrung": "USD",
+      "archiv": "daten/metall/chile/kurse/SQM.csv",
+      "vergleich": "AIGI.L",
+      "achse": "lithium",
+      "rolle": "sensor"
+    },
+    "ALB": {
+      "name": "Albemarle",
+      "zweig": "metall_chile",
+      "waehrung": "USD",
+      "archiv": "daten/metall/chile/kurse/ALB.csv",
+      "vergleich": "AIGI.L",
+      "achse": "lithium",
+      "rolle": "sensor"
     },
     "PPTA": {
       "name": "Perpetua Resources",
@@ -74,6 +129,51 @@
       "achse": "magnet",
       "rolle": "beobachtung"
     },
+    "NICK.L": {
+      "name": "WisdomTree Nickel (ETC)",
+      "zweig": "metall_indonesien",
+      "waehrung": "USD",
+      "archiv": "daten/metall/indonesien/kurse/NICK_L.csv",
+      "vergleich": "AIGI.L",
+      "achse": "nickel",
+      "rolle": "beobachtung"
+    },
+    "TINM.L": {
+      "name": "WisdomTree Tin (ETC)",
+      "zweig": "metall_indonesien",
+      "waehrung": "USD",
+      "archiv": "daten/metall/indonesien/kurse/TINM_L.csv",
+      "vergleich": "AIGI.L",
+      "achse": "zinn",
+      "rolle": "beobachtung"
+    },
+    "GLEN.L": {
+      "name": "Glencore",
+      "zweig": "metall_kongo",
+      "waehrung": "GBP",
+      "archiv": "daten/metall/kongo/kurse/GLEN_L.csv",
+      "vergleich": "AIGI.L",
+      "achse": "kobalt",
+      "rolle": "sensor"
+    },
+    "NTR": {
+      "name": "Nutrien",
+      "zweig": "metall_marokko",
+      "waehrung": "USD",
+      "archiv": "daten/metall/marokko/kurse/NTR.csv",
+      "vergleich": "AIGI.L",
+      "achse": "duenger",
+      "rolle": "sensor"
+    },
+    "MOS": {
+      "name": "Mosaic",
+      "zweig": "metall_marokko",
+      "waehrung": "USD",
+      "archiv": "daten/metall/marokko/kurse/MOS.csv",
+      "vergleich": "AIGI.L",
+      "achse": "duenger",
+      "rolle": "sensor"
+    },
     "SHV.AX": {
       "name": "Select Harvests",
       "zweig": "ersatz_haselnuss",
@@ -92,6 +192,10 @@
     }
   },
   "vergleiche": {
+    "AIGI.L": {
+      "name": "Industriemetall-Korb (WisdomTree Industrial Metals, Vergleichsmaßstab)",
+      "archiv": "daten/metall/marokko/kurse/AIGI_L.csv"
+    },
     "XME": {
       "name": "Metall- und Bergbau-Aktien USA (Vergleichsmaßstab)",
       "archiv": "daten/metall/china/kurse/XME.csv"
@@ -106,6 +210,28 @@
     }
   },
   "zweige": {
+    "kakao": {
+      "name": "Kakao",
+      "quelle": {
+        "art": "logbuch",
+        "pfad": "daten/signale.jsonl",
+        "rohstoff": "kakao"
+      },
+      "gilt": "bisher",
+      "regel": null,
+      "regel_name": null
+    },
+    "kautschuk": {
+      "name": "Kautschuk",
+      "quelle": {
+        "art": "logbuch",
+        "pfad": "daten/signale.jsonl",
+        "rohstoff": "kautschuk"
+      },
+      "gilt": "bisher",
+      "regel": null,
+      "regel_name": null
+    },
     "palmoel": {
       "name": "Palmöl",
       "quelle": {
@@ -121,6 +247,16 @@
       },
       "regel_name": "bisherige Regel: bis die Ampel auf Grün springt"
     },
+    "metall_chile": {
+      "name": "Metall Chile-Lithium",
+      "quelle": {
+        "art": "zusatz",
+        "herkunft": "metall-logbuch.md (Metall-Wächter)"
+      },
+      "gilt": "bisher",
+      "regel": null,
+      "regel_name": null
+    },
     "metall": {
       "name": "Metall China-Ausfuhr",
       "quelle": {
@@ -135,6 +271,36 @@
         "lockerung": true
       },
       "regel_name": "bisherige Regel: Lockerung auf der Achse oder nach 90 Tagen"
+    },
+    "metall_indonesien": {
+      "name": "Metall Indonesien-Ausfuhr",
+      "quelle": {
+        "art": "zusatz",
+        "herkunft": "metall-logbuch.md (Metall-Wächter)"
+      },
+      "gilt": "bisher",
+      "regel": null,
+      "regel_name": null
+    },
+    "metall_kongo": {
+      "name": "Metall Kongo-Kobalt",
+      "quelle": {
+        "art": "zusatz",
+        "herkunft": "metall-logbuch.md (Metall-Wächter)"
+      },
+      "gilt": "bisher",
+      "regel": null,
+      "regel_name": null
+    },
+    "metall_marokko": {
+      "name": "Metall Marokko-Phosphat",
+      "quelle": {
+        "art": "zusatz",
+        "herkunft": "metall-logbuch.md (Metall-Wächter)"
+      },
+      "gilt": "bisher",
+      "regel": null,
+      "regel_name": null
     },
     "ersatz_haselnuss": {
       "name": "Ersatz Haselnuss",
@@ -178,14 +344,27 @@
     "daten/ersatz/haselnuss/kurse/_AXJO.csv",
     "daten/ersatz/palladium/kurse/GLD.csv",
     "daten/ersatz/palladium/kurse/PPLT.csv",
+    "daten/metall/chile/kurse/ALB.csv",
+    "daten/metall/chile/kurse/PLS_AX.csv",
+    "daten/metall/chile/kurse/SQM.csv",
     "daten/metall/china/kurse/LYC_AX.csv",
     "daten/metall/china/kurse/MP.csv",
     "daten/metall/china/kurse/PPTA.csv",
     "daten/metall/china/kurse/UAMY.csv",
     "daten/metall/china/kurse/XME.csv",
+    "daten/metall/indonesien/kurse/NICK_L.csv",
+    "daten/metall/indonesien/kurse/TINM_L.csv",
+    "daten/metall/kongo/kurse/GLEN_L.csv",
+    "daten/metall/marokko/kurse/AIGI_L.csv",
+    "daten/metall/marokko/kurse/MOS.csv",
+    "daten/metall/marokko/kurse/NTR.csv",
+    "daten/preise/5VJ_SI.csv",
+    "daten/preise/BARN_SW.csv",
+    "daten/preise/COCO_L.csv",
     "daten/preise/E5H_SI.csv",
     "daten/preise/EB5_SI.csv",
     "daten/preise/F34_SI.csv",
-    "daten/preise/P8Z_SI.csv"
+    "daten/preise/P8Z_SI.csv",
+    "daten/preise/STA_BK.csv"
   ]
 }
