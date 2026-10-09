@@ -1,6 +1,6 @@
 {
-  "stand": "2026-10-09T01:30:19+02:00",
-  "datum": "2026-10-09",
+  "stand": "2026-10-10T01:47:22+02:00",
+  "datum": "2026-10-10",
   "version": "0.1.0",
   "land": "chile",
   "name": "Chile-Lithium",
@@ -48,7 +48,7 @@
       "bis": "2060-12-31",
       "urspruenglich_bis": "2030-12-31",
       "verlaengert": true,
-      "tage": 12502,
+      "tage": 12501,
       "zustand": "läuft",
       "gelb": false,
       "rot_pruefen": false,
@@ -64,7 +64,7 @@
       "bis": "2043-12-31",
       "urspruenglich_bis": "2043-12-31",
       "verlaengert": false,
-      "tage": 6292,
+      "tage": 6291,
       "zustand": "läuft",
       "gelb": false,
       "rot_pruefen": false,
@@ -80,7 +80,7 @@
       "bis": "2027-12-31",
       "urspruenglich_bis": "2027-12-31",
       "verlaengert": false,
-      "tage": 448,
+      "tage": 447,
       "zustand": "läuft",
       "gelb": false,
       "rot_pruefen": false,
@@ -91,6 +91,30 @@
     "herkunft": "frisch",
     "tage": 30,
     "dokumente": [
+      {
+        "nummer": "2026-20776",
+        "titel": "Foreign-Trade Zone (FTZ) 50, Notification of Proposed Production Activity; Sanyo Denki America, Inc.; (Cooling, Servo, and Power Systems and Assemblies); Torrance, California",
+        "datum": "2026-10-09",
+        "art": "Notice",
+        "behoerden": [
+          "commerce-department",
+          "foreign-trade-zones-board"
+        ],
+        "behoerden_namen": [
+          "Commerce Department",
+          "Foreign-Trade Zones Board"
+        ],
+        "url": "https://www.federalregister.gov/documents/2026/10/09/2026-20776/foreign-trade-zone-ftz-50-notification-of-proposed-production-activity-sanyo-denki-america-inc",
+        "zusammenfassung": "",
+        "begriffe": [
+          "lithium"
+        ],
+        "achsen": [
+          "lithium"
+        ],
+        "gewichtig": false,
+        "neu": true
+      },
       {
         "nummer": "2026-19777",
         "titel": "Foreign-Trade Zone (FTZ) 106, Notification of Proposed Production Activity; Hitachi Vantara Manufacturing; (Enterprise Datacenter Disk Storage System Hardware); Norman, Oklahoma",
@@ -123,11 +147,11 @@
     "starkregen_gemessen": [],
     "starkregen_vorhergesagt": [],
     "regen_hoechst_mm": {
-      "atacama": 0.0,
-      "maricunga": 5.9,
+      "atacama": 0.3,
+      "maricunga": 6.0,
       "altoandinos": 1.8,
       "la_negra": 0.7,
-      "carmen": 0.2
+      "carmen": 0.3
     },
     "trocken": {},
     "gelb_tage": 30
@@ -139,16 +163,16 @@
       "rolle": "beobachtung",
       "hinweis": "Spodumen in Australien, profitiert von chilenischer Verknappung",
       "waehrung": "AUD",
-      "letzter": "2026-10-08",
-      "schluss": 3.7,
+      "letzter": "2026-10-09",
+      "schluss": 3.5,
       "alter_tage": 1,
-      "r_kurz": 0.0137,
-      "vorsprung_kurz": 0.0203,
-      "r_lang": -0.2418,
-      "vorsprung_lang": -0.1943,
+      "r_kurz": -0.0541,
+      "vorsprung_kurz": -0.0515,
+      "r_lang": -0.2257,
+      "vorsprung_lang": -0.1946,
       "urteil": "schläft",
       "markt_schlaeft": true,
-      "handel": 102523426,
+      "handel": 103301946,
       "duenn": false
     },
     "SQM": {
@@ -157,16 +181,16 @@
       "rolle": "sensor",
       "hinweis": "fördert im Salar de Atacama — leidet unter Verstaatlichung, kein Kauf",
       "waehrung": "USD",
-      "letzter": "2026-10-08",
-      "schluss": 64.52,
+      "letzter": "2026-10-09",
+      "schluss": 63.91,
       "alter_tage": 1,
-      "r_kurz": 0.0062,
-      "vorsprung_kurz": 0.0129,
-      "r_lang": -0.1099,
-      "vorsprung_lang": -0.0624,
+      "r_kurz": -0.0095,
+      "vorsprung_kurz": -0.0069,
+      "r_lang": -0.0854,
+      "vorsprung_lang": -0.0544,
       "urteil": "schläft",
       "markt_schlaeft": true,
-      "handel": 65659345,
+      "handel": 64979511,
       "duenn": false
     },
     "ALB": {
@@ -175,16 +199,16 @@
       "rolle": "sensor",
       "hinweis": "fördert im Salar de Atacama — gleicher Zwiespalt wie SQM",
       "waehrung": "USD",
-      "letzter": "2026-10-08",
-      "schluss": 102.1,
+      "letzter": "2026-10-09",
+      "schluss": 101.27,
       "alter_tage": 1,
-      "r_kurz": -0.0279,
-      "vorsprung_kurz": -0.0213,
-      "r_lang": -0.1639,
-      "vorsprung_lang": -0.1164,
+      "r_kurz": -0.0317,
+      "vorsprung_kurz": -0.0291,
+      "r_lang": -0.1383,
+      "vorsprung_lang": -0.1072,
       "urteil": "schläft",
       "markt_schlaeft": true,
-      "handel": 264956661,
+      "handel": 263424956,
       "duenn": false
     }
   },

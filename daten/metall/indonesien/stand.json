@@ -1,13 +1,13 @@
 {
-  "stand": "2026-10-09T01:27:27+02:00",
-  "datum": "2026-10-09",
+  "stand": "2026-10-10T01:26:51+02:00",
+  "datum": "2026-10-10",
   "version": "0.1.0",
   "land": "indonesien",
   "name": "Indonesien-Ausfuhr",
   "laenderpaar": "Indonesien ↔ EU und China über Verhüttungspflicht und Edelstahl",
   "rolle": "sensor",
   "hinweis": "Denkhilfe, keine Anlageberatung. Rot setzt nur der Metall-Wächter in der Cloud.",
-  "zustand": "Warnung",
+  "zustand": "in Ordnung",
   "reihenfolge": [
     "nickel",
     "zinn"
@@ -68,7 +68,7 @@
       "bis": "2026-12-31",
       "urspruenglich_bis": "2026-12-31",
       "verlaengert": false,
-      "tage": 83,
+      "tage": 82,
       "zustand": "läuft",
       "gelb": false,
       "rot_pruefen": false,
@@ -84,7 +84,7 @@
       "bis": "2026-12-31",
       "urspruenglich_bis": "2026-12-31",
       "verlaengert": false,
-      "tage": 83,
+      "tage": 82,
       "zustand": "läuft",
       "gelb": false,
       "rot_pruefen": false,
@@ -101,7 +101,7 @@
       "bis": "2027-01-01",
       "urspruenglich_bis": "2027-01-01",
       "verlaengert": false,
-      "tage": 84,
+      "tage": 83,
       "zustand": "läuft",
       "gelb": false,
       "rot_pruefen": false,
@@ -112,6 +112,81 @@
     "herkunft": "frisch",
     "tage": 30,
     "dokumente": [
+      {
+        "nummer": "2026-20776",
+        "titel": "Foreign-Trade Zone (FTZ) 50, Notification of Proposed Production Activity; Sanyo Denki America, Inc.; (Cooling, Servo, and Power Systems and Assemblies); Torrance, California",
+        "datum": "2026-10-09",
+        "art": "Notice",
+        "behoerden": [
+          "commerce-department",
+          "foreign-trade-zones-board"
+        ],
+        "behoerden_namen": [
+          "Commerce Department",
+          "Foreign-Trade Zones Board"
+        ],
+        "url": "https://www.federalregister.gov/documents/2026/10/09/2026-20776/foreign-trade-zone-ftz-50-notification-of-proposed-production-activity-sanyo-denki-america-inc",
+        "zusammenfassung": "",
+        "begriffe": [
+          "stainless steel"
+        ],
+        "achsen": [
+          "nickel"
+        ],
+        "gewichtig": false,
+        "neu": true
+      },
+      {
+        "nummer": "2026-20775",
+        "titel": "Foreign-Trade Zone (FTZ) 40, Notification of Proposed Production Activity; Norman Noble Company Inc.; (Implantable Medical Devices); Highland Heights, Ohio",
+        "datum": "2026-10-09",
+        "art": "Notice",
+        "behoerden": [
+          "commerce-department",
+          "foreign-trade-zones-board"
+        ],
+        "behoerden_namen": [
+          "Commerce Department",
+          "Foreign-Trade Zones Board"
+        ],
+        "url": "https://www.federalregister.gov/documents/2026/10/09/2026-20775/foreign-trade-zone-ftz-40-notification-of-proposed-production-activity-norman-noble-company-inc",
+        "zusammenfassung": "",
+        "begriffe": [
+          "stainless steel"
+        ],
+        "achsen": [
+          "nickel"
+        ],
+        "gewichtig": false,
+        "neu": true
+      },
+      {
+        "nummer": "2026-20774",
+        "titel": "Foreign-Trade Zone (FTZ) 16, Notification of Proposed Production Activity; Yazaki North America, Inc.; (Stamped Copper Terminals); Petoskey, Michigan",
+        "datum": "2026-10-09",
+        "art": "Notice",
+        "behoerden": [
+          "commerce-department",
+          "foreign-trade-zones-board"
+        ],
+        "behoerden_namen": [
+          "Commerce Department",
+          "Foreign-Trade Zones Board"
+        ],
+        "url": "https://www.federalregister.gov/documents/2026/10/09/2026-20774/foreign-trade-zone-ftz-16-notification-of-proposed-production-activity-yazaki-north-america-inc",
+        "zusammenfassung": "",
+        "begriffe": [
+          "nickel",
+          "tin",
+          "stainless steel"
+        ],
+        "achsen": [
+          "nickel",
+          "zinn"
+        ],
+        "gewichtig": false,
+        "neu": true
+      },
       {
         "nummer": "2026-20481",
         "titel": "Drawn Stainless Steel Sinks From the People's Republic of China: Final Results of the Expedited First and Second Sunset Reviews of the Countervailing Duty Order; Correction",
@@ -362,18 +437,18 @@
     "starkregen_gemessen": [],
     "starkregen_vorhergesagt": [],
     "regen_hoechst_mm": {
-      "morowali": 8.4,
-      "weda_bay": 15.0,
-      "sorowako": 5.9,
+      "morowali": 9.5,
+      "weda_bay": 12.0,
+      "sorowako": 5.7,
       "pomalaa": 0.7,
-      "bangka": 3.7,
-      "belitung": 4.4,
+      "bangka": 2.9,
+      "belitung": 5.6,
       "muntok": 3.6
     },
     "trocken": {
       "sorowako": {
         "urteil": "Normal wird geladen",
-        "jahre": 1,
+        "jahre": 25,
         "von": 30
       }
     },
@@ -386,13 +461,13 @@
       "rolle": "beobachtung",
       "hinweis": "bildet den LME-Nickelpreis ab, kein Länderrisiko, keine Verwässerung",
       "waehrung": "USD",
-      "letzter": "2026-10-07",
-      "schluss": 13.615,
+      "letzter": "2026-10-08",
+      "schluss": 13.495,
       "alter_tage": 2,
-      "r_kurz": -0.0141,
-      "vorsprung_kurz": -0.0075,
-      "r_lang": -0.0713,
-      "vorsprung_lang": -0.0238,
+      "r_kurz": -0.0031,
+      "vorsprung_kurz": -0.0005,
+      "r_lang": -0.0664,
+      "vorsprung_lang": -0.0353,
       "urteil": "schläft",
       "markt_schlaeft": true,
       "handel": 30166,
@@ -404,8 +479,8 @@
       "rolle": "beobachtung",
       "hinweis": "bildet den LME-Zinnpreis ab",
       "waehrung": "USD",
-      "letzter": "2026-10-08",
-      "schluss": 118.41,
+      "letzter": "2026-10-09",
+      "schluss": 121.87,
       "alter_tage": 1,
       "r_kurz": null,
       "vorsprung_kurz": null,
@@ -600,8 +675,8 @@
     },
     "openmeteo": {
       "name": "Open-Meteo · ERA5-Reanalyse (Regen, Wind)",
-      "status": "Warnung",
-      "meldung": "Sorowako, Sulawesi 1992: AbrufFehler: ReadTimeout bei https://archive-api.open-meteo.com/v1/archive: HTTPSConnectionPool(host='archive-api.open-meteo.com', port=443): Read timed out. (read timeout=45)"
+      "status": "ok",
+      "meldung": null
     },
     "yahoo": {
       "name": "Yahoo Finance über yfinance (Kurse, Volumen)",
