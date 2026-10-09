@@ -1,9 +1,9 @@
-Stand: 08.10.2026, 04:16
+Stand: 09.10.2026, 04:16
 Teil 1 von 1
 
-Der Ersatz-Sensor Palladium, Datenteil für Donnerstag, den achten Oktober. Der Sensor schlägt beim Original aus, gekauft würde der Ersatz: Platin-ETF, physisch hinterlegtes Platin, in Dollar gehandelt. Das Original, Palladium: rund vierzig Prozent der Minenförderung aus Russland; im Benzin-Katalysator gegen Platin austauschbar. Hier sind beide handelbar; der Sensor ist der Preis des Originals.
+Der Ersatz-Sensor Palladium, Datenteil für Freitag, den neunten Oktober. Der Sensor schlägt beim Original aus, gekauft würde der Ersatz: Platin-ETF, physisch hinterlegtes Platin, in Dollar gehandelt. Das Original, Palladium: rund vierzig Prozent der Minenförderung aus Russland; im Benzin-Katalysator gegen Platin austauschbar. Hier sind beide handelbar; der Sensor ist der Preis des Originals.
 
-Stufe Grün. Palladium ist in sechzig Handelstagen um neun Prozent gefallen und kostet null Komma sechs neun mal so viel wie Platin.
+Stufe Grün. Palladium ist in sechzig Handelstagen um sieben Prozent gefallen und kostet null Komma sechs neun mal so viel wie Platin.
 
 Ein Signal heißt: Palladium steigt binnen sechzig Handelstagen um mindestens dreißig Prozent, oder es wird teurer als Platin. Nach einem Signal zählt das nächste erst nach einhundertzwanzig Handelstagen. Ein Signal hält die Stufe einhundertachtzig Tage auf Gelb; Rot ist nur bei einem Signal möglich, das höchstens dreißig Tage alt ist.
 
@@ -11,7 +11,7 @@ Seit zweitausendzehn meldete der Sensor dreizehn Signale: zweitausendzehn, zweit
 
 Platin-ETF nach dreizehn Signalen, gerechnet ab dem Tag nach dem Signal: nach einhundertzwanzig Handelstagen im Mittel fünf Prozentpunkte zurück gegen den Gold-ETF, nach zwanzig fünf Prozentpunkte zurück, nach sechzig fünf Prozentpunkte zurück, nach zweihundertfünfzig zehn Prozentpunkte zurück; Treffer in zwei Fällen. Nach der vorläufigen Regel nicht bestanden.
 
-Preisprobe. Platin-ETF ist in fünf Handelstagen um vier Prozent gefallen, in zwanzig um vierzehn Prozent gefallen, gegen den Gold-ETF sieben Prozentpunkte zurück. Umsatz zuletzt rund vierunddreißig Komma sieben Millionen Dollar am Tag. Der Markt schläft noch.
+Preisprobe. Platin-ETF ist in fünf Handelstagen um vier Prozent gefallen, in zwanzig um acht Prozent gefallen, gegen den Gold-ETF vier Prozentpunkte zurück. Umsatz zuletzt rund vierunddreißig Komma zwei Millionen Dollar am Tag. Der Markt schläft noch.
 
 Alle Quellen waren erreichbar.
 
