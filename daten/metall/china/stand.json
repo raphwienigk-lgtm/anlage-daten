@@ -1,6 +1,6 @@
 {
-  "stand": "2026-10-10T01:26:43+02:00",
-  "datum": "2026-10-10",
+  "stand": "2026-10-11T01:25:10+02:00",
+  "datum": "2026-10-11",
   "version": "0.1.0",
   "land": "china",
   "name": "China-Ausfuhr",
@@ -9,9 +9,9 @@
   "hinweis": "Denkhilfe, keine Anlageberatung. Rot setzt nur der Metall-Wächter in der Cloud.",
   "zustand": "in Ordnung",
   "reihenfolge": [
+    "magnet",
     "batterie",
     "chip",
-    "magnet",
     "werkzeug"
   ],
   "achsen": {
@@ -62,9 +62,18 @@
         }
       ],
       "wucht": 0.81,
-      "stufe": "Grün",
-      "gruende": [],
-      "kanaele": [],
+      "stufe": "Gelb",
+      "gruende": [
+        {
+          "kanal": "frist",
+          "kennung": "aussetzung_okt2025",
+          "tage": 30,
+          "zustand": "läuft bald aus"
+        }
+      ],
+      "kanaele": [
+        "frist"
+      ],
       "mehrfach": false,
       "instrumente": [
         "MP",
@@ -87,6 +96,12 @@
       "stufe": "Gelb",
       "gruende": [
         {
+          "kanal": "frist",
+          "kennung": "aussetzung_okt2025",
+          "tage": 30,
+          "zustand": "läuft bald aus"
+        },
+        {
           "kanal": "gegenseite",
           "nummer": "2026-20030",
           "datum": "2026-09-30",
@@ -100,9 +115,10 @@
         }
       ],
       "kanaele": [
+        "frist",
         "gegenseite"
       ],
-      "mehrfach": false,
+      "mehrfach": true,
       "instrumente": []
     },
     "werkzeug": {
@@ -125,7 +141,13 @@
       "instrumente": []
     }
   },
-  "wechsel": [],
+  "wechsel": [
+    {
+      "achse": "magnet",
+      "vorher": "Grün",
+      "jetzt": "Gelb"
+    }
+  ],
   "fristen": [
     {
       "kennung": "aussetzung_okt2025",
@@ -138,9 +160,9 @@
       "bis": "2026-11-10",
       "urspruenglich_bis": "2026-11-10",
       "verlaengert": false,
-      "tage": 31,
-      "zustand": "läuft",
-      "gelb": false,
+      "tage": 30,
+      "zustand": "läuft bald aus",
+      "gelb": true,
       "rot_pruefen": false,
       "stand": "USA melden am 24.09.2026 eine Verlängerung des Waffenstillstands bis zum 10.01.2027; die formelle Bekanntmachung aus Peking steht aus"
     },
@@ -154,7 +176,7 @@
       "bis": "2026-11-27",
       "urspruenglich_bis": "2026-11-27",
       "verlaengert": false,
-      "tage": 48,
+      "tage": 47,
       "zustand": "läuft",
       "gelb": false,
       "rot_pruefen": false,
@@ -187,7 +209,7 @@
           "werkzeug"
         ],
         "gewichtig": false,
-        "neu": true
+        "neu": false
       },
       {
         "nummer": "2026-20162",
@@ -500,30 +522,6 @@
         ],
         "gewichtig": false,
         "neu": false
-      },
-      {
-        "nummer": "2026-18496",
-        "titel": "Certain Cased Pencils From the People's Republic of China: Preliminary Results of Antidumping Duty Administrative Review; 2024-2025",
-        "datum": "2026-09-10",
-        "art": "Notice",
-        "behoerden": [
-          "commerce-department",
-          "international-trade-administration"
-        ],
-        "behoerden_namen": [
-          "Commerce Department",
-          "International Trade Administration"
-        ],
-        "url": "https://www.federalregister.gov/documents/2026/09/10/2026-18496/certain-cased-pencils-from-the-peoples-republic-of-china-preliminary-results-of-antidumping-duty",
-        "zusammenfassung": "The U.S. Department of Commerce (Commerce) preliminarily determines that producers/exporters subject to this review made sales of subject merchandise at less than normal value during the period of review (POR), December 1, 2024, through November 30, 2025. Interested parties are invited to comment on these preliminary results of review.",
-        "begriffe": [
-          "graphite"
-        ],
-        "achsen": [
-          "batterie"
-        ],
-        "gewichtig": false,
-        "neu": false
       }
     ]
   },
@@ -533,33 +531,33 @@
     "starkregen_gemessen": [],
     "starkregen_vorhergesagt": [],
     "regen_hoechst_mm": {
-      "lengshuijiang": 30.5,
+      "lengshuijiang": 12.6,
       "hechi": 27.8,
-      "lincang": 9.9,
-      "qujing": 30.2,
+      "lincang": 9.6,
+      "qujing": 18.3,
       "pingguo": 15.6,
-      "zibo": 6.8,
-      "baotou": 0.0,
+      "zibo": 3.9,
+      "baotou": 12.0,
       "ganzhou": 24.2,
       "jixi": 7.0
     },
     "trocken": {
       "lincang": {
-        "von": "2026-07-06",
-        "bis": "2026-10-03",
-        "summe_mm": 699,
-        "normal_mm": 752,
+        "von": "2026-07-07",
+        "bis": "2026-10-04",
+        "summe_mm": 698,
+        "normal_mm": 749,
         "urteil": "normal",
         "anteil": 0.93,
         "trocken": false
       },
       "qujing": {
-        "von": "2026-07-06",
-        "bis": "2026-10-03",
+        "von": "2026-07-07",
+        "bis": "2026-10-04",
         "summe_mm": 458,
-        "normal_mm": 485,
+        "normal_mm": 482,
         "urteil": "normal",
-        "anteil": 0.94,
+        "anteil": 0.95,
         "trocken": false
       }
     },
@@ -574,7 +572,7 @@
       "waehrung": "USD",
       "letzter": "2026-10-09",
       "schluss": 20.64,
-      "alter_tage": 1,
+      "alter_tage": 2,
       "r_kurz": 0.0128,
       "vorsprung_kurz": 0.007,
       "r_lang": -0.1265,
@@ -592,7 +590,7 @@
       "waehrung": "USD",
       "letzter": "2026-10-09",
       "schluss": 3.68,
-      "alter_tage": 1,
+      "alter_tage": 2,
       "r_kurz": -0.0777,
       "vorsprung_kurz": -0.0835,
       "r_lang": -0.2444,
@@ -610,7 +608,7 @@
       "waehrung": "USD",
       "letzter": "2026-10-09",
       "schluss": 46.14,
-      "alter_tage": 1,
+      "alter_tage": 2,
       "r_kurz": -0.0177,
       "vorsprung_kurz": -0.0234,
       "r_lang": -0.0865,
@@ -628,7 +626,7 @@
       "waehrung": "AUD",
       "letzter": "2026-10-09",
       "schluss": 12.41,
-      "alter_tage": 1,
+      "alter_tage": 2,
       "r_kurz": -0.0417,
       "vorsprung_kurz": -0.0475,
       "r_lang": -0.1364,

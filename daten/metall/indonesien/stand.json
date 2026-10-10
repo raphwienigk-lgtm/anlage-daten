@@ -1,13 +1,13 @@
 {
-  "stand": "2026-10-10T01:26:51+02:00",
-  "datum": "2026-10-10",
+  "stand": "2026-10-11T01:25:15+02:00",
+  "datum": "2026-10-11",
   "version": "0.1.0",
   "land": "indonesien",
   "name": "Indonesien-Ausfuhr",
   "laenderpaar": "Indonesien ↔ EU und China über Verhüttungspflicht und Edelstahl",
   "rolle": "sensor",
   "hinweis": "Denkhilfe, keine Anlageberatung. Rot setzt nur der Metall-Wächter in der Cloud.",
-  "zustand": "in Ordnung",
+  "zustand": "Warnung",
   "reihenfolge": [
     "nickel",
     "zinn"
@@ -68,7 +68,7 @@
       "bis": "2026-12-31",
       "urspruenglich_bis": "2026-12-31",
       "verlaengert": false,
-      "tage": 82,
+      "tage": 81,
       "zustand": "läuft",
       "gelb": false,
       "rot_pruefen": false,
@@ -84,7 +84,7 @@
       "bis": "2026-12-31",
       "urspruenglich_bis": "2026-12-31",
       "verlaengert": false,
-      "tage": 82,
+      "tage": 81,
       "zustand": "läuft",
       "gelb": false,
       "rot_pruefen": false,
@@ -101,7 +101,7 @@
       "bis": "2027-01-01",
       "urspruenglich_bis": "2027-01-01",
       "verlaengert": false,
-      "tage": 83,
+      "tage": 82,
       "zustand": "läuft",
       "gelb": false,
       "rot_pruefen": false,
@@ -112,6 +112,30 @@
     "herkunft": "frisch",
     "tage": 30,
     "dokumente": [
+      {
+        "nummer": "2026-20816",
+        "titel": "Welded Stainless Steel Pressure Pipe From the Socialist Republic of Vietnam: Preliminary Results of and Intent To Rescind, in Part, Antidumping Duty Administrative Review; 2024-2025",
+        "datum": "2026-10-13",
+        "art": "Notice",
+        "behoerden": [
+          "commerce-department",
+          "international-trade-administration"
+        ],
+        "behoerden_namen": [
+          "Commerce Department",
+          "International Trade Administration"
+        ],
+        "url": "https://www.federalregister.gov/documents/2026/10/13/2026-20816/welded-stainless-steel-pressure-pipe-from-the-socialist-republic-of-vietnam-preliminary-results-of",
+        "zusammenfassung": "The U.S. Department of Commerce (Commerce) preliminarily determines that sales of welded stainless steel pressure pipe (stainless pressure pipe) from the Socialist Republic of Vietnam (Vietnam) were made at less than normal value (NV) during the period of review (POR) July 1, 2024, through June 30, 2025. Additionally, Commerce intends to preliminarily rescind the review, in part, with respect to seven companies. Interested parties are invited to comment on these preliminary results of review.",
+        "begriffe": [
+          "stainless steel"
+        ],
+        "achsen": [
+          "nickel"
+        ],
+        "gewichtig": false,
+        "neu": true
+      },
       {
         "nummer": "2026-20776",
         "titel": "Foreign-Trade Zone (FTZ) 50, Notification of Proposed Production Activity; Sanyo Denki America, Inc.; (Cooling, Servo, and Power Systems and Assemblies); Torrance, California",
@@ -134,7 +158,7 @@
           "nickel"
         ],
         "gewichtig": false,
-        "neu": true
+        "neu": false
       },
       {
         "nummer": "2026-20775",
@@ -158,7 +182,7 @@
           "nickel"
         ],
         "gewichtig": false,
-        "neu": true
+        "neu": false
       },
       {
         "nummer": "2026-20774",
@@ -185,7 +209,7 @@
           "zinn"
         ],
         "gewichtig": false,
-        "neu": true
+        "neu": false
       },
       {
         "nummer": "2026-20481",
@@ -433,22 +457,22 @@
   },
   "stoerung": {
     "erdbeben": [],
-    "erdbeben_gesamt": 10,
+    "erdbeben_gesamt": 12,
     "starkregen_gemessen": [],
     "starkregen_vorhergesagt": [],
     "regen_hoechst_mm": {
-      "morowali": 9.5,
-      "weda_bay": 12.0,
-      "sorowako": 5.7,
-      "pomalaa": 0.7,
-      "bangka": 2.9,
-      "belitung": 5.6,
-      "muntok": 3.6
+      "morowali": 7.8,
+      "weda_bay": 32.0,
+      "sorowako": 4.8,
+      "pomalaa": 0.9,
+      "bangka": 2.5,
+      "belitung": 9.9,
+      "muntok": 3.8
     },
     "trocken": {
       "sorowako": {
         "urteil": "Normal wird geladen",
-        "jahre": 25,
+        "jahre": 26,
         "von": 30
       }
     },
@@ -461,13 +485,13 @@
       "rolle": "beobachtung",
       "hinweis": "bildet den LME-Nickelpreis ab, kein Länderrisiko, keine Verwässerung",
       "waehrung": "USD",
-      "letzter": "2026-10-08",
-      "schluss": 13.495,
+      "letzter": "2026-10-09",
+      "schluss": 13.4925,
       "alter_tage": 2,
-      "r_kurz": -0.0031,
-      "vorsprung_kurz": -0.0005,
-      "r_lang": -0.0664,
-      "vorsprung_lang": -0.0353,
+      "r_kurz": -0.0024,
+      "vorsprung_kurz": -0.0123,
+      "r_lang": -0.0551,
+      "vorsprung_lang": -0.0387,
       "urteil": "schläft",
       "markt_schlaeft": true,
       "handel": 30166,
@@ -481,7 +505,7 @@
       "waehrung": "USD",
       "letzter": "2026-10-09",
       "schluss": 121.87,
-      "alter_tage": 1,
+      "alter_tage": 2,
       "r_kurz": null,
       "vorsprung_kurz": null,
       "r_lang": null,
@@ -675,8 +699,8 @@
     },
     "openmeteo": {
       "name": "Open-Meteo · ERA5-Reanalyse (Regen, Wind)",
-      "status": "ok",
-      "meldung": null
+      "status": "Warnung",
+      "meldung": "Sorowako, Sulawesi 2017: AbrufFehler: ReadTimeout bei https://archive-api.open-meteo.com/v1/archive: HTTPSConnectionPool(host='archive-api.open-meteo.com', port=443): Read timed out. (read timeout=45)"
     },
     "yahoo": {
       "name": "Yahoo Finance über yfinance (Kurse, Volumen)",
