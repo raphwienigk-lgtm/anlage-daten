@@ -1,0 +1,8 @@
+Stand: 11.10.2026, 05:29
+Teil 3 von 3
+
+Ersatz Palladium: dreizehn Fälle. Im Mittel bis zum Ausstieg. Bisherige Regel, nach einhundertachtzig Tagen: plus drei Prozent, gegen den Vergleich vier Prozentpunkte zurück, sieben von dreizehn im Plus, gehalten einhundertvierundzwanzig Handelstage, schlechtester Fall minus siebzehn Prozent. Nach einhundertzwanzig Handelstagen: plus zwei Prozent, gegen den Vergleich fünf Prozentpunkte zurück, sieben von dreizehn im Plus, gehalten einhundertzwanzig Handelstage, schlechtester Fall minus neunzehn Prozent. Gewinnziel zwanzig Prozent: plus ein Prozent, gegen den Vergleich neun Prozentpunkte zurück, sieben von dreizehn im Plus, gehalten einhundertachtundneunzig Handelstage, schlechtester Fall minus fünfundzwanzig Prozent. Grenze fünfzehn Prozent unter dem Höchststand: plus neun Prozent, gegen den Vergleich drei Prozentpunkte zurück, sechs von dreizehn im Plus, gehalten einhundertdreiunddreißig Handelstage, schlechtester Fall minus sechzehn Prozent. Verlustgrenze fünfzehn Prozent, ab zwanzig Prozent Gewinn Grenze zehn Prozent unter dem Höchststand: plus ein Prozent, gegen den Vergleich sechs Prozentpunkte zurück, sechs von dreizehn im Plus, gehalten einhunderteinunddreißig Handelstage, schlechtester Fall minus siebzehn Prozent. Vorn beim Vorsprung: Grenze fünfzehn Prozent unter dem Höchststand. Der beste denkbare Ausstieg hätte im Mittel plus einunddreißig Prozent gebracht; den trifft keine Regel.
+
+Palmöl: folgt, sobald der erste Rückblick gelaufen ist.
+
+Überall gilt noch die bisherige Regel. Welche gilt, legst du fest; dann baue ich sie ins Schattendepot ein. Das ist eine Denkhilfe, keine Anlageberatung.

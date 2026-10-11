@@ -1,14 +1,14 @@
 {
-  "stand": "2026-10-04T07:17:42+02:00",
+  "stand": "2026-10-11T05:29:26+02:00",
   "version": "0.1.0",
   "hinweis": "Denkhilfe, keine Anlageberatung.",
   "woche": {
-    "von": "2026-09-28",
-    "bis": "2026-10-04"
+    "von": "2026-10-05",
+    "bis": "2026-10-11"
   },
   "laufkontrolle": {
-    "stand_datum": "2026-10-04",
-    "zustand": "in Ordnung",
+    "stand_datum": "2026-10-11",
+    "zustand": "Warnung",
     "hinweise": [],
     "betrieb_seit": "2026-09-27",
     "tage_mit_lauf": 7,
@@ -44,12 +44,70 @@
       "workflow": "depot",
       "name": "Schattendepot",
       "betrieb_seit": "2026-09-29",
-      "tage_mit_lauf": 6,
-      "tage_gezaehlt": 6,
+      "tage_mit_lauf": 7,
+      "tage_gezaehlt": 7,
       "fehlende_tage": []
     }
   ],
   "rohstoffe": {
+    "kakao": {
+      "name": "Kakao",
+      "ampel": {
+        "farbe": "Gelb",
+        "zahl": 10,
+        "gesperrt": false,
+        "seit": "2026-10-09",
+        "wechsel": [
+          {
+            "tag": "2026-10-09",
+            "vorher": null,
+            "farbe": "Gelb",
+            "anlass": "Start",
+            "gesperrt": false
+          }
+        ]
+      },
+      "positionen": [],
+      "signale": {
+        "anzahl": 0,
+        "treffer": 0,
+        "fehlalarme": 0,
+        "offen": 0,
+        "liste": []
+      },
+      "rueckblick": null,
+      "vorschlag_faellig": false,
+      "mindest_signale": 5
+    },
+    "kautschuk": {
+      "name": "Kautschuk",
+      "ampel": {
+        "farbe": "Gelb",
+        "zahl": 8,
+        "gesperrt": false,
+        "seit": "2026-10-09",
+        "wechsel": [
+          {
+            "tag": "2026-10-09",
+            "vorher": null,
+            "farbe": "Gelb",
+            "anlass": "Start",
+            "gesperrt": false
+          }
+        ]
+      },
+      "positionen": [],
+      "signale": {
+        "anzahl": 0,
+        "treffer": 0,
+        "fehlalarme": 0,
+        "offen": 0,
+        "liste": []
+      },
+      "rueckblick": null,
+      "vorschlag_faellig": false,
+      "mindest_signale": 5
+    },
     "palmoel": {
       "name": "Palmöl",
       "ampel": {
@@ -73,10 +131,24 @@
     }
   },
   "zweige": {
+    "metall_chile": {
+      "art": "metall",
+      "name": "Metall Chile-Lithium",
+      "laeufe": 3,
+      "achsen": {
+        "lithium": {
+          "name": "Lithium-Achse",
+          "jetzt": "Grün",
+          "seit": "2026-10-09",
+          "seit_beginn": true,
+          "wechsel": []
+        }
+      }
+    },
     "metall_china": {
       "art": "metall",
       "name": "Metall China-Ausfuhr",
-      "laeufe": 10,
+      "laeufe": 17,
       "achsen": {
         "chip": {
           "name": "Chip-Achse",
@@ -87,10 +159,16 @@
         },
         "magnet": {
           "name": "Magnet-Achse",
-          "jetzt": "Grün",
-          "seit": "2026-09-26",
-          "seit_beginn": true,
-          "wechsel": []
+          "jetzt": "Gelb",
+          "seit": "2026-10-11",
+          "seit_beginn": false,
+          "wechsel": [
+            {
+              "tag": "2026-10-11",
+              "vorher": "Grün",
+              "jetzt": "Gelb"
+            }
+          ]
         },
         "batterie": {
           "name": "Batterie-Achse",
@@ -108,10 +186,59 @@
         }
       }
     },
+    "metall_indonesien": {
+      "art": "metall",
+      "name": "Metall Indonesien-Ausfuhr",
+      "laeufe": 3,
+      "achsen": {
+        "nickel": {
+          "name": "Nickel-Achse",
+          "jetzt": "Grün",
+          "seit": "2026-10-09",
+          "seit_beginn": true,
+          "wechsel": []
+        },
+        "zinn": {
+          "name": "Zinn-Achse",
+          "jetzt": "Grün",
+          "seit": "2026-10-09",
+          "seit_beginn": true,
+          "wechsel": []
+        }
+      }
+    },
+    "metall_kongo": {
+      "art": "metall",
+      "name": "Metall Kongo-Kobalt",
+      "laeufe": 3,
+      "achsen": {
+        "kobalt": {
+          "name": "Kobalt-Achse",
+          "jetzt": "Grün",
+          "seit": "2026-10-09",
+          "seit_beginn": true,
+          "wechsel": []
+        }
+      }
+    },
+    "metall_marokko": {
+      "art": "metall",
+      "name": "Metall Marokko-Phosphat",
+      "laeufe": 3,
+      "achsen": {
+        "duenger": {
+          "name": "Dünger-Achse",
+          "jetzt": "Gelb",
+          "seit": "2026-10-09",
+          "seit_beginn": true,
+          "wechsel": []
+        }
+      }
+    },
     "ersatz_haselnuss": {
       "art": "ersatz",
       "name": "Ersatz-Sensor Haselnuss",
-      "laeufe": 10,
+      "laeufe": 17,
       "vergleich": "australischer Aktienindex ASX 200",
       "jetzt": "Grün",
       "seit": "2026-09-26",
@@ -122,7 +249,7 @@
     "ersatz_palladium": {
       "art": "ersatz",
       "name": "Ersatz-Sensor Palladium",
-      "laeufe": 10,
+      "laeufe": 17,
       "vergleich": "Gold-ETF",
       "jetzt": "Grün",
       "seit": "2026-09-27",
