@@ -1,13 +1,13 @@
 {
-  "stand": "2026-10-11T01:25:15+02:00",
-  "datum": "2026-10-11",
+  "stand": "2026-10-12T01:26:46+02:00",
+  "datum": "2026-10-12",
   "version": "0.1.0",
   "land": "indonesien",
   "name": "Indonesien-Ausfuhr",
   "laenderpaar": "Indonesien ↔ EU und China über Verhüttungspflicht und Edelstahl",
   "rolle": "sensor",
   "hinweis": "Denkhilfe, keine Anlageberatung. Rot setzt nur der Metall-Wächter in der Cloud.",
-  "zustand": "Warnung",
+  "zustand": "in Ordnung",
   "reihenfolge": [
     "nickel",
     "zinn"
@@ -26,9 +26,17 @@
         }
       ],
       "wucht": 0.36,
-      "stufe": "Grün",
-      "gruende": [],
-      "kanaele": [],
+      "stufe": "Gelb",
+      "gruende": [
+        {
+          "kanal": "trocken",
+          "standort": "sorowako",
+          "anteil": 0.16
+        }
+      ],
+      "kanaele": [
+        "trocken"
+      ],
       "mehrfach": false,
       "instrumente": [
         "NICK.L"
@@ -56,7 +64,13 @@
       ]
     }
   },
-  "wechsel": [],
+  "wechsel": [
+    {
+      "achse": "nickel",
+      "vorher": "Grün",
+      "jetzt": "Gelb"
+    }
+  ],
   "fristen": [
     {
       "kennung": "rkab_quote_2026",
@@ -68,7 +82,7 @@
       "bis": "2026-12-31",
       "urspruenglich_bis": "2026-12-31",
       "verlaengert": false,
-      "tage": 81,
+      "tage": 80,
       "zustand": "läuft",
       "gelb": false,
       "rot_pruefen": false,
@@ -84,7 +98,7 @@
       "bis": "2026-12-31",
       "urspruenglich_bis": "2026-12-31",
       "verlaengert": false,
-      "tage": 81,
+      "tage": 80,
       "zustand": "läuft",
       "gelb": false,
       "rot_pruefen": false,
@@ -101,7 +115,7 @@
       "bis": "2027-01-01",
       "urspruenglich_bis": "2027-01-01",
       "verlaengert": false,
-      "tage": 82,
+      "tage": 81,
       "zustand": "läuft",
       "gelb": false,
       "rot_pruefen": false,
@@ -134,7 +148,7 @@
           "nickel"
         ],
         "gewichtig": false,
-        "neu": true
+        "neu": false
       },
       {
         "nummer": "2026-20776",
@@ -457,23 +471,27 @@
   },
   "stoerung": {
     "erdbeben": [],
-    "erdbeben_gesamt": 12,
+    "erdbeben_gesamt": 11,
     "starkregen_gemessen": [],
     "starkregen_vorhergesagt": [],
     "regen_hoechst_mm": {
       "morowali": 7.8,
-      "weda_bay": 32.0,
-      "sorowako": 4.8,
-      "pomalaa": 0.9,
-      "bangka": 2.5,
-      "belitung": 9.9,
-      "muntok": 3.8
+      "weda_bay": 15.6,
+      "sorowako": 13.5,
+      "pomalaa": 0.2,
+      "bangka": 9.0,
+      "belitung": 22.2,
+      "muntok": 7.8
     },
     "trocken": {
       "sorowako": {
-        "urteil": "Normal wird geladen",
-        "jahre": 26,
-        "von": 30
+        "von": "2026-07-08",
+        "bis": "2026-10-05",
+        "summe_mm": 86,
+        "normal_mm": 549,
+        "urteil": "trocken",
+        "anteil": 0.16,
+        "trocken": true
       }
     },
     "gelb_tage": 30
@@ -487,7 +505,7 @@
       "waehrung": "USD",
       "letzter": "2026-10-09",
       "schluss": 13.4925,
-      "alter_tage": 2,
+      "alter_tage": 3,
       "r_kurz": -0.0024,
       "vorsprung_kurz": -0.0123,
       "r_lang": -0.0551,
@@ -505,7 +523,7 @@
       "waehrung": "USD",
       "letzter": "2026-10-09",
       "schluss": 121.87,
-      "alter_tage": 2,
+      "alter_tage": 3,
       "r_kurz": null,
       "vorsprung_kurz": null,
       "r_lang": null,
@@ -699,8 +717,8 @@
     },
     "openmeteo": {
       "name": "Open-Meteo · ERA5-Reanalyse (Regen, Wind)",
-      "status": "Warnung",
-      "meldung": "Sorowako, Sulawesi 2017: AbrufFehler: ReadTimeout bei https://archive-api.open-meteo.com/v1/archive: HTTPSConnectionPool(host='archive-api.open-meteo.com', port=443): Read timed out. (read timeout=45)"
+      "status": "ok",
+      "meldung": null
     },
     "yahoo": {
       "name": "Yahoo Finance über yfinance (Kurse, Volumen)",
