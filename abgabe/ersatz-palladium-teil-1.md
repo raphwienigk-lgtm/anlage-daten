@@ -1,9 +1,9 @@
-Stand: 10.10.2026, 04:16
+Stand: 11.10.2026, 04:15
 Teil 1 von 1
 
-Der Ersatz-Sensor Palladium, Datenteil für Samstag, den zehnten Oktober. Der Sensor schlägt beim Original aus, gekauft würde der Ersatz: Platin-ETF, physisch hinterlegtes Platin, in Dollar gehandelt. Das Original, Palladium: rund vierzig Prozent der Minenförderung aus Russland; im Benzin-Katalysator gegen Platin austauschbar. Hier sind beide handelbar; der Sensor ist der Preis des Originals.
+Der Ersatz-Sensor Palladium, Datenteil für Sonntag, den elften Oktober. Der Sensor schlägt beim Original aus, gekauft würde der Ersatz: Platin-ETF, physisch hinterlegtes Platin, in Dollar gehandelt. Das Original, Palladium: rund vierzig Prozent der Minenförderung aus Russland; im Benzin-Katalysator gegen Platin austauschbar. Hier sind beide handelbar; der Sensor ist der Preis des Originals.
 
-Stufe Grün. Palladium ist in sechzig Handelstagen um neun Prozent gefallen und kostet null Komma sechs acht mal so viel wie Platin.
+Stufe Grün. Palladium ist in sechzig Handelstagen um zehn Prozent gefallen und kostet null Komma sechs acht mal so viel wie Platin.
 
 Ein Signal heißt: Palladium steigt binnen sechzig Handelstagen um mindestens dreißig Prozent, oder es wird teurer als Platin. Nach einem Signal zählt das nächste erst nach einhundertzwanzig Handelstagen. Ein Signal hält die Stufe einhundertachtzig Tage auf Gelb; Rot ist nur bei einem Signal möglich, das höchstens dreißig Tage alt ist.
 
