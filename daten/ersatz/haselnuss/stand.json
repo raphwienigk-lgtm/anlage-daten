@@ -1,6 +1,6 @@
 {
-  "stand": "2026-10-11T04:15:51+02:00",
-  "datum": "2026-10-11",
+  "stand": "2026-10-12T04:18:21+02:00",
+  "datum": "2026-10-12",
   "version": "0.1.0",
   "kennung": "haselnuss",
   "name": "Haselnuss",
@@ -413,7 +413,7 @@
       "waehrung": "AUD",
       "letzter": "2026-10-09",
       "schluss": 4.16,
-      "alter_tage": 2,
+      "alter_tage": 3,
       "r_kurz": 0.0272,
       "vorsprung_kurz": 0.0232,
       "r_lang": -0.0917,
