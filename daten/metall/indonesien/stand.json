@@ -1,6 +1,6 @@
 {
-  "stand": "2026-10-12T01:26:46+02:00",
-  "datum": "2026-10-12",
+  "stand": "2026-10-13T01:28:45+02:00",
+  "datum": "2026-10-13",
   "version": "0.1.0",
   "land": "indonesien",
   "name": "Indonesien-Ausfuhr",
@@ -64,13 +64,7 @@
       ]
     }
   },
-  "wechsel": [
-    {
-      "achse": "nickel",
-      "vorher": "Grün",
-      "jetzt": "Gelb"
-    }
-  ],
+  "wechsel": [],
   "fristen": [
     {
       "kennung": "rkab_quote_2026",
@@ -82,7 +76,7 @@
       "bis": "2026-12-31",
       "urspruenglich_bis": "2026-12-31",
       "verlaengert": false,
-      "tage": 80,
+      "tage": 79,
       "zustand": "läuft",
       "gelb": false,
       "rot_pruefen": false,
@@ -98,7 +92,7 @@
       "bis": "2026-12-31",
       "urspruenglich_bis": "2026-12-31",
       "verlaengert": false,
-      "tage": 80,
+      "tage": 79,
       "zustand": "läuft",
       "gelb": false,
       "rot_pruefen": false,
@@ -115,7 +109,7 @@
       "bis": "2027-01-01",
       "urspruenglich_bis": "2027-01-01",
       "verlaengert": false,
-      "tage": 81,
+      "tage": 80,
       "zustand": "läuft",
       "gelb": false,
       "rot_pruefen": false,
@@ -476,19 +470,19 @@
     "starkregen_vorhergesagt": [],
     "regen_hoechst_mm": {
       "morowali": 7.8,
-      "weda_bay": 15.6,
-      "sorowako": 13.5,
+      "weda_bay": 21.1,
+      "sorowako": 4.9,
       "pomalaa": 0.2,
-      "bangka": 9.0,
-      "belitung": 22.2,
-      "muntok": 7.8
+      "bangka": 4.0,
+      "belitung": 18.0,
+      "muntok": 6.8
     },
     "trocken": {
       "sorowako": {
-        "von": "2026-07-08",
-        "bis": "2026-10-05",
-        "summe_mm": 86,
-        "normal_mm": 549,
+        "von": "2026-07-09",
+        "bis": "2026-10-06",
+        "summe_mm": 85,
+        "normal_mm": 545,
         "urteil": "trocken",
         "anteil": 0.16,
         "trocken": true
@@ -505,7 +499,7 @@
       "waehrung": "USD",
       "letzter": "2026-10-09",
       "schluss": 13.4925,
-      "alter_tage": 3,
+      "alter_tage": 4,
       "r_kurz": -0.0024,
       "vorsprung_kurz": -0.0123,
       "r_lang": -0.0551,
@@ -521,9 +515,9 @@
       "rolle": "beobachtung",
       "hinweis": "bildet den LME-Zinnpreis ab",
       "waehrung": "USD",
-      "letzter": "2026-10-09",
-      "schluss": 121.87,
-      "alter_tage": 3,
+      "letzter": "2026-10-12",
+      "schluss": 122.325,
+      "alter_tage": 1,
       "r_kurz": null,
       "vorsprung_kurz": null,
       "r_lang": null,

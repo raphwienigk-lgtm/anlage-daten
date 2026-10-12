@@ -1,15 +1,13 @@
-Stand: 12.10.2026, 01:26
+Stand: 13.10.2026, 01:28
 Teil 1 von 1
 
-Der Metall-Wächter Indonesien-Ausfuhr, Datenteil für Montag, den zwölften Oktober. Stufen je Achse aus Fristen, US-Maßnahmen und Störungen an den Standorten. Rot setzt nur der Wächter in der Cloud, wenn eine Meldung aus Peking dazukommt. Die Wucht sagt, wie stark China ein Metall beherrscht und wie schwer es zu ersetzen ist, von null bis eins.
-
-Neu seit dem letzten Lauf: Die Nickel-Achse ist von Grün auf Gelb gesprungen.
+Der Metall-Wächter Indonesien-Ausfuhr, Datenteil für Dienstag, den dreizehnten Oktober. Stufen je Achse aus Fristen, US-Maßnahmen und Störungen an den Standorten. Rot setzt nur der Wächter in der Cloud, wenn eine Meldung aus Peking dazukommt. Die Wucht sagt, wie stark China ein Metall beherrscht und wie schwer es zu ersetzen ist, von null bis eins.
 
 Nickel-Achse, der Pilot: Gelb. Anlass: Trockenheit in Sorowako, Sulawesi. Wucht null Komma drei sechs, getragen von Nickel.
 
 Zinn-Achse: Grün. Wucht null Komma zwei, getragen von Zinn.
 
-Fristen. Die Fördermengen-Quote RKAB für zweitausendsechsundzwanzig (Deckel ausdrücklich zur Preisstützung) (Bekanntmachung Nummer siebzehn) läuft am einunddreißigsten Dezember aus, in achtzig Tagen. Stand: Am zehnten Juli zweitausendsechsundzwanzig bestätigt: keine Erhöhung im laufenden Jahr. Die Quote für zweitausendsiebenundzwanzig ist die nächste Weggabelung.. Die Ausfuhrzoll und Windfall-Steuer auf gering verarbeitetes Nickel läuft am einunddreißigsten Dezember aus, in achtzig Tagen. Stand: Am siebten Mai zweitausendsechsundzwanzig bestätigt, am elften Mai zweitausendsechsundzwanzig auf unbestimmte Zeit verschoben. Wiederaufnahme ist ein Auslöser nach Izwei.. Die Export strategischer Rohstoffe nur über die Staatsfirma DSI (Single-Gate) (Bekanntmachung Nummer vierundzwanzig) läuft am ersten Januar aus, in einundachtzig Tagen. Stand: Seit ersten September zweitausendsechsundzwanzig in Kraft; ab zweitausendsiebenundzwanzig soll Ferronickel und NPI nur noch über Staatsfirmen laufen. Ob Zinn tatsächlich unter DSI kommt, ist offen..
+Fristen. Die Fördermengen-Quote RKAB für zweitausendsechsundzwanzig (Deckel ausdrücklich zur Preisstützung) (Bekanntmachung Nummer siebzehn) läuft am einunddreißigsten Dezember aus, in neunundsiebzig Tagen. Stand: Am zehnten Juli zweitausendsechsundzwanzig bestätigt: keine Erhöhung im laufenden Jahr. Die Quote für zweitausendsiebenundzwanzig ist die nächste Weggabelung.. Die Ausfuhrzoll und Windfall-Steuer auf gering verarbeitetes Nickel läuft am einunddreißigsten Dezember aus, in neunundsiebzig Tagen. Stand: Am siebten Mai zweitausendsechsundzwanzig bestätigt, am elften Mai zweitausendsechsundzwanzig auf unbestimmte Zeit verschoben. Wiederaufnahme ist ein Auslöser nach Izwei.. Die Export strategischer Rohstoffe nur über die Staatsfirma DSI (Single-Gate) (Bekanntmachung Nummer vierundzwanzig) läuft am ersten Januar aus, in achtzig Tagen. Stand: Seit ersten September zweitausendsechsundzwanzig in Kraft; ab zweitausendsiebenundzwanzig soll Ferronickel und NPI nur noch über Staatsfirmen laufen. Ob Zinn tatsächlich unter DSI kommt, ist offen..
 
 Gegenseite. In den letzten dreißig Tagen stehen vierzehn Einträge zu den Suchbegriffen im US-Bundesregister, davon keiner gewichtig.
 
