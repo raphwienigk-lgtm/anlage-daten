@@ -1,6 +1,6 @@
 {
-  "stand": "2026-10-12T04:42:54+02:00",
-  "datum": "2026-10-12",
+  "stand": "2026-10-13T04:43:09+02:00",
+  "datum": "2026-10-13",
   "version": "0.1.0",
   "hinweis": "Denkhilfe, keine Anlageberatung. Score und Schwellen sind vorläufig, bis das Backtesting steht.",
   "zustand": "Warnung",
@@ -21,8 +21,8 @@
     "regen": {
       "name": "Open-Meteo Regen",
       "status": "ok",
-      "stand": "2026-10-10",
-      "meldung": null
+      "stand": "2026-10-11",
+      "meldung": "teilweise: Beledweyne, Somalia: ReadTimeout bei https://archive-api.open-meteo.com/v1/archive: HTTPSConnectionPool(host='archive-api.open-meteo.com', port=443): Read timed out. (read timeout=45)"
     },
     "wind": {
       "name": "Open-Meteo Wind",
@@ -45,7 +45,7 @@
     "yahoo:BZ=F": {
       "name": "Yahoo BZ=F",
       "status": "ok",
-      "stand": "2026-10-11",
+      "stand": "2026-10-12",
       "meldung": null
     },
     "yahoo:COCO.L": {
@@ -87,7 +87,7 @@
     "yahoo:ZL=F": {
       "name": "Yahoo ZL=F",
       "status": "ok",
-      "stand": "2026-10-11",
+      "stand": "2026-10-12",
       "meldung": null
     },
     "fred:PCOCOUSDM": {
@@ -196,44 +196,44 @@
           "aktuell": {
             "status": "gemessen",
             "an": true,
-            "anteil": 0.407,
+            "anteil": 0.403,
             "zeitraum_tage": 90,
-            "bis": "2026-10-06",
+            "bis": "2026-10-07",
             "punkte": {
               "Riau, Sumatra": {
                 "tage": 90,
-                "summe_mm": 334.4,
-                "normal_mm": 491.4,
-                "anteil": 0.681,
-                "bis": "2026-10-06"
+                "summe_mm": 325.2,
+                "normal_mm": 491.7,
+                "anteil": 0.661,
+                "bis": "2026-10-07"
               },
               "Jambi, Sumatra": {
                 "tage": 90,
-                "summe_mm": 78.2,
-                "normal_mm": 395.3,
-                "anteil": 0.198,
-                "bis": "2026-10-06"
+                "summe_mm": 77.7,
+                "normal_mm": 395.4,
+                "anteil": 0.196,
+                "bis": "2026-10-07"
               },
               "Zentral-Kalimantan": {
                 "tage": 90,
                 "summe_mm": 29.6,
-                "normal_mm": 309.7,
-                "anteil": 0.096,
-                "bis": "2026-10-06"
+                "normal_mm": 318.4,
+                "anteil": 0.093,
+                "bis": "2026-10-07"
               },
               "West-Kalimantan": {
                 "tage": 90,
-                "summe_mm": 241.3,
-                "normal_mm": 513.8,
-                "anteil": 0.47,
-                "bis": "2026-10-06"
+                "summe_mm": 245.6,
+                "normal_mm": 519.0,
+                "anteil": 0.473,
+                "bis": "2026-10-07"
               },
               "Sabah": {
                 "tage": 90,
-                "summe_mm": 283.1,
-                "normal_mm": 480.6,
-                "anteil": 0.589,
-                "bis": "2026-10-06"
+                "summe_mm": 284.7,
+                "normal_mm": 481.4,
+                "anteil": 0.591,
+                "bis": "2026-10-07"
               }
             },
             "fehlend": []
@@ -242,11 +242,11 @@
             "status": "gemessen",
             "an": true,
             "ab": "2026-05-16",
-            "bis": "2026-10-06",
+            "bis": "2026-10-07",
             "erster_trockener_tag": "2026-08-22",
-            "trockene_tage": 46,
+            "trockene_tage": 47,
             "tiefster_anteil": 0.403,
-            "tiefster_tag": "2026-09-29"
+            "tiefster_tag": "2026-10-07"
           }
         },
         "west": {
@@ -256,22 +256,22 @@
             "bis_ende": "2026-12-31",
             "status": "Saison zu jung",
             "an": null,
-            "anteil": 4.028,
+            "anteil": 4.16,
             "tage": 6,
             "punkte": {
               "Nairobi, Kenia": {
-                "tage": 6,
-                "summe_mm": 0.8,
-                "normal_mm": 3.7,
-                "anteil": 0.214,
-                "bis": "2026-10-06"
+                "tage": 7,
+                "summe_mm": 2.8,
+                "normal_mm": 4.4,
+                "anteil": 0.64,
+                "bis": "2026-10-07"
               },
               "Garissa, Kenia": {
-                "tage": 6,
-                "summe_mm": 3.1,
-                "normal_mm": 1.0,
-                "anteil": 3.138,
-                "bis": "2026-10-06"
+                "tage": 7,
+                "summe_mm": 3.9,
+                "normal_mm": 1.2,
+                "anteil": 3.194,
+                "bis": "2026-10-07"
               },
               "Beledweyne, Somalia": {
                 "tage": 6,
@@ -281,18 +281,18 @@
                 "bis": "2026-10-06"
               },
               "Moyale, Äthiopien": {
-                "tage": 6,
-                "summe_mm": 17.5,
-                "normal_mm": 10.7,
+                "tage": 7,
+                "summe_mm": 19.9,
+                "normal_mm": 12.2,
                 "anteil": 1.633,
-                "bis": "2026-10-06"
+                "bis": "2026-10-07"
               },
               "Arusha, Tansania": {
-                "tage": 6,
-                "summe_mm": 1.4,
-                "normal_mm": 3.1,
-                "anteil": 0.447,
-                "bis": "2026-10-06"
+                "tage": 7,
+                "summe_mm": 2.3,
+                "normal_mm": 3.7,
+                "anteil": 0.622,
+                "bis": "2026-10-07"
               }
             },
             "fehlend": [],
@@ -306,7 +306,7 @@
                 "jahr": 2026,
                 "status": "Saison zu jung",
                 "an": null,
-                "anteil": 4.028,
+                "anteil": 4.16,
                 "tage": 6
               }
             ]
@@ -396,7 +396,7 @@
         "einzeln": {
           "brent": {
             "text": "Ölpreis als Hintergrundpegel für Transport und Verarbeitung — bei Kakao schwächer als bei Palmöl, mangels echtem Substitut",
-            "veraenderung_3m": 0.355,
+            "veraenderung_3m": 0.267,
             "druck": 0.0
           }
         },
@@ -536,7 +536,7 @@
         "einzeln": {
           "brent": {
             "text": "Ölpreis (Brent) — billiges Erdöl macht synthetischen Kautschuk billig und deckelt den Naturkautschukpreis",
-            "veraenderung_3m": 0.355,
+            "veraenderung_3m": 0.267,
             "druck": 0.0
           }
         },
@@ -649,7 +649,7 @@
           "punkt": "Gegenkräfte",
           "frage": "Überwiegen die Gegenkräfte nicht?",
           "status": "ja",
-          "text": "Druck der Gegenkräfte 0.11"
+          "text": "Druck der Gegenkräfte 0.16"
         },
         {
           "nr": 4,
@@ -666,18 +666,18 @@
         "T_monate": 12
       },
       "gegenkraefte": {
-        "wert": 0.112,
+        "wert": 0.164,
         "ueberwiegen": false,
         "einzeln": {
           "brent": {
             "text": "Ölpreis (Brent)",
-            "veraenderung_3m": 0.355,
+            "veraenderung_3m": 0.267,
             "druck": 0.0
           },
           "sojaoel": {
             "text": "Sojaöl als Konkurrenzöl",
-            "veraenderung_3m": -0.045,
-            "druck": 0.223
+            "veraenderung_3m": -0.066,
+            "druck": 0.328
           }
         },
         "fehlend": []
@@ -694,7 +694,7 @@
         "einheit": "US-Dollar je Tonne"
       },
       "score": {
-        "wert": 0.119,
+        "wert": 0.106,
         "zahl": 8,
         "vorlaeufig": true,
         "fehlend": [],
@@ -756,7 +756,7 @@
       ],
       "rueckblick": null,
       "inlandspreise": {
-        "datum": "2026-10-12",
+        "datum": "2026-10-13",
         "reihen": {
           "speiseoel_id_lose": {
             "rohstoff": "palmoel",
@@ -766,16 +766,16 @@
             "einheit": "Rupiah",
             "rolle": "fruehzeichen",
             "status": "ok",
-            "werte": 2271,
+            "werte": 2272,
             "letzter": {
-              "datum": "2026-10-12",
-              "wert": 20050.0
+              "datum": "2026-10-13",
+              "wert": 22450.0
             },
             "alter_tage": 0,
             "art": "täglich",
-            "mittel_jetzt": 20380.0,
-            "mittel_damals": 20550.0,
-            "veraenderung": -0.0083,
+            "mittel_jetzt": 20500.0,
+            "mittel_damals": 20547.5,
+            "veraenderung": -0.0023,
             "urteil": "ruhig"
           },
           "speiseoel_id_marke": {
@@ -786,16 +786,16 @@
             "einheit": "Rupiah",
             "rolle": "fruehzeichen",
             "status": "ok",
-            "werte": 2274,
+            "werte": 2275,
             "letzter": {
-              "datum": "2026-10-12",
-              "wert": 26200.0
+              "datum": "2026-10-13",
+              "wert": 26700.0
             },
             "alter_tage": 0,
             "art": "täglich",
-            "mittel_jetzt": 24445.0,
+            "mittel_jetzt": 24470.0,
             "mittel_damals": 24242.5,
-            "veraenderung": 0.0084,
+            "veraenderung": 0.0094,
             "urteil": "ruhig"
           },
           "pflanzenoel_id_monat": {
@@ -811,7 +811,7 @@
               "datum": "2026-08-01",
               "wert": 21781.0
             },
-            "alter_tage": 72,
+            "alter_tage": 73,
             "art": "monatlich",
             "vergleich": {
               "datum": "2026-05-01",
@@ -828,16 +828,16 @@
             "einheit": "Ringgit je Tonne",
             "rolle": "tagespreis",
             "status": "ok",
-            "werte": 426,
+            "werte": 427,
             "letzter": {
-              "datum": "2026-10-08",
-              "wert": 4399.5
+              "datum": "2026-10-09",
+              "wert": 4456.5
             },
             "alter_tage": 4,
             "art": "täglich",
-            "mittel_jetzt": 4499.37,
-            "mittel_damals": 4495.18,
-            "veraenderung": 0.0009,
+            "mittel_jetzt": 4492.13,
+            "mittel_damals": 4494.42,
+            "veraenderung": -0.0005,
             "urteil": "ruhig"
           }
         }
@@ -854,5 +854,5 @@
     }
   },
   "logbuch_neu": [],
-  "laufzeit_sekunden": 305.6
+  "laufzeit_sekunden": 401.3
 }
