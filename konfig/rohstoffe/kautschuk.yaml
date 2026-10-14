@@ -69,4 +69,4 @@ preis:
 # Namenssuche nicht zu bestätigen und ist vor einem Kauf zu prüfen.
 instrumente:
   - {art: Aktie, name: "Sri Trang Agro-Industry", ticker: STA.BK, boerse: SET, hinweis: "Thailand; weitgehend reiner Naturkautschuk-Produzent. Handelbarkeit bei IBKR noch zu bestätigen."}
-  - {art: Aktie, name: "Halcyon Agri",            ticker: 5VJ.SI, boerse: SGX, hinweis: "Singapur; Naturkautschuk-Verarbeitung und -Handel. Handelbarkeit bei IBKR noch zu bestätigen."}
+  - {art: Aktie, name: "Thai Rubber Latex Group", ticker: TRUBB.BK, boerse: SET, hinweis: "Thailand; Naturkautschuk-Verarbeitung (Latexkonzentrat, Blockkautschuk). Nebenwert; Handelbarkeit bei IBKR noch zu bestätigen. Ersetzt seit 14.10.2026 Halcyon Agri (5VJ.SI), das die SGX zur Dekotierung angeordnet hat und für das Yahoo keine Kurse mehr liefert."}
