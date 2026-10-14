@@ -1,4 +1,4 @@
-Stand: 14.10.2026, 04:53
+Stand: 14.10.2026, 13:04
 Teil 1 von 1
 
 Der Anlage-Beobachter für Mittwoch, den vierzehnten Oktober. Zuerst die Ampel, dann das Klima, dann die Preise.
@@ -15,14 +15,14 @@ Die Kaskade im Indischen Ozean. Gezählt wird, was seit Beginn der El-Niño-Epis
 
 Regen auf Sumatra und Borneo in den letzten neunzig Tagen: vierzig Prozent des Normalen, das gilt als trocken. Seit Beginn der Episode lag dieser Neunzig-Tage-Regen an siebenundvierzig Tagen unter der Trockenschwelle, am tiefsten bei vierzig Prozent des Normalen. Ostafrika: Saison zu jung. Kreuzbestätigung: Westzeuge ohne Urteil.
 
-Kakao kostete im Juli fünftausendsechshundertneunzehn Dollar je Tonne, Z-Wert minus null Komma vier: der Markt schläft noch. Gegenkräfte: Ölpreis als Hintergrundpegel für Transport und Verarbeitung — bei Kakao schwächer als bei Palmöl, mangels echtem Substitut in drei Monaten sechsundzwanzig Prozent gestiegen. WisdomTree Cocoa (ETC) ist in drei Monaten fünf Prozent gefallen, Z-Wert plus null Komma acht. Barry Callebaut ist in drei Monaten acht Prozent gefallen, Z-Wert minus eins Komma fünf.
+Kakao kostete im Juli fünftausendsechshundertneunzehn Dollar je Tonne, Z-Wert minus null Komma vier: der Markt schläft noch. Gegenkräfte: Ölpreis als Hintergrundpegel für Transport und Verarbeitung — bei Kakao schwächer als bei Palmöl, mangels echtem Substitut in drei Monaten fünfundzwanzig Prozent gestiegen. WisdomTree Cocoa (ETC) ist in drei Monaten fünf Prozent gefallen, Z-Wert plus null Komma acht. Barry Callebaut ist in drei Monaten sechs Prozent gefallen, Z-Wert minus eins Komma vier.
 
-Kautschuk kostete im Juli einhundertdreißig US-Cent je Kilogramm, Z-Wert plus eins Komma acht: der Preis ist schon gelaufen. Gegenkräfte: Ölpreis (Brent) — billiges Erdöl macht synthetischen Kautschuk billig und deckelt den Naturkautschukpreis in drei Monaten sechsundzwanzig Prozent gestiegen. Sri Trang Agro-Industry ist in drei Monaten fünfundzwanzig Prozent gestiegen, Z-Wert plus eins Komma acht. Halcyon Agri: Yahoo lieferte keine Kurse für 5VJ.SI.
+Kautschuk kostete im Juli einhundertdreißig US-Cent je Kilogramm, Z-Wert plus eins Komma acht: der Preis ist schon gelaufen. Gegenkräfte: Ölpreis (Brent) — billiges Erdöl macht synthetischen Kautschuk billig und deckelt den Naturkautschukpreis in drei Monaten fünfundzwanzig Prozent gestiegen. Sri Trang Agro-Industry ist in drei Monaten dreiundzwanzig Prozent gestiegen, Z-Wert plus eins Komma acht. Thai Rubber Latex Group ist in drei Monaten vier Prozent gestiegen, Z-Wert plus eins Komma drei.
 
-Palmöl kostete im Juli eintausendeinhundertsechs Dollar je Tonne, Z-Wert plus eins Komma zwei: der Preis ist schon gelaufen. Gegenkräfte: Ölpreis (Brent) in drei Monaten sechsundzwanzig Prozent gestiegen, Sojaöl als Konkurrenzöl in drei Monaten sieben Prozent gefallen. Wilmar International ist in drei Monaten elf Prozent gefallen, Z-Wert minus null Komma acht. Golden Agri-Resources ist in drei Monaten elf Prozent gestiegen, Z-Wert plus null Komma vier. First Resources ist in drei Monaten vierundzwanzig Prozent gestiegen, Z-Wert plus eins Komma zwei. Bumitama Agri ist in drei Monaten neun Prozent gestiegen, Z-Wert plus null Komma fünf.
+Palmöl kostete im Juli eintausendeinhundertsechs Dollar je Tonne, Z-Wert plus eins Komma zwei: der Preis ist schon gelaufen. Gegenkräfte: Ölpreis (Brent) in drei Monaten fünfundzwanzig Prozent gestiegen, Sojaöl als Konkurrenzöl in drei Monaten sieben Prozent gefallen. Wilmar International ist in drei Monaten zehn Prozent gefallen, Z-Wert minus null Komma sechs. Golden Agri-Resources ist in drei Monaten neun Prozent gestiegen, Z-Wert plus null Komma zwei. First Resources ist in drei Monaten dreiundzwanzig Prozent gestiegen, Z-Wert plus eins Komma zwei. Bumitama Agri ist in drei Monaten vier Prozent gestiegen, Z-Wert plus null Komma sechs.
 
 Inlandspreise als Frühzeichen für Eingriffe der Regierung: Speiseöl lose in Indonesien: im Mittel der letzten vier Wochen eins Prozent gefallen gegenüber drei Monaten zuvor. Speiseöl in Markenflaschen in Indonesien: im Mittel der letzten vier Wochen eins Prozent gestiegen gegenüber drei Monaten zuvor. Rohpalmöl frei Werk in Malaysia: im Mittel der letzten vier Wochen kaum verändert gegenüber drei Monaten zuvor.
 
-Heute nicht erreichbar oder nicht lesbar: Yahoo 5VJ.SI. Wo es geht, stehen die Werte vom letzten erfolgreichen Abruf.
+Alle Quellen waren erreichbar.
 
 Die Zahl hinter der Farbe ist vorläufig, bis der Rückblick steht. Das ist eine Denkhilfe, keine Anlageberatung.
