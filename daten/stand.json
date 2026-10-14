@@ -1,6 +1,6 @@
 {
-  "stand": "2026-10-13T04:43:09+02:00",
-  "datum": "2026-10-13",
+  "stand": "2026-10-14T04:53:19+02:00",
+  "datum": "2026-10-14",
   "version": "0.1.0",
   "hinweis": "Denkhilfe, keine Anlageberatung. Score und Schwellen sind vorläufig, bis das Backtesting steht.",
   "zustand": "Warnung",
@@ -21,8 +21,8 @@
     "regen": {
       "name": "Open-Meteo Regen",
       "status": "ok",
-      "stand": "2026-10-11",
-      "meldung": "teilweise: Beledweyne, Somalia: ReadTimeout bei https://archive-api.open-meteo.com/v1/archive: HTTPSConnectionPool(host='archive-api.open-meteo.com', port=443): Read timed out. (read timeout=45)"
+      "stand": "2026-10-12",
+      "meldung": "teilweise: Moyale, Äthiopien: ReadTimeout bei https://archive-api.open-meteo.com/v1/archive: HTTPSConnectionPool(host='archive-api.open-meteo.com', port=443): Read timed out. (read timeout=45)"
     },
     "wind": {
       "name": "Open-Meteo Wind",
@@ -39,55 +39,55 @@
     "yahoo:BARN.SW": {
       "name": "Yahoo BARN.SW",
       "status": "ok",
-      "stand": "2026-10-09",
+      "stand": "2026-10-12",
       "meldung": null
     },
     "yahoo:BZ=F": {
       "name": "Yahoo BZ=F",
       "status": "ok",
-      "stand": "2026-10-12",
+      "stand": "2026-10-13",
       "meldung": null
     },
     "yahoo:COCO.L": {
       "name": "Yahoo COCO.L",
       "status": "ok",
-      "stand": "2026-10-09",
+      "stand": "2026-10-12",
       "meldung": null
     },
     "yahoo:E5H.SI": {
       "name": "Yahoo E5H.SI",
       "status": "ok",
-      "stand": "2026-10-09",
+      "stand": "2026-10-13",
       "meldung": null
     },
     "yahoo:EB5.SI": {
       "name": "Yahoo EB5.SI",
       "status": "ok",
-      "stand": "2026-10-09",
+      "stand": "2026-10-13",
       "meldung": null
     },
     "yahoo:F34.SI": {
       "name": "Yahoo F34.SI",
       "status": "ok",
-      "stand": "2026-10-09",
+      "stand": "2026-10-13",
       "meldung": null
     },
     "yahoo:P8Z.SI": {
       "name": "Yahoo P8Z.SI",
       "status": "ok",
-      "stand": "2026-10-09",
+      "stand": "2026-10-13",
       "meldung": null
     },
     "yahoo:STA.BK": {
       "name": "Yahoo STA.BK",
       "status": "ok",
-      "stand": "2026-10-09",
+      "stand": "2026-10-12",
       "meldung": null
     },
     "yahoo:ZL=F": {
       "name": "Yahoo ZL=F",
       "status": "ok",
-      "stand": "2026-10-12",
+      "stand": "2026-10-13",
       "meldung": null
     },
     "fred:PCOCOUSDM": {
@@ -246,7 +246,7 @@
             "erster_trockener_tag": "2026-08-22",
             "trockene_tage": 47,
             "tiefster_anteil": 0.403,
-            "tiefster_tag": "2026-10-07"
+            "tiefster_tag": "2026-09-29"
           }
         },
         "west": {
@@ -256,14 +256,14 @@
             "bis_ende": "2026-12-31",
             "status": "Saison zu jung",
             "an": null,
-            "anteil": 4.16,
-            "tage": 6,
+            "anteil": 3.315,
+            "tage": 7,
             "punkte": {
               "Nairobi, Kenia": {
                 "tage": 7,
-                "summe_mm": 2.8,
+                "summe_mm": 3.0,
                 "normal_mm": 4.4,
-                "anteil": 0.64,
+                "anteil": 0.686,
                 "bis": "2026-10-07"
               },
               "Garissa, Kenia": {
@@ -274,11 +274,11 @@
                 "bis": "2026-10-07"
               },
               "Beledweyne, Somalia": {
-                "tage": 6,
-                "summe_mm": 42.7,
-                "normal_mm": 2.9,
-                "anteil": 14.709,
-                "bis": "2026-10-06"
+                "tage": 7,
+                "summe_mm": 43.1,
+                "normal_mm": 4.1,
+                "anteil": 10.411,
+                "bis": "2026-10-07"
               },
               "Moyale, Äthiopien": {
                 "tage": 7,
@@ -289,9 +289,9 @@
               },
               "Arusha, Tansania": {
                 "tage": 7,
-                "summe_mm": 2.3,
+                "summe_mm": 2.4,
                 "normal_mm": 3.7,
-                "anteil": 0.622,
+                "anteil": 0.649,
                 "bis": "2026-10-07"
               }
             },
@@ -306,8 +306,8 @@
                 "jahr": 2026,
                 "status": "Saison zu jung",
                 "an": null,
-                "anteil": 4.16,
-                "tage": 6
+                "anteil": 3.315,
+                "tage": 7
               }
             ]
           }
@@ -396,7 +396,7 @@
         "einzeln": {
           "brent": {
             "text": "Ölpreis als Hintergrundpegel für Transport und Verarbeitung — bei Kakao schwächer als bei Palmöl, mangels echtem Substitut",
-            "veraenderung_3m": 0.267,
+            "veraenderung_3m": 0.262,
             "druck": 0.0
           }
         },
@@ -428,11 +428,11 @@
           "boerse": "LSE",
           "hinweis": "bildet den Weltmarktpreis direkt ab, keine Firma dazwischen",
           "status": "ok",
-          "kurs": 9.125,
-          "datum": "2026-10-09",
-          "z_200": 0.88,
-          "veraenderung_3m": -0.085,
-          "volumen_trend": 0.57
+          "kurs": 9.0225,
+          "datum": "2026-10-12",
+          "z_200": 0.83,
+          "veraenderung_3m": -0.046,
+          "volumen_trend": 0.54
         },
         {
           "art": "Aktie",
@@ -441,10 +441,10 @@
           "boerse": "SIX",
           "hinweis": "Verarbeiter; hoher Kakaopreis drückt die Marge — ausdrücklich Sensor, kein Kauf",
           "status": "ok",
-          "kurs": 1060.0,
-          "datum": "2026-10-09",
-          "z_200": -1.31,
-          "veraenderung_3m": -0.036,
+          "kurs": 1039.0,
+          "datum": "2026-10-12",
+          "z_200": -1.47,
+          "veraenderung_3m": -0.078,
           "volumen_trend": 1.12
         }
       ],
@@ -536,7 +536,7 @@
         "einzeln": {
           "brent": {
             "text": "Ölpreis (Brent) — billiges Erdöl macht synthetischen Kautschuk billig und deckelt den Naturkautschukpreis",
-            "veraenderung_3m": 0.267,
+            "veraenderung_3m": 0.262,
             "druck": 0.0
           }
         },
@@ -568,11 +568,11 @@
           "boerse": "SET",
           "hinweis": "Thailand; weitgehend reiner Naturkautschuk-Produzent. Handelbarkeit bei IBKR noch zu bestätigen.",
           "status": "ok",
-          "kurs": 23.6,
-          "datum": "2026-10-09",
-          "z_200": 2.01,
-          "veraenderung_3m": 0.318,
-          "volumen_trend": 0.6
+          "kurs": 22.9,
+          "datum": "2026-10-12",
+          "z_200": 1.76,
+          "veraenderung_3m": 0.251,
+          "volumen_trend": 0.59
         },
         {
           "art": "Aktie",
@@ -649,7 +649,7 @@
           "punkt": "Gegenkräfte",
           "frage": "Überwiegen die Gegenkräfte nicht?",
           "status": "ja",
-          "text": "Druck der Gegenkräfte 0.16"
+          "text": "Druck der Gegenkräfte 0.17"
         },
         {
           "nr": 4,
@@ -666,18 +666,18 @@
         "T_monate": 12
       },
       "gegenkraefte": {
-        "wert": 0.164,
+        "wert": 0.168,
         "ueberwiegen": false,
         "einzeln": {
           "brent": {
             "text": "Ölpreis (Brent)",
-            "veraenderung_3m": 0.267,
+            "veraenderung_3m": 0.262,
             "druck": 0.0
           },
           "sojaoel": {
             "text": "Sojaöl als Konkurrenzöl",
-            "veraenderung_3m": -0.066,
-            "druck": 0.328
+            "veraenderung_3m": -0.067,
+            "druck": 0.335
           }
         },
         "fehlend": []
@@ -694,7 +694,7 @@
         "einheit": "US-Dollar je Tonne"
       },
       "score": {
-        "wert": 0.106,
+        "wert": 0.105,
         "zahl": 8,
         "vorlaeufig": true,
         "fehlend": [],
@@ -708,11 +708,11 @@
           "boerse": "SGX",
           "hinweis": "vor allem Verarbeitung und Handel",
           "status": "ok",
-          "kurs": 3.55,
-          "datum": "2026-10-09",
-          "z_200": -0.38,
-          "veraenderung_3m": -0.078,
-          "volumen_trend": 0.86
+          "kurs": 3.46,
+          "datum": "2026-10-13",
+          "z_200": -0.81,
+          "veraenderung_3m": -0.111,
+          "volumen_trend": 0.95
         },
         {
           "art": "Aktie",
@@ -721,11 +721,11 @@
           "boerse": "SGX",
           "hinweis": "mit großer Verarbeitungssparte",
           "status": "ok",
-          "kurs": 0.32,
-          "datum": "2026-10-09",
-          "z_200": 1.13,
-          "veraenderung_3m": 0.164,
-          "volumen_trend": 2.08
+          "kurs": 0.305,
+          "datum": "2026-10-13",
+          "z_200": 0.4,
+          "veraenderung_3m": 0.109,
+          "volumen_trend": 1.75
         },
         {
           "art": "Aktie",
@@ -734,11 +734,11 @@
           "boerse": "SGX",
           "hinweis": "reinerer Plantagenwert",
           "status": "ok",
-          "kurs": 4.4,
-          "datum": "2026-10-09",
-          "z_200": 1.46,
-          "veraenderung_3m": 0.371,
-          "volumen_trend": 1.28
+          "kurs": 4.19,
+          "datum": "2026-10-13",
+          "z_200": 1.18,
+          "veraenderung_3m": 0.24,
+          "volumen_trend": 1.26
         },
         {
           "art": "Aktie",
@@ -747,16 +747,16 @@
           "boerse": "SGX",
           "hinweis": "reinerer Plantagenwert",
           "status": "ok",
-          "kurs": 1.95,
-          "datum": "2026-10-09",
-          "z_200": 0.79,
-          "veraenderung_3m": 0.154,
-          "volumen_trend": 1.16
+          "kurs": 1.88,
+          "datum": "2026-10-13",
+          "z_200": 0.52,
+          "veraenderung_3m": 0.087,
+          "volumen_trend": 1.09
         }
       ],
       "rueckblick": null,
       "inlandspreise": {
-        "datum": "2026-10-13",
+        "datum": "2026-10-14",
         "reihen": {
           "speiseoel_id_lose": {
             "rohstoff": "palmoel",
@@ -766,16 +766,16 @@
             "einheit": "Rupiah",
             "rolle": "fruehzeichen",
             "status": "ok",
-            "werte": 2272,
+            "werte": 2273,
             "letzter": {
-              "datum": "2026-10-13",
-              "wert": 22450.0
+              "datum": "2026-10-14",
+              "wert": 20000.0
             },
             "alter_tage": 0,
             "art": "täglich",
-            "mittel_jetzt": 20500.0,
-            "mittel_damals": 20547.5,
-            "veraenderung": -0.0023,
+            "mittel_jetzt": 20377.5,
+            "mittel_damals": 20540.0,
+            "veraenderung": -0.0079,
             "urteil": "ruhig"
           },
           "speiseoel_id_marke": {
@@ -786,16 +786,16 @@
             "einheit": "Rupiah",
             "rolle": "fruehzeichen",
             "status": "ok",
-            "werte": 2275,
+            "werte": 2276,
             "letzter": {
-              "datum": "2026-10-13",
-              "wert": 26700.0
+              "datum": "2026-10-14",
+              "wert": 24900.0
             },
             "alter_tage": 0,
             "art": "täglich",
-            "mittel_jetzt": 24470.0,
-            "mittel_damals": 24242.5,
-            "veraenderung": 0.0094,
+            "mittel_jetzt": 24385.0,
+            "mittel_damals": 24245.0,
+            "veraenderung": 0.0058,
             "urteil": "ruhig"
           },
           "pflanzenoel_id_monat": {
@@ -811,7 +811,7 @@
               "datum": "2026-08-01",
               "wert": 21781.0
             },
-            "alter_tage": 73,
+            "alter_tage": 74,
             "art": "monatlich",
             "vergleich": {
               "datum": "2026-05-01",
@@ -828,16 +828,16 @@
             "einheit": "Ringgit je Tonne",
             "rolle": "tagespreis",
             "status": "ok",
-            "werte": 427,
+            "werte": 428,
             "letzter": {
-              "datum": "2026-10-09",
-              "wert": 4456.5
+              "datum": "2026-10-12",
+              "wert": 4403.0
             },
-            "alter_tage": 4,
+            "alter_tage": 2,
             "art": "täglich",
-            "mittel_jetzt": 4492.13,
-            "mittel_damals": 4494.42,
-            "veraenderung": -0.0005,
+            "mittel_jetzt": 4481.21,
+            "mittel_damals": 4491.84,
+            "veraenderung": -0.0024,
             "urteil": "ruhig"
           }
         }
@@ -854,5 +854,5 @@
     }
   },
   "logbuch_neu": [],
-  "laufzeit_sekunden": 401.3
+  "laufzeit_sekunden": 407.4
 }
