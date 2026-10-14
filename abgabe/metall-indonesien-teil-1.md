@@ -1,21 +1,21 @@
-Stand: 14.10.2026, 01:36
+Stand: 15.10.2026, 01:35
 Teil 1 von 1
 
-Der Metall-Wächter Indonesien-Ausfuhr, Datenteil für Mittwoch, den vierzehnten Oktober. Stufen je Achse aus Fristen, US-Maßnahmen und Störungen an den Standorten. Rot setzt nur der Wächter in der Cloud, wenn eine Meldung aus Peking dazukommt. Die Wucht sagt, wie stark China ein Metall beherrscht und wie schwer es zu ersetzen ist, von null bis eins.
+Der Metall-Wächter Indonesien-Ausfuhr, Datenteil für Donnerstag, den fünfzehnten Oktober. Stufen je Achse aus Fristen, US-Maßnahmen und Störungen an den Standorten. Rot setzt nur der Wächter in der Cloud, wenn eine Meldung aus Peking dazukommt. Die Wucht sagt, wie stark China ein Metall beherrscht und wie schwer es zu ersetzen ist, von null bis eins.
 
 Nickel-Achse, der Pilot: Gelb. Anlass: Trockenheit in Sorowako, Sulawesi. Wucht null Komma drei sechs, getragen von Nickel.
 
 Zinn-Achse: Grün. Wucht null Komma zwei, getragen von Zinn.
 
-Fristen. Die Fördermengen-Quote RKAB für zweitausendsechsundzwanzig (Deckel ausdrücklich zur Preisstützung) (Bekanntmachung Nummer siebzehn) läuft am einunddreißigsten Dezember aus, in achtundsiebzig Tagen. Stand: Am zehnten Juli zweitausendsechsundzwanzig bestätigt: keine Erhöhung im laufenden Jahr. Die Quote für zweitausendsiebenundzwanzig ist die nächste Weggabelung.. Die Ausfuhrzoll und Windfall-Steuer auf gering verarbeitetes Nickel läuft am einunddreißigsten Dezember aus, in achtundsiebzig Tagen. Stand: Am siebten Mai zweitausendsechsundzwanzig bestätigt, am elften Mai zweitausendsechsundzwanzig auf unbestimmte Zeit verschoben. Wiederaufnahme ist ein Auslöser nach Izwei.. Die Export strategischer Rohstoffe nur über die Staatsfirma DSI (Single-Gate) (Bekanntmachung Nummer vierundzwanzig) läuft am ersten Januar aus, in neunundsiebzig Tagen. Stand: Seit ersten September zweitausendsechsundzwanzig in Kraft; ab zweitausendsiebenundzwanzig soll Ferronickel und NPI nur noch über Staatsfirmen laufen. Ob Zinn tatsächlich unter DSI kommt, ist offen..
+Fristen. Die Fördermengen-Quote RKAB für zweitausendsechsundzwanzig (Deckel ausdrücklich zur Preisstützung) (Bekanntmachung Nummer siebzehn) läuft am einunddreißigsten Dezember aus, in siebenundsiebzig Tagen. Stand: Am zehnten Juli zweitausendsechsundzwanzig bestätigt: keine Erhöhung im laufenden Jahr. Die Quote für zweitausendsiebenundzwanzig ist die nächste Weggabelung.. Die Ausfuhrzoll und Windfall-Steuer auf gering verarbeitetes Nickel läuft am einunddreißigsten Dezember aus, in siebenundsiebzig Tagen. Stand: Am siebten Mai zweitausendsechsundzwanzig bestätigt, am elften Mai zweitausendsechsundzwanzig auf unbestimmte Zeit verschoben. Wiederaufnahme ist ein Auslöser nach Izwei.. Die Export strategischer Rohstoffe nur über die Staatsfirma DSI (Single-Gate) (Bekanntmachung Nummer vierundzwanzig) läuft am ersten Januar aus, in achtundsiebzig Tagen. Stand: Seit ersten September zweitausendsechsundzwanzig in Kraft; ab zweitausendsiebenundzwanzig soll Ferronickel und NPI nur noch über Staatsfirmen laufen. Ob Zinn tatsächlich unter DSI kommt, ist offen..
 
-Gegenseite. In den letzten dreißig Tagen stehen vierzehn Einträge zu den Suchbegriffen im US-Bundesregister, davon keiner gewichtig.
+Gegenseite. In den letzten dreißig Tagen stehen fünfzehn Einträge zu den Suchbegriffen im US-Bundesregister, davon keiner gewichtig.
 
-Störungen an den Förder- und Hüttenstandorten. Kein Erdbeben in Reichweite der Standorte in den letzten dreißig Tagen. Kein Starkregen gemessen oder vorhergesagt. Sorowako, Sulawesi: in neunzig Tagen sechzehn Prozent des normalen Regens, das gilt als trocken.
+Störungen an den Förder- und Hüttenstandorten. Kein Erdbeben in Reichweite der Standorte in den letzten dreißig Tagen. Kein Starkregen gemessen oder vorhergesagt. Sorowako, Sulawesi: in neunzig Tagen fünfzehn Prozent des normalen Regens, das gilt als trocken.
 
-Preisprobe gegen Industriemetall-Korb (WisdomTree Industrial Metals, Vergleichsmaßstab). WisdomTree Nickel (ETC) ist in fünf Handelstagen um ein Prozent gefallen, in zwanzig um fünf Prozent gefallen, gegen den Vergleich fünf Prozentpunkte zurück. Umsatz zuletzt rund dreißigtausend Dollar am Tag, das ist dünn. Der Markt schläft noch. WisdomTree Tin (ETC).
+Preisprobe gegen Industriemetall-Korb (WisdomTree Industrial Metals, Vergleichsmaßstab). WisdomTree Nickel (ETC) ist in fünf Handelstagen um ein Prozent gefallen, in zwanzig um drei Prozent gefallen, gegen den Vergleich zwei Prozentpunkte zurück. Umsatz zuletzt rund neununddreißigtausend Dollar am Tag, das ist dünn. Der Markt schläft noch. WisdomTree Tin (ETC).
 
-Ereignis-Rückblick: Vorsprung gegen den Vergleich zwanzig Handelstage nach der Ankündigung. WisdomTree Nickel (ETC): nach Verschärfungen auf der eigenen Achse in einundzwanzig Fällen im Mittel ein Prozentpunkt zurück; nach Lockerungen in fünf Fällen im Mittel vier Prozentpunkte zurück; nach US-Maßnahmen in sieben Fällen im Mittel ein Prozentpunkt vorn. In den zwanzig Tagen davor lag der Wert zwei Prozentpunkte vorn. Nach der vorläufigen Regel nicht bestanden. WisdomTree Tin (ETC): noch keine auswertbaren Fälle.
+Ereignis-Rückblick: Vorsprung gegen den Vergleich zwanzig Handelstage nach der Ankündigung. WisdomTree Nickel (ETC): nach Verschärfungen auf der eigenen Achse in einundzwanzig Fällen im Mittel ein Prozentpunkt zurück; nach Lockerungen in sechs Fällen im Mittel vier Prozentpunkte zurück; nach US-Maßnahmen in sieben Fällen im Mittel ein Prozentpunkt vorn. In den zwanzig Tagen davor lag der Wert zwei Prozentpunkte vorn. Nach der vorläufigen Regel nicht bestanden. WisdomTree Tin (ETC): noch keine auswertbaren Fälle.
 
 Alle Quellen waren erreichbar.
 

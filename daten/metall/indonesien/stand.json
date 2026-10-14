@@ -1,6 +1,6 @@
 {
-  "stand": "2026-10-14T01:36:32+02:00",
-  "datum": "2026-10-14",
+  "stand": "2026-10-15T01:35:38+02:00",
+  "datum": "2026-10-15",
   "version": "0.1.0",
   "land": "indonesien",
   "name": "Indonesien-Ausfuhr",
@@ -31,7 +31,7 @@
         {
           "kanal": "trocken",
           "standort": "sorowako",
-          "anteil": 0.16
+          "anteil": 0.15
         }
       ],
       "kanaele": [
@@ -76,7 +76,7 @@
       "bis": "2026-12-31",
       "urspruenglich_bis": "2026-12-31",
       "verlaengert": false,
-      "tage": 78,
+      "tage": 77,
       "zustand": "läuft",
       "gelb": false,
       "rot_pruefen": false,
@@ -92,7 +92,7 @@
       "bis": "2026-12-31",
       "urspruenglich_bis": "2026-12-31",
       "verlaengert": false,
-      "tage": 78,
+      "tage": 77,
       "zustand": "läuft",
       "gelb": false,
       "rot_pruefen": false,
@@ -109,7 +109,7 @@
       "bis": "2027-01-01",
       "urspruenglich_bis": "2027-01-01",
       "verlaengert": false,
-      "tage": 79,
+      "tage": 78,
       "zustand": "läuft",
       "gelb": false,
       "rot_pruefen": false,
@@ -120,6 +120,30 @@
     "herkunft": "frisch",
     "tage": 30,
     "dokumente": [
+      {
+        "nummer": "2026-20897",
+        "titel": "Certain Corrosion-Resistant Steel Products From Taiwan: Preliminary Results and Rescission, in Part, of Antidumping Duty Administrative Review; 2024-2025",
+        "datum": "2026-10-14",
+        "art": "Notice",
+        "behoerden": [
+          "commerce-department",
+          "international-trade-administration"
+        ],
+        "behoerden_namen": [
+          "Commerce Department",
+          "International Trade Administration"
+        ],
+        "url": "https://www.federalregister.gov/documents/2026/10/14/2026-20897/certain-corrosion-resistant-steel-products-from-taiwan-preliminary-results-and-rescission-in-part-of",
+        "zusammenfassung": "The U.S. Department of Commerce (Commerce) preliminarily determines that certain corrosion-resistant steel products (CORE) from Taiwan are being sold in the United States at below normal value during the period of review (POR), July 1, 2024, through June 30, 2025. We invite interested parties to comment on these preliminary results.",
+        "begriffe": [
+          "nickel"
+        ],
+        "achsen": [
+          "nickel"
+        ],
+        "gewichtig": false,
+        "neu": true
+      },
       {
         "nummer": "2026-20816",
         "titel": "Welded Stainless Steel Pressure Pipe From the Socialist Republic of Vietnam: Preliminary Results of and Intent To Rescind, in Part, Antidumping Duty Administrative Review; 2024-2025",
@@ -465,26 +489,26 @@
   },
   "stoerung": {
     "erdbeben": [],
-    "erdbeben_gesamt": 11,
+    "erdbeben_gesamt": 10,
     "starkregen_gemessen": [],
     "starkregen_vorhergesagt": [],
     "regen_hoechst_mm": {
       "morowali": 6.6,
       "weda_bay": 28.5,
-      "sorowako": 5.1,
-      "pomalaa": 0.8,
-      "bangka": 8.4,
-      "belitung": 8.5,
+      "sorowako": 4.9,
+      "pomalaa": 0.3,
+      "bangka": 10.4,
+      "belitung": 17.8,
       "muntok": 6.3
     },
     "trocken": {
       "sorowako": {
-        "von": "2026-07-09",
-        "bis": "2026-10-06",
-        "summe_mm": 85,
+        "von": "2026-07-10",
+        "bis": "2026-10-07",
+        "summe_mm": 82,
         "normal_mm": 545,
         "urteil": "trocken",
-        "anteil": 0.16,
+        "anteil": 0.15,
         "trocken": true
       }
     },
@@ -497,16 +521,16 @@
       "rolle": "beobachtung",
       "hinweis": "bildet den LME-Nickelpreis ab, kein Länderrisiko, keine Verwässerung",
       "waehrung": "USD",
-      "letzter": "2026-10-12",
-      "schluss": 13.48,
+      "letzter": "2026-10-13",
+      "schluss": 13.4775,
       "alter_tage": 2,
-      "r_kurz": -0.0092,
-      "vorsprung_kurz": -0.01,
-      "r_lang": -0.0497,
-      "vorsprung_lang": -0.0518,
+      "r_kurz": -0.0065,
+      "vorsprung_kurz": -0.0029,
+      "r_lang": -0.0265,
+      "vorsprung_lang": -0.0249,
       "urteil": "schläft",
       "markt_schlaeft": true,
-      "handel": 30166,
+      "handel": 39082,
       "duenn": true
     },
     "TINM.L": {
@@ -515,8 +539,8 @@
       "rolle": "beobachtung",
       "hinweis": "bildet den LME-Zinnpreis ab",
       "waehrung": "USD",
-      "letzter": "2026-10-13",
-      "schluss": 118.57,
+      "letzter": "2026-10-14",
+      "schluss": 116.175,
       "alter_tage": 1,
       "r_kurz": null,
       "vorsprung_kurz": null,
@@ -563,22 +587,22 @@
           "trefferquote": 0.0
         },
         "lockerung_eigene": {
-          "n": 5,
-          "offen": 1,
+          "n": 6,
+          "offen": 0,
           "v0": -0.0101,
           "v5": -0.0284,
-          "v20": -0.0353,
+          "v20": -0.0375,
           "v60": -0.073,
           "v_vorlauf": -0.0399,
           "treffer": 0,
           "trefferquote": 0.0
         },
         "lockerung_alle": {
-          "n": 6,
-          "offen": 1,
+          "n": 7,
+          "offen": 0,
           "v0": -0.0094,
           "v5": -0.0231,
-          "v20": -0.0431,
+          "v20": -0.0439,
           "v60": -0.076,
           "v_vorlauf": -0.0214,
           "treffer": 0,

@@ -1,6 +1,6 @@
 {
-  "stand": "2026-10-14T01:38:15+02:00",
-  "datum": "2026-10-14",
+  "stand": "2026-10-15T01:37:22+02:00",
+  "datum": "2026-10-15",
   "version": "0.1.0",
   "land": "marokko",
   "name": "Marokko-Phosphat",
@@ -56,7 +56,7 @@
       "bis": "2027-12-31",
       "urspruenglich_bis": "2027-12-31",
       "verlaengert": false,
-      "tage": 443,
+      "tage": 442,
       "zustand": "läuft",
       "gelb": false,
       "rot_pruefen": false,
@@ -72,7 +72,7 @@
       "bis": "2027-12-31",
       "urspruenglich_bis": "2027-12-31",
       "verlaengert": false,
-      "tage": 443,
+      "tage": 442,
       "zustand": "läuft",
       "gelb": false,
       "rot_pruefen": false,
@@ -88,7 +88,7 @@
       "bis": "2027-10-03",
       "urspruenglich_bis": "2027-10-03",
       "verlaengert": false,
-      "tage": 354,
+      "tage": 353,
       "zustand": "läuft",
       "gelb": false,
       "rot_pruefen": false,
@@ -99,6 +99,54 @@
     "herkunft": "frisch",
     "tage": 30,
     "dokumente": [
+      {
+        "nummer": "2026-20899",
+        "titel": "Xanthan Gum From the People's Republic of China: Preliminary Results and Rescission, in Part, of Antidumping Duty Administrative Review; 2024-2025",
+        "datum": "2026-10-14",
+        "art": "Notice",
+        "behoerden": [
+          "commerce-department",
+          "international-trade-administration"
+        ],
+        "behoerden_namen": [
+          "Commerce Department",
+          "International Trade Administration"
+        ],
+        "url": "https://www.federalregister.gov/documents/2026/10/14/2026-20899/xanthan-gum-from-the-peoples-republic-of-china-preliminary-results-and-rescission-in-part-of",
+        "zusammenfassung": "The U.S. Department of Commerce (Commerce) preliminarily determines that exporters subject to this review made sales of subject merchandise at less than normal value during the period of review (POR), July 1, 2024, through June 30, 2025. In addition, we are rescinding the review with respect to CP Kelco (Shandong) Biological Company Limited (CP Kelco Shandong), Deosen Biochemical Ltd., Langfang Meihua Biotechnology Co., Ltd., Meihua Group International Trading (Hong Kong), Meihua Group International Trading (Hong Kong) Limited, and Xinjiang Meihua Amino Acid Co., Ltd. Interested parties are in",
+        "begriffe": [
+          "fertilizer"
+        ],
+        "achsen": [
+          "duenger"
+        ],
+        "gewichtig": false,
+        "neu": true
+      },
+      {
+        "nummer": "2026-20898",
+        "titel": "Certain Steel Nails From Malaysia: Preliminary Results and Rescission, in Part, of Antidumping Duty Administrative Review; 2024-2025",
+        "datum": "2026-10-14",
+        "art": "Notice",
+        "behoerden": [
+          "commerce-department",
+          "international-trade-administration"
+        ],
+        "behoerden_namen": [
+          "Commerce Department",
+          "International Trade Administration"
+        ],
+        "url": "https://www.federalregister.gov/documents/2026/10/14/2026-20898/certain-steel-nails-from-malaysia-preliminary-results-and-rescission-in-part-of-antidumping-duty",
+        "zusammenfassung": "The U.S. Department of Commerce (Commerce) preliminarily finds that producers/exporters subject to this administrative review made sales of subject merchandise at less than normal value (NV) during the period of review (POR), July 1, 2024, through June 30, 2025. In addition, we are rescinding the review with respect to 40 companies. Interested parties are invited to comment on these preliminary results of review.",
+        "begriffe": [
+          "fertilizer"
+        ],
+        "achsen": [
+          "duenger"
+        ],
+        "gewichtig": false,
+        "neu": true
+      },
       {
         "nummer": "2026-20816",
         "titel": "Welded Stainless Steel Pressure Pipe From the Socialist Republic of Vietnam: Preliminary Results of and Intent To Rescind, in Part, Antidumping Duty Administrative Review; 2024-2025",
@@ -408,102 +456,6 @@
         ],
         "gewichtig": false,
         "neu": false
-      },
-      {
-        "nummer": "2026-18719",
-        "titel": "Glycine From India: Preliminary Results and Rescission, in Part, of Countervailing Duty Administrative Review; 2024",
-        "datum": "2026-09-14",
-        "art": "Notice",
-        "behoerden": [
-          "commerce-department",
-          "international-trade-administration"
-        ],
-        "behoerden_namen": [
-          "Commerce Department",
-          "International Trade Administration"
-        ],
-        "url": "https://www.federalregister.gov/documents/2026/09/14/2026-18719/glycine-from-india-preliminary-results-and-rescission-in-part-of-countervailing-duty-administrative",
-        "zusammenfassung": "The U.S. Department of Commerce (Commerce) preliminarily determines that countervailable subsidies were provided to producers and exporters of glycine from India. In addition, Commerce is rescinding this review, in part, with respect to 27 companies. The period of review (POR) is January 1, 2024, through December 31, 2024. Interested parties are invited to comment on these preliminary results.",
-        "begriffe": [
-          "fertilizer"
-        ],
-        "achsen": [
-          "duenger"
-        ],
-        "gewichtig": false,
-        "neu": false
-      },
-      {
-        "nummer": "2026-18718",
-        "titel": "Raw Honey From Brazil: Preliminary Results of Antidumping Duty Administrative Review; 2024-2025",
-        "datum": "2026-09-14",
-        "art": "Notice",
-        "behoerden": [
-          "commerce-department",
-          "international-trade-administration"
-        ],
-        "behoerden_namen": [
-          "Commerce Department",
-          "International Trade Administration"
-        ],
-        "url": "https://www.federalregister.gov/documents/2026/09/14/2026-18718/raw-honey-from-brazil-preliminary-results-of-antidumping-duty-administrative-review-2024-2025",
-        "zusammenfassung": "The U.S. Department of Commerce (Commerce) preliminarily determines that Melbras Importadora E Exportadora Agroind[uacute]stria Ltda. (Melbras) and Minamel Agroind[uacute]stria Ltda. (Minamel) made sales of subject merchandise at less than normal value (NV) during the period of review (POR), June 1, 2024, through May 31, 2025. In addition, we are rescinding the review with respect to 11 companies. Interested parties are invited to comment on these preliminary results of review.",
-        "begriffe": [
-          "fertilizer"
-        ],
-        "achsen": [
-          "duenger"
-        ],
-        "gewichtig": false,
-        "neu": false
-      },
-      {
-        "nummer": "2026-18702",
-        "titel": "Raw Honey From the Socialist Republic of Vietnam: Preliminary Results and Rescission, in Part, of Antidumping Duty Administrative Review; 2024-2025",
-        "datum": "2026-09-14",
-        "art": "Notice",
-        "behoerden": [
-          "commerce-department",
-          "international-trade-administration"
-        ],
-        "behoerden_namen": [
-          "Commerce Department",
-          "International Trade Administration"
-        ],
-        "url": "https://www.federalregister.gov/documents/2026/09/14/2026-18702/raw-honey-from-the-socialist-republic-of-vietnam-preliminary-results-and-rescission-in-part-of",
-        "zusammenfassung": "The U.S. Department of Commerce (Commerce) preliminarily determines that exporters subject to this review made sales of subject merchandise at less than normal value (NV) during the period of review (POR), June 1, 2024, through May 31, 2025. In addition, we are rescinding the review with respect to 17 companies. Interested parties are invited to comment on these preliminary results of review.",
-        "begriffe": [
-          "fertilizer"
-        ],
-        "achsen": [
-          "duenger"
-        ],
-        "gewichtig": false,
-        "neu": false
-      },
-      {
-        "nummer": "2026-18700",
-        "titel": "Certain Quartz Surface Product From India: Preliminary Results, Intent To Rescind, in Part, and Rescission, in Part of Antidumping Duty Administrative Review; 2024-2025",
-        "datum": "2026-09-14",
-        "art": "Notice",
-        "behoerden": [
-          "commerce-department",
-          "international-trade-administration"
-        ],
-        "behoerden_namen": [
-          "Commerce Department",
-          "International Trade Administration"
-        ],
-        "url": "https://www.federalregister.gov/documents/2026/09/14/2026-18700/certain-quartz-surface-product-from-india-preliminary-results-intent-to-rescind-in-part-and",
-        "zusammenfassung": "The U.S. Department of Commerce (Commerce) preliminarily determines that Cuarzo and Beyyond Rocks Private Limited (Beyyond) (collectively, Cuarzo/Beyyond) made sales of subject merchandise at less than normal value (NV) during the period of review (POR), June 1, 2024, through May 31, 2025. Additionally, Commerce preliminarily determines that Pokarna Engineered Stone Limited (PESL) did not make sales of subject merchandise at less than NV during the POR. Furthermore, we are rescinding the review with respect to 53 companies and intend to rescind the review with respect to four companies. Intere",
-        "begriffe": [
-          "fertilizer"
-        ],
-        "achsen": [
-          "duenger"
-        ],
-        "gewichtig": false,
-        "neu": false
       }
     ]
   },
@@ -517,7 +469,7 @@
       "benguerir": 8.3,
       "jorf_lasfar": 3.8,
       "safi": 3.5,
-      "bou_craa": 0.1,
+      "bou_craa": 0.0,
       "laayoune": 0.2
     },
     "trocken": {},
@@ -530,13 +482,13 @@
       "rolle": "sensor",
       "hinweis": "Kanada; größter Düngemittelkonzern, aber schwerpunktmäßig Kali — verwässert",
       "waehrung": "USD",
-      "letzter": "2026-10-13",
-      "schluss": 69.68,
+      "letzter": "2026-10-14",
+      "schluss": 69.87,
       "alter_tage": 1,
-      "r_kurz": -0.0213,
-      "vorsprung_kurz": -0.0221,
-      "r_lang": -0.1148,
-      "vorsprung_lang": -0.1169,
+      "r_kurz": -0.0014,
+      "vorsprung_kurz": 0.0022,
+      "r_lang": -0.1005,
+      "vorsprung_lang": -0.0989,
       "urteil": "schläft",
       "markt_schlaeft": true,
       "handel": 185809493,
@@ -548,13 +500,13 @@
       "rolle": "sensor",
       "hinweis": "USA; Phosphat und Kali, zugleich Kläger in den Ausgleichszollverfahren gegen OCP",
       "waehrung": "USD",
-      "letzter": "2026-10-13",
-      "schluss": 19.18,
+      "letzter": "2026-10-14",
+      "schluss": 19.01,
       "alter_tage": 1,
-      "r_kurz": -0.084,
-      "vorsprung_kurz": -0.0848,
-      "r_lang": -0.2467,
-      "vorsprung_lang": -0.2487,
+      "r_kurz": -0.0481,
+      "vorsprung_kurz": -0.0445,
+      "r_lang": -0.2332,
+      "vorsprung_lang": -0.2315,
       "urteil": "schläft",
       "markt_schlaeft": true,
       "handel": 183976000,
