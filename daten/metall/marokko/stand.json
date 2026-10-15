@@ -1,6 +1,6 @@
 {
-  "stand": "2026-10-15T01:37:22+02:00",
-  "datum": "2026-10-15",
+  "stand": "2026-10-16T01:36:20+02:00",
+  "datum": "2026-10-16",
   "version": "0.1.0",
   "land": "marokko",
   "name": "Marokko-Phosphat",
@@ -56,7 +56,7 @@
       "bis": "2027-12-31",
       "urspruenglich_bis": "2027-12-31",
       "verlaengert": false,
-      "tage": 442,
+      "tage": 441,
       "zustand": "läuft",
       "gelb": false,
       "rot_pruefen": false,
@@ -72,7 +72,7 @@
       "bis": "2027-12-31",
       "urspruenglich_bis": "2027-12-31",
       "verlaengert": false,
-      "tage": 442,
+      "tage": 441,
       "zustand": "läuft",
       "gelb": false,
       "rot_pruefen": false,
@@ -88,7 +88,7 @@
       "bis": "2027-10-03",
       "urspruenglich_bis": "2027-10-03",
       "verlaengert": false,
-      "tage": 353,
+      "tage": 352,
       "zustand": "läuft",
       "gelb": false,
       "rot_pruefen": false,
@@ -121,7 +121,7 @@
           "duenger"
         ],
         "gewichtig": false,
-        "neu": true
+        "neu": false
       },
       {
         "nummer": "2026-20898",
@@ -145,7 +145,7 @@
           "duenger"
         ],
         "gewichtig": false,
-        "neu": true
+        "neu": false
       },
       {
         "nummer": "2026-20816",
@@ -432,30 +432,6 @@
         ],
         "gewichtig": false,
         "neu": false
-      },
-      {
-        "nummer": "2026-18791",
-        "titel": "Certain Steel Racks and Parts Thereof From the People's Republic of China: Final Results and Rescission, in Part, of Antidumping Duty Administrative Review; 2023-2024",
-        "datum": "2026-09-15",
-        "art": "Notice",
-        "behoerden": [
-          "commerce-department",
-          "international-trade-administration"
-        ],
-        "behoerden_namen": [
-          "Commerce Department",
-          "International Trade Administration"
-        ],
-        "url": "https://www.federalregister.gov/documents/2026/09/15/2026-18791/certain-steel-racks-and-parts-thereof-from-the-peoples-republic-of-china-final-results-and",
-        "zusammenfassung": "The U.S. Department of Commerce (Commerce) determines that the exporters under review either sold certain steel racks and parts thereof (steel racks) from the People's Republic of China (China) in the United States at prices below normal value (NV) during the period of review (POR) September 1, 2023, through August 31, 2024, or have not established their eligibility for a separate rate and are part of the China-wide entity.",
-        "begriffe": [
-          "fertilizer"
-        ],
-        "achsen": [
-          "duenger"
-        ],
-        "gewichtig": false,
-        "neu": false
       }
     ]
   },
@@ -469,8 +445,8 @@
       "benguerir": 8.3,
       "jorf_lasfar": 3.8,
       "safi": 3.5,
-      "bou_craa": 0.0,
-      "laayoune": 0.2
+      "bou_craa": 9.8,
+      "laayoune": 6.8
     },
     "trocken": {},
     "gelb_tage": 30
@@ -482,16 +458,16 @@
       "rolle": "sensor",
       "hinweis": "Kanada; größter Düngemittelkonzern, aber schwerpunktmäßig Kali — verwässert",
       "waehrung": "USD",
-      "letzter": "2026-10-14",
-      "schluss": 69.87,
+      "letzter": "2026-10-15",
+      "schluss": 69.58,
       "alter_tage": 1,
-      "r_kurz": -0.0014,
-      "vorsprung_kurz": 0.0022,
-      "r_lang": -0.1005,
-      "vorsprung_lang": -0.0989,
+      "r_kurz": -0.0042,
+      "vorsprung_kurz": 0.0092,
+      "r_lang": -0.1183,
+      "vorsprung_lang": -0.0979,
       "urteil": "schläft",
       "markt_schlaeft": true,
-      "handel": 185809493,
+      "handel": 188065481,
       "duenn": false
     },
     "MOS": {
@@ -500,13 +476,13 @@
       "rolle": "sensor",
       "hinweis": "USA; Phosphat und Kali, zugleich Kläger in den Ausgleichszollverfahren gegen OCP",
       "waehrung": "USD",
-      "letzter": "2026-10-14",
-      "schluss": 19.01,
+      "letzter": "2026-10-15",
+      "schluss": 18.95,
       "alter_tage": 1,
-      "r_kurz": -0.0481,
-      "vorsprung_kurz": -0.0445,
-      "r_lang": -0.2332,
-      "vorsprung_lang": -0.2315,
+      "r_kurz": -0.0395,
+      "vorsprung_kurz": -0.0262,
+      "r_lang": -0.2536,
+      "vorsprung_lang": -0.2332,
       "urteil": "schläft",
       "markt_schlaeft": true,
       "handel": 183976000,

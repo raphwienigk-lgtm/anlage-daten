@@ -1,6 +1,6 @@
 {
-  "stand": "2026-10-15T01:35:38+02:00",
-  "datum": "2026-10-15",
+  "stand": "2026-10-16T01:34:35+02:00",
+  "datum": "2026-10-16",
   "version": "0.1.0",
   "land": "indonesien",
   "name": "Indonesien-Ausfuhr",
@@ -76,7 +76,7 @@
       "bis": "2026-12-31",
       "urspruenglich_bis": "2026-12-31",
       "verlaengert": false,
-      "tage": 77,
+      "tage": 76,
       "zustand": "läuft",
       "gelb": false,
       "rot_pruefen": false,
@@ -92,7 +92,7 @@
       "bis": "2026-12-31",
       "urspruenglich_bis": "2026-12-31",
       "verlaengert": false,
-      "tage": 77,
+      "tage": 76,
       "zustand": "läuft",
       "gelb": false,
       "rot_pruefen": false,
@@ -109,7 +109,7 @@
       "bis": "2027-01-01",
       "urspruenglich_bis": "2027-01-01",
       "verlaengert": false,
-      "tage": 78,
+      "tage": 77,
       "zustand": "läuft",
       "gelb": false,
       "rot_pruefen": false,
@@ -142,7 +142,7 @@
           "nickel"
         ],
         "gewichtig": false,
-        "neu": true
+        "neu": false
       },
       {
         "nummer": "2026-20816",
@@ -460,36 +460,12 @@
         ],
         "gewichtig": false,
         "neu": false
-      },
-      {
-        "nummer": "2026-18792",
-        "titel": "Tin Mill Products From the People's Republic of China: Preliminary Affirmative Countervailing Duty Determination, Preliminary Affirmative Critical Circumstances Determination, and Alignment of Final Determination With Final Antidumping Duty Determination",
-        "datum": "2026-09-15",
-        "art": "Notice",
-        "behoerden": [
-          "commerce-department",
-          "international-trade-administration"
-        ],
-        "behoerden_namen": [
-          "Commerce Department",
-          "International Trade Administration"
-        ],
-        "url": "https://www.federalregister.gov/documents/2026/09/15/2026-18792/tin-mill-products-from-the-peoples-republic-of-china-preliminary-affirmative-countervailing-duty",
-        "zusammenfassung": "The U.S. Department of Commerce (Commerce) preliminarily determines that countervailable subsidies are being provided to producers and exporters of tin mill products from the People's Republic of China (China). The period of investigation is January 1, 2025, through December 31, 2025. Interested parties are invited to comment on this preliminary determination.",
-        "begriffe": [
-          "tin"
-        ],
-        "achsen": [
-          "zinn"
-        ],
-        "gewichtig": false,
-        "neu": false
       }
     ]
   },
   "stoerung": {
     "erdbeben": [],
-    "erdbeben_gesamt": 10,
+    "erdbeben_gesamt": 9,
     "starkregen_gemessen": [],
     "starkregen_vorhergesagt": [],
     "regen_hoechst_mm": {
@@ -497,16 +473,16 @@
       "weda_bay": 28.5,
       "sorowako": 4.9,
       "pomalaa": 0.3,
-      "bangka": 10.4,
-      "belitung": 17.8,
+      "bangka": 6.2,
+      "belitung": 7.9,
       "muntok": 6.3
     },
     "trocken": {
       "sorowako": {
-        "von": "2026-07-10",
-        "bis": "2026-10-07",
-        "summe_mm": 82,
-        "normal_mm": 545,
+        "von": "2026-07-11",
+        "bis": "2026-10-08",
+        "summe_mm": 80,
+        "normal_mm": 542,
         "urteil": "trocken",
         "anteil": 0.15,
         "trocken": true
@@ -521,13 +497,13 @@
       "rolle": "beobachtung",
       "hinweis": "bildet den LME-Nickelpreis ab, kein Länderrisiko, keine Verwässerung",
       "waehrung": "USD",
-      "letzter": "2026-10-13",
-      "schluss": 13.4775,
+      "letzter": "2026-10-14",
+      "schluss": 13.44,
       "alter_tage": 2,
-      "r_kurz": -0.0065,
-      "vorsprung_kurz": -0.0029,
-      "r_lang": -0.0265,
-      "vorsprung_lang": -0.0249,
+      "r_kurz": -0.0129,
+      "vorsprung_kurz": 0.0005,
+      "r_lang": -0.0393,
+      "vorsprung_lang": -0.0189,
       "urteil": "schläft",
       "markt_schlaeft": true,
       "handel": 39082,
@@ -539,11 +515,11 @@
       "rolle": "beobachtung",
       "hinweis": "bildet den LME-Zinnpreis ab",
       "waehrung": "USD",
-      "letzter": "2026-10-14",
-      "schluss": 116.175,
+      "letzter": "2026-10-15",
+      "schluss": 115.85,
       "alter_tage": 1,
-      "r_kurz": null,
-      "vorsprung_kurz": null,
+      "r_kurz": -0.0216,
+      "vorsprung_kurz": -0.0082,
       "r_lang": null,
       "vorsprung_lang": null,
       "urteil": "ohne Vergleich",
