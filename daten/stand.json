@@ -1,6 +1,6 @@
 {
-  "stand": "2026-10-14T13:04:07+02:00",
-  "datum": "2026-10-14",
+  "stand": "2026-10-15T04:56:01+02:00",
+  "datum": "2026-10-15",
   "version": "0.1.0",
   "hinweis": "Denkhilfe, keine Anlageberatung. Score und Schwellen sind vorläufig, bis das Backtesting steht.",
   "zustand": "in Ordnung",
@@ -21,8 +21,8 @@
     "regen": {
       "name": "Open-Meteo Regen",
       "status": "ok",
-      "stand": "2026-10-12",
-      "meldung": "teilweise: Moyale, Äthiopien: ReadTimeout bei https://archive-api.open-meteo.com/v1/archive: HTTPSConnectionPool(host='archive-api.open-meteo.com', port=443): Read timed out. (read timeout=45)"
+      "stand": "2026-10-13",
+      "meldung": null
     },
     "wind": {
       "name": "Open-Meteo Wind",
@@ -39,13 +39,13 @@
     "yahoo:BZ=F": {
       "name": "Yahoo BZ=F",
       "status": "ok",
-      "stand": "2026-10-13",
+      "stand": "2026-10-14",
       "meldung": null
     },
     "yahoo:COCO.L": {
       "name": "Yahoo COCO.L",
       "status": "ok",
-      "stand": "2026-10-12",
+      "stand": "2026-10-13",
       "meldung": null
     },
     "yahoo:E5H.SI": {
@@ -87,7 +87,7 @@
     "yahoo:ZL=F": {
       "name": "Yahoo ZL=F",
       "status": "ok",
-      "stand": "2026-10-13",
+      "stand": "2026-10-14",
       "meldung": null
     },
     "fred:PCOCOUSDM": {
@@ -196,44 +196,44 @@
           "aktuell": {
             "status": "gemessen",
             "an": true,
-            "anteil": 0.403,
+            "anteil": 0.406,
             "zeitraum_tage": 90,
-            "bis": "2026-10-07",
+            "bis": "2026-10-08",
             "punkte": {
               "Riau, Sumatra": {
                 "tage": 90,
-                "summe_mm": 325.2,
-                "normal_mm": 491.7,
-                "anteil": 0.661,
-                "bis": "2026-10-07"
+                "summe_mm": 327.0,
+                "normal_mm": 494.1,
+                "anteil": 0.662,
+                "bis": "2026-10-08"
               },
               "Jambi, Sumatra": {
                 "tage": 90,
-                "summe_mm": 77.7,
-                "normal_mm": 395.4,
-                "anteil": 0.196,
-                "bis": "2026-10-07"
+                "summe_mm": 77.6,
+                "normal_mm": 398.7,
+                "anteil": 0.195,
+                "bis": "2026-10-08"
               },
               "Zentral-Kalimantan": {
                 "tage": 90,
                 "summe_mm": 29.6,
-                "normal_mm": 318.4,
-                "anteil": 0.093,
-                "bis": "2026-10-07"
+                "normal_mm": 322.4,
+                "anteil": 0.092,
+                "bis": "2026-10-08"
               },
               "West-Kalimantan": {
                 "tage": 90,
-                "summe_mm": 245.6,
-                "normal_mm": 519.0,
-                "anteil": 0.473,
-                "bis": "2026-10-07"
+                "summe_mm": 254.8,
+                "normal_mm": 526.5,
+                "anteil": 0.484,
+                "bis": "2026-10-08"
               },
               "Sabah": {
                 "tage": 90,
-                "summe_mm": 284.7,
-                "normal_mm": 481.4,
-                "anteil": 0.591,
-                "bis": "2026-10-07"
+                "summe_mm": 287.0,
+                "normal_mm": 481.3,
+                "anteil": 0.596,
+                "bis": "2026-10-08"
               }
             },
             "fehlend": []
@@ -242,9 +242,9 @@
             "status": "gemessen",
             "an": true,
             "ab": "2026-05-16",
-            "bis": "2026-10-07",
+            "bis": "2026-10-08",
             "erster_trockener_tag": "2026-08-22",
-            "trockene_tage": 47,
+            "trockene_tage": 48,
             "tiefster_anteil": 0.403,
             "tiefster_tag": "2026-09-29"
           }
@@ -256,43 +256,43 @@
             "bis_ende": "2026-12-31",
             "status": "Saison zu jung",
             "an": null,
-            "anteil": 3.315,
-            "tage": 7,
+            "anteil": 3.085,
+            "tage": 8,
             "punkte": {
               "Nairobi, Kenia": {
-                "tage": 7,
-                "summe_mm": 3.0,
-                "normal_mm": 4.4,
-                "anteil": 0.686,
-                "bis": "2026-10-07"
+                "tage": 8,
+                "summe_mm": 5.9,
+                "normal_mm": 4.7,
+                "anteil": 1.269,
+                "bis": "2026-10-08"
               },
               "Garissa, Kenia": {
-                "tage": 7,
-                "summe_mm": 3.9,
-                "normal_mm": 1.2,
-                "anteil": 3.194,
-                "bis": "2026-10-07"
+                "tage": 8,
+                "summe_mm": 4.2,
+                "normal_mm": 1.4,
+                "anteil": 3.026,
+                "bis": "2026-10-08"
               },
               "Beledweyne, Somalia": {
-                "tage": 7,
-                "summe_mm": 43.1,
-                "normal_mm": 4.1,
-                "anteil": 10.411,
-                "bis": "2026-10-07"
+                "tage": 8,
+                "summe_mm": 43.6,
+                "normal_mm": 5.5,
+                "anteil": 7.927,
+                "bis": "2026-10-08"
               },
               "Moyale, Äthiopien": {
-                "tage": 7,
-                "summe_mm": 19.9,
-                "normal_mm": 12.2,
-                "anteil": 1.633,
-                "bis": "2026-10-07"
+                "tage": 8,
+                "summe_mm": 23.4,
+                "normal_mm": 13.6,
+                "anteil": 1.718,
+                "bis": "2026-10-08"
               },
               "Arusha, Tansania": {
-                "tage": 7,
-                "summe_mm": 2.4,
-                "normal_mm": 3.7,
-                "anteil": 0.649,
-                "bis": "2026-10-07"
+                "tage": 8,
+                "summe_mm": 6.2,
+                "normal_mm": 4.2,
+                "anteil": 1.486,
+                "bis": "2026-10-08"
               }
             },
             "fehlend": [],
@@ -306,8 +306,8 @@
                 "jahr": 2026,
                 "status": "Saison zu jung",
                 "an": null,
-                "anteil": 3.315,
-                "tage": 7
+                "anteil": 3.085,
+                "tage": 8
               }
             ]
           }
@@ -396,7 +396,7 @@
         "einzeln": {
           "brent": {
             "text": "Ölpreis als Hintergrundpegel für Transport und Verarbeitung — bei Kakao schwächer als bei Palmöl, mangels echtem Substitut",
-            "veraenderung_3m": 0.247,
+            "veraenderung_3m": 0.226,
             "druck": 0.0
           }
         },
@@ -428,11 +428,11 @@
           "boerse": "LSE",
           "hinweis": "bildet den Weltmarktpreis direkt ab, keine Firma dazwischen",
           "status": "ok",
-          "kurs": 9.0225,
-          "datum": "2026-10-12",
-          "z_200": 0.83,
-          "veraenderung_3m": -0.046,
-          "volumen_trend": 0.54
+          "kurs": 9.1938,
+          "datum": "2026-10-13",
+          "z_200": 0.94,
+          "veraenderung_3m": -0.012,
+          "volumen_trend": 0.59
         },
         {
           "art": "Aktie",
@@ -536,7 +536,7 @@
         "einzeln": {
           "brent": {
             "text": "Ölpreis (Brent) — billiges Erdöl macht synthetischen Kautschuk billig und deckelt den Naturkautschukpreis",
-            "veraenderung_3m": 0.247,
+            "veraenderung_3m": 0.226,
             "druck": 0.0
           }
         },
@@ -654,7 +654,7 @@
           "punkt": "Gegenkräfte",
           "frage": "Überwiegen die Gegenkräfte nicht?",
           "status": "ja",
-          "text": "Druck der Gegenkräfte 0.18"
+          "text": "Druck der Gegenkräfte 0.21"
         },
         {
           "nr": 4,
@@ -671,18 +671,18 @@
         "T_monate": 12
       },
       "gegenkraefte": {
-        "wert": 0.184,
+        "wert": 0.215,
         "ueberwiegen": false,
         "einzeln": {
           "brent": {
             "text": "Ölpreis (Brent)",
-            "veraenderung_3m": 0.247,
+            "veraenderung_3m": 0.226,
             "druck": 0.0
           },
           "sojaoel": {
             "text": "Sojaöl als Konkurrenzöl",
-            "veraenderung_3m": -0.074,
-            "druck": 0.368
+            "veraenderung_3m": -0.086,
+            "druck": 0.431
           }
         },
         "fehlend": []
@@ -699,7 +699,7 @@
         "einheit": "US-Dollar je Tonne"
       },
       "score": {
-        "wert": 0.101,
+        "wert": 0.093,
         "zahl": 8,
         "vorlaeufig": true,
         "fehlend": [],
@@ -761,7 +761,7 @@
       ],
       "rueckblick": null,
       "inlandspreise": {
-        "datum": "2026-10-14",
+        "datum": "2026-10-15",
         "reihen": {
           "speiseoel_id_lose": {
             "rohstoff": "palmoel",
@@ -771,16 +771,16 @@
             "einheit": "Rupiah",
             "rolle": "fruehzeichen",
             "status": "ok",
-            "werte": 2273,
+            "werte": 2274,
             "letzter": {
-              "datum": "2026-10-14",
-              "wert": 20000.0
+              "datum": "2026-10-15",
+              "wert": 24600.0
             },
             "alter_tage": 0,
             "art": "täglich",
-            "mittel_jetzt": 20377.5,
-            "mittel_damals": 20540.0,
-            "veraenderung": -0.0079,
+            "mittel_jetzt": 20607.5,
+            "mittel_damals": 20532.5,
+            "veraenderung": 0.0037,
             "urteil": "ruhig"
           },
           "speiseoel_id_marke": {
@@ -791,16 +791,16 @@
             "einheit": "Rupiah",
             "rolle": "fruehzeichen",
             "status": "ok",
-            "werte": 2276,
+            "werte": 2277,
             "letzter": {
-              "datum": "2026-10-14",
-              "wert": 24900.0
+              "datum": "2026-10-15",
+              "wert": 31400.0
             },
             "alter_tage": 0,
             "art": "täglich",
-            "mittel_jetzt": 24385.0,
-            "mittel_damals": 24245.0,
-            "veraenderung": 0.0058,
+            "mittel_jetzt": 24715.0,
+            "mittel_damals": 24247.5,
+            "veraenderung": 0.0193,
             "urteil": "ruhig"
           },
           "pflanzenoel_id_monat": {
@@ -816,7 +816,7 @@
               "datum": "2026-08-01",
               "wert": 21781.0
             },
-            "alter_tage": 74,
+            "alter_tage": 75,
             "art": "monatlich",
             "vergleich": {
               "datum": "2026-05-01",
@@ -833,16 +833,16 @@
             "einheit": "Ringgit je Tonne",
             "rolle": "tagespreis",
             "status": "ok",
-            "werte": 428,
+            "werte": 429,
             "letzter": {
-              "datum": "2026-10-12",
-              "wert": 4403.0
+              "datum": "2026-10-13",
+              "wert": 4398.5
             },
             "alter_tage": 2,
             "art": "täglich",
-            "mittel_jetzt": 4481.21,
-            "mittel_damals": 4491.84,
-            "veraenderung": -0.0024,
+            "mittel_jetzt": 4468.42,
+            "mittel_damals": 4488.63,
+            "veraenderung": -0.0045,
             "urteil": "ruhig"
           }
         }
@@ -859,5 +859,5 @@
     }
   },
   "logbuch_neu": [],
-  "laufzeit_sekunden": 357.0
+  "laufzeit_sekunden": 404.3
 }
