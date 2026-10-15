@@ -1,5 +1,5 @@
 {
-  "stand": "2026-10-14T05:30:52+02:00",
+  "stand": "2026-10-15T05:31:16+02:00",
   "version": "0.1.0",
   "hinweis": "Reine Rechnung mit einem erfundenen Betrag, kein echtes Geld. Denkhilfe, keine Anlageberatung.",
   "betrag": 1000,
@@ -31,11 +31,11 @@
       "archiv": "daten/preise/STA_BK.csv",
       "vergleich": null
     },
-    "5VJ.SI": {
-      "name": "Halcyon Agri",
+    "TRUBB.BK": {
+      "name": "Thai Rubber Latex Group",
       "zweig": "kautschuk",
-      "waehrung": "SGD",
-      "archiv": "daten/preise/5VJ_SI.csv",
+      "waehrung": null,
+      "archiv": "daten/preise/TRUBB_BK.csv",
       "vergleich": null
     },
     "F34.SI": {
@@ -358,13 +358,13 @@
     "daten/metall/marokko/kurse/AIGI_L.csv",
     "daten/metall/marokko/kurse/MOS.csv",
     "daten/metall/marokko/kurse/NTR.csv",
-    "daten/preise/5VJ_SI.csv",
     "daten/preise/BARN_SW.csv",
     "daten/preise/COCO_L.csv",
     "daten/preise/E5H_SI.csv",
     "daten/preise/EB5_SI.csv",
     "daten/preise/F34_SI.csv",
     "daten/preise/P8Z_SI.csv",
-    "daten/preise/STA_BK.csv"
+    "daten/preise/STA_BK.csv",
+    "daten/preise/TRUBB_BK.csv"
   ]
 }
