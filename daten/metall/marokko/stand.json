@@ -1,6 +1,6 @@
 {
-  "stand": "2026-10-16T01:36:20+02:00",
-  "datum": "2026-10-16",
+  "stand": "2026-10-17T01:36:12+02:00",
+  "datum": "2026-10-17",
   "version": "0.1.0",
   "land": "marokko",
   "name": "Marokko-Phosphat",
@@ -56,7 +56,7 @@
       "bis": "2027-12-31",
       "urspruenglich_bis": "2027-12-31",
       "verlaengert": false,
-      "tage": 441,
+      "tage": 440,
       "zustand": "läuft",
       "gelb": false,
       "rot_pruefen": false,
@@ -72,7 +72,7 @@
       "bis": "2027-12-31",
       "urspruenglich_bis": "2027-12-31",
       "verlaengert": false,
-      "tage": 441,
+      "tage": 440,
       "zustand": "läuft",
       "gelb": false,
       "rot_pruefen": false,
@@ -88,7 +88,7 @@
       "bis": "2027-10-03",
       "urspruenglich_bis": "2027-10-03",
       "verlaengert": false,
-      "tage": 352,
+      "tage": 351,
       "zustand": "läuft",
       "gelb": false,
       "rot_pruefen": false,
@@ -408,30 +408,6 @@
         ],
         "gewichtig": false,
         "neu": false
-      },
-      {
-        "nummer": "2026-18925",
-        "titel": "Chlorinated Isocyanurates From the People's Republic of China: Preliminary Results, and Rescission, in Part of Antidumping Duty Administrative Review; 2024-2025",
-        "datum": "2026-09-16",
-        "art": "Notice",
-        "behoerden": [
-          "commerce-department",
-          "international-trade-administration"
-        ],
-        "behoerden_namen": [
-          "Commerce Department",
-          "International Trade Administration"
-        ],
-        "url": "https://www.federalregister.gov/documents/2026/09/16/2026-18925/chlorinated-isocyanurates-from-the-peoples-republic-of-china-preliminary-results-and-rescission-in",
-        "zusammenfassung": "The U.S. Department of Commerce (Commerce) preliminarily determines that chlorinated isocyanurates from the People's Republic of China (China) were sold in the United States at less than normal value during the period of review (POR) June 1, 2024, through May 31, 2025. Interested parties are invited to comment on these preliminary results.",
-        "begriffe": [
-          "fertilizer"
-        ],
-        "achsen": [
-          "duenger"
-        ],
-        "gewichtig": false,
-        "neu": false
       }
     ]
   },
@@ -441,12 +417,12 @@
     "starkregen_gemessen": [],
     "starkregen_vorhergesagt": [],
     "regen_hoechst_mm": {
-      "khouribga": 7.6,
+      "khouribga": 5.2,
       "benguerir": 8.3,
       "jorf_lasfar": 3.8,
       "safi": 3.5,
-      "bou_craa": 9.8,
-      "laayoune": 6.8
+      "bou_craa": 1.7,
+      "laayoune": 0.4
     },
     "trocken": {},
     "gelb_tage": 30
@@ -458,13 +434,13 @@
       "rolle": "sensor",
       "hinweis": "Kanada; größter Düngemittelkonzern, aber schwerpunktmäßig Kali — verwässert",
       "waehrung": "USD",
-      "letzter": "2026-10-15",
-      "schluss": 69.58,
+      "letzter": "2026-10-16",
+      "schluss": 71.26,
       "alter_tage": 1,
-      "r_kurz": -0.0042,
-      "vorsprung_kurz": 0.0092,
-      "r_lang": -0.1183,
-      "vorsprung_lang": -0.0979,
+      "r_kurz": 0.056,
+      "vorsprung_kurz": 0.0657,
+      "r_lang": -0.0756,
+      "vorsprung_lang": -0.0294,
       "urteil": "schläft",
       "markt_schlaeft": true,
       "handel": 188065481,
@@ -476,13 +452,13 @@
       "rolle": "sensor",
       "hinweis": "USA; Phosphat und Kali, zugleich Kläger in den Ausgleichszollverfahren gegen OCP",
       "waehrung": "USD",
-      "letzter": "2026-10-15",
-      "schluss": 18.95,
+      "letzter": "2026-10-16",
+      "schluss": 18.82,
       "alter_tage": 1,
-      "r_kurz": -0.0395,
-      "vorsprung_kurz": -0.0262,
-      "r_lang": -0.2536,
-      "vorsprung_lang": -0.2332,
+      "r_kurz": 0.0043,
+      "vorsprung_kurz": 0.0139,
+      "r_lang": -0.2312,
+      "vorsprung_lang": -0.185,
       "urteil": "schläft",
       "markt_schlaeft": true,
       "handel": 183976000,

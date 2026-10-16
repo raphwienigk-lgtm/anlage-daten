@@ -1,6 +1,6 @@
 {
-  "stand": "2026-10-16T01:34:29+02:00",
-  "datum": "2026-10-16",
+  "stand": "2026-10-17T01:34:18+02:00",
+  "datum": "2026-10-17",
   "version": "0.1.0",
   "land": "china",
   "name": "China-Ausfuhr",
@@ -67,7 +67,7 @@
         {
           "kanal": "frist",
           "kennung": "aussetzung_okt2025",
-          "tage": 25,
+          "tage": 24,
           "zustand": "läuft bald aus"
         }
       ],
@@ -98,7 +98,7 @@
         {
           "kanal": "frist",
           "kennung": "aussetzung_okt2025",
-          "tage": 25,
+          "tage": 24,
           "zustand": "läuft bald aus"
         },
         {
@@ -154,7 +154,7 @@
       "bis": "2026-11-10",
       "urspruenglich_bis": "2026-11-10",
       "verlaengert": false,
-      "tage": 25,
+      "tage": 24,
       "zustand": "läuft bald aus",
       "gelb": true,
       "rot_pruefen": false,
@@ -170,7 +170,7 @@
       "bis": "2026-11-27",
       "urspruenglich_bis": "2026-11-27",
       "verlaengert": false,
-      "tage": 42,
+      "tage": 41,
       "zustand": "läuft",
       "gelb": false,
       "rot_pruefen": false,
@@ -348,174 +348,6 @@
         ],
         "gewichtig": false,
         "neu": false
-      },
-      {
-        "nummer": "2026-18947",
-        "titel": "Crystalline Silicon Photovoltaic Cells, Whether or Not Assembled Into Modules, From India: Final Affirmative Countervailing Duty Determination and the Final Affirmative Critical Circumstances Determination, in Part",
-        "datum": "2026-09-16",
-        "art": "Notice",
-        "behoerden": [
-          "commerce-department",
-          "international-trade-administration"
-        ],
-        "behoerden_namen": [
-          "Commerce Department",
-          "International Trade Administration"
-        ],
-        "url": "https://www.federalregister.gov/documents/2026/09/16/2026-18947/crystalline-silicon-photovoltaic-cells-whether-or-not-assembled-into-modules-from-india-final",
-        "zusammenfassung": "The U.S. Department of Commerce (Commerce) determines that countervailable subsidies are being provided to producers and exporters of crystalline silicon photovoltaic cells, whether or not assembled into modules (solar cells) from India. The period of investigation is April 1, 2024, through March 31, 2025.",
-        "begriffe": [
-          "gallium"
-        ],
-        "achsen": [
-          "chip"
-        ],
-        "gewichtig": false,
-        "neu": false
-      },
-      {
-        "nummer": "2026-18945",
-        "titel": "Crystalline Silicon Photovoltaic Cells, Whether or Not Assembled Into Modules From India: Final Affirmative Determination of Sales at Less Than Fair Value, and Final Affirmative Determination of Critical Circumstances, In Part",
-        "datum": "2026-09-16",
-        "art": "Notice",
-        "behoerden": [
-          "commerce-department",
-          "international-trade-administration"
-        ],
-        "behoerden_namen": [
-          "Commerce Department",
-          "International Trade Administration"
-        ],
-        "url": "https://www.federalregister.gov/documents/2026/09/16/2026-18945/crystalline-silicon-photovoltaic-cells-whether-or-not-assembled-into-modules-from-india-final",
-        "zusammenfassung": "The U.S. Department of Commerce (Commerce) determines that crystalline silicon photovoltaic cells, whether or not assembled into modules (solar cells) from India are being, or are likely to be, sold in the United States at less than fair value (LTFV). The period of investigation (POI) is July 1, 2024, through June 30, 2025.",
-        "begriffe": [
-          "gallium"
-        ],
-        "achsen": [
-          "chip"
-        ],
-        "gewichtig": false,
-        "neu": false
-      },
-      {
-        "nummer": "2026-18942",
-        "titel": "Crystalline Silicon Photovoltaic Cells, Whether or Not Assembled Into Modules From the Lao People's Democratic Republic: Final Affirmative Countervailing Duty Determination and Final Affirmative Determination of Critical Circumstances, in Part",
-        "datum": "2026-09-16",
-        "art": "Notice",
-        "behoerden": [
-          "commerce-department",
-          "international-trade-administration"
-        ],
-        "behoerden_namen": [
-          "Commerce Department",
-          "International Trade Administration"
-        ],
-        "url": "https://www.federalregister.gov/documents/2026/09/16/2026-18942/crystalline-silicon-photovoltaic-cells-whether-or-not-assembled-into-modules-from-the-lao-peoples",
-        "zusammenfassung": "The U.S. Department of Commerce (Commerce) determines that countervailable subsidies are being provided to producers and exporters of crystalline silicon photovoltaic cells, whether or not assembled into modules (solar cells), from the Lao People's Democratic Republic (Laos). The period of investigation (POI) is January 1, 2024, through December 31, 2024.",
-        "begriffe": [
-          "gallium"
-        ],
-        "achsen": [
-          "chip"
-        ],
-        "gewichtig": false,
-        "neu": false
-      },
-      {
-        "nummer": "2026-18941",
-        "titel": "Crystalline Silicon Photovoltaic Cells, Whether or Not Assembled Into Modules, From the Lao People's Democratic Republic: Final Affirmative Determination of Sales at Less Than Fair Value and Final Affirmative Determination of Critical Circumstances, in Part",
-        "datum": "2026-09-16",
-        "art": "Notice",
-        "behoerden": [
-          "commerce-department",
-          "international-trade-administration"
-        ],
-        "behoerden_namen": [
-          "Commerce Department",
-          "International Trade Administration"
-        ],
-        "url": "https://www.federalregister.gov/documents/2026/09/16/2026-18941/crystalline-silicon-photovoltaic-cells-whether-or-not-assembled-into-modules-from-the-lao-peoples",
-        "zusammenfassung": "The U.S. Department of Commerce (Commerce) determines that crystalline silicon photovoltaic cells, whether or not assembled into modules (solar cells), from the Lao People's Democratic Republic (Laos) are being, or are likely to be, sold in the United States at less than fair value (LTFV). The period of investigation (POI) is January 1, 2025, through June 30, 2025.",
-        "begriffe": [
-          "gallium"
-        ],
-        "achsen": [
-          "chip"
-        ],
-        "gewichtig": false,
-        "neu": false
-      },
-      {
-        "nummer": "2026-18940",
-        "titel": "Crystalline Silicon Photovoltaic Cells, Whether or Not Assembled Into Modules From Indonesia: Final Affirmative Countervailing Duty Determination and Final Affirmative Determination of Critical Circumstances, in Part",
-        "datum": "2026-09-16",
-        "art": "Notice",
-        "behoerden": [
-          "commerce-department",
-          "international-trade-administration"
-        ],
-        "behoerden_namen": [
-          "Commerce Department",
-          "International Trade Administration"
-        ],
-        "url": "https://www.federalregister.gov/documents/2026/09/16/2026-18940/crystalline-silicon-photovoltaic-cells-whether-or-not-assembled-into-modules-from-indonesia-final",
-        "zusammenfassung": "The U.S. Department of Commerce (Commerce) determines that countervailable subsidies are being provided to producers and exporters of crystalline silicon photovoltaic cells, whether or not assembled into modules (solar cells) from Indonesia during the period of investigation (POI), January 1, 2024, through December 31, 2024.",
-        "begriffe": [
-          "gallium"
-        ],
-        "achsen": [
-          "chip"
-        ],
-        "gewichtig": false,
-        "neu": false
-      },
-      {
-        "nummer": "2026-18939",
-        "titel": "Crystalline Silicon Photovoltaic Cells, Whether or Not Assembled Into Modules, From Indonesia: Final Affirmative Determination of Sales at Less Than Fair Value and Final Affirmative Determination of Critical Circumstances",
-        "datum": "2026-09-16",
-        "art": "Notice",
-        "behoerden": [
-          "commerce-department",
-          "international-trade-administration"
-        ],
-        "behoerden_namen": [
-          "Commerce Department",
-          "International Trade Administration"
-        ],
-        "url": "https://www.federalregister.gov/documents/2026/09/16/2026-18939/crystalline-silicon-photovoltaic-cells-whether-or-not-assembled-into-modules-from-indonesia-final",
-        "zusammenfassung": "The U.S. Department of Commerce (Commerce) determines that imports of crystalline silicon photovoltaic cells, whether or not assembled into modules (solar cells) from Indonesia are being, or are likely to be, sold in the United States at less than fair value (LTFV). The period of investigation (POI) is July 1, 2024, through June 30, 2025.",
-        "begriffe": [
-          "gallium"
-        ],
-        "achsen": [
-          "chip"
-        ],
-        "gewichtig": false,
-        "neu": false
-      },
-      {
-        "nummer": "2026-18935",
-        "titel": "UChicago Argonne LLC. et al.; Notice of Decision on Application for Duty-Free Entry of Scientific Instruments",
-        "datum": "2026-09-16",
-        "art": "Notice",
-        "behoerden": [
-          "commerce-department",
-          "international-trade-administration"
-        ],
-        "behoerden_namen": [
-          "Commerce Department",
-          "International Trade Administration"
-        ],
-        "url": "https://www.federalregister.gov/documents/2026/09/16/2026-18935/uchicago-argonne-llc-et-al-notice-of-decision-on-application-for-duty-free-entry-of-scientific",
-        "zusammenfassung": "",
-        "begriffe": [
-          "germanium"
-        ],
-        "achsen": [
-          "chip"
-        ],
-        "gewichtig": false,
-        "neu": false
       }
     ]
   },
@@ -526,32 +358,32 @@
     "starkregen_vorhergesagt": [],
     "regen_hoechst_mm": {
       "lengshuijiang": 6.2,
-      "hechi": 0.5,
+      "hechi": 1.0,
       "lincang": 16.4,
-      "qujing": 28.4,
-      "pingguo": 27.3,
-      "zibo": 30.6,
-      "baotou": 38.5,
+      "qujing": 22.9,
+      "pingguo": 2.0,
+      "zibo": 19.2,
+      "baotou": 41.7,
       "ganzhou": 0.0,
-      "jixi": 14.6
+      "jixi": 10.7
     },
     "trocken": {
       "lincang": {
-        "von": "2026-07-11",
-        "bis": "2026-10-08",
-        "summe_mm": 695,
-        "normal_mm": 732,
+        "von": "2026-07-12",
+        "bis": "2026-10-09",
+        "summe_mm": 662,
+        "normal_mm": 730,
         "urteil": "normal",
-        "anteil": 0.95,
+        "anteil": 0.91,
         "trocken": false
       },
       "qujing": {
-        "von": "2026-07-11",
-        "bis": "2026-10-08",
-        "summe_mm": 440,
-        "normal_mm": 469,
+        "von": "2026-07-12",
+        "bis": "2026-10-09",
+        "summe_mm": 433,
+        "normal_mm": 466,
         "urteil": "normal",
-        "anteil": 0.94,
+        "anteil": 0.93,
         "trocken": false
       }
     },
@@ -564,13 +396,13 @@
       "rolle": "kandidat",
       "hinweis": "Antimon-Projekt Stibnite in Idaho, noch ohne Förderung",
       "waehrung": "USD",
-      "letzter": "2026-10-15",
-      "schluss": 18.515,
+      "letzter": "2026-10-16",
+      "schluss": 19.21,
       "alter_tage": 1,
-      "r_kurz": -0.0793,
-      "vorsprung_kurz": -0.0481,
-      "r_lang": -0.2077,
-      "vorsprung_lang": -0.1181,
+      "r_kurz": -0.0693,
+      "vorsprung_kurz": -0.0182,
+      "r_lang": -0.1734,
+      "vorsprung_lang": -0.102,
       "urteil": "schläft",
       "markt_schlaeft": true,
       "handel": 23377368,
@@ -582,16 +414,16 @@
       "rolle": "kandidat",
       "hinweis": "kleiner Antimon-Verarbeiter in den USA und Mexiko",
       "waehrung": "USD",
-      "letzter": "2026-10-15",
-      "schluss": 2.78,
+      "letzter": "2026-10-16",
+      "schluss": 2.85,
       "alter_tage": 1,
-      "r_kurz": -0.2527,
-      "vorsprung_kurz": -0.2214,
-      "r_lang": -0.397,
-      "vorsprung_lang": -0.3073,
+      "r_kurz": -0.2255,
+      "vorsprung_kurz": -0.1745,
+      "r_lang": -0.3844,
+      "vorsprung_lang": -0.313,
       "urteil": "schläft",
       "markt_schlaeft": true,
-      "handel": 25611502,
+      "handel": 25863573,
       "duenn": false
     },
     "MP": {
@@ -600,13 +432,13 @@
       "rolle": "beobachtung",
       "hinweis": "seltene Erden USA; seit 22.06.2026 selbst auf Chinas Exportkontrollliste",
       "waehrung": "USD",
-      "letzter": "2026-10-15",
-      "schluss": 41.61,
+      "letzter": "2026-10-16",
+      "schluss": 40.17,
       "alter_tage": 1,
-      "r_kurz": -0.0982,
-      "vorsprung_kurz": -0.0669,
-      "r_lang": -0.1574,
-      "vorsprung_lang": -0.0677,
+      "r_kurz": -0.1294,
+      "vorsprung_kurz": -0.0783,
+      "r_lang": -0.15,
+      "vorsprung_lang": -0.0786,
       "urteil": "schläft",
       "markt_schlaeft": true,
       "handel": 280639568,
@@ -618,13 +450,13 @@
       "rolle": "beobachtung",
       "hinweis": "größter Produzent seltener Erden außerhalb Chinas",
       "waehrung": "AUD",
-      "letzter": "2026-10-15",
-      "schluss": 10.81,
+      "letzter": "2026-10-16",
+      "schluss": 11.07,
       "alter_tage": 1,
-      "r_kurz": -0.1282,
-      "vorsprung_kurz": -0.097,
-      "r_lang": -0.2092,
-      "vorsprung_lang": -0.1196,
+      "r_kurz": -0.108,
+      "vorsprung_kurz": -0.0569,
+      "r_lang": -0.2286,
+      "vorsprung_lang": -0.1572,
       "urteil": "schläft",
       "markt_schlaeft": true,
       "handel": 52429709,

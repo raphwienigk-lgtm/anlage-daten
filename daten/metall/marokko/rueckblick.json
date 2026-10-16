@@ -1,5 +1,5 @@
 {
-  "stand": "2026-10-16T01:36:20+02:00",
+  "stand": "2026-10-17T01:36:12+02:00",
   "vergleich": {
     "ticker": "AIGI.L",
     "name": "Industriemetall-Korb (WisdomTree Industrial Metals, Vergleichsmaßstab)"
@@ -359,7 +359,7 @@
           "tag0": "2026-09-18",
           "r0": -0.0232,
           "r5": -0.0848,
-          "r20": null,
+          "r20": -0.0971,
           "r60": null,
           "vorlauf": 0.1194,
           "v0": -0.0247,
@@ -729,7 +729,7 @@
           "tag0": "2026-09-18",
           "r0": -0.0358,
           "r5": -0.0937,
-          "r20": null,
+          "r20": -0.2588,
           "r60": null,
           "vorlauf": 0.1422,
           "v0": -0.0373,
