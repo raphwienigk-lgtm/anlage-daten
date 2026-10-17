@@ -1,5 +1,5 @@
 {
-  "stand": "2026-10-17T01:36:12+02:00",
+  "stand": "2026-10-18T01:31:20+02:00",
   "vergleich": {
     "ticker": "AIGI.L",
     "name": "Industriemetall-Korb (WisdomTree Industrial Metals, Vergleichsmaßstab)"
@@ -51,26 +51,26 @@
           "trefferquote": 0.0
         },
         "lockerung_eigene": {
-          "n": 8,
-          "offen": 1,
+          "n": 9,
+          "offen": 0,
           "v0": 0.0093,
           "v5": 0.0045,
-          "v20": -0.0365,
+          "v20": -0.0386,
           "v60": -0.0459,
           "v_vorlauf": 0.0041,
           "treffer": 2,
-          "trefferquote": 0.25
+          "trefferquote": 0.22
         },
         "lockerung_alle": {
-          "n": 8,
-          "offen": 1,
+          "n": 9,
+          "offen": 0,
           "v0": 0.0093,
           "v5": 0.0045,
-          "v20": -0.0365,
+          "v20": -0.0386,
           "v60": -0.0459,
           "v_vorlauf": 0.0041,
           "treffer": 2,
-          "trefferquote": 0.25
+          "trefferquote": 0.22
         },
         "gegenseite_eigene": {
           "n": 2,
@@ -364,9 +364,10 @@
           "vorlauf": 0.1194,
           "v0": -0.0247,
           "v5": -0.0921,
-          "v20": null,
+          "v20": -0.0554,
           "v60": null,
-          "v_vorlauf": 0.1041
+          "v_vorlauf": 0.1041,
+          "treffer": false
         }
       ]
     },
@@ -400,26 +401,26 @@
           "trefferquote": 0.0
         },
         "lockerung_eigene": {
-          "n": 8,
-          "offen": 1,
+          "n": 9,
+          "offen": 0,
           "v0": 0.0089,
           "v5": -0.0341,
-          "v20": -0.0688,
+          "v20": -0.0853,
           "v60": -0.1557,
           "v_vorlauf": -0.0085,
-          "treffer": 3,
-          "trefferquote": 0.38
+          "treffer": 4,
+          "trefferquote": 0.44
         },
         "lockerung_alle": {
-          "n": 8,
-          "offen": 1,
+          "n": 9,
+          "offen": 0,
           "v0": 0.0089,
           "v5": -0.0341,
-          "v20": -0.0688,
+          "v20": -0.0853,
           "v60": -0.1557,
           "v_vorlauf": -0.0085,
-          "treffer": 3,
-          "trefferquote": 0.38
+          "treffer": 4,
+          "trefferquote": 0.44
         },
         "gegenseite_eigene": {
           "n": 3,
@@ -734,9 +735,10 @@
           "vorlauf": 0.1422,
           "v0": -0.0373,
           "v5": -0.101,
-          "v20": null,
+          "v20": -0.2171,
           "v60": null,
-          "v_vorlauf": 0.1269
+          "v_vorlauf": 0.1269,
+          "treffer": true
         }
       ]
     }

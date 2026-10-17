@@ -1,6 +1,6 @@
 {
-  "stand": "2026-10-17T01:34:26+02:00",
-  "datum": "2026-10-17",
+  "stand": "2026-10-18T01:31:13+02:00",
+  "datum": "2026-10-18",
   "version": "0.1.0",
   "land": "indonesien",
   "name": "Indonesien-Ausfuhr",
@@ -31,7 +31,7 @@
         {
           "kanal": "trocken",
           "standort": "sorowako",
-          "anteil": 0.15
+          "anteil": 0.14
         }
       ],
       "kanaele": [
@@ -76,7 +76,7 @@
       "bis": "2026-12-31",
       "urspruenglich_bis": "2026-12-31",
       "verlaengert": false,
-      "tage": 75,
+      "tage": 74,
       "zustand": "läuft",
       "gelb": false,
       "rot_pruefen": false,
@@ -92,7 +92,7 @@
       "bis": "2026-12-31",
       "urspruenglich_bis": "2026-12-31",
       "verlaengert": false,
-      "tage": 75,
+      "tage": 74,
       "zustand": "läuft",
       "gelb": false,
       "rot_pruefen": false,
@@ -109,7 +109,7 @@
       "bis": "2027-01-01",
       "urspruenglich_bis": "2027-01-01",
       "verlaengert": false,
-      "tage": 76,
+      "tage": 75,
       "zustand": "läuft",
       "gelb": false,
       "rot_pruefen": false,
@@ -120,6 +120,54 @@
     "herkunft": "frisch",
     "tage": 30,
     "dokumente": [
+      {
+        "nummer": "2026-21296",
+        "titel": "Certain Softwood Lumber Products From Canada: Final Results of Antidumping Duty Administrative Review, Partial Rescission of Administrative Review, and Final Determination of No Shipments; 2024",
+        "datum": "2026-10-19",
+        "art": "Notice",
+        "behoerden": [
+          "commerce-department",
+          "international-trade-administration"
+        ],
+        "behoerden_namen": [
+          "Commerce Department",
+          "International Trade Administration"
+        ],
+        "url": "https://www.federalregister.gov/documents/2026/10/19/2026-21296/certain-softwood-lumber-products-from-canada-final-results-of-antidumping-duty-administrative-review",
+        "zusammenfassung": "The U.S. Department of Commerce (Commerce) determines that producers and/or exporters subject to this administrative review sold subject merchandise at less than normal value during the period of review (POR), January 1, 2024, through December 31, 2024.",
+        "begriffe": [
+          "nickel"
+        ],
+        "achsen": [
+          "nickel"
+        ],
+        "gewichtig": false,
+        "neu": true
+      },
+      {
+        "nummer": "2026-21281",
+        "titel": "Diamond Sawblades and Parts Thereof From the People's Republic of China: Notice of Covered Merchandise Referral and Initiation of Covered Merchandise Inquiry",
+        "datum": "2026-10-19",
+        "art": "Notice",
+        "behoerden": [
+          "commerce-department",
+          "international-trade-administration"
+        ],
+        "behoerden_namen": [
+          "Commerce Department",
+          "International Trade Administration"
+        ],
+        "url": "https://www.federalregister.gov/documents/2026/10/19/2026-21281/diamond-sawblades-and-parts-thereof-from-the-peoples-republic-of-china-notice-of-covered-merchandise",
+        "zusammenfassung": "The U.S. Department of Commerce (Commerce) received a covered merchandise referral from U.S. Customs and Border Protection (CBP) in connection with a CBP investigation concerning alleged evasion of the antidumping duty (AD) order on diamond sawblades and parts thereof (diamond sawblades) from the People's Republic of China (China). Commerce is initiating a covered merchandise inquiry to determine whether the merchandise described in the referral is subject to the AD order on diamond sawblades from China. Interested parties are invited to comment and submit factual information addressing this i",
+        "begriffe": [
+          "nickel"
+        ],
+        "achsen": [
+          "nickel"
+        ],
+        "gewichtig": false,
+        "neu": true
+      },
       {
         "nummer": "2026-20897",
         "titel": "Certain Corrosion-Resistant Steel Products From Taiwan: Preliminary Results and Rescission, in Part, of Antidumping Duty Administrative Review; 2024-2025",
@@ -465,26 +513,26 @@
   },
   "stoerung": {
     "erdbeben": [],
-    "erdbeben_gesamt": 9,
+    "erdbeben_gesamt": 8,
     "starkregen_gemessen": [],
     "starkregen_vorhergesagt": [],
     "regen_hoechst_mm": {
-      "morowali": 6.4,
+      "morowali": 4.0,
       "weda_bay": 28.5,
       "sorowako": 4.9,
       "pomalaa": 0.3,
-      "bangka": 3.2,
-      "belitung": 6.3,
+      "bangka": 8.4,
+      "belitung": 4.7,
       "muntok": 6.3
     },
     "trocken": {
       "sorowako": {
-        "von": "2026-07-12",
-        "bis": "2026-10-09",
-        "summe_mm": 78,
-        "normal_mm": 538,
+        "von": "2026-07-13",
+        "bis": "2026-10-10",
+        "summe_mm": 76,
+        "normal_mm": 531,
         "urteil": "trocken",
-        "anteil": 0.15,
+        "anteil": 0.14,
         "trocken": true
       }
     },
@@ -497,13 +545,13 @@
       "rolle": "beobachtung",
       "hinweis": "bildet den LME-Nickelpreis ab, kein Länderrisiko, keine Verwässerung",
       "waehrung": "USD",
-      "letzter": "2026-10-15",
-      "schluss": 13.18,
+      "letzter": "2026-10-16",
+      "schluss": 13.25,
       "alter_tage": 2,
-      "r_kurz": -0.0233,
-      "vorsprung_kurz": -0.0137,
-      "r_lang": -0.0677,
-      "vorsprung_lang": -0.0215,
+      "r_kurz": -0.018,
+      "vorsprung_kurz": -0.0007,
+      "r_lang": -0.0566,
+      "vorsprung_lang": -0.0135,
       "urteil": "schläft",
       "markt_schlaeft": true,
       "handel": 46300,
@@ -517,9 +565,9 @@
       "waehrung": "USD",
       "letzter": "2026-10-16",
       "schluss": 115.46,
-      "alter_tage": 1,
+      "alter_tage": 2,
       "r_kurz": -0.0526,
-      "vorsprung_kurz": -0.0429,
+      "vorsprung_kurz": -0.0353,
       "r_lang": null,
       "vorsprung_lang": null,
       "urteil": "ohne Vergleich",
@@ -541,22 +589,22 @@
       "urteil": "nicht bestanden",
       "gruppen": {
         "verschaerfung_eigene": {
-          "n": 21,
-          "offen": 1,
+          "n": 22,
+          "offen": 0,
           "v0": 0.0035,
           "v5": 0.0033,
-          "v20": -0.0094,
+          "v20": -0.0099,
           "v60": -0.0344,
           "v_vorlauf": 0.0188,
           "treffer": 0,
           "trefferquote": 0.0
         },
         "verschaerfung_alle": {
-          "n": 29,
-          "offen": 1,
+          "n": 30,
+          "offen": 0,
           "v0": 0.0028,
           "v5": -0.0007,
-          "v20": -0.0078,
+          "v20": -0.0082,
           "v60": -0.0211,
           "v_vorlauf": 0.0195,
           "treffer": 0,

@@ -1,6 +1,6 @@
 {
-  "stand": "2026-10-17T01:34:18+02:00",
-  "datum": "2026-10-17",
+  "stand": "2026-10-18T01:31:06+02:00",
+  "datum": "2026-10-18",
   "version": "0.1.0",
   "land": "china",
   "name": "China-Ausfuhr",
@@ -67,7 +67,7 @@
         {
           "kanal": "frist",
           "kennung": "aussetzung_okt2025",
-          "tage": 24,
+          "tage": 23,
           "zustand": "läuft bald aus"
         }
       ],
@@ -98,8 +98,14 @@
         {
           "kanal": "frist",
           "kennung": "aussetzung_okt2025",
-          "tage": 24,
+          "tage": 23,
           "zustand": "läuft bald aus"
+        },
+        {
+          "kanal": "gegenseite",
+          "nummer": "2026-21294",
+          "datum": "2026-10-19",
+          "titel": "Large Diameter Graphite Electrodes From the People's Republic of China: Postponement of Final Determination of Sales at Less-Than-Fair-Value Investigation and Extension of Provisional Measures"
         },
         {
           "kanal": "gegenseite",
@@ -154,7 +160,7 @@
       "bis": "2026-11-10",
       "urspruenglich_bis": "2026-11-10",
       "verlaengert": false,
-      "tage": 24,
+      "tage": 23,
       "zustand": "läuft bald aus",
       "gelb": true,
       "rot_pruefen": false,
@@ -170,7 +176,7 @@
       "bis": "2026-11-27",
       "urspruenglich_bis": "2026-11-27",
       "verlaengert": false,
-      "tage": 41,
+      "tage": 40,
       "zustand": "läuft",
       "gelb": false,
       "rot_pruefen": false,
@@ -181,6 +187,54 @@
     "herkunft": "frisch",
     "tage": 30,
     "dokumente": [
+      {
+        "nummer": "2026-21294",
+        "titel": "Large Diameter Graphite Electrodes From the People's Republic of China: Postponement of Final Determination of Sales at Less-Than-Fair-Value Investigation and Extension of Provisional Measures",
+        "datum": "2026-10-19",
+        "art": "Notice",
+        "behoerden": [
+          "commerce-department",
+          "international-trade-administration"
+        ],
+        "behoerden_namen": [
+          "Commerce Department",
+          "International Trade Administration"
+        ],
+        "url": "https://www.federalregister.gov/documents/2026/10/19/2026-21294/large-diameter-graphite-electrodes-from-the-peoples-republic-of-china-postponement-of-final",
+        "zusammenfassung": "The U.S. Department of Commerce (Commerce) is postponing the deadline for issuing the final determination in the less-than-fair-value (LTFV) investigation of large diameter graphite electrodes (LDGE) from the People's Republic of China (China) until February 12, 2027, and is extending the provisional measures from a four-month period to a period of not more than six months.",
+        "begriffe": [
+          "graphite"
+        ],
+        "achsen": [
+          "batterie"
+        ],
+        "gewichtig": true,
+        "neu": true
+      },
+      {
+        "nummer": "2026-21281",
+        "titel": "Diamond Sawblades and Parts Thereof From the People's Republic of China: Notice of Covered Merchandise Referral and Initiation of Covered Merchandise Inquiry",
+        "datum": "2026-10-19",
+        "art": "Notice",
+        "behoerden": [
+          "commerce-department",
+          "international-trade-administration"
+        ],
+        "behoerden_namen": [
+          "Commerce Department",
+          "International Trade Administration"
+        ],
+        "url": "https://www.federalregister.gov/documents/2026/10/19/2026-21281/diamond-sawblades-and-parts-thereof-from-the-peoples-republic-of-china-notice-of-covered-merchandise",
+        "zusammenfassung": "The U.S. Department of Commerce (Commerce) received a covered merchandise referral from U.S. Customs and Border Protection (CBP) in connection with a CBP investigation concerning alleged evasion of the antidumping duty (AD) order on diamond sawblades and parts thereof (diamond sawblades) from the People's Republic of China (China). Commerce is initiating a covered merchandise inquiry to determine whether the merchandise described in the referral is subject to the AD order on diamond sawblades from China. Interested parties are invited to comment and submit factual information addressing this i",
+        "begriffe": [
+          "tungsten"
+        ],
+        "achsen": [
+          "werkzeug"
+        ],
+        "gewichtig": false,
+        "neu": true
+      },
       {
         "nummer": "2026-20775",
         "titel": "Foreign-Trade Zone (FTZ) 40, Notification of Proposed Production Activity; Norman Noble Company Inc.; (Implantable Medical Devices); Highland Heights, Ohio",
@@ -358,32 +412,32 @@
     "starkregen_vorhergesagt": [],
     "regen_hoechst_mm": {
       "lengshuijiang": 6.2,
-      "hechi": 1.0,
+      "hechi": 1.1,
       "lincang": 16.4,
-      "qujing": 22.9,
+      "qujing": 23.9,
       "pingguo": 2.0,
-      "zibo": 19.2,
-      "baotou": 41.7,
-      "ganzhou": 0.0,
-      "jixi": 10.7
+      "zibo": 20.0,
+      "baotou": 39.5,
+      "ganzhou": 0.4,
+      "jixi": 20.1
     },
     "trocken": {
       "lincang": {
-        "von": "2026-07-12",
-        "bis": "2026-10-09",
-        "summe_mm": 662,
-        "normal_mm": 730,
+        "von": "2026-07-13",
+        "bis": "2026-10-10",
+        "summe_mm": 646,
+        "normal_mm": 724,
         "urteil": "normal",
-        "anteil": 0.91,
+        "anteil": 0.89,
         "trocken": false
       },
       "qujing": {
-        "von": "2026-07-12",
-        "bis": "2026-10-09",
-        "summe_mm": 433,
-        "normal_mm": 466,
+        "von": "2026-07-13",
+        "bis": "2026-10-10",
+        "summe_mm": 422,
+        "normal_mm": 463,
         "urteil": "normal",
-        "anteil": 0.93,
+        "anteil": 0.91,
         "trocken": false
       }
     },
@@ -398,7 +452,7 @@
       "waehrung": "USD",
       "letzter": "2026-10-16",
       "schluss": 19.21,
-      "alter_tage": 1,
+      "alter_tage": 2,
       "r_kurz": -0.0693,
       "vorsprung_kurz": -0.0182,
       "r_lang": -0.1734,
@@ -416,7 +470,7 @@
       "waehrung": "USD",
       "letzter": "2026-10-16",
       "schluss": 2.85,
-      "alter_tage": 1,
+      "alter_tage": 2,
       "r_kurz": -0.2255,
       "vorsprung_kurz": -0.1745,
       "r_lang": -0.3844,
@@ -434,7 +488,7 @@
       "waehrung": "USD",
       "letzter": "2026-10-16",
       "schluss": 40.17,
-      "alter_tage": 1,
+      "alter_tage": 2,
       "r_kurz": -0.1294,
       "vorsprung_kurz": -0.0783,
       "r_lang": -0.15,
@@ -452,7 +506,7 @@
       "waehrung": "AUD",
       "letzter": "2026-10-16",
       "schluss": 11.07,
-      "alter_tage": 1,
+      "alter_tage": 2,
       "r_kurz": -0.108,
       "vorsprung_kurz": -0.0569,
       "r_lang": -0.2286,

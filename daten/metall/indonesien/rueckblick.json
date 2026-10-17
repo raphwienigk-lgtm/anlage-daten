@@ -1,5 +1,5 @@
 {
-  "stand": "2026-10-17T01:34:26+02:00",
+  "stand": "2026-10-18T01:31:13+02:00",
   "vergleich": {
     "ticker": "AIGI.L",
     "name": "Industriemetall-Korb (WisdomTree Industrial Metals, Vergleichsmaßstab)"
@@ -29,22 +29,22 @@
       "urteil": "nicht bestanden",
       "gruppen": {
         "verschaerfung_eigene": {
-          "n": 21,
-          "offen": 1,
+          "n": 22,
+          "offen": 0,
           "v0": 0.0035,
           "v5": 0.0033,
-          "v20": -0.0094,
+          "v20": -0.0099,
           "v60": -0.0344,
           "v_vorlauf": 0.0188,
           "treffer": 0,
           "trefferquote": 0.0
         },
         "verschaerfung_alle": {
-          "n": 29,
-          "offen": 1,
+          "n": 30,
+          "offen": 0,
           "v0": 0.0028,
           "v5": -0.0007,
-          "v20": -0.0078,
+          "v20": -0.0082,
           "v60": -0.0211,
           "v_vorlauf": 0.0195,
           "treffer": 0,
@@ -1018,14 +1018,15 @@
           "tag0": "2026-09-18",
           "r0": -0.0065,
           "r5": 0.0021,
-          "r20": null,
+          "r20": -0.0628,
           "r60": null,
           "vorlauf": -0.0486,
           "v0": -0.008,
           "v5": -0.0052,
-          "v20": null,
+          "v20": -0.0211,
           "v60": null,
-          "v_vorlauf": -0.0639
+          "v_vorlauf": -0.0639,
+          "treffer": false
         }
       ]
     },

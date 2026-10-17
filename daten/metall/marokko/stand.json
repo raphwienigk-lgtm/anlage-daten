@@ -1,6 +1,6 @@
 {
-  "stand": "2026-10-17T01:36:12+02:00",
-  "datum": "2026-10-17",
+  "stand": "2026-10-18T01:31:20+02:00",
+  "datum": "2026-10-18",
   "version": "0.1.0",
   "land": "marokko",
   "name": "Marokko-Phosphat",
@@ -56,7 +56,7 @@
       "bis": "2027-12-31",
       "urspruenglich_bis": "2027-12-31",
       "verlaengert": false,
-      "tage": 440,
+      "tage": 439,
       "zustand": "läuft",
       "gelb": false,
       "rot_pruefen": false,
@@ -72,7 +72,7 @@
       "bis": "2027-12-31",
       "urspruenglich_bis": "2027-12-31",
       "verlaengert": false,
-      "tage": 440,
+      "tage": 439,
       "zustand": "läuft",
       "gelb": false,
       "rot_pruefen": false,
@@ -88,7 +88,7 @@
       "bis": "2027-10-03",
       "urspruenglich_bis": "2027-10-03",
       "verlaengert": false,
-      "tage": 351,
+      "tage": 350,
       "zustand": "läuft",
       "gelb": false,
       "rot_pruefen": false,
@@ -99,6 +99,78 @@
     "herkunft": "frisch",
     "tage": 30,
     "dokumente": [
+      {
+        "nummer": "2026-21362",
+        "titel": "Certain Steel Nails From Taiwan: Final Results of Antidumping Duty Administrative Review; 2024-2025",
+        "datum": "2026-10-19",
+        "art": "Notice",
+        "behoerden": [
+          "commerce-department",
+          "international-trade-administration"
+        ],
+        "behoerden_namen": [
+          "Commerce Department",
+          "International Trade Administration"
+        ],
+        "url": "https://www.federalregister.gov/documents/2026/10/19/2026-21362/certain-steel-nails-from-taiwan-final-results-of-antidumping-duty-administrative-review-2024-2025",
+        "zusammenfassung": "The U.S. Department of Commerce (Commerce) determines that certain steel nails (nails) from Taiwan were sold in the United States at less than normal value during the period of review (POR), July 1, 2024, through June 30, 2025.",
+        "begriffe": [
+          "phosphate"
+        ],
+        "achsen": [
+          "duenger"
+        ],
+        "gewichtig": false,
+        "neu": true
+      },
+      {
+        "nummer": "2026-21296",
+        "titel": "Certain Softwood Lumber Products From Canada: Final Results of Antidumping Duty Administrative Review, Partial Rescission of Administrative Review, and Final Determination of No Shipments; 2024",
+        "datum": "2026-10-19",
+        "art": "Notice",
+        "behoerden": [
+          "commerce-department",
+          "international-trade-administration"
+        ],
+        "behoerden_namen": [
+          "Commerce Department",
+          "International Trade Administration"
+        ],
+        "url": "https://www.federalregister.gov/documents/2026/10/19/2026-21296/certain-softwood-lumber-products-from-canada-final-results-of-antidumping-duty-administrative-review",
+        "zusammenfassung": "The U.S. Department of Commerce (Commerce) determines that producers and/or exporters subject to this administrative review sold subject merchandise at less than normal value during the period of review (POR), January 1, 2024, through December 31, 2024.",
+        "begriffe": [
+          "fertilizer"
+        ],
+        "achsen": [
+          "duenger"
+        ],
+        "gewichtig": false,
+        "neu": true
+      },
+      {
+        "nummer": "2026-21279",
+        "titel": "Boltless Steel Shelving Units Prepackaged for Sale From Thailand: Preliminary Results and Rescission, in Part, of Antidumping Duty Administrative Review; 2023-2025",
+        "datum": "2026-10-19",
+        "art": "Notice",
+        "behoerden": [
+          "commerce-department",
+          "international-trade-administration"
+        ],
+        "behoerden_namen": [
+          "Commerce Department",
+          "International Trade Administration"
+        ],
+        "url": "https://www.federalregister.gov/documents/2026/10/19/2026-21279/boltless-steel-shelving-units-prepackaged-for-sale-from-thailand-preliminary-results-and-rescission",
+        "zusammenfassung": "The U.S. Department of Commerce (Commerce) preliminarily determines that Fuding Industries Company Limited (Fuding) did not make sales of subject merchandise at less than normal value during the period of review (POR), November 29, 2023, through May 31, 2025. In addition, we are rescinding the review with respect to five companies. Interested parties are invited to comment on these preliminary results of review.",
+        "begriffe": [
+          "fertilizer"
+        ],
+        "achsen": [
+          "duenger"
+        ],
+        "gewichtig": false,
+        "neu": true
+      },
       {
         "nummer": "2026-20899",
         "titel": "Xanthan Gum From the People's Republic of China: Preliminary Results and Rescission, in Part, of Antidumping Duty Administrative Review; 2024-2025",
@@ -418,11 +490,11 @@
     "starkregen_vorhergesagt": [],
     "regen_hoechst_mm": {
       "khouribga": 5.2,
-      "benguerir": 8.3,
-      "jorf_lasfar": 3.8,
-      "safi": 3.5,
-      "bou_craa": 1.7,
-      "laayoune": 0.4
+      "benguerir": 7.3,
+      "jorf_lasfar": 3.0,
+      "safi": 1.6,
+      "bou_craa": 4.5,
+      "laayoune": 5.0
     },
     "trocken": {},
     "gelb_tage": 30
@@ -436,14 +508,14 @@
       "waehrung": "USD",
       "letzter": "2026-10-16",
       "schluss": 71.26,
-      "alter_tage": 1,
+      "alter_tage": 2,
       "r_kurz": 0.056,
-      "vorsprung_kurz": 0.0657,
+      "vorsprung_kurz": 0.0733,
       "r_lang": -0.0756,
-      "vorsprung_lang": -0.0294,
+      "vorsprung_lang": -0.0325,
       "urteil": "schläft",
       "markt_schlaeft": true,
-      "handel": 188065481,
+      "handel": 190351189,
       "duenn": false
     },
     "MOS": {
@@ -454,11 +526,11 @@
       "waehrung": "USD",
       "letzter": "2026-10-16",
       "schluss": 18.82,
-      "alter_tage": 1,
+      "alter_tage": 2,
       "r_kurz": 0.0043,
-      "vorsprung_kurz": 0.0139,
+      "vorsprung_kurz": 0.0215,
       "r_lang": -0.2312,
-      "vorsprung_lang": -0.185,
+      "vorsprung_lang": -0.1881,
       "urteil": "schläft",
       "markt_schlaeft": true,
       "handel": 183976000,
@@ -500,26 +572,26 @@
           "trefferquote": 0.0
         },
         "lockerung_eigene": {
-          "n": 8,
-          "offen": 1,
+          "n": 9,
+          "offen": 0,
           "v0": 0.0093,
           "v5": 0.0045,
-          "v20": -0.0365,
+          "v20": -0.0386,
           "v60": -0.0459,
           "v_vorlauf": 0.0041,
           "treffer": 2,
-          "trefferquote": 0.25
+          "trefferquote": 0.22
         },
         "lockerung_alle": {
-          "n": 8,
-          "offen": 1,
+          "n": 9,
+          "offen": 0,
           "v0": 0.0093,
           "v5": 0.0045,
-          "v20": -0.0365,
+          "v20": -0.0386,
           "v60": -0.0459,
           "v_vorlauf": 0.0041,
           "treffer": 2,
-          "trefferquote": 0.25
+          "trefferquote": 0.22
         },
         "gegenseite_eigene": {
           "n": 2,
@@ -575,26 +647,26 @@
           "trefferquote": 0.0
         },
         "lockerung_eigene": {
-          "n": 8,
-          "offen": 1,
+          "n": 9,
+          "offen": 0,
           "v0": 0.0089,
           "v5": -0.0341,
-          "v20": -0.0688,
+          "v20": -0.0853,
           "v60": -0.1557,
           "v_vorlauf": -0.0085,
-          "treffer": 3,
-          "trefferquote": 0.38
+          "treffer": 4,
+          "trefferquote": 0.44
         },
         "lockerung_alle": {
-          "n": 8,
-          "offen": 1,
+          "n": 9,
+          "offen": 0,
           "v0": 0.0089,
           "v5": -0.0341,
-          "v20": -0.0688,
+          "v20": -0.0853,
           "v60": -0.1557,
           "v_vorlauf": -0.0085,
-          "treffer": 3,
-          "trefferquote": 0.38
+          "treffer": 4,
+          "trefferquote": 0.44
         },
         "gegenseite_eigene": {
           "n": 3,
