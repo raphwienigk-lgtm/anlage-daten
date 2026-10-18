@@ -1,6 +1,6 @@
 {
-  "stand": "2026-10-17T04:15:30+02:00",
-  "datum": "2026-10-17",
+  "stand": "2026-10-18T04:15:14+02:00",
+  "datum": "2026-10-18",
   "version": "0.1.0",
   "hinweis": "Denkhilfe, keine Anlageberatung. Frühzeichen, nicht am Rückblick geprüft.",
   "reihen": {
@@ -17,7 +17,7 @@
         "datum": "2026-10-16",
         "wert": 20350.0
       },
-      "alter_tage": 1,
+      "alter_tage": 2,
       "art": "täglich",
       "mittel_jetzt": 20395.0,
       "mittel_damals": 20525.0,
@@ -37,7 +37,7 @@
         "datum": "2026-10-16",
         "wert": 24350.0
       },
-      "alter_tage": 1,
+      "alter_tage": 2,
       "art": "täglich",
       "mittel_jetzt": 24360.0,
       "mittel_damals": 24250.0,
@@ -57,7 +57,7 @@
         "datum": "2026-08-01",
         "wert": 21781.0
       },
-      "alter_tage": 77,
+      "alter_tage": 78,
       "art": "monatlich",
       "vergleich": {
         "datum": "2026-05-01",
@@ -79,7 +79,7 @@
         "datum": "2026-10-15",
         "wert": 4423.0
       },
-      "alter_tage": 2,
+      "alter_tage": 3,
       "art": "täglich",
       "mittel_jetzt": 4457.9,
       "mittel_damals": 4487.0,
