@@ -165,3 +165,32 @@ def test_ohne_rueckblicke(ablage):
     ausstieg_text.schreibe(e, konfig.ABGABE)
     text = (konfig.ABGABE / "ausstieg-teil-1.md").read_text(encoding="utf-8")
     assert "Palmöl: folgt, sobald der erste Rückblick gelaufen ist." in text
+
+
+def test_regel2_behaelt_vorgabe_und_zieht_grenze_nach():
+    """Regel 2 (Beschluss A29, 18.10.2026): bisherige Vorgabe plus Grenze unter dem Höchststand."""
+    zweig = {"bisher": {"name": "bisher"}, "varianten": [
+        {"kennung": "regel2", "name": "regel2", "mit_vorgabe": True, "nachlauf": 0.20}]}
+    faelle = [
+        # steigt auf 130, fällt auf 104 (= 0,8 × 130) → Grenze vor der Vorgabe an Schritt 5, plus vier Prozent
+        {"name": "A", "datum": "2020-01-02", "werte": [100, 115, 130, 120, 104, 140], "ref": None, "vorgabe": 5},
+        # bleibt über der Grenze → schließt an der Vorgabe wie die bisherige Regel
+        {"name": "B", "datum": "2020-02-03", "werte": [100, 95, 90, 99], "ref": None, "vorgabe": 3},
+        # fällt nie über den Einstieg → Grenze bei 80
+        {"name": "C", "datum": "2020-03-02", "werte": [100, 90, 80, 120], "ref": None, "vorgabe": 3},
+    ]
+    z = ausstieg.vergleiche(faelle, zweig)
+    a, b, c = (f["ergebnis"]["regel2"] for f in z["faelle"])
+    assert (a["schritt"], a["grund"], a["rendite"]) == (4, "nachgezogene Grenze", 0.04)
+    assert (b["schritt"], b["grund"], b["rendite"]) == (3, "Vorgabe", -0.01)
+    assert (c["schritt"], c["grund"], c["rendite"]) == (2, "nachgezogene Grenze", -0.2)
+    bisher = [f["ergebnis"]["bisher"]["schritt"] for f in z["faelle"]]
+    assert bisher == [5, 3, 3]
+
+
+def test_regel2_in_der_konfiguration():
+    a = konfig.lade_yaml(konfig.KONFIG / "ausstieg.yaml")
+    assert set(a["gilt"].values()) == {"regel2"}
+    for kennung, z in a["zweige"].items():
+        r2 = next(v for v in z["varianten"] if v["kennung"] == "regel2")
+        assert r2["mit_vorgabe"] is True and r2["nachlauf"] == 0.20, kennung

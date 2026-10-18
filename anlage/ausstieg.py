@@ -9,7 +9,8 @@ Varianten aus konfig/ausstieg.yaml:
   Preise nur bis zum Ende der Lernzeit, die Prüfzeit bleibt verschlossen.
 
 Je Schritt wird in dieser Reihenfolge geprüft: Verlustgrenze, Gewinnziel, nachgezogene Grenze,
-Vorgabe der bisherigen Regel, Haltedauer. Greift nichts, bevor die Reihe endet, bleibt der Fall offen.
+Vorgabe der bisherigen Regel, Haltedauer. Varianten mit `mit_vorgabe` (Regel 2)
+prüfen zusätzlich zu ihren eigenen Bausteinen die Vorgabe der bisherigen Regel. Greift nichts, bevor die Reihe endet, bleibt der Fall offen.
 Verglichen werden nur Fälle, die unter allen Varianten geschlossen sind, damit alle an denselben
 Fällen gemessen werden.
 
@@ -78,7 +79,8 @@ def vergleiche(faelle: list[dict], zweig: dict) -> dict:
     for f in faelle:
         je = {}
         for v in varianten:
-            vorgabe = f.get("vorgabe") if v.get("bisher") else None
+            # Regel 2 (A29, 18.10.2026): Variante mit `mit_vorgabe` behält Lockerung und Frist der bisherigen Regel
+            vorgabe = f.get("vorgabe") if (v.get("bisher") or v.get("mit_vorgabe")) else None
             regel = {} if v.get("bisher") else v
             e = schliessen(f["werte"], regel, vorgabe, f.get("vorgabe_grund"))
             if not e["offen"] and f.get("ref"):

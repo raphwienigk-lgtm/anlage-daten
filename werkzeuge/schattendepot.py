@@ -32,11 +32,12 @@ from bisect import bisect_right
 from datetime import date, timedelta
 from pathlib import Path
 
-VERSION = "1.0"
+VERSION = "1.1"
 HINWEIS = "Reine Rechnung mit einem erfundenen Betrag, kein echtes Geld. Denkhilfe, keine Anlageberatung."
 NEU_TAGE = 7          # so lange gilt ein Kauf oder Schluss als neu
 FRIST_BALD = 7        # Hinweis, wenn die Frist in so vielen Tagen erreicht ist
 KURS_ALT = 5          # Kalendertage, ab denen der letzte Kurs einer offenen Position als alt gilt
+GRENZE_NAH = 0.05     # Hinweis, wenn der Kurs weniger als so weit über der Grenze unter dem Höchststand liegt
 
 
 # ------------------------------------------------------------------ Einlesen
@@ -178,6 +179,29 @@ def frist(seit: str, regel: dict | None) -> tuple[str | None, str]:
     return None, "ohne feste Frist"
 
 
+def mit_grenze(text: str, regel: dict | None) -> str:
+    n = (regel or {}).get("nachlauf")
+    return f"{text}, außerdem bei {round(n * 100)} Prozent unter dem Höchststand" if n else text
+
+
+def grenze(reihe: list[dict], p0: float, nachlauf: float) -> dict:
+    """Nachgezogene Grenze (Regel 2, A29): Höchststand der Schlusskurse seit Einstieg, Grenze darunter.
+
+    reihe: Schlusskurse vom Tag nach dem Einstieg bis heute, aufsteigend. Ergebnis mit dem ersten Tag, an
+    dem der Schluss die Grenze erreicht hat (erreicht_am), sonst None.
+    """
+    hoch, hoch_tag, erreicht = p0, None, None
+    for z in reihe:
+        if z["schluss"] > hoch:
+            hoch, hoch_tag = z["schluss"], z["datum"]
+        if erreicht is None and z["schluss"] <= hoch * (1 - nachlauf) + 1e-9:
+            erreicht = {"datum": z["datum"], "kurs": z["schluss"]}
+    letzte = reihe[-1]["schluss"] if reihe else p0
+    g = hoch * (1 - nachlauf)
+    return {"nachlauf": nachlauf, "hoechststand": hoch, "hoechststand_datum": hoch_tag, "grenze": round(g, 6),
+            "abstand": round(letzte / g - 1, 4), "erreicht_am": erreicht}
+
+
 # ------------------------------------------------------------------ Bewerten
 def bewerte(p: dict, index: dict, basis: Path, heute: date, reihen: dict) -> dict:
     wert = index["werte"][p["ticker"]]
@@ -267,7 +291,10 @@ def bewerte(p: dict, index: dict, basis: Path, heute: date, reihen: dict) -> dic
     regel = zweig.get("regel") or {}
     ende_frist, beschreibung = frist(p["seit"], regel)
     ergebnis["regel"] = {"gilt": zweig.get("gilt", "bisher"), "name": zweig.get("regel_name"), "frist": ende_frist,
-                         "beschreibung": beschreibung}
+                         "beschreibung": mit_grenze(beschreibung, regel)}
+    if regel.get("nachlauf") and kurse:
+        nach = [z for z in kurse.zeilen if d0 < z["datum"] <= d1]
+        ergebnis["regel"]["grenze"] = grenze(nach, p0, float(regel["nachlauf"]))
     if ergebnis["offen"] and ende_frist:
         ergebnis["regel"]["tage_bis_frist"] = (date.fromisoformat(ende_frist) - heute).days
     return ergebnis
@@ -301,13 +328,20 @@ def hinweise(positionen: list[dict], index: dict, heute: date) -> list[dict]:
                 elif r["tage_bis_frist"] <= FRIST_BALD:
                     liste.append({**kopf, "art": "frist_bald", "frist": r["frist"], "regel": r["beschreibung"],
                                   "tage": r["tage_bis_frist"]})
+            gz = r.get("grenze")
+            if gz and gz.get("erreicht_am"):
+                liste.append({**kopf, "art": "grenze_erreicht", "datum": gz["erreicht_am"]["datum"],
+                              "kurs": gz["erreicht_am"]["kurs"], "hoechststand": gz["hoechststand"],
+                              "regel": r["beschreibung"]})
+            elif gz and gz["abstand"] < GRENZE_NAH:
+                liste.append({**kopf, "art": "grenze_nah", "abstand": gz["abstand"], "grenze": gz["grenze"]})
             if (p.get("kurs_alter_tage") or 0) > KURS_ALT:
                 liste.append({**kopf, "art": "kurs_alt", "datum": p["ende"]["datum"]})
         elif p.get("schluss") and p["schluss"] >= neu_ab:
             liste.append({**kopf, "art": "neu_geschlossen", "schluss": p["schluss"], "grund": p.get("grund"),
                           "veraenderung_eur": p["veraenderung_eur"]})
     for kennung, z in index["zweige"].items():
-        if z.get("gilt", "bisher") != "bisher":
+        if z.get("gilt", "bisher") != "bisher" and not (z.get("regel") or {}).get("mit_vorgabe"):
             liste.append({"zweig": kennung, "art": "regel_abweichend", "gilt": z["gilt"],
                           "text": "Für diesen Zweig gilt eine andere Ausstiegsregel; ihre tägliche Prüfung "
                                   "im Schattendepot ist noch nicht eingebaut."})

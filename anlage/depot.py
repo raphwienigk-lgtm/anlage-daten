@@ -59,6 +59,9 @@ def index(d: dict, devisen_pfade: dict[str, str], zeitpunkt: datetime) -> dict:
         r = regeln.get(kennung) or {}
         g = gilt.get(kennung, "bisher")
         regel = r.get("bisher") if g == "bisher" else next((v for v in r.get("varianten", []) if v["kennung"] == g), None)
+        if regel and regel.get("mit_vorgabe"):
+            # Regel 2 (A29): Frist und Lockerung der bisherigen Regel bleiben, die Grenze kommt dazu
+            regel = {**(r.get("bisher") or {}), **regel}
         zweige[kennung] = {"name": name, "quelle": quelle, "gilt": g, "regel": regel,
                            "regel_name": (regel or {}).get("name")}
 

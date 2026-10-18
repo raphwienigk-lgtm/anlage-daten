@@ -14,7 +14,10 @@
 #   nachlauf_ab  die nachgezogene Grenze gilt erst ab diesem Gewinn (sonst sofort)
 # `kurz` ist der Name im Vorlesetext; `spaetestens` wird einmal je Zweig gesagt.
 
-gilt: {palmoel: bisher, metall: bisher, ersatz_haselnuss: bisher, ersatz_palladium: bisher}
+# Festgelegt 18.10.2026 (Beschluss A29, Projekt Agents): Regel 2 = bisherige Regel plus Grenze 20 Prozent unter dem
+# Höchststand seit Einstieg, für alle Zweige gleich. Neu zur Entscheidung erst ab doppelter Fallzahl.
+#   mit_vorgabe  die Vorgabe der bisherigen Regel (Lockerung, Frist, Grün) gilt zusätzlich
+gilt: {palmoel: regel2, metall: regel2, ersatz_haselnuss: regel2, ersatz_palladium: regel2}
 
 zweige:
   metall:
@@ -31,6 +34,7 @@ zweige:
       - {kennung: kombi,    name: "Verlustgrenze 20 Prozent, ab 30 Prozent Gewinn 10 Prozent unter dem Höchststand, spätestens nach 126 Handelstagen",
          kurz: "Verlustgrenze 20 Prozent, ab 30 Prozent Gewinn Grenze 10 Prozent unter dem Höchststand",
          verlust: 0.20, nachlauf: 0.10, nachlauf_ab: 0.30, halten: 126}
+      - {kennung: regel2,   name: "bisherige Regel plus 20 Prozent unter dem Höchststand", kurz: "Bisherige Regel plus Grenze 20 Prozent unter dem Höchststand", mit_vorgabe: true, nachlauf: 0.20}
 
   ersatz_haselnuss:
     einheit: Handelstage
@@ -46,6 +50,7 @@ zweige:
       - {kennung: kombi,    name: "Verlustgrenze 15 Prozent, ab 20 Prozent Gewinn 10 Prozent unter dem Höchststand, spätestens nach 126 Handelstagen",
          kurz: "Verlustgrenze 15 Prozent, ab 20 Prozent Gewinn Grenze 10 Prozent unter dem Höchststand",
          verlust: 0.15, nachlauf: 0.10, nachlauf_ab: 0.20, halten: 126}
+      - {kennung: regel2,   name: "bisherige Regel plus 20 Prozent unter dem Höchststand", kurz: "Bisherige Regel plus Grenze 20 Prozent unter dem Höchststand", mit_vorgabe: true, nachlauf: 0.20}
 
   ersatz_palladium:
     einheit: Handelstage
@@ -60,6 +65,7 @@ zweige:
       - {kennung: kombi,    name: "Verlustgrenze 15 Prozent, ab 20 Prozent Gewinn 10 Prozent unter dem Höchststand, spätestens nach 250 Handelstagen",
          kurz: "Verlustgrenze 15 Prozent, ab 20 Prozent Gewinn Grenze 10 Prozent unter dem Höchststand",
          verlust: 0.15, nachlauf: 0.10, nachlauf_ab: 0.20, halten: 250}
+      - {kennung: regel2,   name: "bisherige Regel plus 20 Prozent unter dem Höchststand", kurz: "Bisherige Regel plus Grenze 20 Prozent unter dem Höchststand", mit_vorgabe: true, nachlauf: 0.20}
 
   palmoel:
     einheit: Monate
@@ -74,3 +80,4 @@ zweige:
       - {kennung: kombi,    name: "Verlustgrenze 15 Prozent, ab 20 Prozent Gewinn 10 Prozent unter dem Höchststand, spätestens nach 24 Monaten",
          kurz: "Verlustgrenze 15 Prozent, ab 20 Prozent Gewinn Grenze 10 Prozent unter dem Höchststand",
          verlust: 0.15, nachlauf: 0.10, nachlauf_ab: 0.20, halten: 24}
+      - {kennung: regel2,   name: "bisherige Regel plus 20 Prozent unter dem Höchststand", kurz: "Bisherige Regel plus Grenze 20 Prozent unter dem Höchststand", mit_vorgabe: true, nachlauf: 0.20}

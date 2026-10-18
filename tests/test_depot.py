@@ -206,3 +206,41 @@ def test_vorbereitung_auf_github(ablage):
     assert e["probe"]["offen"]["anzahl"] == 1                 # der Palmöl-Kauf, ohne die Metall-Positionen
     status = (konfig.ABGABE / "status-depot.md").read_text(encoding="utf-8")
     assert "Zustand: Warnung" in status and "1 offene" in status
+
+
+def test_regel2_grenze_unter_dem_hoechststand():
+    """Regel 2 (A29): Höchststand seit Einstieg, Grenze 20 Prozent darunter, Frist der bisherigen Regel bleibt."""
+    w = depot.werkzeug()
+    reihe = [{"datum": f"2026-10-{t:02d}", "schluss": s} for t, s in [(2, 115), (5, 130), (6, 120), (7, 104), (8, 140)]]
+    g = w.grenze(reihe, 100.0, 0.20)
+    assert g["hoechststand"] == 140 and g["erreicht_am"] == {"datum": "2026-10-07", "kurs": 104}
+    g = w.grenze(reihe[:3], 100.0, 0.20)                        # 130 hoch, heute 120: noch nicht erreicht
+    assert g["erreicht_am"] is None and g["grenze"] == 104.0 and g["abstand"] == 0.1538
+    g = w.grenze([{"datum": "2026-10-02", "schluss": 90}, {"datum": "2026-10-05", "schluss": 80}], 100.0, 0.20)
+    assert g["hoechststand_datum"] is None and g["erreicht_am"]["kurs"] == 80   # nie über Einstieg: Grenze bei 80
+    assert w.grenze([], 100.0, 0.20)["erreicht_am"] is None                    # ohne Kurse kein Schluss
+    frist, text = w.frist("2026-09-22", {"kalendertage": 90, "lockerung": True, "mit_vorgabe": True, "nachlauf": 0.2})
+    assert frist == "2026-12-21"
+    assert w.mit_grenze(text, {"nachlauf": 0.2}).endswith("außerdem bei 20 Prozent unter dem Höchststand")
+
+
+def test_regel2_hinweise(basis):
+    """Metall-Zweig auf Regel 2: PPTA steigt von 20 auf 22 → kein Hinweis; fällt er unter 17,60, Grenze erreicht."""
+    idx_pfad = basis / "daten/depot/index.json"
+    idx = json.loads(idx_pfad.read_text(encoding="utf-8"))
+    idx["zweige"]["metall"].update({"gilt": "regel2", "regel": {"kalendertage": 90, "lockerung": True,
+                                                                "mit_vorgabe": True, "nachlauf": 0.2}})
+    idx_pfad.write_text(json.dumps(idx), encoding="utf-8")
+    e = depot.werkzeug().rechnen(basis, HEUTE, ZUSATZ[:1])
+    ppta = _pos(e, "PPTA")
+    assert ppta["regel"]["grenze"]["hoechststand"] == 22.0 and ppta["regel"]["grenze"]["erreicht_am"] is None
+    arten = {(h["art"], h.get("ticker") or h["zweig"]) for h in e["regel_hinweise"]}
+    assert ("regel_abweichend", "metall") not in arten and not any(a.startswith("grenze") for a, _ in arten)
+    _archiv(basis / "daten/metall/china/kurse/PPTA.csv",
+            _stufen("2026-09-01", "2026-10-02", {"2026-09-01": 18.0, "2026-09-22": 20.0, "2026-09-25": 22.0,
+                                                 "2026-09-29": 18.0, "2026-10-01": 17.5}))
+    e = depot.werkzeug().rechnen(basis, date(2026, 10, 2), ZUSATZ[:1])
+    h = next(h for h in e["regel_hinweise"] if h["art"] == "grenze_erreicht")
+    assert h["ticker"] == "PPTA" and h["datum"] == "2026-10-01" and h["kurs"] == 17.5
+    e = depot.werkzeug().rechnen(basis, date(2026, 9, 30), ZUSATZ[:1])    # 18,00 liegt 2,3 % über 17,60
+    assert any(h["art"] == "grenze_nah" and h["ticker"] == "PPTA" for h in e["regel_hinweise"])

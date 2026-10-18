@@ -103,8 +103,13 @@ def absaetze(e: dict) -> list[str]:
         liste.append("Überall gilt noch die bisherige Regel. Welche gilt, legst du fest; dann baue ich sie ins "
                      "Schattendepot ein. Das ist eine Denkhilfe, keine Anlageberatung.")
     else:
-        liste.append("Festgelegt: " + ", ".join(f"{k} {v}" for k, v in gilt.items()) + ". "
-                     "Das ist eine Denkhilfe, keine Anlageberatung.")
+        werte = set(gilt.values())
+        if werte == {"regel2"}:
+            liste.append("Festgelegt ist überall die bisherige Regel plus eine Grenze zwanzig Prozent unter dem "
+                         "Höchststand seit Einstieg; es zählt, was zuerst eintritt. Das ist eine Denkhilfe, keine Anlageberatung.")
+        else:
+            liste.append("Festgelegt: " + ", ".join(f"{k} {v}" for k, v in gilt.items()) + ". "
+                         "Das ist eine Denkhilfe, keine Anlageberatung.")
     return [sprache.ausschreiben(a) for a in liste]
 
 
