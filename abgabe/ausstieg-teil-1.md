@@ -1,7 +1,7 @@
-Stand: 11.10.2026, 05:29
+Stand: 18.10.2026, 05:39
 Teil 1 von 3
 
-Ausstiegsregeln im Vergleich, gerechnet am Sonntag, dem elften Oktober. Das System sagt, wann sich ein Blick lohnt. Hier steht, wann man jeweils wieder ausgestiegen wäre: wenige, vorher festgelegte Regeln an denselben Fällen wie im Rückblick. Gemessen wird bis zum Ausstieg; verglichen werden nur Fälle, die unter allen Regeln schon abgeschlossen sind.
+Ausstiegsregeln im Vergleich, gerechnet am Sonntag, dem achtzehnten Oktober. Das System sagt, wann sich ein Blick lohnt. Hier steht, wann man jeweils wieder ausgestiegen wäre: wenige, vorher festgelegte Regeln an denselben Fällen wie im Rückblick. Gemessen wird bis zum Ausstieg; verglichen werden nur Fälle, die unter allen Regeln schon abgeschlossen sind.
 
 Metall Chile-Lithium. Einstieg: Schlusskurs am ersten Handelstag ab der Ankündigung, bei jeder Verschärfung auf der eigenen Achse. Vergleich: Industriemetall-Korb. Gewinnziel und Grenzen schließen spätestens nach sechs Monaten.
 

@@ -1,14 +1,14 @@
 {
-  "stand": "2026-10-11T05:29:26+02:00",
+  "stand": "2026-10-18T05:39:04+02:00",
   "version": "0.1.0",
   "hinweis": "Denkhilfe, keine Anlageberatung.",
   "woche": {
-    "von": "2026-10-05",
-    "bis": "2026-10-11"
+    "von": "2026-10-12",
+    "bis": "2026-10-18"
   },
   "laufkontrolle": {
-    "stand_datum": "2026-10-11",
-    "zustand": "Warnung",
+    "stand_datum": "2026-10-18",
+    "zustand": "in Ordnung",
     "hinweise": [],
     "betrieb_seit": "2026-09-27",
     "tage_mit_lauf": 7,
@@ -57,15 +57,7 @@
         "zahl": 10,
         "gesperrt": false,
         "seit": "2026-10-09",
-        "wechsel": [
-          {
-            "tag": "2026-10-09",
-            "vorher": null,
-            "farbe": "Gelb",
-            "anlass": "Start",
-            "gesperrt": false
-          }
-        ]
+        "wechsel": []
       },
       "positionen": [],
       "signale": {
@@ -86,15 +78,7 @@
         "zahl": 8,
         "gesperrt": false,
         "seit": "2026-10-09",
-        "wechsel": [
-          {
-            "tag": "2026-10-09",
-            "vorher": null,
-            "farbe": "Gelb",
-            "anlass": "Start",
-            "gesperrt": false
-          }
-        ]
+        "wechsel": []
       },
       "positionen": [],
       "signale": {
@@ -134,7 +118,7 @@
     "metall_chile": {
       "art": "metall",
       "name": "Metall Chile-Lithium",
-      "laeufe": 3,
+      "laeufe": 10,
       "achsen": {
         "lithium": {
           "name": "Lithium-Achse",
@@ -148,7 +132,7 @@
     "metall_china": {
       "art": "metall",
       "name": "Metall China-Ausfuhr",
-      "laeufe": 17,
+      "laeufe": 24,
       "achsen": {
         "chip": {
           "name": "Chip-Achse",
@@ -162,13 +146,7 @@
           "jetzt": "Gelb",
           "seit": "2026-10-11",
           "seit_beginn": false,
-          "wechsel": [
-            {
-              "tag": "2026-10-11",
-              "vorher": "Grün",
-              "jetzt": "Gelb"
-            }
-          ]
+          "wechsel": []
         },
         "batterie": {
           "name": "Batterie-Achse",
@@ -189,14 +167,20 @@
     "metall_indonesien": {
       "art": "metall",
       "name": "Metall Indonesien-Ausfuhr",
-      "laeufe": 3,
+      "laeufe": 10,
       "achsen": {
         "nickel": {
           "name": "Nickel-Achse",
-          "jetzt": "Grün",
-          "seit": "2026-10-09",
-          "seit_beginn": true,
-          "wechsel": []
+          "jetzt": "Gelb",
+          "seit": "2026-10-12",
+          "seit_beginn": false,
+          "wechsel": [
+            {
+              "tag": "2026-10-12",
+              "vorher": "Grün",
+              "jetzt": "Gelb"
+            }
+          ]
         },
         "zinn": {
           "name": "Zinn-Achse",
@@ -210,7 +194,7 @@
     "metall_kongo": {
       "art": "metall",
       "name": "Metall Kongo-Kobalt",
-      "laeufe": 3,
+      "laeufe": 10,
       "achsen": {
         "kobalt": {
           "name": "Kobalt-Achse",
@@ -224,7 +208,7 @@
     "metall_marokko": {
       "art": "metall",
       "name": "Metall Marokko-Phosphat",
-      "laeufe": 3,
+      "laeufe": 10,
       "achsen": {
         "duenger": {
           "name": "Dünger-Achse",
@@ -238,7 +222,7 @@
     "ersatz_haselnuss": {
       "art": "ersatz",
       "name": "Ersatz-Sensor Haselnuss",
-      "laeufe": 17,
+      "laeufe": 24,
       "vergleich": "australischer Aktienindex ASX 200",
       "jetzt": "Grün",
       "seit": "2026-09-26",
@@ -249,7 +233,7 @@
     "ersatz_palladium": {
       "art": "ersatz",
       "name": "Ersatz-Sensor Palladium",
-      "laeufe": 17,
+      "laeufe": 24,
       "vergleich": "Gold-ETF",
       "jetzt": "Grün",
       "seit": "2026-09-27",

@@ -1,9 +1,9 @@
-Stand: 11.10.2026, 05:29
+Stand: 18.10.2026, 05:39
 Teil 1 von 1
 
-Der Nachprüfer für die Woche vom fünften Oktober bis elften Oktober.
+Der Nachprüfer für die Woche vom zwölften Oktober bis achtzehnten Oktober.
 
-Der tägliche Lauf gelang an allen sieben Tagen. Zustand beim letzten Lauf: Warnung.
+Der tägliche Lauf gelang an allen sieben Tagen. Zustand beim letzten Lauf: in Ordnung.
 
 Die anderen täglichen Läufe: Metall China an allen sieben Tagen; Ersatz-Sensoren an allen sieben Tagen; Inlandspreise an allen sieben Tagen; Schattendepot an allen sieben Tagen.
 
@@ -27,9 +27,9 @@ Palmöl: bisher kein echtes Rot-Signal. Ein Rückblick liegt noch nicht vor. Fü
 
 Metall Chile-Lithium, Datenteil: Lithium-Achse steht auf Grün seit Beginn der Aufzeichnung am neunten Oktober. In dieser Woche gab es keinen Wechsel. Rot und das Schattendepot der Metalle führt der Metall-Wächter in der Cloud; sie stehen im Bericht des Nachprüfers im Projekt.
 
-Metall China-Ausfuhr, Datenteil: Chip-Achse steht auf Grün seit Beginn der Aufzeichnung am sechsundzwanzigsten September; Magnet-Achse steht auf Gelb seit dem elften Oktober; Batterie-Achse steht auf Gelb seit Beginn der Aufzeichnung am sechsundzwanzigsten September; Werkzeug-Achse steht auf Grün seit dem siebenundzwanzigsten September. Wechsel in dieser Woche: Magnet-Achse am elften Oktober von Grün auf Gelb. Rot und das Schattendepot der Metalle führt der Metall-Wächter in der Cloud; sie stehen im Bericht des Nachprüfers im Projekt.
+Metall China-Ausfuhr, Datenteil: Chip-Achse steht auf Grün seit Beginn der Aufzeichnung am sechsundzwanzigsten September; Magnet-Achse steht auf Gelb seit dem elften Oktober; Batterie-Achse steht auf Gelb seit Beginn der Aufzeichnung am sechsundzwanzigsten September; Werkzeug-Achse steht auf Grün seit dem siebenundzwanzigsten September. In dieser Woche gab es keinen Wechsel. Rot und das Schattendepot der Metalle führt der Metall-Wächter in der Cloud; sie stehen im Bericht des Nachprüfers im Projekt.
 
-Metall Indonesien-Ausfuhr, Datenteil: Nickel-Achse und Zinn-Achse stehen auf Grün seit Beginn der Aufzeichnung am neunten Oktober. In dieser Woche gab es keinen Wechsel. Rot und das Schattendepot der Metalle führt der Metall-Wächter in der Cloud; sie stehen im Bericht des Nachprüfers im Projekt.
+Metall Indonesien-Ausfuhr, Datenteil: Nickel-Achse steht auf Gelb seit dem zwölften Oktober; Zinn-Achse steht auf Grün seit Beginn der Aufzeichnung am neunten Oktober. Wechsel in dieser Woche: Nickel-Achse am zwölften Oktober von Grün auf Gelb. Rot und das Schattendepot der Metalle führt der Metall-Wächter in der Cloud; sie stehen im Bericht des Nachprüfers im Projekt.
 
 Metall Kongo-Kobalt, Datenteil: Kobalt-Achse steht auf Grün seit Beginn der Aufzeichnung am neunten Oktober. In dieser Woche gab es keinen Wechsel. Rot und das Schattendepot der Metalle führt der Metall-Wächter in der Cloud; sie stehen im Bericht des Nachprüfers im Projekt.
 
