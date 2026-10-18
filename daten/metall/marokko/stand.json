@@ -1,6 +1,6 @@
 {
-  "stand": "2026-10-18T01:31:20+02:00",
-  "datum": "2026-10-18",
+  "stand": "2026-10-19T01:34:41+02:00",
+  "datum": "2026-10-19",
   "version": "0.1.0",
   "land": "marokko",
   "name": "Marokko-Phosphat",
@@ -56,7 +56,7 @@
       "bis": "2027-12-31",
       "urspruenglich_bis": "2027-12-31",
       "verlaengert": false,
-      "tage": 439,
+      "tage": 438,
       "zustand": "läuft",
       "gelb": false,
       "rot_pruefen": false,
@@ -72,7 +72,7 @@
       "bis": "2027-12-31",
       "urspruenglich_bis": "2027-12-31",
       "verlaengert": false,
-      "tage": 439,
+      "tage": 438,
       "zustand": "läuft",
       "gelb": false,
       "rot_pruefen": false,
@@ -88,7 +88,7 @@
       "bis": "2027-10-03",
       "urspruenglich_bis": "2027-10-03",
       "verlaengert": false,
-      "tage": 350,
+      "tage": 349,
       "zustand": "läuft",
       "gelb": false,
       "rot_pruefen": false,
@@ -121,7 +121,7 @@
           "duenger"
         ],
         "gewichtig": false,
-        "neu": true
+        "neu": false
       },
       {
         "nummer": "2026-21296",
@@ -145,7 +145,7 @@
           "duenger"
         ],
         "gewichtig": false,
-        "neu": true
+        "neu": false
       },
       {
         "nummer": "2026-21279",
@@ -169,7 +169,7 @@
           "duenger"
         ],
         "gewichtig": false,
-        "neu": true
+        "neu": false
       },
       {
         "nummer": "2026-20899",
@@ -489,12 +489,12 @@
     "starkregen_gemessen": [],
     "starkregen_vorhergesagt": [],
     "regen_hoechst_mm": {
-      "khouribga": 5.2,
-      "benguerir": 7.3,
-      "jorf_lasfar": 3.0,
-      "safi": 1.6,
-      "bou_craa": 4.5,
-      "laayoune": 5.0
+      "khouribga": 2.6,
+      "benguerir": 1.3,
+      "jorf_lasfar": 2.1,
+      "safi": 2.1,
+      "bou_craa": 9.1,
+      "laayoune": 4.8
     },
     "trocken": {},
     "gelb_tage": 30
@@ -508,7 +508,7 @@
       "waehrung": "USD",
       "letzter": "2026-10-16",
       "schluss": 71.26,
-      "alter_tage": 2,
+      "alter_tage": 3,
       "r_kurz": 0.056,
       "vorsprung_kurz": 0.0733,
       "r_lang": -0.0756,
@@ -526,7 +526,7 @@
       "waehrung": "USD",
       "letzter": "2026-10-16",
       "schluss": 18.82,
-      "alter_tage": 2,
+      "alter_tage": 3,
       "r_kurz": 0.0043,
       "vorsprung_kurz": 0.0215,
       "r_lang": -0.2312,

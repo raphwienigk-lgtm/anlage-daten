@@ -1,6 +1,6 @@
 {
-  "stand": "2026-10-18T01:31:13+02:00",
-  "datum": "2026-10-18",
+  "stand": "2026-10-19T01:32:55+02:00",
+  "datum": "2026-10-19",
   "version": "0.1.0",
   "land": "indonesien",
   "name": "Indonesien-Ausfuhr",
@@ -76,7 +76,7 @@
       "bis": "2026-12-31",
       "urspruenglich_bis": "2026-12-31",
       "verlaengert": false,
-      "tage": 74,
+      "tage": 73,
       "zustand": "läuft",
       "gelb": false,
       "rot_pruefen": false,
@@ -92,7 +92,7 @@
       "bis": "2026-12-31",
       "urspruenglich_bis": "2026-12-31",
       "verlaengert": false,
-      "tage": 74,
+      "tage": 73,
       "zustand": "läuft",
       "gelb": false,
       "rot_pruefen": false,
@@ -109,7 +109,7 @@
       "bis": "2027-01-01",
       "urspruenglich_bis": "2027-01-01",
       "verlaengert": false,
-      "tage": 75,
+      "tage": 74,
       "zustand": "läuft",
       "gelb": false,
       "rot_pruefen": false,
@@ -142,7 +142,7 @@
           "nickel"
         ],
         "gewichtig": false,
-        "neu": true
+        "neu": false
       },
       {
         "nummer": "2026-21281",
@@ -166,7 +166,7 @@
           "nickel"
         ],
         "gewichtig": false,
-        "neu": true
+        "neu": false
       },
       {
         "nummer": "2026-20897",
@@ -483,54 +483,29 @@
         ],
         "gewichtig": false,
         "neu": false
-      },
-      {
-        "nummer": "2026-19107",
-        "titel": "Carbon and Alloy Steel Wire Rod From Algeria: Final Affirmative Countervailing Duty Determination and Countervailing Duty Order",
-        "datum": "2026-09-18",
-        "art": "Notice",
-        "behoerden": [
-          "commerce-department",
-          "international-trade-administration"
-        ],
-        "behoerden_namen": [
-          "Commerce Department",
-          "International Trade Administration"
-        ],
-        "url": "https://www.federalregister.gov/documents/2026/09/18/2026-19107/carbon-and-alloy-steel-wire-rod-from-algeria-final-affirmative-countervailing-duty-determination-and",
-        "zusammenfassung": "The U.S. Department of Commerce (Commerce) determines that countervailable subsidies are being provided to producers and exporters of carbon and alloy steel wire rod (wire rod) from Algeria. The period of investigation (POI) is January 1, 2025, through December 31, 2025. In addition, Commerce is issuing the countervailing duty (CVD) order on wire rod form Algeria.",
-        "begriffe": [
-          "nickel",
-          "stainless steel"
-        ],
-        "achsen": [
-          "nickel"
-        ],
-        "gewichtig": false,
-        "neu": false
       }
     ]
   },
   "stoerung": {
     "erdbeben": [],
-    "erdbeben_gesamt": 8,
+    "erdbeben_gesamt": 9,
     "starkregen_gemessen": [],
     "starkregen_vorhergesagt": [],
     "regen_hoechst_mm": {
       "morowali": 4.0,
       "weda_bay": 28.5,
-      "sorowako": 4.9,
-      "pomalaa": 0.3,
-      "bangka": 8.4,
-      "belitung": 4.7,
-      "muntok": 6.3
+      "sorowako": 2.6,
+      "pomalaa": 0.6,
+      "bangka": 6.6,
+      "belitung": 4.1,
+      "muntok": 11.4
     },
     "trocken": {
       "sorowako": {
-        "von": "2026-07-13",
-        "bis": "2026-10-10",
+        "von": "2026-07-14",
+        "bis": "2026-10-11",
         "summe_mm": 76,
-        "normal_mm": 531,
+        "normal_mm": 528,
         "urteil": "trocken",
         "anteil": 0.14,
         "trocken": true
@@ -547,7 +522,7 @@
       "waehrung": "USD",
       "letzter": "2026-10-16",
       "schluss": 13.25,
-      "alter_tage": 2,
+      "alter_tage": 3,
       "r_kurz": -0.018,
       "vorsprung_kurz": -0.0007,
       "r_lang": -0.0566,
@@ -565,7 +540,7 @@
       "waehrung": "USD",
       "letzter": "2026-10-16",
       "schluss": 115.46,
-      "alter_tage": 2,
+      "alter_tage": 3,
       "r_kurz": -0.0526,
       "vorsprung_kurz": -0.0353,
       "r_lang": null,
