@@ -1,5 +1,5 @@
 Agent: Metall-Wächter Indonesien-Ausfuhr (Datenlauf auf GitHub)
-Stand: 19.10.2026, 01:32
+Stand: 20.10.2026, 01:39
 Zustand: in Ordnung
 Ergebnis: abgabe/metall-indonesien-teil-1.md, daten/metall/indonesien/stand.json
 Stufen: Nickel-Achse Gelb, Zinn-Achse Grün

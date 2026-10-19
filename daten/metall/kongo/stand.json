@@ -1,6 +1,6 @@
 {
-  "stand": "2026-10-19T01:34:45+02:00",
-  "datum": "2026-10-19",
+  "stand": "2026-10-20T01:44:40+02:00",
+  "datum": "2026-10-20",
   "version": "0.1.0",
   "land": "kongo",
   "name": "Kongo-Kobalt",
@@ -46,7 +46,7 @@
       "bis": "2027-12-31",
       "urspruenglich_bis": "2027-12-31",
       "verlaengert": false,
-      "tage": 438,
+      "tage": 437,
       "zustand": "läuft",
       "gelb": false,
       "rot_pruefen": false,
@@ -62,7 +62,7 @@
       "bis": "2026-12-31",
       "urspruenglich_bis": "2026-12-31",
       "verlaengert": false,
-      "tage": 73,
+      "tage": 72,
       "zustand": "läuft",
       "gelb": false,
       "rot_pruefen": false,
@@ -107,10 +107,10 @@
     "regen_hoechst_mm": {
       "kolwezi": 2.2,
       "likasi": 0.8,
-      "tenke": 0.8,
-      "kisanfu": 1.8,
-      "kasumbalesa": 0.1,
-      "durban": 9.2
+      "tenke": 1.0,
+      "kisanfu": 1.6,
+      "kasumbalesa": 0.0,
+      "durban": 13.2
     },
     "trocken": {},
     "gelb_tage": 45
@@ -124,7 +124,7 @@
       "waehrung": "GBP",
       "letzter": "2026-10-16",
       "schluss": 583.1,
-      "alter_tage": 3,
+      "alter_tage": 4,
       "r_kurz": -0.0026,
       "vorsprung_kurz": 0.0147,
       "r_lang": 0.0472,
