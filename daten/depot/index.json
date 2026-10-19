@@ -1,5 +1,5 @@
 {
-  "stand": "2026-10-18T05:28:32+02:00",
+  "stand": "2026-10-19T05:32:15+02:00",
   "version": "0.1.0",
   "hinweis": "Reine Rechnung mit einem erfundenen Betrag, kein echtes Geld. Denkhilfe, keine Anlageberatung.",
   "betrag": 1000,
@@ -239,13 +239,16 @@
         "pfad": "daten/signale.jsonl",
         "rohstoff": "palmoel"
       },
-      "gilt": "bisher",
+      "gilt": "regel2",
       "regel": {
-        "name": "bisherige Regel: bis die Ampel auf Grün springt",
-        "kurz": "Bisherige Regel, bis Grün",
-        "gruen": true
+        "name": "bisherige Regel plus 20 Prozent unter dem Höchststand",
+        "kurz": "Bisherige Regel plus Grenze 20 Prozent unter dem Höchststand",
+        "gruen": true,
+        "kennung": "regel2",
+        "mit_vorgabe": true,
+        "nachlauf": 0.2
       },
-      "regel_name": "bisherige Regel: bis die Ampel auf Grün springt"
+      "regel_name": "bisherige Regel plus 20 Prozent unter dem Höchststand"
     },
     "metall_chile": {
       "name": "Metall Chile-Lithium",
@@ -263,14 +266,17 @@
         "art": "zusatz",
         "herkunft": "metall-logbuch.md (Metall-Wächter)"
       },
-      "gilt": "bisher",
+      "gilt": "regel2",
       "regel": {
-        "name": "bisherige Regel: Lockerung auf der Achse oder nach 90 Tagen",
-        "kurz": "Bisherige Regel, Lockerung oder 90 Tage",
+        "name": "bisherige Regel plus 20 Prozent unter dem Höchststand",
+        "kurz": "Bisherige Regel plus Grenze 20 Prozent unter dem Höchststand",
         "kalendertage": 90,
-        "lockerung": true
+        "lockerung": true,
+        "kennung": "regel2",
+        "mit_vorgabe": true,
+        "nachlauf": 0.2
       },
-      "regel_name": "bisherige Regel: Lockerung auf der Achse oder nach 90 Tagen"
+      "regel_name": "bisherige Regel plus 20 Prozent unter dem Höchststand"
     },
     "metall_indonesien": {
       "name": "Metall Indonesien-Ausfuhr",
@@ -308,13 +314,16 @@
         "art": "ersatz",
         "pfad": "daten/ersatz/haselnuss/schattendepot.json"
       },
-      "gilt": "bisher",
+      "gilt": "regel2",
       "regel": {
-        "name": "bisherige Regel: bis zum Ende der Ernte am 30. September",
-        "kurz": "Bisherige Regel, bis zum Ende der Ernte",
-        "bis_monat_tag": "09-30"
+        "name": "bisherige Regel plus 20 Prozent unter dem Höchststand",
+        "kurz": "Bisherige Regel plus Grenze 20 Prozent unter dem Höchststand",
+        "bis_monat_tag": "09-30",
+        "kennung": "regel2",
+        "mit_vorgabe": true,
+        "nachlauf": 0.2
       },
-      "regel_name": "bisherige Regel: bis zum Ende der Ernte am 30. September"
+      "regel_name": "bisherige Regel plus 20 Prozent unter dem Höchststand"
     },
     "ersatz_palladium": {
       "name": "Ersatz Palladium",
@@ -322,13 +331,16 @@
         "art": "ersatz",
         "pfad": "daten/ersatz/palladium/schattendepot.json"
       },
-      "gilt": "bisher",
+      "gilt": "regel2",
       "regel": {
-        "name": "bisherige Regel: nach 180 Tagen",
-        "kurz": "Bisherige Regel, nach 180 Tagen",
-        "kalendertage": 180
+        "name": "bisherige Regel plus 20 Prozent unter dem Höchststand",
+        "kurz": "Bisherige Regel plus Grenze 20 Prozent unter dem Höchststand",
+        "kalendertage": 180,
+        "kennung": "regel2",
+        "mit_vorgabe": true,
+        "nachlauf": 0.2
       },
-      "regel_name": "bisherige Regel: nach 180 Tagen"
+      "regel_name": "bisherige Regel plus 20 Prozent unter dem Höchststand"
     }
   },
   "dateien": [
