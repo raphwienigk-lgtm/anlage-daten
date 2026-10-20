@@ -10,3 +10,4 @@
 {"datum": "2026-10-18", "preise": {"ALB": "schläft", "PLS.AX": "schläft", "SQM": "schläft"}, "stufen": {"lithium": "Grün"}, "zeit": "2026-10-18T01:31:16+02:00", "zustand": "in Ordnung"}
 {"datum": "2026-10-19", "preise": {"ALB": "schläft", "PLS.AX": "schläft", "SQM": "schläft"}, "stufen": {"lithium": "Grün"}, "zeit": "2026-10-19T01:32:59+02:00", "zustand": "in Ordnung"}
 {"datum": "2026-10-20", "preise": {"ALB": "schläft", "PLS.AX": "schläft", "SQM": "schläft"}, "stufen": {"lithium": "Grün"}, "zeit": "2026-10-20T01:41:34+02:00", "zustand": "Warnung"}
+{"datum": "2026-10-21", "preise": {"ALB": "schläft", "PLS.AX": "schläft", "SQM": "schläft"}, "stufen": {"lithium": "Grün"}, "zeit": "2026-10-21T01:36:49+02:00", "zustand": "in Ordnung"}
