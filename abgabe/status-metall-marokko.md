@@ -1,5 +1,5 @@
 Agent: Metall-Wächter Marokko-Phosphat (Datenlauf auf GitHub)
-Stand: 21.10.2026, 01:38
+Stand: 22.10.2026, 01:40
 Zustand: in Ordnung
 Ergebnis: abgabe/metall-marokko-teil-1.md, daten/metall/marokko/stand.json
 Stufen: Dünger-Achse Gelb

@@ -1,6 +1,6 @@
 {
-  "stand": "2026-10-21T01:36:45+02:00",
-  "datum": "2026-10-21",
+  "stand": "2026-10-22T01:39:11+02:00",
+  "datum": "2026-10-22",
   "version": "0.1.0",
   "land": "indonesien",
   "name": "Indonesien-Ausfuhr",
@@ -31,7 +31,7 @@
         {
           "kanal": "trocken",
           "standort": "sorowako",
-          "anteil": 0.14
+          "anteil": 0.13
         }
       ],
       "kanaele": [
@@ -76,7 +76,7 @@
       "bis": "2026-12-31",
       "urspruenglich_bis": "2026-12-31",
       "verlaengert": false,
-      "tage": 71,
+      "tage": 70,
       "zustand": "läuft",
       "gelb": false,
       "rot_pruefen": false,
@@ -92,7 +92,7 @@
       "bis": "2026-12-31",
       "urspruenglich_bis": "2026-12-31",
       "verlaengert": false,
-      "tage": 71,
+      "tage": 70,
       "zustand": "läuft",
       "gelb": false,
       "rot_pruefen": false,
@@ -109,7 +109,7 @@
       "bis": "2027-01-01",
       "urspruenglich_bis": "2027-01-01",
       "verlaengert": false,
-      "tage": 72,
+      "tage": 71,
       "zustand": "läuft",
       "gelb": false,
       "rot_pruefen": false,
@@ -459,55 +459,31 @@
         ],
         "gewichtig": false,
         "neu": false
-      },
-      {
-        "nummer": "2026-19274",
-        "titel": "Tin Mill Products From the People's Republic of China: Preliminary Affirmative Determination of Sales at Less Than Fair Value, Preliminary Affirmative Determination of Critical Circumstances and Extension of Provisional Measures",
-        "datum": "2026-09-21",
-        "art": "Notice",
-        "behoerden": [
-          "commerce-department",
-          "international-trade-administration"
-        ],
-        "behoerden_namen": [
-          "Commerce Department",
-          "International Trade Administration"
-        ],
-        "url": "https://www.federalregister.gov/documents/2026/09/21/2026-19274/tin-mill-products-from-the-peoples-republic-of-china-preliminary-affirmative-determination-of-sales",
-        "zusammenfassung": "The U.S. Department of Commerce (Commerce) preliminarily determines that tin mill products from the People's Republic of China (China) are being, or are likely to be, sold in the United States at less than fair value (LTFV). The period of investigation (POI) is October 1, 2025, through March 31, 2026. Interested parties are invited to comment on this preliminary determination.",
-        "begriffe": [
-          "tin"
-        ],
-        "achsen": [
-          "zinn"
-        ],
-        "gewichtig": false,
-        "neu": false
       }
     ]
   },
   "stoerung": {
     "erdbeben": [],
-    "erdbeben_gesamt": 8,
+    "erdbeben_gesamt": 9,
     "starkregen_gemessen": [],
     "starkregen_vorhergesagt": [],
     "regen_hoechst_mm": {
-      "morowali": 4.0,
+      "morowali": 5.6,
       "weda_bay": 7.5,
-      "sorowako": 2.5,
+      "sorowako": 4.9,
       "pomalaa": 1.5,
-      "bangka": 21.4,
-      "belitung": 24.0,
-      "muntok": 10.4
+      "bangka": 20.4,
+      "belitung": 15.0,
+      "muntok": 18.9
     },
     "trocken": {
       "sorowako": {
-        "von": "2026-07-16",
-        "bis": "2026-10-13",
-        "summe_mm": 74,
-        "normal_mm": 526,
+        "von": "2026-07-17",
+        "bis": "2026-10-14",
+        "summe_mm": 71,
+        "normal_mm": 525,
         "urteil": "trocken",
-        "anteil": 0.14,
+        "anteil": 0.13,
         "trocken": true
       }
     },
@@ -520,13 +496,13 @@
       "rolle": "beobachtung",
       "hinweis": "bildet den LME-Nickelpreis ab, kein Länderrisiko, keine Verwässerung",
       "waehrung": "USD",
-      "letzter": "2026-10-19",
-      "schluss": 13.435,
+      "letzter": "2026-10-20",
+      "schluss": 13.545,
       "alter_tage": 2,
-      "r_kurz": -0.0033,
-      "vorsprung_kurz": 0.0129,
-      "r_lang": -0.0475,
-      "vorsprung_lang": -0.0009,
+      "r_kurz": 0.005,
+      "vorsprung_kurz": 0.0157,
+      "r_lang": -0.0587,
+      "vorsprung_lang": -0.01,
       "urteil": "schläft",
       "markt_schlaeft": true,
       "handel": 46300,
@@ -538,11 +514,11 @@
       "rolle": "beobachtung",
       "hinweis": "bildet den LME-Zinnpreis ab",
       "waehrung": "USD",
-      "letzter": "2026-10-20",
-      "schluss": 117.79,
+      "letzter": "2026-10-21",
+      "schluss": 117.81,
       "alter_tage": 1,
-      "r_kurz": -0.0066,
-      "vorsprung_kurz": 0.0096,
+      "r_kurz": 0.0141,
+      "vorsprung_kurz": 0.0248,
       "r_lang": null,
       "vorsprung_lang": null,
       "urteil": "ohne Vergleich",
