@@ -1,6 +1,6 @@
 {
-  "stand": "2026-10-22T01:40:56+02:00",
-  "datum": "2026-10-22",
+  "stand": "2026-10-23T03:31:32+02:00",
+  "datum": "2026-10-23",
   "version": "0.1.0",
   "land": "kongo",
   "name": "Kongo-Kobalt",
@@ -46,7 +46,7 @@
       "bis": "2027-12-31",
       "urspruenglich_bis": "2027-12-31",
       "verlaengert": false,
-      "tage": 435,
+      "tage": 434,
       "zustand": "läuft",
       "gelb": false,
       "rot_pruefen": false,
@@ -62,7 +62,7 @@
       "bis": "2026-12-31",
       "urspruenglich_bis": "2026-12-31",
       "verlaengert": false,
-      "tage": 70,
+      "tage": 69,
       "zustand": "läuft",
       "gelb": false,
       "rot_pruefen": false,
@@ -73,6 +73,78 @@
     "herkunft": "frisch",
     "tage": 30,
     "dokumente": [
+      {
+        "nummer": "2026-21561",
+        "titel": "Foreign-Trade Zone (FTZ) 186, Notification of Proposed Production Activity; Pratt & Whitney, a Division of RTX Corporation; (Aircraft Engines, Engine Modules, and Parts); North Berwick, Maine",
+        "datum": "2026-10-22",
+        "art": "Notice",
+        "behoerden": [
+          "commerce-department",
+          "foreign-trade-zones-board"
+        ],
+        "behoerden_namen": [
+          "Commerce Department",
+          "Foreign-Trade Zones Board"
+        ],
+        "url": "https://www.federalregister.gov/documents/2026/10/22/2026-21561/foreign-trade-zone-ftz-186-notification-of-proposed-production-activity-pratt-and-whitney-a-division",
+        "zusammenfassung": "",
+        "begriffe": [
+          "cobalt"
+        ],
+        "achsen": [
+          "kobalt"
+        ],
+        "gewichtig": false,
+        "neu": true
+      },
+      {
+        "nummer": "2026-21552",
+        "titel": "Foreign-Trade Zone (FTZ) 71, Notification of Proposed Production Activity; Pratt & Whitney, a Division of RTX Corporation; (Aircraft Engines, Engine Modules, and Parts); Middletown, Connecticut",
+        "datum": "2026-10-22",
+        "art": "Notice",
+        "behoerden": [
+          "commerce-department",
+          "foreign-trade-zones-board"
+        ],
+        "behoerden_namen": [
+          "Commerce Department",
+          "Foreign-Trade Zones Board"
+        ],
+        "url": "https://www.federalregister.gov/documents/2026/10/22/2026-21552/foreign-trade-zone-ftz-71-notification-of-proposed-production-activity-pratt-and-whitney-a-division",
+        "zusammenfassung": "",
+        "begriffe": [
+          "cobalt"
+        ],
+        "achsen": [
+          "kobalt"
+        ],
+        "gewichtig": false,
+        "neu": true
+      },
+      {
+        "nummer": "2026-21542",
+        "titel": "Foreign-Trade Zone (FTZ) 26, Notification of Proposed Production Activity; Pratt & Whitney, a Division of RTX Corporation; (Aircraft Engines, Engine Modules, and Parts); Midland, Georgia",
+        "datum": "2026-10-22",
+        "art": "Notice",
+        "behoerden": [
+          "commerce-department",
+          "foreign-trade-zones-board"
+        ],
+        "behoerden_namen": [
+          "Commerce Department",
+          "Foreign-Trade Zones Board"
+        ],
+        "url": "https://www.federalregister.gov/documents/2026/10/22/2026-21542/foreign-trade-zone-ftz-26-notification-of-proposed-production-activity-pratt-and-whitney-a-division",
+        "zusammenfassung": "",
+        "begriffe": [
+          "cobalt"
+        ],
+        "achsen": [
+          "kobalt"
+        ],
+        "gewichtig": false,
+        "neu": true
+      },
       {
         "nummer": "2026-21281",
         "titel": "Diamond Sawblades and Parts Thereof From the People's Republic of China: Notice of Covered Merchandise Referral and Initiation of Covered Merchandise Inquiry",
@@ -105,12 +177,12 @@
     "starkregen_gemessen": [],
     "starkregen_vorhergesagt": [],
     "regen_hoechst_mm": {
-      "kolwezi": 2.0,
-      "likasi": 0.4,
-      "tenke": 0.4,
-      "kisanfu": 0.7,
-      "kasumbalesa": 0.1,
-      "durban": 10.5
+      "kolwezi": 2.6,
+      "likasi": 2.8,
+      "tenke": 5.4,
+      "kisanfu": 4.4,
+      "kasumbalesa": 7.0,
+      "durban": 26.7
     },
     "trocken": {},
     "gelb_tage": 45
@@ -122,16 +194,16 @@
       "rolle": "sensor",
       "hinweis": "größter westlicher Kobalt-Förderer im Kongo, aber riesiger Mischkonzern — Signal stark verwässert",
       "waehrung": "GBP",
-      "letzter": "2026-10-20",
-      "schluss": 550.0,
+      "letzter": "2026-10-21",
+      "schluss": 552.8,
       "alter_tage": 2,
-      "r_kurz": -0.0564,
-      "vorsprung_kurz": -0.0457,
-      "r_lang": 0.0081,
-      "vorsprung_lang": 0.0568,
+      "r_kurz": -0.0424,
+      "vorsprung_kurz": -0.0501,
+      "r_lang": 0.0005,
+      "vorsprung_lang": 0.0363,
       "urteil": "schläft",
       "markt_schlaeft": true,
-      "handel": 18366301419,
+      "handel": 17850563649,
       "duenn": false
     }
   },

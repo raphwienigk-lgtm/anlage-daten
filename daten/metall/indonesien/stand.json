@@ -1,6 +1,6 @@
 {
-  "stand": "2026-10-22T01:39:11+02:00",
-  "datum": "2026-10-22",
+  "stand": "2026-10-23T03:28:59+02:00",
+  "datum": "2026-10-23",
   "version": "0.1.0",
   "land": "indonesien",
   "name": "Indonesien-Ausfuhr",
@@ -31,7 +31,7 @@
         {
           "kanal": "trocken",
           "standort": "sorowako",
-          "anteil": 0.13
+          "anteil": 0.12
         }
       ],
       "kanaele": [
@@ -76,7 +76,7 @@
       "bis": "2026-12-31",
       "urspruenglich_bis": "2026-12-31",
       "verlaengert": false,
-      "tage": 70,
+      "tage": 69,
       "zustand": "läuft",
       "gelb": false,
       "rot_pruefen": false,
@@ -92,7 +92,7 @@
       "bis": "2026-12-31",
       "urspruenglich_bis": "2026-12-31",
       "verlaengert": false,
-      "tage": 70,
+      "tage": 69,
       "zustand": "läuft",
       "gelb": false,
       "rot_pruefen": false,
@@ -109,7 +109,7 @@
       "bis": "2027-01-01",
       "urspruenglich_bis": "2027-01-01",
       "verlaengert": false,
-      "tage": 71,
+      "tage": 70,
       "zustand": "läuft",
       "gelb": false,
       "rot_pruefen": false,
@@ -120,6 +120,81 @@
     "herkunft": "frisch",
     "tage": 30,
     "dokumente": [
+      {
+        "nummer": "2026-21561",
+        "titel": "Foreign-Trade Zone (FTZ) 186, Notification of Proposed Production Activity; Pratt & Whitney, a Division of RTX Corporation; (Aircraft Engines, Engine Modules, and Parts); North Berwick, Maine",
+        "datum": "2026-10-22",
+        "art": "Notice",
+        "behoerden": [
+          "commerce-department",
+          "foreign-trade-zones-board"
+        ],
+        "behoerden_namen": [
+          "Commerce Department",
+          "Foreign-Trade Zones Board"
+        ],
+        "url": "https://www.federalregister.gov/documents/2026/10/22/2026-21561/foreign-trade-zone-ftz-186-notification-of-proposed-production-activity-pratt-and-whitney-a-division",
+        "zusammenfassung": "",
+        "begriffe": [
+          "nickel",
+          "stainless steel"
+        ],
+        "achsen": [
+          "nickel"
+        ],
+        "gewichtig": false,
+        "neu": true
+      },
+      {
+        "nummer": "2026-21552",
+        "titel": "Foreign-Trade Zone (FTZ) 71, Notification of Proposed Production Activity; Pratt & Whitney, a Division of RTX Corporation; (Aircraft Engines, Engine Modules, and Parts); Middletown, Connecticut",
+        "datum": "2026-10-22",
+        "art": "Notice",
+        "behoerden": [
+          "commerce-department",
+          "foreign-trade-zones-board"
+        ],
+        "behoerden_namen": [
+          "Commerce Department",
+          "Foreign-Trade Zones Board"
+        ],
+        "url": "https://www.federalregister.gov/documents/2026/10/22/2026-21552/foreign-trade-zone-ftz-71-notification-of-proposed-production-activity-pratt-and-whitney-a-division",
+        "zusammenfassung": "",
+        "begriffe": [
+          "nickel",
+          "stainless steel"
+        ],
+        "achsen": [
+          "nickel"
+        ],
+        "gewichtig": false,
+        "neu": true
+      },
+      {
+        "nummer": "2026-21542",
+        "titel": "Foreign-Trade Zone (FTZ) 26, Notification of Proposed Production Activity; Pratt & Whitney, a Division of RTX Corporation; (Aircraft Engines, Engine Modules, and Parts); Midland, Georgia",
+        "datum": "2026-10-22",
+        "art": "Notice",
+        "behoerden": [
+          "commerce-department",
+          "foreign-trade-zones-board"
+        ],
+        "behoerden_namen": [
+          "Commerce Department",
+          "Foreign-Trade Zones Board"
+        ],
+        "url": "https://www.federalregister.gov/documents/2026/10/22/2026-21542/foreign-trade-zone-ftz-26-notification-of-proposed-production-activity-pratt-and-whitney-a-division",
+        "zusammenfassung": "",
+        "begriffe": [
+          "nickel",
+          "stainless steel"
+        ],
+        "achsen": [
+          "nickel"
+        ],
+        "gewichtig": false,
+        "neu": true
+      },
       {
         "nummer": "2026-21296",
         "titel": "Certain Softwood Lumber Products From Canada: Final Results of Antidumping Duty Administrative Review, Partial Rescission of Administrative Review, and Final Determination of No Shipments; 2024",
@@ -470,20 +545,20 @@
     "regen_hoechst_mm": {
       "morowali": 5.6,
       "weda_bay": 7.5,
-      "sorowako": 4.9,
-      "pomalaa": 1.5,
-      "bangka": 20.4,
-      "belitung": 15.0,
-      "muntok": 18.9
+      "sorowako": 2.1,
+      "pomalaa": 1.4,
+      "bangka": 29.3,
+      "belitung": 12.0,
+      "muntok": 29.6
     },
     "trocken": {
       "sorowako": {
-        "von": "2026-07-17",
-        "bis": "2026-10-14",
-        "summe_mm": 71,
-        "normal_mm": 525,
+        "von": "2026-07-19",
+        "bis": "2026-10-16",
+        "summe_mm": 66,
+        "normal_mm": 527,
         "urteil": "trocken",
-        "anteil": 0.13,
+        "anteil": 0.12,
         "trocken": true
       }
     },
@@ -496,13 +571,13 @@
       "rolle": "beobachtung",
       "hinweis": "bildet den LME-Nickelpreis ab, kein Länderrisiko, keine Verwässerung",
       "waehrung": "USD",
-      "letzter": "2026-10-20",
-      "schluss": 13.545,
+      "letzter": "2026-10-21",
+      "schluss": 14.0475,
       "alter_tage": 2,
-      "r_kurz": 0.005,
-      "vorsprung_kurz": 0.0157,
-      "r_lang": -0.0587,
-      "vorsprung_lang": -0.01,
+      "r_kurz": 0.0452,
+      "vorsprung_kurz": 0.0375,
+      "r_lang": -0.0166,
+      "vorsprung_lang": 0.0192,
       "urteil": "schläft",
       "markt_schlaeft": true,
       "handel": 46300,
@@ -514,11 +589,11 @@
       "rolle": "beobachtung",
       "hinweis": "bildet den LME-Zinnpreis ab",
       "waehrung": "USD",
-      "letzter": "2026-10-21",
-      "schluss": 117.81,
+      "letzter": "2026-10-22",
+      "schluss": 115.62,
       "alter_tage": 1,
-      "r_kurz": 0.0141,
-      "vorsprung_kurz": 0.0248,
+      "r_kurz": -0.002,
+      "vorsprung_kurz": -0.0097,
       "r_lang": null,
       "vorsprung_lang": null,
       "urteil": "ohne Vergleich",

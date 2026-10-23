@@ -1,6 +1,6 @@
 {
-  "stand": "2026-10-22T01:39:06+02:00",
-  "datum": "2026-10-22",
+  "stand": "2026-10-23T03:28:49+02:00",
+  "datum": "2026-10-23",
   "version": "0.1.0",
   "land": "china",
   "name": "China-Ausfuhr",
@@ -67,7 +67,7 @@
         {
           "kanal": "frist",
           "kennung": "aussetzung_okt2025",
-          "tage": 19,
+          "tage": 18,
           "zustand": "läuft bald aus"
         }
       ],
@@ -98,7 +98,7 @@
         {
           "kanal": "frist",
           "kennung": "aussetzung_okt2025",
-          "tage": 19,
+          "tage": 18,
           "zustand": "läuft bald aus"
         },
         {
@@ -160,7 +160,7 @@
       "bis": "2026-11-10",
       "urspruenglich_bis": "2026-11-10",
       "verlaengert": false,
-      "tage": 19,
+      "tage": 18,
       "zustand": "läuft bald aus",
       "gelb": true,
       "rot_pruefen": false,
@@ -176,7 +176,7 @@
       "bis": "2026-11-27",
       "urspruenglich_bis": "2026-11-27",
       "verlaengert": false,
-      "tage": 36,
+      "tage": 35,
       "zustand": "läuft",
       "gelb": false,
       "rot_pruefen": false,
@@ -187,6 +187,78 @@
     "herkunft": "frisch",
     "tage": 30,
     "dokumente": [
+      {
+        "nummer": "2026-21561",
+        "titel": "Foreign-Trade Zone (FTZ) 186, Notification of Proposed Production Activity; Pratt & Whitney, a Division of RTX Corporation; (Aircraft Engines, Engine Modules, and Parts); North Berwick, Maine",
+        "datum": "2026-10-22",
+        "art": "Notice",
+        "behoerden": [
+          "commerce-department",
+          "foreign-trade-zones-board"
+        ],
+        "behoerden_namen": [
+          "Commerce Department",
+          "Foreign-Trade Zones Board"
+        ],
+        "url": "https://www.federalregister.gov/documents/2026/10/22/2026-21561/foreign-trade-zone-ftz-186-notification-of-proposed-production-activity-pratt-and-whitney-a-division",
+        "zusammenfassung": "",
+        "begriffe": [
+          "graphite"
+        ],
+        "achsen": [
+          "batterie"
+        ],
+        "gewichtig": false,
+        "neu": true
+      },
+      {
+        "nummer": "2026-21552",
+        "titel": "Foreign-Trade Zone (FTZ) 71, Notification of Proposed Production Activity; Pratt & Whitney, a Division of RTX Corporation; (Aircraft Engines, Engine Modules, and Parts); Middletown, Connecticut",
+        "datum": "2026-10-22",
+        "art": "Notice",
+        "behoerden": [
+          "commerce-department",
+          "foreign-trade-zones-board"
+        ],
+        "behoerden_namen": [
+          "Commerce Department",
+          "Foreign-Trade Zones Board"
+        ],
+        "url": "https://www.federalregister.gov/documents/2026/10/22/2026-21552/foreign-trade-zone-ftz-71-notification-of-proposed-production-activity-pratt-and-whitney-a-division",
+        "zusammenfassung": "",
+        "begriffe": [
+          "graphite"
+        ],
+        "achsen": [
+          "batterie"
+        ],
+        "gewichtig": false,
+        "neu": true
+      },
+      {
+        "nummer": "2026-21542",
+        "titel": "Foreign-Trade Zone (FTZ) 26, Notification of Proposed Production Activity; Pratt & Whitney, a Division of RTX Corporation; (Aircraft Engines, Engine Modules, and Parts); Midland, Georgia",
+        "datum": "2026-10-22",
+        "art": "Notice",
+        "behoerden": [
+          "commerce-department",
+          "foreign-trade-zones-board"
+        ],
+        "behoerden_namen": [
+          "Commerce Department",
+          "Foreign-Trade Zones Board"
+        ],
+        "url": "https://www.federalregister.gov/documents/2026/10/22/2026-21542/foreign-trade-zone-ftz-26-notification-of-proposed-production-activity-pratt-and-whitney-a-division",
+        "zusammenfassung": "",
+        "begriffe": [
+          "graphite"
+        ],
+        "achsen": [
+          "batterie"
+        ],
+        "gewichtig": false,
+        "neu": true
+      },
       {
         "nummer": "2026-21294",
         "titel": "Large Diameter Graphite Electrodes From the People's Republic of China: Postponement of Final Determination of Sales at Less-Than-Fair-Value Investigation and Extension of Provisional Measures",
@@ -378,66 +450,42 @@
         ],
         "gewichtig": true,
         "neu": false
-      },
-      {
-        "nummer": "2026-19372",
-        "titel": "Certain Brake Drums From the People's Republic of China: Preliminary Affirmative Determination of Circumvention of the Antidumping Duty and Countervailing Duty Orders",
-        "datum": "2026-09-22",
-        "art": "Notice",
-        "behoerden": [
-          "commerce-department",
-          "international-trade-administration"
-        ],
-        "behoerden_namen": [
-          "Commerce Department",
-          "International Trade Administration"
-        ],
-        "url": "https://www.federalregister.gov/documents/2026/09/22/2026-19372/certain-brake-drums-from-the-peoples-republic-of-china-preliminary-affirmative-determination-of",
-        "zusammenfassung": "The U.S. Department of Commerce (Commerce) preliminarily determines that imports of compacted graphite iron (CGI) brake drums, from the People's Republic of China (China), constitute later-developed merchandise that is circumventing the antidumping duty (AD) and countervailing duty (CVD) orders on certain brake drums (brake drums) from China. Interested parties are invited to comment on this preliminary determination.",
-        "begriffe": [
-          "graphite"
-        ],
-        "achsen": [
-          "batterie"
-        ],
-        "gewichtig": false,
-        "neu": false
       }
     ]
   },
   "stoerung": {
     "erdbeben": [],
-    "erdbeben_gesamt": 6,
+    "erdbeben_gesamt": 5,
     "starkregen_gemessen": [],
     "starkregen_vorhergesagt": [],
     "regen_hoechst_mm": {
-      "lengshuijiang": 6.2,
+      "lengshuijiang": 2.9,
       "hechi": 1.1,
       "lincang": 10.9,
-      "qujing": 21.7,
-      "pingguo": 2.0,
+      "qujing": 21.1,
+      "pingguo": 1.6,
       "zibo": 20.0,
-      "baotou": 40.5,
-      "ganzhou": 0.0,
+      "baotou": 39.5,
+      "ganzhou": 0.4,
       "jixi": 13.6
     },
     "trocken": {
       "lincang": {
-        "von": "2026-07-17",
-        "bis": "2026-10-14",
-        "summe_mm": 629,
-        "normal_mm": 702,
+        "von": "2026-07-19",
+        "bis": "2026-10-16",
+        "summe_mm": 610,
+        "normal_mm": 687,
         "urteil": "normal",
-        "anteil": 0.9,
+        "anteil": 0.89,
         "trocken": false
       },
       "qujing": {
-        "von": "2026-07-17",
-        "bis": "2026-10-14",
-        "summe_mm": 414,
-        "normal_mm": 448,
+        "von": "2026-07-19",
+        "bis": "2026-10-16",
+        "summe_mm": 372,
+        "normal_mm": 442,
         "urteil": "normal",
-        "anteil": 0.92,
+        "anteil": 0.84,
         "trocken": false
       }
     },
@@ -450,16 +498,16 @@
       "rolle": "kandidat",
       "hinweis": "Antimon-Projekt Stibnite in Idaho, noch ohne Förderung",
       "waehrung": "USD",
-      "letzter": "2026-10-21",
-      "schluss": 18.74,
+      "letzter": "2026-10-22",
+      "schluss": 17.26,
       "alter_tage": 1,
-      "r_kurz": 0.0783,
-      "vorsprung_kurz": 0.0639,
-      "r_lang": -0.1964,
-      "vorsprung_lang": -0.1207,
+      "r_kurz": -0.0678,
+      "vorsprung_kurz": -0.0209,
+      "r_lang": -0.263,
+      "vorsprung_lang": -0.1577,
       "urteil": "schläft",
       "markt_schlaeft": true,
-      "handel": 23467224,
+      "handel": 23410690,
       "duenn": false
     },
     "UAMY": {
@@ -468,16 +516,16 @@
       "rolle": "kandidat",
       "hinweis": "kleiner Antimon-Verarbeiter in den USA und Mexiko",
       "waehrung": "USD",
-      "letzter": "2026-10-21",
-      "schluss": 3.29,
+      "letzter": "2026-10-22",
+      "schluss": 3.1,
       "alter_tage": 1,
-      "r_kurz": 0.1792,
-      "vorsprung_kurz": 0.1649,
-      "r_lang": -0.2848,
-      "vorsprung_lang": -0.2091,
+      "r_kurz": 0.1151,
+      "vorsprung_kurz": 0.162,
+      "r_lang": -0.3217,
+      "vorsprung_lang": -0.2163,
       "urteil": "schläft",
       "markt_schlaeft": true,
-      "handel": 26046296,
+      "handel": 25863573,
       "duenn": false
     },
     "MP": {
@@ -486,16 +534,16 @@
       "rolle": "beobachtung",
       "hinweis": "seltene Erden USA; seit 22.06.2026 selbst auf Chinas Exportkontrollliste",
       "waehrung": "USD",
-      "letzter": "2026-10-21",
-      "schluss": 39.5,
+      "letzter": "2026-10-22",
+      "schluss": 38.56,
       "alter_tage": 1,
-      "r_kurz": -0.0113,
-      "vorsprung_kurz": -0.0256,
-      "r_lang": -0.1921,
-      "vorsprung_lang": -0.1164,
+      "r_kurz": -0.0733,
+      "vorsprung_kurz": -0.0264,
+      "r_lang": -0.2178,
+      "vorsprung_lang": -0.1125,
       "urteil": "schläft",
       "markt_schlaeft": true,
-      "handel": 274638729,
+      "handel": 272263102,
       "duenn": false
     },
     "LYC.AX": {
@@ -504,16 +552,16 @@
       "rolle": "beobachtung",
       "hinweis": "größter Produzent seltener Erden außerhalb Chinas",
       "waehrung": "AUD",
-      "letzter": "2026-10-21",
-      "schluss": 11.55,
+      "letzter": "2026-10-22",
+      "schluss": 11.38,
       "alter_tage": 1,
-      "r_kurz": -0.0017,
-      "vorsprung_kurz": -0.016,
-      "r_lang": -0.2127,
-      "vorsprung_lang": -0.137,
+      "r_kurz": 0.0527,
+      "vorsprung_kurz": 0.0996,
+      "r_lang": -0.2092,
+      "vorsprung_lang": -0.1039,
       "urteil": "schläft",
       "markt_schlaeft": true,
-      "handel": 52429709,
+      "handel": 51802598,
       "duenn": false
     }
   },
