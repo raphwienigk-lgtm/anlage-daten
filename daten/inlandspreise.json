@@ -1,6 +1,6 @@
 {
-  "stand": "2026-10-23T08:39:43+02:00",
-  "datum": "2026-10-23",
+  "stand": "2026-10-24T08:36:44+02:00",
+  "datum": "2026-10-24",
   "version": "0.1.0",
   "hinweis": "Denkhilfe, keine Anlageberatung. Frühzeichen, nicht am Rückblick geprüft.",
   "reihen": {
@@ -17,7 +17,7 @@
         "datum": "2026-10-23",
         "wert": 20350.0
       },
-      "alter_tage": 0,
+      "alter_tage": 1,
       "art": "täglich",
       "mittel_jetzt": 20370.0,
       "mittel_damals": 20502.5,
@@ -35,13 +35,13 @@
       "werte": 2283,
       "letzter": {
         "datum": "2026-10-23",
-        "wert": 24300.0
+        "wert": 24350.0
       },
-      "alter_tage": 0,
+      "alter_tage": 1,
       "art": "täglich",
-      "mittel_jetzt": 24362.5,
+      "mittel_jetzt": 24365.0,
       "mittel_damals": 24267.5,
-      "veraenderung": 0.0039,
+      "veraenderung": 0.004,
       "urteil": "ruhig"
     },
     "pflanzenoel_id_monat": {
@@ -57,7 +57,7 @@
         "datum": "2026-08-01",
         "wert": 21781.0
       },
-      "alter_tage": 83,
+      "alter_tage": 84,
       "art": "monatlich",
       "vergleich": {
         "datum": "2026-05-01",
@@ -77,11 +77,11 @@
       "werte": 436,
       "letzter": {
         "datum": "2026-10-22",
-        "wert": 4442.0
+        "wert": 4442.5
       },
-      "alter_tage": 1,
+      "alter_tage": 2,
       "art": "täglich",
-      "mittel_jetzt": 4418.93,
+      "mittel_jetzt": 4418.95,
       "mittel_damals": 4498.1,
       "veraenderung": -0.0176,
       "urteil": "ruhig"
