@@ -1,6 +1,6 @@
 {
-  "stand": "2026-10-23T03:31:32+02:00",
-  "datum": "2026-10-23",
+  "stand": "2026-10-24T03:35:49+02:00",
+  "datum": "2026-10-24",
   "version": "0.1.0",
   "land": "kongo",
   "name": "Kongo-Kobalt",
@@ -46,7 +46,7 @@
       "bis": "2027-12-31",
       "urspruenglich_bis": "2027-12-31",
       "verlaengert": false,
-      "tage": 434,
+      "tage": 433,
       "zustand": "läuft",
       "gelb": false,
       "rot_pruefen": false,
@@ -62,7 +62,7 @@
       "bis": "2026-12-31",
       "urspruenglich_bis": "2026-12-31",
       "verlaengert": false,
-      "tage": 69,
+      "tage": 68,
       "zustand": "läuft",
       "gelb": false,
       "rot_pruefen": false,
@@ -95,7 +95,7 @@
           "kobalt"
         ],
         "gewichtig": false,
-        "neu": true
+        "neu": false
       },
       {
         "nummer": "2026-21552",
@@ -119,7 +119,7 @@
           "kobalt"
         ],
         "gewichtig": false,
-        "neu": true
+        "neu": false
       },
       {
         "nummer": "2026-21542",
@@ -143,7 +143,7 @@
           "kobalt"
         ],
         "gewichtig": false,
-        "neu": true
+        "neu": false
       },
       {
         "nummer": "2026-21281",
@@ -177,12 +177,12 @@
     "starkregen_gemessen": [],
     "starkregen_vorhergesagt": [],
     "regen_hoechst_mm": {
-      "kolwezi": 2.6,
-      "likasi": 2.8,
+      "kolwezi": 9.3,
+      "likasi": 4.8,
       "tenke": 5.4,
-      "kisanfu": 4.4,
-      "kasumbalesa": 7.0,
-      "durban": 26.7
+      "kisanfu": 6.6,
+      "kasumbalesa": 3.6,
+      "durban": 10.5
     },
     "trocken": {},
     "gelb_tage": 45
@@ -194,13 +194,13 @@
       "rolle": "sensor",
       "hinweis": "größter westlicher Kobalt-Förderer im Kongo, aber riesiger Mischkonzern — Signal stark verwässert",
       "waehrung": "GBP",
-      "letzter": "2026-10-21",
-      "schluss": 552.8,
+      "letzter": "2026-10-22",
+      "schluss": 536.5,
       "alter_tage": 2,
-      "r_kurz": -0.0424,
-      "vorsprung_kurz": -0.0501,
-      "r_lang": 0.0005,
-      "vorsprung_lang": 0.0363,
+      "r_kurz": -0.0655,
+      "vorsprung_kurz": -0.0652,
+      "r_lang": -0.0228,
+      "vorsprung_lang": 0.0332,
       "urteil": "schläft",
       "markt_schlaeft": true,
       "handel": 17850563649,

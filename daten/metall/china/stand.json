@@ -1,6 +1,6 @@
 {
-  "stand": "2026-10-23T03:28:49+02:00",
-  "datum": "2026-10-23",
+  "stand": "2026-10-24T03:33:56+02:00",
+  "datum": "2026-10-24",
   "version": "0.1.0",
   "land": "china",
   "name": "China-Ausfuhr",
@@ -67,7 +67,7 @@
         {
           "kanal": "frist",
           "kennung": "aussetzung_okt2025",
-          "tage": 18,
+          "tage": 17,
           "zustand": "läuft bald aus"
         }
       ],
@@ -98,7 +98,7 @@
         {
           "kanal": "frist",
           "kennung": "aussetzung_okt2025",
-          "tage": 18,
+          "tage": 17,
           "zustand": "läuft bald aus"
         },
         {
@@ -160,7 +160,7 @@
       "bis": "2026-11-10",
       "urspruenglich_bis": "2026-11-10",
       "verlaengert": false,
-      "tage": 18,
+      "tage": 17,
       "zustand": "läuft bald aus",
       "gelb": true,
       "rot_pruefen": false,
@@ -176,7 +176,7 @@
       "bis": "2026-11-27",
       "urspruenglich_bis": "2026-11-27",
       "verlaengert": false,
-      "tage": 35,
+      "tage": 34,
       "zustand": "läuft",
       "gelb": false,
       "rot_pruefen": false,
@@ -187,6 +187,30 @@
     "herkunft": "frisch",
     "tage": 30,
     "dokumente": [
+      {
+        "nummer": "2026-21693",
+        "titel": "Agency Information Collection Activities; Submission to the Office of Management and Budget (OMB) for Review and Approval; Comment Request; CHIPS Expansion Clawback Information Collection",
+        "datum": "2026-10-23",
+        "art": "Notice",
+        "behoerden": [
+          "commerce-department",
+          "national-institute-of-standards-and-technology"
+        ],
+        "behoerden_namen": [
+          "Commerce Department",
+          "National Institute of Standards and Technology"
+        ],
+        "url": "https://www.federalregister.gov/documents/2026/10/23/2026-21693/agency-information-collection-activities-submission-to-the-office-of-management-and-budget-omb-for",
+        "zusammenfassung": "The Department of Commerce, in accordance with the Paperwork Reduction Act of 1995 (PRA), invites the general public and other Federal agencies to comment on proposed, and continuing information collections, which helps us assess the impact of our information collection requirements and minimize the public's reporting burden. The purpose of this notice is to allow for 60 days of public comment preceding submission of the collection to OMB.",
+        "begriffe": [
+          "semiconductor manufacturing"
+        ],
+        "achsen": [
+          "chip"
+        ],
+        "gewichtig": false,
+        "neu": true
+      },
       {
         "nummer": "2026-21561",
         "titel": "Foreign-Trade Zone (FTZ) 186, Notification of Proposed Production Activity; Pratt & Whitney, a Division of RTX Corporation; (Aircraft Engines, Engine Modules, and Parts); North Berwick, Maine",
@@ -209,7 +233,7 @@
           "batterie"
         ],
         "gewichtig": false,
-        "neu": true
+        "neu": false
       },
       {
         "nummer": "2026-21552",
@@ -233,7 +257,7 @@
           "batterie"
         ],
         "gewichtig": false,
-        "neu": true
+        "neu": false
       },
       {
         "nummer": "2026-21542",
@@ -257,7 +281,7 @@
           "batterie"
         ],
         "gewichtig": false,
-        "neu": true
+        "neu": false
       },
       {
         "nummer": "2026-21294",
@@ -460,32 +484,32 @@
     "starkregen_vorhergesagt": [],
     "regen_hoechst_mm": {
       "lengshuijiang": 2.9,
-      "hechi": 1.1,
+      "hechi": 1.6,
       "lincang": 10.9,
-      "qujing": 21.1,
+      "qujing": 21.7,
       "pingguo": 1.6,
       "zibo": 20.0,
-      "baotou": 39.5,
-      "ganzhou": 0.4,
+      "baotou": 40.5,
+      "ganzhou": 0.0,
       "jixi": 13.6
     },
     "trocken": {
       "lincang": {
-        "von": "2026-07-19",
-        "bis": "2026-10-16",
-        "summe_mm": 610,
-        "normal_mm": 687,
+        "von": "2026-07-21",
+        "bis": "2026-10-18",
+        "summe_mm": 603,
+        "normal_mm": 671,
         "urteil": "normal",
-        "anteil": 0.89,
+        "anteil": 0.9,
         "trocken": false
       },
       "qujing": {
-        "von": "2026-07-19",
-        "bis": "2026-10-16",
+        "von": "2026-07-21",
+        "bis": "2026-10-18",
         "summe_mm": 372,
-        "normal_mm": 442,
+        "normal_mm": 429,
         "urteil": "normal",
-        "anteil": 0.84,
+        "anteil": 0.87,
         "trocken": false
       }
     },
@@ -498,13 +522,13 @@
       "rolle": "kandidat",
       "hinweis": "Antimon-Projekt Stibnite in Idaho, noch ohne Förderung",
       "waehrung": "USD",
-      "letzter": "2026-10-22",
-      "schluss": 17.26,
+      "letzter": "2026-10-23",
+      "schluss": 16.44,
       "alter_tage": 1,
-      "r_kurz": -0.0678,
-      "vorsprung_kurz": -0.0209,
-      "r_lang": -0.263,
-      "vorsprung_lang": -0.1577,
+      "r_kurz": -0.1442,
+      "vorsprung_kurz": -0.0991,
+      "r_lang": -0.3001,
+      "vorsprung_lang": -0.1897,
       "urteil": "schläft",
       "markt_schlaeft": true,
       "handel": 23410690,
@@ -516,13 +540,13 @@
       "rolle": "kandidat",
       "hinweis": "kleiner Antimon-Verarbeiter in den USA und Mexiko",
       "waehrung": "USD",
-      "letzter": "2026-10-22",
-      "schluss": 3.1,
+      "letzter": "2026-10-23",
+      "schluss": 3.06,
       "alter_tage": 1,
-      "r_kurz": 0.1151,
-      "vorsprung_kurz": 0.162,
-      "r_lang": -0.3217,
-      "vorsprung_lang": -0.2163,
+      "r_kurz": 0.0737,
+      "vorsprung_kurz": 0.1188,
+      "r_lang": -0.32,
+      "vorsprung_lang": -0.2096,
       "urteil": "schläft",
       "markt_schlaeft": true,
       "handel": 25863573,
@@ -534,16 +558,16 @@
       "rolle": "beobachtung",
       "hinweis": "seltene Erden USA; seit 22.06.2026 selbst auf Chinas Exportkontrollliste",
       "waehrung": "USD",
-      "letzter": "2026-10-22",
-      "schluss": 38.56,
+      "letzter": "2026-10-23",
+      "schluss": 38.3,
       "alter_tage": 1,
-      "r_kurz": -0.0733,
-      "vorsprung_kurz": -0.0264,
-      "r_lang": -0.2178,
-      "vorsprung_lang": -0.1125,
+      "r_kurz": -0.0466,
+      "vorsprung_kurz": -0.0015,
+      "r_lang": -0.2156,
+      "vorsprung_lang": -0.1052,
       "urteil": "schläft",
       "markt_schlaeft": true,
-      "handel": 272263102,
+      "handel": 269568080,
       "duenn": false
     },
     "LYC.AX": {
@@ -552,13 +576,13 @@
       "rolle": "beobachtung",
       "hinweis": "größter Produzent seltener Erden außerhalb Chinas",
       "waehrung": "AUD",
-      "letzter": "2026-10-22",
-      "schluss": 11.38,
+      "letzter": "2026-10-23",
+      "schluss": 10.71,
       "alter_tage": 1,
-      "r_kurz": 0.0527,
-      "vorsprung_kurz": 0.0996,
-      "r_lang": -0.2092,
-      "vorsprung_lang": -0.1039,
+      "r_kurz": -0.0325,
+      "vorsprung_kurz": 0.0126,
+      "r_lang": -0.2468,
+      "vorsprung_lang": -0.1364,
       "urteil": "schläft",
       "markt_schlaeft": true,
       "handel": 51802598,
