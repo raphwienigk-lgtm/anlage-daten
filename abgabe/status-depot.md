@@ -1,5 +1,5 @@
 Agent: Schattendepot (Vorbereitung auf GitHub; gerechnet wird beim Depot-Agenten)
-Stand: 24.10.2026, 10:01
+Stand: 25.10.2026, 09:18
 Zustand: in Ordnung
 Ergebnis: daten/depot/index.json, daten/depot/kurse/
 Werte: 22, davon ohne Kursarchiv: 0
