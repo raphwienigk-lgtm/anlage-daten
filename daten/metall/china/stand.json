@@ -1,6 +1,6 @@
 {
-  "stand": "2026-10-24T03:33:56+02:00",
-  "datum": "2026-10-24",
+  "stand": "2026-10-25T02:08:05+01:00",
+  "datum": "2026-10-25",
   "version": "0.1.0",
   "land": "china",
   "name": "China-Ausfuhr",
@@ -67,7 +67,7 @@
         {
           "kanal": "frist",
           "kennung": "aussetzung_okt2025",
-          "tage": 17,
+          "tage": 16,
           "zustand": "läuft bald aus"
         }
       ],
@@ -98,7 +98,7 @@
         {
           "kanal": "frist",
           "kennung": "aussetzung_okt2025",
-          "tage": 17,
+          "tage": 16,
           "zustand": "läuft bald aus"
         },
         {
@@ -112,12 +112,6 @@
           "nummer": "2026-20030",
           "datum": "2026-09-30",
           "titel": "Large Diameter Graphite Electrodes From the People's Republic of China: Preliminary Affirmative Determination of Sales at Less Than Fair Value and Preliminary Affirmative Determination of Critical Circumstances"
-        },
-        {
-          "kanal": "gegenseite",
-          "nummer": "2026-19518",
-          "datum": "2026-09-24",
-          "titel": "Large Diameter Graphite Electrodes From the People's Republic of China: Preliminary Affirmative Critical Circumstances Determination in Countervailing Duty Investigation"
         }
       ],
       "kanaele": [
@@ -160,7 +154,7 @@
       "bis": "2026-11-10",
       "urspruenglich_bis": "2026-11-10",
       "verlaengert": false,
-      "tage": 17,
+      "tage": 16,
       "zustand": "läuft bald aus",
       "gelb": true,
       "rot_pruefen": false,
@@ -176,7 +170,7 @@
       "bis": "2026-11-27",
       "urspruenglich_bis": "2026-11-27",
       "verlaengert": false,
-      "tage": 34,
+      "tage": 33,
       "zustand": "läuft",
       "gelb": false,
       "rot_pruefen": false,
@@ -209,7 +203,7 @@
           "chip"
         ],
         "gewichtig": false,
-        "neu": true
+        "neu": false
       },
       {
         "nummer": "2026-21561",
@@ -426,90 +420,42 @@
         ],
         "gewichtig": true,
         "neu": false
-      },
-      {
-        "nummer": "2026-19591",
-        "titel": "Foreign-Trade Zone (FTZ) 272, Notification of Proposed Production Activity; Infinera Corporation; (Telecommunications Devices); Allentown, Pennsylvania",
-        "datum": "2026-09-24",
-        "art": "Notice",
-        "behoerden": [
-          "commerce-department",
-          "foreign-trade-zones-board"
-        ],
-        "behoerden_namen": [
-          "Commerce Department",
-          "Foreign-Trade Zones Board"
-        ],
-        "url": "https://www.federalregister.gov/documents/2026/09/24/2026-19591/foreign-trade-zone-ftz-272-notification-of-proposed-production-activity-infinera-corporation",
-        "zusammenfassung": "",
-        "begriffe": [
-          "germanium"
-        ],
-        "achsen": [
-          "chip"
-        ],
-        "gewichtig": false,
-        "neu": false
-      },
-      {
-        "nummer": "2026-19518",
-        "titel": "Large Diameter Graphite Electrodes From the People's Republic of China: Preliminary Affirmative Critical Circumstances Determination in Countervailing Duty Investigation",
-        "datum": "2026-09-24",
-        "art": "Notice",
-        "behoerden": [
-          "commerce-department",
-          "international-trade-administration"
-        ],
-        "behoerden_namen": [
-          "Commerce Department",
-          "International Trade Administration"
-        ],
-        "url": "https://www.federalregister.gov/documents/2026/09/24/2026-19518/large-diameter-graphite-electrodes-from-the-peoples-republic-of-china-preliminary-affirmative",
-        "zusammenfassung": "The U.S. Department of Commerce (Commerce) preliminarily determines that critical circumstances exist with respect to imports of large diameter graphite electrodes (large graphite electrodes) from the People's Republic of China (China). The period of investigation is January 1, 2025, through December 31, 2025. Interested parties are invited to comment on this preliminary determination of critical circumstances.",
-        "begriffe": [
-          "graphite"
-        ],
-        "achsen": [
-          "batterie"
-        ],
-        "gewichtig": true,
-        "neu": false
       }
     ]
   },
   "stoerung": {
     "erdbeben": [],
-    "erdbeben_gesamt": 5,
+    "erdbeben_gesamt": 6,
     "starkregen_gemessen": [],
     "starkregen_vorhergesagt": [],
     "regen_hoechst_mm": {
       "lengshuijiang": 2.9,
-      "hechi": 1.6,
+      "hechi": 7.5,
       "lincang": 10.9,
       "qujing": 21.7,
       "pingguo": 1.6,
-      "zibo": 20.0,
-      "baotou": 40.5,
+      "zibo": 3.6,
+      "baotou": 0.2,
       "ganzhou": 0.0,
       "jixi": 13.6
     },
     "trocken": {
       "lincang": {
-        "von": "2026-07-21",
-        "bis": "2026-10-18",
-        "summe_mm": 603,
-        "normal_mm": 671,
+        "von": "2026-07-22",
+        "bis": "2026-10-19",
+        "summe_mm": 607,
+        "normal_mm": 664,
         "urteil": "normal",
-        "anteil": 0.9,
+        "anteil": 0.91,
         "trocken": false
       },
       "qujing": {
-        "von": "2026-07-21",
-        "bis": "2026-10-18",
+        "von": "2026-07-22",
+        "bis": "2026-10-19",
         "summe_mm": 372,
-        "normal_mm": 429,
+        "normal_mm": 424,
         "urteil": "normal",
-        "anteil": 0.87,
+        "anteil": 0.88,
         "trocken": false
       }
     },
@@ -524,7 +470,7 @@
       "waehrung": "USD",
       "letzter": "2026-10-23",
       "schluss": 16.44,
-      "alter_tage": 1,
+      "alter_tage": 2,
       "r_kurz": -0.1442,
       "vorsprung_kurz": -0.0991,
       "r_lang": -0.3001,
@@ -542,7 +488,7 @@
       "waehrung": "USD",
       "letzter": "2026-10-23",
       "schluss": 3.06,
-      "alter_tage": 1,
+      "alter_tage": 2,
       "r_kurz": 0.0737,
       "vorsprung_kurz": 0.1188,
       "r_lang": -0.32,
@@ -560,7 +506,7 @@
       "waehrung": "USD",
       "letzter": "2026-10-23",
       "schluss": 38.3,
-      "alter_tage": 1,
+      "alter_tage": 2,
       "r_kurz": -0.0466,
       "vorsprung_kurz": -0.0015,
       "r_lang": -0.2156,
@@ -578,7 +524,7 @@
       "waehrung": "AUD",
       "letzter": "2026-10-23",
       "schluss": 10.71,
-      "alter_tage": 1,
+      "alter_tage": 2,
       "r_kurz": -0.0325,
       "vorsprung_kurz": 0.0126,
       "r_lang": -0.2468,

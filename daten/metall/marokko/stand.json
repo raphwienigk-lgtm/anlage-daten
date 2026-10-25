@@ -1,6 +1,6 @@
 {
-  "stand": "2026-10-24T03:35:46+02:00",
-  "datum": "2026-10-24",
+  "stand": "2026-10-25T02:08:17+01:00",
+  "datum": "2026-10-25",
   "version": "0.1.0",
   "land": "marokko",
   "name": "Marokko-Phosphat",
@@ -56,7 +56,7 @@
       "bis": "2027-12-31",
       "urspruenglich_bis": "2027-12-31",
       "verlaengert": false,
-      "tage": 433,
+      "tage": 432,
       "zustand": "läuft",
       "gelb": false,
       "rot_pruefen": false,
@@ -72,7 +72,7 @@
       "bis": "2027-12-31",
       "urspruenglich_bis": "2027-12-31",
       "verlaengert": false,
-      "tage": 433,
+      "tage": 432,
       "zustand": "läuft",
       "gelb": false,
       "rot_pruefen": false,
@@ -88,7 +88,7 @@
       "bis": "2027-10-03",
       "urspruenglich_bis": "2027-10-03",
       "verlaengert": false,
-      "tage": 344,
+      "tage": 343,
       "zustand": "läuft",
       "gelb": false,
       "rot_pruefen": false,
@@ -99,6 +99,54 @@
     "herkunft": "frisch",
     "tage": 30,
     "dokumente": [
+      {
+        "nummer": "2026-21767",
+        "titel": "Certain Amine Compounds From the People's Republic of China: Initiation of Countervailing Duty Investigation",
+        "datum": "2026-10-26",
+        "art": "Notice",
+        "behoerden": [
+          "commerce-department",
+          "international-trade-administration"
+        ],
+        "behoerden_namen": [
+          "Commerce Department",
+          "International Trade Administration"
+        ],
+        "url": "https://www.federalregister.gov/documents/2026/10/26/2026-21767/certain-amine-compounds-from-the-peoples-republic-of-china-initiation-of-countervailing-duty",
+        "zusammenfassung": "",
+        "begriffe": [
+          "phosphate"
+        ],
+        "achsen": [
+          "duenger"
+        ],
+        "gewichtig": false,
+        "neu": true
+      },
+      {
+        "nummer": "2026-21766",
+        "titel": "Certain Amine Compounds From the People's Republic of China: Initiation of Less-Than-Fair-Value Investigation",
+        "datum": "2026-10-26",
+        "art": "Notice",
+        "behoerden": [
+          "commerce-department",
+          "international-trade-administration"
+        ],
+        "behoerden_namen": [
+          "Commerce Department",
+          "International Trade Administration"
+        ],
+        "url": "https://www.federalregister.gov/documents/2026/10/26/2026-21766/certain-amine-compounds-from-the-peoples-republic-of-china-initiation-of-less-than-fair-value",
+        "zusammenfassung": "",
+        "begriffe": [
+          "phosphate"
+        ],
+        "achsen": [
+          "duenger"
+        ],
+        "gewichtig": false,
+        "neu": true
+      },
       {
         "nummer": "2026-21362",
         "titel": "Certain Steel Nails From Taiwan: Final Results of Antidumping Duty Administrative Review; 2024-2025",
@@ -508,11 +556,11 @@
       "waehrung": "USD",
       "letzter": "2026-10-23",
       "schluss": 69.74,
-      "alter_tage": 1,
+      "alter_tage": 2,
       "r_kurz": -0.0213,
-      "vorsprung_kurz": -0.0211,
+      "vorsprung_kurz": -0.0281,
       "r_lang": -0.0345,
-      "vorsprung_lang": 0.0215,
+      "vorsprung_lang": 0.0077,
       "urteil": "schläft",
       "markt_schlaeft": true,
       "handel": 191769383,
@@ -526,11 +574,11 @@
       "waehrung": "USD",
       "letzter": "2026-10-23",
       "schluss": 17.84,
-      "alter_tage": 1,
+      "alter_tage": 2,
       "r_kurz": -0.0521,
-      "vorsprung_kurz": -0.0518,
+      "vorsprung_kurz": -0.0589,
       "r_lang": -0.2247,
-      "vorsprung_lang": -0.1687,
+      "vorsprung_lang": -0.1826,
       "urteil": "schläft",
       "markt_schlaeft": true,
       "handel": 191370015,
