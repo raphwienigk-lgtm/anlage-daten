@@ -1,6 +1,6 @@
 {
-  "stand": "2026-10-25T02:08:17+01:00",
-  "datum": "2026-10-25",
+  "stand": "2026-10-26T02:09:19+01:00",
+  "datum": "2026-10-26",
   "version": "0.1.0",
   "land": "marokko",
   "name": "Marokko-Phosphat",
@@ -56,7 +56,7 @@
       "bis": "2027-12-31",
       "urspruenglich_bis": "2027-12-31",
       "verlaengert": false,
-      "tage": 432,
+      "tage": 431,
       "zustand": "läuft",
       "gelb": false,
       "rot_pruefen": false,
@@ -72,7 +72,7 @@
       "bis": "2027-12-31",
       "urspruenglich_bis": "2027-12-31",
       "verlaengert": false,
-      "tage": 432,
+      "tage": 431,
       "zustand": "läuft",
       "gelb": false,
       "rot_pruefen": false,
@@ -88,7 +88,7 @@
       "bis": "2027-10-03",
       "urspruenglich_bis": "2027-10-03",
       "verlaengert": false,
-      "tage": 343,
+      "tage": 342,
       "zustand": "läuft",
       "gelb": false,
       "rot_pruefen": false,
@@ -121,7 +121,7 @@
           "duenger"
         ],
         "gewichtig": false,
-        "neu": true
+        "neu": false
       },
       {
         "nummer": "2026-21766",
@@ -145,7 +145,7 @@
           "duenger"
         ],
         "gewichtig": false,
-        "neu": true
+        "neu": false
       },
       {
         "nummer": "2026-21362",
@@ -539,8 +539,8 @@
     "regen_hoechst_mm": {
       "khouribga": 4.6,
       "benguerir": 1.6,
-      "jorf_lasfar": 2.1,
-      "safi": 0.8,
+      "jorf_lasfar": 0.0,
+      "safi": 0.0,
       "bou_craa": 2.6,
       "laayoune": 23.6
     },
@@ -556,7 +556,7 @@
       "waehrung": "USD",
       "letzter": "2026-10-23",
       "schluss": 69.74,
-      "alter_tage": 2,
+      "alter_tage": 3,
       "r_kurz": -0.0213,
       "vorsprung_kurz": -0.0281,
       "r_lang": -0.0345,
@@ -574,7 +574,7 @@
       "waehrung": "USD",
       "letzter": "2026-10-23",
       "schluss": 17.84,
-      "alter_tage": 2,
+      "alter_tage": 3,
       "r_kurz": -0.0521,
       "vorsprung_kurz": -0.0589,
       "r_lang": -0.2247,
