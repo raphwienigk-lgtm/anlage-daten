@@ -1,13 +1,13 @@
 {
-  "stand": "2026-10-26T02:10:09+01:00",
-  "datum": "2026-10-26",
+  "stand": "2026-10-27T03:03:55+01:00",
+  "datum": "2026-10-27",
   "version": "0.1.0",
   "land": "kongo",
   "name": "Kongo-Kobalt",
   "laenderpaar": "DR Kongo ↔ China über Förderbeteiligung und Ausfuhrquoten",
   "rolle": "sensor",
   "hinweis": "Denkhilfe, keine Anlageberatung. Rot setzt nur der Metall-Wächter in der Cloud.",
-  "zustand": "in Ordnung",
+  "zustand": "Warnung",
   "reihenfolge": [
     "kobalt"
   ],
@@ -46,7 +46,7 @@
       "bis": "2027-12-31",
       "urspruenglich_bis": "2027-12-31",
       "verlaengert": false,
-      "tage": 431,
+      "tage": 430,
       "zustand": "läuft",
       "gelb": false,
       "rot_pruefen": false,
@@ -62,7 +62,7 @@
       "bis": "2026-12-31",
       "urspruenglich_bis": "2026-12-31",
       "verlaengert": false,
-      "tage": 66,
+      "tage": 65,
       "zustand": "läuft",
       "gelb": false,
       "rot_pruefen": false,
@@ -176,14 +176,7 @@
     "erdbeben_gesamt": 0,
     "starkregen_gemessen": [],
     "starkregen_vorhergesagt": [],
-    "regen_hoechst_mm": {
-      "kolwezi": 11.1,
-      "likasi": 14.1,
-      "tenke": 12.9,
-      "kisanfu": 10.8,
-      "kasumbalesa": 2.4,
-      "durban": 26.1
-    },
+    "regen_hoechst_mm": null,
     "trocken": {},
     "gelb_tage": 45
   },
@@ -196,7 +189,7 @@
       "waehrung": "GBP",
       "letzter": "2026-10-23",
       "schluss": 537.5,
-      "alter_tage": 3,
+      "alter_tage": 4,
       "r_kurz": -0.0782,
       "vorsprung_kurz": -0.085,
       "r_lang": -0.0421,
@@ -309,8 +302,8 @@
     },
     "openmeteo_vorhersage": {
       "name": "Open-Meteo · Regen der letzten Tage und Vorhersage",
-      "status": "ok",
-      "meldung": null
+      "status": "Fehler",
+      "meldung": "AbrufFehler: ReadTimeout bei https://api.open-meteo.com/v1/forecast: HTTPSConnectionPool(host='api.open-meteo.com', port=443): Read timed out. (read timeout=45)"
     },
     "openmeteo": {
       "name": "Open-Meteo · ERA5-Reanalyse (Regen, Wind)",
