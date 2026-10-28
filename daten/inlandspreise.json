@@ -1,6 +1,6 @@
 {
-  "stand": "2026-10-27T07:57:03+01:00",
-  "datum": "2026-10-27",
+  "stand": "2026-10-28T08:38:53+01:00",
+  "datum": "2026-10-28",
   "version": "0.1.0",
   "hinweis": "Denkhilfe, keine Anlageberatung. Frühzeichen, nicht am Rückblick geprüft.",
   "reihen": {
@@ -12,16 +12,16 @@
       "einheit": "Rupiah",
       "rolle": "fruehzeichen",
       "status": "ok",
-      "werte": 2282,
+      "werte": 2283,
       "letzter": {
-        "datum": "2026-10-27",
-        "wert": 20250.0
+        "datum": "2026-10-28",
+        "wert": 20350.0
       },
       "alter_tage": 0,
       "art": "täglich",
-      "mittel_jetzt": 20357.5,
-      "mittel_damals": 20487.5,
-      "veraenderung": -0.0063,
+      "mittel_jetzt": 20360.0,
+      "mittel_damals": 20482.5,
+      "veraenderung": -0.006,
       "urteil": "ruhig"
     },
     "speiseoel_id_marke": {
@@ -32,16 +32,16 @@
       "einheit": "Rupiah",
       "rolle": "fruehzeichen",
       "status": "ok",
-      "werte": 2285,
+      "werte": 2286,
       "letzter": {
-        "datum": "2026-10-27",
-        "wert": 24450.0
+        "datum": "2026-10-28",
+        "wert": 24500.0
       },
       "alter_tage": 0,
       "art": "täglich",
-      "mittel_jetzt": 24365.0,
-      "mittel_damals": 24272.5,
-      "veraenderung": 0.0038,
+      "mittel_jetzt": 24370.0,
+      "mittel_damals": 24275.0,
+      "veraenderung": 0.0039,
       "urteil": "ruhig"
     },
     "pflanzenoel_id_monat": {
@@ -57,7 +57,7 @@
         "datum": "2026-08-01",
         "wert": 21781.0
       },
-      "alter_tage": 87,
+      "alter_tage": 88,
       "art": "monatlich",
       "vergleich": {
         "datum": "2026-05-01",
@@ -74,16 +74,16 @@
       "einheit": "Ringgit je Tonne",
       "rolle": "tagespreis",
       "status": "ok",
-      "werte": 438,
+      "werte": 439,
       "letzter": {
-        "datum": "2026-10-26",
-        "wert": 4456.5
+        "datum": "2026-10-27",
+        "wert": 4395.5
       },
       "alter_tage": 1,
       "art": "täglich",
-      "mittel_jetzt": 4416.1,
-      "mittel_damals": 4502.95,
-      "veraenderung": -0.0193,
+      "mittel_jetzt": 4413.75,
+      "mittel_damals": 4503.92,
+      "veraenderung": -0.02,
       "urteil": "ruhig"
     }
   },
