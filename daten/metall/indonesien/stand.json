@@ -1,6 +1,6 @@
 {
-  "stand": "2026-10-28T03:13:13+01:00",
-  "datum": "2026-10-28",
+  "stand": "2026-10-29T03:25:30+01:00",
+  "datum": "2026-10-29",
   "version": "0.1.0",
   "land": "indonesien",
   "name": "Indonesien-Ausfuhr",
@@ -31,7 +31,7 @@
         {
           "kanal": "trocken",
           "standort": "sorowako",
-          "anteil": 0.1
+          "anteil": 0.09
         }
       ],
       "kanaele": [
@@ -76,7 +76,7 @@
       "bis": "2026-12-31",
       "urspruenglich_bis": "2026-12-31",
       "verlaengert": false,
-      "tage": 64,
+      "tage": 63,
       "zustand": "läuft",
       "gelb": false,
       "rot_pruefen": false,
@@ -92,7 +92,7 @@
       "bis": "2026-12-31",
       "urspruenglich_bis": "2026-12-31",
       "verlaengert": false,
-      "tage": 64,
+      "tage": 63,
       "zustand": "läuft",
       "gelb": false,
       "rot_pruefen": false,
@@ -109,7 +109,7 @@
       "bis": "2027-01-01",
       "urspruenglich_bis": "2027-01-01",
       "verlaengert": false,
-      "tage": 65,
+      "tage": 64,
       "zustand": "läuft",
       "gelb": false,
       "rot_pruefen": false,
@@ -120,6 +120,52 @@
     "herkunft": "frisch",
     "tage": 30,
     "dokumente": [
+      {
+        "nummer": "2026-21977",
+        "titel": "Rescission of Antidumping and Countervailing Duty Administrative Reviews",
+        "datum": "2026-10-28",
+        "art": "Notice",
+        "behoerden": [
+          "commerce-department",
+          "international-trade-administration"
+        ],
+        "behoerden_namen": [
+          "Commerce Department",
+          "International Trade Administration"
+        ],
+        "url": "https://www.federalregister.gov/documents/2026/10/28/2026-21977/rescission-of-antidumping-and-countervailing-duty-administrative-reviews",
+        "zusammenfassung": "Based upon the timely withdrawal of all review requests, the U.S. Department of Commerce (Commerce) is rescinding the administrative reviews covering the periods of review (PORs) of the antidumping duty (AD) and countervailing duty (CVD) orders identified in the table below.",
+        "begriffe": [
+          "stainless steel"
+        ],
+        "achsen": [
+          "nickel"
+        ],
+        "gewichtig": false,
+        "neu": true
+      },
+      {
+        "nummer": "2026-21916",
+        "titel": "Privacy Act of 1974; Matching Program",
+        "datum": "2026-10-28",
+        "art": "Notice",
+        "behoerden": [
+          "commerce-department"
+        ],
+        "behoerden_namen": [
+          "Commerce Department"
+        ],
+        "url": "https://www.federalregister.gov/documents/2026/10/28/2026-21916/privacy-act-of-1974-matching-program",
+        "zusammenfassung": "In accordance with the Privacy Act of 1974, as amended, and Office of Management and Budget (OMB) guidance on computer matching, the Department of Commerce (Commerce) is providing notice of the establishment of a new matching program. Pursuant to the Payment Integrity Information Act of 2019, Commerce is establishing a new matching program consisting of the computerized comparison of systems of records for Federal benefit programs at Commerce with the Do Not Pay (DNP) Working System, which is administered by Treasury's Bureau of the Fiscal Service. This matching program will enable the Commerc",
+        "begriffe": [
+          "tin"
+        ],
+        "achsen": [
+          "zinn"
+        ],
+        "gewichtig": false,
+        "neu": true
+      },
       {
         "nummer": "2026-21561",
         "titel": "Foreign-Trade Zone (FTZ) 186, Notification of Proposed Production Activity; Pratt & Whitney, a Division of RTX Corporation; (Aircraft Engines, Engine Modules, and Parts); North Berwick, Maine",
@@ -461,56 +507,31 @@
         ],
         "gewichtig": false,
         "neu": false
-      },
-      {
-        "nummer": "2026-19777",
-        "titel": "Foreign-Trade Zone (FTZ) 106, Notification of Proposed Production Activity; Hitachi Vantara Manufacturing; (Enterprise Datacenter Disk Storage System Hardware); Norman, Oklahoma",
-        "datum": "2026-09-28",
-        "art": "Notice",
-        "behoerden": [
-          "commerce-department",
-          "foreign-trade-zones-board"
-        ],
-        "behoerden_namen": [
-          "Commerce Department",
-          "Foreign-Trade Zones Board"
-        ],
-        "url": "https://www.federalregister.gov/documents/2026/09/28/2026-19777/foreign-trade-zone-ftz-106-notification-of-proposed-production-activity-hitachi-vantara",
-        "zusammenfassung": "",
-        "begriffe": [
-          "nickel",
-          "stainless steel"
-        ],
-        "achsen": [
-          "nickel"
-        ],
-        "gewichtig": false,
-        "neu": false
       }
     ]
   },
   "stoerung": {
     "erdbeben": [],
-    "erdbeben_gesamt": 8,
+    "erdbeben_gesamt": 10,
     "starkregen_gemessen": [],
     "starkregen_vorhergesagt": [],
     "regen_hoechst_mm": {
-      "morowali": 6.0,
-      "weda_bay": 9.9,
-      "sorowako": 3.3,
-      "pomalaa": 4.1,
-      "bangka": 23.0,
-      "belitung": 22.8,
-      "muntok": 24.2
+      "morowali": 14.3,
+      "weda_bay": 20.4,
+      "sorowako": 6.0,
+      "pomalaa": 9.5,
+      "bangka": 22.9,
+      "belitung": 21.7,
+      "muntok": 30.5
     },
     "trocken": {
       "sorowako": {
-        "von": "2026-07-25",
-        "bis": "2026-10-22",
+        "von": "2026-07-26",
+        "bis": "2026-10-23",
         "summe_mm": 49,
-        "normal_mm": 516,
+        "normal_mm": 514,
         "urteil": "trocken",
-        "anteil": 0.1,
+        "anteil": 0.09,
         "trocken": true
       }
     },
@@ -523,13 +544,13 @@
       "rolle": "beobachtung",
       "hinweis": "bildet den LME-Nickelpreis ab, kein Länderrisiko, keine Verwässerung",
       "waehrung": "USD",
-      "letzter": "2026-10-26",
-      "schluss": 13.4725,
+      "letzter": "2026-10-27",
+      "schluss": 13.5225,
       "alter_tage": 2,
-      "r_kurz": 0.0028,
-      "vorsprung_kurz": -0.004,
-      "r_lang": -0.0397,
-      "vorsprung_lang": -0.0137,
+      "r_kurz": -0.0017,
+      "vorsprung_kurz": -0.0195,
+      "r_lang": -0.0212,
+      "vorsprung_lang": -0.012,
       "urteil": "schläft",
       "markt_schlaeft": true,
       "handel": 43068,
@@ -541,11 +562,11 @@
       "rolle": "beobachtung",
       "hinweis": "bildet den LME-Zinnpreis ab",
       "waehrung": "USD",
-      "letzter": "2026-10-27",
-      "schluss": 118.505,
+      "letzter": "2026-10-28",
+      "schluss": 117.07,
       "alter_tage": 1,
-      "r_kurz": 0.0061,
-      "vorsprung_kurz": -0.0007,
+      "r_kurz": -0.0063,
+      "vorsprung_kurz": -0.0241,
       "r_lang": null,
       "vorsprung_lang": null,
       "urteil": "ohne Vergleich",
