@@ -1,0 +1,4576 @@
+{
+  "stand": "2026-10-30T20:55:48+01:00",
+  "version": "0.1.0",
+  "hinweis": "Denkhilfe, keine Anlageberatung.",
+  "rohstoff": "kautschuk",
+  "name": "Kautschuk",
+  "fingerabdruck": "14b9accbb8523a68",
+  "einstellungen": {
+    "beginn": "1960-01",
+    "von": "1992-01",
+    "lernzeit_bis": "2015-12",
+    "vorlauf_T_monate": 9,
+    "treffer_ab": 0.2,
+    "bewegung_ab": 0.3,
+    "erkannt_monate_vorher": 6,
+    "bestehen": {
+      "mehrwert_ab": 0.1,
+      "mindest_signale": 3,
+      "treffer_mindestens_wie_fehlalarme": true,
+      "zufall_hoechstens": 0.1
+    },
+    "verzug": {
+      "oni_monate": 2,
+      "dmi_monate": 1,
+      "preis_monate": 2,
+      "gegen_monate": 1,
+      "regen_tage": 6,
+      "wind_ab_monat": 7
+    },
+    "wetter_unsicher_bis": 1978
+  },
+  "daten": {
+    "herkunft": {
+      "regen": "Open-Meteo ERA5, 10 Punkte",
+      "preise": {
+        "brent": "Weltbank Pink Sheet (CMO-Historical-Data-Monthly.xlsx), Stand 2026-09-26",
+        "kakao": "FRED PCOCOUSDM (erst ab 1992)",
+        "kautschuk": "FRED PRUBBUSDM (erst ab 1992)",
+        "palmoel": "Weltbank Pink Sheet (CMO-Historical-Data-Monthly.xlsx), Stand 2026-09-26",
+        "sojaoel": "Weltbank Pink Sheet (CMO-Historical-Data-Monthly.xlsx), Stand 2026-09-26"
+      },
+      "oni": "NOAA CPC · El-Niño-Index (ONI), heute geholt",
+      "dmi": "JMA, Basis 1991–2020, ab 1950, bis 2026-09"
+    },
+    "hinweise": [
+      "Die Preisreihe beginnt erst 1992-01; so spät beginnt auch der Rückblick (FRED PRUBBUSDM (erst ab 1992))."
+    ]
+  },
+  "lernzeit": {
+    "bilanz": {
+      "von": "1992-01",
+      "bis": "2015-12",
+      "preis_bis": "2015-12",
+      "monate": 288,
+      "farben": {
+        "Grün": 195,
+        "Gelb": 89,
+        "Rot": 4,
+        "ohne Urteil": 0
+      },
+      "anzahl": 1,
+      "bewertbar": 1,
+      "treffer": 0,
+      "fehlalarme": 1,
+      "offen": 0,
+      "mittel_12": -0.2361,
+      "basis_12": 0.0875,
+      "basis_trefferquote": 0.4493,
+      "basis_monate": 276,
+      "mehrwert": -0.3236,
+      "zufall_anteil": 0.8185,
+      "signale": [
+        {
+          "monat": "1998-05",
+          "zahl": 8,
+          "schluss": "1998-09",
+          "preis": 35.4933815002441,
+          "nach_3": -0.1648,
+          "nach_6": -0.0815,
+          "nach_12": -0.2361,
+          "urteil": "Fehlalarm",
+          "hoechster": -0.0684,
+          "gipfel_nach_monaten": 5,
+          "tiefster": -0.244,
+          "bei_schluss": -0.1273
+        }
+      ],
+      "bewegungen": [
+        {
+          "beginn": "1993-10",
+          "gipfel": "1995-04",
+          "anstieg": 1.3054,
+          "el_nino": false,
+          "einordnung": "nur Gelb",
+          "rot_seit": null
+        },
+        {
+          "beginn": "1999-08",
+          "gipfel": "1999-11",
+          "anstieg": 0.3186,
+          "el_nino": false,
+          "einordnung": "verpasst",
+          "rot_seit": null
+        },
+        {
+          "beginn": "2001-12",
+          "gipfel": "2003-03",
+          "anstieg": 1.1707,
+          "el_nino": false,
+          "einordnung": "verpasst",
+          "rot_seit": null
+        },
+        {
+          "beginn": "2002-10",
+          "gipfel": "2003-10",
+          "anstieg": 0.571,
+          "el_nino": true,
+          "einordnung": "nur Gelb",
+          "rot_seit": null
+        },
+        {
+          "beginn": "2003-04",
+          "gipfel": "2004-04",
+          "anstieg": 0.4104,
+          "el_nino": true,
+          "einordnung": "nur Gelb",
+          "rot_seit": null
+        },
+        {
+          "beginn": "2004-12",
+          "gipfel": "2006-06",
+          "anstieg": 1.2838,
+          "el_nino": true,
+          "einordnung": "nur Gelb",
+          "rot_seit": null
+        },
+        {
+          "beginn": "2006-11",
+          "gipfel": "2007-11",
+          "anstieg": 0.5285,
+          "el_nino": true,
+          "einordnung": "nur Gelb",
+          "rot_seit": null
+        },
+        {
+          "beginn": "2007-07",
+          "gipfel": "2008-06",
+          "anstieg": 0.5522,
+          "el_nino": true,
+          "einordnung": "nur Gelb",
+          "rot_seit": null
+        },
+        {
+          "beginn": "2007-12",
+          "gipfel": "2008-06",
+          "anstieg": 0.3006,
+          "el_nino": false,
+          "einordnung": "nur Gelb",
+          "rot_seit": null
+        },
+        {
+          "beginn": "2008-12",
+          "gipfel": "2011-02",
+          "anstieg": 4.0724,
+          "el_nino": false,
+          "einordnung": "verpasst",
+          "rot_seit": null
+        }
+      ],
+      "bewegungen_zaehlung": {
+        "gesamt": 10,
+        "mit_el_nino": 5,
+        "rechtzeitig": 0,
+        "spät": 0,
+        "nur Gelb": 7,
+        "verpasst": 3,
+        "el_nino": {
+          "rechtzeitig": 0,
+          "spät": 0,
+          "nur Gelb": 5,
+          "verpasst": 0
+        }
+      },
+      "engpaesse": {
+        "Zeitfenster knapp": 64,
+        "Kreuzbestätigung West und Ost": 55,
+        "Markt schläft noch": 36,
+        "Ostende der Kaskade bestätigt": 35,
+        "Gegenkräfte überwiegen nicht": 18,
+        "Markt schläft noch (ohne Daten)": 15
+      },
+      "urteil": {
+        "bestanden": false,
+        "gruende": [
+          {
+            "art": "zu_wenige",
+            "ist": 1,
+            "soll": 3
+          }
+        ]
+      }
+    },
+    "zeitalter": [],
+    "episoden": [
+      {
+        "beginn": "MJJ 1991",
+        "hoehepunkt": {
+          "jahreszeit": "DJF",
+          "jahr": 1992,
+          "monat": 1,
+          "wert": 1.54
+        },
+        "hoechste_farbe": "Gelb",
+        "erster_monat": "1992-01",
+        "engpass": "Markt schläft noch (ohne Daten)",
+        "preis_nach_hoehepunkt": {
+          "wert": 0.1305,
+          "monat": "1993-01"
+        },
+        "ernte": {
+          "jahr": 1993,
+          "wachstum": 0.0602,
+          "vorher_mittel": 0.0915,
+          "delle": -0.0312
+        }
+      },
+      {
+        "beginn": "SON 1994",
+        "hoehepunkt": {
+          "jahreszeit": "NDJ",
+          "jahr": 1994,
+          "monat": 12,
+          "wert": 0.97
+        },
+        "hoechste_farbe": "Gelb",
+        "erster_monat": "1994-12",
+        "engpass": "Markt schläft noch",
+        "preis_nach_hoehepunkt": {
+          "wert": 0.2555,
+          "monat": "1995-04"
+        },
+        "ernte": {
+          "jahr": 1995,
+          "wachstum": 0.0909,
+          "vorher_mittel": 0.0866,
+          "delle": 0.0043
+        }
+      },
+      {
+        "beginn": "AMJ 1997",
+        "hoehepunkt": {
+          "jahreszeit": "NDJ",
+          "jahr": 1997,
+          "monat": 12,
+          "wert": 2.37
+        },
+        "hoechste_farbe": "Rot",
+        "erster_monat": "1998-05",
+        "engpass": "Zeitfenster knapp",
+        "preis_nach_hoehepunkt": {
+          "wert": 0.1337,
+          "monat": "1998-02"
+        },
+        "ernte": {
+          "jahr": 1997,
+          "wachstum": -0.0613,
+          "vorher_mittel": 0.0995,
+          "delle": -0.1608
+        }
+      },
+      {
+        "beginn": "JJA 2002",
+        "hoehepunkt": {
+          "jahreszeit": "OND",
+          "jahr": 2002,
+          "monat": 11,
+          "wert": 1.19
+        },
+        "hoechste_farbe": "Gelb",
+        "erster_monat": "2002-09",
+        "engpass": "Markt schläft noch",
+        "preis_nach_hoehepunkt": {
+          "wert": 0.545,
+          "monat": "2003-10"
+        },
+        "ernte": {
+          "jahr": 2003,
+          "wachstum": 0.0813,
+          "vorher_mittel": 0.0824,
+          "delle": -0.0011
+        }
+      },
+      {
+        "beginn": "JAS 2004",
+        "hoehepunkt": {
+          "jahreszeit": "NDJ",
+          "jahr": 2004,
+          "monat": 12,
+          "wert": 0.71
+        },
+        "hoechste_farbe": "Gelb",
+        "erster_monat": "2004-10",
+        "engpass": "Ostende der Kaskade bestätigt",
+        "preis_nach_hoehepunkt": {
+          "wert": 0.7505,
+          "monat": "2006-03"
+        },
+        "ernte": {
+          "jahr": 2005,
+          "wachstum": 0.0797,
+          "vorher_mittel": 0.1036,
+          "delle": -0.0239
+        }
+      },
+      {
+        "beginn": "ASO 2006",
+        "hoehepunkt": {
+          "jahreszeit": "NDJ",
+          "jahr": 2006,
+          "monat": 12,
+          "wert": 0.88
+        },
+        "hoechste_farbe": "Gelb",
+        "erster_monat": "2006-11",
+        "engpass": "Zeitfenster knapp",
+        "preis_nach_hoehepunkt": {
+          "wert": 0.6202,
+          "monat": "2008-03"
+        },
+        "ernte": {
+          "jahr": 2006,
+          "wachstum": 0.0272,
+          "vorher_mittel": 0.0898,
+          "delle": -0.0626
+        }
+      },
+      {
+        "beginn": "JJA 2009",
+        "hoehepunkt": {
+          "jahreszeit": "NDJ",
+          "jahr": 2009,
+          "monat": 12,
+          "wert": 1.5
+        },
+        "hoechste_farbe": "Gelb",
+        "erster_monat": "2009-09",
+        "engpass": "Ostende der Kaskade bestätigt",
+        "preis_nach_hoehepunkt": {
+          "wert": 1.2069,
+          "monat": "2011-02"
+        },
+        "ernte": {
+          "jahr": 2010,
+          "wachstum": 0.0515,
+          "vorher_mittel": 0.0833,
+          "delle": -0.0318
+        }
+      },
+      {
+        "beginn": "SON 2014",
+        "hoehepunkt": {
+          "jahreszeit": "NDJ",
+          "jahr": 2015,
+          "monat": 12,
+          "wert": 2.59
+        },
+        "hoechste_farbe": "Gelb",
+        "erster_monat": "2014-12",
+        "engpass": "Zeitfenster knapp",
+        "preis_nach_hoehepunkt": null,
+        "ernte": {
+          "jahr": 2015,
+          "wachstum": -0.0601,
+          "vorher_mittel": 0.0587,
+          "delle": -0.1188
+        }
+      }
+    ],
+    "verlauf": [
+      {
+        "monat": "1992-01",
+        "farbe": "Gelb",
+        "zahl": 6,
+        "episode": true,
+        "oni": 1.18,
+        "zf": 1.0,
+        "z": null,
+        "gegen": 0.512,
+        "ostende": true,
+        "kreuz": "nur Osten",
+        "fehlt": [
+          "Zeitfenster knapp",
+          "Markt schläft noch (ohne Daten)",
+          "Kreuzbestätigung West und Ost"
+        ]
+      },
+      {
+        "monat": "1992-02",
+        "farbe": "Gelb",
+        "zahl": 5,
+        "episode": true,
+        "oni": 1.43,
+        "zf": 1.0,
+        "z": null,
+        "gegen": 0.912,
+        "ostende": true,
+        "kreuz": "nur Osten",
+        "fehlt": [
+          "Zeitfenster knapp",
+          "Gegenkräfte überwiegen nicht",
+          "Markt schläft noch (ohne Daten)",
+          "Kreuzbestätigung West und Ost"
+        ]
+      },
+      {
+        "monat": "1992-03",
+        "farbe": "Gelb",
+        "zahl": 6,
+        "episode": true,
+        "oni": 1.54,
+        "zf": 1.0,
+        "z": null,
+        "gegen": 0.741,
+        "ostende": true,
+        "kreuz": "nur Osten",
+        "fehlt": [
+          "Zeitfenster knapp",
+          "Gegenkräfte überwiegen nicht",
+          "Markt schläft noch (ohne Daten)",
+          "Kreuzbestätigung West und Ost"
+        ]
+      },
+      {
+        "monat": "1992-04",
+        "farbe": "Gelb",
+        "zahl": 8,
+        "episode": true,
+        "oni": 1.5,
+        "zf": 1.0,
+        "z": null,
+        "gegen": 0.217,
+        "ostende": true,
+        "kreuz": "nur Osten",
+        "fehlt": [
+          "Zeitfenster knapp",
+          "Markt schläft noch (ohne Daten)",
+          "Kreuzbestätigung West und Ost"
+        ]
+      },
+      {
+        "monat": "1992-05",
+        "farbe": "Gelb",
+        "zahl": 9,
+        "episode": true,
+        "oni": 1.4,
+        "zf": 0.556,
+        "z": null,
+        "gegen": 0.0,
+        "ostende": true,
+        "kreuz": "nur Osten",
+        "fehlt": [
+          "Zeitfenster knapp",
+          "Markt schläft noch (ohne Daten)",
+          "Kreuzbestätigung West und Ost"
+        ]
+      },
+      {
+        "monat": "1992-06",
+        "farbe": "Gelb",
+        "zahl": 9,
+        "episode": true,
+        "oni": 1.3,
+        "zf": 0.444,
+        "z": null,
+        "gegen": 0.0,
+        "ostende": true,
+        "kreuz": "nur Osten",
+        "fehlt": [
+          "Markt schläft noch (ohne Daten)",
+          "Kreuzbestätigung West und Ost"
+        ]
+      },
+      {
+        "monat": "1992-07",
+        "farbe": "Gelb",
+        "zahl": 9,
+        "episode": true,
+        "oni": 1.08,
+        "zf": 0.333,
+        "z": null,
+        "gegen": 0.0,
+        "ostende": true,
+        "kreuz": "nur Osten",
+        "fehlt": [
+          "Markt schläft noch (ohne Daten)",
+          "Kreuzbestätigung West und Ost"
+        ]
+      },
+      {
+        "monat": "1992-08",
+        "farbe": "Gelb",
+        "zahl": 9,
+        "episode": true,
+        "oni": 0.72,
+        "zf": 0.222,
+        "z": null,
+        "gegen": 0.0,
+        "ostende": true,
+        "kreuz": "nur Osten",
+        "fehlt": [
+          "Markt schläft noch (ohne Daten)",
+          "Kreuzbestätigung West und Ost"
+        ]
+      },
+      {
+        "monat": "1992-09",
+        "farbe": "Gelb",
+        "zahl": 9,
+        "episode": true,
+        "oni": 0.35,
+        "zf": 0.111,
+        "z": null,
+        "gegen": 0.038,
+        "ostende": true,
+        "kreuz": "nur Osten",
+        "fehlt": [
+          "Markt schläft noch (ohne Daten)",
+          "Kreuzbestätigung West und Ost"
+        ]
+      },
+      {
+        "monat": "1992-10",
+        "farbe": "Grün",
+        "zahl": null,
+        "episode": true,
+        "oni": 0.08,
+        "zf": 0.0,
+        "z": null,
+        "gegen": 0.213,
+        "ostende": true,
+        "kreuz": "nur Osten",
+        "fehlt": []
+      },
+      {
+        "monat": "1992-11",
+        "farbe": "Grün",
+        "zahl": null,
+        "episode": true,
+        "oni": -0.15,
+        "zf": 0.0,
+        "z": null,
+        "gegen": 0.0,
+        "ostende": true,
+        "kreuz": "nur Osten",
+        "fehlt": []
+      },
+      {
+        "monat": "1992-12",
+        "farbe": "Grün",
+        "zahl": null,
+        "episode": true,
+        "oni": -0.22,
+        "zf": 0.0,
+        "z": null,
+        "gegen": 0.139,
+        "ostende": true,
+        "kreuz": "nur Osten",
+        "fehlt": []
+      },
+      {
+        "monat": "1993-01",
+        "farbe": "Grün",
+        "zahl": null,
+        "episode": true,
+        "oni": -0.24,
+        "zf": 0.0,
+        "z": null,
+        "gegen": 0.519,
+        "ostende": true,
+        "kreuz": "nur Osten",
+        "fehlt": []
+      },
+      {
+        "monat": "1993-02",
+        "farbe": "Grün",
+        "zahl": null,
+        "episode": true,
+        "oni": -0.05,
+        "zf": 0.0,
+        "z": null,
+        "gegen": 0.714,
+        "ostende": true,
+        "kreuz": "nur Osten",
+        "fehlt": []
+      },
+      {
+        "monat": "1993-03",
+        "farbe": "Grün",
+        "zahl": null,
+        "episode": true,
+        "oni": 0.13,
+        "zf": 0.0,
+        "z": null,
+        "gegen": 0.195,
+        "ostende": true,
+        "kreuz": "nur Osten",
+        "fehlt": []
+      },
+      {
+        "monat": "1993-04",
+        "farbe": "Grün",
+        "zahl": null,
+        "episode": true,
+        "oni": 0.31,
+        "zf": 0.0,
+        "z": null,
+        "gegen": 0.0,
+        "ostende": true,
+        "kreuz": "nur Osten",
+        "fehlt": []
+      },
+      {
+        "monat": "1993-05",
+        "farbe": "Gelb",
+        "zahl": 7,
+        "episode": true,
+        "oni": 0.5,
+        "zf": 1.0,
+        "z": null,
+        "gegen": 0.0,
+        "ostende": false,
+        "kreuz": "Westzeuge ohne Urteil",
+        "fehlt": [
+          "Zeitfenster knapp",
+          "Markt schläft noch (ohne Daten)",
+          "Ostende der Kaskade bestätigt",
+          "Kreuzbestätigung West und Ost"
+        ]
+      },
+      {
+        "monat": "1993-06",
+        "farbe": "Gelb",
+        "zahl": 7,
+        "episode": true,
+        "oni": 0.73,
+        "zf": 1.0,
+        "z": null,
+        "gegen": 0.0,
+        "ostende": false,
+        "kreuz": "Westzeuge ohne Urteil",
+        "fehlt": [
+          "Zeitfenster knapp",
+          "Markt schläft noch (ohne Daten)",
+          "Ostende der Kaskade bestätigt",
+          "Kreuzbestätigung West und Ost"
+        ]
+      },
+      {
+        "monat": "1993-07",
+        "farbe": "Gelb",
+        "zahl": 6,
+        "episode": true,
+        "oni": 0.76,
+        "zf": 1.0,
+        "z": null,
+        "gegen": 0.293,
+        "ostende": false,
+        "kreuz": "Westzeuge ohne Urteil",
+        "fehlt": [
+          "Zeitfenster knapp",
+          "Markt schläft noch (ohne Daten)",
+          "Ostende der Kaskade bestätigt",
+          "Kreuzbestätigung West und Ost"
+        ]
+      },
+      {
+        "monat": "1993-08",
+        "farbe": "Gelb",
+        "zahl": 5,
+        "episode": true,
+        "oni": 0.56,
+        "zf": 1.0,
+        "z": null,
+        "gegen": 0.496,
+        "ostende": false,
+        "kreuz": "Westzeuge ohne Urteil",
+        "fehlt": [
+          "Zeitfenster knapp",
+          "Markt schläft noch (ohne Daten)",
+          "Ostende der Kaskade bestätigt",
+          "Kreuzbestätigung West und Ost"
+        ]
+      },
+      {
+        "monat": "1993-09",
+        "farbe": "Grün",
+        "zahl": null,
+        "episode": false,
+        "oni": 0.28,
+        "zf": null,
+        "z": null,
+        "gegen": 0.486,
+        "ostende": false,
+        "kreuz": "Westzeuge ohne Urteil",
+        "fehlt": []
+      },
+      {
+        "monat": "1993-10",
+        "farbe": "Grün",
+        "zahl": null,
+        "episode": false,
+        "oni": 0.22,
+        "zf": null,
+        "z": null,
+        "gegen": 0.467,
+        "ostende": false,
+        "kreuz": "Westzeuge ohne Urteil",
+        "fehlt": []
+      },
+      {
+        "monat": "1993-11",
+        "farbe": "Grün",
+        "zahl": null,
+        "episode": false,
+        "oni": 0.2,
+        "zf": null,
+        "z": null,
+        "gegen": 0.06,
+        "ostende": false,
+        "kreuz": "keiner",
+        "fehlt": []
+      },
+      {
+        "monat": "1993-12",
+        "farbe": "Grün",
+        "zahl": null,
+        "episode": false,
+        "oni": 0.2,
+        "zf": null,
+        "z": null,
+        "gegen": 0.464,
+        "ostende": false,
+        "kreuz": "keiner",
+        "fehlt": []
+      },
+      {
+        "monat": "1994-01",
+        "farbe": "Grün",
+        "zahl": null,
+        "episode": false,
+        "oni": 0.2,
+        "zf": null,
+        "z": null,
+        "gegen": 0.75,
+        "ostende": false,
+        "kreuz": "Westzeuge ohne Urteil",
+        "fehlt": []
+      },
+      {
+        "monat": "1994-02",
+        "farbe": "Grün",
+        "zahl": null,
+        "episode": false,
+        "oni": 0.19,
+        "zf": null,
+        "z": null,
+        "gegen": 0.708,
+        "ostende": false,
+        "kreuz": "Westzeuge ohne Urteil",
+        "fehlt": []
+      },
+      {
+        "monat": "1994-03",
+        "farbe": "Grün",
+        "zahl": null,
+        "episode": false,
+        "oni": 0.07,
+        "zf": null,
+        "z": null,
+        "gegen": 0.446,
+        "ostende": false,
+        "kreuz": "Westzeuge ohne Urteil",
+        "fehlt": []
+      },
+      {
+        "monat": "1994-04",
+        "farbe": "Grün",
+        "zahl": null,
+        "episode": false,
+        "oni": 0.0,
+        "zf": null,
+        "z": null,
+        "gegen": 0.0,
+        "ostende": false,
+        "kreuz": "Westzeuge ohne Urteil",
+        "fehlt": []
+      },
+      {
+        "monat": "1994-05",
+        "farbe": "Grün",
+        "zahl": null,
+        "episode": false,
+        "oni": 0.04,
+        "zf": null,
+        "z": null,
+        "gegen": 0.0,
+        "ostende": false,
+        "kreuz": "Westzeuge ohne Urteil",
+        "fehlt": []
+      },
+      {
+        "monat": "1994-06",
+        "farbe": "Grün",
+        "zahl": null,
+        "episode": false,
+        "oni": 0.17,
+        "zf": null,
+        "z": null,
+        "gegen": 0.0,
+        "ostende": false,
+        "kreuz": "Westzeuge ohne Urteil",
+        "fehlt": []
+      },
+      {
+        "monat": "1994-07",
+        "farbe": "Grün",
+        "zahl": null,
+        "episode": false,
+        "oni": 0.25,
+        "zf": null,
+        "z": null,
+        "gegen": 0.0,
+        "ostende": false,
+        "kreuz": "Westzeuge ohne Urteil",
+        "fehlt": []
+      },
+      {
+        "monat": "1994-08",
+        "farbe": "Grün",
+        "zahl": null,
+        "episode": false,
+        "oni": 0.23,
+        "zf": null,
+        "z": null,
+        "gegen": 0.0,
+        "ostende": false,
+        "kreuz": "Westzeuge ohne Urteil",
+        "fehlt": []
+      },
+      {
+        "monat": "1994-09",
+        "farbe": "Grün",
+        "zahl": null,
+        "episode": false,
+        "oni": 0.3,
+        "zf": null,
+        "z": null,
+        "gegen": 0.0,
+        "ostende": false,
+        "kreuz": "Westzeuge ohne Urteil",
+        "fehlt": []
+      },
+      {
+        "monat": "1994-10",
+        "farbe": "Grün",
+        "zahl": null,
+        "episode": false,
+        "oni": 0.3,
+        "zf": null,
+        "z": null,
+        "gegen": 0.254,
+        "ostende": false,
+        "kreuz": "Westzeuge ohne Urteil",
+        "fehlt": []
+      },
+      {
+        "monat": "1994-11",
+        "farbe": "Grün",
+        "zahl": null,
+        "episode": false,
+        "oni": 0.47,
+        "zf": null,
+        "z": null,
+        "gegen": 0.341,
+        "ostende": false,
+        "kreuz": "nur Westen",
+        "fehlt": []
+      },
+      {
+        "monat": "1994-12",
+        "farbe": "Gelb",
+        "zahl": 7,
+        "episode": true,
+        "oni": 0.66,
+        "zf": 1.0,
+        "z": null,
+        "gegen": 0.0,
+        "ostende": true,
+        "kreuz": "bestätigt",
+        "fehlt": [
+          "Zeitfenster knapp",
+          "Markt schläft noch (ohne Daten)"
+        ]
+      },
+      {
+        "monat": "1995-01",
+        "farbe": "Gelb",
+        "zahl": 8,
+        "episode": true,
+        "oni": 0.93,
+        "zf": 1.0,
+        "z": null,
+        "gegen": 0.0,
+        "ostende": true,
+        "kreuz": "bestätigt",
+        "fehlt": [
+          "Zeitfenster knapp",
+          "Markt schläft noch (ohne Daten)"
+        ]
+      },
+      {
+        "monat": "1995-02",
+        "farbe": "Gelb",
+        "zahl": 6,
+        "episode": true,
+        "oni": 0.97,
+        "zf": 1.0,
+        "z": 2.87,
+        "gegen": 0.0,
+        "ostende": true,
+        "kreuz": "bestätigt",
+        "fehlt": [
+          "Zeitfenster knapp",
+          "Markt schläft noch"
+        ]
+      },
+      {
+        "monat": "1995-03",
+        "farbe": "Gelb",
+        "zahl": 5,
+        "episode": true,
+        "oni": 0.88,
+        "zf": 1.0,
+        "z": 3.17,
+        "gegen": 0.035,
+        "ostende": true,
+        "kreuz": "bestätigt",
+        "fehlt": [
+          "Zeitfenster knapp",
+          "Markt schläft noch"
+        ]
+      },
+      {
+        "monat": "1995-04",
+        "farbe": "Gelb",
+        "zahl": 5,
+        "episode": true,
+        "oni": 0.65,
+        "zf": 0.556,
+        "z": 3.11,
+        "gegen": 0.0,
+        "ostende": true,
+        "kreuz": "bestätigt",
+        "fehlt": [
+          "Zeitfenster knapp",
+          "Markt schläft noch"
+        ]
+      },
+      {
+        "monat": "1995-05",
+        "farbe": "Gelb",
+        "zahl": 6,
+        "episode": true,
+        "oni": 0.46,
+        "zf": 0.444,
+        "z": 2.78,
+        "gegen": 0.0,
+        "ostende": true,
+        "kreuz": "bestätigt",
+        "fehlt": [
+          "Markt schläft noch"
+        ]
+      },
+      {
+        "monat": "1995-06",
+        "farbe": "Gelb",
+        "zahl": 6,
+        "episode": true,
+        "oni": 0.19,
+        "zf": 0.333,
+        "z": 2.55,
+        "gegen": 0.0,
+        "ostende": true,
+        "kreuz": "bestätigt",
+        "fehlt": [
+          "Markt schläft noch"
+        ]
+      },
+      {
+        "monat": "1995-07",
+        "farbe": "Gelb",
+        "zahl": 6,
+        "episode": true,
+        "oni": 0.03,
+        "zf": 0.222,
+        "z": 1.99,
+        "gegen": 0.0,
+        "ostende": true,
+        "kreuz": "bestätigt",
+        "fehlt": [
+          "Markt schläft noch"
+        ]
+      },
+      {
+        "monat": "1995-08",
+        "farbe": "Gelb",
+        "zahl": 5,
+        "episode": true,
+        "oni": -0.11,
+        "zf": 0.111,
+        "z": 1.34,
+        "gegen": 0.753,
+        "ostende": true,
+        "kreuz": "bestätigt",
+        "fehlt": [
+          "Gegenkräfte überwiegen nicht",
+          "Markt schläft noch"
+        ]
+      },
+      {
+        "monat": "1995-09",
+        "farbe": "Grün",
+        "zahl": null,
+        "episode": true,
+        "oni": -0.3,
+        "zf": 0.0,
+        "z": 0.73,
+        "gegen": 0.628,
+        "ostende": true,
+        "kreuz": "bestätigt",
+        "fehlt": []
+      },
+      {
+        "monat": "1995-10",
+        "farbe": "Grün",
+        "zahl": null,
+        "episode": true,
+        "oni": -0.55,
+        "zf": 0.0,
+        "z": 0.56,
+        "gegen": 0.164,
+        "ostende": true,
+        "kreuz": "bestätigt",
+        "fehlt": []
+      },
+      {
+        "monat": "1995-11",
+        "farbe": "Grün",
+        "zahl": null,
+        "episode": true,
+        "oni": -0.81,
+        "zf": 0.0,
+        "z": 0.66,
+        "gegen": 0.0,
+        "ostende": true,
+        "kreuz": "bestätigt",
+        "fehlt": []
+      },
+      {
+        "monat": "1995-12",
+        "farbe": "Grün",
+        "zahl": null,
+        "episode": true,
+        "oni": -0.97,
+        "zf": 0.0,
+        "z": 0.81,
+        "gegen": 0.0,
+        "ostende": true,
+        "kreuz": "bestätigt",
+        "fehlt": []
+      },
+      {
+        "monat": "1996-01",
+        "farbe": "Grün",
+        "zahl": null,
+        "episode": true,
+        "oni": -1.05,
+        "zf": 0.0,
+        "z": 1.32,
+        "gegen": 0.0,
+        "ostende": true,
+        "kreuz": "bestätigt",
+        "fehlt": []
+      },
+      {
+        "monat": "1996-02",
+        "farbe": "Grün",
+        "zahl": null,
+        "episode": true,
+        "oni": -1.01,
+        "zf": 0.0,
+        "z": 1.31,
+        "gegen": 0.0,
+        "ostende": true,
+        "kreuz": "bestätigt",
+        "fehlt": []
+      },
+      {
+        "monat": "1996-03",
+        "farbe": "Grün",
+        "zahl": null,
+        "episode": true,
+        "oni": -0.88,
+        "zf": 0.0,
+        "z": 1.0,
+        "gegen": 0.0,
+        "ostende": true,
+        "kreuz": "bestätigt",
+        "fehlt": []
+      },
+      {
+        "monat": "1996-04",
+        "farbe": "Grün",
+        "zahl": null,
+        "episode": false,
+        "oni": -0.7,
+        "zf": null,
+        "z": 0.97,
+        "gegen": 0.0,
+        "ostende": false,
+        "kreuz": "Westzeuge ohne Urteil",
+        "fehlt": []
+      },
+      {
+        "monat": "1996-05",
+        "farbe": "Grün",
+        "zahl": null,
+        "episode": false,
+        "oni": -0.52,
+        "zf": null,
+        "z": 0.92,
+        "gegen": 0.0,
+        "ostende": false,
+        "kreuz": "Westzeuge ohne Urteil",
+        "fehlt": []
+      },
+      {
+        "monat": "1996-06",
+        "farbe": "Grün",
+        "zahl": null,
+        "episode": false,
+        "oni": -0.36,
+        "zf": null,
+        "z": 0.62,
+        "gegen": 0.0,
+        "ostende": false,
+        "kreuz": "Westzeuge ohne Urteil",
+        "fehlt": []
+      },
+      {
+        "monat": "1996-07",
+        "farbe": "Grün",
+        "zahl": null,
+        "episode": false,
+        "oni": -0.25,
+        "zf": null,
+        "z": 0.63,
+        "gegen": 0.43,
+        "ostende": false,
+        "kreuz": "Westzeuge ohne Urteil",
+        "fehlt": []
+      },
+      {
+        "monat": "1996-08",
+        "farbe": "Grün",
+        "zahl": null,
+        "episode": false,
+        "oni": -0.24,
+        "zf": null,
+        "z": 0.56,
+        "gegen": 0.333,
+        "ostende": false,
+        "kreuz": "Westzeuge ohne Urteil",
+        "fehlt": []
+      },
+      {
+        "monat": "1996-09",
+        "farbe": "Grün",
+        "zahl": null,
+        "episode": false,
+        "oni": -0.22,
+        "zf": null,
+        "z": 0.14,
+        "gegen": 0.0,
+        "ostende": false,
+        "kreuz": "Westzeuge ohne Urteil",
+        "fehlt": []
+      },
+      {
+        "monat": "1996-10",
+        "farbe": "Grün",
+        "zahl": null,
+        "episode": false,
+        "oni": -0.27,
+        "zf": null,
+        "z": -0.05,
+        "gegen": 0.0,
+        "ostende": false,
+        "kreuz": "Westzeuge ohne Urteil",
+        "fehlt": []
+      },
+      {
+        "monat": "1996-11",
+        "farbe": "Grün",
+        "zahl": null,
+        "episode": false,
+        "oni": -0.3,
+        "zf": null,
+        "z": -0.09,
+        "gegen": 0.0,
+        "ostende": false,
+        "kreuz": "keiner",
+        "fehlt": []
+      },
+      {
+        "monat": "1996-12",
+        "farbe": "Grün",
+        "zahl": null,
+        "episode": false,
+        "oni": -0.33,
+        "zf": null,
+        "z": -0.36,
+        "gegen": 0.0,
+        "ostende": false,
+        "kreuz": "keiner",
+        "fehlt": []
+      },
+      {
+        "monat": "1997-01",
+        "farbe": "Grün",
+        "zahl": null,
+        "episode": false,
+        "oni": -0.39,
+        "zf": null,
+        "z": -0.32,
+        "gegen": 0.0,
+        "ostende": false,
+        "kreuz": "Westzeuge ohne Urteil",
+        "fehlt": []
+      },
+      {
+        "monat": "1997-02",
+        "farbe": "Grün",
+        "zahl": null,
+        "episode": false,
+        "oni": -0.41,
+        "zf": null,
+        "z": -0.44,
+        "gegen": 0.147,
+        "ostende": false,
+        "kreuz": "Westzeuge ohne Urteil",
+        "fehlt": []
+      },
+      {
+        "monat": "1997-03",
+        "farbe": "Grün",
+        "zahl": null,
+        "episode": false,
+        "oni": -0.41,
+        "zf": null,
+        "z": -0.62,
+        "gegen": 0.4,
+        "ostende": false,
+        "kreuz": "Westzeuge ohne Urteil",
+        "fehlt": []
+      },
+      {
+        "monat": "1997-04",
+        "farbe": "Grün",
+        "zahl": null,
+        "episode": false,
+        "oni": -0.26,
+        "zf": null,
+        "z": -0.76,
+        "gegen": 0.981,
+        "ostende": false,
+        "kreuz": "Westzeuge ohne Urteil",
+        "fehlt": []
+      },
+      {
+        "monat": "1997-05",
+        "farbe": "Grün",
+        "zahl": null,
+        "episode": false,
+        "oni": -0.03,
+        "zf": null,
+        "z": -0.82,
+        "gegen": 1.0,
+        "ostende": false,
+        "kreuz": "Westzeuge ohne Urteil",
+        "fehlt": []
+      },
+      {
+        "monat": "1997-06",
+        "farbe": "Grün",
+        "zahl": null,
+        "episode": false,
+        "oni": 0.3,
+        "zf": null,
+        "z": -1.26,
+        "gegen": 0.405,
+        "ostende": false,
+        "kreuz": "Westzeuge ohne Urteil",
+        "fehlt": []
+      },
+      {
+        "monat": "1997-07",
+        "farbe": "Gelb",
+        "zahl": 7,
+        "episode": true,
+        "oni": 0.71,
+        "zf": 1.0,
+        "z": -1.54,
+        "gegen": 0.432,
+        "ostende": false,
+        "kreuz": "Westzeuge ohne Urteil",
+        "fehlt": [
+          "Zeitfenster knapp",
+          "Ostende der Kaskade bestätigt",
+          "Kreuzbestätigung West und Ost"
+        ]
+      },
+      {
+        "monat": "1997-08",
+        "farbe": "Gelb",
+        "zahl": 9,
+        "episode": true,
+        "oni": 1.13,
+        "zf": 1.0,
+        "z": -1.54,
+        "gegen": 0.0,
+        "ostende": true,
+        "kreuz": "Westzeuge ohne Urteil",
+        "fehlt": [
+          "Zeitfenster knapp",
+          "Kreuzbestätigung West und Ost"
+        ]
+      },
+      {
+        "monat": "1997-09",
+        "farbe": "Gelb",
+        "zahl": 9,
+        "episode": true,
+        "oni": 1.48,
+        "zf": 1.0,
+        "z": -2.24,
+        "gegen": 0.113,
+        "ostende": true,
+        "kreuz": "Westzeuge ohne Urteil",
+        "fehlt": [
+          "Zeitfenster knapp",
+          "Kreuzbestätigung West und Ost"
+        ]
+      },
+      {
+        "monat": "1997-10",
+        "farbe": "Gelb",
+        "zahl": 10,
+        "episode": true,
+        "oni": 1.79,
+        "zf": 1.0,
+        "z": -2.16,
+        "gegen": 0.0,
+        "ostende": true,
+        "kreuz": "Westzeuge ohne Urteil",
+        "fehlt": [
+          "Zeitfenster knapp",
+          "Kreuzbestätigung West und Ost"
+        ]
+      },
+      {
+        "monat": "1997-11",
+        "farbe": "Gelb",
+        "zahl": 10,
+        "episode": true,
+        "oni": 2.04,
+        "zf": 1.0,
+        "z": -2.17,
+        "gegen": 0.0,
+        "ostende": true,
+        "kreuz": "bestätigt",
+        "fehlt": [
+          "Zeitfenster knapp"
+        ]
+      },
+      {
+        "monat": "1997-12",
+        "farbe": "Gelb",
+        "zahl": 10,
+        "episode": true,
+        "oni": 2.24,
+        "zf": 1.0,
+        "z": -1.97,
+        "gegen": 0.0,
+        "ostende": true,
+        "kreuz": "bestätigt",
+        "fehlt": [
+          "Zeitfenster knapp"
+        ]
+      },
+      {
+        "monat": "1998-01",
+        "farbe": "Gelb",
+        "zahl": 9,
+        "episode": true,
+        "oni": 2.34,
+        "zf": 1.0,
+        "z": -1.93,
+        "gegen": 0.393,
+        "ostende": true,
+        "kreuz": "bestätigt",
+        "fehlt": [
+          "Zeitfenster knapp"
+        ]
+      },
+      {
+        "monat": "1998-02",
+        "farbe": "Gelb",
+        "zahl": 7,
+        "episode": true,
+        "oni": 2.37,
+        "zf": 1.0,
+        "z": -2.14,
+        "gegen": 1.0,
+        "ostende": true,
+        "kreuz": "bestätigt",
+        "fehlt": [
+          "Zeitfenster knapp",
+          "Gegenkräfte überwiegen nicht"
+        ]
+      },
+      {
+        "monat": "1998-03",
+        "farbe": "Gelb",
+        "zahl": 7,
+        "episode": true,
+        "oni": 2.22,
+        "zf": 1.0,
+        "z": -2.11,
+        "gegen": 1.0,
+        "ostende": true,
+        "kreuz": "bestätigt",
+        "fehlt": [
+          "Zeitfenster knapp",
+          "Gegenkräfte überwiegen nicht"
+        ]
+      },
+      {
+        "monat": "1998-04",
+        "farbe": "Gelb",
+        "zahl": 7,
+        "episode": true,
+        "oni": 1.91,
+        "zf": 0.556,
+        "z": -1.53,
+        "gegen": 1.0,
+        "ostende": true,
+        "kreuz": "bestätigt",
+        "fehlt": [
+          "Zeitfenster knapp",
+          "Gegenkräfte überwiegen nicht"
+        ]
+      },
+      {
+        "monat": "1998-05",
+        "farbe": "Rot",
+        "zahl": 8,
+        "episode": true,
+        "oni": 1.4,
+        "zf": 0.444,
+        "z": -1.7,
+        "gegen": 0.563,
+        "ostende": true,
+        "kreuz": "bestätigt",
+        "fehlt": []
+      },
+      {
+        "monat": "1998-06",
+        "farbe": "Rot",
+        "zahl": 10,
+        "episode": true,
+        "oni": 1.03,
+        "zf": 0.333,
+        "z": -1.55,
+        "gegen": 0.0,
+        "ostende": true,
+        "kreuz": "bestätigt",
+        "fehlt": []
+      },
+      {
+        "monat": "1998-07",
+        "farbe": "Rot",
+        "zahl": 9,
+        "episode": true,
+        "oni": 0.4,
+        "zf": 0.222,
+        "z": -1.44,
+        "gegen": 0.391,
+        "ostende": true,
+        "kreuz": "bestätigt",
+        "fehlt": []
+      },
+      {
+        "monat": "1998-08",
+        "farbe": "Rot",
+        "zahl": 8,
+        "episode": true,
+        "oni": -0.08,
+        "zf": 0.111,
+        "z": -1.61,
+        "gegen": 0.515,
+        "ostende": true,
+        "kreuz": "bestätigt",
+        "fehlt": []
+      },
+      {
+        "monat": "1998-09",
+        "farbe": "Grün",
+        "zahl": null,
+        "episode": true,
+        "oni": -0.63,
+        "zf": 0.0,
+        "z": -1.5,
+        "gegen": 0.872,
+        "ostende": true,
+        "kreuz": "bestätigt",
+        "fehlt": []
+      },
+      {
+        "monat": "1998-10",
+        "farbe": "Grün",
+        "zahl": null,
+        "episode": true,
+        "oni": -0.83,
+        "zf": 0.0,
+        "z": -1.56,
+        "gegen": 0.0,
+        "ostende": true,
+        "kreuz": "bestätigt",
+        "fehlt": []
+      },
+      {
+        "monat": "1998-11",
+        "farbe": "Grün",
+        "zahl": null,
+        "episode": true,
+        "oni": -1.02,
+        "zf": 0.0,
+        "z": -1.37,
+        "gegen": 0.0,
+        "ostende": true,
+        "kreuz": "bestätigt",
+        "fehlt": []
+      },
+      {
+        "monat": "1998-12",
+        "farbe": "Grün",
+        "zahl": null,
+        "episode": true,
+        "oni": -1.12,
+        "zf": 0.0,
+        "z": -1.16,
+        "gegen": 0.404,
+        "ostende": true,
+        "kreuz": "bestätigt",
+        "fehlt": []
+      },
+      {
+        "monat": "1999-01",
+        "farbe": "Grün",
+        "zahl": null,
+        "episode": true,
+        "oni": -1.31,
+        "zf": 0.0,
+        "z": -1.14,
+        "gegen": 1.0,
+        "ostende": true,
+        "kreuz": "bestätigt",
+        "fehlt": []
+      },
+      {
+        "monat": "1999-02",
+        "farbe": "Grün",
+        "zahl": null,
+        "episode": true,
+        "oni": -1.47,
+        "zf": 0.0,
+        "z": -1.24,
+        "gegen": 0.597,
+        "ostende": true,
+        "kreuz": "bestätigt",
+        "fehlt": []
+      },
+      {
+        "monat": "1999-03",
+        "farbe": "Grün",
+        "zahl": null,
+        "episode": true,
+        "oni": -1.51,
+        "zf": 0.0,
+        "z": -1.04,
+        "gegen": 0.33,
+        "ostende": true,
+        "kreuz": "bestätigt",
+        "fehlt": []
+      },
+      {
+        "monat": "1999-04",
+        "farbe": "Grün",
+        "zahl": null,
+        "episode": false,
+        "oni": -1.25,
+        "zf": null,
+        "z": -1.09,
+        "gegen": 0.0,
+        "ostende": false,
+        "kreuz": "Westzeuge ohne Urteil",
+        "fehlt": []
+      },
+      {
+        "monat": "1999-05",
+        "farbe": "Grün",
+        "zahl": null,
+        "episode": false,
+        "oni": -0.93,
+        "zf": null,
+        "z": -1.21,
+        "gegen": 0.0,
+        "ostende": false,
+        "kreuz": "Westzeuge ohne Urteil",
+        "fehlt": []
+      },
+      {
+        "monat": "1999-06",
+        "farbe": "Grün",
+        "zahl": null,
+        "episode": false,
+        "oni": -0.8,
+        "zf": null,
+        "z": -1.32,
+        "gegen": 0.0,
+        "ostende": false,
+        "kreuz": "Westzeuge ohne Urteil",
+        "fehlt": []
+      },
+      {
+        "monat": "1999-07",
+        "farbe": "Grün",
+        "zahl": null,
+        "episode": false,
+        "oni": -0.79,
+        "zf": null,
+        "z": -1.25,
+        "gegen": 0.0,
+        "ostende": false,
+        "kreuz": "Westzeuge ohne Urteil",
+        "fehlt": []
+      },
+      {
+        "monat": "1999-08",
+        "farbe": "Grün",
+        "zahl": null,
+        "episode": false,
+        "oni": -0.84,
+        "zf": null,
+        "z": -1.19,
+        "gegen": 0.0,
+        "ostende": false,
+        "kreuz": "Westzeuge ohne Urteil",
+        "fehlt": []
+      },
+      {
+        "monat": "1999-09",
+        "farbe": "Grün",
+        "zahl": null,
+        "episode": false,
+        "oni": -0.9,
+        "zf": null,
+        "z": -1.28,
+        "gegen": 0.0,
+        "ostende": false,
+        "kreuz": "Westzeuge ohne Urteil",
+        "fehlt": []
+      },
+      {
+        "monat": "1999-10",
+        "farbe": "Grün",
+        "zahl": null,
+        "episode": false,
+        "oni": -0.94,
+        "zf": null,
+        "z": -1.24,
+        "gegen": 0.0,
+        "ostende": false,
+        "kreuz": "Westzeuge ohne Urteil",
+        "fehlt": []
+      },
+      {
+        "monat": "1999-11",
+        "farbe": "Grün",
+        "zahl": null,
+        "episode": false,
+        "oni": -1.0,
+        "zf": null,
+        "z": -1.06,
+        "gegen": 0.0,
+        "ostende": false,
+        "kreuz": "keiner",
+        "fehlt": []
+      },
+      {
+        "monat": "1999-12",
+        "farbe": "Grün",
+        "zahl": null,
+        "episode": false,
+        "oni": -1.13,
+        "zf": null,
+        "z": -0.79,
+        "gegen": 0.0,
+        "ostende": false,
+        "kreuz": "keiner",
+        "fehlt": []
+      },
+      {
+        "monat": "2000-01",
+        "farbe": "Grün",
+        "zahl": null,
+        "episode": false,
+        "oni": -1.35,
+        "zf": null,
+        "z": -0.32,
+        "gegen": 0.0,
+        "ostende": false,
+        "kreuz": "Westzeuge ohne Urteil",
+        "fehlt": []
+      },
+      {
+        "monat": "2000-02",
+        "farbe": "Grün",
+        "zahl": null,
+        "episode": false,
+        "oni": -1.53,
+        "zf": null,
+        "z": -0.55,
+        "gegen": 0.0,
+        "ostende": false,
+        "kreuz": "Westzeuge ohne Urteil",
+        "fehlt": []
+      },
+      {
+        "monat": "2000-03",
+        "farbe": "Grün",
+        "zahl": null,
+        "episode": false,
+        "oni": -1.47,
+        "zf": null,
+        "z": -0.72,
+        "gegen": 0.0,
+        "ostende": false,
+        "kreuz": "Westzeuge ohne Urteil",
+        "fehlt": []
+      },
+      {
+        "monat": "2000-04",
+        "farbe": "Grün",
+        "zahl": null,
+        "episode": false,
+        "oni": -1.26,
+        "zf": null,
+        "z": -0.16,
+        "gegen": 0.0,
+        "ostende": false,
+        "kreuz": "Westzeuge ohne Urteil",
+        "fehlt": []
+      },
+      {
+        "monat": "2000-05",
+        "farbe": "Grün",
+        "zahl": null,
+        "episode": false,
+        "oni": -0.98,
+        "zf": null,
+        "z": -0.44,
+        "gegen": 0.559,
+        "ostende": false,
+        "kreuz": "Westzeuge ohne Urteil",
+        "fehlt": []
+      },
+      {
+        "monat": "2000-06",
+        "farbe": "Grün",
+        "zahl": null,
+        "episode": false,
+        "oni": -0.81,
+        "zf": null,
+        "z": -0.23,
+        "gegen": 0.066,
+        "ostende": false,
+        "kreuz": "Westzeuge ohne Urteil",
+        "fehlt": []
+      },
+      {
+        "monat": "2000-07",
+        "farbe": "Grün",
+        "zahl": null,
+        "episode": false,
+        "oni": -0.67,
+        "zf": null,
+        "z": -0.31,
+        "gegen": 0.0,
+        "ostende": false,
+        "kreuz": "Westzeuge ohne Urteil",
+        "fehlt": []
+      },
+      {
+        "monat": "2000-08",
+        "farbe": "Grün",
+        "zahl": null,
+        "episode": false,
+        "oni": -0.62,
+        "zf": null,
+        "z": -0.44,
+        "gegen": 0.0,
+        "ostende": false,
+        "kreuz": "Westzeuge ohne Urteil",
+        "fehlt": []
+      },
+      {
+        "monat": "2000-09",
+        "farbe": "Grün",
+        "zahl": null,
+        "episode": false,
+        "oni": -0.48,
+        "zf": null,
+        "z": -0.64,
+        "gegen": 0.0,
+        "ostende": false,
+        "kreuz": "Westzeuge ohne Urteil",
+        "fehlt": []
+      },
+      {
+        "monat": "2000-10",
+        "farbe": "Grün",
+        "zahl": null,
+        "episode": false,
+        "oni": -0.4,
+        "zf": null,
+        "z": -0.36,
+        "gegen": 0.0,
+        "ostende": false,
+        "kreuz": "Westzeuge ohne Urteil",
+        "fehlt": []
+      },
+      {
+        "monat": "2000-11",
+        "farbe": "Grün",
+        "zahl": null,
+        "episode": false,
+        "oni": -0.42,
+        "zf": null,
+        "z": -0.46,
+        "gegen": 0.0,
+        "ostende": false,
+        "kreuz": "keiner",
+        "fehlt": []
+      },
+      {
+        "monat": "2000-12",
+        "farbe": "Grün",
+        "zahl": null,
+        "episode": false,
+        "oni": -0.54,
+        "zf": null,
+        "z": -0.31,
+        "gegen": 0.0,
+        "ostende": false,
+        "kreuz": "keiner",
+        "fehlt": []
+      },
+      {
+        "monat": "2001-01",
+        "farbe": "Grün",
+        "zahl": null,
+        "episode": false,
+        "oni": -0.76,
+        "zf": null,
+        "z": -0.76,
+        "gegen": 1.0,
+        "ostende": false,
+        "kreuz": "Westzeuge ohne Urteil",
+        "fehlt": []
+      },
+      {
+        "monat": "2001-02",
+        "farbe": "Grün",
+        "zahl": null,
+        "episode": false,
+        "oni": -0.78,
+        "zf": null,
+        "z": -0.94,
+        "gegen": 0.856,
+        "ostende": false,
+        "kreuz": "Westzeuge ohne Urteil",
+        "fehlt": []
+      },
+      {
+        "monat": "2001-03",
+        "farbe": "Grün",
+        "zahl": null,
+        "episode": false,
+        "oni": -0.76,
+        "zf": null,
+        "z": -1.08,
+        "gegen": 0.787,
+        "ostende": false,
+        "kreuz": "Westzeuge ohne Urteil",
+        "fehlt": []
+      },
+      {
+        "monat": "2001-04",
+        "farbe": "Grün",
+        "zahl": null,
+        "episode": false,
+        "oni": -0.54,
+        "zf": null,
+        "z": -1.18,
+        "gegen": 0.145,
+        "ostende": false,
+        "kreuz": "Westzeuge ohne Urteil",
+        "fehlt": []
+      },
+      {
+        "monat": "2001-05",
+        "farbe": "Grün",
+        "zahl": null,
+        "episode": false,
+        "oni": -0.43,
+        "zf": null,
+        "z": -1.6,
+        "gegen": 0.0,
+        "ostende": false,
+        "kreuz": "Westzeuge ohne Urteil",
+        "fehlt": []
+      },
+      {
+        "monat": "2001-06",
+        "farbe": "Grün",
+        "zahl": null,
+        "episode": false,
+        "oni": -0.29,
+        "zf": null,
+        "z": -1.45,
+        "gegen": 0.0,
+        "ostende": false,
+        "kreuz": "Westzeuge ohne Urteil",
+        "fehlt": []
+      },
+      {
+        "monat": "2001-07",
+        "farbe": "Grün",
+        "zahl": null,
+        "episode": false,
+        "oni": -0.19,
+        "zf": null,
+        "z": -0.9,
+        "gegen": 0.0,
+        "ostende": false,
+        "kreuz": "Westzeuge ohne Urteil",
+        "fehlt": []
+      },
+      {
+        "monat": "2001-08",
+        "farbe": "Grün",
+        "zahl": null,
+        "episode": false,
+        "oni": -0.08,
+        "zf": null,
+        "z": -0.6,
+        "gegen": 0.215,
+        "ostende": false,
+        "kreuz": "Westzeuge ohne Urteil",
+        "fehlt": []
+      },
+      {
+        "monat": "2001-09",
+        "farbe": "Grün",
+        "zahl": null,
+        "episode": false,
+        "oni": -0.05,
+        "zf": null,
+        "z": -0.83,
+        "gegen": 0.484,
+        "ostende": false,
+        "kreuz": "Westzeuge ohne Urteil",
+        "fehlt": []
+      },
+      {
+        "monat": "2001-10",
+        "farbe": "Grün",
+        "zahl": null,
+        "episode": false,
+        "oni": -0.13,
+        "zf": null,
+        "z": -1.16,
+        "gegen": 0.393,
+        "ostende": false,
+        "kreuz": "Westzeuge ohne Urteil",
+        "fehlt": []
+      },
+      {
+        "monat": "2001-11",
+        "farbe": "Grün",
+        "zahl": null,
+        "episode": false,
+        "oni": -0.15,
+        "zf": null,
+        "z": -1.23,
+        "gegen": 0.827,
+        "ostende": false,
+        "kreuz": "keiner",
+        "fehlt": []
+      },
+      {
+        "monat": "2001-12",
+        "farbe": "Grün",
+        "zahl": null,
+        "episode": false,
+        "oni": -0.26,
+        "zf": null,
+        "z": -1.92,
+        "gegen": 1.0,
+        "ostende": false,
+        "kreuz": "keiner",
+        "fehlt": []
+      },
+      {
+        "monat": "2002-01",
+        "farbe": "Grün",
+        "zahl": null,
+        "episode": false,
+        "oni": -0.33,
+        "zf": null,
+        "z": -2.17,
+        "gegen": 1.0,
+        "ostende": false,
+        "kreuz": "Westzeuge ohne Urteil",
+        "fehlt": []
+      },
+      {
+        "monat": "2002-02",
+        "farbe": "Grün",
+        "zahl": null,
+        "episode": false,
+        "oni": -0.32,
+        "zf": null,
+        "z": -2.38,
+        "gegen": 0.243,
+        "ostende": false,
+        "kreuz": "Westzeuge ohne Urteil",
+        "fehlt": []
+      },
+      {
+        "monat": "2002-03",
+        "farbe": "Grün",
+        "zahl": null,
+        "episode": false,
+        "oni": -0.15,
+        "zf": null,
+        "z": -0.96,
+        "gegen": 0.0,
+        "ostende": false,
+        "kreuz": "Westzeuge ohne Urteil",
+        "fehlt": []
+      },
+      {
+        "monat": "2002-04",
+        "farbe": "Grün",
+        "zahl": null,
+        "episode": false,
+        "oni": 0.07,
+        "zf": null,
+        "z": 0.08,
+        "gegen": 0.0,
+        "ostende": false,
+        "kreuz": "Westzeuge ohne Urteil",
+        "fehlt": []
+      },
+      {
+        "monat": "2002-05",
+        "farbe": "Grün",
+        "zahl": null,
+        "episode": false,
+        "oni": 0.11,
+        "zf": null,
+        "z": 0.87,
+        "gegen": 0.0,
+        "ostende": false,
+        "kreuz": "Westzeuge ohne Urteil",
+        "fehlt": []
+      },
+      {
+        "monat": "2002-06",
+        "farbe": "Grün",
+        "zahl": null,
+        "episode": false,
+        "oni": 0.15,
+        "zf": null,
+        "z": 0.88,
+        "gegen": 0.0,
+        "ostende": false,
+        "kreuz": "Westzeuge ohne Urteil",
+        "fehlt": []
+      },
+      {
+        "monat": "2002-07",
+        "farbe": "Grün",
+        "zahl": null,
+        "episode": false,
+        "oni": 0.3,
+        "zf": null,
+        "z": 1.35,
+        "gegen": 0.0,
+        "ostende": false,
+        "kreuz": "Westzeuge ohne Urteil",
+        "fehlt": []
+      },
+      {
+        "monat": "2002-08",
+        "farbe": "Grün",
+        "zahl": null,
+        "episode": false,
+        "oni": 0.45,
+        "zf": null,
+        "z": 3.05,
+        "gegen": 0.0,
+        "ostende": false,
+        "kreuz": "Westzeuge ohne Urteil",
+        "fehlt": []
+      },
+      {
+        "monat": "2002-09",
+        "farbe": "Gelb",
+        "zahl": 5,
+        "episode": true,
+        "oni": 0.57,
+        "zf": 1.0,
+        "z": 2.57,
+        "gegen": 0.0,
+        "ostende": false,
+        "kreuz": "Westzeuge ohne Urteil",
+        "fehlt": [
+          "Zeitfenster knapp",
+          "Markt schläft noch",
+          "Ostende der Kaskade bestätigt",
+          "Kreuzbestätigung West und Ost"
+        ]
+      },
+      {
+        "monat": "2002-10",
+        "farbe": "Gelb",
+        "zahl": 5,
+        "episode": true,
+        "oni": 0.63,
+        "zf": 1.0,
+        "z": 2.62,
+        "gegen": 0.0,
+        "ostende": true,
+        "kreuz": "Westzeuge ohne Urteil",
+        "fehlt": [
+          "Zeitfenster knapp",
+          "Markt schläft noch",
+          "Kreuzbestätigung West und Ost"
+        ]
+      },
+      {
+        "monat": "2002-11",
+        "farbe": "Gelb",
+        "zahl": 6,
+        "episode": true,
+        "oni": 0.78,
+        "zf": 1.0,
+        "z": 2.59,
+        "gegen": 0.0,
+        "ostende": true,
+        "kreuz": "nur Osten",
+        "fehlt": [
+          "Zeitfenster knapp",
+          "Markt schläft noch",
+          "Kreuzbestätigung West und Ost"
+        ]
+      },
+      {
+        "monat": "2002-12",
+        "farbe": "Gelb",
+        "zahl": 5,
+        "episode": true,
+        "oni": 0.99,
+        "zf": 1.0,
+        "z": 1.74,
+        "gegen": 0.46,
+        "ostende": true,
+        "kreuz": "nur Osten",
+        "fehlt": [
+          "Zeitfenster knapp",
+          "Markt schläft noch",
+          "Kreuzbestätigung West und Ost"
+        ]
+      },
+      {
+        "monat": "2003-01",
+        "farbe": "Gelb",
+        "zahl": 7,
+        "episode": true,
+        "oni": 1.19,
+        "zf": 1.0,
+        "z": 1.79,
+        "gegen": 0.0,
+        "ostende": true,
+        "kreuz": "bestätigt",
+        "fehlt": [
+          "Zeitfenster knapp",
+          "Markt schläft noch"
+        ]
+      },
+      {
+        "monat": "2003-02",
+        "farbe": "Gelb",
+        "zahl": 7,
+        "episode": true,
+        "oni": 1.08,
+        "zf": 1.0,
+        "z": 1.74,
+        "gegen": 0.0,
+        "ostende": true,
+        "kreuz": "bestätigt",
+        "fehlt": [
+          "Zeitfenster knapp",
+          "Markt schläft noch"
+        ]
+      },
+      {
+        "monat": "2003-03",
+        "farbe": "Gelb",
+        "zahl": 7,
+        "episode": true,
+        "oni": 0.9,
+        "zf": 0.556,
+        "z": 2.05,
+        "gegen": 0.0,
+        "ostende": true,
+        "kreuz": "bestätigt",
+        "fehlt": [
+          "Zeitfenster knapp",
+          "Markt schläft noch"
+        ]
+      },
+      {
+        "monat": "2003-04",
+        "farbe": "Gelb",
+        "zahl": 6,
+        "episode": true,
+        "oni": 0.59,
+        "zf": 0.444,
+        "z": 2.46,
+        "gegen": 0.0,
+        "ostende": true,
+        "kreuz": "bestätigt",
+        "fehlt": [
+          "Markt schläft noch"
+        ]
+      },
+      {
+        "monat": "2003-05",
+        "farbe": "Gelb",
+        "zahl": 3,
+        "episode": true,
+        "oni": 0.38,
+        "zf": 0.333,
+        "z": 2.71,
+        "gegen": 0.997,
+        "ostende": true,
+        "kreuz": "bestätigt",
+        "fehlt": [
+          "Gegenkräfte überwiegen nicht",
+          "Markt schläft noch"
+        ]
+      },
+      {
+        "monat": "2003-06",
+        "farbe": "Gelb",
+        "zahl": 4,
+        "episode": true,
+        "oni": -0.01,
+        "zf": 0.222,
+        "z": 1.98,
+        "gegen": 1.0,
+        "ostende": true,
+        "kreuz": "bestätigt",
+        "fehlt": [
+          "Gegenkräfte überwiegen nicht",
+          "Markt schläft noch"
+        ]
+      },
+      {
+        "monat": "2003-07",
+        "farbe": "Gelb",
+        "zahl": 6,
+        "episode": true,
+        "oni": -0.18,
+        "zf": 0.111,
+        "z": 1.85,
+        "gegen": 0.46,
+        "ostende": true,
+        "kreuz": "bestätigt",
+        "fehlt": [
+          "Markt schläft noch"
+        ]
+      },
+      {
+        "monat": "2003-08",
+        "farbe": "Grün",
+        "zahl": null,
+        "episode": true,
+        "oni": -0.13,
+        "zf": 0.0,
+        "z": 1.87,
+        "gegen": 0.0,
+        "ostende": true,
+        "kreuz": "bestätigt",
+        "fehlt": []
+      },
+      {
+        "monat": "2003-09",
+        "farbe": "Grün",
+        "zahl": null,
+        "episode": true,
+        "oni": 0.09,
+        "zf": 0.0,
+        "z": 1.61,
+        "gegen": 0.0,
+        "ostende": true,
+        "kreuz": "bestätigt",
+        "fehlt": []
+      },
+      {
+        "monat": "2003-10",
+        "farbe": "Grün",
+        "zahl": null,
+        "episode": true,
+        "oni": 0.14,
+        "zf": 0.0,
+        "z": 1.76,
+        "gegen": 0.081,
+        "ostende": true,
+        "kreuz": "bestätigt",
+        "fehlt": []
+      },
+      {
+        "monat": "2003-11",
+        "farbe": "Grün",
+        "zahl": null,
+        "episode": true,
+        "oni": 0.23,
+        "zf": 0.0,
+        "z": 1.96,
+        "gegen": 0.0,
+        "ostende": true,
+        "kreuz": "bestätigt",
+        "fehlt": []
+      },
+      {
+        "monat": "2003-12",
+        "farbe": "Grün",
+        "zahl": null,
+        "episode": true,
+        "oni": 0.23,
+        "zf": 0.0,
+        "z": 2.63,
+        "gegen": 0.177,
+        "ostende": true,
+        "kreuz": "bestätigt",
+        "fehlt": []
+      },
+      {
+        "monat": "2004-01",
+        "farbe": "Grün",
+        "zahl": null,
+        "episode": true,
+        "oni": 0.29,
+        "zf": 0.0,
+        "z": 2.21,
+        "gegen": 0.0,
+        "ostende": true,
+        "kreuz": "bestätigt",
+        "fehlt": []
+      },
+      {
+        "monat": "2004-02",
+        "farbe": "Grün",
+        "zahl": null,
+        "episode": true,
+        "oni": 0.29,
+        "zf": 0.0,
+        "z": 1.95,
+        "gegen": 0.0,
+        "ostende": true,
+        "kreuz": "bestätigt",
+        "fehlt": []
+      },
+      {
+        "monat": "2004-03",
+        "farbe": "Grün",
+        "zahl": null,
+        "episode": false,
+        "oni": 0.34,
+        "zf": null,
+        "z": 1.84,
+        "gegen": 0.0,
+        "ostende": false,
+        "kreuz": "Westzeuge ohne Urteil",
+        "fehlt": []
+      },
+      {
+        "monat": "2004-04",
+        "farbe": "Grün",
+        "zahl": null,
+        "episode": false,
+        "oni": 0.27,
+        "zf": null,
+        "z": 1.85,
+        "gegen": 0.0,
+        "ostende": false,
+        "kreuz": "Westzeuge ohne Urteil",
+        "fehlt": []
+      },
+      {
+        "monat": "2004-05",
+        "farbe": "Grün",
+        "zahl": null,
+        "episode": false,
+        "oni": 0.19,
+        "zf": null,
+        "z": 1.85,
+        "gegen": 0.0,
+        "ostende": false,
+        "kreuz": "Westzeuge ohne Urteil",
+        "fehlt": []
+      },
+      {
+        "monat": "2004-06",
+        "farbe": "Grün",
+        "zahl": null,
+        "episode": false,
+        "oni": 0.1,
+        "zf": null,
+        "z": 1.92,
+        "gegen": 0.0,
+        "ostende": false,
+        "kreuz": "Westzeuge ohne Urteil",
+        "fehlt": []
+      },
+      {
+        "monat": "2004-07",
+        "farbe": "Grün",
+        "zahl": null,
+        "episode": false,
+        "oni": 0.12,
+        "zf": null,
+        "z": 1.63,
+        "gegen": 0.0,
+        "ostende": false,
+        "kreuz": "Westzeuge ohne Urteil",
+        "fehlt": []
+      },
+      {
+        "monat": "2004-08",
+        "farbe": "Grün",
+        "zahl": null,
+        "episode": false,
+        "oni": 0.22,
+        "zf": null,
+        "z": 1.61,
+        "gegen": 0.0,
+        "ostende": false,
+        "kreuz": "Westzeuge ohne Urteil",
+        "fehlt": []
+      },
+      {
+        "monat": "2004-09",
+        "farbe": "Grün",
+        "zahl": null,
+        "episode": false,
+        "oni": 0.39,
+        "zf": null,
+        "z": 1.09,
+        "gegen": 0.0,
+        "ostende": false,
+        "kreuz": "Westzeuge ohne Urteil",
+        "fehlt": []
+      },
+      {
+        "monat": "2004-10",
+        "farbe": "Gelb",
+        "zahl": 7,
+        "episode": true,
+        "oni": 0.54,
+        "zf": 1.0,
+        "z": 0.97,
+        "gegen": 0.0,
+        "ostende": false,
+        "kreuz": "Westzeuge ohne Urteil",
+        "fehlt": [
+          "Zeitfenster knapp",
+          "Ostende der Kaskade bestätigt",
+          "Kreuzbestätigung West und Ost"
+        ]
+      },
+      {
+        "monat": "2004-11",
+        "farbe": "Gelb",
+        "zahl": 7,
+        "episode": true,
+        "oni": 0.58,
+        "zf": 1.0,
+        "z": 0.99,
+        "gegen": 0.0,
+        "ostende": false,
+        "kreuz": "nur Osten",
+        "fehlt": [
+          "Zeitfenster knapp",
+          "Ostende der Kaskade bestätigt",
+          "Kreuzbestätigung West und Ost"
+        ]
+      },
+      {
+        "monat": "2004-12",
+        "farbe": "Gelb",
+        "zahl": 7,
+        "episode": true,
+        "oni": 0.61,
+        "zf": 1.0,
+        "z": 1.04,
+        "gegen": 0.0,
+        "ostende": false,
+        "kreuz": "nur Osten",
+        "fehlt": [
+          "Zeitfenster knapp",
+          "Markt schläft noch",
+          "Ostende der Kaskade bestätigt",
+          "Kreuzbestätigung West und Ost"
+        ]
+      },
+      {
+        "monat": "2005-01",
+        "farbe": "Gelb",
+        "zahl": 6,
+        "episode": true,
+        "oni": 0.64,
+        "zf": 1.0,
+        "z": 0.83,
+        "gegen": 0.431,
+        "ostende": false,
+        "kreuz": "nur Osten",
+        "fehlt": [
+          "Zeitfenster knapp",
+          "Ostende der Kaskade bestätigt",
+          "Kreuzbestätigung West und Ost"
+        ]
+      },
+      {
+        "monat": "2005-02",
+        "farbe": "Gelb",
+        "zahl": 6,
+        "episode": true,
+        "oni": 0.71,
+        "zf": 1.0,
+        "z": 0.61,
+        "gegen": 0.556,
+        "ostende": false,
+        "kreuz": "nur Osten",
+        "fehlt": [
+          "Zeitfenster knapp",
+          "Ostende der Kaskade bestätigt",
+          "Kreuzbestätigung West und Ost"
+        ]
+      },
+      {
+        "monat": "2005-03",
+        "farbe": "Gelb",
+        "zahl": 7,
+        "episode": true,
+        "oni": 0.62,
+        "zf": 1.0,
+        "z": 0.57,
+        "gegen": 0.0,
+        "ostende": false,
+        "kreuz": "nur Osten",
+        "fehlt": [
+          "Zeitfenster knapp",
+          "Ostende der Kaskade bestätigt",
+          "Kreuzbestätigung West und Ost"
+        ]
+      },
+      {
+        "monat": "2005-04",
+        "farbe": "Gelb",
+        "zahl": 7,
+        "episode": true,
+        "oni": 0.55,
+        "zf": 0.556,
+        "z": 0.87,
+        "gegen": 0.0,
+        "ostende": false,
+        "kreuz": "nur Osten",
+        "fehlt": [
+          "Zeitfenster knapp",
+          "Ostende der Kaskade bestätigt",
+          "Kreuzbestätigung West und Ost"
+        ]
+      },
+      {
+        "monat": "2005-05",
+        "farbe": "Gelb",
+        "zahl": 7,
+        "episode": true,
+        "oni": 0.4,
+        "zf": 0.444,
+        "z": 1.11,
+        "gegen": 0.0,
+        "ostende": false,
+        "kreuz": "nur Osten",
+        "fehlt": [
+          "Markt schläft noch",
+          "Ostende der Kaskade bestätigt",
+          "Kreuzbestätigung West und Ost"
+        ]
+      },
+      {
+        "monat": "2005-06",
+        "farbe": "Gelb",
+        "zahl": 7,
+        "episode": true,
+        "oni": 0.37,
+        "zf": 0.333,
+        "z": 1.04,
+        "gegen": 0.0,
+        "ostende": false,
+        "kreuz": "nur Osten",
+        "fehlt": [
+          "Markt schläft noch",
+          "Ostende der Kaskade bestätigt",
+          "Kreuzbestätigung West und Ost"
+        ]
+      },
+      {
+        "monat": "2005-07",
+        "farbe": "Gelb",
+        "zahl": 7,
+        "episode": true,
+        "oni": 0.27,
+        "zf": 0.222,
+        "z": 1.25,
+        "gegen": 0.0,
+        "ostende": false,
+        "kreuz": "nur Osten",
+        "fehlt": [
+          "Markt schläft noch",
+          "Ostende der Kaskade bestätigt",
+          "Kreuzbestätigung West und Ost"
+        ]
+      },
+      {
+        "monat": "2005-08",
+        "farbe": "Gelb",
+        "zahl": 6,
+        "episode": true,
+        "oni": 0.09,
+        "zf": 0.111,
+        "z": 1.66,
+        "gegen": 0.0,
+        "ostende": false,
+        "kreuz": "nur Osten",
+        "fehlt": [
+          "Markt schläft noch",
+          "Ostende der Kaskade bestätigt",
+          "Kreuzbestätigung West und Ost"
+        ]
+      },
+      {
+        "monat": "2005-09",
+        "farbe": "Grün",
+        "zahl": null,
+        "episode": true,
+        "oni": -0.04,
+        "zf": 0.0,
+        "z": 2.62,
+        "gegen": 0.0,
+        "ostende": false,
+        "kreuz": "nur Osten",
+        "fehlt": []
+      },
+      {
+        "monat": "2005-10",
+        "farbe": "Grün",
+        "zahl": null,
+        "episode": true,
+        "oni": -0.14,
+        "zf": 0.0,
+        "z": 2.0,
+        "gegen": 0.0,
+        "ostende": false,
+        "kreuz": "nur Osten",
+        "fehlt": []
+      },
+      {
+        "monat": "2005-11",
+        "farbe": "Grün",
+        "zahl": null,
+        "episode": true,
+        "oni": -0.11,
+        "zf": 0.0,
+        "z": 2.26,
+        "gegen": 0.0,
+        "ostende": false,
+        "kreuz": "nur Osten",
+        "fehlt": []
+      },
+      {
+        "monat": "2005-12",
+        "farbe": "Grün",
+        "zahl": null,
+        "episode": true,
+        "oni": -0.27,
+        "zf": 0.0,
+        "z": 2.12,
+        "gegen": 0.667,
+        "ostende": false,
+        "kreuz": "nur Osten",
+        "fehlt": []
+      },
+      {
+        "monat": "2006-01",
+        "farbe": "Grün",
+        "zahl": null,
+        "episode": true,
+        "oni": -0.57,
+        "zf": 0.0,
+        "z": 1.58,
+        "gegen": 0.495,
+        "ostende": false,
+        "kreuz": "nur Osten",
+        "fehlt": []
+      },
+      {
+        "monat": "2006-02",
+        "farbe": "Grün",
+        "zahl": null,
+        "episode": true,
+        "oni": -0.82,
+        "zf": 0.0,
+        "z": 1.85,
+        "gegen": 0.0,
+        "ostende": false,
+        "kreuz": "nur Osten",
+        "fehlt": []
+      },
+      {
+        "monat": "2006-03",
+        "farbe": "Grün",
+        "zahl": null,
+        "episode": true,
+        "oni": -0.86,
+        "zf": 0.0,
+        "z": 2.5,
+        "gegen": 0.0,
+        "ostende": false,
+        "kreuz": "nur Osten",
+        "fehlt": []
+      },
+      {
+        "monat": "2006-04",
+        "farbe": "Grün",
+        "zahl": null,
+        "episode": false,
+        "oni": -0.8,
+        "zf": null,
+        "z": 2.86,
+        "gegen": 0.0,
+        "ostende": false,
+        "kreuz": "Westzeuge ohne Urteil",
+        "fehlt": []
+      },
+      {
+        "monat": "2006-05",
+        "farbe": "Grün",
+        "zahl": null,
+        "episode": false,
+        "oni": -0.63,
+        "zf": null,
+        "z": 2.57,
+        "gegen": 0.0,
+        "ostende": false,
+        "kreuz": "Westzeuge ohne Urteil",
+        "fehlt": []
+      },
+      {
+        "monat": "2006-06",
+        "farbe": "Grün",
+        "zahl": null,
+        "episode": false,
+        "oni": -0.45,
+        "zf": null,
+        "z": 2.53,
+        "gegen": 0.0,
+        "ostende": false,
+        "kreuz": "Westzeuge ohne Urteil",
+        "fehlt": []
+      },
+      {
+        "monat": "2006-07",
+        "farbe": "Grün",
+        "zahl": null,
+        "episode": false,
+        "oni": -0.19,
+        "zf": null,
+        "z": 3.02,
+        "gegen": 0.0,
+        "ostende": false,
+        "kreuz": "Westzeuge ohne Urteil",
+        "fehlt": []
+      },
+      {
+        "monat": "2006-08",
+        "farbe": "Grün",
+        "zahl": null,
+        "episode": false,
+        "oni": -0.05,
+        "zf": null,
+        "z": 3.16,
+        "gegen": 0.0,
+        "ostende": false,
+        "kreuz": "Westzeuge ohne Urteil",
+        "fehlt": []
+      },
+      {
+        "monat": "2006-09",
+        "farbe": "Grün",
+        "zahl": null,
+        "episode": false,
+        "oni": 0.12,
+        "zf": null,
+        "z": 2.33,
+        "gegen": 0.0,
+        "ostende": false,
+        "kreuz": "Westzeuge ohne Urteil",
+        "fehlt": []
+      },
+      {
+        "monat": "2006-10",
+        "farbe": "Grün",
+        "zahl": null,
+        "episode": false,
+        "oni": 0.33,
+        "zf": null,
+        "z": 1.49,
+        "gegen": 0.442,
+        "ostende": false,
+        "kreuz": "Westzeuge ohne Urteil",
+        "fehlt": []
+      },
+      {
+        "monat": "2006-11",
+        "farbe": "Gelb",
+        "zahl": 4,
+        "episode": true,
+        "oni": 0.54,
+        "zf": 1.0,
+        "z": 0.58,
+        "gegen": 1.0,
+        "ostende": true,
+        "kreuz": "bestätigt",
+        "fehlt": [
+          "Zeitfenster knapp",
+          "Gegenkräfte überwiegen nicht"
+        ]
+      },
+      {
+        "monat": "2006-12",
+        "farbe": "Gelb",
+        "zahl": 5,
+        "episode": true,
+        "oni": 0.71,
+        "zf": 1.0,
+        "z": 0.56,
+        "gegen": 1.0,
+        "ostende": true,
+        "kreuz": "bestätigt",
+        "fehlt": [
+          "Zeitfenster knapp",
+          "Gegenkräfte überwiegen nicht"
+        ]
+      },
+      {
+        "monat": "2007-01",
+        "farbe": "Gelb",
+        "zahl": 8,
+        "episode": true,
+        "oni": 0.88,
+        "zf": 1.0,
+        "z": 0.05,
+        "gegen": 0.036,
+        "ostende": true,
+        "kreuz": "bestätigt",
+        "fehlt": [
+          "Zeitfenster knapp"
+        ]
+      },
+      {
+        "monat": "2007-02",
+        "farbe": "Gelb",
+        "zahl": 7,
+        "episode": true,
+        "oni": 0.88,
+        "zf": 1.0,
+        "z": 0.27,
+        "gegen": 0.35,
+        "ostende": true,
+        "kreuz": "bestätigt",
+        "fehlt": [
+          "Zeitfenster knapp"
+        ]
+      },
+      {
+        "monat": "2007-03",
+        "farbe": "Gelb",
+        "zahl": 7,
+        "episode": true,
+        "oni": 0.62,
+        "zf": 1.0,
+        "z": 1.09,
+        "gegen": 0.062,
+        "ostende": true,
+        "kreuz": "bestätigt",
+        "fehlt": [
+          "Zeitfenster knapp",
+          "Markt schläft noch"
+        ]
+      },
+      {
+        "monat": "2007-04",
+        "farbe": "Gelb",
+        "zahl": 7,
+        "episode": true,
+        "oni": 0.19,
+        "zf": 0.556,
+        "z": 1.49,
+        "gegen": 0.014,
+        "ostende": true,
+        "kreuz": "bestätigt",
+        "fehlt": [
+          "Zeitfenster knapp",
+          "Markt schläft noch"
+        ]
+      },
+      {
+        "monat": "2007-05",
+        "farbe": "Gelb",
+        "zahl": 7,
+        "episode": true,
+        "oni": -0.12,
+        "zf": 0.444,
+        "z": 1.32,
+        "gegen": 0.0,
+        "ostende": true,
+        "kreuz": "bestätigt",
+        "fehlt": [
+          "Markt schläft noch"
+        ]
+      },
+      {
+        "monat": "2007-06",
+        "farbe": "Gelb",
+        "zahl": 7,
+        "episode": true,
+        "oni": -0.32,
+        "zf": 0.333,
+        "z": 1.41,
+        "gegen": 0.0,
+        "ostende": true,
+        "kreuz": "bestätigt",
+        "fehlt": [
+          "Markt schläft noch"
+        ]
+      },
+      {
+        "monat": "2007-07",
+        "farbe": "Gelb",
+        "zahl": 7,
+        "episode": true,
+        "oni": -0.34,
+        "zf": 0.222,
+        "z": 1.43,
+        "gegen": 0.0,
+        "ostende": true,
+        "kreuz": "bestätigt",
+        "fehlt": [
+          "Markt schläft noch"
+        ]
+      },
+      {
+        "monat": "2007-08",
+        "farbe": "Gelb",
+        "zahl": 7,
+        "episode": true,
+        "oni": -0.41,
+        "zf": 0.111,
+        "z": 1.01,
+        "gegen": 0.0,
+        "ostende": true,
+        "kreuz": "bestätigt",
+        "fehlt": [
+          "Markt schläft noch"
+        ]
+      },
+      {
+        "monat": "2007-09",
+        "farbe": "Grün",
+        "zahl": null,
+        "episode": true,
+        "oni": -0.49,
+        "zf": 0.0,
+        "z": 0.66,
+        "gegen": 0.0,
+        "ostende": true,
+        "kreuz": "bestätigt",
+        "fehlt": []
+      },
+      {
+        "monat": "2007-10",
+        "farbe": "Grün",
+        "zahl": null,
+        "episode": true,
+        "oni": -0.77,
+        "zf": 0.0,
+        "z": 0.7,
+        "gegen": 0.0,
+        "ostende": true,
+        "kreuz": "bestätigt",
+        "fehlt": []
+      },
+      {
+        "monat": "2007-11",
+        "farbe": "Grün",
+        "zahl": null,
+        "episode": true,
+        "oni": -1.05,
+        "zf": 0.0,
+        "z": 0.77,
+        "gegen": 0.0,
+        "ostende": true,
+        "kreuz": "bestätigt",
+        "fehlt": []
+      },
+      {
+        "monat": "2007-12",
+        "farbe": "Grün",
+        "zahl": null,
+        "episode": true,
+        "oni": -1.38,
+        "zf": 0.0,
+        "z": 1.12,
+        "gegen": 0.0,
+        "ostende": true,
+        "kreuz": "bestätigt",
+        "fehlt": []
+      },
+      {
+        "monat": "2008-01",
+        "farbe": "Grün",
+        "zahl": null,
+        "episode": true,
+        "oni": -1.57,
+        "zf": 0.0,
+        "z": 1.41,
+        "gegen": 0.0,
+        "ostende": true,
+        "kreuz": "bestätigt",
+        "fehlt": []
+      },
+      {
+        "monat": "2008-02",
+        "farbe": "Grün",
+        "zahl": null,
+        "episode": true,
+        "oni": -1.72,
+        "zf": 0.0,
+        "z": 1.34,
+        "gegen": 0.0,
+        "ostende": true,
+        "kreuz": "bestätigt",
+        "fehlt": []
+      },
+      {
+        "monat": "2008-03",
+        "farbe": "Grün",
+        "zahl": null,
+        "episode": true,
+        "oni": -1.76,
+        "zf": 0.0,
+        "z": 1.63,
+        "gegen": 0.0,
+        "ostende": true,
+        "kreuz": "bestätigt",
+        "fehlt": []
+      },
+      {
+        "monat": "2008-04",
+        "farbe": "Grün",
+        "zahl": null,
+        "episode": false,
+        "oni": -1.61,
+        "zf": null,
+        "z": 1.93,
+        "gegen": 0.0,
+        "ostende": false,
+        "kreuz": "Westzeuge ohne Urteil",
+        "fehlt": []
+      },
+      {
+        "monat": "2008-05",
+        "farbe": "Grün",
+        "zahl": null,
+        "episode": false,
+        "oni": -1.37,
+        "zf": null,
+        "z": 1.83,
+        "gegen": 0.0,
+        "ostende": false,
+        "kreuz": "Westzeuge ohne Urteil",
+        "fehlt": []
+      },
+      {
+        "monat": "2008-06",
+        "farbe": "Grün",
+        "zahl": null,
+        "episode": false,
+        "oni": -1.05,
+        "zf": null,
+        "z": 1.83,
+        "gegen": 0.0,
+        "ostende": false,
+        "kreuz": "Westzeuge ohne Urteil",
+        "fehlt": []
+      },
+      {
+        "monat": "2008-07",
+        "farbe": "Grün",
+        "zahl": null,
+        "episode": false,
+        "oni": -0.85,
+        "zf": null,
+        "z": 2.21,
+        "gegen": 0.0,
+        "ostende": false,
+        "kreuz": "Westzeuge ohne Urteil",
+        "fehlt": []
+      },
+      {
+        "monat": "2008-08",
+        "farbe": "Grün",
+        "zahl": null,
+        "episode": false,
+        "oni": -0.56,
+        "zf": null,
+        "z": 2.4,
+        "gegen": 0.0,
+        "ostende": false,
+        "kreuz": "Westzeuge ohne Urteil",
+        "fehlt": []
+      },
+      {
+        "monat": "2008-09",
+        "farbe": "Grün",
+        "zahl": null,
+        "episode": false,
+        "oni": -0.33,
+        "zf": null,
+        "z": 2.14,
+        "gegen": 0.407,
+        "ostende": false,
+        "kreuz": "Westzeuge ohne Urteil",
+        "fehlt": []
+      },
+      {
+        "monat": "2008-10",
+        "farbe": "Grün",
+        "zahl": null,
+        "episode": false,
+        "oni": -0.2,
+        "zf": null,
+        "z": 1.45,
+        "gegen": 1.0,
+        "ostende": false,
+        "kreuz": "Westzeuge ohne Urteil",
+        "fehlt": []
+      },
+      {
+        "monat": "2008-11",
+        "farbe": "Grün",
+        "zahl": null,
+        "episode": false,
+        "oni": -0.25,
+        "zf": null,
+        "z": 1.18,
+        "gegen": 1.0,
+        "ostende": false,
+        "kreuz": "nur Westen",
+        "fehlt": []
+      },
+      {
+        "monat": "2008-12",
+        "farbe": "Grün",
+        "zahl": null,
+        "episode": false,
+        "oni": -0.36,
+        "zf": null,
+        "z": -0.92,
+        "gegen": 1.0,
+        "ostende": false,
+        "kreuz": "keiner",
+        "fehlt": []
+      },
+      {
+        "monat": "2009-01",
+        "farbe": "Grün",
+        "zahl": null,
+        "episode": false,
+        "oni": -0.57,
+        "zf": null,
+        "z": -1.55,
+        "gegen": 1.0,
+        "ostende": false,
+        "kreuz": "Westzeuge ohne Urteil",
+        "fehlt": []
+      },
+      {
+        "monat": "2009-02",
+        "farbe": "Grün",
+        "zahl": null,
+        "episode": false,
+        "oni": -0.79,
+        "zf": null,
+        "z": -2.38,
+        "gegen": 1.0,
+        "ostende": false,
+        "kreuz": "Westzeuge ohne Urteil",
+        "fehlt": []
+      },
+      {
+        "monat": "2009-03",
+        "farbe": "Grün",
+        "zahl": null,
+        "episode": false,
+        "oni": -0.89,
+        "zf": null,
+        "z": -1.72,
+        "gegen": 0.939,
+        "ostende": false,
+        "kreuz": "Westzeuge ohne Urteil",
+        "fehlt": []
+      },
+      {
+        "monat": "2009-04",
+        "farbe": "Grün",
+        "zahl": null,
+        "episode": false,
+        "oni": -0.84,
+        "zf": null,
+        "z": -1.67,
+        "gegen": 0.0,
+        "ostende": false,
+        "kreuz": "Westzeuge ohne Urteil",
+        "fehlt": []
+      },
+      {
+        "monat": "2009-05",
+        "farbe": "Grün",
+        "zahl": null,
+        "episode": false,
+        "oni": -0.63,
+        "zf": null,
+        "z": -1.64,
+        "gegen": 0.0,
+        "ostende": false,
+        "kreuz": "Westzeuge ohne Urteil",
+        "fehlt": []
+      },
+      {
+        "monat": "2009-06",
+        "farbe": "Grün",
+        "zahl": null,
+        "episode": false,
+        "oni": -0.35,
+        "zf": null,
+        "z": -1.2,
+        "gegen": 0.0,
+        "ostende": false,
+        "kreuz": "Westzeuge ohne Urteil",
+        "fehlt": []
+      },
+      {
+        "monat": "2009-07",
+        "farbe": "Grün",
+        "zahl": null,
+        "episode": false,
+        "oni": 0.03,
+        "zf": null,
+        "z": -1.02,
+        "gegen": 0.0,
+        "ostende": false,
+        "kreuz": "Westzeuge ohne Urteil",
+        "fehlt": []
+      },
+      {
+        "monat": "2009-08",
+        "farbe": "Grün",
+        "zahl": null,
+        "episode": false,
+        "oni": 0.34,
+        "zf": null,
+        "z": -1.0,
+        "gegen": 0.0,
+        "ostende": false,
+        "kreuz": "Westzeuge ohne Urteil",
+        "fehlt": []
+      },
+      {
+        "monat": "2009-09",
+        "farbe": "Gelb",
+        "zahl": 8,
+        "episode": true,
+        "oni": 0.5,
+        "zf": 1.0,
+        "z": -0.81,
+        "gegen": 0.0,
+        "ostende": false,
+        "kreuz": "Westzeuge ohne Urteil",
+        "fehlt": [
+          "Zeitfenster knapp",
+          "Ostende der Kaskade bestätigt",
+          "Kreuzbestätigung West und Ost"
+        ]
+      },
+      {
+        "monat": "2009-10",
+        "farbe": "Gelb",
+        "zahl": 8,
+        "episode": true,
+        "oni": 0.56,
+        "zf": 1.0,
+        "z": -0.23,
+        "gegen": 0.068,
+        "ostende": false,
+        "kreuz": "Westzeuge ohne Urteil",
+        "fehlt": [
+          "Zeitfenster knapp",
+          "Ostende der Kaskade bestätigt",
+          "Kreuzbestätigung West und Ost"
+        ]
+      },
+      {
+        "monat": "2009-11",
+        "farbe": "Gelb",
+        "zahl": 8,
+        "episode": true,
+        "oni": 0.66,
+        "zf": 1.0,
+        "z": -0.03,
+        "gegen": 0.0,
+        "ostende": false,
+        "kreuz": "nur Osten",
+        "fehlt": [
+          "Zeitfenster knapp",
+          "Ostende der Kaskade bestätigt",
+          "Kreuzbestätigung West und Ost"
+        ]
+      },
+      {
+        "monat": "2009-12",
+        "farbe": "Gelb",
+        "zahl": 8,
+        "episode": true,
+        "oni": 0.92,
+        "zf": 1.0,
+        "z": 0.29,
+        "gegen": 0.0,
+        "ostende": false,
+        "kreuz": "nur Osten",
+        "fehlt": [
+          "Zeitfenster knapp",
+          "Ostende der Kaskade bestätigt",
+          "Kreuzbestätigung West und Ost"
+        ]
+      },
+      {
+        "monat": "2010-01",
+        "farbe": "Gelb",
+        "zahl": 8,
+        "episode": true,
+        "oni": 1.31,
+        "zf": 1.0,
+        "z": 0.63,
+        "gegen": 0.0,
+        "ostende": false,
+        "kreuz": "nur Osten",
+        "fehlt": [
+          "Zeitfenster knapp",
+          "Ostende der Kaskade bestätigt",
+          "Kreuzbestätigung West und Ost"
+        ]
+      },
+      {
+        "monat": "2010-02",
+        "farbe": "Gelb",
+        "zahl": 8,
+        "episode": true,
+        "oni": 1.5,
+        "zf": 1.0,
+        "z": 1.05,
+        "gegen": 0.0,
+        "ostende": false,
+        "kreuz": "nur Osten",
+        "fehlt": [
+          "Zeitfenster knapp",
+          "Markt schläft noch",
+          "Ostende der Kaskade bestätigt",
+          "Kreuzbestätigung West und Ost"
+        ]
+      },
+      {
+        "monat": "2010-03",
+        "farbe": "Gelb",
+        "zahl": 7,
+        "episode": true,
+        "oni": 1.47,
+        "zf": 1.0,
+        "z": 1.49,
+        "gegen": 0.177,
+        "ostende": false,
+        "kreuz": "nur Osten",
+        "fehlt": [
+          "Zeitfenster knapp",
+          "Markt schläft noch",
+          "Ostende der Kaskade bestätigt",
+          "Kreuzbestätigung West und Ost"
+        ]
+      },
+      {
+        "monat": "2010-04",
+        "farbe": "Gelb",
+        "zahl": 8,
+        "episode": true,
+        "oni": 1.21,
+        "zf": 0.556,
+        "z": 1.48,
+        "gegen": 0.0,
+        "ostende": false,
+        "kreuz": "nur Osten",
+        "fehlt": [
+          "Zeitfenster knapp",
+          "Markt schläft noch",
+          "Ostende der Kaskade bestätigt",
+          "Kreuzbestätigung West und Ost"
+        ]
+      },
+      {
+        "monat": "2010-05",
+        "farbe": "Gelb",
+        "zahl": 8,
+        "episode": true,
+        "oni": 0.88,
+        "zf": 0.444,
+        "z": 1.73,
+        "gegen": 0.0,
+        "ostende": false,
+        "kreuz": "nur Osten",
+        "fehlt": [
+          "Markt schläft noch",
+          "Ostende der Kaskade bestätigt",
+          "Kreuzbestätigung West und Ost"
+        ]
+      },
+      {
+        "monat": "2010-06",
+        "farbe": "Gelb",
+        "zahl": 7,
+        "episode": true,
+        "oni": 0.38,
+        "zf": 0.333,
+        "z": 2.46,
+        "gegen": 0.0,
+        "ostende": false,
+        "kreuz": "nur Osten",
+        "fehlt": [
+          "Markt schläft noch",
+          "Ostende der Kaskade bestätigt",
+          "Kreuzbestätigung West und Ost"
+        ]
+      },
+      {
+        "monat": "2010-07",
+        "farbe": "Gelb",
+        "zahl": 7,
+        "episode": true,
+        "oni": -0.16,
+        "zf": 0.222,
+        "z": 1.88,
+        "gegen": 0.28,
+        "ostende": false,
+        "kreuz": "nur Osten",
+        "fehlt": [
+          "Markt schläft noch",
+          "Ostende der Kaskade bestätigt",
+          "Kreuzbestätigung West und Ost"
+        ]
+      },
+      {
+        "monat": "2010-08",
+        "farbe": "Gelb",
+        "zahl": 6,
+        "episode": true,
+        "oni": -0.66,
+        "zf": 0.111,
+        "z": 1.59,
+        "gegen": 0.603,
+        "ostende": false,
+        "kreuz": "nur Osten",
+        "fehlt": [
+          "Gegenkräfte überwiegen nicht",
+          "Markt schläft noch",
+          "Ostende der Kaskade bestätigt",
+          "Kreuzbestätigung West und Ost"
+        ]
+      },
+      {
+        "monat": "2010-09",
+        "farbe": "Grün",
+        "zahl": null,
+        "episode": true,
+        "oni": -0.98,
+        "zf": 0.0,
+        "z": 1.11,
+        "gegen": 0.0,
+        "ostende": false,
+        "kreuz": "nur Osten",
+        "fehlt": []
+      },
+      {
+        "monat": "2010-10",
+        "farbe": "Grün",
+        "zahl": null,
+        "episode": true,
+        "oni": -1.24,
+        "zf": 0.0,
+        "z": 1.11,
+        "gegen": 0.0,
+        "ostende": false,
+        "kreuz": "nur Osten",
+        "fehlt": []
+      },
+      {
+        "monat": "2010-11",
+        "farbe": "Grün",
+        "zahl": null,
+        "episode": true,
+        "oni": -1.43,
+        "zf": 0.0,
+        "z": 1.33,
+        "gegen": 0.0,
+        "ostende": false,
+        "kreuz": "nur Osten",
+        "fehlt": []
+      },
+      {
+        "monat": "2010-12",
+        "farbe": "Grün",
+        "zahl": null,
+        "episode": true,
+        "oni": -1.54,
+        "zf": 0.0,
+        "z": 1.73,
+        "gegen": 0.0,
+        "ostende": false,
+        "kreuz": "nur Osten",
+        "fehlt": []
+      },
+      {
+        "monat": "2011-01",
+        "farbe": "Grün",
+        "zahl": null,
+        "episode": true,
+        "oni": -1.57,
+        "zf": 0.0,
+        "z": 2.03,
+        "gegen": 0.0,
+        "ostende": false,
+        "kreuz": "nur Osten",
+        "fehlt": []
+      },
+      {
+        "monat": "2011-02",
+        "farbe": "Grün",
+        "zahl": null,
+        "episode": true,
+        "oni": -1.48,
+        "zf": 0.0,
+        "z": 2.3,
+        "gegen": 0.0,
+        "ostende": false,
+        "kreuz": "nur Osten",
+        "fehlt": []
+      },
+      {
+        "monat": "2011-03",
+        "farbe": "Grün",
+        "zahl": null,
+        "episode": true,
+        "oni": -1.29,
+        "zf": 0.0,
+        "z": 2.74,
+        "gegen": 0.0,
+        "ostende": false,
+        "kreuz": "nur Osten",
+        "fehlt": []
+      },
+      {
+        "monat": "2011-04",
+        "farbe": "Grün",
+        "zahl": null,
+        "episode": false,
+        "oni": -1.06,
+        "zf": null,
+        "z": 2.89,
+        "gegen": 0.0,
+        "ostende": false,
+        "kreuz": "Westzeuge ohne Urteil",
+        "fehlt": []
+      },
+      {
+        "monat": "2011-05",
+        "farbe": "Grün",
+        "zahl": null,
+        "episode": false,
+        "oni": -0.85,
+        "zf": null,
+        "z": 2.02,
+        "gegen": 0.0,
+        "ostende": false,
+        "kreuz": "Westzeuge ohne Urteil",
+        "fehlt": []
+      },
+      {
+        "monat": "2011-06",
+        "farbe": "Grün",
+        "zahl": null,
+        "episode": false,
+        "oni": -0.68,
+        "zf": null,
+        "z": 2.15,
+        "gegen": 0.0,
+        "ostende": false,
+        "kreuz": "Westzeuge ohne Urteil",
+        "fehlt": []
+      },
+      {
+        "monat": "2011-07",
+        "farbe": "Grün",
+        "zahl": null,
+        "episode": false,
+        "oni": -0.5,
+        "zf": null,
+        "z": 1.49,
+        "gegen": 0.03,
+        "ostende": false,
+        "kreuz": "Westzeuge ohne Urteil",
+        "fehlt": []
+      },
+      {
+        "monat": "2011-08",
+        "farbe": "Grün",
+        "zahl": null,
+        "episode": false,
+        "oni": -0.34,
+        "zf": null,
+        "z": 1.29,
+        "gegen": 0.269,
+        "ostende": false,
+        "kreuz": "Westzeuge ohne Urteil",
+        "fehlt": []
+      },
+      {
+        "monat": "2011-09",
+        "farbe": "Grün",
+        "zahl": null,
+        "episode": false,
+        "oni": -0.37,
+        "zf": null,
+        "z": 1.09,
+        "gegen": 0.191,
+        "ostende": false,
+        "kreuz": "Westzeuge ohne Urteil",
+        "fehlt": []
+      },
+      {
+        "monat": "2011-10",
+        "farbe": "Grün",
+        "zahl": null,
+        "episode": false,
+        "oni": -0.5,
+        "zf": null,
+        "z": 1.0,
+        "gegen": 0.127,
+        "ostende": false,
+        "kreuz": "Westzeuge ohne Urteil",
+        "fehlt": []
+      },
+      {
+        "monat": "2011-11",
+        "farbe": "Grün",
+        "zahl": null,
+        "episode": false,
+        "oni": -0.76,
+        "zf": null,
+        "z": 0.87,
+        "gegen": 0.3,
+        "ostende": false,
+        "kreuz": "nur Westen",
+        "fehlt": []
+      },
+      {
+        "monat": "2011-12",
+        "farbe": "Grün",
+        "zahl": null,
+        "episode": false,
+        "oni": -0.94,
+        "zf": null,
+        "z": 0.5,
+        "gegen": 0.0,
+        "ostende": false,
+        "kreuz": "nur Westen",
+        "fehlt": []
+      },
+      {
+        "monat": "2012-01",
+        "farbe": "Grün",
+        "zahl": null,
+        "episode": false,
+        "oni": -1.02,
+        "zf": null,
+        "z": -0.02,
+        "gegen": 0.134,
+        "ostende": false,
+        "kreuz": "Westzeuge ohne Urteil",
+        "fehlt": []
+      },
+      {
+        "monat": "2012-02",
+        "farbe": "Grün",
+        "zahl": null,
+        "episode": false,
+        "oni": -0.92,
+        "zf": null,
+        "z": -0.06,
+        "gegen": 0.0,
+        "ostende": false,
+        "kreuz": "Westzeuge ohne Urteil",
+        "fehlt": []
+      },
+      {
+        "monat": "2012-03",
+        "farbe": "Grün",
+        "zahl": null,
+        "episode": false,
+        "oni": -0.71,
+        "zf": null,
+        "z": 0.08,
+        "gegen": 0.0,
+        "ostende": false,
+        "kreuz": "Westzeuge ohne Urteil",
+        "fehlt": []
+      },
+      {
+        "monat": "2012-04",
+        "farbe": "Grün",
+        "zahl": null,
+        "episode": false,
+        "oni": -0.56,
+        "zf": null,
+        "z": 0.33,
+        "gegen": 0.0,
+        "ostende": false,
+        "kreuz": "Westzeuge ohne Urteil",
+        "fehlt": []
+      },
+      {
+        "monat": "2012-05",
+        "farbe": "Grün",
+        "zahl": null,
+        "episode": false,
+        "oni": -0.44,
+        "zf": null,
+        "z": 0.22,
+        "gegen": 0.0,
+        "ostende": false,
+        "kreuz": "Westzeuge ohne Urteil",
+        "fehlt": []
+      },
+      {
+        "monat": "2012-06",
+        "farbe": "Grün",
+        "zahl": null,
+        "episode": false,
+        "oni": -0.35,
+        "zf": null,
+        "z": 0.1,
+        "gegen": 0.383,
+        "ostende": false,
+        "kreuz": "Westzeuge ohne Urteil",
+        "fehlt": []
+      },
+      {
+        "monat": "2012-07",
+        "farbe": "Grün",
+        "zahl": null,
+        "episode": false,
+        "oni": -0.18,
+        "zf": null,
+        "z": -0.05,
+        "gegen": 1.0,
+        "ostende": false,
+        "kreuz": "Westzeuge ohne Urteil",
+        "fehlt": []
+      },
+      {
+        "monat": "2012-08",
+        "farbe": "Grün",
+        "zahl": null,
+        "episode": false,
+        "oni": 0.03,
+        "zf": null,
+        "z": -0.6,
+        "gegen": 0.719,
+        "ostende": false,
+        "kreuz": "Westzeuge ohne Urteil",
+        "fehlt": []
+      },
+      {
+        "monat": "2012-09",
+        "farbe": "Grün",
+        "zahl": null,
+        "episode": false,
+        "oni": 0.28,
+        "zf": null,
+        "z": -0.79,
+        "gegen": 0.0,
+        "ostende": false,
+        "kreuz": "Westzeuge ohne Urteil",
+        "fehlt": []
+      },
+      {
+        "monat": "2012-10",
+        "farbe": "Grün",
+        "zahl": null,
+        "episode": false,
+        "oni": 0.39,
+        "zf": null,
+        "z": -1.13,
+        "gegen": 0.0,
+        "ostende": false,
+        "kreuz": "Westzeuge ohne Urteil",
+        "fehlt": []
+      },
+      {
+        "monat": "2012-11",
+        "farbe": "Grün",
+        "zahl": null,
+        "episode": false,
+        "oni": 0.37,
+        "zf": null,
+        "z": -0.93,
+        "gegen": 0.0,
+        "ostende": false,
+        "kreuz": "nur Westen",
+        "fehlt": []
+      },
+      {
+        "monat": "2012-12",
+        "farbe": "Grün",
+        "zahl": null,
+        "episode": false,
+        "oni": 0.28,
+        "zf": null,
+        "z": -0.81,
+        "gegen": 0.16,
+        "ostende": false,
+        "kreuz": "keiner",
+        "fehlt": []
+      },
+      {
+        "monat": "2013-01",
+        "farbe": "Grün",
+        "zahl": null,
+        "episode": false,
+        "oni": 0.13,
+        "zf": null,
+        "z": -1.1,
+        "gegen": 0.163,
+        "ostende": false,
+        "kreuz": "Westzeuge ohne Urteil",
+        "fehlt": []
+      },
+      {
+        "monat": "2013-02",
+        "farbe": "Grün",
+        "zahl": null,
+        "episode": false,
+        "oni": -0.03,
+        "zf": null,
+        "z": -0.96,
+        "gegen": 0.0,
+        "ostende": false,
+        "kreuz": "Westzeuge ohne Urteil",
+        "fehlt": []
+      },
+      {
+        "monat": "2013-03",
+        "farbe": "Grün",
+        "zahl": null,
+        "episode": false,
+        "oni": -0.24,
+        "zf": null,
+        "z": -0.75,
+        "gegen": 0.0,
+        "ostende": false,
+        "kreuz": "Westzeuge ohne Urteil",
+        "fehlt": []
+      },
+      {
+        "monat": "2013-04",
+        "farbe": "Grün",
+        "zahl": null,
+        "episode": false,
+        "oni": -0.28,
+        "zf": null,
+        "z": -0.89,
+        "gegen": 0.02,
+        "ostende": false,
+        "kreuz": "Westzeuge ohne Urteil",
+        "fehlt": []
+      },
+      {
+        "monat": "2013-05",
+        "farbe": "Grün",
+        "zahl": null,
+        "episode": false,
+        "oni": -0.23,
+        "zf": null,
+        "z": -1.11,
+        "gegen": 0.447,
+        "ostende": false,
+        "kreuz": "Westzeuge ohne Urteil",
+        "fehlt": []
+      },
+      {
+        "monat": "2013-06",
+        "farbe": "Grün",
+        "zahl": null,
+        "episode": false,
+        "oni": -0.2,
+        "zf": null,
+        "z": -1.18,
+        "gegen": 0.579,
+        "ostende": false,
+        "kreuz": "Westzeuge ohne Urteil",
+        "fehlt": []
+      },
+      {
+        "monat": "2013-07",
+        "farbe": "Grün",
+        "zahl": null,
+        "episode": false,
+        "oni": -0.3,
+        "zf": null,
+        "z": -0.95,
+        "gegen": 0.281,
+        "ostende": false,
+        "kreuz": "Westzeuge ohne Urteil",
+        "fehlt": []
+      },
+      {
+        "monat": "2013-08",
+        "farbe": "Grün",
+        "zahl": null,
+        "episode": false,
+        "oni": -0.38,
+        "zf": null,
+        "z": -1.16,
+        "gegen": 0.0,
+        "ostende": false,
+        "kreuz": "Westzeuge ohne Urteil",
+        "fehlt": []
+      },
+      {
+        "monat": "2013-09",
+        "farbe": "Grün",
+        "zahl": null,
+        "episode": false,
+        "oni": -0.45,
+        "zf": null,
+        "z": -1.38,
+        "gegen": 0.0,
+        "ostende": false,
+        "kreuz": "Westzeuge ohne Urteil",
+        "fehlt": []
+      },
+      {
+        "monat": "2013-10",
+        "farbe": "Grün",
+        "zahl": null,
+        "episode": false,
+        "oni": -0.34,
+        "zf": null,
+        "z": -1.32,
+        "gegen": 0.0,
+        "ostende": false,
+        "kreuz": "Westzeuge ohne Urteil",
+        "fehlt": []
+      },
+      {
+        "monat": "2013-11",
+        "farbe": "Grün",
+        "zahl": null,
+        "episode": false,
+        "oni": -0.32,
+        "zf": null,
+        "z": -1.2,
+        "gegen": 0.0,
+        "ostende": false,
+        "kreuz": "keiner",
+        "fehlt": []
+      },
+      {
+        "monat": "2013-12",
+        "farbe": "Grün",
+        "zahl": null,
+        "episode": false,
+        "oni": -0.14,
+        "zf": null,
+        "z": -1.24,
+        "gegen": 0.13,
+        "ostende": false,
+        "kreuz": "keiner",
+        "fehlt": []
+      },
+      {
+        "monat": "2014-01",
+        "farbe": "Grün",
+        "zahl": null,
+        "episode": false,
+        "oni": -0.12,
+        "zf": null,
+        "z": -1.21,
+        "gegen": 0.042,
+        "ostende": false,
+        "kreuz": "Westzeuge ohne Urteil",
+        "fehlt": []
+      },
+      {
+        "monat": "2014-02",
+        "farbe": "Grün",
+        "zahl": null,
+        "episode": false,
+        "oni": -0.11,
+        "zf": null,
+        "z": -1.08,
+        "gegen": 0.094,
+        "ostende": false,
+        "kreuz": "Westzeuge ohne Urteil",
+        "fehlt": []
+      },
+      {
+        "monat": "2014-03",
+        "farbe": "Grün",
+        "zahl": null,
+        "episode": false,
+        "oni": -0.24,
+        "zf": null,
+        "z": -1.26,
+        "gegen": 0.0,
+        "ostende": false,
+        "kreuz": "Westzeuge ohne Urteil",
+        "fehlt": []
+      },
+      {
+        "monat": "2014-04",
+        "farbe": "Grün",
+        "zahl": null,
+        "episode": false,
+        "oni": -0.21,
+        "zf": null,
+        "z": -1.43,
+        "gegen": 0.148,
+        "ostende": false,
+        "kreuz": "Westzeuge ohne Urteil",
+        "fehlt": []
+      },
+      {
+        "monat": "2014-05",
+        "farbe": "Grün",
+        "zahl": null,
+        "episode": false,
+        "oni": -0.02,
+        "zf": null,
+        "z": -1.25,
+        "gegen": 0.0,
+        "ostende": false,
+        "kreuz": "Westzeuge ohne Urteil",
+        "fehlt": []
+      },
+      {
+        "monat": "2014-06",
+        "farbe": "Grün",
+        "zahl": null,
+        "episode": false,
+        "oni": 0.25,
+        "zf": null,
+        "z": -1.36,
+        "gegen": 0.0,
+        "ostende": false,
+        "kreuz": "Westzeuge ohne Urteil",
+        "fehlt": []
+      },
+      {
+        "monat": "2014-07",
+        "farbe": "Grün",
+        "zahl": null,
+        "episode": false,
+        "oni": 0.35,
+        "zf": null,
+        "z": -1.49,
+        "gegen": 0.0,
+        "ostende": false,
+        "kreuz": "Westzeuge ohne Urteil",
+        "fehlt": []
+      },
+      {
+        "monat": "2014-08",
+        "farbe": "Grün",
+        "zahl": null,
+        "episode": false,
+        "oni": 0.22,
+        "zf": null,
+        "z": -1.44,
+        "gegen": 0.038,
+        "ostende": false,
+        "kreuz": "Westzeuge ohne Urteil",
+        "fehlt": []
+      },
+      {
+        "monat": "2014-09",
+        "farbe": "Grün",
+        "zahl": null,
+        "episode": false,
+        "oni": 0.07,
+        "zf": null,
+        "z": -1.5,
+        "gegen": 0.354,
+        "ostende": false,
+        "kreuz": "Westzeuge ohne Urteil",
+        "fehlt": []
+      },
+      {
+        "monat": "2014-10",
+        "farbe": "Grün",
+        "zahl": null,
+        "episode": false,
+        "oni": 0.07,
+        "zf": null,
+        "z": -1.71,
+        "gegen": 0.649,
+        "ostende": false,
+        "kreuz": "Westzeuge ohne Urteil",
+        "fehlt": []
+      },
+      {
+        "monat": "2014-11",
+        "farbe": "Grün",
+        "zahl": null,
+        "episode": false,
+        "oni": 0.24,
+        "zf": null,
+        "z": -1.97,
+        "gegen": 0.921,
+        "ostende": false,
+        "kreuz": "keiner",
+        "fehlt": []
+      },
+      {
+        "monat": "2014-12",
+        "farbe": "Gelb",
+        "zahl": 5,
+        "episode": true,
+        "oni": 0.51,
+        "zf": 1.0,
+        "z": -1.9,
+        "gegen": 1.0,
+        "ostende": false,
+        "kreuz": "keiner",
+        "fehlt": [
+          "Zeitfenster knapp",
+          "Gegenkräfte überwiegen nicht",
+          "Ostende der Kaskade bestätigt",
+          "Kreuzbestätigung West und Ost"
+        ]
+      },
+      {
+        "monat": "2015-01",
+        "farbe": "Gelb",
+        "zahl": 5,
+        "episode": true,
+        "oni": 0.7,
+        "zf": 1.0,
+        "z": -1.74,
+        "gegen": 1.0,
+        "ostende": false,
+        "kreuz": "keiner",
+        "fehlt": [
+          "Zeitfenster knapp",
+          "Gegenkräfte überwiegen nicht",
+          "Ostende der Kaskade bestätigt",
+          "Kreuzbestätigung West und Ost"
+        ]
+      },
+      {
+        "monat": "2015-02",
+        "farbe": "Gelb",
+        "zahl": 5,
+        "episode": true,
+        "oni": 0.8,
+        "zf": 1.0,
+        "z": -1.67,
+        "gegen": 1.0,
+        "ostende": false,
+        "kreuz": "keiner",
+        "fehlt": [
+          "Zeitfenster knapp",
+          "Gegenkräfte überwiegen nicht",
+          "Ostende der Kaskade bestätigt",
+          "Kreuzbestätigung West und Ost"
+        ]
+      },
+      {
+        "monat": "2015-03",
+        "farbe": "Gelb",
+        "zahl": 5,
+        "episode": true,
+        "oni": 0.73,
+        "zf": 1.0,
+        "z": -1.5,
+        "gegen": 1.0,
+        "ostende": false,
+        "kreuz": "keiner",
+        "fehlt": [
+          "Zeitfenster knapp",
+          "Gegenkräfte überwiegen nicht",
+          "Ostende der Kaskade bestätigt",
+          "Kreuzbestätigung West und Ost"
+        ]
+      },
+      {
+        "monat": "2015-04",
+        "farbe": "Gelb",
+        "zahl": 7,
+        "episode": true,
+        "oni": 0.65,
+        "zf": 0.556,
+        "z": -1.23,
+        "gegen": 0.525,
+        "ostende": false,
+        "kreuz": "keiner",
+        "fehlt": [
+          "Zeitfenster knapp",
+          "Ostende der Kaskade bestätigt",
+          "Kreuzbestätigung West und Ost"
+        ]
+      },
+      {
+        "monat": "2015-05",
+        "farbe": "Gelb",
+        "zahl": 8,
+        "episode": true,
+        "oni": 0.72,
+        "zf": 0.444,
+        "z": -1.3,
+        "gegen": 0.0,
+        "ostende": false,
+        "kreuz": "keiner",
+        "fehlt": [
+          "Ostende der Kaskade bestätigt",
+          "Kreuzbestätigung West und Ost"
+        ]
+      },
+      {
+        "monat": "2015-06",
+        "farbe": "Gelb",
+        "zahl": 8,
+        "episode": true,
+        "oni": 0.86,
+        "zf": 1.0,
+        "z": -1.31,
+        "gegen": 0.0,
+        "ostende": true,
+        "kreuz": "keiner",
+        "fehlt": [
+          "Zeitfenster knapp",
+          "Kreuzbestätigung West und Ost"
+        ]
+      },
+      {
+        "monat": "2015-07",
+        "farbe": "Gelb",
+        "zahl": 9,
+        "episode": true,
+        "oni": 1.04,
+        "zf": 1.0,
+        "z": -1.04,
+        "gegen": 0.0,
+        "ostende": true,
+        "kreuz": "keiner",
+        "fehlt": [
+          "Zeitfenster knapp",
+          "Kreuzbestätigung West und Ost"
+        ]
+      },
+      {
+        "monat": "2015-08",
+        "farbe": "Gelb",
+        "zahl": 8,
+        "episode": true,
+        "oni": 1.19,
+        "zf": 1.0,
+        "z": -1.01,
+        "gegen": 0.296,
+        "ostende": true,
+        "kreuz": "keiner",
+        "fehlt": [
+          "Zeitfenster knapp",
+          "Kreuzbestätigung West und Ost"
+        ]
+      },
+      {
+        "monat": "2015-09",
+        "farbe": "Gelb",
+        "zahl": 6,
+        "episode": true,
+        "oni": 1.44,
+        "zf": 1.0,
+        "z": -1.28,
+        "gegen": 1.0,
+        "ostende": true,
+        "kreuz": "nur Osten",
+        "fehlt": [
+          "Zeitfenster knapp",
+          "Gegenkräfte überwiegen nicht",
+          "Kreuzbestätigung West und Ost"
+        ]
+      },
+      {
+        "monat": "2015-10",
+        "farbe": "Gelb",
+        "zahl": 7,
+        "episode": true,
+        "oni": 1.73,
+        "zf": 1.0,
+        "z": -1.57,
+        "gegen": 1.0,
+        "ostende": true,
+        "kreuz": "nur Osten",
+        "fehlt": [
+          "Zeitfenster knapp",
+          "Gegenkräfte überwiegen nicht",
+          "Kreuzbestätigung West und Ost"
+        ]
+      },
+      {
+        "monat": "2015-11",
+        "farbe": "Gelb",
+        "zahl": 8,
+        "episode": true,
+        "oni": 2.02,
+        "zf": 1.0,
+        "z": -1.65,
+        "gegen": 0.694,
+        "ostende": true,
+        "kreuz": "bestätigt",
+        "fehlt": [
+          "Zeitfenster knapp",
+          "Gegenkräfte überwiegen nicht"
+        ]
+      },
+      {
+        "monat": "2015-12",
+        "farbe": "Gelb",
+        "zahl": 9,
+        "episode": true,
+        "oni": 2.28,
+        "zf": 1.0,
+        "z": -1.58,
+        "gegen": 0.273,
+        "ostende": true,
+        "kreuz": "bestätigt",
+        "fehlt": [
+          "Zeitfenster knapp"
+        ]
+      }
+    ]
+  },
+  "varianten": [
+    {
+      "name": "Zeitfenster neun Monate",
+      "vorlauf_T_monate": 9,
+      "bilanz": {
+        "von": "1992-01",
+        "bis": "2015-12",
+        "monate": 288,
+        "farben": {
+          "Grün": 195,
+          "Gelb": 89,
+          "Rot": 4,
+          "ohne Urteil": 0
+        },
+        "anzahl": 1,
+        "bewertbar": 1,
+        "treffer": 0,
+        "fehlalarme": 1,
+        "offen": 0,
+        "mittel_12": -0.2361,
+        "basis_12": 0.0875,
+        "basis_trefferquote": 0.4493,
+        "mehrwert": -0.3236,
+        "zufall_anteil": 0.8185,
+        "urteil": {
+          "bestanden": false,
+          "gruende": [
+            {
+              "art": "zu_wenige",
+              "ist": 1,
+              "soll": 3
+            }
+          ]
+        },
+        "bewegungen_zaehlung": {
+          "gesamt": 10,
+          "mit_el_nino": 5,
+          "rechtzeitig": 0,
+          "spät": 0,
+          "nur Gelb": 7,
+          "verpasst": 3,
+          "el_nino": {
+            "rechtzeitig": 0,
+            "spät": 0,
+            "nur Gelb": 5,
+            "verpasst": 0
+          }
+        },
+        "engpaesse": {
+          "Zeitfenster knapp": 64,
+          "Kreuzbestätigung West und Ost": 55,
+          "Markt schläft noch": 36,
+          "Ostende der Kaskade bestätigt": 35,
+          "Gegenkräfte überwiegen nicht": 18,
+          "Markt schläft noch (ohne Daten)": 15
+        },
+        "signale": [
+          "1998-05"
+        ]
+      }
+    },
+    {
+      "name": "Zeitfenster fünfzehn Monate",
+      "vorlauf_T_monate": 15,
+      "bilanz": {
+        "von": "1992-01",
+        "bis": "2015-12",
+        "monate": 288,
+        "farben": {
+          "Grün": 157,
+          "Gelb": 120,
+          "Rot": 11,
+          "ohne Urteil": 0
+        },
+        "anzahl": 3,
+        "bewertbar": 3,
+        "treffer": 1,
+        "fehlalarme": 2,
+        "offen": 0,
+        "mittel_12": 0.0173,
+        "basis_12": 0.0875,
+        "basis_trefferquote": 0.4493,
+        "mehrwert": -0.0702,
+        "zufall_anteil": 0.5863,
+        "urteil": {
+          "bestanden": false,
+          "gruende": [
+            {
+              "art": "mehrwert",
+              "ist": -0.0702,
+              "soll": 0.1
+            },
+            {
+              "art": "fehlalarme",
+              "ist": 2,
+              "soll": 1
+            },
+            {
+              "art": "zufall",
+              "ist": 0.5863,
+              "soll": 0.1
+            }
+          ]
+        },
+        "bewegungen_zaehlung": {
+          "gesamt": 10,
+          "mit_el_nino": 6,
+          "rechtzeitig": 1,
+          "spät": 2,
+          "nur Gelb": 4,
+          "verpasst": 3,
+          "el_nino": {
+            "rechtzeitig": 1,
+            "spät": 2,
+            "nur Gelb": 3,
+            "verpasst": 0
+          }
+        },
+        "engpaesse": {
+          "Zeitfenster knapp": 82,
+          "Kreuzbestätigung West und Ost": 69,
+          "Markt schläft noch": 59,
+          "Ostende der Kaskade bestätigt": 43,
+          "Gegenkräfte überwiegen nicht": 23,
+          "Markt schläft noch (ohne Daten)": 17
+        },
+        "signale": [
+          "1995-10",
+          "1998-08",
+          "2007-09"
+        ]
+      }
+    }
+  ],
+  "pruefzeit": {
+    "status": "verschlossen",
+    "oeffnungen": []
+  }
+}
