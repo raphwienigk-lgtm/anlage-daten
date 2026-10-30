@@ -1,10 +1,14 @@
-# Inlandspreise als Frühzeichen: täglich vor dem Tageslauf (01:53 UTC = 03:53 Uhr Sommerzeit).
+# Inlandspreise als Frühzeichen und Kopf der nächtlichen Kette: täglich 23:23 UTC (00:23 Uhr Winterzeit,
+# 01:23 Uhr Sommerzeit, also immer nach Mitternacht in Berlin). Danach starten Ersatz-Sensoren,
+# Täglicher Lauf und Schattendepot nacheinander über workflow_run. Grund (30.10.2026): GitHub startet
+# geplante Läufe seit dem 23.10. vier bis sechseinhalb Stunden zu spät; so trifft die Verspätung nur
+# noch einen Start, und die Kette ist vor den Wächtern fertig.
 # Der erste Lauf holt die Geschichte ab 2018 in Jahresstücken, danach nur noch die letzten dreißig Tage.
 name: Inlandspreise
 
 on:
   schedule:
-    - cron: "53 1 * * *"
+    - cron: "23 23 * * *"
   workflow_dispatch:
 
 permissions:

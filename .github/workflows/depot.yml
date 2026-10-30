@@ -1,12 +1,13 @@
-# Schattendepot: bereitet täglich um 03:07 UTC (05:07 Uhr) das Gesamt-Schattendepot vor, nach dem
-# Tageslauf und den Ersatz-Sensoren: Devisenkurse ins Archiv, daten/depot/index.json mit allen Werten
+# Schattendepot: bereitet täglich direkt nach dem Tageslauf (Kette ab 23:23 UTC, seit 30.10.2026;
+# vorher 03:07 UTC) das Gesamt-Schattendepot vor, nach dem Tageslauf und den Ersatz-Sensoren: Devisenkurse ins Archiv, daten/depot/index.json mit allen Werten
 # der Zweige, dazu eine Probe ohne die Metall-Positionen. Gerechnet wird beim Depot-Agenten in der Cloud
 # (06:22 Uhr), der das Schattendepot des Metall-Wächters dazulegt. Reine Rechnung, kein echtes Geld.
 name: Schattendepot
 
 on:
-  schedule:
-    - cron: "7 3 * * *"
+  workflow_run:
+    workflows: ["Täglicher Lauf"]
+    types: [completed]
   workflow_dispatch:
 
 permissions:

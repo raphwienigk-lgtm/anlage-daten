@@ -1,11 +1,12 @@
 # Ersatz-Sensoren: Haselnuss → Select Harvests (Spätfrost) und Palladium → Platin (Preis des Originals),
-# täglich um 02:07 UTC (04:07 Uhr), vor dem Anlage-Bewerter. Außerhalb der Frostsaison dauert der Lauf
+# täglich direkt nach den Inlandspreisen (Kette ab 23:23 UTC, seit 30.10.2026; vorher 02:07 UTC), vor dem Tageslauf. Außerhalb der Frostsaison dauert der Lauf
 # Sekunden. Die ersten Haselnuss-Läufe laden einmalig die Frostsaisons ab 1991 (etwa eine Viertelstunde).
 name: Ersatz-Sensoren
 
 on:
-  schedule:
-    - cron: "7 2 * * *"
+  workflow_run:
+    workflows: ["Inlandspreise"]
+    types: [completed]
   workflow_dispatch:
 
 permissions:
