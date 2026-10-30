@@ -1,7 +1,7 @@
-Stand: 29.10.2026, 09:17
+Stand: 30.10.2026, 09:24
 Teil 1 von 1
 
-Der Ersatz-Sensor Haselnuss, Datenteil für Donnerstag, den neunundzwanzigsten Oktober. Der Sensor schlägt beim Original aus, gekauft würde der Ersatz: Select Harvests, Mandeln aus Australien. Das Original, Haselnuss aus der Türkei, ist nicht handelbar: kein Einzel-ETC; der größte Abnehmer Ferrero ist nicht börsennotiert.
+Der Ersatz-Sensor Haselnuss, Datenteil für Freitag, den dreißigsten Oktober. Der Sensor schlägt beim Original aus, gekauft würde der Ersatz: Select Harvests, Mandeln aus Australien. Das Original, Haselnuss aus der Türkei, ist nicht handelbar: kein Einzel-ETC; der größte Abnehmer Ferrero ist nicht börsennotiert.
 
 Stufe Grün. Außer Saison: Die Spätfrost-Saison läuft vom zehnten März bis zum dreißigsten April; Frostvorhersagen zählen ab dem vierundzwanzigsten Februar.
 
@@ -11,7 +11,7 @@ Rückblick auf die Frostsaisons: Der Sensor meldet Spätfrost in siebzehn von se
 
 Select Harvests nach zehn Frostjahren, gerechnet ab dem Tag nach der ersten Frostnacht: nach sechzig Handelstagen im Mittel ein Prozentpunkt vorn gegen den australischen Aktienindex ASX zweihundert, nach zwanzig zwei Prozentpunkte vorn, nach einhundertzwanzig fünfzehn Prozentpunkte vorn; Treffer in drei Fällen. Nach der vorläufigen Regel nicht bestanden.
 
-Preisprobe. Select Harvests ist in fünf Handelstagen um zwei Prozent gestiegen, in zwanzig um zwei Prozent gefallen, gegen den australischen Aktienindex ASX zweihundert sechs Prozentpunkte zurück. Umsatz zuletzt rund zwei Millionen australische Dollar am Tag. Der Markt schläft noch.
+Preisprobe. Select Harvests ist in fünf Handelstagen um vier Prozent gestiegen, in zwanzig um ein Prozent gestiegen, gegen den australischen Aktienindex ASX zweihundert ein Prozentpunkt zurück. Umsatz zuletzt rund zwei Millionen australische Dollar am Tag. Der Markt schläft noch.
 
 Alle Quellen waren erreichbar.
 
