@@ -1,11 +1,13 @@
 # Täglicher Lauf: holt die Daten, rechnet die Ampel, legt Stand und Vorlesetext ab.
-# 02:30 UTC = 04:30 Uhr Sommerzeit, 03:30 Uhr Winterzeit. GitHub startet geplante
-# Läufe manchmal bis zu einer halben Stunde später.
+# Startet seit dem 30.10.2026 direkt nach den Ersatz-Sensoren (Kette ab 23:23 UTC über die
+# Inlandspreise), vorher fest um 02:30 UTC. Grund: GitHub startete geplante Läufe ab dem 23.10.
+# vier bis sechseinhalb Stunden zu spät, am 22.10. gar nicht.
 name: Täglicher Lauf
 
 on:
-  schedule:
-    - cron: "30 2 * * *"
+  workflow_run:
+    workflows: ["Ersatz-Sensoren"]
+    types: [completed]
   workflow_dispatch:
 
 permissions:

@@ -49,6 +49,8 @@ geschichte:
     palmoel: {weltbank: "Palm oil", fred: PPOILUSDM}
     brent: {weltbank: "Crude oil, Brent", fred: POILBREUSDM}
     sojaoel: {weltbank: "Soybean oil", fred: PSOILUSDM}
+    kautschuk: {weltbank: "Rubber, RSS3", fred: PRUBBUSDM}   # 30.10.2026, für den Rückblick Kautschuk
+    kakao: {weltbank: "Cocoa", fred: PCOCOUSDM}              # 30.10.2026, für den Rückblick Kakao
   ernte:
     name: "USDA PSD, Ölsaaten (Produktion Palmöl je Land)"
     url: "https://apps.fas.usda.gov/psdonline/downloads/psd_oilseeds_csv.zip"
