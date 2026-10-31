@@ -1,5 +1,5 @@
 Agent: Ersatz-Sensor Haselnuss (Datenlauf auf GitHub)
-Stand: 30.10.2026, 09:24
+Stand: 31.10.2026, 03:28
 Zustand: in Ordnung
 Ergebnis: abgabe/ersatz-haselnuss-teil-1.md, daten/ersatz/haselnuss/stand.json
 Stufe: Grün (außer Saison)
