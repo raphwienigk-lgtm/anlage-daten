@@ -1,6 +1,6 @@
 {
-  "stand": "2026-10-30T03:35:56+01:00",
-  "datum": "2026-10-30",
+  "stand": "2026-10-31T03:20:33+01:00",
+  "datum": "2026-10-31",
   "version": "0.1.0",
   "land": "marokko",
   "name": "Marokko-Phosphat",
@@ -56,7 +56,7 @@
       "bis": "2027-12-31",
       "urspruenglich_bis": "2027-12-31",
       "verlaengert": false,
-      "tage": 427,
+      "tage": 426,
       "zustand": "läuft",
       "gelb": false,
       "rot_pruefen": false,
@@ -72,7 +72,7 @@
       "bis": "2027-12-31",
       "urspruenglich_bis": "2027-12-31",
       "verlaengert": false,
-      "tage": 427,
+      "tage": 426,
       "zustand": "läuft",
       "gelb": false,
       "rot_pruefen": false,
@@ -88,7 +88,7 @@
       "bis": "2027-10-03",
       "urspruenglich_bis": "2027-10-03",
       "verlaengert": false,
-      "tage": 338,
+      "tage": 337,
       "zustand": "läuft",
       "gelb": false,
       "rot_pruefen": false,
@@ -505,30 +505,6 @@
         ],
         "gewichtig": false,
         "neu": false
-      },
-      {
-        "nummer": "2026-20024",
-        "titel": "Utility Scale Wind Towers From the Republic of Korea: Preliminary Results and Rescission, in Part of Antidumping Duty Administrative Review; 2024-2025",
-        "datum": "2026-09-30",
-        "art": "Notice",
-        "behoerden": [
-          "commerce-department",
-          "international-trade-administration"
-        ],
-        "behoerden_namen": [
-          "Commerce Department",
-          "International Trade Administration"
-        ],
-        "url": "https://www.federalregister.gov/documents/2026/09/30/2026-20024/utility-scale-wind-towers-from-the-republic-of-korea-preliminary-results-and-rescission-in-part-of",
-        "zusammenfassung": "The U.S. Department of Commerce (Commerce) preliminarily determines that Dongkuk S&C Co., Ltd. (Dongkuk) did not make sales of subject merchandise at less than normal value (NV) during the period of review (POR), August 1, 2024, through July 31, 2025. In addition, we are rescinding the review with respect to eight companies. Interested parties are invited to comment on these preliminary results of review.",
-        "begriffe": [
-          "fertilizer"
-        ],
-        "achsen": [
-          "duenger"
-        ],
-        "gewichtig": false,
-        "neu": false
       }
     ]
   },
@@ -538,12 +514,12 @@
     "starkregen_gemessen": [],
     "starkregen_vorhergesagt": [],
     "regen_hoechst_mm": {
-      "khouribga": 0.6,
+      "khouribga": 8.1,
       "benguerir": 0.6,
-      "jorf_lasfar": 0.0,
-      "safi": 0.6,
-      "bou_craa": 1.95,
-      "laayoune": 5.7
+      "jorf_lasfar": 4.5,
+      "safi": 2.4,
+      "bou_craa": 0.7,
+      "laayoune": 0.5
     },
     "trocken": {},
     "gelb_tage": 30
@@ -555,16 +531,16 @@
       "rolle": "sensor",
       "hinweis": "Kanada; größter Düngemittelkonzern, aber schwerpunktmäßig Kali — verwässert",
       "waehrung": "USD",
-      "letzter": "2026-10-29",
-      "schluss": 68.48,
+      "letzter": "2026-10-30",
+      "schluss": 69.42,
       "alter_tage": 1,
-      "r_kurz": -0.0088,
-      "vorsprung_kurz": -0.0185,
-      "r_lang": -0.0179,
-      "vorsprung_lang": -0.0151,
+      "r_kurz": -0.0046,
+      "vorsprung_kurz": -0.028,
+      "r_lang": -0.0091,
+      "vorsprung_lang": -0.0198,
       "urteil": "schläft",
       "markt_schlaeft": true,
-      "handel": 190351189,
+      "handel": 188065481,
       "duenn": false
     },
     "MOS": {
@@ -573,16 +549,16 @@
       "rolle": "sensor",
       "hinweis": "USA; Phosphat und Kali, zugleich Kläger in den Ausgleichszollverfahren gegen OCP",
       "waehrung": "USD",
-      "letzter": "2026-10-29",
-      "schluss": 18.23,
+      "letzter": "2026-10-30",
+      "schluss": 18.39,
       "alter_tage": 1,
-      "r_kurz": 0.0556,
-      "vorsprung_kurz": 0.0459,
-      "r_lang": -0.1541,
-      "vorsprung_lang": -0.1513,
+      "r_kurz": 0.0308,
+      "vorsprung_kurz": 0.0074,
+      "r_lang": -0.1272,
+      "vorsprung_lang": -0.1379,
       "urteil": "schläft",
       "markt_schlaeft": true,
-      "handel": 191370015,
+      "handel": 190075355,
       "duenn": false
     }
   },
