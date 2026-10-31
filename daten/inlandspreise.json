@@ -1,6 +1,6 @@
 {
-  "stand": "2026-10-30T08:51:00+01:00",
-  "datum": "2026-10-30",
+  "stand": "2026-10-31T03:28:09+01:00",
+  "datum": "2026-10-31",
   "version": "0.1.0",
   "hinweis": "Denkhilfe, keine Anlageberatung. Frühzeichen, nicht am Rückblick geprüft.",
   "reihen": {
@@ -17,7 +17,7 @@
         "datum": "2026-10-30",
         "wert": 20350.0
       },
-      "alter_tage": 0,
+      "alter_tage": 1,
       "art": "täglich",
       "mittel_jetzt": 20357.5,
       "mittel_damals": 20467.5,
@@ -37,7 +37,7 @@
         "datum": "2026-10-30",
         "wert": 24400.0
       },
-      "alter_tage": 0,
+      "alter_tage": 1,
       "art": "täglich",
       "mittel_jetzt": 24375.0,
       "mittel_damals": 24277.5,
@@ -52,18 +52,18 @@
       "einheit": "Rupiah je Liter",
       "rolle": "ersatz",
       "status": "ok",
-      "werte": 70,
+      "werte": 71,
       "letzter": {
-        "datum": "2026-08-01",
-        "wert": 21781.0
+        "datum": "2026-09-01",
+        "wert": 21727.0
       },
-      "alter_tage": 90,
+      "alter_tage": 60,
       "art": "monatlich",
       "vergleich": {
-        "datum": "2026-05-01",
-        "wert": 21653.0
+        "datum": "2026-06-01",
+        "wert": 21915.0
       },
-      "veraenderung": 0.0059,
+      "veraenderung": -0.0086,
       "urteil": "ruhig"
     },
     "cpo_my_tag": {
@@ -79,7 +79,7 @@
         "datum": "2026-10-29",
         "wert": 4343.5
       },
-      "alter_tage": 1,
+      "alter_tage": 2,
       "art": "täglich",
       "mittel_jetzt": 4410.7,
       "mittel_damals": 4507.55,
