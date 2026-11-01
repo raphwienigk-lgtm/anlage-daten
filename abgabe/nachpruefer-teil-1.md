@@ -1,11 +1,11 @@
-Stand: 25.10.2026, 04:40
+Stand: 01.11.2026, 11:25
 Teil 1 von 1
 
-Der Nachprüfer für die Woche vom neunzehnten Oktober bis fünfundzwanzigsten Oktober.
+Der Nachprüfer für die Woche vom sechsundzwanzigsten Oktober bis ersten November.
 
-Der tägliche Lauf gelang an fünf von sieben Tagen; es fehlte am zweiundzwanzigsten und fünfundzwanzigsten Oktober. Zustand beim letzten Lauf: in Ordnung.
+Der tägliche Lauf gelang an allen sieben Tagen. Zustand beim letzten Lauf: in Ordnung.
 
-Die anderen täglichen Läufe: Metall China an allen sieben Tagen; Ersatz-Sensoren an sechs von sieben Tagen, es fehlte am fünfundzwanzigsten Oktober; Inlandspreise an sechs von sieben Tagen, es fehlte am fünfundzwanzigsten Oktober; Schattendepot an sechs von sieben Tagen, es fehlte am fünfundzwanzigsten Oktober.
+Die anderen täglichen Läufe: Metall China an allen sieben Tagen; Ersatz-Sensoren an allen sieben Tagen; Inlandspreise an allen sieben Tagen; Schattendepot an allen sieben Tagen.
 
 Kakao steht seit dem neunten Oktober auf Gelb, Zahl zehn. In dieser Woche gab es keinen Wechsel.
 
@@ -17,7 +17,7 @@ Kautschuk steht seit dem neunten Oktober auf Gelb, Zahl acht. In dieser Woche ga
 
 Im Schattendepot gab es bisher keine gedachte Position.
 
-Kautschuk: bisher kein echtes Rot-Signal. Ein Rückblick liegt noch nicht vor. Für Vorschläge zu den Schwellen braucht es mindestens fünf abgeschlossene Signale.
+Kautschuk: bisher kein echtes Rot-Signal. Zum Vergleich der Rückblick über die Lernzeit: ein Signal, keine Treffer, zwölf Monate nach Rot im Mittel minus vierundzwanzig Prozent gegenüber plus neun Prozent über alle Monate; nicht bestanden. Für Vorschläge zu den Schwellen braucht es mindestens fünf abgeschlossene Signale.
 
 Palmöl steht seit dem siebenundzwanzigsten September auf Gelb, Zahl acht. In dieser Woche gab es keinen Wechsel.
 
@@ -27,7 +27,7 @@ Palmöl: bisher kein echtes Rot-Signal. Ein Rückblick liegt noch nicht vor. Fü
 
 Metall Chile-Lithium, Datenteil: Lithium-Achse steht auf Grün seit Beginn der Aufzeichnung am neunten Oktober. In dieser Woche gab es keinen Wechsel. Rot und das Schattendepot der Metalle führt der Metall-Wächter in der Cloud; sie stehen im Bericht des Nachprüfers im Projekt.
 
-Metall China-Ausfuhr, Datenteil: Chip-Achse steht auf Grün seit Beginn der Aufzeichnung am sechsundzwanzigsten September; Magnet-Achse steht auf Gelb seit dem elften Oktober; Batterie-Achse steht auf Gelb seit Beginn der Aufzeichnung am sechsundzwanzigsten September; Werkzeug-Achse steht auf Grün seit dem siebenundzwanzigsten September. In dieser Woche gab es keinen Wechsel. Rot und das Schattendepot der Metalle führt der Metall-Wächter in der Cloud; sie stehen im Bericht des Nachprüfers im Projekt.
+Metall China-Ausfuhr, Datenteil: Chip-Achse steht auf Gelb seit dem achtundzwanzigsten Oktober; Magnet-Achse steht auf Gelb seit dem elften Oktober; Batterie-Achse steht auf Gelb seit Beginn der Aufzeichnung am sechsundzwanzigsten September; Werkzeug-Achse steht auf Grün seit dem siebenundzwanzigsten September. Wechsel in dieser Woche: Chip-Achse am achtundzwanzigsten Oktober von Grün auf Gelb. Rot und das Schattendepot der Metalle führt der Metall-Wächter in der Cloud; sie stehen im Bericht des Nachprüfers im Projekt.
 
 Metall Indonesien-Ausfuhr, Datenteil: Nickel-Achse steht auf Gelb seit dem zwölften Oktober; Zinn-Achse steht auf Grün seit Beginn der Aufzeichnung am neunten Oktober. In dieser Woche gab es keinen Wechsel. Rot und das Schattendepot der Metalle führt der Metall-Wächter in der Cloud; sie stehen im Bericht des Nachprüfers im Projekt.
 

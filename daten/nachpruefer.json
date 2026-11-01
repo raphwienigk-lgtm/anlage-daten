@@ -1,22 +1,19 @@
 {
-  "stand": "2026-10-25T04:40:54+01:00",
+  "stand": "2026-11-01T11:25:05+01:00",
   "version": "0.1.0",
   "hinweis": "Denkhilfe, keine Anlageberatung.",
   "woche": {
-    "von": "2026-10-19",
-    "bis": "2026-10-25"
+    "von": "2026-10-26",
+    "bis": "2026-11-01"
   },
   "laufkontrolle": {
-    "stand_datum": "2026-10-24",
+    "stand_datum": "2026-11-01",
     "zustand": "in Ordnung",
     "hinweise": [],
     "betrieb_seit": "2026-09-27",
-    "tage_mit_lauf": 5,
+    "tage_mit_lauf": 7,
     "tage_gezaehlt": 7,
-    "fehlende_tage": [
-      "2026-10-22",
-      "2026-10-25"
-    ]
+    "fehlende_tage": []
   },
   "weitere_laeufe": [
     {
@@ -31,31 +28,25 @@
       "workflow": "ersatz",
       "name": "Ersatz-Sensoren",
       "betrieb_seit": "2026-09-28",
-      "tage_mit_lauf": 6,
+      "tage_mit_lauf": 7,
       "tage_gezaehlt": 7,
-      "fehlende_tage": [
-        "2026-10-25"
-      ]
+      "fehlende_tage": []
     },
     {
       "workflow": "inlandspreise",
       "name": "Inlandspreise",
       "betrieb_seit": "2026-09-27",
-      "tage_mit_lauf": 6,
+      "tage_mit_lauf": 7,
       "tage_gezaehlt": 7,
-      "fehlende_tage": [
-        "2026-10-25"
-      ]
+      "fehlende_tage": []
     },
     {
       "workflow": "depot",
       "name": "Schattendepot",
       "betrieb_seit": "2026-09-29",
-      "tage_mit_lauf": 6,
+      "tage_mit_lauf": 7,
       "tage_gezaehlt": 7,
-      "fehlende_tage": [
-        "2026-10-25"
-      ]
+      "fehlende_tage": []
     }
   ],
   "rohstoffe": {
@@ -97,7 +88,17 @@
         "offen": 0,
         "liste": []
       },
-      "rueckblick": null,
+      "rueckblick": {
+        "stand": "2026-10-30",
+        "bestanden": false,
+        "anzahl": 1,
+        "treffer": 0,
+        "fehlalarme": 1,
+        "mittel_12": -0.2361,
+        "basis_12": 0.0875,
+        "von": "1992-01",
+        "bis": "2015-12"
+      },
       "vorschlag_faellig": false,
       "mindest_signale": 5
     },
@@ -127,7 +128,7 @@
     "metall_chile": {
       "art": "metall",
       "name": "Metall Chile-Lithium",
-      "laeufe": 17,
+      "laeufe": 24,
       "achsen": {
         "lithium": {
           "name": "Lithium-Achse",
@@ -141,14 +142,20 @@
     "metall_china": {
       "art": "metall",
       "name": "Metall China-Ausfuhr",
-      "laeufe": 31,
+      "laeufe": 38,
       "achsen": {
         "chip": {
           "name": "Chip-Achse",
-          "jetzt": "Grün",
-          "seit": "2026-09-26",
-          "seit_beginn": true,
-          "wechsel": []
+          "jetzt": "Gelb",
+          "seit": "2026-10-28",
+          "seit_beginn": false,
+          "wechsel": [
+            {
+              "tag": "2026-10-28",
+              "vorher": "Grün",
+              "jetzt": "Gelb"
+            }
+          ]
         },
         "magnet": {
           "name": "Magnet-Achse",
@@ -176,7 +183,7 @@
     "metall_indonesien": {
       "art": "metall",
       "name": "Metall Indonesien-Ausfuhr",
-      "laeufe": 17,
+      "laeufe": 24,
       "achsen": {
         "nickel": {
           "name": "Nickel-Achse",
@@ -197,7 +204,7 @@
     "metall_kongo": {
       "art": "metall",
       "name": "Metall Kongo-Kobalt",
-      "laeufe": 17,
+      "laeufe": 24,
       "achsen": {
         "kobalt": {
           "name": "Kobalt-Achse",
@@ -211,7 +218,7 @@
     "metall_marokko": {
       "art": "metall",
       "name": "Metall Marokko-Phosphat",
-      "laeufe": 17,
+      "laeufe": 24,
       "achsen": {
         "duenger": {
           "name": "Dünger-Achse",
@@ -225,7 +232,7 @@
     "ersatz_haselnuss": {
       "art": "ersatz",
       "name": "Ersatz-Sensor Haselnuss",
-      "laeufe": 30,
+      "laeufe": 38,
       "vergleich": "australischer Aktienindex ASX 200",
       "jetzt": "Grün",
       "seit": "2026-09-26",
@@ -236,7 +243,7 @@
     "ersatz_palladium": {
       "art": "ersatz",
       "name": "Ersatz-Sensor Palladium",
-      "laeufe": 30,
+      "laeufe": 38,
       "vergleich": "Gold-ETF",
       "jetzt": "Grün",
       "seit": "2026-09-27",

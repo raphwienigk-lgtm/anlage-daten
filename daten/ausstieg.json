@@ -1,6 +1,6 @@
 {
-  "stand": "2026-10-25T04:40:54+01:00",
-  "datum": "2026-10-25",
+  "stand": "2026-11-01T11:25:06+01:00",
+  "datum": "2026-11-01",
   "version": "0.1.0",
   "hinweis": "Denkhilfe, keine Anlageberatung. Welche Ausstiegsregel gilt, entscheidest du.",
   "gilt": {
@@ -2520,8 +2520,8 @@
                 },
                 "ziel": {
                   "offen": true,
-                  "schritt": 87,
-                  "rendite": -0.3647
+                  "schritt": 92,
+                  "rendite": -0.3437
                 },
                 "nachlauf": {
                   "offen": false,
@@ -3030,8 +3030,8 @@
                 },
                 "ziel": {
                   "offen": true,
-                  "schritt": 89,
-                  "rendite": -0.4248
+                  "schritt": 94,
+                  "rendite": -0.3502
                 },
                 "nachlauf": {
                   "offen": false,
@@ -4127,8 +4127,8 @@
                 },
                 "ziel": {
                   "offen": true,
-                  "schritt": 119,
-                  "rendite": -0.1814
+                  "schritt": 124,
+                  "rendite": -0.2123
                 },
                 "nachlauf": {
                   "offen": false,
@@ -4181,8 +4181,8 @@
                 },
                 "ziel": {
                   "offen": true,
-                  "schritt": 110,
-                  "rendite": -0.1723
+                  "schritt": 115,
+                  "rendite": -0.2036
                 },
                 "nachlauf": {
                   "offen": false,
@@ -4235,8 +4235,8 @@
                 },
                 "ziel": {
                   "offen": true,
-                  "schritt": 107,
-                  "rendite": -0.1725
+                  "schritt": 112,
+                  "rendite": -0.2037
                 },
                 "nachlauf": {
                   "offen": false,
@@ -4289,18 +4289,18 @@
                 },
                 "ziel": {
                   "offen": true,
-                  "schritt": 75,
-                  "rendite": -0.0503
+                  "schritt": 80,
+                  "rendite": -0.0861
                 },
                 "nachlauf": {
                   "offen": true,
-                  "schritt": 75,
-                  "rendite": -0.0503
+                  "schritt": 80,
+                  "rendite": -0.0861
                 },
                 "kombi": {
                   "offen": true,
-                  "schritt": 75,
-                  "rendite": -0.0503
+                  "schritt": 80,
+                  "rendite": -0.0861
                 },
                 "regel2": {
                   "offen": false,
@@ -4337,18 +4337,18 @@
                 },
                 "ziel": {
                   "offen": true,
-                  "schritt": 74,
-                  "rendite": -0.06
+                  "schritt": 79,
+                  "rendite": -0.0955
                 },
                 "nachlauf": {
                   "offen": true,
-                  "schritt": 74,
-                  "rendite": -0.06
+                  "schritt": 79,
+                  "rendite": -0.0955
                 },
                 "kombi": {
                   "offen": true,
-                  "schritt": 74,
-                  "rendite": -0.06
+                  "schritt": 79,
+                  "rendite": -0.0955
                 },
                 "regel2": {
                   "offen": false,
@@ -4369,8 +4369,8 @@
               "ergebnis": {
                 "bisher": {
                   "offen": true,
-                  "schritt": 25,
-                  "rendite": -0.0246
+                  "schritt": 30,
+                  "rendite": -0.0614
                 },
                 "zeit": {
                   "offen": false,
@@ -4382,23 +4382,23 @@
                 },
                 "ziel": {
                   "offen": true,
-                  "schritt": 25,
-                  "rendite": -0.0246
+                  "schritt": 30,
+                  "rendite": -0.0614
                 },
                 "nachlauf": {
                   "offen": true,
-                  "schritt": 25,
-                  "rendite": -0.0246
+                  "schritt": 30,
+                  "rendite": -0.0614
                 },
                 "kombi": {
                   "offen": true,
-                  "schritt": 25,
-                  "rendite": -0.0246
+                  "schritt": 30,
+                  "rendite": -0.0614
                 },
                 "regel2": {
                   "offen": true,
-                  "schritt": 25,
-                  "rendite": -0.0246
+                  "schritt": 30,
+                  "rendite": -0.0614
                 }
               }
             }
@@ -4957,18 +4957,18 @@
                 },
                 "ziel": {
                   "offen": true,
-                  "schritt": 83,
-                  "rendite": 0.0519
+                  "schritt": 88,
+                  "rendite": 0.0166
                 },
                 "nachlauf": {
                   "offen": true,
-                  "schritt": 83,
-                  "rendite": 0.0519
+                  "schritt": 88,
+                  "rendite": 0.0166
                 },
                 "kombi": {
                   "offen": true,
-                  "schritt": 83,
-                  "rendite": 0.0519
+                  "schritt": 88,
+                  "rendite": 0.0166
                 },
                 "regel2": {
                   "offen": false,
