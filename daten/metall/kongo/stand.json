@@ -1,13 +1,13 @@
 {
-  "stand": "2026-10-31T03:22:13+01:00",
-  "datum": "2026-10-31",
+  "stand": "2026-11-01T03:12:42+01:00",
+  "datum": "2026-11-01",
   "version": "0.1.0",
   "land": "kongo",
   "name": "Kongo-Kobalt",
   "laenderpaar": "DR Kongo ↔ China über Förderbeteiligung und Ausfuhrquoten",
   "rolle": "sensor",
   "hinweis": "Denkhilfe, keine Anlageberatung. Rot setzt nur der Metall-Wächter in der Cloud.",
-  "zustand": "in Ordnung",
+  "zustand": "Warnung",
   "reihenfolge": [
     "kobalt"
   ],
@@ -46,7 +46,7 @@
       "bis": "2027-12-31",
       "urspruenglich_bis": "2027-12-31",
       "verlaengert": false,
-      "tage": 426,
+      "tage": 425,
       "zustand": "läuft",
       "gelb": false,
       "rot_pruefen": false,
@@ -62,7 +62,7 @@
       "bis": "2026-12-31",
       "urspruenglich_bis": "2026-12-31",
       "verlaengert": false,
-      "tage": 61,
+      "tage": 60,
       "zustand": "läuft",
       "gelb": false,
       "rot_pruefen": false,
@@ -176,14 +176,7 @@
     "erdbeben_gesamt": 0,
     "starkregen_gemessen": [],
     "starkregen_vorhergesagt": [],
-    "regen_hoechst_mm": {
-      "kolwezi": 12.5,
-      "likasi": 8.7,
-      "tenke": 8.0,
-      "kisanfu": 16.8,
-      "kasumbalesa": 4.0,
-      "durban": 32.8
-    },
+    "regen_hoechst_mm": null,
     "trocken": {},
     "gelb_tage": 45
   },
@@ -194,13 +187,13 @@
       "rolle": "sensor",
       "hinweis": "größter westlicher Kobalt-Förderer im Kongo, aber riesiger Mischkonzern — Signal stark verwässert",
       "waehrung": "GBP",
-      "letzter": "2026-10-29",
-      "schluss": 533.8,
+      "letzter": "2026-10-30",
+      "schluss": 519.5,
       "alter_tage": 2,
-      "r_kurz": -0.005,
-      "vorsprung_kurz": -0.0285,
-      "r_lang": -0.0211,
-      "vorsprung_lang": -0.0318,
+      "r_kurz": -0.0335,
+      "vorsprung_kurz": -0.0339,
+      "r_lang": -0.0746,
+      "vorsprung_lang": -0.0742,
       "urteil": "schläft",
       "markt_schlaeft": true,
       "handel": 17185943702,
@@ -309,8 +302,8 @@
     },
     "openmeteo_vorhersage": {
       "name": "Open-Meteo · Regen der letzten Tage und Vorhersage",
-      "status": "ok",
-      "meldung": null
+      "status": "Fehler",
+      "meldung": "AbrufFehler: ReadTimeout bei https://api.open-meteo.com/v1/forecast: HTTPSConnectionPool(host='api.open-meteo.com', port=443): Read timed out. (read timeout=45)"
     },
     "openmeteo": {
       "name": "Open-Meteo · ERA5-Reanalyse (Regen, Wind)",

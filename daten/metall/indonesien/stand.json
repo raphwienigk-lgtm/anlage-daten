@@ -1,6 +1,6 @@
 {
-  "stand": "2026-10-31T03:20:27+01:00",
-  "datum": "2026-10-31",
+  "stand": "2026-11-01T03:12:31+01:00",
+  "datum": "2026-11-01",
   "version": "0.1.0",
   "land": "indonesien",
   "name": "Indonesien-Ausfuhr",
@@ -31,7 +31,7 @@
         {
           "kanal": "trocken",
           "standort": "sorowako",
-          "anteil": 0.09
+          "anteil": 0.08
         }
       ],
       "kanaele": [
@@ -76,7 +76,7 @@
       "bis": "2026-12-31",
       "urspruenglich_bis": "2026-12-31",
       "verlaengert": false,
-      "tage": 61,
+      "tage": 60,
       "zustand": "läuft",
       "gelb": false,
       "rot_pruefen": false,
@@ -92,7 +92,7 @@
       "bis": "2026-12-31",
       "urspruenglich_bis": "2026-12-31",
       "verlaengert": false,
-      "tage": 61,
+      "tage": 60,
       "zustand": "läuft",
       "gelb": false,
       "rot_pruefen": false,
@@ -109,7 +109,7 @@
       "bis": "2027-01-01",
       "urspruenglich_bis": "2027-01-01",
       "verlaengert": false,
-      "tage": 62,
+      "tage": 61,
       "zustand": "läuft",
       "gelb": false,
       "rot_pruefen": false,
@@ -120,6 +120,30 @@
     "herkunft": "frisch",
     "tage": 30,
     "dokumente": [
+      {
+        "nummer": "2026-22302",
+        "titel": "Foreign-Trade Zone (FTZ) 17, Notification of Proposed Production Activity; Honeywell Aerospace US LLC; (Aircraft Components); Olathe, Kansas",
+        "datum": "2026-11-02",
+        "art": "Notice",
+        "behoerden": [
+          "commerce-department",
+          "foreign-trade-zones-board"
+        ],
+        "behoerden_namen": [
+          "Commerce Department",
+          "Foreign-Trade Zones Board"
+        ],
+        "url": "https://www.federalregister.gov/documents/2026/11/02/2026-22302/foreign-trade-zone-ftz-17-notification-of-proposed-production-activity-honeywell-aerospace-us-llc",
+        "zusammenfassung": "",
+        "begriffe": [
+          "stainless steel"
+        ],
+        "achsen": [
+          "nickel"
+        ],
+        "gewichtig": false,
+        "neu": true
+      },
       {
         "nummer": "2026-21977",
         "titel": "Rescission of Antidumping and Countervailing Duty Administrative Reviews",
@@ -459,79 +483,31 @@
         ],
         "gewichtig": false,
         "neu": false
-      },
-      {
-        "nummer": "2026-20162",
-        "titel": "Large Diameter Graphite Electrodes From India: Preliminary Affirmative Critical Circumstances Determination in Countervailing Duty Investigation",
-        "datum": "2026-10-01",
-        "art": "Notice",
-        "behoerden": [
-          "commerce-department",
-          "international-trade-administration"
-        ],
-        "behoerden_namen": [
-          "Commerce Department",
-          "International Trade Administration"
-        ],
-        "url": "https://www.federalregister.gov/documents/2026/10/01/2026-20162/large-diameter-graphite-electrodes-from-india-preliminary-affirmative-critical-circumstances",
-        "zusammenfassung": "The U.S. Department of Commerce (Commerce) preliminarily determines that critical circumstances exist with respect to imports of large diameter graphite electrodes (large graphite electrodes) from India. The period of investigation is January 1, 2025, through December 31, 2025. Interested parties are invited to comment on this preliminary determination of critical circumstances.",
-        "begriffe": [
-          "stainless steel"
-        ],
-        "achsen": [
-          "nickel"
-        ],
-        "gewichtig": false,
-        "neu": false
-      },
-      {
-        "nummer": "2026-20160",
-        "titel": "Initiation of Antidumping and Countervailing Duty Administrative Reviews",
-        "datum": "2026-10-01",
-        "art": "Notice",
-        "behoerden": [
-          "commerce-department",
-          "international-trade-administration"
-        ],
-        "behoerden_namen": [
-          "Commerce Department",
-          "International Trade Administration"
-        ],
-        "url": "https://www.federalregister.gov/documents/2026/10/01/2026-20160/initiation-of-antidumping-and-countervailing-duty-administrative-reviews",
-        "zusammenfassung": "The U.S. Department of Commerce (Commerce) has received requests to conduct administrative reviews of various antidumping duty (AD) and countervailing duty (CVD) orders with August anniversary dates. In accordance with Commerce's regulations, we are initiating those administrative reviews.",
-        "begriffe": [
-          "tin"
-        ],
-        "achsen": [
-          "zinn"
-        ],
-        "gewichtig": false,
-        "neu": false
       }
     ]
   },
   "stoerung": {
     "erdbeben": [],
-    "erdbeben_gesamt": 10,
+    "erdbeben_gesamt": 9,
     "starkregen_gemessen": [],
     "starkregen_vorhergesagt": [],
     "regen_hoechst_mm": {
-      "morowali": 7.8,
-      "weda_bay": 14.4,
-      "sorowako": 6.0,
-      "pomalaa": 2.9,
+      "morowali": 6.9,
+      "weda_bay": 26.1,
+      "sorowako": 6.4,
+      "pomalaa": 7.3,
       "bangka": 22.9,
       "belitung": 21.7,
       "muntok": 30.5
     },
     "trocken": {
       "sorowako": {
-        "von": "2026-07-28",
-        "bis": "2026-10-25",
-        "summe_mm": 44,
-        "normal_mm": 513,
+        "von": "2026-07-29",
+        "bis": "2026-10-26",
+        "summe_mm": 40,
+        "normal_mm": 514,
         "urteil": "trocken",
-        "anteil": 0.09,
+        "anteil": 0.08,
         "trocken": true
       }
     },
@@ -544,13 +520,13 @@
       "rolle": "beobachtung",
       "hinweis": "bildet den LME-Nickelpreis ab, kein Länderrisiko, keine Verwässerung",
       "waehrung": "USD",
-      "letzter": "2026-10-29",
-      "schluss": 13.43,
+      "letzter": "2026-10-30",
+      "schluss": 13.1825,
       "alter_tage": 2,
-      "r_kurz": -0.0343,
-      "vorsprung_kurz": -0.0578,
-      "r_lang": -0.0079,
-      "vorsprung_lang": -0.0186,
+      "r_kurz": -0.0378,
+      "vorsprung_kurz": -0.0382,
+      "r_lang": -0.0253,
+      "vorsprung_lang": -0.0249,
       "urteil": "schläft",
       "markt_schlaeft": true,
       "handel": 36421,
@@ -564,9 +540,9 @@
       "waehrung": "USD",
       "letzter": "2026-10-30",
       "schluss": 112.53,
-      "alter_tage": 1,
+      "alter_tage": 2,
       "r_kurz": -0.0349,
-      "vorsprung_kurz": -0.0584,
+      "vorsprung_kurz": -0.0353,
       "r_lang": null,
       "vorsprung_lang": null,
       "urteil": "ohne Vergleich",

@@ -1,6 +1,6 @@
 {
-  "stand": "2026-10-31T03:20:18+01:00",
-  "datum": "2026-10-31",
+  "stand": "2026-11-01T03:12:25+01:00",
+  "datum": "2026-11-01",
   "version": "0.1.0",
   "land": "china",
   "name": "China-Ausfuhr",
@@ -45,7 +45,7 @@
         {
           "kanal": "frist",
           "kennung": "aussetzung_usa_ga_ge_sb",
-          "tage": 27,
+          "tage": 26,
           "zustand": "läuft bald aus"
         }
       ],
@@ -76,7 +76,7 @@
         {
           "kanal": "frist",
           "kennung": "aussetzung_okt2025",
-          "tage": 10,
+          "tage": 9,
           "zustand": "läuft bald aus"
         }
       ],
@@ -107,7 +107,7 @@
         {
           "kanal": "frist",
           "kennung": "aussetzung_okt2025",
-          "tage": 10,
+          "tage": 9,
           "zustand": "läuft bald aus"
         },
         {
@@ -157,7 +157,7 @@
       "bis": "2026-11-10",
       "urspruenglich_bis": "2026-11-10",
       "verlaengert": false,
-      "tage": 10,
+      "tage": 9,
       "zustand": "läuft bald aus",
       "gelb": true,
       "rot_pruefen": false,
@@ -173,7 +173,7 @@
       "bis": "2026-11-27",
       "urspruenglich_bis": "2026-11-27",
       "verlaengert": false,
-      "tage": 27,
+      "tage": 26,
       "zustand": "läuft bald aus",
       "gelb": true,
       "rot_pruefen": false,
@@ -184,6 +184,32 @@
     "herkunft": "frisch",
     "tage": 30,
     "dokumente": [
+      {
+        "nummer": "2026-22302",
+        "titel": "Foreign-Trade Zone (FTZ) 17, Notification of Proposed Production Activity; Honeywell Aerospace US LLC; (Aircraft Components); Olathe, Kansas",
+        "datum": "2026-11-02",
+        "art": "Notice",
+        "behoerden": [
+          "commerce-department",
+          "foreign-trade-zones-board"
+        ],
+        "behoerden_namen": [
+          "Commerce Department",
+          "Foreign-Trade Zones Board"
+        ],
+        "url": "https://www.federalregister.gov/documents/2026/11/02/2026-22302/foreign-trade-zone-ftz-17-notification-of-proposed-production-activity-honeywell-aerospace-us-llc",
+        "zusammenfassung": "",
+        "begriffe": [
+          "permanent magnet",
+          "graphite"
+        ],
+        "achsen": [
+          "magnet",
+          "batterie"
+        ],
+        "gewichtig": false,
+        "neu": true
+      },
       {
         "nummer": "2026-21896",
         "titel": "Notice of Publication of U.S. Resources Management Industry Listing and Opportunity To Apply for the Listing",
@@ -373,30 +399,6 @@
         ],
         "gewichtig": false,
         "neu": false
-      },
-      {
-        "nummer": "2026-20162",
-        "titel": "Large Diameter Graphite Electrodes From India: Preliminary Affirmative Critical Circumstances Determination in Countervailing Duty Investigation",
-        "datum": "2026-10-01",
-        "art": "Notice",
-        "behoerden": [
-          "commerce-department",
-          "international-trade-administration"
-        ],
-        "behoerden_namen": [
-          "Commerce Department",
-          "International Trade Administration"
-        ],
-        "url": "https://www.federalregister.gov/documents/2026/10/01/2026-20162/large-diameter-graphite-electrodes-from-india-preliminary-affirmative-critical-circumstances",
-        "zusammenfassung": "The U.S. Department of Commerce (Commerce) preliminarily determines that critical circumstances exist with respect to imports of large diameter graphite electrodes (large graphite electrodes) from India. The period of investigation is January 1, 2025, through December 31, 2025. Interested parties are invited to comment on this preliminary determination of critical circumstances.",
-        "begriffe": [
-          "graphite"
-        ],
-        "achsen": [
-          "batterie"
-        ],
-        "gewichtig": false,
-        "neu": false
       }
     ]
   },
@@ -406,33 +408,33 @@
     "starkregen_gemessen": [],
     "starkregen_vorhergesagt": [],
     "regen_hoechst_mm": {
-      "lengshuijiang": 16.1,
-      "hechi": 23.1,
+      "lengshuijiang": 29.4,
+      "hechi": 29.8,
       "lincang": 6.0,
-      "qujing": 7.3,
-      "pingguo": 30.2,
-      "zibo": 2.1,
+      "qujing": 4.1,
+      "pingguo": 17.1,
+      "zibo": 5.9,
       "baotou": 0.4,
-      "ganzhou": 11.4,
+      "ganzhou": 37.2,
       "jixi": 2.6
     },
     "trocken": {
       "lincang": {
-        "von": "2026-07-28",
-        "bis": "2026-10-25",
-        "summe_mm": 546,
-        "normal_mm": 615,
+        "von": "2026-07-29",
+        "bis": "2026-10-26",
+        "summe_mm": 530,
+        "normal_mm": 609,
         "urteil": "normal",
-        "anteil": 0.89,
+        "anteil": 0.87,
         "trocken": false
       },
       "qujing": {
-        "von": "2026-07-28",
-        "bis": "2026-10-25",
-        "summe_mm": 290,
-        "normal_mm": 398,
+        "von": "2026-07-29",
+        "bis": "2026-10-26",
+        "summe_mm": 281,
+        "normal_mm": 396,
         "urteil": "normal",
-        "anteil": 0.73,
+        "anteil": 0.71,
         "trocken": false
       }
     },
@@ -447,7 +449,7 @@
       "waehrung": "USD",
       "letzter": "2026-10-30",
       "schluss": 16.65,
-      "alter_tage": 1,
+      "alter_tage": 2,
       "r_kurz": 0.0128,
       "vorsprung_kurz": -0.0023,
       "r_lang": -0.183,
@@ -465,7 +467,7 @@
       "waehrung": "USD",
       "letzter": "2026-10-30",
       "schluss": 2.98,
-      "alter_tage": 1,
+      "alter_tage": 2,
       "r_kurz": -0.0261,
       "vorsprung_kurz": -0.0412,
       "r_lang": -0.2531,
@@ -483,7 +485,7 @@
       "waehrung": "USD",
       "letzter": "2026-10-30",
       "schluss": 39.57,
-      "alter_tage": 1,
+      "alter_tage": 2,
       "r_kurz": 0.0332,
       "vorsprung_kurz": 0.0181,
       "r_lang": -0.1575,
@@ -501,7 +503,7 @@
       "waehrung": "AUD",
       "letzter": "2026-10-30",
       "schluss": 12.1,
-      "alter_tage": 1,
+      "alter_tage": 2,
       "r_kurz": 0.1298,
       "vorsprung_kurz": 0.1147,
       "r_lang": -0.0656,
