@@ -1,6 +1,6 @@
 {
-  "stand": "2026-11-01T03:12:31+01:00",
-  "datum": "2026-11-01",
+  "stand": "2026-11-02T03:28:53+01:00",
+  "datum": "2026-11-02",
   "version": "0.1.0",
   "land": "indonesien",
   "name": "Indonesien-Ausfuhr",
@@ -31,7 +31,7 @@
         {
           "kanal": "trocken",
           "standort": "sorowako",
-          "anteil": 0.08
+          "anteil": 0.07
         }
       ],
       "kanaele": [
@@ -76,7 +76,7 @@
       "bis": "2026-12-31",
       "urspruenglich_bis": "2026-12-31",
       "verlaengert": false,
-      "tage": 60,
+      "tage": 59,
       "zustand": "läuft",
       "gelb": false,
       "rot_pruefen": false,
@@ -92,7 +92,7 @@
       "bis": "2026-12-31",
       "urspruenglich_bis": "2026-12-31",
       "verlaengert": false,
-      "tage": 60,
+      "tage": 59,
       "zustand": "läuft",
       "gelb": false,
       "rot_pruefen": false,
@@ -109,7 +109,7 @@
       "bis": "2027-01-01",
       "urspruenglich_bis": "2027-01-01",
       "verlaengert": false,
-      "tage": 61,
+      "tage": 60,
       "zustand": "läuft",
       "gelb": false,
       "rot_pruefen": false,
@@ -142,7 +142,7 @@
           "nickel"
         ],
         "gewichtig": false,
-        "neu": true
+        "neu": false
       },
       {
         "nummer": "2026-21977",
@@ -459,55 +459,31 @@
         ],
         "gewichtig": false,
         "neu": false
-      },
-      {
-        "nummer": "2026-20269",
-        "titel": "Antidumping or Countervailing Duty Order, Finding, or Suspended Investigation; Opportunity To Request Administrative Review and Join Annual Inquiry Service List; Note Regarding Format of Review Requests",
-        "datum": "2026-10-02",
-        "art": "Notice",
-        "behoerden": [
-          "commerce-department",
-          "international-trade-administration"
-        ],
-        "behoerden_namen": [
-          "Commerce Department",
-          "International Trade Administration"
-        ],
-        "url": "https://www.federalregister.gov/documents/2026/10/02/2026-20269/antidumping-or-countervailing-duty-order-finding-or-suspended-investigation-opportunity-to-request",
-        "zusammenfassung": "",
-        "begriffe": [
-          "stainless steel"
-        ],
-        "achsen": [
-          "nickel"
-        ],
-        "gewichtig": false,
-        "neu": false
       }
     ]
   },
   "stoerung": {
     "erdbeben": [],
-    "erdbeben_gesamt": 9,
+    "erdbeben_gesamt": 10,
     "starkregen_gemessen": [],
     "starkregen_vorhergesagt": [],
     "regen_hoechst_mm": {
       "morowali": 6.9,
-      "weda_bay": 26.1,
-      "sorowako": 6.4,
-      "pomalaa": 7.3,
+      "weda_bay": 11.9,
+      "sorowako": 7.6,
+      "pomalaa": 4.4,
       "bangka": 22.9,
-      "belitung": 21.7,
+      "belitung": 18.3,
       "muntok": 30.5
     },
     "trocken": {
       "sorowako": {
-        "von": "2026-07-29",
-        "bis": "2026-10-26",
-        "summe_mm": 40,
-        "normal_mm": 514,
+        "von": "2026-07-30",
+        "bis": "2026-10-27",
+        "summe_mm": 36,
+        "normal_mm": 512,
         "urteil": "trocken",
-        "anteil": 0.08,
+        "anteil": 0.07,
         "trocken": true
       }
     },
@@ -522,7 +498,7 @@
       "waehrung": "USD",
       "letzter": "2026-10-30",
       "schluss": 13.1825,
-      "alter_tage": 2,
+      "alter_tage": 3,
       "r_kurz": -0.0378,
       "vorsprung_kurz": -0.0382,
       "r_lang": -0.0253,
@@ -540,7 +516,7 @@
       "waehrung": "USD",
       "letzter": "2026-10-30",
       "schluss": 112.53,
-      "alter_tage": 2,
+      "alter_tage": 3,
       "r_kurz": -0.0349,
       "vorsprung_kurz": -0.0353,
       "r_lang": null,
