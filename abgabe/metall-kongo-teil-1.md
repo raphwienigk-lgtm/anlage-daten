@@ -1,11 +1,11 @@
-Stand: 02.11.2026, 03:30
+Stand: 03.11.2026, 04:55
 Teil 1 von 1
 
-Der Metall-Wächter Kongo-Kobalt, Datenteil für Montag, den zweiten November. Stufen je Achse aus Fristen, US-Maßnahmen und Störungen an den Standorten. Rot setzt nur der Wächter in der Cloud, wenn eine Meldung aus Peking dazukommt. Die Wucht sagt, wie stark China ein Metall beherrscht und wie schwer es zu ersetzen ist, von null bis eins.
+Der Metall-Wächter Kongo-Kobalt, Datenteil für Dienstag, den dritten November. Stufen je Achse aus Fristen, US-Maßnahmen und Störungen an den Standorten. Rot setzt nur der Wächter in der Cloud, wenn eine Meldung aus Peking dazukommt. Die Wucht sagt, wie stark China ein Metall beherrscht und wie schwer es zu ersetzen ist, von null bis eins.
 
 Kobalt-Achse, der Pilot: Grün. Wucht null Komma drei vier, getragen von Kobalt.
 
-Fristen. Die Kobalt-Ausfuhrquote von sechsundneunzig.sechshundert Tonnen je Jahr (ARECOMS-Beschluss vier/zweitausendfünfundzwanzig) (Bekanntmachung Nummer vier) läuft am einunddreißigsten Dezember aus, in vierhundertvierundzwanzig Tagen. Stand: Seit sechzehnten Oktober zweitausendfünfundzwanzig in Kraft, nach dem achtmonatigen Exportverbot. Nicht genutzte Halbjahresquoten wurden am neunundzwanzigsten Juni zweitausendsechsundzwanzig eingezogen und in eine strategische Reserve überführt.. Die Quotenzuteilung für das laufende Jahr läuft am einunddreißigsten Dezember aus, in neunundfünfzig Tagen. Stand: Verfallsregeln sind das eigentliche Steuerungsinstrument geworden: Fristen für die Nutzung wurden zweitausendsechsundzwanzig mehrfach verkürzt..
+Fristen. Die Kobalt-Ausfuhrquote von sechsundneunzig.sechshundert Tonnen je Jahr (ARECOMS-Beschluss vier/zweitausendfünfundzwanzig) (Bekanntmachung Nummer vier) läuft am einunddreißigsten Dezember aus, in vierhundertdreiundzwanzig Tagen. Stand: Seit sechzehnten Oktober zweitausendfünfundzwanzig in Kraft, nach dem achtmonatigen Exportverbot. Nicht genutzte Halbjahresquoten wurden am neunundzwanzigsten Juni zweitausendsechsundzwanzig eingezogen und in eine strategische Reserve überführt.. Die Quotenzuteilung für das laufende Jahr läuft am einunddreißigsten Dezember aus, in achtundfünfzig Tagen. Stand: Verfallsregeln sind das eigentliche Steuerungsinstrument geworden: Fristen für die Nutzung wurden zweitausendsechsundzwanzig mehrfach verkürzt..
 
 Gegenseite. In den letzten dreißig Tagen stehen vier Einträge zu den Suchbegriffen im US-Bundesregister, davon keiner gewichtig.
 
