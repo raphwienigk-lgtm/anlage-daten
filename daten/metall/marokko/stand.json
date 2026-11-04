@@ -1,6 +1,6 @@
 {
-  "stand": "2026-11-03T04:55:24+01:00",
-  "datum": "2026-11-03",
+  "stand": "2026-11-04T04:01:46+01:00",
+  "datum": "2026-11-04",
   "version": "0.1.0",
   "land": "marokko",
   "name": "Marokko-Phosphat",
@@ -27,6 +27,12 @@
       "wucht": 0.7,
       "stufe": "Gelb",
       "gruende": [
+        {
+          "kanal": "gegenseite",
+          "nummer": "2026-22435",
+          "datum": "2026-11-03",
+          "titel": "Phosphate Fertilizers From the Kingdom of Morocco: Final Results of First Full Sunset Review of the Countervailing Duty Order"
+        },
         {
           "kanal": "gegenseite",
           "nummer": "2026-20615",
@@ -56,7 +62,7 @@
       "bis": "2027-12-31",
       "urspruenglich_bis": "2027-12-31",
       "verlaengert": false,
-      "tage": 423,
+      "tage": 422,
       "zustand": "läuft",
       "gelb": false,
       "rot_pruefen": false,
@@ -72,7 +78,7 @@
       "bis": "2027-12-31",
       "urspruenglich_bis": "2027-12-31",
       "verlaengert": false,
-      "tage": 423,
+      "tage": 422,
       "zustand": "läuft",
       "gelb": false,
       "rot_pruefen": false,
@@ -88,7 +94,7 @@
       "bis": "2027-10-03",
       "urspruenglich_bis": "2027-10-03",
       "verlaengert": false,
-      "tage": 334,
+      "tage": 333,
       "zustand": "läuft",
       "gelb": false,
       "rot_pruefen": false,
@@ -99,6 +105,31 @@
     "herkunft": "frisch",
     "tage": 30,
     "dokumente": [
+      {
+        "nummer": "2026-22435",
+        "titel": "Phosphate Fertilizers From the Kingdom of Morocco: Final Results of First Full Sunset Review of the Countervailing Duty Order",
+        "datum": "2026-11-03",
+        "art": "Notice",
+        "behoerden": [
+          "commerce-department",
+          "international-trade-administration"
+        ],
+        "behoerden_namen": [
+          "Commerce Department",
+          "International Trade Administration"
+        ],
+        "url": "https://www.federalregister.gov/documents/2026/11/03/2026-22435/phosphate-fertilizers-from-the-kingdom-of-morocco-final-results-of-first-full-sunset-review-of-the",
+        "zusammenfassung": "The U.S. Department of Commerce (Commerce) finds that revocation of the countervailing duty (CVD) order on phosphate fertilizers (fertilizers) from the Kingdom of Morocco (Morocco) would likely to lead to the continuation or recurrence of a countervailable subsidy at the levels indicated in the \"Final Results of Sunset Review\" section of this notice.",
+        "begriffe": [
+          "phosphate",
+          "fertilizer"
+        ],
+        "achsen": [
+          "duenger"
+        ],
+        "gewichtig": true,
+        "neu": true
+      },
       {
         "nummer": "2026-21977",
         "titel": "Rescission of Antidumping and Countervailing Duty Administrative Reviews",
@@ -514,12 +545,12 @@
     "starkregen_gemessen": [],
     "starkregen_vorhergesagt": [],
     "regen_hoechst_mm": {
-      "khouribga": 8.7,
-      "benguerir": 5.4,
-      "jorf_lasfar": 8.1,
-      "safi": 15.3,
+      "khouribga": 39.9,
+      "benguerir": 37.2,
+      "jorf_lasfar": 6.9,
+      "safi": 6.9,
       "bou_craa": 2.4,
-      "laayoune": 0.4
+      "laayoune": 5.1
     },
     "trocken": {},
     "gelb_tage": 30
@@ -531,16 +562,16 @@
       "rolle": "sensor",
       "hinweis": "Kanada; größter Düngemittelkonzern, aber schwerpunktmäßig Kali — verwässert",
       "waehrung": "USD",
-      "letzter": "2026-11-02",
-      "schluss": 70.2,
+      "letzter": "2026-11-03",
+      "schluss": 69.32,
       "alter_tage": 1,
-      "r_kurz": 0.029,
-      "vorsprung_kurz": 0.0286,
-      "r_lang": -0.0009,
-      "vorsprung_lang": -0.0005,
+      "r_kurz": -0.0007,
+      "vorsprung_kurz": -0.0108,
+      "r_lang": -0.0264,
+      "vorsprung_lang": -0.0277,
       "urteil": "schläft",
       "markt_schlaeft": true,
-      "handel": 185809493,
+      "handel": 183861674,
       "duenn": false
     },
     "MOS": {
@@ -549,13 +580,13 @@
       "rolle": "sensor",
       "hinweis": "USA; Phosphat und Kali, zugleich Kläger in den Ausgleichszollverfahren gegen OCP",
       "waehrung": "USD",
-      "letzter": "2026-11-02",
-      "schluss": 19.03,
+      "letzter": "2026-11-03",
+      "schluss": 18.42,
       "alter_tage": 1,
-      "r_kurz": 0.0745,
-      "vorsprung_kurz": 0.0741,
-      "r_lang": -0.1062,
-      "vorsprung_lang": -0.1058,
+      "r_kurz": -0.0197,
+      "vorsprung_kurz": -0.0298,
+      "r_lang": -0.1203,
+      "vorsprung_lang": -0.1216,
       "urteil": "schläft",
       "markt_schlaeft": true,
       "handel": 190075355,
