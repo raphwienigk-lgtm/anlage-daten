@@ -1,6 +1,6 @@
 {
-  "stand": "2026-11-04T04:00:03+01:00",
-  "datum": "2026-11-04",
+  "stand": "2026-11-05T04:28:29+01:00",
+  "datum": "2026-11-05",
   "version": "0.1.0",
   "land": "indonesien",
   "name": "Indonesien-Ausfuhr",
@@ -31,7 +31,7 @@
         {
           "kanal": "trocken",
           "standort": "sorowako",
-          "anteil": 0.07
+          "anteil": 0.06
         }
       ],
       "kanaele": [
@@ -76,7 +76,7 @@
       "bis": "2026-12-31",
       "urspruenglich_bis": "2026-12-31",
       "verlaengert": false,
-      "tage": 57,
+      "tage": 56,
       "zustand": "läuft",
       "gelb": false,
       "rot_pruefen": false,
@@ -92,7 +92,7 @@
       "bis": "2026-12-31",
       "urspruenglich_bis": "2026-12-31",
       "verlaengert": false,
-      "tage": 57,
+      "tage": 56,
       "zustand": "läuft",
       "gelb": false,
       "rot_pruefen": false,
@@ -109,7 +109,7 @@
       "bis": "2027-01-01",
       "urspruenglich_bis": "2027-01-01",
       "verlaengert": false,
-      "tage": 58,
+      "tage": 57,
       "zustand": "läuft",
       "gelb": false,
       "rot_pruefen": false,
@@ -120,6 +120,30 @@
     "herkunft": "frisch",
     "tage": 30,
     "dokumente": [
+      {
+        "nummer": "2026-22528",
+        "titel": "Light-Walled Rectangular Pipe and Tube From the People's Republic of China: Preliminary Results and Rescission, in Part, of Antidumping Duty Administrative Review; 2024-2025",
+        "datum": "2026-11-04",
+        "art": "Notice",
+        "behoerden": [
+          "commerce-department",
+          "international-trade-administration"
+        ],
+        "behoerden_namen": [
+          "Commerce Department",
+          "International Trade Administration"
+        ],
+        "url": "https://www.federalregister.gov/documents/2026/11/04/2026-22528/light-walled-rectangular-pipe-and-tube-from-the-peoples-republic-of-china-preliminary-results-and",
+        "zusammenfassung": "The U.S. Department of Commerce (Commerce) preliminarily determines that Hangzhou Ailong Metal Products Co., Ltd. (Ailong) failed to establish its eligibility for a separate rate and, therefore, is part of the China-wide entity. The period of review (POR) is August 1, 2024, through July 31, 2025. In addition, we are rescinding the review with respect to 39 companies. Interested parties are invited to comment on these preliminary results of review.",
+        "begriffe": [
+          "nickel"
+        ],
+        "achsen": [
+          "nickel"
+        ],
+        "gewichtig": false,
+        "neu": true
+      },
       {
         "nummer": "2026-22302",
         "titel": "Foreign-Trade Zone (FTZ) 17, Notification of Proposed Production Activity; Honeywell Aerospace US LLC; (Aircraft Components); Olathe, Kansas",
@@ -464,26 +488,26 @@
   },
   "stoerung": {
     "erdbeben": [],
-    "erdbeben_gesamt": 11,
+    "erdbeben_gesamt": 12,
     "starkregen_gemessen": [],
     "starkregen_vorhergesagt": [],
     "regen_hoechst_mm": {
       "morowali": 6.9,
-      "weda_bay": 11.9,
+      "weda_bay": 18.0,
       "sorowako": 9.9,
       "pomalaa": 9.6,
-      "bangka": 22.9,
-      "belitung": 18.3,
-      "muntok": 30.5
+      "bangka": 10.9,
+      "belitung": 15.1,
+      "muntok": 22.5
     },
     "trocken": {
       "sorowako": {
-        "von": "2026-08-01",
-        "bis": "2026-10-29",
-        "summe_mm": 34,
-        "normal_mm": 507,
+        "von": "2026-08-02",
+        "bis": "2026-10-30",
+        "summe_mm": 32,
+        "normal_mm": 504,
         "urteil": "trocken",
-        "anteil": 0.07,
+        "anteil": 0.06,
         "trocken": true
       }
     },
@@ -496,16 +520,16 @@
       "rolle": "beobachtung",
       "hinweis": "bildet den LME-Nickelpreis ab, kein Länderrisiko, keine Verwässerung",
       "waehrung": "USD",
-      "letzter": "2026-11-02",
-      "schluss": 13.435,
+      "letzter": "2026-11-03",
+      "schluss": 13.27,
       "alter_tage": 2,
-      "r_kurz": -0.0028,
-      "vorsprung_kurz": -0.0129,
-      "r_lang": -0.0125,
-      "vorsprung_lang": -0.0138,
+      "r_kurz": -0.0187,
+      "vorsprung_kurz": 0.0054,
+      "r_lang": -0.0217,
+      "vorsprung_lang": -0.0009,
       "urteil": "schläft",
       "markt_schlaeft": true,
-      "handel": 43068,
+      "handel": 36421,
       "duenn": true
     },
     "TINM.L": {
@@ -514,17 +538,17 @@
       "rolle": "beobachtung",
       "hinweis": "bildet den LME-Zinnpreis ab",
       "waehrung": "USD",
-      "letzter": "2026-11-03",
-      "schluss": 109.275,
+      "letzter": "2026-11-04",
+      "schluss": 108.15,
       "alter_tage": 1,
-      "r_kurz": -0.0779,
-      "vorsprung_kurz": -0.088,
+      "r_kurz": -0.0762,
+      "vorsprung_kurz": -0.0521,
       "r_lang": null,
       "vorsprung_lang": null,
       "urteil": "ohne Vergleich",
       "markt_schlaeft": false,
-      "handel": null,
-      "duenn": null
+      "handel": 8794,
+      "duenn": true
     }
   },
   "vergleich": {

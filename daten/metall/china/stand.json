@@ -1,6 +1,6 @@
 {
-  "stand": "2026-11-04T03:59:56+01:00",
-  "datum": "2026-11-04",
+  "stand": "2026-11-05T04:28:21+01:00",
+  "datum": "2026-11-05",
   "version": "0.1.0",
   "land": "china",
   "name": "China-Ausfuhr",
@@ -45,7 +45,7 @@
         {
           "kanal": "frist",
           "kennung": "aussetzung_usa_ga_ge_sb",
-          "tage": 23,
+          "tage": 22,
           "zustand": "läuft bald aus"
         }
       ],
@@ -76,7 +76,7 @@
         {
           "kanal": "frist",
           "kennung": "aussetzung_okt2025",
-          "tage": 6,
+          "tage": 5,
           "zustand": "läuft bald aus"
         }
       ],
@@ -107,7 +107,7 @@
         {
           "kanal": "frist",
           "kennung": "aussetzung_okt2025",
-          "tage": 6,
+          "tage": 5,
           "zustand": "läuft bald aus"
         },
         {
@@ -157,7 +157,7 @@
       "bis": "2026-11-10",
       "urspruenglich_bis": "2026-11-10",
       "verlaengert": false,
-      "tage": 6,
+      "tage": 5,
       "zustand": "läuft bald aus",
       "gelb": true,
       "rot_pruefen": false,
@@ -173,7 +173,7 @@
       "bis": "2026-11-27",
       "urspruenglich_bis": "2026-11-27",
       "verlaengert": false,
-      "tage": 23,
+      "tage": 22,
       "zustand": "läuft bald aus",
       "gelb": true,
       "rot_pruefen": false,
@@ -184,6 +184,30 @@
     "herkunft": "frisch",
     "tage": 30,
     "dokumente": [
+      {
+        "nummer": "2026-22528",
+        "titel": "Light-Walled Rectangular Pipe and Tube From the People's Republic of China: Preliminary Results and Rescission, in Part, of Antidumping Duty Administrative Review; 2024-2025",
+        "datum": "2026-11-04",
+        "art": "Notice",
+        "behoerden": [
+          "commerce-department",
+          "international-trade-administration"
+        ],
+        "behoerden_namen": [
+          "Commerce Department",
+          "International Trade Administration"
+        ],
+        "url": "https://www.federalregister.gov/documents/2026/11/04/2026-22528/light-walled-rectangular-pipe-and-tube-from-the-peoples-republic-of-china-preliminary-results-and",
+        "zusammenfassung": "The U.S. Department of Commerce (Commerce) preliminarily determines that Hangzhou Ailong Metal Products Co., Ltd. (Ailong) failed to establish its eligibility for a separate rate and, therefore, is part of the China-wide entity. The period of review (POR) is August 1, 2024, through July 31, 2025. In addition, we are rescinding the review with respect to 39 companies. Interested parties are invited to comment on these preliminary results of review.",
+        "begriffe": [
+          "tungsten"
+        ],
+        "achsen": [
+          "werkzeug"
+        ],
+        "gewichtig": false,
+        "neu": true
+      },
       {
         "nummer": "2026-22302",
         "titel": "Foreign-Trade Zone (FTZ) 17, Notification of Proposed Production Activity; Honeywell Aerospace US LLC; (Aircraft Components); Olathe, Kansas",
@@ -408,31 +432,31 @@
     "starkregen_gemessen": [],
     "starkregen_vorhergesagt": [],
     "regen_hoechst_mm": {
-      "lengshuijiang": 27.6,
-      "hechi": 18.3,
-      "lincang": 20.1,
-      "qujing": 18.0,
-      "pingguo": 9.9,
-      "zibo": 8.7,
+      "lengshuijiang": 24.6,
+      "hechi": 14.6,
+      "lincang": 28.8,
+      "qujing": 13.7,
+      "pingguo": 8.7,
+      "zibo": 12.4,
       "baotou": 0.0,
-      "ganzhou": 11.0,
+      "ganzhou": 12.2,
       "jixi": 2.6
     },
     "trocken": {
       "lincang": {
-        "von": "2026-08-01",
-        "bis": "2026-10-29",
-        "summe_mm": 487,
-        "normal_mm": 594,
+        "von": "2026-08-02",
+        "bis": "2026-10-30",
+        "summe_mm": 477,
+        "normal_mm": 590,
         "urteil": "normal",
-        "anteil": 0.82,
+        "anteil": 0.81,
         "trocken": false
       },
       "qujing": {
-        "von": "2026-08-01",
-        "bis": "2026-10-29",
-        "summe_mm": 268,
-        "normal_mm": 387,
+        "von": "2026-08-02",
+        "bis": "2026-10-30",
+        "summe_mm": 262,
+        "normal_mm": 381,
         "urteil": "normal",
         "anteil": 0.69,
         "trocken": false
@@ -447,13 +471,13 @@
       "rolle": "kandidat",
       "hinweis": "Antimon-Projekt Stibnite in Idaho, noch ohne Förderung",
       "waehrung": "USD",
-      "letzter": "2026-11-03",
-      "schluss": 16.065,
+      "letzter": "2026-11-04",
+      "schluss": 16.35,
       "alter_tage": 1,
-      "r_kurz": -0.1255,
-      "vorsprung_kurz": -0.0883,
-      "r_lang": -0.2209,
-      "vorsprung_lang": -0.1148,
+      "r_kurz": -0.1186,
+      "vorsprung_kurz": -0.064,
+      "r_lang": -0.1821,
+      "vorsprung_lang": -0.0957,
       "urteil": "schläft",
       "markt_schlaeft": true,
       "handel": 23029931,
@@ -465,16 +489,16 @@
       "rolle": "kandidat",
       "hinweis": "kleiner Antimon-Verarbeiter in den USA und Mexiko",
       "waehrung": "USD",
-      "letzter": "2026-11-03",
-      "schluss": 2.88,
+      "letzter": "2026-11-04",
+      "schluss": 2.98,
       "alter_tage": 1,
-      "r_kurz": -0.1299,
-      "vorsprung_kurz": -0.0927,
-      "r_lang": -0.2782,
-      "vorsprung_lang": -0.1721,
+      "r_kurz": -0.0774,
+      "vorsprung_kurz": -0.0228,
+      "r_lang": -0.228,
+      "vorsprung_lang": -0.1416,
       "urteil": "schläft",
       "markt_schlaeft": true,
-      "handel": 23294496,
+      "handel": 23144340,
       "duenn": false
     },
     "MP": {
@@ -483,13 +507,13 @@
       "rolle": "beobachtung",
       "hinweis": "seltene Erden USA; seit 22.06.2026 selbst auf Chinas Exportkontrollliste",
       "waehrung": "USD",
-      "letzter": "2026-11-03",
-      "schluss": 37.83,
+      "letzter": "2026-11-04",
+      "schluss": 35.91,
       "alter_tage": 1,
-      "r_kurz": -0.0744,
-      "vorsprung_kurz": -0.0372,
-      "r_lang": -0.2205,
-      "vorsprung_lang": -0.1144,
+      "r_kurz": -0.1254,
+      "vorsprung_kurz": -0.0708,
+      "r_lang": -0.2246,
+      "vorsprung_lang": -0.1382,
       "urteil": "schläft",
       "markt_schlaeft": true,
       "handel": 245003950,
@@ -501,16 +525,16 @@
       "rolle": "beobachtung",
       "hinweis": "größter Produzent seltener Erden außerhalb Chinas",
       "waehrung": "AUD",
-      "letzter": "2026-11-03",
-      "schluss": 11.97,
+      "letzter": "2026-11-04",
+      "schluss": 11.99,
       "alter_tage": 1,
-      "r_kurz": 0.0266,
-      "vorsprung_kurz": 0.0638,
-      "r_lang": -0.0714,
-      "vorsprung_lang": 0.0347,
+      "r_kurz": -0.0416,
+      "vorsprung_kurz": 0.013,
+      "r_lang": -0.0847,
+      "vorsprung_lang": 0.0017,
       "urteil": "schläft",
       "markt_schlaeft": true,
-      "handel": 53849187,
+      "handel": 55064679,
       "duenn": false
     }
   },
