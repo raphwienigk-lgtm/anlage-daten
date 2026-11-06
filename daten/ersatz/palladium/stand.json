@@ -1,6 +1,6 @@
 {
-  "stand": "2026-11-05T04:32:09+01:00",
-  "datum": "2026-11-05",
+  "stand": "2026-11-06T04:29:02+01:00",
+  "datum": "2026-11-06",
   "version": "0.1.0",
   "kennung": "palladium",
   "name": "Palladium",
@@ -40,15 +40,15 @@
   "gruende": [
     {
       "art": "ruhig",
-      "anstieg": -0.2035,
-      "verhaeltnis": 0.672
+      "anstieg": -0.2282,
+      "verhaeltnis": 0.676
     }
   ],
   "wechsel": null,
   "lage": {
-    "datum": "2026-11-04",
-    "anstieg": -0.2035,
-    "verhaeltnis": 0.672
+    "datum": "2026-11-05",
+    "anstieg": -0.2282,
+    "verhaeltnis": 0.676
   },
   "signale": [
     {
@@ -137,16 +137,16 @@
       "rolle": "kandidat",
       "hinweis": "physisch hinterlegtes Platin, in Dollar gehandelt",
       "waehrung": "USD",
-      "letzter": "2026-11-04",
-      "schluss": 13.54,
+      "letzter": "2026-11-05",
+      "schluss": 13.76,
       "alter_tage": 1,
-      "r_kurz": -0.0322,
-      "vorsprung_kurz": -0.0294,
-      "r_lang": -0.0839,
-      "vorsprung_lang": -0.0749,
+      "r_kurz": 0.0208,
+      "vorsprung_kurz": 0.002,
+      "r_lang": -0.0715,
+      "vorsprung_lang": -0.0633,
       "urteil": "schläft",
       "markt_schlaeft": true,
-      "handel": 33472783,
+      "handel": 33590395,
       "duenn": false
     }
   },
