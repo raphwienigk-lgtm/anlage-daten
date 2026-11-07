@@ -1,6 +1,6 @@
 {
-  "stand": "2026-11-06T04:28:29+01:00",
-  "datum": "2026-11-06",
+  "stand": "2026-11-07T03:52:58+01:00",
+  "datum": "2026-11-07",
   "version": "0.1.0",
   "hinweis": "Denkhilfe, keine Anlageberatung. Frühzeichen, nicht am Rückblick geprüft.",
   "reihen": {
@@ -15,13 +15,13 @@
       "werte": 2290,
       "letzter": {
         "datum": "2026-11-06",
-        "wert": 20300.0
+        "wert": 20350.0
       },
-      "alter_tage": 0,
+      "alter_tage": 1,
       "art": "täglich",
-      "mittel_jetzt": 20347.5,
+      "mittel_jetzt": 20350.0,
       "mittel_damals": 20450.0,
-      "veraenderung": -0.005,
+      "veraenderung": -0.0049,
       "urteil": "ruhig"
     },
     "speiseoel_id_marke": {
@@ -35,13 +35,13 @@
       "werte": 2293,
       "letzter": {
         "datum": "2026-11-06",
-        "wert": 24300.0
+        "wert": 24450.0
       },
-      "alter_tage": 0,
+      "alter_tage": 1,
       "art": "täglich",
-      "mittel_jetzt": 24380.0,
+      "mittel_jetzt": 24387.5,
       "mittel_damals": 24287.5,
-      "veraenderung": 0.0038,
+      "veraenderung": 0.0041,
       "urteil": "ruhig"
     },
     "pflanzenoel_id_monat": {
@@ -57,7 +57,7 @@
         "datum": "2026-09-01",
         "wert": 21727.0
       },
-      "alter_tage": 66,
+      "alter_tage": 67,
       "art": "monatlich",
       "vergleich": {
         "datum": "2026-06-01",
@@ -74,16 +74,16 @@
       "einheit": "Ringgit je Tonne",
       "rolle": "tagespreis",
       "status": "ok",
-      "werte": 445,
+      "werte": 446,
       "letzter": {
-        "datum": "2026-11-04",
-        "wert": 4292.0
+        "datum": "2026-11-05",
+        "wert": 4204.5
       },
       "alter_tage": 2,
       "art": "täglich",
-      "mittel_jetzt": 4411.18,
-      "mittel_damals": 4516.08,
-      "veraenderung": -0.0232,
+      "mittel_jetzt": 4401.43,
+      "mittel_damals": 4517.53,
+      "veraenderung": -0.0257,
       "urteil": "ruhig"
     }
   },
