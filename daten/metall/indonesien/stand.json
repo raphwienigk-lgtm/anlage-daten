@@ -1,6 +1,6 @@
 {
-  "stand": "2026-11-06T04:25:23+01:00",
-  "datum": "2026-11-06",
+  "stand": "2026-11-07T03:46:29+01:00",
+  "datum": "2026-11-07",
   "version": "0.1.0",
   "land": "indonesien",
   "name": "Indonesien-Ausfuhr",
@@ -31,7 +31,7 @@
         {
           "kanal": "trocken",
           "standort": "sorowako",
-          "anteil": 0.09
+          "anteil": 0.1
         }
       ],
       "kanaele": [
@@ -76,7 +76,7 @@
       "bis": "2026-12-31",
       "urspruenglich_bis": "2026-12-31",
       "verlaengert": false,
-      "tage": 55,
+      "tage": 54,
       "zustand": "läuft",
       "gelb": false,
       "rot_pruefen": false,
@@ -92,7 +92,7 @@
       "bis": "2026-12-31",
       "urspruenglich_bis": "2026-12-31",
       "verlaengert": false,
-      "tage": 55,
+      "tage": 54,
       "zustand": "läuft",
       "gelb": false,
       "rot_pruefen": false,
@@ -109,7 +109,7 @@
       "bis": "2027-01-01",
       "urspruenglich_bis": "2027-01-01",
       "verlaengert": false,
-      "tage": 56,
+      "tage": 55,
       "zustand": "läuft",
       "gelb": false,
       "rot_pruefen": false,
@@ -120,6 +120,30 @@
     "herkunft": "frisch",
     "tage": 30,
     "dokumente": [
+      {
+        "nummer": "2026-22660",
+        "titel": "Certain Frozen Warmwater Shrimp From the Socialist Republic of Vietnam: Final Results of Antidumping Duty Administrative Review; 2024-2025",
+        "datum": "2026-11-06",
+        "art": "Notice",
+        "behoerden": [
+          "commerce-department",
+          "international-trade-administration"
+        ],
+        "behoerden_namen": [
+          "Commerce Department",
+          "International Trade Administration"
+        ],
+        "url": "https://www.federalregister.gov/documents/2026/11/06/2026-22660/certain-frozen-warmwater-shrimp-from-the-socialist-republic-of-vietnam-final-results-of-antidumping",
+        "zusammenfassung": "The U.S. Department of Commerce (Commerce) determines that producers/exporters subject to this administrative review made sales of certain frozen warmwater shrimp (shrimp) from the Socialist Republic of Vietnam (Vietnam) at prices below normal value (NV) during the period of review (POR), February 1, 2024, through January 31, 2025. Additionally, Commerce determines that 29 exporters are eligible for separate rates.",
+        "begriffe": [
+          "tin"
+        ],
+        "achsen": [
+          "zinn"
+        ],
+        "gewichtig": false,
+        "neu": true
+      },
       {
         "nummer": "2026-22528",
         "titel": "Light-Walled Rectangular Pipe and Tube From the People's Republic of China: Preliminary Results and Rescission, in Part, of Antidumping Duty Administrative Review; 2024-2025",
@@ -469,21 +493,21 @@
     "starkregen_vorhergesagt": [],
     "regen_hoechst_mm": {
       "morowali": 6.9,
-      "weda_bay": 11.9,
-      "sorowako": 11.7,
+      "weda_bay": 17.6,
+      "sorowako": 9.9,
       "pomalaa": 9.6,
-      "bangka": 10.9,
-      "belitung": 14.8,
+      "bangka": 9.1,
+      "belitung": 16.8,
       "muntok": 29.6
     },
     "trocken": {
       "sorowako": {
-        "von": "2026-08-03",
-        "bis": "2026-10-31",
-        "summe_mm": 47,
-        "normal_mm": 507,
+        "von": "2026-08-04",
+        "bis": "2026-11-01",
+        "summe_mm": 52,
+        "normal_mm": 505,
         "urteil": "trocken",
-        "anteil": 0.09,
+        "anteil": 0.1,
         "trocken": true
       }
     },
@@ -496,13 +520,13 @@
       "rolle": "beobachtung",
       "hinweis": "bildet den LME-Nickelpreis ab, kein Länderrisiko, keine Verwässerung",
       "waehrung": "USD",
-      "letzter": "2026-11-04",
-      "schluss": 13.64,
+      "letzter": "2026-11-05",
+      "schluss": 14.1,
       "alter_tage": 2,
-      "r_kurz": 0.0115,
-      "vorsprung_kurz": 0.0315,
-      "r_lang": 0.0018,
-      "vorsprung_lang": 0.018,
+      "r_kurz": 0.0499,
+      "vorsprung_kurz": 0.0651,
+      "r_lang": 0.0448,
+      "vorsprung_lang": 0.0469,
       "urteil": "schläft",
       "markt_schlaeft": true,
       "handel": 36421,
@@ -514,16 +538,16 @@
       "rolle": "beobachtung",
       "hinweis": "bildet den LME-Zinnpreis ab",
       "waehrung": "USD",
-      "letzter": "2026-11-05",
-      "schluss": 106.2,
+      "letzter": "2026-11-06",
+      "schluss": 106.97,
       "alter_tage": 1,
-      "r_kurz": -0.0705,
-      "vorsprung_kurz": -0.0505,
-      "r_lang": -0.1031,
-      "vorsprung_lang": -0.0869,
+      "r_kurz": -0.0494,
+      "vorsprung_kurz": -0.0342,
+      "r_lang": -0.1223,
+      "vorsprung_lang": -0.1202,
       "urteil": "schläft",
       "markt_schlaeft": true,
-      "handel": 6160,
+      "handel": 8535,
       "duenn": true
     }
   },

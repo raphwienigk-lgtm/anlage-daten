@@ -1,5 +1,5 @@
 Agent: Metall-Wächter Chile-Lithium (Datenlauf auf GitHub)
-Stand: 06.11.2026, 04:25
+Stand: 07.11.2026, 03:46
 Zustand: in Ordnung
 Ergebnis: abgabe/metall-chile-teil-1.md, daten/metall/chile/stand.json
 Stufen: Lithium-Achse Grün

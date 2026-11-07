@@ -1,6 +1,6 @@
 {
-  "stand": "2026-11-06T04:27:07+01:00",
-  "datum": "2026-11-06",
+  "stand": "2026-11-07T03:46:36+01:00",
+  "datum": "2026-11-07",
   "version": "0.1.0",
   "land": "marokko",
   "name": "Marokko-Phosphat",
@@ -62,7 +62,7 @@
       "bis": "2027-12-31",
       "urspruenglich_bis": "2027-12-31",
       "verlaengert": false,
-      "tage": 420,
+      "tage": 419,
       "zustand": "läuft",
       "gelb": false,
       "rot_pruefen": false,
@@ -78,7 +78,7 @@
       "bis": "2027-12-31",
       "urspruenglich_bis": "2027-12-31",
       "verlaengert": false,
-      "tage": 420,
+      "tage": 419,
       "zustand": "läuft",
       "gelb": false,
       "rot_pruefen": false,
@@ -94,7 +94,7 @@
       "bis": "2027-10-03",
       "urspruenglich_bis": "2027-10-03",
       "verlaengert": false,
-      "tage": 331,
+      "tage": 330,
       "zustand": "läuft",
       "gelb": false,
       "rot_pruefen": false,
@@ -464,54 +464,6 @@
         ],
         "gewichtig": true,
         "neu": false
-      },
-      {
-        "nummer": "2026-20549",
-        "titel": "Certain Paper Shopping Bags From Malaysia: Preliminary Results, Preliminary Determination of No Shipments and Rescission, in Part, of Antidumping Duty Administrative Review; 2024-2025",
-        "datum": "2026-10-07",
-        "art": "Notice",
-        "behoerden": [
-          "commerce-department",
-          "international-trade-administration"
-        ],
-        "behoerden_namen": [
-          "Commerce Department",
-          "International Trade Administration"
-        ],
-        "url": "https://www.federalregister.gov/documents/2026/10/07/2026-20549/certain-paper-shopping-bags-from-malaysia-preliminary-results-preliminary-determination-of-no",
-        "zusammenfassung": "The U.S. Department of Commerce (Commerce) preliminarily determines that Hexachase Packaging Sdn. Bhd. (Hexachase) made sales of subject merchandise at less than normal value (NV) during the period of review (POR), January 3, 2024, through June 30, 2025. Commerce also preliminarily determines that Sin Boon Beng Printing Sdn. Bhd. (SBBP), made no shipments during the POR. Finally, we are rescinding the review with respect to two companies. Interested parties are invited to comment on these preliminary results of review.",
-        "begriffe": [
-          "fertilizer"
-        ],
-        "achsen": [
-          "duenger"
-        ],
-        "gewichtig": false,
-        "neu": false
-      },
-      {
-        "nummer": "2026-20547",
-        "titel": "Certain Paper Shopping Bags From India: Preliminary Results and Rescission, in Part of Antidumping Duty Administrative Review; 2024-2025",
-        "datum": "2026-10-07",
-        "art": "Notice",
-        "behoerden": [
-          "commerce-department",
-          "international-trade-administration"
-        ],
-        "behoerden_namen": [
-          "Commerce Department",
-          "International Trade Administration"
-        ],
-        "url": "https://www.federalregister.gov/documents/2026/10/07/2026-20547/certain-paper-shopping-bags-from-india-preliminary-results-and-rescission-in-part-of-antidumping",
-        "zusammenfassung": "The U.S. Department of Commerce (Commerce) preliminarily determines that Ckaari Packaging Private Limited (Ckaari) and Velvin Packaging Solution Private Limited, Velvin Paper Products, and the Velvin Group (collectively, Velvin) made sales of certain paper shopping bags (paper bags) from India at less than normal value (NV) during the period of review (POR), January 3, 2024, through June 30, 2025. In addition, we are rescinding the review, in part, with respect to seven companies. Interested parties are invited to comment on these preliminary results of review.",
-        "begriffe": [
-          "fertilizer"
-        ],
-        "achsen": [
-          "duenger"
-        ],
-        "gewichtig": false,
-        "neu": false
       }
     ]
   },
@@ -521,12 +473,12 @@
     "starkregen_gemessen": [],
     "starkregen_vorhergesagt": [],
     "regen_hoechst_mm": {
-      "khouribga": 7.8,
-      "benguerir": 5.7,
-      "jorf_lasfar": 7.5,
-      "safi": 20.6,
-      "bou_craa": 2.4,
-      "laayoune": 0.3
+      "khouribga": 11.1,
+      "benguerir": 7.2,
+      "jorf_lasfar": 11.4,
+      "safi": 10.5,
+      "bou_craa": 3.3,
+      "laayoune": 13.2
     },
     "trocken": {},
     "gelb_tage": 30
@@ -538,13 +490,13 @@
       "rolle": "sensor",
       "hinweis": "Kanada; größter Düngemittelkonzern, aber schwerpunktmäßig Kali — verwässert",
       "waehrung": "USD",
-      "letzter": "2026-11-05",
-      "schluss": 72.21,
+      "letzter": "2026-11-06",
+      "schluss": 71.48,
       "alter_tage": 1,
-      "r_kurz": 0.0545,
-      "vorsprung_kurz": 0.0744,
-      "r_lang": 0.0335,
-      "vorsprung_lang": 0.0497,
+      "r_kurz": 0.0297,
+      "vorsprung_kurz": 0.0449,
+      "r_lang": 0.0593,
+      "vorsprung_lang": 0.0614,
       "urteil": "schläft",
       "markt_schlaeft": true,
       "handel": 183861674,
@@ -556,16 +508,16 @@
       "rolle": "sensor",
       "hinweis": "USA; Phosphat und Kali, zugleich Kläger in den Ausgleichszollverfahren gegen OCP",
       "waehrung": "USD",
-      "letzter": "2026-11-05",
-      "schluss": 22.33,
+      "letzter": "2026-11-06",
+      "schluss": 22.36,
       "alter_tage": 1,
-      "r_kurz": 0.2249,
-      "vorsprung_kurz": 0.2449,
-      "r_lang": 0.1318,
-      "vorsprung_lang": 0.148,
-      "urteil": "schläft",
-      "markt_schlaeft": true,
-      "handel": 193209370,
+      "r_kurz": 0.2159,
+      "vorsprung_kurz": 0.2311,
+      "r_lang": 0.1932,
+      "vorsprung_lang": 0.1953,
+      "urteil": "gelaufen",
+      "markt_schlaeft": false,
+      "handel": 195152272,
       "duenn": false
     }
   },
