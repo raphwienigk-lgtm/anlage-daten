@@ -1,5 +1,5 @@
 Agent: Ausstiegs-Vergleich (auf GitHub, sonntags mit dem Nachprüfer)
-Stand: 01.11.2026, 11:25
+Stand: 08.11.2026, 11:17
 Zustand: in Ordnung
 Ergebnis: abgabe/ausstieg-teil-1.md bis ausstieg-teil-3.md, daten/ausstieg.json
 Vorn: Lithium-Achse zeit, Chip-Achse zeit, Magnet-Achse bisher, Nickel-Achse regel2, Kobalt-Achse nachlauf, Dünger-Achse zeit, Ersatz Haselnuss regel2/bisher, Ersatz Palladium nachlauf

@@ -1,13 +1,13 @@
 {
-  "stand": "2026-11-01T11:25:05+01:00",
+  "stand": "2026-11-08T11:17:26+01:00",
   "version": "0.1.0",
   "hinweis": "Denkhilfe, keine Anlageberatung.",
   "woche": {
-    "von": "2026-10-26",
-    "bis": "2026-11-01"
+    "von": "2026-11-02",
+    "bis": "2026-11-08"
   },
   "laufkontrolle": {
-    "stand_datum": "2026-11-01",
+    "stand_datum": "2026-11-08",
     "zustand": "in Ordnung",
     "hinweise": [],
     "betrieb_seit": "2026-09-27",
@@ -128,7 +128,7 @@
     "metall_chile": {
       "art": "metall",
       "name": "Metall Chile-Lithium",
-      "laeufe": 24,
+      "laeufe": 31,
       "achsen": {
         "lithium": {
           "name": "Lithium-Achse",
@@ -142,20 +142,14 @@
     "metall_china": {
       "art": "metall",
       "name": "Metall China-Ausfuhr",
-      "laeufe": 38,
+      "laeufe": 45,
       "achsen": {
         "chip": {
           "name": "Chip-Achse",
           "jetzt": "Gelb",
           "seit": "2026-10-28",
           "seit_beginn": false,
-          "wechsel": [
-            {
-              "tag": "2026-10-28",
-              "vorher": "Grün",
-              "jetzt": "Gelb"
-            }
-          ]
+          "wechsel": []
         },
         "magnet": {
           "name": "Magnet-Achse",
@@ -183,7 +177,7 @@
     "metall_indonesien": {
       "art": "metall",
       "name": "Metall Indonesien-Ausfuhr",
-      "laeufe": 24,
+      "laeufe": 31,
       "achsen": {
         "nickel": {
           "name": "Nickel-Achse",
@@ -204,7 +198,7 @@
     "metall_kongo": {
       "art": "metall",
       "name": "Metall Kongo-Kobalt",
-      "laeufe": 24,
+      "laeufe": 31,
       "achsen": {
         "kobalt": {
           "name": "Kobalt-Achse",
@@ -218,7 +212,7 @@
     "metall_marokko": {
       "art": "metall",
       "name": "Metall Marokko-Phosphat",
-      "laeufe": 24,
+      "laeufe": 31,
       "achsen": {
         "duenger": {
           "name": "Dünger-Achse",
@@ -232,7 +226,7 @@
     "ersatz_haselnuss": {
       "art": "ersatz",
       "name": "Ersatz-Sensor Haselnuss",
-      "laeufe": 38,
+      "laeufe": 45,
       "vergleich": "australischer Aktienindex ASX 200",
       "jetzt": "Grün",
       "seit": "2026-09-26",
@@ -243,7 +237,7 @@
     "ersatz_palladium": {
       "art": "ersatz",
       "name": "Ersatz-Sensor Palladium",
-      "laeufe": 38,
+      "laeufe": 45,
       "vergleich": "Gold-ETF",
       "jetzt": "Grün",
       "seit": "2026-09-27",

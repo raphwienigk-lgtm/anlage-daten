@@ -1,7 +1,7 @@
-Stand: 01.11.2026, 11:25
+Stand: 08.11.2026, 11:17
 Teil 1 von 1
 
-Der Nachprüfer für die Woche vom sechsundzwanzigsten Oktober bis ersten November.
+Der Nachprüfer für die Woche vom zweiten November bis achten November.
 
 Der tägliche Lauf gelang an allen sieben Tagen. Zustand beim letzten Lauf: in Ordnung.
 
@@ -27,7 +27,7 @@ Palmöl: bisher kein echtes Rot-Signal. Ein Rückblick liegt noch nicht vor. Fü
 
 Metall Chile-Lithium, Datenteil: Lithium-Achse steht auf Grün seit Beginn der Aufzeichnung am neunten Oktober. In dieser Woche gab es keinen Wechsel. Rot und das Schattendepot der Metalle führt der Metall-Wächter in der Cloud; sie stehen im Bericht des Nachprüfers im Projekt.
 
-Metall China-Ausfuhr, Datenteil: Chip-Achse steht auf Gelb seit dem achtundzwanzigsten Oktober; Magnet-Achse steht auf Gelb seit dem elften Oktober; Batterie-Achse steht auf Gelb seit Beginn der Aufzeichnung am sechsundzwanzigsten September; Werkzeug-Achse steht auf Grün seit dem siebenundzwanzigsten September. Wechsel in dieser Woche: Chip-Achse am achtundzwanzigsten Oktober von Grün auf Gelb. Rot und das Schattendepot der Metalle führt der Metall-Wächter in der Cloud; sie stehen im Bericht des Nachprüfers im Projekt.
+Metall China-Ausfuhr, Datenteil: Chip-Achse steht auf Gelb seit dem achtundzwanzigsten Oktober; Magnet-Achse steht auf Gelb seit dem elften Oktober; Batterie-Achse steht auf Gelb seit Beginn der Aufzeichnung am sechsundzwanzigsten September; Werkzeug-Achse steht auf Grün seit dem siebenundzwanzigsten September. In dieser Woche gab es keinen Wechsel. Rot und das Schattendepot der Metalle führt der Metall-Wächter in der Cloud; sie stehen im Bericht des Nachprüfers im Projekt.
 
 Metall Indonesien-Ausfuhr, Datenteil: Nickel-Achse steht auf Gelb seit dem zwölften Oktober; Zinn-Achse steht auf Grün seit Beginn der Aufzeichnung am neunten Oktober. In dieser Woche gab es keinen Wechsel. Rot und das Schattendepot der Metalle führt der Metall-Wächter in der Cloud; sie stehen im Bericht des Nachprüfers im Projekt.
 
