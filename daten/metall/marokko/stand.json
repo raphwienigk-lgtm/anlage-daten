@@ -1,6 +1,6 @@
 {
-  "stand": "2026-11-07T03:46:36+01:00",
-  "datum": "2026-11-07",
+  "stand": "2026-11-08T03:26:41+01:00",
+  "datum": "2026-11-08",
   "version": "0.1.0",
   "land": "marokko",
   "name": "Marokko-Phosphat",
@@ -32,12 +32,6 @@
           "nummer": "2026-22435",
           "datum": "2026-11-03",
           "titel": "Phosphate Fertilizers From the Kingdom of Morocco: Final Results of First Full Sunset Review of the Countervailing Duty Order"
-        },
-        {
-          "kanal": "gegenseite",
-          "nummer": "2026-20615",
-          "datum": "2026-10-08",
-          "titel": "Request for Comments on the Effect of the European Union's Carbon Border Adjustment Mechanism and the Proposals To Expand Coverage on U.S. Trade"
         }
       ],
       "kanaele": [
@@ -62,7 +56,7 @@
       "bis": "2027-12-31",
       "urspruenglich_bis": "2027-12-31",
       "verlaengert": false,
-      "tage": 419,
+      "tage": 418,
       "zustand": "läuft",
       "gelb": false,
       "rot_pruefen": false,
@@ -78,7 +72,7 @@
       "bis": "2027-12-31",
       "urspruenglich_bis": "2027-12-31",
       "verlaengert": false,
-      "tage": 419,
+      "tage": 418,
       "zustand": "läuft",
       "gelb": false,
       "rot_pruefen": false,
@@ -94,7 +88,7 @@
       "bis": "2027-10-03",
       "urspruenglich_bis": "2027-10-03",
       "verlaengert": false,
-      "tage": 330,
+      "tage": 329,
       "zustand": "läuft",
       "gelb": false,
       "rot_pruefen": false,
@@ -394,76 +388,6 @@
         ],
         "gewichtig": false,
         "neu": false
-      },
-      {
-        "nummer": "2026-20698",
-        "titel": "Certain Corrosion-Resistant Steel Products From the Republic of Korea: Preliminary Results and Rescission, in Part, of Antidumping Duty Administrative Review; 2024-2025",
-        "datum": "2026-10-08",
-        "art": "Notice",
-        "behoerden": [
-          "commerce-department",
-          "international-trade-administration"
-        ],
-        "behoerden_namen": [
-          "Commerce Department",
-          "International Trade Administration"
-        ],
-        "url": "https://www.federalregister.gov/documents/2026/10/08/2026-20698/certain-corrosion-resistant-steel-products-from-the-republic-of-korea-preliminary-results-and",
-        "zusammenfassung": "The U.S. Department of Commerce (Commerce) preliminarily determines that producers/exporters subject to this review made sales of subject merchandise at less than normal value (NV) during the period of review (POR), July 1, 2024, through June 30, 2025. Interested parties are invited to comment on these preliminary results of review.",
-        "begriffe": [
-          "fertilizer"
-        ],
-        "achsen": [
-          "duenger"
-        ],
-        "gewichtig": false,
-        "neu": false
-      },
-      {
-        "nummer": "2026-20694",
-        "titel": "Certain Steel Nails From the Republic of Korea: Preliminary Results and Rescission, in Part of Antidumping Duty Administrative Review; 2024-2025",
-        "datum": "2026-10-08",
-        "art": "Notice",
-        "behoerden": [
-          "commerce-department",
-          "international-trade-administration"
-        ],
-        "behoerden_namen": [
-          "Commerce Department",
-          "International Trade Administration"
-        ],
-        "url": "https://www.federalregister.gov/documents/2026/10/08/2026-20694/certain-steel-nails-from-the-republic-of-korea-preliminary-results-and-rescission-in-part-of",
-        "zusammenfassung": "The U.S. Department of Commerce (Commerce) preliminarily determines that producers/exporters subject to this review made sales of subject merchandise at less than normal value (NV) during the period of review (POR), July 1, 2024, through June 30, 2025. In addition, we are rescinding the review with respect to three companies. Interested parties are invited to comment on these preliminary results of review.",
-        "begriffe": [
-          "fertilizer"
-        ],
-        "achsen": [
-          "duenger"
-        ],
-        "gewichtig": false,
-        "neu": false
-      },
-      {
-        "nummer": "2026-20615",
-        "titel": "Request for Comments on the Effect of the European Union's Carbon Border Adjustment Mechanism and the Proposals To Expand Coverage on U.S. Trade",
-        "datum": "2026-10-08",
-        "art": "Notice",
-        "behoerden": [
-          "trade-representative-office-of-united-states"
-        ],
-        "behoerden_namen": [
-          "Trade Representative, Office of United States"
-        ],
-        "url": "https://www.federalregister.gov/documents/2026/10/08/2026-20615/request-for-comments-on-the-effect-of-the-european-unions-carbon-border-adjustment-mechanism-and-the",
-        "zusammenfassung": "The Office of the United States Trade Representative (USTR) invites comments regarding the current and potential impact of the European Union's (EU) Carbon Border Adjustment Mechanism (CBAM) on U.S. producers, including small- and medium-sized producers; workers; U.S. direct and indirect exports; and overall U.S. trade with the EU. Under CBAM, EU importers of products covered by the CBAM (covered products) in the aluminum, cement, electricity, fertilizer, hydrogen, and iron and steel sectors are required to declare information on carbon dioxide and other specified greenhouse gas emissions gene",
-        "begriffe": [
-          "fertilizer"
-        ],
-        "achsen": [
-          "duenger"
-        ],
-        "gewichtig": true,
-        "neu": false
       }
     ]
   },
@@ -473,12 +397,12 @@
     "starkregen_gemessen": [],
     "starkregen_vorhergesagt": [],
     "regen_hoechst_mm": {
-      "khouribga": 11.1,
-      "benguerir": 7.2,
-      "jorf_lasfar": 11.4,
-      "safi": 10.5,
-      "bou_craa": 3.3,
-      "laayoune": 13.2
+      "khouribga": 12.3,
+      "benguerir": 5.7,
+      "jorf_lasfar": 15.6,
+      "safi": 6.9,
+      "bou_craa": 2.4,
+      "laayoune": 2.4
     },
     "trocken": {},
     "gelb_tage": 30
@@ -492,11 +416,11 @@
       "waehrung": "USD",
       "letzter": "2026-11-06",
       "schluss": 71.48,
-      "alter_tage": 1,
+      "alter_tage": 2,
       "r_kurz": 0.0297,
-      "vorsprung_kurz": 0.0449,
+      "vorsprung_kurz": 0.0407,
       "r_lang": 0.0593,
-      "vorsprung_lang": 0.0614,
+      "vorsprung_lang": 0.0804,
       "urteil": "schläft",
       "markt_schlaeft": true,
       "handel": 183861674,
@@ -510,11 +434,11 @@
       "waehrung": "USD",
       "letzter": "2026-11-06",
       "schluss": 22.36,
-      "alter_tage": 1,
+      "alter_tage": 2,
       "r_kurz": 0.2159,
-      "vorsprung_kurz": 0.2311,
+      "vorsprung_kurz": 0.2269,
       "r_lang": 0.1932,
-      "vorsprung_lang": 0.1953,
+      "vorsprung_lang": 0.2143,
       "urteil": "gelaufen",
       "markt_schlaeft": false,
       "handel": 195152272,

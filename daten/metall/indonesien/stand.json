@@ -1,6 +1,6 @@
 {
-  "stand": "2026-11-07T03:46:29+01:00",
-  "datum": "2026-11-07",
+  "stand": "2026-11-08T03:26:33+01:00",
+  "datum": "2026-11-08",
   "version": "0.1.0",
   "land": "indonesien",
   "name": "Indonesien-Ausfuhr",
@@ -31,7 +31,7 @@
         {
           "kanal": "trocken",
           "standort": "sorowako",
-          "anteil": 0.1
+          "anteil": 0.11
         }
       ],
       "kanaele": [
@@ -76,7 +76,7 @@
       "bis": "2026-12-31",
       "urspruenglich_bis": "2026-12-31",
       "verlaengert": false,
-      "tage": 54,
+      "tage": 53,
       "zustand": "läuft",
       "gelb": false,
       "rot_pruefen": false,
@@ -92,7 +92,7 @@
       "bis": "2026-12-31",
       "urspruenglich_bis": "2026-12-31",
       "verlaengert": false,
-      "tage": 54,
+      "tage": 53,
       "zustand": "läuft",
       "gelb": false,
       "rot_pruefen": false,
@@ -109,7 +109,7 @@
       "bis": "2027-01-01",
       "urspruenglich_bis": "2027-01-01",
       "verlaengert": false,
-      "tage": 55,
+      "tage": 54,
       "zustand": "läuft",
       "gelb": false,
       "rot_pruefen": false,
@@ -142,7 +142,7 @@
           "zinn"
         ],
         "gewichtig": false,
-        "neu": true
+        "neu": false
       },
       {
         "nummer": "2026-22528",
@@ -488,26 +488,26 @@
   },
   "stoerung": {
     "erdbeben": [],
-    "erdbeben_gesamt": 12,
+    "erdbeben_gesamt": 11,
     "starkregen_gemessen": [],
     "starkregen_vorhergesagt": [],
     "regen_hoechst_mm": {
-      "morowali": 6.9,
-      "weda_bay": 17.6,
-      "sorowako": 9.9,
+      "morowali": 6.6,
+      "weda_bay": 13.3,
+      "sorowako": 11.4,
       "pomalaa": 9.6,
-      "bangka": 9.1,
-      "belitung": 16.8,
-      "muntok": 29.6
+      "bangka": 26.1,
+      "belitung": 14.8,
+      "muntok": 42.9
     },
     "trocken": {
       "sorowako": {
-        "von": "2026-08-04",
-        "bis": "2026-11-01",
-        "summe_mm": 52,
-        "normal_mm": 505,
+        "von": "2026-08-05",
+        "bis": "2026-11-02",
+        "summe_mm": 55,
+        "normal_mm": 503,
         "urteil": "trocken",
-        "anteil": 0.1,
+        "anteil": 0.11,
         "trocken": true
       }
     },
@@ -520,13 +520,13 @@
       "rolle": "beobachtung",
       "hinweis": "bildet den LME-Nickelpreis ab, kein Länderrisiko, keine Verwässerung",
       "waehrung": "USD",
-      "letzter": "2026-11-05",
-      "schluss": 14.1,
+      "letzter": "2026-11-06",
+      "schluss": 14.1125,
       "alter_tage": 2,
-      "r_kurz": 0.0499,
-      "vorsprung_kurz": 0.0651,
-      "r_lang": 0.0448,
-      "vorsprung_lang": 0.0469,
+      "r_kurz": 0.0705,
+      "vorsprung_kurz": 0.0816,
+      "r_lang": 0.046,
+      "vorsprung_lang": 0.0671,
       "urteil": "schläft",
       "markt_schlaeft": true,
       "handel": 36421,
@@ -540,11 +540,11 @@
       "waehrung": "USD",
       "letzter": "2026-11-06",
       "schluss": 106.97,
-      "alter_tage": 1,
+      "alter_tage": 2,
       "r_kurz": -0.0494,
-      "vorsprung_kurz": -0.0342,
+      "vorsprung_kurz": -0.0384,
       "r_lang": -0.1223,
-      "vorsprung_lang": -0.1202,
+      "vorsprung_lang": -0.1011,
       "urteil": "schläft",
       "markt_schlaeft": true,
       "handel": 8535,

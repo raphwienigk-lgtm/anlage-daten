@@ -1,21 +1,21 @@
-Stand: 07.11.2026, 03:46
+Stand: 08.11.2026, 03:26
 Teil 1 von 1
 
-Der Metall-Wächter China-Ausfuhr, Datenteil für Samstag, den siebten November. Stufen je Achse aus Fristen, US-Maßnahmen und Störungen an den Standorten. Rot setzt nur der Wächter in der Cloud, wenn eine Meldung aus Peking dazukommt. Die Wucht sagt, wie stark China ein Metall beherrscht und wie schwer es zu ersetzen ist, von null bis eins.
+Der Metall-Wächter China-Ausfuhr, Datenteil für Sonntag, den achten November. Stufen je Achse aus Fristen, US-Maßnahmen und Störungen an den Standorten. Rot setzt nur der Wächter in der Cloud, wenn eine Meldung aus Peking dazukommt. Die Wucht sagt, wie stark China ein Metall beherrscht und wie schwer es zu ersetzen ist, von null bis eins.
 
-Chip-Achse, der Pilot: Gelb. Anlass: Aussetzung Nummer zweiundsiebzig endet in zwanzig Tagen. Wucht null Komma acht acht, getragen von Gallium.
+Chip-Achse, der Pilot: Gelb. Anlass: Aussetzung Nummer zweiundsiebzig endet in neunzehn Tagen. Wucht null Komma acht acht, getragen von Gallium.
 
-Magnet-Achse: Gelb. Anlass: Aussetzung Nummer siebzig endet in drei Tagen. Wucht null Komma acht eins, getragen von den seltenen Erden.
+Magnet-Achse: Gelb. Anlass: Aussetzung Nummer siebzig endet in zwei Tagen. Wucht null Komma acht eins, getragen von den seltenen Erden.
 
-Batterie-Achse: Gelb. Anlässe: Aussetzung Nummer siebzig endet in drei Tagen; US-Maßnahme vom neunzehnten Oktober. Mehrere Kanäle zugleich, das zählt als Bestätigung. Wucht null Komma fünf vier, getragen von Graphit.
+Batterie-Achse: Gelb. Anlässe: Aussetzung Nummer siebzig endet in zwei Tagen; US-Maßnahme vom neunzehnten Oktober. Mehrere Kanäle zugleich, das zählt als Bestätigung. Wucht null Komma fünf vier, getragen von Graphit.
 
 Werkzeug-Achse: Grün. Wucht null Komma sechs vier, getragen von Wolfram.
 
-Fristen. Die Aussetzung der Oktober-Maßnahmen für seltene Erden, Graphit-Anoden und Batteriematerial (Bekanntmachung Nummer siebzig) läuft am zehnten November aus, in drei Tagen. Stand: USA melden am vierundzwanzigsten September zweitausendsechsundzwanzig eine Verlängerung des Waffenstillstands bis zum zehnten Januar zweitausendsiebenundzwanzig; die formelle Bekanntmachung aus Peking steht aus. Die Aussetzung des Ausfuhrverbots in die USA für Gallium, Germanium, Antimon und superharte Materialien (Bekanntmachung Nummer zweiundsiebzig) läuft am siebenundzwanzigsten November aus, in zwanzig Tagen. Stand: offen; die Meldungen vom vierundzwanzigsten September zweitausendsechsundzwanzig nennen diese Frist nicht.
+Fristen. Die Aussetzung der Oktober-Maßnahmen für seltene Erden, Graphit-Anoden und Batteriematerial (Bekanntmachung Nummer siebzig) läuft am zehnten November aus, in zwei Tagen. Stand: USA melden am vierundzwanzigsten September zweitausendsechsundzwanzig eine Verlängerung des Waffenstillstands bis zum zehnten Januar zweitausendsiebenundzwanzig; die formelle Bekanntmachung aus Peking steht aus. Die Aussetzung des Ausfuhrverbots in die USA für Gallium, Germanium, Antimon und superharte Materialien (Bekanntmachung Nummer zweiundsiebzig) läuft am siebenundzwanzigsten November aus, in neunzehn Tagen. Stand: offen; die Meldungen vom vierundzwanzigsten September zweitausendsechsundzwanzig nennen diese Frist nicht.
 
 Gegenseite. In den letzten dreißig Tagen stehen zehn Einträge zu den Suchbegriffen im US-Bundesregister, davon einer gewichtig. Vom neunzehnten Oktober: Large Diameter Graphite Electrodes From the People's Republic of China: Postponement of Final Determination of Sales at Less-Than-Fair-Value Investigation and Extension of Provisional Measures.
 
-Störungen an den Förder- und Hüttenstandorten. Kein Erdbeben in Reichweite der Standorte in den letzten dreißig Tagen. Kein Starkregen gemessen oder vorhergesagt. Lincang in Yunnan: in neunzig Tagen sechsundsiebzig Prozent des normalen Regens. Qujing in Yunnan: in neunzig Tagen dreiundsechzig Prozent des normalen Regens.
+Störungen an den Förder- und Hüttenstandorten. Kein Erdbeben in Reichweite der Standorte in den letzten dreißig Tagen. Kein Starkregen gemessen oder vorhergesagt. Lincang in Yunnan: in neunzig Tagen vierundsiebzig Prozent des normalen Regens. Qujing in Yunnan: in neunzig Tagen vierundsechzig Prozent des normalen Regens.
 
 Preisprobe gegen Metall- und Bergbau-Aktien USA (Vergleichsmaßstab). Perpetua Resources ist in fünf Handelstagen um siebzehn Prozent gestiegen, in zwanzig um fünf Prozent gefallen, gegen den Vergleich sieben Prozentpunkte vorn. Umsatz zuletzt rund dreiundzwanzig Komma eins Millionen Dollar am Tag. Der Markt schläft noch. United States Antimony ist in fünf Handelstagen um fünf Prozent gefallen, in zwanzig um dreiundzwanzig Prozent gefallen, gegen den Vergleich elf Prozentpunkte zurück. Umsatz zuletzt rund zweiundzwanzig Komma neun Millionen Dollar am Tag. Der Markt schläft noch. MP Materials ist in fünf Handelstagen um elf Prozent gefallen, in zwanzig um dreiundzwanzig Prozent gefallen, gegen den Vergleich elf Prozentpunkte zurück. Umsatz zuletzt rund zweihundertfünfundvierzig Millionen Dollar am Tag. Der Markt schläft noch. Lynas Rare Earths ist in fünf Handelstagen um zwei Prozent gestiegen, in zwanzig um ein Prozent gefallen, gegen den Vergleich elf Prozentpunkte vorn. Umsatz zuletzt rund siebenundfünfzig Komma zwei Millionen australische Dollar am Tag. Der Markt schläft noch.
 

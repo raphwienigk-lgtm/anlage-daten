@@ -1,6 +1,6 @@
 {
-  "stand": "2026-11-07T03:46:23+01:00",
-  "datum": "2026-11-07",
+  "stand": "2026-11-08T03:26:26+01:00",
+  "datum": "2026-11-08",
   "version": "0.1.0",
   "land": "china",
   "name": "China-Ausfuhr",
@@ -45,7 +45,7 @@
         {
           "kanal": "frist",
           "kennung": "aussetzung_usa_ga_ge_sb",
-          "tage": 20,
+          "tage": 19,
           "zustand": "läuft bald aus"
         }
       ],
@@ -76,7 +76,7 @@
         {
           "kanal": "frist",
           "kennung": "aussetzung_okt2025",
-          "tage": 3,
+          "tage": 2,
           "zustand": "läuft bald aus"
         }
       ],
@@ -107,7 +107,7 @@
         {
           "kanal": "frist",
           "kennung": "aussetzung_okt2025",
-          "tage": 3,
+          "tage": 2,
           "zustand": "läuft bald aus"
         },
         {
@@ -157,7 +157,7 @@
       "bis": "2026-11-10",
       "urspruenglich_bis": "2026-11-10",
       "verlaengert": false,
-      "tage": 3,
+      "tage": 2,
       "zustand": "läuft bald aus",
       "gelb": true,
       "rot_pruefen": false,
@@ -173,7 +173,7 @@
       "bis": "2026-11-27",
       "urspruenglich_bis": "2026-11-27",
       "verlaengert": false,
-      "tage": 20,
+      "tage": 19,
       "zustand": "läuft bald aus",
       "gelb": true,
       "rot_pruefen": false,
@@ -432,33 +432,33 @@
     "starkregen_gemessen": [],
     "starkregen_vorhergesagt": [],
     "regen_hoechst_mm": {
-      "lengshuijiang": 28.4,
-      "hechi": 18.7,
-      "lincang": 57.7,
-      "qujing": 25.0,
-      "pingguo": 19.8,
-      "zibo": 12.1,
+      "lengshuijiang": 23.1,
+      "hechi": 14.6,
+      "lincang": 61.0,
+      "qujing": 27.8,
+      "pingguo": 40.5,
+      "zibo": 18.9,
       "baotou": 0.0,
-      "ganzhou": 5.8,
+      "ganzhou": 19.5,
       "jixi": 1.6
     },
     "trocken": {
       "lincang": {
-        "von": "2026-08-04",
-        "bis": "2026-11-01",
-        "summe_mm": 442,
-        "normal_mm": 579,
+        "von": "2026-08-05",
+        "bis": "2026-11-02",
+        "summe_mm": 422,
+        "normal_mm": 574,
         "urteil": "normal",
-        "anteil": 0.76,
+        "anteil": 0.74,
         "trocken": false
       },
       "qujing": {
-        "von": "2026-08-04",
-        "bis": "2026-11-01",
+        "von": "2026-08-05",
+        "bis": "2026-11-02",
         "summe_mm": 237,
-        "normal_mm": 377,
+        "normal_mm": 372,
         "urteil": "normal",
-        "anteil": 0.63,
+        "anteil": 0.64,
         "trocken": false
       }
     },
@@ -473,7 +473,7 @@
       "waehrung": "USD",
       "letzter": "2026-11-06",
       "schluss": 19.53,
-      "alter_tage": 1,
+      "alter_tage": 2,
       "r_kurz": 0.173,
       "vorsprung_kurz": 0.2176,
       "r_lang": -0.0538,
@@ -491,7 +491,7 @@
       "waehrung": "USD",
       "letzter": "2026-11-06",
       "schluss": 2.82,
-      "alter_tage": 1,
+      "alter_tage": 2,
       "r_kurz": -0.0537,
       "vorsprung_kurz": -0.009,
       "r_lang": -0.2337,
@@ -509,7 +509,7 @@
       "waehrung": "USD",
       "letzter": "2026-11-06",
       "schluss": 35.41,
-      "alter_tage": 1,
+      "alter_tage": 2,
       "r_kurz": -0.1051,
       "vorsprung_kurz": -0.0605,
       "r_lang": -0.2326,
@@ -527,7 +527,7 @@
       "waehrung": "AUD",
       "letzter": "2026-11-06",
       "schluss": 12.31,
-      "alter_tage": 1,
+      "alter_tage": 2,
       "r_kurz": 0.0174,
       "vorsprung_kurz": 0.062,
       "r_lang": -0.0081,
