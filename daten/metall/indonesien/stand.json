@@ -1,6 +1,6 @@
 {
-  "stand": "2026-11-08T03:26:33+01:00",
-  "datum": "2026-11-08",
+  "stand": "2026-11-09T03:38:51+01:00",
+  "datum": "2026-11-09",
   "version": "0.1.0",
   "land": "indonesien",
   "name": "Indonesien-Ausfuhr",
@@ -31,7 +31,7 @@
         {
           "kanal": "trocken",
           "standort": "sorowako",
-          "anteil": 0.11
+          "anteil": 0.12
         }
       ],
       "kanaele": [
@@ -76,7 +76,7 @@
       "bis": "2026-12-31",
       "urspruenglich_bis": "2026-12-31",
       "verlaengert": false,
-      "tage": 53,
+      "tage": 52,
       "zustand": "läuft",
       "gelb": false,
       "rot_pruefen": false,
@@ -92,7 +92,7 @@
       "bis": "2026-12-31",
       "urspruenglich_bis": "2026-12-31",
       "verlaengert": false,
-      "tage": 53,
+      "tage": 52,
       "zustand": "läuft",
       "gelb": false,
       "rot_pruefen": false,
@@ -109,7 +109,7 @@
       "bis": "2027-01-01",
       "urspruenglich_bis": "2027-01-01",
       "verlaengert": false,
-      "tage": 54,
+      "tage": 53,
       "zustand": "läuft",
       "gelb": false,
       "rot_pruefen": false,
@@ -120,6 +120,54 @@
     "herkunft": "frisch",
     "tage": 30,
     "dokumente": [
+      {
+        "nummer": "2026-22836",
+        "titel": "Seamless Carbon and Alloy Steel Standard, Line, and Pressure Pipe From India: Initiation of Countervailing Duty Investigation",
+        "datum": "2026-11-09",
+        "art": "Notice",
+        "behoerden": [
+          "commerce-department",
+          "international-trade-administration"
+        ],
+        "behoerden_namen": [
+          "Commerce Department",
+          "International Trade Administration"
+        ],
+        "url": "https://www.federalregister.gov/documents/2026/11/09/2026-22836/seamless-carbon-and-alloy-steel-standard-line-and-pressure-pipe-from-india-initiation-of",
+        "zusammenfassung": "",
+        "begriffe": [
+          "stainless steel"
+        ],
+        "achsen": [
+          "nickel"
+        ],
+        "gewichtig": false,
+        "neu": true
+      },
+      {
+        "nummer": "2026-22835",
+        "titel": "Seamless Carbon and Alloy Steel Standard, Line, and Pressure Pipe From Georgia and India: Initiation of Less-Than-Fair-Value Investigations",
+        "datum": "2026-11-09",
+        "art": "Notice",
+        "behoerden": [
+          "commerce-department",
+          "international-trade-administration"
+        ],
+        "behoerden_namen": [
+          "Commerce Department",
+          "International Trade Administration"
+        ],
+        "url": "https://www.federalregister.gov/documents/2026/11/09/2026-22835/seamless-carbon-and-alloy-steel-standard-line-and-pressure-pipe-from-georgia-and-india-initiation-of",
+        "zusammenfassung": "",
+        "begriffe": [
+          "stainless steel"
+        ],
+        "achsen": [
+          "nickel"
+        ],
+        "gewichtig": false,
+        "neu": true
+      },
       {
         "nummer": "2026-22660",
         "titel": "Certain Frozen Warmwater Shrimp From the Socialist Republic of Vietnam: Final Results of Antidumping Duty Administrative Review; 2024-2025",
@@ -408,106 +456,31 @@
         ],
         "gewichtig": false,
         "neu": false
-      },
-      {
-        "nummer": "2026-20776",
-        "titel": "Foreign-Trade Zone (FTZ) 50, Notification of Proposed Production Activity; Sanyo Denki America, Inc.; (Cooling, Servo, and Power Systems and Assemblies); Torrance, California",
-        "datum": "2026-10-09",
-        "art": "Notice",
-        "behoerden": [
-          "commerce-department",
-          "foreign-trade-zones-board"
-        ],
-        "behoerden_namen": [
-          "Commerce Department",
-          "Foreign-Trade Zones Board"
-        ],
-        "url": "https://www.federalregister.gov/documents/2026/10/09/2026-20776/foreign-trade-zone-ftz-50-notification-of-proposed-production-activity-sanyo-denki-america-inc",
-        "zusammenfassung": "",
-        "begriffe": [
-          "stainless steel"
-        ],
-        "achsen": [
-          "nickel"
-        ],
-        "gewichtig": false,
-        "neu": false
-      },
-      {
-        "nummer": "2026-20775",
-        "titel": "Foreign-Trade Zone (FTZ) 40, Notification of Proposed Production Activity; Norman Noble Company Inc.; (Implantable Medical Devices); Highland Heights, Ohio",
-        "datum": "2026-10-09",
-        "art": "Notice",
-        "behoerden": [
-          "commerce-department",
-          "foreign-trade-zones-board"
-        ],
-        "behoerden_namen": [
-          "Commerce Department",
-          "Foreign-Trade Zones Board"
-        ],
-        "url": "https://www.federalregister.gov/documents/2026/10/09/2026-20775/foreign-trade-zone-ftz-40-notification-of-proposed-production-activity-norman-noble-company-inc",
-        "zusammenfassung": "",
-        "begriffe": [
-          "stainless steel"
-        ],
-        "achsen": [
-          "nickel"
-        ],
-        "gewichtig": false,
-        "neu": false
-      },
-      {
-        "nummer": "2026-20774",
-        "titel": "Foreign-Trade Zone (FTZ) 16, Notification of Proposed Production Activity; Yazaki North America, Inc.; (Stamped Copper Terminals); Petoskey, Michigan",
-        "datum": "2026-10-09",
-        "art": "Notice",
-        "behoerden": [
-          "commerce-department",
-          "foreign-trade-zones-board"
-        ],
-        "behoerden_namen": [
-          "Commerce Department",
-          "Foreign-Trade Zones Board"
-        ],
-        "url": "https://www.federalregister.gov/documents/2026/10/09/2026-20774/foreign-trade-zone-ftz-16-notification-of-proposed-production-activity-yazaki-north-america-inc",
-        "zusammenfassung": "",
-        "begriffe": [
-          "nickel",
-          "tin",
-          "stainless steel"
-        ],
-        "achsen": [
-          "nickel",
-          "zinn"
-        ],
-        "gewichtig": false,
-        "neu": false
       }
     ]
   },
   "stoerung": {
     "erdbeben": [],
-    "erdbeben_gesamt": 11,
+    "erdbeben_gesamt": 10,
     "starkregen_gemessen": [],
     "starkregen_vorhergesagt": [],
     "regen_hoechst_mm": {
-      "morowali": 6.6,
-      "weda_bay": 13.3,
-      "sorowako": 11.4,
-      "pomalaa": 9.6,
-      "bangka": 26.1,
-      "belitung": 14.8,
-      "muntok": 42.9
+      "morowali": 16.8,
+      "weda_bay": 13.1,
+      "sorowako": 10.2,
+      "pomalaa": 10.5,
+      "bangka": 23.6,
+      "belitung": 24.6,
+      "muntok": 29.6
     },
     "trocken": {
       "sorowako": {
-        "von": "2026-08-05",
-        "bis": "2026-11-02",
-        "summe_mm": 55,
-        "normal_mm": 503,
+        "von": "2026-08-06",
+        "bis": "2026-11-03",
+        "summe_mm": 62,
+        "normal_mm": 504,
         "urteil": "trocken",
-        "anteil": 0.11,
+        "anteil": 0.12,
         "trocken": true
       }
     },
@@ -522,7 +495,7 @@
       "waehrung": "USD",
       "letzter": "2026-11-06",
       "schluss": 14.1125,
-      "alter_tage": 2,
+      "alter_tage": 3,
       "r_kurz": 0.0705,
       "vorsprung_kurz": 0.0816,
       "r_lang": 0.046,
@@ -540,7 +513,7 @@
       "waehrung": "USD",
       "letzter": "2026-11-06",
       "schluss": 106.97,
-      "alter_tage": 2,
+      "alter_tage": 3,
       "r_kurz": -0.0494,
       "vorsprung_kurz": -0.0384,
       "r_lang": -0.1223,

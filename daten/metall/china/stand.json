@@ -1,6 +1,6 @@
 {
-  "stand": "2026-11-08T03:26:26+01:00",
-  "datum": "2026-11-08",
+  "stand": "2026-11-09T03:38:45+01:00",
+  "datum": "2026-11-09",
   "version": "0.1.0",
   "land": "china",
   "name": "China-Ausfuhr",
@@ -45,7 +45,7 @@
         {
           "kanal": "frist",
           "kennung": "aussetzung_usa_ga_ge_sb",
-          "tage": 19,
+          "tage": 18,
           "zustand": "läuft bald aus"
         }
       ],
@@ -76,7 +76,7 @@
         {
           "kanal": "frist",
           "kennung": "aussetzung_okt2025",
-          "tage": 2,
+          "tage": 1,
           "zustand": "läuft bald aus"
         }
       ],
@@ -107,7 +107,7 @@
         {
           "kanal": "frist",
           "kennung": "aussetzung_okt2025",
-          "tage": 2,
+          "tage": 1,
           "zustand": "läuft bald aus"
         },
         {
@@ -157,7 +157,7 @@
       "bis": "2026-11-10",
       "urspruenglich_bis": "2026-11-10",
       "verlaengert": false,
-      "tage": 2,
+      "tage": 1,
       "zustand": "läuft bald aus",
       "gelb": true,
       "rot_pruefen": false,
@@ -173,7 +173,7 @@
       "bis": "2026-11-27",
       "urspruenglich_bis": "2026-11-27",
       "verlaengert": false,
-      "tage": 19,
+      "tage": 18,
       "zustand": "läuft bald aus",
       "gelb": true,
       "rot_pruefen": false,
@@ -184,6 +184,54 @@
     "herkunft": "frisch",
     "tage": 30,
     "dokumente": [
+      {
+        "nummer": "2026-22825",
+        "titel": "Crystalline Silicon Photovoltaic Cells, Whether or Not Assembled Into Modules, From the Lao People's Democratic Republic: Amended Final Determination of Sales at Less Than Fair Value; Crystalline Silicon Photovoltaic Cells, Whether or Not Assembled Into Modules, From India, Indonesia, and the Lao People's Democratic Republic: Antidumping Duty Orders",
+        "datum": "2026-11-09",
+        "art": "Notice",
+        "behoerden": [
+          "commerce-department",
+          "international-trade-administration"
+        ],
+        "behoerden_namen": [
+          "Commerce Department",
+          "International Trade Administration"
+        ],
+        "url": "https://www.federalregister.gov/documents/2026/11/09/2026-22825/crystalline-silicon-photovoltaic-cells-whether-or-not-assembled-into-modules-from-the-lao-peoples",
+        "zusammenfassung": "Based on affirmative final determinations by the U.S. Department of Commerce (Commerce) and the U.S. International Trade Commission (ITC), Commerce is issuing antidumping duty (AD) orders on crystalline silicon photovoltaic cells, whether or not assembled into modules (solar cells), from India, Indonesia, and the Lao People's Democratic Republic (Laos). In addition, Commerce is amending its final determination with respect to solar cells from Laos to correct a ministerial error.",
+        "begriffe": [
+          "gallium"
+        ],
+        "achsen": [
+          "chip"
+        ],
+        "gewichtig": false,
+        "neu": true
+      },
+      {
+        "nummer": "2026-22824",
+        "titel": "Crystalline Silicon Photovoltaic Cells, Whether or Not Assembled Into Modules From India, Indonesia, and the Lao People's Democratic Republic: Countervailing Duty Orders",
+        "datum": "2026-11-09",
+        "art": "Notice",
+        "behoerden": [
+          "commerce-department",
+          "international-trade-administration"
+        ],
+        "behoerden_namen": [
+          "Commerce Department",
+          "International Trade Administration"
+        ],
+        "url": "https://www.federalregister.gov/documents/2026/11/09/2026-22824/crystalline-silicon-photovoltaic-cells-whether-or-not-assembled-into-modules-from-india-indonesia",
+        "zusammenfassung": "Based on affirmative final determinations by the U.S. Department of Commerce (Commerce) and U.S. International Trade Commission (ITC), Commerce is issuing countervailing duty (CVD) orders on crystalline silicon photovoltaic cells, whether or not assembled into modules (solar cells) from India, Indonesia, and the Lao People's Democratic Republic (Laos).",
+        "begriffe": [
+          "gallium"
+        ],
+        "achsen": [
+          "chip"
+        ],
+        "gewichtig": false,
+        "neu": true
+      },
       {
         "nummer": "2026-22528",
         "titel": "Light-Walled Rectangular Pipe and Tube From the People's Republic of China: Preliminary Results and Rescission, in Part, of Antidumping Duty Administrative Review; 2024-2025",
@@ -399,30 +447,6 @@
         ],
         "gewichtig": false,
         "neu": false
-      },
-      {
-        "nummer": "2026-20775",
-        "titel": "Foreign-Trade Zone (FTZ) 40, Notification of Proposed Production Activity; Norman Noble Company Inc.; (Implantable Medical Devices); Highland Heights, Ohio",
-        "datum": "2026-10-09",
-        "art": "Notice",
-        "behoerden": [
-          "commerce-department",
-          "foreign-trade-zones-board"
-        ],
-        "behoerden_namen": [
-          "Commerce Department",
-          "Foreign-Trade Zones Board"
-        ],
-        "url": "https://www.federalregister.gov/documents/2026/10/09/2026-20775/foreign-trade-zone-ftz-40-notification-of-proposed-production-activity-norman-noble-company-inc",
-        "zusammenfassung": "",
-        "begriffe": [
-          "tungsten"
-        ],
-        "achsen": [
-          "werkzeug"
-        ],
-        "gewichtig": false,
-        "neu": false
       }
     ]
   },
@@ -433,30 +457,30 @@
     "starkregen_vorhergesagt": [],
     "regen_hoechst_mm": {
       "lengshuijiang": 23.1,
-      "hechi": 14.6,
-      "lincang": 61.0,
-      "qujing": 27.8,
-      "pingguo": 40.5,
-      "zibo": 18.9,
-      "baotou": 0.0,
-      "ganzhou": 19.5,
-      "jixi": 1.6
+      "hechi": 13.2,
+      "lincang": 71.7,
+      "qujing": 19.6,
+      "pingguo": 15.0,
+      "zibo": 15.6,
+      "baotou": 0.3,
+      "ganzhou": 7.5,
+      "jixi": 2.4
     },
     "trocken": {
       "lincang": {
-        "von": "2026-08-05",
-        "bis": "2026-11-02",
-        "summe_mm": 422,
-        "normal_mm": 574,
+        "von": "2026-08-06",
+        "bis": "2026-11-03",
+        "summe_mm": 411,
+        "normal_mm": 567,
         "urteil": "normal",
-        "anteil": 0.74,
+        "anteil": 0.73,
         "trocken": false
       },
       "qujing": {
-        "von": "2026-08-05",
-        "bis": "2026-11-02",
+        "von": "2026-08-06",
+        "bis": "2026-11-03",
         "summe_mm": 237,
-        "normal_mm": 372,
+        "normal_mm": 368,
         "urteil": "normal",
         "anteil": 0.64,
         "trocken": false
@@ -473,7 +497,7 @@
       "waehrung": "USD",
       "letzter": "2026-11-06",
       "schluss": 19.53,
-      "alter_tage": 2,
+      "alter_tage": 3,
       "r_kurz": 0.173,
       "vorsprung_kurz": 0.2176,
       "r_lang": -0.0538,
@@ -491,7 +515,7 @@
       "waehrung": "USD",
       "letzter": "2026-11-06",
       "schluss": 2.82,
-      "alter_tage": 2,
+      "alter_tage": 3,
       "r_kurz": -0.0537,
       "vorsprung_kurz": -0.009,
       "r_lang": -0.2337,
@@ -509,7 +533,7 @@
       "waehrung": "USD",
       "letzter": "2026-11-06",
       "schluss": 35.41,
-      "alter_tage": 2,
+      "alter_tage": 3,
       "r_kurz": -0.1051,
       "vorsprung_kurz": -0.0605,
       "r_lang": -0.2326,
@@ -527,7 +551,7 @@
       "waehrung": "AUD",
       "letzter": "2026-11-06",
       "schluss": 12.31,
-      "alter_tage": 2,
+      "alter_tage": 3,
       "r_kurz": 0.0174,
       "vorsprung_kurz": 0.062,
       "r_lang": -0.0081,

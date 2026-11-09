@@ -1,6 +1,6 @@
 {
-  "stand": "2026-11-08T03:26:37+01:00",
-  "datum": "2026-11-08",
+  "stand": "2026-11-09T03:38:55+01:00",
+  "datum": "2026-11-09",
   "version": "0.1.0",
   "land": "chile",
   "name": "Chile-Lithium",
@@ -48,7 +48,7 @@
       "bis": "2060-12-31",
       "urspruenglich_bis": "2030-12-31",
       "verlaengert": true,
-      "tage": 12472,
+      "tage": 12471,
       "zustand": "läuft",
       "gelb": false,
       "rot_pruefen": false,
@@ -64,7 +64,7 @@
       "bis": "2043-12-31",
       "urspruenglich_bis": "2043-12-31",
       "verlaengert": false,
-      "tage": 6262,
+      "tage": 6261,
       "zustand": "läuft",
       "gelb": false,
       "rot_pruefen": false,
@@ -80,7 +80,7 @@
       "bis": "2027-12-31",
       "urspruenglich_bis": "2027-12-31",
       "verlaengert": false,
-      "tage": 418,
+      "tage": 417,
       "zustand": "läuft",
       "gelb": false,
       "rot_pruefen": false,
@@ -114,30 +114,6 @@
         ],
         "gewichtig": false,
         "neu": false
-      },
-      {
-        "nummer": "2026-20776",
-        "titel": "Foreign-Trade Zone (FTZ) 50, Notification of Proposed Production Activity; Sanyo Denki America, Inc.; (Cooling, Servo, and Power Systems and Assemblies); Torrance, California",
-        "datum": "2026-10-09",
-        "art": "Notice",
-        "behoerden": [
-          "commerce-department",
-          "foreign-trade-zones-board"
-        ],
-        "behoerden_namen": [
-          "Commerce Department",
-          "Foreign-Trade Zones Board"
-        ],
-        "url": "https://www.federalregister.gov/documents/2026/10/09/2026-20776/foreign-trade-zone-ftz-50-notification-of-proposed-production-activity-sanyo-denki-america-inc",
-        "zusammenfassung": "",
-        "begriffe": [
-          "lithium"
-        ],
-        "achsen": [
-          "lithium"
-        ],
-        "gewichtig": false,
-        "neu": false
       }
     ]
   },
@@ -149,9 +125,9 @@
     "regen_hoechst_mm": {
       "atacama": 0.0,
       "maricunga": 0.9,
-      "altoandinos": 1.3,
-      "la_negra": 0.3,
-      "carmen": 0.0
+      "altoandinos": 0.3,
+      "la_negra": 0.4,
+      "carmen": 0.1
     },
     "trocken": {},
     "gelb_tage": 30
@@ -165,7 +141,7 @@
       "waehrung": "AUD",
       "letzter": "2026-11-06",
       "schluss": 2.83,
-      "alter_tage": 2,
+      "alter_tage": 3,
       "r_kurz": 0.072,
       "vorsprung_kurz": 0.083,
       "r_lang": -0.1914,
@@ -183,7 +159,7 @@
       "waehrung": "USD",
       "letzter": "2026-11-06",
       "schluss": 57.52,
-      "alter_tage": 2,
+      "alter_tage": 3,
       "r_kurz": 0.0525,
       "vorsprung_kurz": 0.0636,
       "r_lang": -0.1,
@@ -201,7 +177,7 @@
       "waehrung": "USD",
       "letzter": "2026-11-06",
       "schluss": 99.25,
-      "alter_tage": 2,
+      "alter_tage": 3,
       "r_kurz": 0.0907,
       "vorsprung_kurz": 0.1017,
       "r_lang": -0.0199,
