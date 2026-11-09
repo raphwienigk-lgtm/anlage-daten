@@ -1,7 +1,7 @@
-Stand: 08.11.2026, 03:32
+Stand: 09.11.2026, 03:43
 Teil 1 von 1
 
-Der Ersatz-Sensor Haselnuss, Datenteil für Sonntag, den achten November. Der Sensor schlägt beim Original aus, gekauft würde der Ersatz: Select Harvests, Mandeln aus Australien. Das Original, Haselnuss aus der Türkei, ist nicht handelbar: kein Einzel-ETC; der größte Abnehmer Ferrero ist nicht börsennotiert.
+Der Ersatz-Sensor Haselnuss, Datenteil für Montag, den neunten November. Der Sensor schlägt beim Original aus, gekauft würde der Ersatz: Select Harvests, Mandeln aus Australien. Das Original, Haselnuss aus der Türkei, ist nicht handelbar: kein Einzel-ETC; der größte Abnehmer Ferrero ist nicht börsennotiert.
 
 Stufe Grün. Außer Saison: Die Spätfrost-Saison läuft vom zehnten März bis zum dreißigsten April; Frostvorhersagen zählen ab dem vierundzwanzigsten Februar.
 
