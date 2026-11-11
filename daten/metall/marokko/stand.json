@@ -1,6 +1,6 @@
 {
-  "stand": "2026-11-10T05:38:55+01:00",
-  "datum": "2026-11-10",
+  "stand": "2026-11-11T03:47:06+01:00",
+  "datum": "2026-11-11",
   "version": "0.1.0",
   "land": "marokko",
   "name": "Marokko-Phosphat",
@@ -56,7 +56,7 @@
       "bis": "2027-12-31",
       "urspruenglich_bis": "2027-12-31",
       "verlaengert": false,
-      "tage": 416,
+      "tage": 415,
       "zustand": "läuft",
       "gelb": false,
       "rot_pruefen": false,
@@ -72,7 +72,7 @@
       "bis": "2027-12-31",
       "urspruenglich_bis": "2027-12-31",
       "verlaengert": false,
-      "tage": 416,
+      "tage": 415,
       "zustand": "läuft",
       "gelb": false,
       "rot_pruefen": false,
@@ -88,7 +88,7 @@
       "bis": "2027-10-03",
       "urspruenglich_bis": "2027-10-03",
       "verlaengert": false,
-      "tage": 327,
+      "tage": 326,
       "zustand": "läuft",
       "gelb": false,
       "rot_pruefen": false,
@@ -99,6 +99,102 @@
     "herkunft": "frisch",
     "tage": 30,
     "dokumente": [
+      {
+        "nummer": "2026-22942",
+        "titel": "Polytetramethylene Ether Glycol From the People's Republic of China: Preliminary Affirmative Determination of Sales at Less Than Fair Value",
+        "datum": "2026-11-10",
+        "art": "Notice",
+        "behoerden": [
+          "commerce-department",
+          "international-trade-administration"
+        ],
+        "behoerden_namen": [
+          "Commerce Department",
+          "International Trade Administration"
+        ],
+        "url": "https://www.federalregister.gov/documents/2026/11/10/2026-22942/polytetramethylene-ether-glycol-from-the-peoples-republic-of-china-preliminary-affirmative",
+        "zusammenfassung": "The U.S. Department of Commerce (Commerce) preliminarily determines that polytetramethylene ether glycol (PTMEG) from the People's Republic of China (China) is being, or is likely to be, sold in the United States at less than fair value (LTFV). The period of investigation (POI) is October 1, 2025, through March 31, 2026. Interested parties are invited to comment on this preliminary determination.",
+        "begriffe": [
+          "phosphoric acid"
+        ],
+        "achsen": [
+          "duenger"
+        ],
+        "gewichtig": false,
+        "neu": true
+      },
+      {
+        "nummer": "2026-22941",
+        "titel": "Polytetramethylene Ether Glycol From the Republic of Korea: Preliminary Affirmative Determination of Sales at Less Than Fair Value, Postponement of Final Determination, and Extension of Provisional Measures",
+        "datum": "2026-11-10",
+        "art": "Notice",
+        "behoerden": [
+          "commerce-department",
+          "international-trade-administration"
+        ],
+        "behoerden_namen": [
+          "Commerce Department",
+          "International Trade Administration"
+        ],
+        "url": "https://www.federalregister.gov/documents/2026/11/10/2026-22941/polytetramethylene-ether-glycol-from-the-republic-of-korea-preliminary-affirmative-determination-of",
+        "zusammenfassung": "The U.S. Department of Commerce (Commerce) preliminarily determines that polytetramethylene ether glycol (PTMEG) from the Republic of Korea (Korea) is being, or is likely to be, sold in the United States at less than fair value (LTFV). The period of investigation (POI) is April 1, 2025, through March 31, 2026. Interested parties are invited to comment on this preliminary determination.",
+        "begriffe": [
+          "phosphoric acid"
+        ],
+        "achsen": [
+          "duenger"
+        ],
+        "gewichtig": false,
+        "neu": true
+      },
+      {
+        "nummer": "2026-22940",
+        "titel": "Polytetramethylene Ether Glycol From Taiwan: Preliminary Affirmative Determination of Sales at Less Than Fair Value, Postponement of Final Determination, and Extension of Provisional Measures",
+        "datum": "2026-11-10",
+        "art": "Notice",
+        "behoerden": [
+          "commerce-department",
+          "international-trade-administration"
+        ],
+        "behoerden_namen": [
+          "Commerce Department",
+          "International Trade Administration"
+        ],
+        "url": "https://www.federalregister.gov/documents/2026/11/10/2026-22940/polytetramethylene-ether-glycol-from-taiwan-preliminary-affirmative-determination-of-sales-at-less",
+        "zusammenfassung": "The U.S. Department of Commerce (Commerce) preliminarily determines that polytetramethylene ether glycol (PTMEG) from Taiwan is being, or is likely to be, sold in the United States at less than fair value (LTFV). The period of investigation (POI) is April 1, 2025, through March 31, 2026. Interested parties are invited to comment on this preliminary determination.",
+        "begriffe": [
+          "phosphoric acid"
+        ],
+        "achsen": [
+          "duenger"
+        ],
+        "gewichtig": false,
+        "neu": true
+      },
+      {
+        "nummer": "2026-22939",
+        "titel": "Polytetramethylene Ether Glycol From the Socialist Republic of Vietnam: Preliminary Affirmative Determination of Sales at Less Than Fair Value, Postponement of Final Determination, and Extension of Provisional Measures",
+        "datum": "2026-11-10",
+        "art": "Notice",
+        "behoerden": [
+          "commerce-department",
+          "international-trade-administration"
+        ],
+        "behoerden_namen": [
+          "Commerce Department",
+          "International Trade Administration"
+        ],
+        "url": "https://www.federalregister.gov/documents/2026/11/10/2026-22939/polytetramethylene-ether-glycol-from-the-socialist-republic-of-vietnam-preliminary-affirmative",
+        "zusammenfassung": "The U.S. Department of Commerce (Commerce) preliminarily determines that polytetramethylene ether glycol (PTMEG) from the Socialist Republic of Vietnam (Vietnam) is being, or is likely to be, sold in the United States at less than fair value (LTFV). The period of investigation (POI) is October 1, 2025, through March 31, 2026. Interested parties are invited to comment on this preliminary determination.",
+        "begriffe": [
+          "phosphoric acid"
+        ],
+        "achsen": [
+          "duenger"
+        ],
+        "gewichtig": false,
+        "neu": true
+      },
       {
         "nummer": "2026-22528",
         "titel": "Light-Walled Rectangular Pipe and Tube From the People's Republic of China: Preliminary Results and Rescission, in Part, of Antidumping Duty Administrative Review; 2024-2025",
@@ -397,12 +493,12 @@
     "starkregen_gemessen": [],
     "starkregen_vorhergesagt": [],
     "regen_hoechst_mm": {
-      "khouribga": 11.6,
-      "benguerir": 5.7,
-      "jorf_lasfar": 10.9,
+      "khouribga": 7.8,
+      "benguerir": 5.9,
+      "jorf_lasfar": 12.3,
       "safi": 8.8,
-      "bou_craa": 2.4,
-      "laayoune": 3.0
+      "bou_craa": 0.6,
+      "laayoune": 4.0
     },
     "trocken": {},
     "gelb_tage": 30
@@ -414,13 +510,13 @@
       "rolle": "sensor",
       "hinweis": "Kanada; größter Düngemittelkonzern, aber schwerpunktmäßig Kali — verwässert",
       "waehrung": "USD",
-      "letzter": "2026-11-09",
-      "schluss": 72.29,
+      "letzter": "2026-11-10",
+      "schluss": 72.17,
       "alter_tage": 1,
-      "r_kurz": 0.0298,
-      "vorsprung_kurz": 0.0408,
-      "r_lang": 0.0631,
-      "vorsprung_lang": 0.0842,
+      "r_kurz": 0.0411,
+      "vorsprung_kurz": 0.0596,
+      "r_lang": 0.0357,
+      "vorsprung_lang": 0.0537,
       "urteil": "schläft",
       "markt_schlaeft": true,
       "handel": 183861674,
@@ -432,16 +528,16 @@
       "rolle": "sensor",
       "hinweis": "USA; Phosphat und Kali, zugleich Kläger in den Ausgleichszollverfahren gegen OCP",
       "waehrung": "USD",
-      "letzter": "2026-11-09",
-      "schluss": 22.77,
+      "letzter": "2026-11-10",
+      "schluss": 22.99,
       "alter_tage": 1,
-      "r_kurz": 0.1965,
-      "vorsprung_kurz": 0.2076,
-      "r_lang": 0.208,
-      "vorsprung_lang": 0.2291,
+      "r_kurz": 0.2481,
+      "vorsprung_kurz": 0.2666,
+      "r_lang": 0.1986,
+      "vorsprung_lang": 0.2166,
       "urteil": "gelaufen",
       "markt_schlaeft": false,
-      "handel": 196588272,
+      "handel": 197698890,
       "duenn": false
     }
   },

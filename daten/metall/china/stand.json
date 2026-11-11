@@ -1,6 +1,6 @@
 {
-  "stand": "2026-11-10T05:37:06+01:00",
-  "datum": "2026-11-10",
+  "stand": "2026-11-11T03:46:04+01:00",
+  "datum": "2026-11-11",
   "version": "0.1.0",
   "land": "china",
   "name": "China-Ausfuhr",
@@ -45,13 +45,13 @@
         {
           "kanal": "frist",
           "kennung": "aussetzung_usa_ga_ge_sb",
-          "tage": 17,
+          "tage": 16,
           "zustand": "läuft bald aus"
         },
         {
           "kanal": "trocken",
           "standort": "qujing",
-          "anteil": 0.58
+          "anteil": 0.56
         }
       ],
       "kanaele": [
@@ -82,8 +82,8 @@
         {
           "kanal": "frist",
           "kennung": "aussetzung_okt2025",
-          "tage": 0,
-          "zustand": "läuft bald aus"
+          "tage": -1,
+          "zustand": "abgelaufen"
         }
       ],
       "kanaele": [
@@ -113,8 +113,8 @@
         {
           "kanal": "frist",
           "kennung": "aussetzung_okt2025",
-          "tage": 0,
-          "zustand": "läuft bald aus"
+          "tage": -1,
+          "zustand": "abgelaufen"
         },
         {
           "kanal": "gegenseite",
@@ -163,10 +163,10 @@
       "bis": "2026-11-10",
       "urspruenglich_bis": "2026-11-10",
       "verlaengert": false,
-      "tage": 0,
-      "zustand": "läuft bald aus",
+      "tage": -1,
+      "zustand": "abgelaufen",
       "gelb": true,
-      "rot_pruefen": false,
+      "rot_pruefen": true,
       "stand": "USA melden am 24.09.2026 eine Verlängerung des Waffenstillstands bis zum 10.01.2027; die formelle Bekanntmachung aus Peking steht aus"
     },
     {
@@ -179,7 +179,7 @@
       "bis": "2026-11-27",
       "urspruenglich_bis": "2026-11-27",
       "verlaengert": false,
-      "tage": 17,
+      "tage": 16,
       "zustand": "läuft bald aus",
       "gelb": true,
       "rot_pruefen": false,
@@ -462,33 +462,33 @@
     "starkregen_gemessen": [],
     "starkregen_vorhergesagt": [],
     "regen_hoechst_mm": {
-      "lengshuijiang": 24.7,
-      "hechi": 12.6,
+      "lengshuijiang": 23.1,
+      "hechi": 26.3,
       "lincang": 75.6,
       "qujing": 21.2,
-      "pingguo": 10.6,
+      "pingguo": 21.4,
       "zibo": 15.6,
       "baotou": 0.0,
-      "ganzhou": 22.5,
+      "ganzhou": 23.6,
       "jixi": 1.6
     },
     "trocken": {
       "lincang": {
-        "von": "2026-08-07",
-        "bis": "2026-11-04",
-        "summe_mm": 403,
-        "normal_mm": 561,
+        "von": "2026-08-08",
+        "bis": "2026-11-05",
+        "summe_mm": 393,
+        "normal_mm": 553,
         "urteil": "normal",
-        "anteil": 0.72,
+        "anteil": 0.71,
         "trocken": false
       },
       "qujing": {
-        "von": "2026-08-07",
-        "bis": "2026-11-04",
-        "summe_mm": 211,
-        "normal_mm": 364,
+        "von": "2026-08-08",
+        "bis": "2026-11-05",
+        "summe_mm": 204,
+        "normal_mm": 360,
         "urteil": "trocken",
-        "anteil": 0.58,
+        "anteil": 0.56,
         "trocken": true
       }
     },
@@ -501,13 +501,13 @@
       "rolle": "kandidat",
       "hinweis": "Antimon-Projekt Stibnite in Idaho, noch ohne Förderung",
       "waehrung": "USD",
-      "letzter": "2026-11-09",
-      "schluss": 21.16,
+      "letzter": "2026-11-10",
+      "schluss": 19.33,
       "alter_tage": 1,
-      "r_kurz": 0.3102,
-      "vorsprung_kurz": 0.3008,
-      "r_lang": 0.0455,
-      "vorsprung_lang": 0.1053,
+      "r_kurz": 0.2032,
+      "vorsprung_kurz": 0.2049,
+      "r_lang": -0.001,
+      "vorsprung_lang": 0.068,
       "urteil": "schläft",
       "markt_schlaeft": true,
       "handel": 23195250,
@@ -519,16 +519,16 @@
       "rolle": "kandidat",
       "hinweis": "kleiner Antimon-Verarbeiter in den USA und Mexiko",
       "waehrung": "USD",
-      "letzter": "2026-11-09",
-      "schluss": 3.47,
+      "letzter": "2026-11-10",
+      "schluss": 3.21,
       "alter_tage": 1,
-      "r_kurz": 0.2091,
-      "vorsprung_kurz": 0.1996,
-      "r_lang": 0.0327,
-      "vorsprung_lang": 0.0925,
+      "r_kurz": 0.1146,
+      "vorsprung_kurz": 0.1162,
+      "r_lang": 0.0223,
+      "vorsprung_lang": 0.0913,
       "urteil": "schläft",
       "markt_schlaeft": true,
-      "handel": 22892748,
+      "handel": 22590544,
       "duenn": false
     },
     "MP": {
@@ -537,16 +537,16 @@
       "rolle": "beobachtung",
       "hinweis": "seltene Erden USA; seit 22.06.2026 selbst auf Chinas Exportkontrollliste",
       "waehrung": "USD",
-      "letzter": "2026-11-09",
-      "schluss": 37.75,
+      "letzter": "2026-11-10",
+      "schluss": 36.46,
       "alter_tage": 1,
-      "r_kurz": -0.0156,
-      "vorsprung_kurz": -0.0251,
-      "r_lang": -0.1294,
-      "vorsprung_lang": -0.0696,
+      "r_kurz": -0.0362,
+      "vorsprung_kurz": -0.0346,
+      "r_lang": -0.1407,
+      "vorsprung_lang": -0.0717,
       "urteil": "schläft",
       "markt_schlaeft": true,
-      "handel": 245003950,
+      "handel": 238345010,
       "duenn": false
     },
     "LYC.AX": {
@@ -555,16 +555,16 @@
       "rolle": "beobachtung",
       "hinweis": "größter Produzent seltener Erden außerhalb Chinas",
       "waehrung": "AUD",
-      "letzter": "2026-11-09",
-      "schluss": 13.15,
+      "letzter": "2026-11-10",
+      "schluss": 13.7,
       "alter_tage": 1,
-      "r_kurz": 0.085,
-      "vorsprung_kurz": 0.0756,
-      "r_lang": 0.094,
-      "vorsprung_lang": 0.1538,
+      "r_kurz": 0.1445,
+      "vorsprung_kurz": 0.1462,
+      "r_lang": 0.174,
+      "vorsprung_lang": 0.243,
       "urteil": "gelaufen",
       "markt_schlaeft": false,
-      "handel": 57160509,
+      "handel": 57999614,
       "duenn": false
     }
   },

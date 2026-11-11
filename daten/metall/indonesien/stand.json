@@ -1,6 +1,6 @@
 {
-  "stand": "2026-11-10T05:37:12+01:00",
-  "datum": "2026-11-10",
+  "stand": "2026-11-11T03:46:11+01:00",
+  "datum": "2026-11-11",
   "version": "0.1.0",
   "land": "indonesien",
   "name": "Indonesien-Ausfuhr",
@@ -76,7 +76,7 @@
       "bis": "2026-12-31",
       "urspruenglich_bis": "2026-12-31",
       "verlaengert": false,
-      "tage": 51,
+      "tage": 50,
       "zustand": "läuft",
       "gelb": false,
       "rot_pruefen": false,
@@ -92,7 +92,7 @@
       "bis": "2026-12-31",
       "urspruenglich_bis": "2026-12-31",
       "verlaengert": false,
-      "tage": 51,
+      "tage": 50,
       "zustand": "läuft",
       "gelb": false,
       "rot_pruefen": false,
@@ -109,7 +109,7 @@
       "bis": "2027-01-01",
       "urspruenglich_bis": "2027-01-01",
       "verlaengert": false,
-      "tage": 52,
+      "tage": 51,
       "zustand": "läuft",
       "gelb": false,
       "rot_pruefen": false,
@@ -120,6 +120,54 @@
     "herkunft": "frisch",
     "tage": 30,
     "dokumente": [
+      {
+        "nummer": "2026-22938",
+        "titel": "Tin Mill Products From Taiwan: Preliminary Affirmative Determination of Sales at Less Than Fair Value, Postponement of Final Determination, and Extension of Provisional Measures",
+        "datum": "2026-11-10",
+        "art": "Notice",
+        "behoerden": [
+          "commerce-department",
+          "international-trade-administration"
+        ],
+        "behoerden_namen": [
+          "Commerce Department",
+          "International Trade Administration"
+        ],
+        "url": "https://www.federalregister.gov/documents/2026/11/10/2026-22938/tin-mill-products-from-taiwan-preliminary-affirmative-determination-of-sales-at-less-than-fair-value",
+        "zusammenfassung": "The U.S. Department of Commerce (Commerce) preliminarily determines that tin mill products (tin mill) from Taiwan are being, or are likely to be, sold in the United States at less than fair value (LTFV). The period of investigation (POI) is April 1, 2025, through March 31, 2026. Interested parties are invited to comment on this preliminary determination.",
+        "begriffe": [
+          "tin"
+        ],
+        "achsen": [
+          "zinn"
+        ],
+        "gewichtig": false,
+        "neu": true
+      },
+      {
+        "nummer": "2026-22937",
+        "titel": "Tin Mill Products From the Republic of Türkiye: Preliminary Affirmative Determination of Sales at Less Than Fair Value, and Preliminary Affirmative Determination of Critical Circumstances, in Part",
+        "datum": "2026-11-10",
+        "art": "Notice",
+        "behoerden": [
+          "commerce-department",
+          "international-trade-administration"
+        ],
+        "behoerden_namen": [
+          "Commerce Department",
+          "International Trade Administration"
+        ],
+        "url": "https://www.federalregister.gov/documents/2026/11/10/2026-22937/tin-mill-products-from-the-republic-of-trkiye-preliminary-affirmative-determination-of-sales-at-less",
+        "zusammenfassung": "The U.S. Department of Commerce (Commerce) preliminarily determines that tin mill products from the Republic of T[uuml]rkiye (T[uuml]rkiye) are being, or are likely to be, sold in the United States at less than fair value (LTFV). The period of investigation (POI) is April 1, 2025, through March 31, 2026. Interested parties are invited to comment on this preliminary determination.",
+        "begriffe": [
+          "tin"
+        ],
+        "achsen": [
+          "zinn"
+        ],
+        "gewichtig": false,
+        "neu": true
+      },
       {
         "nummer": "2026-22836",
         "titel": "Seamless Carbon and Alloy Steel Standard, Line, and Pressure Pipe From India: Initiation of Countervailing Duty Investigation",
@@ -465,20 +513,20 @@
     "starkregen_gemessen": [],
     "starkregen_vorhergesagt": [],
     "regen_hoechst_mm": {
-      "morowali": 9.0,
+      "morowali": 10.5,
       "weda_bay": 12.2,
-      "sorowako": 11.7,
-      "pomalaa": 9.6,
+      "sorowako": 9.0,
+      "pomalaa": 7.5,
       "bangka": 23.6,
-      "belitung": 14.8,
+      "belitung": 15.6,
       "muntok": 29.6
     },
     "trocken": {
       "sorowako": {
-        "von": "2026-08-07",
-        "bis": "2026-11-04",
+        "von": "2026-08-08",
+        "bis": "2026-11-05",
         "summe_mm": 62,
-        "normal_mm": 506,
+        "normal_mm": 505,
         "urteil": "trocken",
         "anteil": 0.12,
         "trocken": true
@@ -493,13 +541,13 @@
       "rolle": "beobachtung",
       "hinweis": "bildet den LME-Nickelpreis ab, kein Länderrisiko, keine Verwässerung",
       "waehrung": "USD",
-      "letzter": "2026-11-06",
-      "schluss": 14.1125,
-      "alter_tage": 4,
-      "r_kurz": 0.0705,
-      "vorsprung_kurz": 0.0816,
-      "r_lang": 0.046,
-      "vorsprung_lang": 0.0671,
+      "letzter": "2026-11-09",
+      "schluss": 14.0,
+      "alter_tage": 2,
+      "r_kurz": 0.0421,
+      "vorsprung_kurz": 0.0606,
+      "r_lang": 0.0386,
+      "vorsprung_lang": 0.0566,
       "urteil": "schläft",
       "markt_schlaeft": true,
       "handel": 36421,
@@ -511,16 +559,16 @@
       "rolle": "beobachtung",
       "hinweis": "bildet den LME-Zinnpreis ab",
       "waehrung": "USD",
-      "letzter": "2026-11-09",
-      "schluss": 106.83,
+      "letzter": "2026-11-10",
+      "schluss": 106.675,
       "alter_tage": 1,
-      "r_kurz": -0.0669,
-      "vorsprung_kurz": -0.0559,
-      "r_lang": -0.1267,
-      "vorsprung_lang": -0.1056,
+      "r_kurz": -0.0238,
+      "vorsprung_kurz": -0.0053,
+      "r_lang": -0.1003,
+      "vorsprung_lang": -0.0823,
       "urteil": "schläft",
       "markt_schlaeft": true,
-      "handel": 10911,
+      "handel": 8535,
       "duenn": true
     }
   },
