@@ -1,9 +1,9 @@
 Agent: Inlandspreise (täglich, GitHub)
-Stand: 11.11.2026, 03:51
+Stand: 12.11.2026, 04:52
 Zustand: in Ordnung
 Ergebnis: daten/inlandspreise.json, daten/inland/
 Frühzeichen: keines
-- speiseoel_id_lose: ok, 2293 Werte, Urteil ruhig, Veränderung -0.4%
-- speiseoel_id_marke: ok, 2296 Werte, Urteil ruhig, Veränderung +0.6%
+- speiseoel_id_lose: ok, 2294 Werte, Urteil ruhig, Veränderung -0.5%
+- speiseoel_id_marke: ok, 2297 Werte, Urteil ruhig, Veränderung +0.3%
 - pflanzenoel_id_monat: ok, 71 Werte, Urteil ruhig, Veränderung -0.9%
-- cpo_my_tag: ok, 447 Werte, Urteil ruhig, Veränderung -3.0%
+- cpo_my_tag: ok, 448 Werte, Urteil ruhig, Veränderung -3.6%
