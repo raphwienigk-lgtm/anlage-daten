@@ -1,6 +1,6 @@
 {
-  "stand": "2026-11-11T03:47:06+01:00",
-  "datum": "2026-11-11",
+  "stand": "2026-11-12T04:48:24+01:00",
+  "datum": "2026-11-12",
   "version": "0.1.0",
   "land": "marokko",
   "name": "Marokko-Phosphat",
@@ -56,7 +56,7 @@
       "bis": "2027-12-31",
       "urspruenglich_bis": "2027-12-31",
       "verlaengert": false,
-      "tage": 415,
+      "tage": 414,
       "zustand": "läuft",
       "gelb": false,
       "rot_pruefen": false,
@@ -72,7 +72,7 @@
       "bis": "2027-12-31",
       "urspruenglich_bis": "2027-12-31",
       "verlaengert": false,
-      "tage": 415,
+      "tage": 414,
       "zustand": "läuft",
       "gelb": false,
       "rot_pruefen": false,
@@ -88,7 +88,7 @@
       "bis": "2027-10-03",
       "urspruenglich_bis": "2027-10-03",
       "verlaengert": false,
-      "tage": 326,
+      "tage": 325,
       "zustand": "läuft",
       "gelb": false,
       "rot_pruefen": false,
@@ -121,7 +121,7 @@
           "duenger"
         ],
         "gewichtig": false,
-        "neu": true
+        "neu": false
       },
       {
         "nummer": "2026-22941",
@@ -145,7 +145,7 @@
           "duenger"
         ],
         "gewichtig": false,
-        "neu": true
+        "neu": false
       },
       {
         "nummer": "2026-22940",
@@ -169,7 +169,7 @@
           "duenger"
         ],
         "gewichtig": false,
-        "neu": true
+        "neu": false
       },
       {
         "nummer": "2026-22939",
@@ -193,7 +193,7 @@
           "duenger"
         ],
         "gewichtig": false,
-        "neu": true
+        "neu": false
       },
       {
         "nummer": "2026-22528",
@@ -493,12 +493,12 @@
     "starkregen_gemessen": [],
     "starkregen_vorhergesagt": [],
     "regen_hoechst_mm": {
-      "khouribga": 7.8,
-      "benguerir": 5.9,
-      "jorf_lasfar": 12.3,
-      "safi": 8.8,
-      "bou_craa": 0.6,
-      "laayoune": 4.0
+      "khouribga": 12.9,
+      "benguerir": 2.5,
+      "jorf_lasfar": 10.9,
+      "safi": 12.7,
+      "bou_craa": 1.3,
+      "laayoune": 1.6
     },
     "trocken": {},
     "gelb_tage": 30
@@ -510,13 +510,13 @@
       "rolle": "sensor",
       "hinweis": "Kanada; größter Düngemittelkonzern, aber schwerpunktmäßig Kali — verwässert",
       "waehrung": "USD",
-      "letzter": "2026-11-10",
-      "schluss": 72.17,
+      "letzter": "2026-11-11",
+      "schluss": 71.65,
       "alter_tage": 1,
-      "r_kurz": 0.0411,
-      "vorsprung_kurz": 0.0596,
-      "r_lang": 0.0357,
-      "vorsprung_lang": 0.0537,
+      "r_kurz": -0.0058,
+      "vorsprung_kurz": 0.0057,
+      "r_lang": 0.0255,
+      "vorsprung_lang": 0.0541,
       "urteil": "schläft",
       "markt_schlaeft": true,
       "handel": 183861674,
@@ -528,13 +528,13 @@
       "rolle": "sensor",
       "hinweis": "USA; Phosphat und Kali, zugleich Kläger in den Ausgleichszollverfahren gegen OCP",
       "waehrung": "USD",
-      "letzter": "2026-11-10",
-      "schluss": 22.99,
+      "letzter": "2026-11-11",
+      "schluss": 22.8,
       "alter_tage": 1,
-      "r_kurz": 0.2481,
-      "vorsprung_kurz": 0.2666,
-      "r_lang": 0.1986,
-      "vorsprung_lang": 0.2166,
+      "r_kurz": 0.0546,
+      "vorsprung_kurz": 0.0661,
+      "r_lang": 0.1994,
+      "vorsprung_lang": 0.228,
       "urteil": "gelaufen",
       "markt_schlaeft": false,
       "handel": 197698890,
