@@ -1,6 +1,6 @@
 {
-  "stand": "2026-11-12T04:48:16+01:00",
-  "datum": "2026-11-12",
+  "stand": "2026-11-13T04:24:06+01:00",
+  "datum": "2026-11-13",
   "version": "0.1.0",
   "land": "indonesien",
   "name": "Indonesien-Ausfuhr",
@@ -76,7 +76,7 @@
       "bis": "2026-12-31",
       "urspruenglich_bis": "2026-12-31",
       "verlaengert": false,
-      "tage": 49,
+      "tage": 48,
       "zustand": "läuft",
       "gelb": false,
       "rot_pruefen": false,
@@ -92,7 +92,7 @@
       "bis": "2026-12-31",
       "urspruenglich_bis": "2026-12-31",
       "verlaengert": false,
-      "tage": 49,
+      "tage": 48,
       "zustand": "läuft",
       "gelb": false,
       "rot_pruefen": false,
@@ -109,7 +109,7 @@
       "bis": "2027-01-01",
       "urspruenglich_bis": "2027-01-01",
       "verlaengert": false,
-      "tage": 50,
+      "tage": 49,
       "zustand": "läuft",
       "gelb": false,
       "rot_pruefen": false,
@@ -480,30 +480,6 @@
         ],
         "gewichtig": false,
         "neu": false
-      },
-      {
-        "nummer": "2026-20816",
-        "titel": "Welded Stainless Steel Pressure Pipe From the Socialist Republic of Vietnam: Preliminary Results of and Intent To Rescind, in Part, Antidumping Duty Administrative Review; 2024-2025",
-        "datum": "2026-10-13",
-        "art": "Notice",
-        "behoerden": [
-          "commerce-department",
-          "international-trade-administration"
-        ],
-        "behoerden_namen": [
-          "Commerce Department",
-          "International Trade Administration"
-        ],
-        "url": "https://www.federalregister.gov/documents/2026/10/13/2026-20816/welded-stainless-steel-pressure-pipe-from-the-socialist-republic-of-vietnam-preliminary-results-of",
-        "zusammenfassung": "The U.S. Department of Commerce (Commerce) preliminarily determines that sales of welded stainless steel pressure pipe (stainless pressure pipe) from the Socialist Republic of Vietnam (Vietnam) were made at less than normal value (NV) during the period of review (POR) July 1, 2024, through June 30, 2025. Additionally, Commerce intends to preliminarily rescind the review, in part, with respect to seven companies. Interested parties are invited to comment on these preliminary results of review.",
-        "begriffe": [
-          "stainless steel"
-        ],
-        "achsen": [
-          "nickel"
-        ],
-        "gewichtig": false,
-        "neu": false
       }
     ]
   },
@@ -513,19 +489,19 @@
     "starkregen_gemessen": [],
     "starkregen_vorhergesagt": [],
     "regen_hoechst_mm": {
-      "morowali": 16.8,
-      "weda_bay": 12.2,
-      "sorowako": 13.8,
-      "pomalaa": 5.0,
-      "bangka": 23.6,
-      "belitung": 17.1,
-      "muntok": 29.6
+      "morowali": 9.8,
+      "weda_bay": 18.0,
+      "sorowako": 15.0,
+      "pomalaa": 16.0,
+      "bangka": 25.8,
+      "belitung": 25.5,
+      "muntok": 24.3
     },
     "trocken": {
       "sorowako": {
-        "von": "2026-08-09",
-        "bis": "2026-11-06",
-        "summe_mm": 64,
+        "von": "2026-08-10",
+        "bis": "2026-11-07",
+        "summe_mm": 65,
         "normal_mm": 506,
         "urteil": "trocken",
         "anteil": 0.13,
@@ -541,16 +517,16 @@
       "rolle": "beobachtung",
       "hinweis": "bildet den LME-Nickelpreis ab, kein Länderrisiko, keine Verwässerung",
       "waehrung": "USD",
-      "letzter": "2026-11-10",
-      "schluss": 13.845,
+      "letzter": "2026-11-11",
+      "schluss": 14.02,
       "alter_tage": 2,
-      "r_kurz": 0.0433,
-      "vorsprung_kurz": 0.0549,
-      "r_lang": 0.0273,
-      "vorsprung_lang": 0.0559,
+      "r_kurz": 0.0279,
+      "vorsprung_kurz": 0.031,
+      "r_lang": 0.0432,
+      "vorsprung_lang": 0.0491,
       "urteil": "schläft",
       "markt_schlaeft": true,
-      "handel": 42834,
+      "handel": 36421,
       "duenn": true
     },
     "TINM.L": {
@@ -559,16 +535,16 @@
       "rolle": "beobachtung",
       "hinweis": "bildet den LME-Zinnpreis ab",
       "waehrung": "USD",
-      "letzter": "2026-11-11",
-      "schluss": 107.25,
+      "letzter": "2026-11-12",
+      "schluss": 107.195,
       "alter_tage": 1,
-      "r_kurz": -0.0083,
-      "vorsprung_kurz": 0.0032,
-      "r_lang": -0.0768,
-      "vorsprung_lang": -0.0482,
+      "r_kurz": 0.0094,
+      "vorsprung_kurz": 0.0125,
+      "r_lang": -0.0747,
+      "vorsprung_lang": -0.0687,
       "urteil": "schläft",
       "markt_schlaeft": true,
-      "handel": 6160,
+      "handel": 5922,
       "duenn": true
     }
   },

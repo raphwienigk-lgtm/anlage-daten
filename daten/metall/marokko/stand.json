@@ -1,6 +1,6 @@
 {
-  "stand": "2026-11-12T04:48:24+01:00",
-  "datum": "2026-11-12",
+  "stand": "2026-11-13T04:24:59+01:00",
+  "datum": "2026-11-13",
   "version": "0.1.0",
   "land": "marokko",
   "name": "Marokko-Phosphat",
@@ -56,7 +56,7 @@
       "bis": "2027-12-31",
       "urspruenglich_bis": "2027-12-31",
       "verlaengert": false,
-      "tage": 414,
+      "tage": 413,
       "zustand": "läuft",
       "gelb": false,
       "rot_pruefen": false,
@@ -72,7 +72,7 @@
       "bis": "2027-12-31",
       "urspruenglich_bis": "2027-12-31",
       "verlaengert": false,
-      "tage": 414,
+      "tage": 413,
       "zustand": "läuft",
       "gelb": false,
       "rot_pruefen": false,
@@ -88,7 +88,7 @@
       "bis": "2027-10-03",
       "urspruenglich_bis": "2027-10-03",
       "verlaengert": false,
-      "tage": 325,
+      "tage": 324,
       "zustand": "läuft",
       "gelb": false,
       "rot_pruefen": false,
@@ -460,30 +460,6 @@
         ],
         "gewichtig": false,
         "neu": false
-      },
-      {
-        "nummer": "2026-20816",
-        "titel": "Welded Stainless Steel Pressure Pipe From the Socialist Republic of Vietnam: Preliminary Results of and Intent To Rescind, in Part, Antidumping Duty Administrative Review; 2024-2025",
-        "datum": "2026-10-13",
-        "art": "Notice",
-        "behoerden": [
-          "commerce-department",
-          "international-trade-administration"
-        ],
-        "behoerden_namen": [
-          "Commerce Department",
-          "International Trade Administration"
-        ],
-        "url": "https://www.federalregister.gov/documents/2026/10/13/2026-20816/welded-stainless-steel-pressure-pipe-from-the-socialist-republic-of-vietnam-preliminary-results-of",
-        "zusammenfassung": "The U.S. Department of Commerce (Commerce) preliminarily determines that sales of welded stainless steel pressure pipe (stainless pressure pipe) from the Socialist Republic of Vietnam (Vietnam) were made at less than normal value (NV) during the period of review (POR) July 1, 2024, through June 30, 2025. Additionally, Commerce intends to preliminarily rescind the review, in part, with respect to seven companies. Interested parties are invited to comment on these preliminary results of review.",
-        "begriffe": [
-          "fertilizer"
-        ],
-        "achsen": [
-          "duenger"
-        ],
-        "gewichtig": false,
-        "neu": false
       }
     ]
   },
@@ -493,12 +469,12 @@
     "starkregen_gemessen": [],
     "starkregen_vorhergesagt": [],
     "regen_hoechst_mm": {
-      "khouribga": 12.9,
+      "khouribga": 13.0,
       "benguerir": 2.5,
       "jorf_lasfar": 10.9,
-      "safi": 12.7,
-      "bou_craa": 1.3,
-      "laayoune": 1.6
+      "safi": 12.6,
+      "bou_craa": 0.2,
+      "laayoune": 2.5
     },
     "trocken": {},
     "gelb_tage": 30
@@ -510,16 +486,16 @@
       "rolle": "sensor",
       "hinweis": "Kanada; größter Düngemittelkonzern, aber schwerpunktmäßig Kali — verwässert",
       "waehrung": "USD",
-      "letzter": "2026-11-11",
-      "schluss": 71.65,
+      "letzter": "2026-11-12",
+      "schluss": 71.22,
       "alter_tage": 1,
-      "r_kurz": -0.0058,
-      "vorsprung_kurz": 0.0057,
-      "r_lang": 0.0255,
-      "vorsprung_lang": 0.0541,
+      "r_kurz": -0.0137,
+      "vorsprung_kurz": -0.0106,
+      "r_lang": 0.0236,
+      "vorsprung_lang": 0.0296,
       "urteil": "schläft",
       "markt_schlaeft": true,
-      "handel": 183861674,
+      "handel": 178586700,
       "duenn": false
     },
     "MOS": {
@@ -528,13 +504,13 @@
       "rolle": "sensor",
       "hinweis": "USA; Phosphat und Kali, zugleich Kläger in den Ausgleichszollverfahren gegen OCP",
       "waehrung": "USD",
-      "letzter": "2026-11-11",
-      "schluss": 22.8,
+      "letzter": "2026-11-12",
+      "schluss": 21.76,
       "alter_tage": 1,
-      "r_kurz": 0.0546,
-      "vorsprung_kurz": 0.0661,
-      "r_lang": 0.1994,
-      "vorsprung_lang": 0.228,
+      "r_kurz": -0.0255,
+      "vorsprung_kurz": -0.0224,
+      "r_lang": 0.1483,
+      "vorsprung_lang": 0.1543,
       "urteil": "gelaufen",
       "markt_schlaeft": false,
       "handel": 197698890,

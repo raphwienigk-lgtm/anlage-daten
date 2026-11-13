@@ -1,5 +1,5 @@
 Agent: Metall-Wächter China-Ausfuhr (Datenlauf auf GitHub)
-Stand: 12.11.2026, 04:48
+Stand: 13.11.2026, 04:24
 Zustand: in Ordnung
 Ergebnis: abgabe/metall-china-teil-1.md, daten/metall/china/stand.json
 Stufen: Chip-Achse Gelb, Magnet-Achse Gelb, Batterie-Achse Gelb, Werkzeug-Achse Grün
