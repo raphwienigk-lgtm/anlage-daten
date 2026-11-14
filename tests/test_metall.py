@@ -32,8 +32,14 @@ def test_ausschreiben_und_abstand():
     assert 380 < q.abstand_km(27.69, 111.43, 24.69, 108.08) < 480
 
 
+def _ohne_verlaengerung(k: dict) -> dict:
+    """Formular ohne eingetragene Verlängerungen: Die Tests rechnen mit erfundenen Daten,
+    ein echter Eintrag unter `verlaengert_bis` in konfig/metalle/china.yaml soll sie nicht brechen."""
+    return {**k, "fristen": [{**f, "verlaengert_bis": None} for f in k["fristen"]]}
+
+
 def test_fristen():
-    k = metall.lade("china")
+    k = _ohne_verlaengerung(metall.lade("china"))
     f = {x["kennung"]: x for x in rechnen.fristen(k["fristen"], HEUTE, 30)}
     assert f["aussetzung_okt2025"]["tage"] == 21 and f["aussetzung_okt2025"]["gelb"]
     assert f["aussetzung_usa_ga_ge_sb"]["tage"] == 38 and not f["aussetzung_usa_ga_ge_sb"]["gelb"]
@@ -208,7 +214,9 @@ def metall_netz(monkeypatch):
     return falsch
 
 
-def test_ganzer_lauf(ablage, metall_netz):
+def test_ganzer_lauf(ablage, metall_netz, monkeypatch):
+    echt = metall.lade
+    monkeypatch.setattr(metall, "lade", lambda land: _ohne_verlaengerung(echt(land)))
     zeit = datetime(2026, 10, 20, 1, 17, tzinfo=konfig.ZEITZONE)
     stand = metall.lauf("china", HEUTE, zeit, budget_minuten=5, holen=falsche_kurse)
     a = stand["achsen"]
