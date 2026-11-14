@@ -18,3 +18,21 @@ boerse_waehrung:
   ASX: AUD
   NYSE: USD
   NASDAQ: USD
+
+# Handspur (Beschlüsse A135, A136, Projekt Agents): gedachte Käufe, die Raphael von Hand setzt. Sie laufen als eigener
+# Zweig „Handeingabe“ (hand) und stehen getrennt im Block `handspur`, nicht im Gesamtstand; Signalbilanz, Rückblick,
+# Nachprüfer und Ausstiegs-Vergleich lesen sie nicht. Der Kauftag (`seit`) ist immer der erste Handelstag nach der
+# Ansage, nie rückwirkend; gekauft wird zum Schlusskurs an diesem Tag. Nach dem Kauf wird ein Eintrag nicht mehr
+# geändert, ein Fehler bekommt eine eigene Berichtigung. Die Position schließt von selbst am ersten Schlusskurs auf
+# oder unter (1 - nachlauf) mal dem höchsten Schlusskurs seit Einstieg, spätestens am ersten Schlusskurs am oder
+# nach dem Tag `seit` + kalendertage; am selben Tag zählt die Grenze.
+# Je Eintrag: ticker, seit, anlass (ein Satz), ampel (Stand zum Zeitpunkt des Kaufs). Ein Wert, den kein Formular
+# führt, braucht dazu name und waehrung (oder boerse); sein Kursarchiv daten/preise/<ticker>.csv pflegt der tägliche
+# Lauf nur für Werte aus den Formularen.
+handeingaben:
+  regel: {name: "Handspur: 20 Prozent unter dem Höchststand, spätestens nach 180 Tagen", kalendertage: 180, nachlauf: 0.20}
+  eintraege:
+    - ticker: COCO.L
+      seit: "2026-11-16"
+      anlass: "Raphael setzt von Hand eine gedachte Position Kakao, getrennt von den Signalen der Zweige (Sprachgespräch 13.11.2026)."
+      ampel: null          # Ampel Kakao am 16.11.2026 aus dem Lauf dieses Tages eintragen, vor dem Kauf

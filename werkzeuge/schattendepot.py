@@ -8,6 +8,11 @@ Betrag je Wert (Formular konfig/depot.yaml, 1.000 Euro). Reine Rechnung, kein ec
 - Ersatz-Sensoren: daten/ersatz/<kennung>/schattendepot.json.
 - Metall: Das Schattendepot führt der Metall-Wächter in der Cloud (metall-logbuch.md); der Depot-Agent übergibt
   es als Zusatzdatei (--zusatz), weil GitHub es nicht kennt.
+- Handspur (Fassung 1.2, A135, A136): gedachte Käufe, die Raphael von Hand setzt (Zweig „hand“, Einträge im Index
+  aus konfig/depot.yaml). Kauf zum Schlusskurs am Kauftag; die Position schließt von selbst am ersten Schlusskurs
+  auf oder unter der Grenze unter dem Höchststand seit Einstieg, spätestens am ersten Schlusskurs am oder nach dem
+  Fristtag, am selben Tag zählt die Grenze. Die Handspur steht getrennt im Block `handspur`, nicht in `gesamt` und
+  nicht unter `zweige`; ein Kauftag ohne Schlusskurs heißt „Kauf am … steht noch aus“.
 
 Jeder gedachte Kauf eines Werts erhält den Betrag, umgerechnet zum Devisenkurs am Kurstag des Kaufs. Bewertet
 wird zum letzten Schlusskurs bis heute, bei geschlossenen Positionen zum Schlusskurs am Schlusstag, zurück in
@@ -32,7 +37,7 @@ from bisect import bisect_right
 from datetime import date, timedelta
 from pathlib import Path
 
-VERSION = "1.1"
+VERSION = "1.2"
 HINWEIS = "Reine Rechnung mit einem erfundenen Betrag, kein echtes Geld. Denkhilfe, keine Anlageberatung."
 NEU_TAGE = 7          # so lange gilt ein Kauf oder Schluss als neu
 FRIST_BALD = 7        # Hinweis, wenn die Frist in so vielen Tagen erreicht ist
@@ -159,6 +164,24 @@ def aus_zusatz(liste: list[dict], index: dict) -> tuple[list[dict], list[str]]:
     return positionen, fehler
 
 
+def aus_hand(quelle: dict, zweig: str) -> tuple[list[dict], list[str]]:
+    """Handspur (A135, A136): Einträge mit ticker, seit (Kauftag), anlass und ampel. Gekauft wird zum Schlusskurs
+    am Kauftag, geschlossen von selbst nach der Regel des Zweigs (schluss_von_selbst)."""
+    positionen, fehler = [], []
+    for e in quelle.get("eintraege") or []:
+        seit = str(e.get("seit") or "")
+        try:
+            date.fromisoformat(seit)
+        except ValueError:
+            seit = ""
+        if not (e.get("ticker") and seit):
+            fehler.append(f"Handeingabe ohne ticker oder gültiges seit: {json.dumps(e, ensure_ascii=False)[:120]}")
+            continue
+        positionen.append({"zweig": zweig, "ticker": e["ticker"], "seit": seit, "anlass": e.get("anlass"),
+                           "ampel": e.get("ampel"), "hand": True})
+    return positionen, fehler
+
+
 # ------------------------------------------------------------------ Frist
 def frist(seit: str, regel: dict | None) -> tuple[str | None, str]:
     """Spätester Schluss nach der geltenden Regel; bei Regeln ohne festes Datum None und eine Beschreibung."""
@@ -202,6 +225,36 @@ def grenze(reihe: list[dict], p0: float, nachlauf: float) -> dict:
             "abstand": round(letzte / g - 1, 4), "erreicht_am": erreicht}
 
 
+def schluss_von_selbst(p: dict, kurse: "Reihe", regel: dict, heute: date) -> dict:
+    """Handspur: Einstieg zum ersten Schlusskurs ab dem Kauftag; Schluss am ersten Schlusskurs auf oder unter der
+    Grenze unter dem Höchststand seit Einstieg, spätestens am ersten Schlusskurs am oder nach dem Fristtag. Am
+    selben Tag zählt die Grenze. Ohne Schlusskurs am oder nach dem Kauftag (bis heute) bleibt die Position offen
+    und ohne Einstieg; das meldet bewerte als „Kauf am … steht noch aus“."""
+    tag = heute.isoformat()
+    z0 = kurse.ab(p["seit"]) if kurse else None
+    if not z0 or z0["datum"] > tag:
+        return p
+    p = {**p, "kurs": z0["schluss"], "kurs_datum": z0["datum"]}
+    faelle = []
+    if regel.get("nachlauf"):
+        n = float(regel["nachlauf"])
+        nach = [z for z in kurse.zeilen if z0["datum"] < z["datum"] <= tag]
+        erreicht = grenze(nach, z0["schluss"], n)["erreicht_am"]
+        if erreicht:
+            faelle.append((erreicht["datum"], 0, erreicht["kurs"],
+                           f"Grenze {round(n * 100)} Prozent unter dem Höchststand"))
+    ende, _ = frist(p["seit"], regel)
+    if ende:
+        z = kurse.ab(ende)
+        if z and z["datum"] <= tag:
+            text = f"Frist {regel['kalendertage']} Tage" if regel.get("kalendertage") else "Frist"
+            faelle.append((z["datum"], 1, z["schluss"], text))
+    if not faelle:
+        return p
+    datum, _, kurs, grund = min(faelle)
+    return {**p, "schluss": datum, "schlusskurs": kurs, "schlusskurs_datum": datum, "grund": grund}
+
+
 # ------------------------------------------------------------------ Bewerten
 def bewerte(p: dict, index: dict, basis: Path, heute: date, reihen: dict) -> dict:
     wert = index["werte"][p["ticker"]]
@@ -223,6 +276,19 @@ def bewerte(p: dict, index: dict, basis: Path, heute: date, reihen: dict) -> dic
     for feld in ("achse",):
         if wert.get(feld):
             ergebnis[feld] = wert[feld]
+
+    # Handspur: Währung und Kursarchiv sind Pflicht, sonst rechnete sie still in Euro oder ohne Kurse; vor dem
+    # ersten Schlusskurs ab dem Kauftag steht der Kauf aus. Schluss nach der Regel des Zweigs, von selbst.
+    if p.get("hand"):
+        ergebnis["ampel"] = p.get("ampel")
+        if not wert.get("waehrung"):
+            return {**ergebnis, "status": "ohne Währung"}
+        if not kurse:
+            return {**ergebnis, "status": "ohne Kursarchiv"}
+        p = schluss_von_selbst(p, kurse, zweig.get("regel") or {}, heute)
+        if not p.get("kurs"):
+            return {**ergebnis, "status": f"Kauf am {p['seit']} steht noch aus", "wartet": True}
+        ergebnis.update({"offen": not p.get("schluss"), "schluss": p.get("schluss"), "grund": p.get("grund")})
 
     # Einstieg: mitgegebener Kurs, sonst der erste Schlusskurs ab dem Kauftag
     p0, d0 = p.get("kurs"), p.get("kurs_datum") or p["seit"]
@@ -313,10 +379,15 @@ def hinweise(positionen: list[dict], index: dict, heute: date) -> list[dict]:
     """Regel-Hinweise: was die geltenden Regeln heute ergeben. Der Depot-Agent formuliert daraus Sätze."""
     liste = []
     neu_ab = (heute - timedelta(days=NEU_TAGE)).isoformat()
+    # Handspur: die Position schließt von selbst, deshalb entfallen dort frist_erreicht und grenze_erreicht;
+    # ein ausstehender Kauf ist kein Fehler und steht nur als Status bei der Position.
+    hand = {k for k, z in index["zweige"].items() if (z.get("quelle") or {}).get("art") == "hand"}
     for p in positionen:
         kopf = {"zweig": p["zweig"], "ticker": p["ticker"], "name": p["name"]}
+        selbst = p["zweig"] in hand
         if p.get("status") != "ok":
-            liste.append({**kopf, "art": "nicht_bewertbar", "text": p.get("status")})
+            if not p.get("wartet"):
+                liste.append({**kopf, "art": "nicht_bewertbar", "text": p.get("status")})
             continue
         r = p["regel"]
         if p["offen"]:
@@ -324,15 +395,17 @@ def hinweise(positionen: list[dict], index: dict, heute: date) -> list[dict]:
                 liste.append({**kopf, "art": "neu_gekauft", "seit": p["seit"], "anlass": p.get("anlass")})
             if r.get("frist") is not None:
                 if r["tage_bis_frist"] <= 0:
-                    liste.append({**kopf, "art": "frist_erreicht", "frist": r["frist"], "regel": r["beschreibung"]})
+                    if not selbst:
+                        liste.append({**kopf, "art": "frist_erreicht", "frist": r["frist"], "regel": r["beschreibung"]})
                 elif r["tage_bis_frist"] <= FRIST_BALD:
                     liste.append({**kopf, "art": "frist_bald", "frist": r["frist"], "regel": r["beschreibung"],
                                   "tage": r["tage_bis_frist"]})
             gz = r.get("grenze")
             if gz and gz.get("erreicht_am"):
-                liste.append({**kopf, "art": "grenze_erreicht", "datum": gz["erreicht_am"]["datum"],
-                              "kurs": gz["erreicht_am"]["kurs"], "hoechststand": gz["hoechststand"],
-                              "regel": r["beschreibung"]})
+                if not selbst:
+                    liste.append({**kopf, "art": "grenze_erreicht", "datum": gz["erreicht_am"]["datum"],
+                                  "kurs": gz["erreicht_am"]["kurs"], "hoechststand": gz["hoechststand"],
+                                  "regel": r["beschreibung"]})
             elif gz and gz["abstand"] < GRENZE_NAH:
                 liste.append({**kopf, "art": "grenze_nah", "abstand": gz["abstand"], "grenze": gz["grenze"]})
             if (p.get("kurs_alter_tage") or 0) > KURS_ALT:
@@ -341,6 +414,8 @@ def hinweise(positionen: list[dict], index: dict, heute: date) -> list[dict]:
             liste.append({**kopf, "art": "neu_geschlossen", "schluss": p["schluss"], "grund": p.get("grund"),
                           "veraenderung_eur": p["veraenderung_eur"]})
     for kennung, z in index["zweige"].items():
+        if kennung in hand:
+            continue
         if z.get("gilt", "bisher") != "bisher" and not (z.get("regel") or {}).get("mit_vorgabe"):
             liste.append({"zweig": kennung, "art": "regel_abweichend", "gilt": z["gilt"],
                           "text": "Für diesen Zweig gilt eine andere Ausstiegsregel; ihre tägliche Prüfung "
@@ -352,13 +427,18 @@ def rechnen(basis: Path, heute: date, zusatz: list[dict] | None = None) -> dict:
     index = lies_json(basis / "daten" / "depot" / "index.json")
     if not index:
         raise SystemExit("daten/depot/index.json fehlt")
-    roh, fehler = [], []
+    roh, fehler, hand = [], [], []
     for kennung, z in index["zweige"].items():
         q = z.get("quelle") or {}
         if q.get("art") == "logbuch":
             roh += aus_logbuch(lies_jsonl(basis / q["pfad"]), q["rohstoff"], kennung)
         elif q.get("art") == "ersatz":
             roh += aus_ersatz(lies_json(basis / q["pfad"], {"positionen": []}), kennung)
+        elif q.get("art") == "hand":
+            hand.append(kennung)
+            mehr, fehler_hand = aus_hand(q, kennung)
+            roh += mehr
+            fehler += fehler_hand
     mehr, fehler_zusatz = aus_zusatz(zusatz, index)
     roh += mehr
     fehler += fehler_zusatz
@@ -368,28 +448,43 @@ def rechnen(basis: Path, heute: date, zusatz: list[dict] | None = None) -> dict:
     reihen: dict = {}
     positionen = [bewerte(p, index, basis, heute, reihen) for p in roh]
     positionen.sort(key=lambda p: (not p["offen"], p["zweig"], p["seit"], p["ticker"]))
-    offen = [p for p in positionen if p["offen"]]
-    zu = [p for p in positionen if not p["offen"]]
+    # Die Handspur zählt nicht im Gesamtstand und nicht unter den Zweigen (A136, W2), sondern im Block handspur.
+    system = [p for p in positionen if p["zweig"] not in hand]
+    offen = [p for p in system if p["offen"]]
+    zu = [p for p in system if not p["offen"]]
     zweige = {}
     for kennung, z in index["zweige"].items():
+        if kennung in hand:
+            continue
         eigene = [p for p in positionen if p["zweig"] == kennung]
         zweige[kennung] = {"name": z.get("name", kennung), "gilt": z.get("gilt", "bisher"),
                            "regel_name": z.get("regel_name"),
                            "offen": _summe([p for p in eigene if p["offen"]]),
                            "geschlossen": _summe([p for p in eigene if not p["offen"]])}
-    return {
+    ergebnis = {
         "stand": heute.isoformat(),
         "version": VERSION,
         "hinweis": HINWEIS,
         "betrag_je_wert_eur": float(index["betrag"]),
         "basis": index.get("basis", "EUR"),
         "index_stand": index.get("stand"),
-        "gesamt": {"offen": _summe(offen), "geschlossen": _summe(zu), "zusammen": _summe(positionen)},
+        "gesamt": {"offen": _summe(offen), "geschlossen": _summe(zu), "zusammen": _summe(system)},
         "zweige": zweige,
+    }
+    if hand:
+        eigene = [p for p in positionen if p["zweig"] in hand]
+        z = index["zweige"][hand[0]]
+        ergebnis["handspur"] = {"name": z.get("name", hand[0]), "regel_name": z.get("regel_name"),
+                                "offen": _summe([p for p in eigene if p["offen"]]),
+                                "geschlossen": _summe([p for p in eigene if not p["offen"]]),
+                                "wartet": sum(1 for p in eigene if p.get("wartet"))}
+    ergebnis.update({
         "positionen": positionen,
         "regel_hinweise": hinweise(positionen, index, heute),
-        "fehler": fehler + [f"{p['ticker']}: {p['status']}" for p in positionen if p.get("status") != "ok"],
-    }
+        "fehler": fehler + [f"{p['ticker']}: {p['status']}" for p in positionen
+                            if p.get("status") != "ok" and not p.get("wartet")],
+    })
+    return ergebnis
 
 
 # ------------------------------------------------------------------ Aufruf

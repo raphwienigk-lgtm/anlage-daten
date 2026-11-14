@@ -6,7 +6,8 @@ kennt. Dieser Lauf bereitet alles vor:
 
 - holt die Devisenkurse (Euro zu Dollar, Singapur-Dollar, Australischem Dollar) ins Archiv daten/depot/kurse/,
 - schreibt daten/depot/index.json: jeder Wert aller Zweige mit Name, Währung, Kursarchiv und Vergleichsmaßstab,
-  die Quellen der gedachten Positionen, die geltende Ausstiegsregel je Zweig und die Liste aller Dateien,
+  die Quellen der gedachten Positionen, die geltende Ausstiegsregel je Zweig und die Liste aller Dateien; dazu die
+  Handspur aus konfig/depot.yaml als Zweig „hand“ mit ihren Einträgen (A135, A136),
 - rechnet zur Probe das Schattendepot ohne die Metall-Positionen und schreibt abgabe/status-depot.md.
 
 Aufruf: python -m anlage.depot [--heute JJJJ-MM-TT]
@@ -102,6 +103,24 @@ def index(d: dict, devisen_pfade: dict[str, str], zeitpunkt: datetime) -> dict:
                                   "archiv": _rel(kurse.archiv_pfad(o / "kurse", e["ticker"])), "vergleich": ref["ticker"],
                                   "rolle": e.get("rolle")}
 
+    # Handspur (A135, A136): gedachte Käufe von Hand aus konfig/depot.yaml, eigener Zweig mit eigener Regel. Das
+    # Werkzeug liest kein YAML, deshalb stehen die Einträge im Index. Werte aus den Formularen behalten ihren Eintrag
+    # (Archiv, Währung); ein Wert, den nur die Handspur führt, kommt mit name und waehrung (oder boerse) dazu.
+    hand = d.get("handeingaben") or {}
+    if hand:
+        regel = dict(hand.get("regel") or {})
+        eintraege = []
+        for e in hand.get("eintraege") or []:
+            e = {k: (str(v) if k == "seit" and v is not None else v) for k, v in (e or {}).items()}
+            eintraege.append(e)
+            t = e.get("ticker")
+            if t and t not in werte and e.get("name"):
+                werte[t] = {"name": e["name"], "zweig": "hand",
+                            "waehrung": e.get("waehrung") or (d.get("boerse_waehrung") or {}).get(e.get("boerse")),
+                            "archiv": _rel(kurse.archiv_pfad(konfig.PREISE, t)), "vergleich": None}
+        zweige["hand"] = {"name": "Handeingabe", "gilt": "bisher", "regel": regel, "regel_name": regel.get("name"),
+                          "quelle": {"art": "hand", "herkunft": "konfig/depot.yaml", "eintraege": eintraege}}
+
     dateien = ["daten/depot/index.json", "werkzeuge/schattendepot.py"]
     dateien += sorted({z["quelle"]["pfad"] for z in zweige.values() if z["quelle"].get("pfad")})
     dateien += sorted({w["archiv"] for w in werte.values()} | {v["archiv"] for v in vergleiche.values()}
@@ -133,7 +152,7 @@ def lauf(zeitpunkt: datetime, holen=None) -> dict:
         "Warnung" if fehler or fehlen or probe["fehler"] else "in Ordnung")
     ergebnis = {"stand": idx["stand"], "zustand": zustand, "devisen_fehler": fehler,
                 "ohne_archiv": sorted(w["name"] for w in fehlen), "probe": probe["gesamt"],
-                "probe_fehler": probe["fehler"], "werte": len(idx["werte"])}
+                "probe_fehler": probe["fehler"], "werte": len(idx["werte"]), "handspur": probe.get("handspur")}
     status = ("Agent: Schattendepot (Vorbereitung auf GitHub; gerechnet wird beim Depot-Agenten)\n"
               f"Stand: {zeitpunkt.strftime('%d.%m.%Y, %H:%M')}\n"
               f"Zustand: {zustand}\n"
@@ -141,6 +160,10 @@ def lauf(zeitpunkt: datetime, holen=None) -> dict:
               f"Werte: {len(idx['werte'])}, davon ohne Kursarchiv: {len(fehlen)}\n"
               f"Probe ohne Metall: {probe['gesamt']['offen']['anzahl']} offene, "
               f"{probe['gesamt']['geschlossen']['anzahl']} geschlossene gedachte Positionen\n")
+    if probe.get("handspur"):
+        h = probe["handspur"]
+        status += (f"Handspur (getrennt vom Gesamtstand): {h['offen']['anzahl']} offene, "
+                   f"{h['geschlossen']['anzahl']} geschlossene, {h['wartet']} Kauf ausstehend\n")
     if fehler:
         status += "Devisen: " + "; ".join(fehler)[:300] + "\n"
     speicher.schreibe_text(konfig.ABGABE / "status-depot.md", status)

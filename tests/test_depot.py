@@ -244,3 +244,194 @@ def test_regel2_hinweise(basis):
     assert h["ticker"] == "PPTA" and h["datum"] == "2026-10-01" and h["kurs"] == 17.5
     e = depot.werkzeug().rechnen(basis, date(2026, 9, 30), ZUSATZ[:1])    # 18,00 liegt 2,3 % über 17,60
     assert any(h["art"] == "grenze_nah" and h["ticker"] == "PPTA" for h in e["regel_hinweise"])
+
+
+# ------------------------------------------------------------------ Handspur (A135, A136; Fassung 1.2)
+# Ausschnitt aus den echten Archiven daten/preise/COCO_L.csv und daten/depot/kurse/EURUSD_X.csv (Stand 14.11.2026),
+# fest eingetragen, weil der tägliche Lauf die Archive neu schreibt.
+COCO_AUSSCHNITT = {"2026-07-31": 8.7875, "2026-08-03": 9.57, "2026-08-04": 9.5775, "2026-08-05": 9.555,
+                   "2026-08-06": 9.4462, "2026-08-07": 9.4225, "2026-08-10": 9.415, "2026-08-11": 9.04,
+                   "2026-08-12": 9.15, "2026-08-13": 9.115, "2026-08-14": 9.235, "2026-08-17": 9.5463,
+                   "2026-08-18": 9.4875, "2026-08-19": 9.6225, "2026-08-20": 9.7288, "2026-08-21": 9.665}
+EURUSD_AUSSCHNITT = {"2026-07-31": 1.1524, "2026-08-03": 1.1544, "2026-08-04": 1.1507, "2026-08-05": 1.1532,
+                     "2026-08-06": 1.1557, "2026-08-07": 1.1525, "2026-08-10": 1.1556, "2026-08-11": 1.1546,
+                     "2026-08-12": 1.1544, "2026-08-13": 1.153, "2026-08-14": 1.1535, "2026-08-17": 1.1574,
+                     "2026-08-18": 1.1583, "2026-08-19": 1.1579, "2026-08-20": 1.1674, "2026-08-21": 1.1688}
+HAND_REGEL = {"name": "Handspur: 20 Prozent unter dem Höchststand, spätestens nach 180 Tagen",
+              "kalendertage": 180, "nachlauf": 0.2}
+
+
+def _hand_basis(tmp_path, eintraege, werte, archive, devisen=None):
+    """Nur die Handspur: Index mit dem Zweig hand, den genannten Werten und Archiven."""
+    b = tmp_path
+    for pfad, reihe in {**archive, "daten/depot/kurse/EURUSD_X.csv": devisen or EURUSD_AUSSCHNITT}.items():
+        _archiv(b / pfad, reihe)
+    index = {"stand": "2026-11-14T23:00:00+01:00", "betrag": 1000, "basis": "EUR",
+             "devisen": {"USD": "daten/depot/kurse/EURUSD_X.csv"}, "werte": werte, "vergleiche": {},
+             "zweige": {"hand": {"name": "Handeingabe", "gilt": "bisher", "regel": HAND_REGEL,
+                                 "regel_name": HAND_REGEL["name"],
+                                 "quelle": {"art": "hand", "herkunft": "konfig/depot.yaml", "eintraege": eintraege}}},
+             "dateien": ["daten/depot/index.json"]}
+    (b / "daten/depot/index.json").write_text(json.dumps(index), encoding="utf-8")
+    return b
+
+
+def _usd(name, ticker):
+    return {"name": name, "zweig": "kakao", "waehrung": "USD", "archiv": f"daten/preise/{ticker.replace('.', '_')}.csv",
+            "vergleich": None}
+
+
+def test_handspur_bekannter_fall(tmp_path):
+    """Probe 1: Kauf am 03.08.2026 zum Schluss 9,57 USD bei 1,1544 USD je Euro, bewertet am 21.08.
+
+    Von Hand: Menge 1000 × 1,1544 ÷ 9,57 = 120,626959; Wert 120,626959 × 9,665 ÷ 1,1688 = 997,48 Euro (−0,25 %,
+    in Dollar +0,99 %); Höchststand seit Einstieg 9,7288 am 20.08., Grenze 0,8 × 9,7288 = 7,78304, Abstand
+    9,665 ÷ 7,78304 − 1 = 24,18 %; Frist 03.08. + 180 Tage = 30.01.2027, am 21.08. noch 162 Tage.
+    """
+    b = _hand_basis(tmp_path, [{"ticker": "COCO.L", "seit": "2026-08-03", "anlass": "Probe", "ampel": "Kakao Gelb, Zahl 10"}],
+                    {"COCO.L": _usd("WisdomTree Cocoa (ETC)", "COCO.L")}, {"daten/preise/COCO_L.csv": COCO_AUSSCHNITT})
+    e = depot.werkzeug().rechnen(b, date(2026, 8, 21))
+    p = _pos(e, "COCO.L")
+    assert p["zweig"] == "hand" and p["offen"] and p["status"] == "ok" and p["waehrung"] == "USD"
+    assert p["anlass"] == "Probe" and p["ampel"] == "Kakao Gelb, Zahl 10"
+    assert p["einstieg"] == {"kurs": 9.57, "datum": "2026-08-03", "devisen": 1.1544}
+    assert p["ende"] == {"kurs": 9.665, "datum": "2026-08-21", "devisen": 1.1688, "art": "heute"}
+    assert p["menge"] == 120.626959 and p["wert_eur"] == 997.48
+    assert p["veraenderung_eur"] == -0.0025 and p["veraenderung_lokal"] == 0.0099
+    g = p["regel"]["grenze"]
+    assert g["hoechststand"] == 9.7288 and g["hoechststand_datum"] == "2026-08-20"
+    assert g["grenze"] == 7.78304 and g["abstand"] == 0.2418 and g["erreicht_am"] is None
+    assert p["regel"]["frist"] == "2027-01-30" and p["regel"]["tage_bis_frist"] == 162
+    assert p["regel"]["beschreibung"] == "nach 180 Tagen, außerdem bei 20 Prozent unter dem Höchststand"
+    assert e["handspur"]["offen"] == {"anzahl": 1, "einsatz_eur": 1000.0, "wert_eur": 997.48,
+                                      "veraenderung_eur": -0.0025, "ergebnis_eur": -2.52}
+    assert e["handspur"]["wartet"] == 0 and e["gesamt"]["zusammen"]["anzahl"] == 0
+    assert "hand" not in e["zweige"] and e["fehler"] == [] and e["regel_hinweise"] == []
+    frueh = depot.werkzeug().rechnen(b, date(2026, 8, 7))
+    assert [h["art"] for h in frueh["regel_hinweise"]] == ["neu_gekauft"]
+    assert frueh["regel_hinweise"][0]["anlass"] == "Probe"
+
+
+def test_handspur_schluss_von_selbst(tmp_path):
+    """Probe 2: Grenze 20 Prozent unter dem Höchststand, Frist 180 Tage, am selben Tag zählt die Grenze.
+
+    Kauf jeweils am Montag, 05.01.2026, zu 10 USD; Frist 05.01. + 180 = Samstag, 04.07.2026, also Schluss zum
+    ersten Kurs danach, Montag, 06.07. Der Dollar steht fest bei 1,25 je Euro.
+    """
+    fx = _stufen("2026-01-01", "2026-12-31", {"2026-01-01": 1.25})
+    grenze = _stufen("2026-01-05", "2026-03-31", {"2026-01-05": 10.0, "2026-01-12": 11.0, "2026-01-20": 12.5,
+                                                  "2026-01-27": 10.4, "2026-02-02": 10.0, "2026-02-03": 9.0})
+    seitwaerts = _stufen("2026-01-05", "2026-07-31", {"2026-01-05": 10.0, "2026-03-02": 10.4, "2026-05-04": 9.8})
+    selber_tag = _stufen("2026-01-05", "2026-07-31", {"2026-01-05": 10.0, "2026-02-02": 11.0, "2026-07-06": 8.8,
+                                                      "2026-07-07": 9.5})
+    werte = {t: _usd(t, t) for t in ("GRZ.L", "FRS.L", "TAG.L")}
+    b = _hand_basis(tmp_path, [{"ticker": t, "seit": "2026-01-05", "anlass": t, "ampel": None} for t in werte], werte,
+                    {"daten/preise/GRZ_L.csv": grenze, "daten/preise/FRS_L.csv": seitwaerts,
+                     "daten/preise/TAG_L.csv": selber_tag}, devisen=fx)
+    e = depot.werkzeug().rechnen(b, date(2026, 7, 31))
+
+    grz = _pos(e, "GRZ.L")              # Höchststand 12,50 am 20.01., Grenze 10,00, am 02.02. erreicht
+    assert not grz["offen"] and grz["schluss"] == "2026-02-02" and grz["grund"] == "Grenze 20 Prozent unter dem Höchststand"
+    assert grz["ende"] == {"kurs": 10.0, "datum": "2026-02-02", "devisen": 1.25, "art": "Schluss"}
+    assert grz["wert_eur"] == 1000.0 and grz["hoechster"] == 0.25
+    assert grz["regel"]["grenze"]["erreicht_am"] == {"datum": "2026-02-02", "kurs": 10.0}
+
+    frs = _pos(e, "FRS.L")              # nie 20 Prozent unter 10,40: Schluss zur Frist am 06.07. zu 9,80
+    assert not frs["offen"] and frs["schluss"] == "2026-07-06" and frs["grund"] == "Frist 180 Tage"
+    assert frs["wert_eur"] == 980.0 and frs["tage"] == 182
+
+    tag = _pos(e, "TAG.L")              # 8,80 am Fristtag liegt auf der Grenze unter 11,00: die Grenze zählt
+    assert tag["schluss"] == "2026-07-06" and tag["grund"] == "Grenze 20 Prozent unter dem Höchststand"
+    assert tag["wert_eur"] == 880.0
+
+    assert e["handspur"]["geschlossen"]["anzahl"] == 3 and e["handspur"]["offen"]["anzahl"] == 0
+    assert e["handspur"]["geschlossen"]["wert_eur"] == 2860.0
+    assert e["regel_hinweise"] == []                                 # alle Schlüsse älter als eine Woche
+    zwei_tage = depot.werkzeug().rechnen(b, date(2026, 7, 8))
+    arten = {(h["art"], h["ticker"]) for h in zwei_tage["regel_hinweise"]}
+    assert arten == {("neu_geschlossen", "FRS.L"), ("neu_geschlossen", "TAG.L")}   # GRZ schloss vor Monaten
+
+    # Vor dem Schluss: offen, mit den Hinweisen grenze_nah und frist_bald, nie grenze_erreicht oder frist_erreicht
+    vorher = depot.werkzeug().rechnen(b, date(2026, 1, 30))         # 10,40 liegt 4 Prozent über der Grenze 10,00
+    assert _pos(vorher, "GRZ.L")["offen"] and _pos(vorher, "GRZ.L")["regel"]["grenze"]["abstand"] == 0.04
+    assert ("grenze_nah", "GRZ.L") in {(x["art"], x["ticker"]) for x in vorher["regel_hinweise"]}
+    vorher = depot.werkzeug().rechnen(b, date(2026, 6, 30))
+    h = {(x["art"], x["ticker"]) for x in vorher["regel_hinweise"]}
+    assert ("frist_bald", "FRS.L") in h and ("frist_bald", "TAG.L") in h
+    am_samstag = depot.werkzeug().rechnen(b, date(2026, 7, 4))     # Frist erreicht, Schluss erst am Montag
+    assert _pos(am_samstag, "FRS.L")["offen"]
+    assert not any(x["art"] in ("frist_erreicht", "grenze_erreicht") for x in am_samstag["regel_hinweise"])
+    knapp = depot.werkzeug().rechnen(b, date(2026, 2, 2))
+    assert not _pos(knapp, "GRZ.L")["offen"]                         # am Tag der Grenze schon geschlossen
+    assert ("neu_geschlossen", "GRZ.L") in {(x["art"], x["ticker"]) for x in knapp["regel_hinweise"]}
+
+
+def test_handspur_kuenstliche_ausfaelle(tmp_path):
+    """Probe 3: ausstehender Kauf, unbekannter Wert, Wert ohne Währung, fehlendes Kursarchiv, Eintrag ohne seit."""
+    werte = {"COCO.L": _usd("WisdomTree Cocoa (ETC)", "COCO.L"),
+             "OHNEW.L": {**_usd("ohne Währung", "OHNEW.L"), "waehrung": None},
+             "OHNEA.L": _usd("ohne Archiv", "OHNEA.L")}
+    eintraege = [{"ticker": "COCO.L", "seit": "2026-11-16", "anlass": "Kakao", "ampel": None},
+                 {"ticker": "UNBEKANNT", "seit": "2026-08-03"},
+                 {"ticker": "OHNEW.L", "seit": "2026-08-03"},
+                 {"ticker": "OHNEA.L", "seit": "2026-08-03"},
+                 {"ticker": "COCO.L", "anlass": "ohne Kauftag"},
+                 {"ticker": "COCO.L", "seit": "16.11.2026"}]
+    b = _hand_basis(tmp_path, eintraege, werte,
+                    {"daten/preise/COCO_L.csv": COCO_AUSSCHNITT, "daten/preise/OHNEW_L.csv": COCO_AUSSCHNITT})
+    e = depot.werkzeug().rechnen(b, date(2026, 11, 14))
+    coco = _pos(e, "COCO.L")
+    assert coco["status"] == "Kauf am 2026-11-16 steht noch aus" and coco["wartet"] and coco["offen"]
+    assert _pos(e, "OHNEW.L")["status"] == "ohne Währung"
+    assert _pos(e, "OHNEA.L")["status"] == "ohne Kursarchiv"
+    assert e["handspur"]["wartet"] == 1 and e["handspur"]["offen"]["anzahl"] == 0
+    assert "Wert UNBEKANNT fehlt im Index" in e["fehler"]
+    assert "OHNEW.L: ohne Währung" in e["fehler"] and "OHNEA.L: ohne Kursarchiv" in e["fehler"]
+    assert sum(f.startswith("Handeingabe ohne ticker oder gültiges seit") for f in e["fehler"]) == 2
+    assert not any("steht noch aus" in f for f in e["fehler"])            # ein ausstehender Kauf ist kein Fehler
+    arten = {(h["art"], h["ticker"]) for h in e["regel_hinweise"]}
+    assert arten == {("nicht_bewertbar", "OHNEW.L"), ("nicht_bewertbar", "OHNEA.L")}
+    # Kauftag schon vorbei, aber noch kein Kurs bis heute: steht ebenfalls noch aus
+    b2 = _hand_basis(tmp_path / "b2", [{"ticker": "COCO.L", "seit": "2026-08-22"}],
+                     {"COCO.L": _usd("WisdomTree Cocoa (ETC)", "COCO.L")}, {"daten/preise/COCO_L.csv": COCO_AUSSCHNITT})
+    assert _pos(depot.werkzeug().rechnen(b2, date(2026, 8, 24)), "COCO.L")["status"] == "Kauf am 2026-08-22 steht noch aus"
+
+
+def test_handspur_gegenprobe(basis):
+    """Probe 4: Gesamtstand, Zweige, übrige Positionen, Hinweise und Fehler sind mit und ohne Handspur gleich."""
+    ohne = depot.werkzeug().rechnen(basis, HEUTE, ZUSATZ)
+    idx_pfad = basis / "daten/depot/index.json"
+    idx = json.loads(idx_pfad.read_text(encoding="utf-8"))
+    idx["werte"]["COCO.L"] = _usd("WisdomTree Cocoa (ETC)", "COCO.L")
+    idx["zweige"]["hand"] = {"name": "Handeingabe", "gilt": "bisher", "regel": HAND_REGEL, "regel_name": HAND_REGEL["name"],
+                             "quelle": {"art": "hand", "eintraege": [{"ticker": "COCO.L", "seit": "2026-08-03"}]}}
+    idx_pfad.write_text(json.dumps(idx), encoding="utf-8")
+    _archiv(basis / "daten/preise/COCO_L.csv", COCO_AUSSCHNITT)
+    mit = depot.werkzeug().rechnen(basis, HEUTE, ZUSATZ)
+    assert mit["gesamt"] == ohne["gesamt"] and mit["zweige"] == ohne["zweige"]
+    assert [p for p in mit["positionen"] if p["zweig"] != "hand"] == ohne["positionen"]
+    assert [h for h in mit["regel_hinweise"] if h["zweig"] != "hand"] == ohne["regel_hinweise"]
+    assert mit["fehler"] == ohne["fehler"] and "handspur" not in ohne
+    assert mit["handspur"]["offen"]["anzahl"] == 1 and _pos(mit, "COCO.L")["zweig"] == "hand"
+
+
+def test_index_mit_handspur(ablage):
+    """Der Index führt die Handspur aus dem Formular als Zweig hand; COCO.L rechnet in Dollar (A136, W1)."""
+    d = konfig.lade_yaml(konfig.KONFIG / "depot.yaml")
+    zeit = datetime(2026, 11, 14, 23, 0, tzinfo=konfig.ZEITZONE)
+    idx = depot.index(d, {}, zeit)
+    hand = idx["zweige"]["hand"]
+    assert hand["quelle"]["art"] == "hand" and hand["gilt"] == "bisher"
+    assert hand["regel"]["kalendertage"] == 180 and hand["regel"]["nachlauf"] == 0.2
+    assert {"ticker": "COCO.L", "seit": "2026-11-16"}.items() <= hand["quelle"]["eintraege"][0].items()
+    assert idx["werte"]["COCO.L"]["waehrung"] == "USD" and idx["werte"]["COCO.L"]["zweig"] == "kakao"
+    # Ein Wert, den nur die Handspur führt: mit Name und Börse dabei, ohne Name nicht
+    d2 = {**d, "handeingaben": {"regel": HAND_REGEL, "eintraege": [
+        {"ticker": "NUR.N", "seit": date(2026, 11, 16), "name": "Nur Hand", "boerse": "NYSE"},
+        {"ticker": "OHNE.N", "seit": "2026-11-16"}]}}
+    idx = depot.index(d2, {}, zeit)
+    assert idx["werte"]["NUR.N"] == {"name": "Nur Hand", "zweig": "hand", "waehrung": "USD",
+                                     "archiv": "daten/preise/NUR_N.csv", "vergleich": None}
+    assert "OHNE.N" not in idx["werte"] and idx["zweige"]["hand"]["quelle"]["eintraege"][0]["seit"] == "2026-11-16"
+    assert "daten/preise/NUR_N.csv" in idx["dateien"]
+    assert "hand" not in depot.index({k: v for k, v in d.items() if k != "handeingaben"}, {}, zeit)["zweige"]

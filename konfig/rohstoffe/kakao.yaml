@@ -70,5 +70,5 @@ preis:
 # Millionen Kleinbauern liegt. Barry Callebaut ist Verarbeiter und LEIDET unter hohen
 # Kakaopreisen — Sensor, nicht Kauf.
 instrumente:
-  - {art: ETC,   name: "WisdomTree Cocoa (ETC)", ticker: COCO.L,  boerse: LSE,  hinweis: "bildet den Weltmarktpreis direkt ab, keine Firma dazwischen"}
+  - {art: ETC,   name: "WisdomTree Cocoa (ETC)", ticker: COCO.L,  boerse: LSE,  waehrung: USD, hinweis: "bildet den Weltmarktpreis direkt ab, keine Firma dazwischen"}
   - {art: Aktie, name: "Barry Callebaut",        ticker: BARN.SW, boerse: SIX,  hinweis: "Verarbeiter; hoher Kakaopreis drückt die Marge — ausdrücklich Sensor, kein Kauf"}
