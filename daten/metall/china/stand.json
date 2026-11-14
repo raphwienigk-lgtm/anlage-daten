@@ -1,13 +1,13 @@
 {
-  "stand": "2026-11-13T04:24:00+01:00",
-  "datum": "2026-11-13",
+  "stand": "2026-11-14T04:11:40+01:00",
+  "datum": "2026-11-14",
   "version": "0.1.0",
   "land": "china",
   "name": "China-Ausfuhr",
   "laenderpaar": "China ↔ USA über Halbleiter",
   "rolle": "sensor",
   "hinweis": "Denkhilfe, keine Anlageberatung. Rot setzt nur der Metall-Wächter in der Cloud.",
-  "zustand": "in Ordnung",
+  "zustand": "Warnung",
   "reihenfolge": [
     "chip",
     "magnet",
@@ -45,20 +45,14 @@
         {
           "kanal": "frist",
           "kennung": "aussetzung_usa_ga_ge_sb",
-          "tage": 14,
+          "tage": 13,
           "zustand": "läuft bald aus"
-        },
-        {
-          "kanal": "trocken",
-          "standort": "qujing",
-          "anteil": 0.59
         }
       ],
       "kanaele": [
-        "frist",
-        "trocken"
+        "frist"
       ],
-      "mehrfach": true,
+      "mehrfach": false,
       "instrumente": [
         "PPTA",
         "UAMY"
@@ -82,7 +76,7 @@
         {
           "kanal": "frist",
           "kennung": "aussetzung_okt2025",
-          "tage": -3,
+          "tage": -4,
           "zustand": "abgelaufen"
         }
       ],
@@ -113,7 +107,7 @@
         {
           "kanal": "frist",
           "kennung": "aussetzung_okt2025",
-          "tage": -3,
+          "tage": -4,
           "zustand": "abgelaufen"
         },
         {
@@ -163,7 +157,7 @@
       "bis": "2026-11-10",
       "urspruenglich_bis": "2026-11-10",
       "verlaengert": false,
-      "tage": -3,
+      "tage": -4,
       "zustand": "abgelaufen",
       "gelb": true,
       "rot_pruefen": true,
@@ -179,7 +173,7 @@
       "bis": "2026-11-27",
       "urspruenglich_bis": "2026-11-27",
       "verlaengert": false,
-      "tage": 14,
+      "tage": 13,
       "zustand": "läuft bald aus",
       "gelb": true,
       "rot_pruefen": false,
@@ -461,35 +455,25 @@
     "erdbeben_gesamt": 2,
     "starkregen_gemessen": [],
     "starkregen_vorhergesagt": [],
-    "regen_hoechst_mm": {
-      "lengshuijiang": 23.1,
-      "hechi": 10.3,
-      "lincang": 75.6,
-      "qujing": 21.2,
-      "pingguo": 14.1,
-      "zibo": 15.6,
-      "baotou": 1.0,
-      "ganzhou": 17.5,
-      "jixi": 27.9
-    },
+    "regen_hoechst_mm": null,
     "trocken": {
       "lincang": {
-        "von": "2026-08-10",
-        "bis": "2026-11-07",
-        "summe_mm": 375,
-        "normal_mm": 538,
+        "von": "2026-08-11",
+        "bis": "2026-11-08",
+        "summe_mm": 403,
+        "normal_mm": 530,
         "urteil": "normal",
-        "anteil": 0.7,
+        "anteil": 0.76,
         "trocken": false
       },
       "qujing": {
-        "von": "2026-08-10",
-        "bis": "2026-11-07",
-        "summe_mm": 208,
-        "normal_mm": 352,
-        "urteil": "trocken",
-        "anteil": 0.59,
-        "trocken": true
+        "von": "2026-08-11",
+        "bis": "2026-11-08",
+        "summe_mm": 219,
+        "normal_mm": 347,
+        "urteil": "normal",
+        "anteil": 0.63,
+        "trocken": false
       }
     },
     "gelb_tage": 30
@@ -501,16 +485,16 @@
       "rolle": "kandidat",
       "hinweis": "Antimon-Projekt Stibnite in Idaho, noch ohne Förderung",
       "waehrung": "USD",
-      "letzter": "2026-11-12",
-      "schluss": 17.82,
+      "letzter": "2026-11-13",
+      "schluss": 17.78,
       "alter_tage": 1,
-      "r_kurz": 0.0639,
-      "vorsprung_kurz": 0.0105,
-      "r_lang": -0.0375,
-      "vorsprung_lang": 0.0226,
+      "r_kurz": -0.0896,
+      "vorsprung_kurz": -0.0927,
+      "r_lang": -0.0744,
+      "vorsprung_lang": -0.0033,
       "urteil": "schläft",
       "markt_schlaeft": true,
-      "handel": 23029931,
+      "handel": 22735907,
       "duenn": false
     },
     "UAMY": {
@@ -519,16 +503,16 @@
       "rolle": "kandidat",
       "hinweis": "kleiner Antimon-Verarbeiter in den USA und Mexiko",
       "waehrung": "USD",
-      "letzter": "2026-11-12",
-      "schluss": 2.91,
+      "letzter": "2026-11-13",
+      "schluss": 3.09,
       "alter_tage": 1,
-      "r_kurz": 0.1236,
-      "vorsprung_kurz": 0.0701,
-      "r_lang": 0.0468,
-      "vorsprung_lang": 0.1069,
-      "urteil": "schläft",
-      "markt_schlaeft": true,
-      "handel": 21608170,
+      "r_kurz": 0.0957,
+      "vorsprung_kurz": 0.0926,
+      "r_lang": 0.0842,
+      "vorsprung_lang": 0.1554,
+      "urteil": "gelaufen",
+      "markt_schlaeft": false,
+      "handel": 21026793,
       "duenn": false
     },
     "MP": {
@@ -537,13 +521,13 @@
       "rolle": "beobachtung",
       "hinweis": "seltene Erden USA; seit 22.06.2026 selbst auf Chinas Exportkontrollliste",
       "waehrung": "USD",
-      "letzter": "2026-11-12",
-      "schluss": 37.45,
+      "letzter": "2026-11-13",
+      "schluss": 38.76,
       "alter_tage": 1,
-      "r_kurz": 0.11,
-      "vorsprung_kurz": 0.0565,
-      "r_lang": -0.1,
-      "vorsprung_lang": -0.0399,
+      "r_kurz": 0.0946,
+      "vorsprung_kurz": 0.0915,
+      "r_lang": -0.0351,
+      "vorsprung_lang": 0.036,
       "urteil": "schläft",
       "markt_schlaeft": true,
       "handel": 231050976,
@@ -555,16 +539,16 @@
       "rolle": "beobachtung",
       "hinweis": "größter Produzent seltener Erden außerhalb Chinas",
       "waehrung": "AUD",
-      "letzter": "2026-11-12",
-      "schluss": 13.34,
+      "letzter": "2026-11-13",
+      "schluss": 13.19,
       "alter_tage": 1,
-      "r_kurz": 0.0301,
-      "vorsprung_kurz": -0.0233,
-      "r_lang": 0.234,
-      "vorsprung_lang": 0.2941,
+      "r_kurz": 0.0715,
+      "vorsprung_kurz": 0.0684,
+      "r_lang": 0.1915,
+      "vorsprung_lang": 0.2627,
       "urteil": "gelaufen",
       "markt_schlaeft": false,
-      "handel": 60298470,
+      "handel": 60682078,
       "duenn": false
     }
   },
@@ -898,8 +882,8 @@
     },
     "openmeteo_vorhersage": {
       "name": "Open-Meteo · Regen der letzten Tage und Vorhersage",
-      "status": "ok",
-      "meldung": null
+      "status": "Fehler",
+      "meldung": "AbrufFehler: ReadTimeout bei https://api.open-meteo.com/v1/forecast: HTTPSConnectionPool(host='api.open-meteo.com', port=443): Read timed out. (read timeout=45)"
     },
     "openmeteo": {
       "name": "Open-Meteo · ERA5-Reanalyse (Regen, Wind)",

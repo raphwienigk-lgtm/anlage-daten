@@ -1,5 +1,5 @@
 Agent: Metall-Wächter Kongo-Kobalt (Datenlauf auf GitHub)
-Stand: 13.11.2026, 04:25
+Stand: 14.11.2026, 04:17
 Zustand: in Ordnung
 Ergebnis: abgabe/metall-kongo-teil-1.md, daten/metall/kongo/stand.json
 Stufen: Kobalt-Achse Grün

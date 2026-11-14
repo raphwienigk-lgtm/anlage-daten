@@ -1,13 +1,13 @@
 {
-  "stand": "2026-11-13T04:24:06+01:00",
-  "datum": "2026-11-13",
+  "stand": "2026-11-14T04:14:14+01:00",
+  "datum": "2026-11-14",
   "version": "0.1.0",
   "land": "indonesien",
   "name": "Indonesien-Ausfuhr",
   "laenderpaar": "Indonesien ↔ EU und China über Verhüttungspflicht und Edelstahl",
   "rolle": "sensor",
   "hinweis": "Denkhilfe, keine Anlageberatung. Rot setzt nur der Metall-Wächter in der Cloud.",
-  "zustand": "in Ordnung",
+  "zustand": "Warnung",
   "reihenfolge": [
     "nickel",
     "zinn"
@@ -76,7 +76,7 @@
       "bis": "2026-12-31",
       "urspruenglich_bis": "2026-12-31",
       "verlaengert": false,
-      "tage": 48,
+      "tage": 47,
       "zustand": "läuft",
       "gelb": false,
       "rot_pruefen": false,
@@ -92,7 +92,7 @@
       "bis": "2026-12-31",
       "urspruenglich_bis": "2026-12-31",
       "verlaengert": false,
-      "tage": 48,
+      "tage": 47,
       "zustand": "läuft",
       "gelb": false,
       "rot_pruefen": false,
@@ -109,7 +109,7 @@
       "bis": "2027-01-01",
       "urspruenglich_bis": "2027-01-01",
       "verlaengert": false,
-      "tage": 49,
+      "tage": 48,
       "zustand": "läuft",
       "gelb": false,
       "rot_pruefen": false,
@@ -120,6 +120,30 @@
     "herkunft": "frisch",
     "tage": 30,
     "dokumente": [
+      {
+        "nummer": "2026-23083",
+        "titel": "Stainless Steel Bar From India: Final Results of Antidumping Duty Administrative Review; 2024-2025",
+        "datum": "2026-11-13",
+        "art": "Notice",
+        "behoerden": [
+          "commerce-department",
+          "international-trade-administration"
+        ],
+        "behoerden_namen": [
+          "Commerce Department",
+          "International Trade Administration"
+        ],
+        "url": "https://www.federalregister.gov/documents/2026/11/13/2026-23083/stainless-steel-bar-from-india-final-results-of-antidumping-duty-administrative-review-2024-2025",
+        "zusammenfassung": "The U.S. Department of Commerce (Commerce) determines that producers and/or exporters subject to this administrative review made sales of stainless steel bar from India at prices below normal value during the period of review (POR) February 1, 2024, through January 31, 2025.",
+        "begriffe": [
+          "stainless steel"
+        ],
+        "achsen": [
+          "nickel"
+        ],
+        "gewichtig": false,
+        "neu": true
+      },
       {
         "nummer": "2026-22938",
         "titel": "Tin Mill Products From Taiwan: Preliminary Affirmative Determination of Sales at Less Than Fair Value, Postponement of Final Determination, and Extension of Provisional Measures",
@@ -456,30 +480,6 @@
         ],
         "gewichtig": false,
         "neu": false
-      },
-      {
-        "nummer": "2026-20897",
-        "titel": "Certain Corrosion-Resistant Steel Products From Taiwan: Preliminary Results and Rescission, in Part, of Antidumping Duty Administrative Review; 2024-2025",
-        "datum": "2026-10-14",
-        "art": "Notice",
-        "behoerden": [
-          "commerce-department",
-          "international-trade-administration"
-        ],
-        "behoerden_namen": [
-          "Commerce Department",
-          "International Trade Administration"
-        ],
-        "url": "https://www.federalregister.gov/documents/2026/10/14/2026-20897/certain-corrosion-resistant-steel-products-from-taiwan-preliminary-results-and-rescission-in-part-of",
-        "zusammenfassung": "The U.S. Department of Commerce (Commerce) preliminarily determines that certain corrosion-resistant steel products (CORE) from Taiwan are being sold in the United States at below normal value during the period of review (POR), July 1, 2024, through June 30, 2025. We invite interested parties to comment on these preliminary results.",
-        "begriffe": [
-          "nickel"
-        ],
-        "achsen": [
-          "nickel"
-        ],
-        "gewichtig": false,
-        "neu": false
       }
     ]
   },
@@ -488,21 +488,13 @@
     "erdbeben_gesamt": 11,
     "starkregen_gemessen": [],
     "starkregen_vorhergesagt": [],
-    "regen_hoechst_mm": {
-      "morowali": 9.8,
-      "weda_bay": 18.0,
-      "sorowako": 15.0,
-      "pomalaa": 16.0,
-      "bangka": 25.8,
-      "belitung": 25.5,
-      "muntok": 24.3
-    },
+    "regen_hoechst_mm": null,
     "trocken": {
       "sorowako": {
-        "von": "2026-08-10",
-        "bis": "2026-11-07",
-        "summe_mm": 65,
-        "normal_mm": 506,
+        "von": "2026-08-11",
+        "bis": "2026-11-08",
+        "summe_mm": 64,
+        "normal_mm": 507,
         "urteil": "trocken",
         "anteil": 0.13,
         "trocken": true
@@ -517,16 +509,16 @@
       "rolle": "beobachtung",
       "hinweis": "bildet den LME-Nickelpreis ab, kein Länderrisiko, keine Verwässerung",
       "waehrung": "USD",
-      "letzter": "2026-11-11",
-      "schluss": 14.02,
+      "letzter": "2026-11-12",
+      "schluss": 13.995,
       "alter_tage": 2,
-      "r_kurz": 0.0279,
-      "vorsprung_kurz": 0.031,
-      "r_lang": 0.0432,
-      "vorsprung_lang": 0.0491,
+      "r_kurz": -0.0074,
+      "vorsprung_kurz": 0.0082,
+      "r_lang": 0.0618,
+      "vorsprung_lang": 0.07,
       "urteil": "schläft",
       "markt_schlaeft": true,
-      "handel": 36421,
+      "handel": 42834,
       "duenn": true
     },
     "TINM.L": {
@@ -535,16 +527,16 @@
       "rolle": "beobachtung",
       "hinweis": "bildet den LME-Zinnpreis ab",
       "waehrung": "USD",
-      "letzter": "2026-11-12",
-      "schluss": 107.195,
+      "letzter": "2026-11-13",
+      "schluss": 107.67,
       "alter_tage": 1,
-      "r_kurz": 0.0094,
-      "vorsprung_kurz": 0.0125,
-      "r_lang": -0.0747,
-      "vorsprung_lang": -0.0687,
+      "r_kurz": 0.0065,
+      "vorsprung_kurz": 0.0222,
+      "r_lang": -0.0675,
+      "vorsprung_lang": -0.0593,
       "urteil": "schläft",
       "markt_schlaeft": true,
-      "handel": 5922,
+      "handel": 5684,
       "duenn": true
     }
   },
@@ -726,8 +718,8 @@
     },
     "openmeteo_vorhersage": {
       "name": "Open-Meteo · Regen der letzten Tage und Vorhersage",
-      "status": "ok",
-      "meldung": null
+      "status": "Fehler",
+      "meldung": "AbrufFehler: ReadTimeout bei https://api.open-meteo.com/v1/forecast: HTTPSConnectionPool(host='api.open-meteo.com', port=443): Read timed out. (read timeout=45)"
     },
     "openmeteo": {
       "name": "Open-Meteo · ERA5-Reanalyse (Regen, Wind)",
