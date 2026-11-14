@@ -82,8 +82,8 @@ fristen:
     nummer: 70                # Bekanntmachung des Handelsministeriums
     achsen: [magnet, batterie]
     bis: 2026-11-10
-    stand: "USA melden am 24.09.2026 eine Verlängerung des Waffenstillstands bis zum 10.01.2027; die formelle Bekanntmachung aus Peking steht aus"
-    verlaengert_bis: null     # erst eintragen, wenn MOFCOM die Verlängerung bekannt gibt
+    stand: "Formell verlängert bis 10.01.2027: Bekanntmachung von Handelsministerium und Zollbehörde vom 09.11.2026 (berichtet von NetEase, Zijing, MLQ.ai); eingetragen am 14.11.2026"
+    verlaengert_bis: 2027-01-10  # Bekanntmachung MOFCOM und Zoll vom 09.11.2026
   - kennung: aussetzung_usa_ga_ge_sb
     name: "Aussetzung des Ausfuhrverbots in die USA für Gallium, Germanium, Antimon und superharte Materialien"
     nummer: 72
