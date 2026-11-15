@@ -1,6 +1,6 @@
 {
-  "stand": "2026-11-14T04:22:59+01:00",
-  "datum": "2026-11-14",
+  "stand": "2026-11-15T03:46:33+01:00",
+  "datum": "2026-11-15",
   "version": "0.1.0",
   "hinweis": "Denkhilfe, keine Anlageberatung. Score und Schwellen sind vorläufig, bis das Backtesting steht.",
   "zustand": "in Ordnung",
@@ -21,7 +21,7 @@
     "regen": {
       "name": "Open-Meteo Regen",
       "status": "ok",
-      "stand": "2026-11-12",
+      "stand": "2026-11-13",
       "meldung": null
     },
     "wind": {
@@ -45,7 +45,7 @@
     "yahoo:COCO.L": {
       "name": "Yahoo COCO.L",
       "status": "ok",
-      "stand": "2026-11-12",
+      "stand": "2026-11-13",
       "meldung": null
     },
     "yahoo:E5H.SI": {
@@ -196,44 +196,44 @@
           "aktuell": {
             "status": "gemessen",
             "an": true,
-            "anteil": 0.506,
+            "anteil": 0.517,
             "zeitraum_tage": 90,
-            "bis": "2026-11-08",
+            "bis": "2026-11-09",
             "punkte": {
               "Riau, Sumatra": {
                 "tage": 90,
-                "summe_mm": 427.8,
-                "normal_mm": 628.5,
-                "anteil": 0.681,
-                "bis": "2026-11-08"
+                "summe_mm": 436.0,
+                "normal_mm": 634.6,
+                "anteil": 0.687,
+                "bis": "2026-11-09"
               },
               "Jambi, Sumatra": {
                 "tage": 90,
-                "summe_mm": 199.9,
-                "normal_mm": 555.1,
-                "anteil": 0.36,
-                "bis": "2026-11-08"
+                "summe_mm": 200.0,
+                "normal_mm": 561.0,
+                "anteil": 0.356,
+                "bis": "2026-11-09"
               },
               "Zentral-Kalimantan": {
                 "tage": 90,
-                "summe_mm": 159.9,
-                "normal_mm": 486.2,
-                "anteil": 0.329,
-                "bis": "2026-11-08"
+                "summe_mm": 177.1,
+                "normal_mm": 494.7,
+                "anteil": 0.358,
+                "bis": "2026-11-09"
               },
               "West-Kalimantan": {
                 "tage": 90,
-                "summe_mm": 388.0,
-                "normal_mm": 701.6,
-                "anteil": 0.553,
-                "bis": "2026-11-08"
+                "summe_mm": 402.2,
+                "normal_mm": 704.0,
+                "anteil": 0.571,
+                "bis": "2026-11-09"
               },
               "Sabah": {
                 "tage": 90,
-                "summe_mm": 309.1,
-                "normal_mm": 510.4,
-                "anteil": 0.606,
-                "bis": "2026-11-08"
+                "summe_mm": 314.7,
+                "normal_mm": 512.7,
+                "anteil": 0.614,
+                "bis": "2026-11-09"
               }
             },
             "fehlend": []
@@ -242,9 +242,9 @@
             "status": "gemessen",
             "an": true,
             "ab": "2026-05-16",
-            "bis": "2026-11-08",
+            "bis": "2026-11-09",
             "erster_trockener_tag": "2026-08-22",
-            "trockene_tage": 79,
+            "trockene_tage": 80,
             "tiefster_anteil": 0.383,
             "tiefster_tag": "2026-10-20"
           }
@@ -256,43 +256,43 @@
             "bis_ende": "2026-12-31",
             "status": "läuft",
             "an": false,
-            "anteil": 0.829,
-            "tage": 39,
+            "anteil": 0.802,
+            "tage": 40,
             "punkte": {
               "Nairobi, Kenia": {
-                "tage": 39,
-                "summe_mm": 25.4,
-                "normal_mm": 65.0,
-                "anteil": 0.391,
-                "bis": "2026-11-08"
+                "tage": 40,
+                "summe_mm": 26.8,
+                "normal_mm": 67.3,
+                "anteil": 0.398,
+                "bis": "2026-11-09"
               },
               "Garissa, Kenia": {
-                "tage": 39,
-                "summe_mm": 21.9,
-                "normal_mm": 29.1,
-                "anteil": 0.753,
-                "bis": "2026-11-08"
+                "tage": 40,
+                "summe_mm": 22.2,
+                "normal_mm": 31.4,
+                "anteil": 0.707,
+                "bis": "2026-11-09"
               },
               "Beledweyne, Somalia": {
-                "tage": 39,
+                "tage": 40,
                 "summe_mm": 108.5,
-                "normal_mm": 78.6,
-                "anteil": 1.38,
-                "bis": "2026-11-08"
+                "normal_mm": 80.7,
+                "anteil": 1.345,
+                "bis": "2026-11-09"
               },
               "Moyale, Äthiopien": {
-                "tage": 39,
-                "summe_mm": 99.6,
-                "normal_mm": 142.0,
-                "anteil": 0.702,
-                "bis": "2026-11-08"
+                "tage": 40,
+                "summe_mm": 100.1,
+                "normal_mm": 146.9,
+                "anteil": 0.681,
+                "bis": "2026-11-09"
               },
               "Arusha, Tansania": {
-                "tage": 39,
+                "tage": 40,
                 "summe_mm": 45.0,
-                "normal_mm": 49.1,
-                "anteil": 0.917,
-                "bis": "2026-11-08"
+                "normal_mm": 51.1,
+                "anteil": 0.88,
+                "bis": "2026-11-09"
               }
             },
             "fehlend": [],
@@ -306,8 +306,8 @@
                 "jahr": 2026,
                 "status": "läuft",
                 "an": false,
-                "anteil": 0.829,
-                "tage": 39
+                "anteil": 0.802,
+                "tage": 40
               }
             ]
           }
@@ -396,7 +396,7 @@
         "einzeln": {
           "brent": {
             "text": "Ölpreis als Hintergrundpegel für Transport und Verarbeitung — bei Kakao schwächer als bei Palmöl, mangels echtem Substitut",
-            "veraenderung_3m": 0.085,
+            "veraenderung_3m": 0.083,
             "druck": 0.0
           }
         },
@@ -428,11 +428,11 @@
           "boerse": "LSE",
           "hinweis": "bildet den Weltmarktpreis direkt ab, keine Firma dazwischen",
           "status": "ok",
-          "kurs": 8.2238,
-          "datum": "2026-11-12",
-          "z_200": 0.38,
+          "kurs": 8.3275,
+          "datum": "2026-11-13",
+          "z_200": 0.44,
           "veraenderung_3m": -0.098,
-          "volumen_trend": 0.41
+          "volumen_trend": 0.47
         },
         {
           "art": "Aktie",
@@ -536,7 +536,7 @@
         "einzeln": {
           "brent": {
             "text": "Ölpreis (Brent) — billiges Erdöl macht synthetischen Kautschuk billig und deckelt den Naturkautschukpreis",
-            "veraenderung_3m": 0.085,
+            "veraenderung_3m": 0.083,
             "druck": 0.0
           }
         },
@@ -680,18 +680,18 @@
         "T_monate": 12
       },
       "gegenkraefte": {
-        "wert": 0.193,
+        "wert": 0.191,
         "ueberwiegen": false,
         "einzeln": {
           "brent": {
             "text": "Ölpreis (Brent)",
-            "veraenderung_3m": 0.085,
+            "veraenderung_3m": 0.083,
             "druck": 0.0
           },
           "sojaoel": {
             "text": "Sojaöl als Konkurrenzöl",
-            "veraenderung_3m": -0.077,
-            "druck": 0.385
+            "veraenderung_3m": -0.076,
+            "druck": 0.382
           }
         },
         "fehlend": []
@@ -770,7 +770,7 @@
       ],
       "rueckblick": null,
       "inlandspreise": {
-        "datum": "2026-11-14",
+        "datum": "2026-11-15",
         "reihen": {
           "speiseoel_id_lose": {
             "rohstoff": "palmoel",
@@ -785,7 +785,7 @@
               "datum": "2026-11-13",
               "wert": 20350.0
             },
-            "alter_tage": 1,
+            "alter_tage": 2,
             "art": "täglich",
             "mittel_jetzt": 20337.5,
             "mittel_damals": 20445.0,
@@ -805,7 +805,7 @@
               "datum": "2026-11-13",
               "wert": 24450.0
             },
-            "alter_tage": 1,
+            "alter_tage": 2,
             "art": "täglich",
             "mittel_jetzt": 24395.0,
             "mittel_damals": 24300.0,
@@ -825,7 +825,7 @@
               "datum": "2026-09-01",
               "wert": 21727.0
             },
-            "alter_tage": 74,
+            "alter_tage": 75,
             "art": "monatlich",
             "vergleich": {
               "datum": "2026-06-01",
@@ -847,7 +847,7 @@
               "datum": "2026-11-12",
               "wert": 4154.5
             },
-            "alter_tage": 2,
+            "alter_tage": 3,
             "art": "täglich",
             "mittel_jetzt": 4329.08,
             "mittel_damals": 4533.71,
@@ -868,5 +868,5 @@
     }
   },
   "logbuch_neu": [],
-  "laufzeit_sekunden": 353.9
+  "laufzeit_sekunden": 63.9
 }

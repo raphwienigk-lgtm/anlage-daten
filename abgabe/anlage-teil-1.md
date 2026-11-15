@@ -1,7 +1,7 @@
-Stand: 14.11.2026, 04:22
+Stand: 15.11.2026, 03:46
 Teil 1 von 1
 
-Der Anlage-Beobachter für Samstag, den vierzehnten November. Zuerst die Ampel, dann das Klima, dann die Preise.
+Der Anlage-Beobachter für Sonntag, den fünfzehnten November. Zuerst die Ampel, dann das Klima, dann die Preise.
 
 Kakao steht auf Gelb, Zahl zehn, vorläufig. Für Rot fehlt noch: das Zeitfenster ist noch weit offen.
 
@@ -13,7 +13,7 @@ Der El-Niño-Index liegt für August bis Oktober zweitausendsechsundzwanzig bei 
 
 Die Kaskade im Indischen Ozean. Gezählt wird, was seit Beginn der El-Niño-Episode angeschlagen hat. Stufe eins, El Niño: El Niño läuft. Stufe zwei, Ostwinde vor Sumatra im Mai und Juni zweitausendsechsundzwanzig: null Komma drei Meter pro Sekunde stärker als normal, nicht angeschlagen. Stufe drei, Dipol-Index für Oktober zweitausendsechsundzwanzig: plus null Komma sieben Grad, höchster Wert seit Beginn der Episode plus null Komma acht Grad im September zweitausendsechsundzwanzig, angeschlagen. Das Ostende gilt als bestätigt.
 
-Regen auf Sumatra und Borneo in den letzten neunzig Tagen: einundfünfzig Prozent des Normalen, das gilt als trocken. Seit Beginn der Episode lag dieser Neunzig-Tage-Regen an neunundsiebzig Tagen unter der Trockenschwelle, am tiefsten bei achtunddreißig Prozent des Normalen. Ostafrika, kurze Regenzeit bisher: dreiundachtzig Prozent des Normalen. Kreuzbestätigung: nur der Osten schlägt an.
+Regen auf Sumatra und Borneo in den letzten neunzig Tagen: zweiundfünfzig Prozent des Normalen, das gilt als trocken. Seit Beginn der Episode lag dieser Neunzig-Tage-Regen an achtzig Tagen unter der Trockenschwelle, am tiefsten bei achtunddreißig Prozent des Normalen. Ostafrika, kurze Regenzeit bisher: achtzig Prozent des Normalen. Kreuzbestätigung: nur der Osten schlägt an.
 
 Kakao kostete im September fünftausendneunhundertneunzehn Dollar je Tonne, Z-Wert minus null Komma drei: der Markt schläft noch. Gegenkräfte: Ölpreis als Hintergrundpegel für Transport und Verarbeitung — bei Kakao schwächer als bei Palmöl, mangels echtem Substitut in drei Monaten acht Prozent gestiegen. WisdomTree Cocoa (ETC) ist in drei Monaten zehn Prozent gefallen, Z-Wert plus null Komma vier. Barry Callebaut ist in drei Monaten zehn Prozent gestiegen, Z-Wert plus null Komma vier.
 
