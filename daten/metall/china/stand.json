@@ -1,17 +1,17 @@
 {
-  "stand": "2026-11-14T04:11:40+01:00",
-  "datum": "2026-11-14",
+  "stand": "2026-11-15T03:38:24+01:00",
+  "datum": "2026-11-15",
   "version": "0.1.0",
   "land": "china",
   "name": "China-Ausfuhr",
   "laenderpaar": "China ↔ USA über Halbleiter",
   "rolle": "sensor",
   "hinweis": "Denkhilfe, keine Anlageberatung. Rot setzt nur der Metall-Wächter in der Cloud.",
-  "zustand": "Warnung",
+  "zustand": "in Ordnung",
   "reihenfolge": [
     "chip",
-    "magnet",
     "batterie",
+    "magnet",
     "werkzeug"
   ],
   "achsen": {
@@ -45,7 +45,7 @@
         {
           "kanal": "frist",
           "kennung": "aussetzung_usa_ga_ge_sb",
-          "tage": 13,
+          "tage": 12,
           "zustand": "läuft bald aus"
         }
       ],
@@ -71,18 +71,9 @@
         }
       ],
       "wucht": 0.81,
-      "stufe": "Gelb",
-      "gruende": [
-        {
-          "kanal": "frist",
-          "kennung": "aussetzung_okt2025",
-          "tage": -4,
-          "zustand": "abgelaufen"
-        }
-      ],
-      "kanaele": [
-        "frist"
-      ],
+      "stufe": "Grün",
+      "gruende": [],
+      "kanaele": [],
       "mehrfach": false,
       "instrumente": [
         "MP",
@@ -105,12 +96,6 @@
       "stufe": "Gelb",
       "gruende": [
         {
-          "kanal": "frist",
-          "kennung": "aussetzung_okt2025",
-          "tage": -4,
-          "zustand": "abgelaufen"
-        },
-        {
           "kanal": "gegenseite",
           "nummer": "2026-21294",
           "datum": "2026-10-19",
@@ -118,10 +103,9 @@
         }
       ],
       "kanaele": [
-        "frist",
         "gegenseite"
       ],
-      "mehrfach": true,
+      "mehrfach": false,
       "instrumente": []
     },
     "werkzeug": {
@@ -144,7 +128,13 @@
       "instrumente": []
     }
   },
-  "wechsel": [],
+  "wechsel": [
+    {
+      "achse": "magnet",
+      "vorher": "Gelb",
+      "jetzt": "Grün"
+    }
+  ],
   "fristen": [
     {
       "kennung": "aussetzung_okt2025",
@@ -154,14 +144,14 @@
         "magnet",
         "batterie"
       ],
-      "bis": "2026-11-10",
+      "bis": "2027-01-10",
       "urspruenglich_bis": "2026-11-10",
-      "verlaengert": false,
-      "tage": -4,
-      "zustand": "abgelaufen",
-      "gelb": true,
-      "rot_pruefen": true,
-      "stand": "USA melden am 24.09.2026 eine Verlängerung des Waffenstillstands bis zum 10.01.2027; die formelle Bekanntmachung aus Peking steht aus"
+      "verlaengert": true,
+      "tage": 56,
+      "zustand": "läuft",
+      "gelb": false,
+      "rot_pruefen": false,
+      "stand": "Formell verlängert bis 10.01.2027: Bekanntmachung von Handelsministerium und Zollbehörde vom 09.11.2026 (berichtet von NetEase, Zijing, MLQ.ai); eingetragen am 14.11.2026"
     },
     {
       "kennung": "aussetzung_usa_ga_ge_sb",
@@ -173,7 +163,7 @@
       "bis": "2026-11-27",
       "urspruenglich_bis": "2026-11-27",
       "verlaengert": false,
-      "tage": 13,
+      "tage": 12,
       "zustand": "läuft bald aus",
       "gelb": true,
       "rot_pruefen": false,
@@ -184,6 +174,30 @@
     "herkunft": "frisch",
     "tage": 30,
     "dokumente": [
+      {
+        "nummer": "2026-23253",
+        "titel": "Diamond Sawblades and Parts Thereof From the People's Republic of China: Continuation of Antidumping Duty Order",
+        "datum": "2026-11-16",
+        "art": "Notice",
+        "behoerden": [
+          "commerce-department",
+          "international-trade-administration"
+        ],
+        "behoerden_namen": [
+          "Commerce Department",
+          "International Trade Administration"
+        ],
+        "url": "https://www.federalregister.gov/documents/2026/11/16/2026-23253/diamond-sawblades-and-parts-thereof-from-the-peoples-republic-of-china-continuation-of-antidumping",
+        "zusammenfassung": "As a result of the determinations by the U.S. Department of Commerce (Commerce) and the U.S. International Trade Commission (ITC) that revocation of the antidumping duty (AD) order on diamond sawblades and parts thereof (diamond sawblades) from the People's Republic of China (China) would likely lead to the continuation or recurrence of dumping and material injury to an industry in the United States, Commerce is publishing a notice of continuation of this AD order.",
+        "begriffe": [
+          "tungsten"
+        ],
+        "achsen": [
+          "werkzeug"
+        ],
+        "gewichtig": false,
+        "neu": true
+      },
       {
         "nummer": "2026-22825",
         "titel": "Crystalline Silicon Photovoltaic Cells, Whether or Not Assembled Into Modules, From the Lao People's Democratic Republic: Amended Final Determination of Sales at Less Than Fair Value; Crystalline Silicon Photovoltaic Cells, Whether or Not Assembled Into Modules, From India, Indonesia, and the Lao People's Democratic Republic: Antidumping Duty Orders",
@@ -455,24 +469,34 @@
     "erdbeben_gesamt": 2,
     "starkregen_gemessen": [],
     "starkregen_vorhergesagt": [],
-    "regen_hoechst_mm": null,
+    "regen_hoechst_mm": {
+      "lengshuijiang": 22.5,
+      "hechi": 10.3,
+      "lincang": 75.6,
+      "qujing": 21.2,
+      "pingguo": 16.3,
+      "zibo": 15.6,
+      "baotou": 6.3,
+      "ganzhou": 14.3,
+      "jixi": 2.4
+    },
     "trocken": {
       "lincang": {
-        "von": "2026-08-11",
-        "bis": "2026-11-08",
-        "summe_mm": 403,
-        "normal_mm": 530,
+        "von": "2026-08-12",
+        "bis": "2026-11-09",
+        "summe_mm": 443,
+        "normal_mm": 523,
         "urteil": "normal",
-        "anteil": 0.76,
+        "anteil": 0.85,
         "trocken": false
       },
       "qujing": {
-        "von": "2026-08-11",
-        "bis": "2026-11-08",
-        "summe_mm": 219,
-        "normal_mm": 347,
+        "von": "2026-08-12",
+        "bis": "2026-11-09",
+        "summe_mm": 233,
+        "normal_mm": 342,
         "urteil": "normal",
-        "anteil": 0.63,
+        "anteil": 0.68,
         "trocken": false
       }
     },
@@ -487,7 +511,7 @@
       "waehrung": "USD",
       "letzter": "2026-11-13",
       "schluss": 17.78,
-      "alter_tage": 1,
+      "alter_tage": 2,
       "r_kurz": -0.0896,
       "vorsprung_kurz": -0.0927,
       "r_lang": -0.0744,
@@ -505,7 +529,7 @@
       "waehrung": "USD",
       "letzter": "2026-11-13",
       "schluss": 3.09,
-      "alter_tage": 1,
+      "alter_tage": 2,
       "r_kurz": 0.0957,
       "vorsprung_kurz": 0.0926,
       "r_lang": 0.0842,
@@ -523,7 +547,7 @@
       "waehrung": "USD",
       "letzter": "2026-11-13",
       "schluss": 38.76,
-      "alter_tage": 1,
+      "alter_tage": 2,
       "r_kurz": 0.0946,
       "vorsprung_kurz": 0.0915,
       "r_lang": -0.0351,
@@ -541,7 +565,7 @@
       "waehrung": "AUD",
       "letzter": "2026-11-13",
       "schluss": 13.19,
-      "alter_tage": 1,
+      "alter_tage": 2,
       "r_kurz": 0.0715,
       "vorsprung_kurz": 0.0684,
       "r_lang": 0.1915,
@@ -882,8 +906,8 @@
     },
     "openmeteo_vorhersage": {
       "name": "Open-Meteo · Regen der letzten Tage und Vorhersage",
-      "status": "Fehler",
-      "meldung": "AbrufFehler: ReadTimeout bei https://api.open-meteo.com/v1/forecast: HTTPSConnectionPool(host='api.open-meteo.com', port=443): Read timed out. (read timeout=45)"
+      "status": "ok",
+      "meldung": null
     },
     "openmeteo": {
       "name": "Open-Meteo · ERA5-Reanalyse (Regen, Wind)",

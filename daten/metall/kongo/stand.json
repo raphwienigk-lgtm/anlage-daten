@@ -1,6 +1,6 @@
 {
-  "stand": "2026-11-14T04:17:40+01:00",
-  "datum": "2026-11-14",
+  "stand": "2026-11-15T03:38:39+01:00",
+  "datum": "2026-11-15",
   "version": "0.1.0",
   "land": "kongo",
   "name": "Kongo-Kobalt",
@@ -46,7 +46,7 @@
       "bis": "2027-12-31",
       "urspruenglich_bis": "2027-12-31",
       "verlaengert": false,
-      "tage": 412,
+      "tage": 411,
       "zustand": "läuft",
       "gelb": false,
       "rot_pruefen": false,
@@ -62,7 +62,7 @@
       "bis": "2026-12-31",
       "urspruenglich_bis": "2026-12-31",
       "verlaengert": false,
-      "tage": 47,
+      "tage": 46,
       "zustand": "läuft",
       "gelb": false,
       "rot_pruefen": false,
@@ -73,6 +73,30 @@
     "herkunft": "frisch",
     "tage": 30,
     "dokumente": [
+      {
+        "nummer": "2026-23253",
+        "titel": "Diamond Sawblades and Parts Thereof From the People's Republic of China: Continuation of Antidumping Duty Order",
+        "datum": "2026-11-16",
+        "art": "Notice",
+        "behoerden": [
+          "commerce-department",
+          "international-trade-administration"
+        ],
+        "behoerden_namen": [
+          "Commerce Department",
+          "International Trade Administration"
+        ],
+        "url": "https://www.federalregister.gov/documents/2026/11/16/2026-23253/diamond-sawblades-and-parts-thereof-from-the-peoples-republic-of-china-continuation-of-antidumping",
+        "zusammenfassung": "As a result of the determinations by the U.S. Department of Commerce (Commerce) and the U.S. International Trade Commission (ITC) that revocation of the antidumping duty (AD) order on diamond sawblades and parts thereof (diamond sawblades) from the People's Republic of China (China) would likely lead to the continuation or recurrence of dumping and material injury to an industry in the United States, Commerce is publishing a notice of continuation of this AD order.",
+        "begriffe": [
+          "cobalt"
+        ],
+        "achsen": [
+          "kobalt"
+        ],
+        "gewichtig": false,
+        "neu": true
+      },
       {
         "nummer": "2026-22528",
         "titel": "Light-Walled Rectangular Pipe and Tube From the People's Republic of China: Preliminary Results and Rescission, in Part, of Antidumping Duty Administrative Review; 2024-2025",
@@ -201,11 +225,11 @@
     "starkregen_gemessen": [],
     "starkregen_vorhergesagt": [],
     "regen_hoechst_mm": {
-      "kolwezi": 16.4,
+      "kolwezi": 15.3,
       "likasi": 18.4,
       "tenke": 21.6,
-      "kisanfu": 19.8,
-      "kasumbalesa": 16.5,
+      "kisanfu": 19.0,
+      "kasumbalesa": 20.1,
       "durban": 38.5
     },
     "trocken": {},
@@ -218,16 +242,16 @@
       "rolle": "sensor",
       "hinweis": "größter westlicher Kobalt-Förderer im Kongo, aber riesiger Mischkonzern — Signal stark verwässert",
       "waehrung": "GBP",
-      "letzter": "2026-11-12",
-      "schluss": 515.7,
+      "letzter": "2026-11-13",
+      "schluss": 510.4,
       "alter_tage": 2,
-      "r_kurz": 0.0378,
-      "vorsprung_kurz": 0.0535,
-      "r_lang": -0.1017,
-      "vorsprung_lang": -0.0936,
+      "r_kurz": 0.0308,
+      "vorsprung_kurz": 0.049,
+      "r_lang": -0.1247,
+      "vorsprung_lang": -0.1027,
       "urteil": "schläft",
       "markt_schlaeft": true,
-      "handel": 17185943702,
+      "handel": 16810759292,
       "duenn": false
     }
   },
