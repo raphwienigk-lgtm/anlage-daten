@@ -1,5 +1,5 @@
 {
-  "stand": "2026-11-14T04:29:18+01:00",
+  "stand": "2026-11-15T03:47:59+01:00",
   "version": "0.1.0",
   "hinweis": "Reine Rechnung mit einem erfundenen Betrag, kein echtes Geld. Denkhilfe, keine Anlageberatung.",
   "betrag": 1000,
@@ -13,7 +13,7 @@
     "COCO.L": {
       "name": "WisdomTree Cocoa (ETC)",
       "zweig": "kakao",
-      "waehrung": null,
+      "waehrung": "USD",
       "archiv": "daten/preise/COCO_L.csv",
       "vergleich": null
     },
@@ -341,6 +341,28 @@
         "nachlauf": 0.2
       },
       "regel_name": "bisherige Regel plus 20 Prozent unter dem Höchststand"
+    },
+    "hand": {
+      "name": "Handeingabe",
+      "gilt": "bisher",
+      "regel": {
+        "name": "Handspur: 20 Prozent unter dem Höchststand, spätestens nach 180 Tagen",
+        "kalendertage": 180,
+        "nachlauf": 0.2
+      },
+      "regel_name": "Handspur: 20 Prozent unter dem Höchststand, spätestens nach 180 Tagen",
+      "quelle": {
+        "art": "hand",
+        "herkunft": "konfig/depot.yaml",
+        "eintraege": [
+          {
+            "ticker": "COCO.L",
+            "seit": "2026-11-16",
+            "anlass": "Raphael setzt von Hand eine gedachte Position Kakao, getrennt von den Signalen der Zweige (Sprachgespräch 13.11.2026).",
+            "ampel": null
+          }
+        ]
+      }
     }
   },
   "dateien": [
