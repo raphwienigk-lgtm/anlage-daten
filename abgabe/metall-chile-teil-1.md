@@ -1,11 +1,11 @@
-Stand: 15.11.2026, 03:38
+Stand: 16.11.2026, 03:43
 Teil 1 von 1
 
-Der Metall-Wächter Chile-Lithium, Datenteil für Sonntag, den fünfzehnten November. Stufen je Achse aus Fristen, US-Maßnahmen und Störungen an den Standorten. Rot setzt nur der Wächter in der Cloud, wenn eine Meldung aus Peking dazukommt. Die Wucht sagt, wie stark China ein Metall beherrscht und wie schwer es zu ersetzen ist, von null bis eins.
+Der Metall-Wächter Chile-Lithium, Datenteil für Montag, den sechzehnten November. Stufen je Achse aus Fristen, US-Maßnahmen und Störungen an den Standorten. Rot setzt nur der Wächter in der Cloud, wenn eine Meldung aus Peking dazukommt. Die Wucht sagt, wie stark China ein Metall beherrscht und wie schwer es zu ersetzen ist, von null bis eins.
 
 Lithium-Achse, der Pilot: Grün. Wucht null Komma eins sieben, getragen von Lithium.
 
-Fristen. Die CORFO-Pachtvertrag mit SQM für den Salar de Atacama ist formell verlängert bis zum einunddreißigsten Dezember zweitausendsechzig, noch zwölftausendvierhundertfünfundsechzig Tagen. Die CORFO-Quote für Albemarle läuft am einunddreißigsten Dezember aus, in sechstausendzweihundertfünfundfünfzig Tagen. Stand: Option auf zweihundertvierzig.null Tonnen zusätzliche Quote seit Mai zweitausendvierundzwanzig.. Die Schutzgebiete für zehn Salare und sechs Lagunen (Dekrete vom neunundzwanzigsten Januar zweitausendsechsundzwanzig) läuft am einunddreißigsten Dezember aus, in vierhundertelf Tagen. Stand: Offener Risikofaktor: Nach dem Regierungswechsel im März zweitausendsechsundzwanzig wird eine Abschwächung befürchtet. Eine Rücknahme wäre eine Lockerung nach Cvier..
+Fristen. Die CORFO-Pachtvertrag mit SQM für den Salar de Atacama ist formell verlängert bis zum einunddreißigsten Dezember zweitausendsechzig, noch zwölftausendvierhundertvierundsechzig Tagen. Die CORFO-Quote für Albemarle läuft am einunddreißigsten Dezember aus, in sechstausendzweihundertvierundfünfzig Tagen. Stand: Option auf zweihundertvierzig.null Tonnen zusätzliche Quote seit Mai zweitausendvierundzwanzig.. Die Schutzgebiete für zehn Salare und sechs Lagunen (Dekrete vom neunundzwanzigsten Januar zweitausendsechsundzwanzig) läuft am einunddreißigsten Dezember aus, in vierhundertzehn Tagen. Stand: Offener Risikofaktor: Nach dem Regierungswechsel im März zweitausendsechsundzwanzig wird eine Abschwächung befürchtet. Eine Rücknahme wäre eine Lockerung nach Cvier..
 
 Gegenseite. In den letzten dreißig Tagen steht ein Eintrag zu den Suchbegriffen im US-Bundesregister, davon keiner gewichtig.
 

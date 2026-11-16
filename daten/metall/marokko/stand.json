@@ -1,6 +1,6 @@
 {
-  "stand": "2026-11-15T03:38:37+01:00",
-  "datum": "2026-11-15",
+  "stand": "2026-11-16T03:43:32+01:00",
+  "datum": "2026-11-16",
   "version": "0.1.0",
   "land": "marokko",
   "name": "Marokko-Phosphat",
@@ -56,7 +56,7 @@
       "bis": "2027-12-31",
       "urspruenglich_bis": "2027-12-31",
       "verlaengert": false,
-      "tage": 411,
+      "tage": 410,
       "zustand": "läuft",
       "gelb": false,
       "rot_pruefen": false,
@@ -72,7 +72,7 @@
       "bis": "2027-12-31",
       "urspruenglich_bis": "2027-12-31",
       "verlaengert": false,
-      "tage": 411,
+      "tage": 410,
       "zustand": "läuft",
       "gelb": false,
       "rot_pruefen": false,
@@ -88,7 +88,7 @@
       "bis": "2027-10-03",
       "urspruenglich_bis": "2027-10-03",
       "verlaengert": false,
-      "tage": 322,
+      "tage": 321,
       "zustand": "läuft",
       "gelb": false,
       "rot_pruefen": false,
@@ -121,7 +121,7 @@
           "duenger"
         ],
         "gewichtig": false,
-        "neu": true
+        "neu": false
       },
       {
         "nummer": "2026-23273",
@@ -145,7 +145,7 @@
           "duenger"
         ],
         "gewichtig": false,
-        "neu": true
+        "neu": false
       },
       {
         "nummer": "2026-23268",
@@ -169,7 +169,7 @@
           "duenger"
         ],
         "gewichtig": false,
-        "neu": true
+        "neu": false
       },
       {
         "nummer": "2026-23265",
@@ -193,7 +193,7 @@
           "duenger"
         ],
         "gewichtig": false,
-        "neu": true
+        "neu": false
       },
       {
         "nummer": "2026-23257",
@@ -217,7 +217,7 @@
           "duenger"
         ],
         "gewichtig": false,
-        "neu": true
+        "neu": false
       },
       {
         "nummer": "2026-22942",
@@ -560,7 +560,7 @@
       "waehrung": "USD",
       "letzter": "2026-11-13",
       "schluss": 71.24,
-      "alter_tage": 2,
+      "alter_tage": 3,
       "r_kurz": -0.0034,
       "vorsprung_kurz": 0.0148,
       "r_lang": -0.0003,
@@ -578,7 +578,7 @@
       "waehrung": "USD",
       "letzter": "2026-11-13",
       "schluss": 21.92,
-      "alter_tage": 2,
+      "alter_tage": 3,
       "r_kurz": -0.0197,
       "vorsprung_kurz": -0.0015,
       "r_lang": 0.1647,

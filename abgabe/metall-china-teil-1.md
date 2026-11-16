@@ -1,11 +1,9 @@
-Stand: 15.11.2026, 03:38
+Stand: 16.11.2026, 03:43
 Teil 1 von 1
 
-Der Metall-Wächter China-Ausfuhr, Datenteil für Sonntag, den fünfzehnten November. Stufen je Achse aus Fristen, US-Maßnahmen und Störungen an den Standorten. Rot setzt nur der Wächter in der Cloud, wenn eine Meldung aus Peking dazukommt. Die Wucht sagt, wie stark China ein Metall beherrscht und wie schwer es zu ersetzen ist, von null bis eins.
+Der Metall-Wächter China-Ausfuhr, Datenteil für Montag, den sechzehnten November. Stufen je Achse aus Fristen, US-Maßnahmen und Störungen an den Standorten. Rot setzt nur der Wächter in der Cloud, wenn eine Meldung aus Peking dazukommt. Die Wucht sagt, wie stark China ein Metall beherrscht und wie schwer es zu ersetzen ist, von null bis eins.
 
-Neu seit dem letzten Lauf: Die Magnet-Achse ist von Gelb auf Grün gesprungen.
-
-Chip-Achse, der Pilot: Gelb. Anlass: Aussetzung Nummer zweiundsiebzig endet in zwölf Tagen. Wucht null Komma acht acht, getragen von Gallium.
+Chip-Achse, der Pilot: Gelb. Anlass: Aussetzung Nummer zweiundsiebzig endet in elf Tagen. Wucht null Komma acht acht, getragen von Gallium.
 
 Batterie-Achse: Gelb. Anlass: US-Maßnahme vom neunzehnten Oktober. Wucht null Komma fünf vier, getragen von Graphit.
 
@@ -13,11 +11,11 @@ Magnet-Achse: Grün. Wucht null Komma acht eins, getragen von den seltenen Erden
 
 Werkzeug-Achse: Grün. Wucht null Komma sechs vier, getragen von Wolfram.
 
-Fristen. Die Aussetzung der Oktober-Maßnahmen für seltene Erden, Graphit-Anoden und Batteriematerial (Bekanntmachung Nummer siebzig) ist formell verlängert bis zum zehnten Januar zweitausendsiebenundzwanzig, noch sechsundfünfzig Tagen. Die Aussetzung des Ausfuhrverbots in die USA für Gallium, Germanium, Antimon und superharte Materialien (Bekanntmachung Nummer zweiundsiebzig) läuft am siebenundzwanzigsten November aus, in zwölf Tagen. Stand: offen; die Meldungen vom vierundzwanzigsten September zweitausendsechsundzwanzig nennen diese Frist nicht.
+Fristen. Die Aussetzung der Oktober-Maßnahmen für seltene Erden, Graphit-Anoden und Batteriematerial (Bekanntmachung Nummer siebzig) ist formell verlängert bis zum zehnten Januar zweitausendsiebenundzwanzig, noch fünfundfünfzig Tagen. Die Aussetzung des Ausfuhrverbots in die USA für Gallium, Germanium, Antimon und superharte Materialien (Bekanntmachung Nummer zweiundsiebzig) läuft am siebenundzwanzigsten November aus, in elf Tagen. Stand: offen; die Meldungen vom vierundzwanzigsten September zweitausendsechsundzwanzig nennen diese Frist nicht.
 
 Gegenseite. In den letzten dreißig Tagen stehen zwölf Einträge zu den Suchbegriffen im US-Bundesregister, davon einer gewichtig. Vom neunzehnten Oktober: Large Diameter Graphite Electrodes From the People's Republic of China: Postponement of Final Determination of Sales at Less-Than-Fair-Value Investigation and Extension of Provisional Measures.
 
-Störungen an den Förder- und Hüttenstandorten. Kein Erdbeben in Reichweite der Standorte in den letzten dreißig Tagen. Kein Starkregen gemessen oder vorhergesagt. Lincang in Yunnan: in neunzig Tagen fünfundachtzig Prozent des normalen Regens. Qujing in Yunnan: in neunzig Tagen achtundsechzig Prozent des normalen Regens.
+Störungen an den Förder- und Hüttenstandorten. Kein Erdbeben in Reichweite der Standorte in den letzten dreißig Tagen. Kein Starkregen gemessen oder vorhergesagt. Lincang in Yunnan: in neunzig Tagen neunzig Prozent des normalen Regens. Qujing in Yunnan: in neunzig Tagen einundsiebzig Prozent des normalen Regens.
 
 Preisprobe gegen Metall- und Bergbau-Aktien USA (Vergleichsmaßstab). Perpetua Resources ist in fünf Handelstagen um neun Prozent gefallen, in zwanzig um sieben Prozent gefallen, gegen den Vergleich gleichauf. Umsatz zuletzt rund zweiundzwanzig Komma sieben Millionen Dollar am Tag. Der Markt schläft noch. United States Antimony ist in fünf Handelstagen um zehn Prozent gestiegen, in zwanzig um acht Prozent gestiegen, gegen den Vergleich sechzehn Prozentpunkte vorn. Umsatz zuletzt rund einundzwanzig Millionen Dollar am Tag. Der Kurs ist schon gelaufen. MP Materials ist in fünf Handelstagen um neun Prozent gestiegen, in zwanzig um vier Prozent gefallen, gegen den Vergleich vier Prozentpunkte vorn. Umsatz zuletzt rund zweihunderteinunddreißig Komma eins Millionen Dollar am Tag. Der Markt schläft noch. Lynas Rare Earths ist in fünf Handelstagen um sieben Prozent gestiegen, in zwanzig um neunzehn Prozent gestiegen, gegen den Vergleich sechsundzwanzig Prozentpunkte vorn. Umsatz zuletzt rund sechzig Komma sieben Millionen australische Dollar am Tag. Der Kurs ist schon gelaufen.
 

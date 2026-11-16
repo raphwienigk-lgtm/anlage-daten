@@ -1,6 +1,6 @@
 {
-  "stand": "2026-11-15T03:38:30+01:00",
-  "datum": "2026-11-15",
+  "stand": "2026-11-16T03:43:26+01:00",
+  "datum": "2026-11-16",
   "version": "0.1.0",
   "land": "indonesien",
   "name": "Indonesien-Ausfuhr",
@@ -76,7 +76,7 @@
       "bis": "2026-12-31",
       "urspruenglich_bis": "2026-12-31",
       "verlaengert": false,
-      "tage": 46,
+      "tage": 45,
       "zustand": "läuft",
       "gelb": false,
       "rot_pruefen": false,
@@ -92,7 +92,7 @@
       "bis": "2026-12-31",
       "urspruenglich_bis": "2026-12-31",
       "verlaengert": false,
-      "tage": 46,
+      "tage": 45,
       "zustand": "läuft",
       "gelb": false,
       "rot_pruefen": false,
@@ -109,7 +109,7 @@
       "bis": "2027-01-01",
       "urspruenglich_bis": "2027-01-01",
       "verlaengert": false,
-      "tage": 47,
+      "tage": 46,
       "zustand": "läuft",
       "gelb": false,
       "rot_pruefen": false,
@@ -142,7 +142,7 @@
           "nickel"
         ],
         "gewichtig": false,
-        "neu": true
+        "neu": false
       },
       {
         "nummer": "2026-23290",
@@ -166,7 +166,7 @@
           "nickel"
         ],
         "gewichtig": false,
-        "neu": true
+        "neu": false
       },
       {
         "nummer": "2026-23253",
@@ -190,7 +190,7 @@
           "nickel"
         ],
         "gewichtig": false,
-        "neu": true
+        "neu": false
       },
       {
         "nummer": "2026-23083",
@@ -557,24 +557,24 @@
   },
   "stoerung": {
     "erdbeben": [],
-    "erdbeben_gesamt": 11,
+    "erdbeben_gesamt": 13,
     "starkregen_gemessen": [],
     "starkregen_vorhergesagt": [],
     "regen_hoechst_mm": {
-      "morowali": 17.1,
-      "weda_bay": 28.2,
-      "sorowako": 10.3,
+      "morowali": 18.9,
+      "weda_bay": 20.4,
+      "sorowako": 11.3,
       "pomalaa": 10.4,
-      "bangka": 54.0,
-      "belitung": 18.9,
-      "muntok": 27.6
+      "bangka": 18.6,
+      "belitung": 22.1,
+      "muntok": 30.8
     },
     "trocken": {
       "sorowako": {
-        "von": "2026-08-12",
-        "bis": "2026-11-09",
+        "von": "2026-08-13",
+        "bis": "2026-11-10",
         "summe_mm": 64,
-        "normal_mm": 508,
+        "normal_mm": 507,
         "urteil": "trocken",
         "anteil": 0.13,
         "trocken": true
@@ -591,7 +591,7 @@
       "waehrung": "USD",
       "letzter": "2026-11-13",
       "schluss": 13.805,
-      "alter_tage": 2,
+      "alter_tage": 3,
       "r_kurz": -0.0218,
       "vorsprung_kurz": -0.0036,
       "r_lang": 0.0419,
@@ -609,7 +609,7 @@
       "waehrung": "USD",
       "letzter": "2026-11-13",
       "schluss": 107.67,
-      "alter_tage": 2,
+      "alter_tage": 3,
       "r_kurz": 0.0065,
       "vorsprung_kurz": 0.0247,
       "r_lang": -0.0675,

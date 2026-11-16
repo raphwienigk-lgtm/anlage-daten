@@ -36,3 +36,4 @@
 {"datum": "2026-11-13", "preise": {"NICK.L": "schläft", "TINM.L": "schläft"}, "stufen": {"nickel": "Gelb", "zinn": "Grün"}, "zeit": "2026-11-13T04:24:06+01:00", "zustand": "in Ordnung"}
 {"datum": "2026-11-14", "preise": {"NICK.L": "schläft", "TINM.L": "schläft"}, "stufen": {"nickel": "Gelb", "zinn": "Grün"}, "zeit": "2026-11-14T04:14:14+01:00", "zustand": "Warnung"}
 {"datum": "2026-11-15", "preise": {"NICK.L": "schläft", "TINM.L": "schläft"}, "stufen": {"nickel": "Gelb", "zinn": "Grün"}, "zeit": "2026-11-15T03:38:30+01:00", "zustand": "in Ordnung"}
+{"datum": "2026-11-16", "preise": {"NICK.L": "schläft", "TINM.L": "schläft"}, "stufen": {"nickel": "Gelb", "zinn": "Grün"}, "zeit": "2026-11-16T03:43:26+01:00", "zustand": "in Ordnung"}
