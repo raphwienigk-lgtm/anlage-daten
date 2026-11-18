@@ -1,6 +1,6 @@
 {
-  "stand": "2026-11-17T06:06:21+01:00",
-  "datum": "2026-11-17",
+  "stand": "2026-11-18T05:16:01+01:00",
+  "datum": "2026-11-18",
   "version": "0.1.0",
   "land": "indonesien",
   "name": "Indonesien-Ausfuhr",
@@ -31,7 +31,7 @@
         {
           "kanal": "trocken",
           "standort": "sorowako",
-          "anteil": 0.13
+          "anteil": 0.16
         }
       ],
       "kanaele": [
@@ -76,7 +76,7 @@
       "bis": "2026-12-31",
       "urspruenglich_bis": "2026-12-31",
       "verlaengert": false,
-      "tage": 44,
+      "tage": 43,
       "zustand": "läuft",
       "gelb": false,
       "rot_pruefen": false,
@@ -92,7 +92,7 @@
       "bis": "2026-12-31",
       "urspruenglich_bis": "2026-12-31",
       "verlaengert": false,
-      "tage": 44,
+      "tage": 43,
       "zustand": "läuft",
       "gelb": false,
       "rot_pruefen": false,
@@ -109,7 +109,7 @@
       "bis": "2027-01-01",
       "urspruenglich_bis": "2027-01-01",
       "verlaengert": false,
-      "tage": 45,
+      "tage": 44,
       "zustand": "läuft",
       "gelb": false,
       "rot_pruefen": false,
@@ -557,26 +557,26 @@
   },
   "stoerung": {
     "erdbeben": [],
-    "erdbeben_gesamt": 14,
+    "erdbeben_gesamt": 13,
     "starkregen_gemessen": [],
     "starkregen_vorhergesagt": [],
     "regen_hoechst_mm": {
-      "morowali": 13.8,
+      "morowali": 18.1,
       "weda_bay": 18.0,
-      "sorowako": 16.6,
-      "pomalaa": 10.4,
-      "bangka": 24.7,
+      "sorowako": 13.5,
+      "pomalaa": 10.6,
+      "bangka": 30.1,
       "belitung": 22.1,
-      "muntok": 30.3
+      "muntok": 20.0
     },
     "trocken": {
       "sorowako": {
-        "von": "2026-08-14",
-        "bis": "2026-11-11",
-        "summe_mm": 64,
-        "normal_mm": 507,
+        "von": "2026-08-15",
+        "bis": "2026-11-12",
+        "summe_mm": 80,
+        "normal_mm": 509,
         "urteil": "trocken",
-        "anteil": 0.13,
+        "anteil": 0.16,
         "trocken": true
       }
     },
@@ -589,16 +589,16 @@
       "rolle": "beobachtung",
       "hinweis": "bildet den LME-Nickelpreis ab, kein Länderrisiko, keine Verwässerung",
       "waehrung": "USD",
-      "letzter": "2026-11-13",
-      "schluss": 13.805,
-      "alter_tage": 4,
-      "r_kurz": -0.0218,
-      "vorsprung_kurz": -0.0036,
-      "r_lang": 0.0419,
-      "vorsprung_lang": 0.0639,
+      "letzter": "2026-11-16",
+      "schluss": 13.71,
+      "alter_tage": 2,
+      "r_kurz": -0.0207,
+      "vorsprung_kurz": 0.0083,
+      "r_lang": 0.0205,
+      "vorsprung_lang": 0.0513,
       "urteil": "schläft",
       "markt_schlaeft": true,
-      "handel": 42834,
+      "handel": 36421,
       "duenn": true
     },
     "TINM.L": {
@@ -607,16 +607,16 @@
       "rolle": "beobachtung",
       "hinweis": "bildet den LME-Zinnpreis ab",
       "waehrung": "USD",
-      "letzter": "2026-11-16",
-      "schluss": 106.86,
+      "letzter": "2026-11-17",
+      "schluss": 104.345,
       "alter_tage": 1,
-      "r_kurz": 0.0003,
-      "vorsprung_kurz": 0.0184,
-      "r_lang": -0.0871,
-      "vorsprung_lang": -0.065,
+      "r_kurz": -0.0218,
+      "vorsprung_kurz": 0.0072,
+      "r_lang": -0.1141,
+      "vorsprung_lang": -0.0833,
       "urteil": "schläft",
       "markt_schlaeft": true,
-      "handel": 5922,
+      "handel": 6160,
       "duenn": true
     }
   },
