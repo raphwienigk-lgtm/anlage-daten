@@ -1,6 +1,6 @@
 {
-  "stand": "2026-11-17T06:06:34+01:00",
-  "datum": "2026-11-17",
+  "stand": "2026-11-18T05:29:09+01:00",
+  "datum": "2026-11-18",
   "version": "0.1.0",
   "hinweis": "Denkhilfe, keine Anlageberatung. Frühzeichen, nicht am Rückblick geprüft.",
   "reihen": {
@@ -12,16 +12,16 @@
       "einheit": "Rupiah",
       "rolle": "fruehzeichen",
       "status": "ok",
-      "werte": 2297,
+      "werte": 2298,
       "letzter": {
-        "datum": "2026-11-17",
-        "wert": 20300.0
+        "datum": "2026-11-18",
+        "wert": 20200.0
       },
       "alter_tage": 0,
       "art": "täglich",
-      "mittel_jetzt": 20337.5,
-      "mittel_damals": 20440.0,
-      "veraenderung": -0.005,
+      "mittel_jetzt": 20332.5,
+      "mittel_damals": 20442.5,
+      "veraenderung": -0.0054,
       "urteil": "ruhig"
     },
     "speiseoel_id_marke": {
@@ -32,16 +32,16 @@
       "einheit": "Rupiah",
       "rolle": "fruehzeichen",
       "status": "ok",
-      "werte": 2300,
+      "werte": 2301,
       "letzter": {
-        "datum": "2026-11-17",
-        "wert": 24400.0
+        "datum": "2026-11-18",
+        "wert": 24350.0
       },
       "alter_tage": 0,
       "art": "täglich",
       "mittel_jetzt": 24397.5,
-      "mittel_damals": 24300.0,
-      "veraenderung": 0.004,
+      "mittel_damals": 24297.5,
+      "veraenderung": 0.0041,
       "urteil": "ruhig"
     },
     "pflanzenoel_id_monat": {
@@ -57,7 +57,7 @@
         "datum": "2026-09-01",
         "wert": 21727.0
       },
-      "alter_tage": 77,
+      "alter_tage": 78,
       "art": "monatlich",
       "vergleich": {
         "datum": "2026-06-01",
@@ -77,13 +77,13 @@
       "werte": 452,
       "letzter": {
         "datum": "2026-11-16",
-        "wert": 4228.5
+        "wert": 4239.0
       },
-      "alter_tage": 1,
+      "alter_tage": 2,
       "art": "täglich",
-      "mittel_jetzt": 4304.32,
+      "mittel_jetzt": 4304.87,
       "mittel_damals": 4544.16,
-      "veraenderung": -0.0528,
+      "veraenderung": -0.0527,
       "urteil": "ruhig"
     }
   },
