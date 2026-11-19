@@ -1,6 +1,6 @@
 {
-  "stand": "2026-11-18T05:15:52+01:00",
-  "datum": "2026-11-18",
+  "stand": "2026-11-19T05:10:02+01:00",
+  "datum": "2026-11-19",
   "version": "0.1.0",
   "land": "china",
   "name": "China-Ausfuhr",
@@ -10,9 +10,9 @@
   "zustand": "in Ordnung",
   "reihenfolge": [
     "chip",
-    "batterie",
     "magnet",
-    "werkzeug"
+    "werkzeug",
+    "batterie"
   ],
   "achsen": {
     "chip": {
@@ -45,7 +45,7 @@
         {
           "kanal": "frist",
           "kennung": "aussetzung_usa_ga_ge_sb",
-          "tage": 9,
+          "tage": 8,
           "zustand": "läuft bald aus"
         }
       ],
@@ -93,18 +93,9 @@
         }
       ],
       "wucht": 0.54,
-      "stufe": "Gelb",
-      "gruende": [
-        {
-          "kanal": "gegenseite",
-          "nummer": "2026-21294",
-          "datum": "2026-10-19",
-          "titel": "Large Diameter Graphite Electrodes From the People's Republic of China: Postponement of Final Determination of Sales at Less-Than-Fair-Value Investigation and Extension of Provisional Measures"
-        }
-      ],
-      "kanaele": [
-        "gegenseite"
-      ],
+      "stufe": "Grün",
+      "gruende": [],
+      "kanaele": [],
       "mehrfach": false,
       "instrumente": []
     },
@@ -128,7 +119,13 @@
       "instrumente": []
     }
   },
-  "wechsel": [],
+  "wechsel": [
+    {
+      "achse": "batterie",
+      "vorher": "Gelb",
+      "jetzt": "Grün"
+    }
+  ],
   "fristen": [
     {
       "kennung": "aussetzung_okt2025",
@@ -141,7 +138,7 @@
       "bis": "2027-01-10",
       "urspruenglich_bis": "2026-11-10",
       "verlaengert": true,
-      "tage": 53,
+      "tage": 52,
       "zustand": "läuft",
       "gelb": false,
       "rot_pruefen": false,
@@ -157,7 +154,7 @@
       "bis": "2026-11-27",
       "urspruenglich_bis": "2026-11-27",
       "verlaengert": false,
-      "tage": 9,
+      "tage": 8,
       "zustand": "läuft bald aus",
       "gelb": true,
       "rot_pruefen": false,
@@ -407,54 +404,6 @@
         ],
         "gewichtig": false,
         "neu": false
-      },
-      {
-        "nummer": "2026-21294",
-        "titel": "Large Diameter Graphite Electrodes From the People's Republic of China: Postponement of Final Determination of Sales at Less-Than-Fair-Value Investigation and Extension of Provisional Measures",
-        "datum": "2026-10-19",
-        "art": "Notice",
-        "behoerden": [
-          "commerce-department",
-          "international-trade-administration"
-        ],
-        "behoerden_namen": [
-          "Commerce Department",
-          "International Trade Administration"
-        ],
-        "url": "https://www.federalregister.gov/documents/2026/10/19/2026-21294/large-diameter-graphite-electrodes-from-the-peoples-republic-of-china-postponement-of-final",
-        "zusammenfassung": "The U.S. Department of Commerce (Commerce) is postponing the deadline for issuing the final determination in the less-than-fair-value (LTFV) investigation of large diameter graphite electrodes (LDGE) from the People's Republic of China (China) until February 12, 2027, and is extending the provisional measures from a four-month period to a period of not more than six months.",
-        "begriffe": [
-          "graphite"
-        ],
-        "achsen": [
-          "batterie"
-        ],
-        "gewichtig": true,
-        "neu": false
-      },
-      {
-        "nummer": "2026-21281",
-        "titel": "Diamond Sawblades and Parts Thereof From the People's Republic of China: Notice of Covered Merchandise Referral and Initiation of Covered Merchandise Inquiry",
-        "datum": "2026-10-19",
-        "art": "Notice",
-        "behoerden": [
-          "commerce-department",
-          "international-trade-administration"
-        ],
-        "behoerden_namen": [
-          "Commerce Department",
-          "International Trade Administration"
-        ],
-        "url": "https://www.federalregister.gov/documents/2026/10/19/2026-21281/diamond-sawblades-and-parts-thereof-from-the-peoples-republic-of-china-notice-of-covered-merchandise",
-        "zusammenfassung": "The U.S. Department of Commerce (Commerce) received a covered merchandise referral from U.S. Customs and Border Protection (CBP) in connection with a CBP investigation concerning alleged evasion of the antidumping duty (AD) order on diamond sawblades and parts thereof (diamond sawblades) from the People's Republic of China (China). Commerce is initiating a covered merchandise inquiry to determine whether the merchandise described in the referral is subject to the AD order on diamond sawblades from China. Interested parties are invited to comment and submit factual information addressing this i",
-        "begriffe": [
-          "tungsten"
-        ],
-        "achsen": [
-          "werkzeug"
-        ],
-        "gewichtig": false,
-        "neu": false
       }
     ]
   },
@@ -464,31 +413,31 @@
     "starkregen_gemessen": [],
     "starkregen_vorhergesagt": [],
     "regen_hoechst_mm": {
-      "lengshuijiang": 20.7,
-      "hechi": 8.6,
+      "lengshuijiang": 12.4,
+      "hechi": 10.2,
       "lincang": 5.3,
-      "qujing": 5.0,
+      "qujing": 5.7,
       "pingguo": 16.3,
       "zibo": 1.9,
       "baotou": 5.7,
-      "ganzhou": 14.7,
-      "jixi": 2.6
+      "ganzhou": 14.3,
+      "jixi": 2.3
     },
     "trocken": {
       "lincang": {
-        "von": "2026-08-15",
-        "bis": "2026-11-12",
-        "summe_mm": 465,
-        "normal_mm": 496,
+        "von": "2026-08-16",
+        "bis": "2026-11-13",
+        "summe_mm": 462,
+        "normal_mm": 489,
         "urteil": "normal",
-        "anteil": 0.94,
+        "anteil": 0.95,
         "trocken": false
       },
       "qujing": {
-        "von": "2026-08-15",
-        "bis": "2026-11-12",
+        "von": "2026-08-16",
+        "bis": "2026-11-13",
         "summe_mm": 239,
-        "normal_mm": 325,
+        "normal_mm": 322,
         "urteil": "normal",
         "anteil": 0.74,
         "trocken": false
@@ -503,13 +452,13 @@
       "rolle": "kandidat",
       "hinweis": "Antimon-Projekt Stibnite in Idaho, noch ohne Förderung",
       "waehrung": "USD",
-      "letzter": "2026-11-17",
-      "schluss": 17.16,
+      "letzter": "2026-11-18",
+      "schluss": 16.825,
       "alter_tage": 1,
-      "r_kurz": -0.1123,
-      "vorsprung_kurz": -0.0356,
-      "r_lang": -0.0833,
-      "vorsprung_lang": 0.0279,
+      "r_kurz": -0.1117,
+      "vorsprung_kurz": -0.0103,
+      "r_lang": -0.1022,
+      "vorsprung_lang": 0.0352,
       "urteil": "schläft",
       "markt_schlaeft": true,
       "handel": 22735907,
@@ -521,16 +470,16 @@
       "rolle": "kandidat",
       "hinweis": "kleiner Antimon-Verarbeiter in den USA und Mexiko",
       "waehrung": "USD",
-      "letzter": "2026-11-17",
-      "schluss": 2.48,
+      "letzter": "2026-11-18",
+      "schluss": 2.52,
       "alter_tage": 1,
-      "r_kurz": -0.2274,
-      "vorsprung_kurz": -0.1507,
-      "r_lang": -0.2051,
-      "vorsprung_lang": -0.0939,
+      "r_kurz": -0.1923,
+      "vorsprung_kurz": -0.0909,
+      "r_lang": -0.234,
+      "vorsprung_lang": -0.0966,
       "urteil": "schläft",
       "markt_schlaeft": true,
-      "handel": 20509636,
+      "handel": 20357688,
       "duenn": false
     },
     "MP": {
@@ -539,13 +488,13 @@
       "rolle": "beobachtung",
       "hinweis": "seltene Erden USA; seit 22.06.2026 selbst auf Chinas Exportkontrollliste",
       "waehrung": "USD",
-      "letzter": "2026-11-17",
-      "schluss": 34.86,
+      "letzter": "2026-11-18",
+      "schluss": 35.95,
       "alter_tage": 1,
-      "r_kurz": -0.0439,
-      "vorsprung_kurz": 0.0328,
-      "r_lang": -0.1073,
-      "vorsprung_lang": 0.0039,
+      "r_kurz": -0.0212,
+      "vorsprung_kurz": 0.0802,
+      "r_lang": -0.0899,
+      "vorsprung_lang": 0.0476,
       "urteil": "schläft",
       "markt_schlaeft": true,
       "handel": 229651198,
@@ -557,13 +506,13 @@
       "rolle": "beobachtung",
       "hinweis": "größter Produzent seltener Erden außerhalb Chinas",
       "waehrung": "AUD",
-      "letzter": "2026-11-17",
-      "schluss": 12.03,
+      "letzter": "2026-11-18",
+      "schluss": 12.37,
       "alter_tage": 1,
-      "r_kurz": -0.1219,
-      "vorsprung_kurz": -0.0452,
-      "r_lang": 0.0599,
-      "vorsprung_lang": 0.1711,
+      "r_kurz": -0.1114,
+      "vorsprung_kurz": -0.0099,
+      "r_lang": 0.071,
+      "vorsprung_lang": 0.2084,
       "urteil": "gelaufen",
       "markt_schlaeft": false,
       "handel": 61385576,

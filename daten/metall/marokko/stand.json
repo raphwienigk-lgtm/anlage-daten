@@ -1,6 +1,6 @@
 {
-  "stand": "2026-11-18T05:17:46+01:00",
-  "datum": "2026-11-18",
+  "stand": "2026-11-19T05:11:54+01:00",
+  "datum": "2026-11-19",
   "version": "0.1.0",
   "land": "marokko",
   "name": "Marokko-Phosphat",
@@ -56,7 +56,7 @@
       "bis": "2027-12-31",
       "urspruenglich_bis": "2027-12-31",
       "verlaengert": false,
-      "tage": 408,
+      "tage": 407,
       "zustand": "läuft",
       "gelb": false,
       "rot_pruefen": false,
@@ -72,7 +72,7 @@
       "bis": "2027-12-31",
       "urspruenglich_bis": "2027-12-31",
       "verlaengert": false,
-      "tage": 408,
+      "tage": 407,
       "zustand": "läuft",
       "gelb": false,
       "rot_pruefen": false,
@@ -88,7 +88,7 @@
       "bis": "2027-10-03",
       "urspruenglich_bis": "2027-10-03",
       "verlaengert": false,
-      "tage": 319,
+      "tage": 318,
       "zustand": "läuft",
       "gelb": false,
       "rot_pruefen": false,
@@ -460,78 +460,6 @@
         ],
         "gewichtig": false,
         "neu": false
-      },
-      {
-        "nummer": "2026-21362",
-        "titel": "Certain Steel Nails From Taiwan: Final Results of Antidumping Duty Administrative Review; 2024-2025",
-        "datum": "2026-10-19",
-        "art": "Notice",
-        "behoerden": [
-          "commerce-department",
-          "international-trade-administration"
-        ],
-        "behoerden_namen": [
-          "Commerce Department",
-          "International Trade Administration"
-        ],
-        "url": "https://www.federalregister.gov/documents/2026/10/19/2026-21362/certain-steel-nails-from-taiwan-final-results-of-antidumping-duty-administrative-review-2024-2025",
-        "zusammenfassung": "The U.S. Department of Commerce (Commerce) determines that certain steel nails (nails) from Taiwan were sold in the United States at less than normal value during the period of review (POR), July 1, 2024, through June 30, 2025.",
-        "begriffe": [
-          "phosphate"
-        ],
-        "achsen": [
-          "duenger"
-        ],
-        "gewichtig": false,
-        "neu": false
-      },
-      {
-        "nummer": "2026-21296",
-        "titel": "Certain Softwood Lumber Products From Canada: Final Results of Antidumping Duty Administrative Review, Partial Rescission of Administrative Review, and Final Determination of No Shipments; 2024",
-        "datum": "2026-10-19",
-        "art": "Notice",
-        "behoerden": [
-          "commerce-department",
-          "international-trade-administration"
-        ],
-        "behoerden_namen": [
-          "Commerce Department",
-          "International Trade Administration"
-        ],
-        "url": "https://www.federalregister.gov/documents/2026/10/19/2026-21296/certain-softwood-lumber-products-from-canada-final-results-of-antidumping-duty-administrative-review",
-        "zusammenfassung": "The U.S. Department of Commerce (Commerce) determines that producers and/or exporters subject to this administrative review sold subject merchandise at less than normal value during the period of review (POR), January 1, 2024, through December 31, 2024.",
-        "begriffe": [
-          "fertilizer"
-        ],
-        "achsen": [
-          "duenger"
-        ],
-        "gewichtig": false,
-        "neu": false
-      },
-      {
-        "nummer": "2026-21279",
-        "titel": "Boltless Steel Shelving Units Prepackaged for Sale From Thailand: Preliminary Results and Rescission, in Part, of Antidumping Duty Administrative Review; 2023-2025",
-        "datum": "2026-10-19",
-        "art": "Notice",
-        "behoerden": [
-          "commerce-department",
-          "international-trade-administration"
-        ],
-        "behoerden_namen": [
-          "Commerce Department",
-          "International Trade Administration"
-        ],
-        "url": "https://www.federalregister.gov/documents/2026/10/19/2026-21279/boltless-steel-shelving-units-prepackaged-for-sale-from-thailand-preliminary-results-and-rescission",
-        "zusammenfassung": "The U.S. Department of Commerce (Commerce) preliminarily determines that Fuding Industries Company Limited (Fuding) did not make sales of subject merchandise at less than normal value during the period of review (POR), November 29, 2023, through May 31, 2025. In addition, we are rescinding the review with respect to five companies. Interested parties are invited to comment on these preliminary results of review.",
-        "begriffe": [
-          "fertilizer"
-        ],
-        "achsen": [
-          "duenger"
-        ],
-        "gewichtig": false,
-        "neu": false
       }
     ]
   },
@@ -558,16 +486,16 @@
       "rolle": "sensor",
       "hinweis": "Kanada; größter Düngemittelkonzern, aber schwerpunktmäßig Kali — verwässert",
       "waehrung": "USD",
-      "letzter": "2026-11-17",
-      "schluss": 69.22,
+      "letzter": "2026-11-18",
+      "schluss": 65.92,
       "alter_tage": 1,
-      "r_kurz": -0.0409,
-      "vorsprung_kurz": -0.0118,
-      "r_lang": 0.0028,
-      "vorsprung_lang": 0.0336,
+      "r_kurz": -0.08,
+      "vorsprung_kurz": -0.0607,
+      "r_lang": -0.0323,
+      "vorsprung_lang": 0.0047,
       "urteil": "schläft",
       "markt_schlaeft": true,
-      "handel": 155824656,
+      "handel": 150451474,
       "duenn": false
     },
     "MOS": {
@@ -576,16 +504,16 @@
       "rolle": "sensor",
       "hinweis": "USA; Phosphat und Kali, zugleich Kläger in den Ausgleichszollverfahren gegen OCP",
       "waehrung": "USD",
-      "letzter": "2026-11-17",
-      "schluss": 20.74,
+      "letzter": "2026-11-18",
+      "schluss": 19.93,
       "alter_tage": 1,
-      "r_kurz": -0.0979,
-      "vorsprung_kurz": -0.0688,
-      "r_lang": 0.1613,
-      "vorsprung_lang": 0.1921,
+      "r_kurz": -0.1259,
+      "vorsprung_kurz": -0.1066,
+      "r_lang": 0.1273,
+      "vorsprung_lang": 0.1643,
       "urteil": "gelaufen",
       "markt_schlaeft": false,
-      "handel": 190075355,
+      "handel": 191370015,
       "duenn": false
     }
   },

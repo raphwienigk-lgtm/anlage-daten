@@ -1,6 +1,6 @@
 {
-  "stand": "2026-11-18T05:16:01+01:00",
-  "datum": "2026-11-18",
+  "stand": "2026-11-19T05:10:10+01:00",
+  "datum": "2026-11-19",
   "version": "0.1.0",
   "land": "indonesien",
   "name": "Indonesien-Ausfuhr",
@@ -31,7 +31,7 @@
         {
           "kanal": "trocken",
           "standort": "sorowako",
-          "anteil": 0.16
+          "anteil": 0.2
         }
       ],
       "kanaele": [
@@ -76,7 +76,7 @@
       "bis": "2026-12-31",
       "urspruenglich_bis": "2026-12-31",
       "verlaengert": false,
-      "tage": 43,
+      "tage": 42,
       "zustand": "läuft",
       "gelb": false,
       "rot_pruefen": false,
@@ -92,7 +92,7 @@
       "bis": "2026-12-31",
       "urspruenglich_bis": "2026-12-31",
       "verlaengert": false,
-      "tage": 43,
+      "tage": 42,
       "zustand": "läuft",
       "gelb": false,
       "rot_pruefen": false,
@@ -109,7 +109,7 @@
       "bis": "2027-01-01",
       "urspruenglich_bis": "2027-01-01",
       "verlaengert": false,
-      "tage": 44,
+      "tage": 43,
       "zustand": "läuft",
       "gelb": false,
       "rot_pruefen": false,
@@ -504,79 +504,31 @@
         ],
         "gewichtig": false,
         "neu": false
-      },
-      {
-        "nummer": "2026-21296",
-        "titel": "Certain Softwood Lumber Products From Canada: Final Results of Antidumping Duty Administrative Review, Partial Rescission of Administrative Review, and Final Determination of No Shipments; 2024",
-        "datum": "2026-10-19",
-        "art": "Notice",
-        "behoerden": [
-          "commerce-department",
-          "international-trade-administration"
-        ],
-        "behoerden_namen": [
-          "Commerce Department",
-          "International Trade Administration"
-        ],
-        "url": "https://www.federalregister.gov/documents/2026/10/19/2026-21296/certain-softwood-lumber-products-from-canada-final-results-of-antidumping-duty-administrative-review",
-        "zusammenfassung": "The U.S. Department of Commerce (Commerce) determines that producers and/or exporters subject to this administrative review sold subject merchandise at less than normal value during the period of review (POR), January 1, 2024, through December 31, 2024.",
-        "begriffe": [
-          "nickel"
-        ],
-        "achsen": [
-          "nickel"
-        ],
-        "gewichtig": false,
-        "neu": false
-      },
-      {
-        "nummer": "2026-21281",
-        "titel": "Diamond Sawblades and Parts Thereof From the People's Republic of China: Notice of Covered Merchandise Referral and Initiation of Covered Merchandise Inquiry",
-        "datum": "2026-10-19",
-        "art": "Notice",
-        "behoerden": [
-          "commerce-department",
-          "international-trade-administration"
-        ],
-        "behoerden_namen": [
-          "Commerce Department",
-          "International Trade Administration"
-        ],
-        "url": "https://www.federalregister.gov/documents/2026/10/19/2026-21281/diamond-sawblades-and-parts-thereof-from-the-peoples-republic-of-china-notice-of-covered-merchandise",
-        "zusammenfassung": "The U.S. Department of Commerce (Commerce) received a covered merchandise referral from U.S. Customs and Border Protection (CBP) in connection with a CBP investigation concerning alleged evasion of the antidumping duty (AD) order on diamond sawblades and parts thereof (diamond sawblades) from the People's Republic of China (China). Commerce is initiating a covered merchandise inquiry to determine whether the merchandise described in the referral is subject to the AD order on diamond sawblades from China. Interested parties are invited to comment and submit factual information addressing this i",
-        "begriffe": [
-          "nickel"
-        ],
-        "achsen": [
-          "nickel"
-        ],
-        "gewichtig": false,
-        "neu": false
       }
     ]
   },
   "stoerung": {
     "erdbeben": [],
-    "erdbeben_gesamt": 13,
+    "erdbeben_gesamt": 14,
     "starkregen_gemessen": [],
     "starkregen_vorhergesagt": [],
     "regen_hoechst_mm": {
-      "morowali": 18.1,
+      "morowali": 23.0,
       "weda_bay": 18.0,
-      "sorowako": 13.5,
-      "pomalaa": 10.6,
-      "bangka": 30.1,
+      "sorowako": 19.5,
+      "pomalaa": 16.8,
+      "bangka": 17.8,
       "belitung": 22.1,
-      "muntok": 20.0
+      "muntok": 18.7
     },
     "trocken": {
       "sorowako": {
-        "von": "2026-08-15",
-        "bis": "2026-11-12",
-        "summe_mm": 80,
-        "normal_mm": 509,
+        "von": "2026-08-16",
+        "bis": "2026-11-13",
+        "summe_mm": 104,
+        "normal_mm": 512,
         "urteil": "trocken",
-        "anteil": 0.16,
+        "anteil": 0.2,
         "trocken": true
       }
     },
@@ -589,13 +541,13 @@
       "rolle": "beobachtung",
       "hinweis": "bildet den LME-Nickelpreis ab, kein Länderrisiko, keine Verwässerung",
       "waehrung": "USD",
-      "letzter": "2026-11-16",
-      "schluss": 13.71,
+      "letzter": "2026-11-17",
+      "schluss": 14.2125,
       "alter_tage": 2,
-      "r_kurz": -0.0207,
-      "vorsprung_kurz": 0.0083,
-      "r_lang": 0.0205,
-      "vorsprung_lang": 0.0513,
+      "r_kurz": 0.0265,
+      "vorsprung_kurz": 0.0458,
+      "r_lang": 0.0493,
+      "vorsprung_lang": 0.0863,
       "urteil": "schläft",
       "markt_schlaeft": true,
       "handel": 36421,
@@ -607,16 +559,16 @@
       "rolle": "beobachtung",
       "hinweis": "bildet den LME-Zinnpreis ab",
       "waehrung": "USD",
-      "letzter": "2026-11-17",
-      "schluss": 104.345,
+      "letzter": "2026-11-18",
+      "schluss": 98.73,
       "alter_tage": 1,
-      "r_kurz": -0.0218,
-      "vorsprung_kurz": 0.0072,
-      "r_lang": -0.1141,
-      "vorsprung_lang": -0.0833,
+      "r_kurz": -0.0794,
+      "vorsprung_kurz": -0.0602,
+      "r_lang": -0.162,
+      "vorsprung_lang": -0.1249,
       "urteil": "schläft",
       "markt_schlaeft": true,
-      "handel": 6160,
+      "handel": 8263,
       "duenn": true
     }
   },

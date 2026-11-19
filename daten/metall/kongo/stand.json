@@ -1,6 +1,6 @@
 {
-  "stand": "2026-11-18T05:17:50+01:00",
-  "datum": "2026-11-18",
+  "stand": "2026-11-19T05:11:58+01:00",
+  "datum": "2026-11-19",
   "version": "0.1.0",
   "land": "kongo",
   "name": "Kongo-Kobalt",
@@ -46,7 +46,7 @@
       "bis": "2027-12-31",
       "urspruenglich_bis": "2027-12-31",
       "verlaengert": false,
-      "tage": 408,
+      "tage": 407,
       "zustand": "läuft",
       "gelb": false,
       "rot_pruefen": false,
@@ -62,7 +62,7 @@
       "bis": "2026-12-31",
       "urspruenglich_bis": "2026-12-31",
       "verlaengert": false,
-      "tage": 43,
+      "tage": 42,
       "zustand": "läuft",
       "gelb": false,
       "rot_pruefen": false,
@@ -192,30 +192,6 @@
         ],
         "gewichtig": false,
         "neu": false
-      },
-      {
-        "nummer": "2026-21281",
-        "titel": "Diamond Sawblades and Parts Thereof From the People's Republic of China: Notice of Covered Merchandise Referral and Initiation of Covered Merchandise Inquiry",
-        "datum": "2026-10-19",
-        "art": "Notice",
-        "behoerden": [
-          "commerce-department",
-          "international-trade-administration"
-        ],
-        "behoerden_namen": [
-          "Commerce Department",
-          "International Trade Administration"
-        ],
-        "url": "https://www.federalregister.gov/documents/2026/10/19/2026-21281/diamond-sawblades-and-parts-thereof-from-the-peoples-republic-of-china-notice-of-covered-merchandise",
-        "zusammenfassung": "The U.S. Department of Commerce (Commerce) received a covered merchandise referral from U.S. Customs and Border Protection (CBP) in connection with a CBP investigation concerning alleged evasion of the antidumping duty (AD) order on diamond sawblades and parts thereof (diamond sawblades) from the People's Republic of China (China). Commerce is initiating a covered merchandise inquiry to determine whether the merchandise described in the referral is subject to the AD order on diamond sawblades from China. Interested parties are invited to comment and submit factual information addressing this i",
-        "begriffe": [
-          "cobalt"
-        ],
-        "achsen": [
-          "kobalt"
-        ],
-        "gewichtig": false,
-        "neu": false
       }
     ]
   },
@@ -225,12 +201,12 @@
     "starkregen_gemessen": [],
     "starkregen_vorhergesagt": [],
     "regen_hoechst_mm": {
-      "kolwezi": 28.8,
+      "kolwezi": 15.3,
       "likasi": 18.4,
       "tenke": 21.6,
-      "kisanfu": 13.0,
-      "kasumbalesa": 12.7,
-      "durban": 16.2
+      "kisanfu": 15.7,
+      "kasumbalesa": 16.6,
+      "durban": 13.8
     },
     "trocken": {},
     "gelb_tage": 45
@@ -242,16 +218,16 @@
       "rolle": "sensor",
       "hinweis": "größter westlicher Kobalt-Förderer im Kongo, aber riesiger Mischkonzern — Signal stark verwässert",
       "waehrung": "GBP",
-      "letzter": "2026-11-16",
-      "schluss": 501.0,
+      "letzter": "2026-11-17",
+      "schluss": 491.45,
       "alter_tage": 2,
-      "r_kurz": -0.0279,
-      "vorsprung_kurz": 0.0011,
-      "r_lang": -0.1114,
-      "vorsprung_lang": -0.0806,
+      "r_kurz": -0.0261,
+      "vorsprung_kurz": -0.0068,
+      "r_lang": -0.1065,
+      "vorsprung_lang": -0.0694,
       "urteil": "schläft",
       "markt_schlaeft": true,
-      "handel": 16733086185,
+      "handel": 15966878700,
       "duenn": false
     }
   },
