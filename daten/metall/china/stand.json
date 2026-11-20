@@ -1,6 +1,6 @@
 {
-  "stand": "2026-11-19T05:10:02+01:00",
-  "datum": "2026-11-19",
+  "stand": "2026-11-20T04:57:53+01:00",
+  "datum": "2026-11-20",
   "version": "0.1.0",
   "land": "china",
   "name": "China-Ausfuhr",
@@ -45,14 +45,21 @@
         {
           "kanal": "frist",
           "kennung": "aussetzung_usa_ga_ge_sb",
-          "tage": 8,
+          "tage": 7,
           "zustand": "läuft bald aus"
+        },
+        {
+          "kanal": "gegenseite",
+          "nummer": "2026-23529",
+          "datum": "2026-11-19",
+          "titel": "Addressing Remote Access to Advanced Semiconductors"
         }
       ],
       "kanaele": [
-        "frist"
+        "frist",
+        "gegenseite"
       ],
-      "mehrfach": false,
+      "mehrfach": true,
       "instrumente": [
         "PPTA",
         "UAMY"
@@ -119,13 +126,7 @@
       "instrumente": []
     }
   },
-  "wechsel": [
-    {
-      "achse": "batterie",
-      "vorher": "Gelb",
-      "jetzt": "Grün"
-    }
-  ],
+  "wechsel": [],
   "fristen": [
     {
       "kennung": "aussetzung_okt2025",
@@ -138,7 +139,7 @@
       "bis": "2027-01-10",
       "urspruenglich_bis": "2026-11-10",
       "verlaengert": true,
-      "tage": 52,
+      "tage": 51,
       "zustand": "läuft",
       "gelb": false,
       "rot_pruefen": false,
@@ -154,7 +155,7 @@
       "bis": "2026-11-27",
       "urspruenglich_bis": "2026-11-27",
       "verlaengert": false,
-      "tage": 8,
+      "tage": 7,
       "zustand": "läuft bald aus",
       "gelb": true,
       "rot_pruefen": false,
@@ -165,6 +166,30 @@
     "herkunft": "frisch",
     "tage": 30,
     "dokumente": [
+      {
+        "nummer": "2026-23529",
+        "titel": "Addressing Remote Access to Advanced Semiconductors",
+        "datum": "2026-11-19",
+        "art": "Rule",
+        "behoerden": [
+          "commerce-department",
+          "industry-and-security-bureau"
+        ],
+        "behoerden_namen": [
+          "Commerce Department",
+          "Industry and Security Bureau"
+        ],
+        "url": "https://www.federalregister.gov/documents/2026/11/19/2026-23529/addressing-remote-access-to-advanced-semiconductors",
+        "zusammenfassung": "In this interim final rule (IFR), the Department of Commerce is establishing new rules to prevent certain foreign actors from leveraging advanced computing power based on U.S. technology to threaten U.S. national security and foreign policy interests. First, this rule establishes new restrictions which will apply for exports, reexports, or transfers (in-country) to overseas data centers that remotely supply significant volumes of compute to companies headquartered in Country Group D:5 or Macau. These restrictions will undermine the ability of companies headquartered in countries of concern fro",
+        "begriffe": [
+          "semiconductor manufacturing"
+        ],
+        "achsen": [
+          "chip"
+        ],
+        "gewichtig": true,
+        "neu": true
+      },
       {
         "nummer": "2026-23253",
         "titel": "Diamond Sawblades and Parts Thereof From the People's Republic of China: Continuation of Antidumping Duty Order",
@@ -413,33 +438,33 @@
     "starkregen_gemessen": [],
     "starkregen_vorhergesagt": [],
     "regen_hoechst_mm": {
-      "lengshuijiang": 12.4,
-      "hechi": 10.2,
-      "lincang": 5.3,
-      "qujing": 5.7,
-      "pingguo": 16.3,
+      "lengshuijiang": 18.7,
+      "hechi": 9.5,
+      "lincang": 3.0,
+      "qujing": 9.5,
+      "pingguo": 18.0,
       "zibo": 1.9,
       "baotou": 5.7,
-      "ganzhou": 14.3,
+      "ganzhou": 16.8,
       "jixi": 2.3
     },
     "trocken": {
       "lincang": {
-        "von": "2026-08-16",
-        "bis": "2026-11-13",
-        "summe_mm": 462,
-        "normal_mm": 489,
+        "von": "2026-08-17",
+        "bis": "2026-11-14",
+        "summe_mm": 450,
+        "normal_mm": 479,
         "urteil": "normal",
-        "anteil": 0.95,
+        "anteil": 0.94,
         "trocken": false
       },
       "qujing": {
-        "von": "2026-08-16",
-        "bis": "2026-11-13",
-        "summe_mm": 239,
-        "normal_mm": 322,
+        "von": "2026-08-17",
+        "bis": "2026-11-14",
+        "summe_mm": 236,
+        "normal_mm": 316,
         "urteil": "normal",
-        "anteil": 0.74,
+        "anteil": 0.75,
         "trocken": false
       }
     },
@@ -454,11 +479,11 @@
       "waehrung": "USD",
       "letzter": "2026-11-18",
       "schluss": 16.825,
-      "alter_tage": 1,
+      "alter_tage": 2,
       "r_kurz": -0.1117,
-      "vorsprung_kurz": -0.0103,
+      "vorsprung_kurz": -0.008,
       "r_lang": -0.1022,
-      "vorsprung_lang": 0.0352,
+      "vorsprung_lang": 0.0139,
       "urteil": "schläft",
       "markt_schlaeft": true,
       "handel": 22735907,
@@ -470,16 +495,16 @@
       "rolle": "kandidat",
       "hinweis": "kleiner Antimon-Verarbeiter in den USA und Mexiko",
       "waehrung": "USD",
-      "letzter": "2026-11-18",
-      "schluss": 2.52,
+      "letzter": "2026-11-19",
+      "schluss": 2.38,
       "alter_tage": 1,
-      "r_kurz": -0.1923,
-      "vorsprung_kurz": -0.0909,
-      "r_lang": -0.234,
-      "vorsprung_lang": -0.0966,
+      "r_kurz": -0.1821,
+      "vorsprung_kurz": -0.0785,
+      "r_lang": -0.2323,
+      "vorsprung_lang": -0.1162,
       "urteil": "schläft",
       "markt_schlaeft": true,
-      "handel": 20357688,
+      "handel": 20238994,
       "duenn": false
     },
     "MP": {
@@ -490,11 +515,11 @@
       "waehrung": "USD",
       "letzter": "2026-11-18",
       "schluss": 35.95,
-      "alter_tage": 1,
+      "alter_tage": 2,
       "r_kurz": -0.0212,
-      "vorsprung_kurz": 0.0802,
+      "vorsprung_kurz": 0.0824,
       "r_lang": -0.0899,
-      "vorsprung_lang": 0.0476,
+      "vorsprung_lang": 0.0262,
       "urteil": "schläft",
       "markt_schlaeft": true,
       "handel": 229651198,
@@ -506,16 +531,16 @@
       "rolle": "beobachtung",
       "hinweis": "größter Produzent seltener Erden außerhalb Chinas",
       "waehrung": "AUD",
-      "letzter": "2026-11-18",
-      "schluss": 12.37,
+      "letzter": "2026-11-19",
+      "schluss": 12.79,
       "alter_tage": 1,
-      "r_kurz": -0.1114,
-      "vorsprung_kurz": -0.0099,
-      "r_lang": 0.071,
-      "vorsprung_lang": 0.2084,
+      "r_kurz": -0.0412,
+      "vorsprung_kurz": 0.0624,
+      "r_lang": 0.1239,
+      "vorsprung_lang": 0.24,
       "urteil": "gelaufen",
       "markt_schlaeft": false,
-      "handel": 61385576,
+      "handel": 61794896,
       "duenn": false
     }
   },
