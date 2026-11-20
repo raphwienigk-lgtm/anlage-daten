@@ -1,5 +1,5 @@
 Agent: Ersatz-Sensor Palladium (Datenlauf auf GitHub)
-Stand: 19.11.2026, 05:15
+Stand: 20.11.2026, 05:02
 Zustand: in Ordnung
 Ergebnis: abgabe/ersatz-palladium-teil-1.md, daten/ersatz/palladium/stand.json
 Stufe: Grün (ganzjährig)
