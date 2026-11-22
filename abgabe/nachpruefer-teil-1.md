@@ -1,7 +1,7 @@
-Stand: 15.11.2026, 11:49
+Stand: 22.11.2026, 12:18
 Teil 1 von 1
 
-Der Nachprüfer für die Woche vom neunten November bis fünfzehnten November.
+Der Nachprüfer für die Woche vom sechzehnten November bis zweiundzwanzigsten November.
 
 Der tägliche Lauf gelang an allen sieben Tagen. Zustand beim letzten Lauf: in Ordnung.
 
@@ -27,7 +27,7 @@ Palmöl: bisher kein echtes Rot-Signal. Ein Rückblick liegt noch nicht vor. Fü
 
 Metall Chile-Lithium, Datenteil: Lithium-Achse steht auf Grün seit Beginn der Aufzeichnung am neunten Oktober. In dieser Woche gab es keinen Wechsel. Rot und das Schattendepot der Metalle führt der Metall-Wächter in der Cloud; sie stehen im Bericht des Nachprüfers im Projekt.
 
-Metall China-Ausfuhr, Datenteil: Chip-Achse steht auf Gelb seit dem achtundzwanzigsten Oktober; Magnet-Achse steht auf Grün seit dem fünfzehnten November; Batterie-Achse steht auf Gelb seit Beginn der Aufzeichnung am sechsundzwanzigsten September; Werkzeug-Achse steht auf Grün seit dem siebenundzwanzigsten September. Wechsel in dieser Woche: Magnet-Achse am fünfzehnten November von Gelb auf Grün. Rot und das Schattendepot der Metalle führt der Metall-Wächter in der Cloud; sie stehen im Bericht des Nachprüfers im Projekt.
+Metall China-Ausfuhr, Datenteil: Chip-Achse steht auf Gelb seit dem achtundzwanzigsten Oktober; Magnet-Achse steht auf Grün seit dem fünfzehnten November; Batterie-Achse steht auf Grün seit dem neunzehnten November; Werkzeug-Achse steht auf Grün seit dem siebenundzwanzigsten September. Wechsel in dieser Woche: Batterie-Achse am neunzehnten November von Gelb auf Grün. Rot und das Schattendepot der Metalle führt der Metall-Wächter in der Cloud; sie stehen im Bericht des Nachprüfers im Projekt.
 
 Metall Indonesien-Ausfuhr, Datenteil: Nickel-Achse steht auf Gelb seit dem zwölften Oktober; Zinn-Achse steht auf Grün seit Beginn der Aufzeichnung am neunten Oktober. In dieser Woche gab es keinen Wechsel. Rot und das Schattendepot der Metalle führt der Metall-Wächter in der Cloud; sie stehen im Bericht des Nachprüfers im Projekt.
 

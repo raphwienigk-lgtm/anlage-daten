@@ -1,13 +1,13 @@
 {
-  "stand": "2026-11-15T11:49:46+01:00",
+  "stand": "2026-11-22T12:18:55+01:00",
   "version": "0.1.0",
   "hinweis": "Denkhilfe, keine Anlageberatung.",
   "woche": {
-    "von": "2026-11-09",
-    "bis": "2026-11-15"
+    "von": "2026-11-16",
+    "bis": "2026-11-22"
   },
   "laufkontrolle": {
-    "stand_datum": "2026-11-15",
+    "stand_datum": "2026-11-22",
     "zustand": "in Ordnung",
     "hinweise": [],
     "betrieb_seit": "2026-09-27",
@@ -128,7 +128,7 @@
     "metall_chile": {
       "art": "metall",
       "name": "Metall Chile-Lithium",
-      "laeufe": 38,
+      "laeufe": 45,
       "achsen": {
         "lithium": {
           "name": "Lithium-Achse",
@@ -142,7 +142,7 @@
     "metall_china": {
       "art": "metall",
       "name": "Metall China-Ausfuhr",
-      "laeufe": 52,
+      "laeufe": 59,
       "achsen": {
         "chip": {
           "name": "Chip-Achse",
@@ -156,20 +156,20 @@
           "jetzt": "Grün",
           "seit": "2026-11-15",
           "seit_beginn": false,
+          "wechsel": []
+        },
+        "batterie": {
+          "name": "Batterie-Achse",
+          "jetzt": "Grün",
+          "seit": "2026-11-19",
+          "seit_beginn": false,
           "wechsel": [
             {
-              "tag": "2026-11-15",
+              "tag": "2026-11-19",
               "vorher": "Gelb",
               "jetzt": "Grün"
             }
           ]
-        },
-        "batterie": {
-          "name": "Batterie-Achse",
-          "jetzt": "Gelb",
-          "seit": "2026-09-26",
-          "seit_beginn": true,
-          "wechsel": []
         },
         "werkzeug": {
           "name": "Werkzeug-Achse",
@@ -183,7 +183,7 @@
     "metall_indonesien": {
       "art": "metall",
       "name": "Metall Indonesien-Ausfuhr",
-      "laeufe": 38,
+      "laeufe": 45,
       "achsen": {
         "nickel": {
           "name": "Nickel-Achse",
@@ -204,7 +204,7 @@
     "metall_kongo": {
       "art": "metall",
       "name": "Metall Kongo-Kobalt",
-      "laeufe": 38,
+      "laeufe": 45,
       "achsen": {
         "kobalt": {
           "name": "Kobalt-Achse",
@@ -218,7 +218,7 @@
     "metall_marokko": {
       "art": "metall",
       "name": "Metall Marokko-Phosphat",
-      "laeufe": 38,
+      "laeufe": 45,
       "achsen": {
         "duenger": {
           "name": "Dünger-Achse",
@@ -232,7 +232,7 @@
     "ersatz_haselnuss": {
       "art": "ersatz",
       "name": "Ersatz-Sensor Haselnuss",
-      "laeufe": 52,
+      "laeufe": 59,
       "vergleich": "australischer Aktienindex ASX 200",
       "jetzt": "Grün",
       "seit": "2026-09-26",
@@ -243,7 +243,7 @@
     "ersatz_palladium": {
       "art": "ersatz",
       "name": "Ersatz-Sensor Palladium",
-      "laeufe": 52,
+      "laeufe": 59,
       "vergleich": "Gold-ETF",
       "jetzt": "Grün",
       "seit": "2026-09-27",

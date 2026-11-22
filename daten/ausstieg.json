@@ -1,6 +1,6 @@
 {
-  "stand": "2026-11-15T11:49:46+01:00",
-  "datum": "2026-11-15",
+  "stand": "2026-11-22T12:18:56+01:00",
+  "datum": "2026-11-22",
   "version": "0.1.0",
   "hinweis": "Denkhilfe, keine Anlageberatung. Welche Ausstiegsregel gilt, entscheidest du.",
   "gilt": {
@@ -2520,8 +2520,8 @@
                 },
                 "ziel": {
                   "offen": true,
-                  "schritt": 102,
-                  "rendite": -0.3571
+                  "schritt": 107,
+                  "rendite": -0.4369
                 },
                 "nachlauf": {
                   "offen": false,
@@ -3030,8 +3030,8 @@
                 },
                 "ziel": {
                   "offen": true,
-                  "schritt": 104,
-                  "rendite": -0.2916
+                  "schritt": 109,
+                  "rendite": -0.3319
                 },
                 "nachlauf": {
                   "offen": false,
@@ -3078,27 +3078,27 @@
             "WisdomTree Nickel (ETC)"
           ],
           "faelle_gesamt": 22,
-          "verglichen": 17,
-          "offen": 5,
+          "verglichen": 19,
+          "offen": 3,
           "massstab": "vorsprung",
           "vorn": "regel2",
           "vorn_gleichauf": [],
-          "gipfel_mittel": 0.1769,
+          "gipfel_mittel": 0.1601,
           "varianten": [
             {
               "kennung": "bisher",
               "name": "bisherige Regel: Lockerung auf der Achse oder nach 90 Tagen",
               "kurz": "Bisherige Regel, Lockerung oder 90 Tage",
-              "n": 17,
-              "mittel": 0.0552,
-              "median": 0.0214,
-              "vorsprung": 0.0071,
+              "n": 19,
+              "mittel": 0.0375,
+              "median": 0.0057,
+              "vorsprung": -0.0027,
               "im_plus": 11,
-              "schlechtester": -0.0728,
+              "schlechtester": -0.1199,
               "bester": 0.4651,
-              "dauer": 46.3,
+              "dauer": 48.1,
               "gruende": {
-                "nach 90 Tagen": 9,
+                "nach 90 Tagen": 11,
                 "Lockerung": 8
               }
             },
@@ -3106,32 +3106,32 @@
               "kennung": "zeit",
               "name": "nach 20 Handelstagen",
               "kurz": "Nach 20 Handelstagen",
-              "n": 17,
-              "mittel": 0.0152,
-              "median": 0.0037,
-              "vorsprung": -0.0087,
+              "n": 19,
+              "mittel": 0.0055,
+              "median": -0.002,
+              "vorsprung": -0.0117,
               "im_plus": 9,
               "schlechtester": -0.1335,
               "bester": 0.1032,
               "dauer": 20,
               "gruende": {
-                "Haltedauer": 17
+                "Haltedauer": 19
               }
             },
             {
               "kennung": "ziel",
               "name": "Gewinnziel 30 Prozent, spätestens nach 126 Handelstagen",
               "kurz": "Gewinnziel 30 Prozent",
-              "n": 17,
-              "mittel": -0.026,
-              "median": -0.042,
-              "vorsprung": -0.0734,
+              "n": 19,
+              "mittel": -0.042,
+              "median": -0.0499,
+              "vorsprung": -0.0733,
               "im_plus": 5,
               "schlechtester": -0.3255,
               "bester": 0.3327,
-              "dauer": 115.9,
+              "dauer": 116.9,
               "gruende": {
-                "Haltedauer": 14,
+                "Haltedauer": 16,
                 "Gewinnziel": 3
               }
             },
@@ -3139,34 +3139,34 @@
               "kennung": "nachlauf",
               "name": "20 Prozent unter dem Höchststand, spätestens nach 126 Handelstagen",
               "kurz": "Grenze 20 Prozent unter dem Höchststand",
-              "n": 17,
-              "mittel": 0.0139,
-              "median": -0.042,
-              "vorsprung": -0.0543,
+              "n": 19,
+              "mittel": -0.0074,
+              "median": -0.0499,
+              "vorsprung": -0.0626,
               "im_plus": 5,
               "schlechtester": -0.2048,
               "bester": 0.6936,
-              "dauer": 105.3,
+              "dauer": 104.9,
               "gruende": {
                 "Haltedauer": 11,
-                "nachgezogene Grenze": 6
+                "nachgezogene Grenze": 8
               }
             },
             {
               "kennung": "kombi",
               "name": "Verlustgrenze 20 Prozent, ab 30 Prozent Gewinn 10 Prozent unter dem Höchststand, spätestens nach 126 Handelstagen",
               "kurz": "Verlustgrenze 20 Prozent, ab 30 Prozent Gewinn Grenze 10 Prozent unter dem Höchststand",
-              "n": 17,
-              "mittel": 0.0098,
-              "median": -0.042,
-              "vorsprung": -0.0546,
+              "n": 19,
+              "mittel": -0.0127,
+              "median": -0.0499,
+              "vorsprung": -0.0635,
               "im_plus": 5,
               "schlechtester": -0.2124,
               "bester": 0.6936,
-              "dauer": 103.6,
+              "dauer": 103.5,
               "gruende": {
                 "Haltedauer": 11,
-                "Verlustgrenze": 4,
+                "Verlustgrenze": 6,
                 "nachgezogene Grenze": 2
               }
             },
@@ -3174,16 +3174,16 @@
               "kennung": "regel2",
               "name": "bisherige Regel plus 20 Prozent unter dem Höchststand",
               "kurz": "Bisherige Regel plus Grenze 20 Prozent unter dem Höchststand",
-              "n": 17,
-              "mittel": 0.0686,
-              "median": 0.0214,
-              "vorsprung": 0.0158,
+              "n": 19,
+              "mittel": 0.0495,
+              "median": 0.0057,
+              "vorsprung": 0.0052,
               "im_plus": 11,
-              "schlechtester": -0.0728,
+              "schlechtester": -0.1199,
               "bester": 0.6936,
-              "dauer": 44.4,
+              "dauer": 46.4,
               "gruende": {
-                "nach 90 Tagen": 8,
+                "nach 90 Tagen": 10,
                 "Lockerung": 8,
                 "nachgezogene Grenze": 1
               }
@@ -4183,9 +4183,12 @@
                   "vorsprung": -0.0465
                 },
                 "ziel": {
-                  "offen": true,
-                  "schritt": 125,
-                  "rendite": -0.166
+                  "offen": false,
+                  "schritt": 126,
+                  "grund": "Haltedauer",
+                  "rendite": -0.1717,
+                  "vergleich": -0.081,
+                  "vorsprung": -0.0907
                 },
                 "nachlauf": {
                   "offen": false,
@@ -4237,9 +4240,12 @@
                   "vorsprung": -0.0295
                 },
                 "ziel": {
-                  "offen": true,
-                  "schritt": 122,
-                  "rendite": -0.1661
+                  "offen": false,
+                  "schritt": 126,
+                  "grund": "Haltedauer",
+                  "rendite": -0.1851,
+                  "vergleich": -0.1297,
+                  "vorsprung": -0.0554
                 },
                 "nachlauf": {
                   "offen": false,
@@ -4292,18 +4298,18 @@
                 },
                 "ziel": {
                   "offen": true,
-                  "schritt": 90,
-                  "rendite": -0.043
+                  "schritt": 95,
+                  "rendite": -0.0769
                 },
                 "nachlauf": {
                   "offen": true,
-                  "schritt": 90,
-                  "rendite": -0.043
+                  "schritt": 95,
+                  "rendite": -0.0769
                 },
                 "kombi": {
                   "offen": true,
-                  "schritt": 90,
-                  "rendite": -0.043
+                  "schritt": 95,
+                  "rendite": -0.0769
                 },
                 "regel2": {
                   "offen": false,
@@ -4340,18 +4346,18 @@
                 },
                 "ziel": {
                   "offen": true,
-                  "schritt": 89,
-                  "rendite": -0.0528
+                  "schritt": 94,
+                  "rendite": -0.0864
                 },
                 "nachlauf": {
                   "offen": true,
-                  "schritt": 89,
-                  "rendite": -0.0528
+                  "schritt": 94,
+                  "rendite": -0.0864
                 },
                 "kombi": {
                   "offen": true,
-                  "schritt": 89,
-                  "rendite": -0.0528
+                  "schritt": 94,
+                  "rendite": -0.0864
                 },
                 "regel2": {
                   "offen": false,
@@ -4372,8 +4378,8 @@
               "ergebnis": {
                 "bisher": {
                   "offen": true,
-                  "schritt": 40,
-                  "rendite": -0.0171
+                  "schritt": 45,
+                  "rendite": -0.052
                 },
                 "zeit": {
                   "offen": false,
@@ -4385,23 +4391,23 @@
                 },
                 "ziel": {
                   "offen": true,
-                  "schritt": 40,
-                  "rendite": -0.0171
+                  "schritt": 45,
+                  "rendite": -0.052
                 },
                 "nachlauf": {
                   "offen": true,
-                  "schritt": 40,
-                  "rendite": -0.0171
+                  "schritt": 45,
+                  "rendite": -0.052
                 },
                 "kombi": {
                   "offen": true,
-                  "schritt": 40,
-                  "rendite": -0.0171
+                  "schritt": 45,
+                  "rendite": -0.052
                 },
                 "regel2": {
                   "offen": true,
-                  "schritt": 40,
-                  "rendite": -0.0171
+                  "schritt": 45,
+                  "rendite": -0.052
                 }
               }
             }
@@ -4960,8 +4966,8 @@
                 },
                 "ziel": {
                   "offen": true,
-                  "schritt": 98,
-                  "rendite": -0.0012
+                  "schritt": 103,
+                  "rendite": -0.1204
                 },
                 "nachlauf": {
                   "offen": false,
@@ -4973,8 +4979,8 @@
                 },
                 "kombi": {
                   "offen": true,
-                  "schritt": 98,
-                  "rendite": -0.0012
+                  "schritt": 103,
+                  "rendite": -0.1204
                 },
                 "regel2": {
                   "offen": false,
