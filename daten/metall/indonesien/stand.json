@@ -1,6 +1,6 @@
 {
-  "stand": "2026-11-21T04:57:20+01:00",
-  "datum": "2026-11-21",
+  "stand": "2026-11-22T04:08:10+01:00",
+  "datum": "2026-11-22",
   "version": "0.1.0",
   "land": "indonesien",
   "name": "Indonesien-Ausfuhr",
@@ -76,7 +76,7 @@
       "bis": "2026-12-31",
       "urspruenglich_bis": "2026-12-31",
       "verlaengert": false,
-      "tage": 40,
+      "tage": 39,
       "zustand": "läuft",
       "gelb": false,
       "rot_pruefen": false,
@@ -92,7 +92,7 @@
       "bis": "2026-12-31",
       "urspruenglich_bis": "2026-12-31",
       "verlaengert": false,
-      "tage": 40,
+      "tage": 39,
       "zustand": "läuft",
       "gelb": false,
       "rot_pruefen": false,
@@ -109,7 +109,7 @@
       "bis": "2027-01-01",
       "urspruenglich_bis": "2027-01-01",
       "verlaengert": false,
-      "tage": 41,
+      "tage": 40,
       "zustand": "läuft",
       "gelb": false,
       "rot_pruefen": false,
@@ -120,6 +120,55 @@
     "herkunft": "frisch",
     "tage": 30,
     "dokumente": [
+      {
+        "nummer": "2026-23807",
+        "titel": "Foreign-Trade Zone (FTZ) 7, Notification of Proposed Production Activity; Hindustan Platinum Puerto Rico; (Electrical Contacts); Humacao, Puerto Rico",
+        "datum": "2026-11-23",
+        "art": "Notice",
+        "behoerden": [
+          "commerce-department",
+          "foreign-trade-zones-board"
+        ],
+        "behoerden_namen": [
+          "Commerce Department",
+          "Foreign-Trade Zones Board"
+        ],
+        "url": "https://www.federalregister.gov/documents/2026/11/23/2026-23807/foreign-trade-zone-ftz-7-notification-of-proposed-production-activity-hindustan-platinum-puerto-rico",
+        "zusammenfassung": "",
+        "begriffe": [
+          "nickel"
+        ],
+        "achsen": [
+          "nickel"
+        ],
+        "gewichtig": false,
+        "neu": true
+      },
+      {
+        "nummer": "2026-23806",
+        "titel": "Foreign-Trade Zone (FTZ) 19, Notification of Proposed Production Activity; CLAAS Omaha, Inc.; (Combine Harvesters and Adapters); Omaha, Nebraska",
+        "datum": "2026-11-23",
+        "art": "Notice",
+        "behoerden": [
+          "commerce-department",
+          "foreign-trade-zones-board"
+        ],
+        "behoerden_namen": [
+          "Commerce Department",
+          "Foreign-Trade Zones Board"
+        ],
+        "url": "https://www.federalregister.gov/documents/2026/11/23/2026-23806/foreign-trade-zone-ftz-19-notification-of-proposed-production-activity-claas-omaha-inc-combine",
+        "zusammenfassung": "",
+        "begriffe": [
+          "nickel",
+          "stainless steel"
+        ],
+        "achsen": [
+          "nickel"
+        ],
+        "gewichtig": false,
+        "neu": true
+      },
       {
         "nummer": "2026-23291",
         "titel": "Certain Railway Tank Cars and Subassemblies Thereof From Mexico: Initiation of Countervailing Duty Investigation",
@@ -429,104 +478,29 @@
         ],
         "gewichtig": false,
         "neu": false
-      },
-      {
-        "nummer": "2026-21561",
-        "titel": "Foreign-Trade Zone (FTZ) 186, Notification of Proposed Production Activity; Pratt & Whitney, a Division of RTX Corporation; (Aircraft Engines, Engine Modules, and Parts); North Berwick, Maine",
-        "datum": "2026-10-22",
-        "art": "Notice",
-        "behoerden": [
-          "commerce-department",
-          "foreign-trade-zones-board"
-        ],
-        "behoerden_namen": [
-          "Commerce Department",
-          "Foreign-Trade Zones Board"
-        ],
-        "url": "https://www.federalregister.gov/documents/2026/10/22/2026-21561/foreign-trade-zone-ftz-186-notification-of-proposed-production-activity-pratt-and-whitney-a-division",
-        "zusammenfassung": "",
-        "begriffe": [
-          "nickel",
-          "stainless steel"
-        ],
-        "achsen": [
-          "nickel"
-        ],
-        "gewichtig": false,
-        "neu": false
-      },
-      {
-        "nummer": "2026-21552",
-        "titel": "Foreign-Trade Zone (FTZ) 71, Notification of Proposed Production Activity; Pratt & Whitney, a Division of RTX Corporation; (Aircraft Engines, Engine Modules, and Parts); Middletown, Connecticut",
-        "datum": "2026-10-22",
-        "art": "Notice",
-        "behoerden": [
-          "commerce-department",
-          "foreign-trade-zones-board"
-        ],
-        "behoerden_namen": [
-          "Commerce Department",
-          "Foreign-Trade Zones Board"
-        ],
-        "url": "https://www.federalregister.gov/documents/2026/10/22/2026-21552/foreign-trade-zone-ftz-71-notification-of-proposed-production-activity-pratt-and-whitney-a-division",
-        "zusammenfassung": "",
-        "begriffe": [
-          "nickel",
-          "stainless steel"
-        ],
-        "achsen": [
-          "nickel"
-        ],
-        "gewichtig": false,
-        "neu": false
-      },
-      {
-        "nummer": "2026-21542",
-        "titel": "Foreign-Trade Zone (FTZ) 26, Notification of Proposed Production Activity; Pratt & Whitney, a Division of RTX Corporation; (Aircraft Engines, Engine Modules, and Parts); Midland, Georgia",
-        "datum": "2026-10-22",
-        "art": "Notice",
-        "behoerden": [
-          "commerce-department",
-          "foreign-trade-zones-board"
-        ],
-        "behoerden_namen": [
-          "Commerce Department",
-          "Foreign-Trade Zones Board"
-        ],
-        "url": "https://www.federalregister.gov/documents/2026/10/22/2026-21542/foreign-trade-zone-ftz-26-notification-of-proposed-production-activity-pratt-and-whitney-a-division",
-        "zusammenfassung": "",
-        "begriffe": [
-          "nickel",
-          "stainless steel"
-        ],
-        "achsen": [
-          "nickel"
-        ],
-        "gewichtig": false,
-        "neu": false
       }
     ]
   },
   "stoerung": {
     "erdbeben": [],
-    "erdbeben_gesamt": 13,
+    "erdbeben_gesamt": 14,
     "starkregen_gemessen": [],
     "starkregen_vorhergesagt": [],
     "regen_hoechst_mm": {
       "morowali": 16.7,
-      "weda_bay": 17.1,
+      "weda_bay": 18.2,
       "sorowako": 18.1,
       "pomalaa": 19.6,
-      "bangka": 29.1,
+      "bangka": 19.2,
       "belitung": 22.1,
-      "muntok": 20.2
+      "muntok": 25.2
     },
     "trocken": {
       "sorowako": {
-        "von": "2026-08-18",
-        "bis": "2026-11-15",
-        "summe_mm": 152,
-        "normal_mm": 513,
+        "von": "2026-08-19",
+        "bis": "2026-11-16",
+        "summe_mm": 155,
+        "normal_mm": 514,
         "urteil": "trocken",
         "anteil": 0.3,
         "trocken": true
@@ -541,16 +515,16 @@
       "rolle": "beobachtung",
       "hinweis": "bildet den LME-Nickelpreis ab, kein Länderrisiko, keine Verwässerung",
       "waehrung": "USD",
-      "letzter": "2026-11-19",
-      "schluss": 13.49,
+      "letzter": "2026-11-20",
+      "schluss": 13.315,
       "alter_tage": 2,
-      "r_kurz": -0.0361,
-      "vorsprung_kurz": 0.0213,
-      "r_lang": -0.03,
-      "vorsprung_lang": 0.0348,
+      "r_kurz": -0.0355,
+      "vorsprung_kurz": 0.031,
+      "r_lang": -0.0281,
+      "vorsprung_lang": 0.0651,
       "urteil": "schläft",
       "markt_schlaeft": true,
-      "handel": 31661,
+      "handel": 36421,
       "duenn": true
     },
     "TINM.L": {
@@ -561,11 +535,11 @@
       "waehrung": "USD",
       "letzter": "2026-11-20",
       "schluss": 93.98,
-      "alter_tage": 1,
+      "alter_tage": 2,
       "r_kurz": -0.1271,
-      "vorsprung_kurz": -0.0698,
+      "vorsprung_kurz": -0.0607,
       "r_lang": -0.194,
-      "vorsprung_lang": -0.1292,
+      "vorsprung_lang": -0.1009,
       "urteil": "schläft",
       "markt_schlaeft": true,
       "handel": 7887,

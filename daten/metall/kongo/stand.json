@@ -1,6 +1,6 @@
 {
-  "stand": "2026-11-21T04:59:05+01:00",
-  "datum": "2026-11-21",
+  "stand": "2026-11-22T04:08:21+01:00",
+  "datum": "2026-11-22",
   "version": "0.1.0",
   "land": "kongo",
   "name": "Kongo-Kobalt",
@@ -46,7 +46,7 @@
       "bis": "2027-12-31",
       "urspruenglich_bis": "2027-12-31",
       "verlaengert": false,
-      "tage": 405,
+      "tage": 404,
       "zustand": "läuft",
       "gelb": false,
       "rot_pruefen": false,
@@ -62,7 +62,7 @@
       "bis": "2026-12-31",
       "urspruenglich_bis": "2026-12-31",
       "verlaengert": false,
-      "tage": 40,
+      "tage": 39,
       "zustand": "läuft",
       "gelb": false,
       "rot_pruefen": false,
@@ -120,78 +120,6 @@
         ],
         "gewichtig": false,
         "neu": false
-      },
-      {
-        "nummer": "2026-21561",
-        "titel": "Foreign-Trade Zone (FTZ) 186, Notification of Proposed Production Activity; Pratt & Whitney, a Division of RTX Corporation; (Aircraft Engines, Engine Modules, and Parts); North Berwick, Maine",
-        "datum": "2026-10-22",
-        "art": "Notice",
-        "behoerden": [
-          "commerce-department",
-          "foreign-trade-zones-board"
-        ],
-        "behoerden_namen": [
-          "Commerce Department",
-          "Foreign-Trade Zones Board"
-        ],
-        "url": "https://www.federalregister.gov/documents/2026/10/22/2026-21561/foreign-trade-zone-ftz-186-notification-of-proposed-production-activity-pratt-and-whitney-a-division",
-        "zusammenfassung": "",
-        "begriffe": [
-          "cobalt"
-        ],
-        "achsen": [
-          "kobalt"
-        ],
-        "gewichtig": false,
-        "neu": false
-      },
-      {
-        "nummer": "2026-21552",
-        "titel": "Foreign-Trade Zone (FTZ) 71, Notification of Proposed Production Activity; Pratt & Whitney, a Division of RTX Corporation; (Aircraft Engines, Engine Modules, and Parts); Middletown, Connecticut",
-        "datum": "2026-10-22",
-        "art": "Notice",
-        "behoerden": [
-          "commerce-department",
-          "foreign-trade-zones-board"
-        ],
-        "behoerden_namen": [
-          "Commerce Department",
-          "Foreign-Trade Zones Board"
-        ],
-        "url": "https://www.federalregister.gov/documents/2026/10/22/2026-21552/foreign-trade-zone-ftz-71-notification-of-proposed-production-activity-pratt-and-whitney-a-division",
-        "zusammenfassung": "",
-        "begriffe": [
-          "cobalt"
-        ],
-        "achsen": [
-          "kobalt"
-        ],
-        "gewichtig": false,
-        "neu": false
-      },
-      {
-        "nummer": "2026-21542",
-        "titel": "Foreign-Trade Zone (FTZ) 26, Notification of Proposed Production Activity; Pratt & Whitney, a Division of RTX Corporation; (Aircraft Engines, Engine Modules, and Parts); Midland, Georgia",
-        "datum": "2026-10-22",
-        "art": "Notice",
-        "behoerden": [
-          "commerce-department",
-          "foreign-trade-zones-board"
-        ],
-        "behoerden_namen": [
-          "Commerce Department",
-          "Foreign-Trade Zones Board"
-        ],
-        "url": "https://www.federalregister.gov/documents/2026/10/22/2026-21542/foreign-trade-zone-ftz-26-notification-of-proposed-production-activity-pratt-and-whitney-a-division",
-        "zusammenfassung": "",
-        "begriffe": [
-          "cobalt"
-        ],
-        "achsen": [
-          "kobalt"
-        ],
-        "gewichtig": false,
-        "neu": false
       }
     ]
   },
@@ -201,7 +129,7 @@
     "starkregen_gemessen": [],
     "starkregen_vorhergesagt": [],
     "regen_hoechst_mm": {
-      "kolwezi": 11.1,
+      "kolwezi": 7.5,
       "likasi": 15.7,
       "tenke": 21.6,
       "kisanfu": 15.7,
@@ -218,16 +146,16 @@
       "rolle": "sensor",
       "hinweis": "größter westlicher Kobalt-Förderer im Kongo, aber riesiger Mischkonzern — Signal stark verwässert",
       "waehrung": "GBP",
-      "letzter": "2026-11-19",
-      "schluss": 462.9,
+      "letzter": "2026-11-20",
+      "schluss": 449.5,
       "alter_tage": 2,
-      "r_kurz": -0.1024,
-      "vorsprung_kurz": -0.045,
-      "r_lang": -0.1372,
-      "vorsprung_lang": -0.0724,
+      "r_kurz": -0.1193,
+      "vorsprung_kurz": -0.0529,
+      "r_lang": -0.1637,
+      "vorsprung_lang": -0.0705,
       "urteil": "schläft",
       "markt_schlaeft": true,
-      "handel": 15229259988,
+      "handel": 15966878700,
       "duenn": false
     }
   },

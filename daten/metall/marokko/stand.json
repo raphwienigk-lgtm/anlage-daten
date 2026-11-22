@@ -1,6 +1,6 @@
 {
-  "stand": "2026-11-21T04:59:03+01:00",
-  "datum": "2026-11-21",
+  "stand": "2026-11-22T04:08:18+01:00",
+  "datum": "2026-11-22",
   "version": "0.1.0",
   "land": "marokko",
   "name": "Marokko-Phosphat",
@@ -56,7 +56,7 @@
       "bis": "2027-12-31",
       "urspruenglich_bis": "2027-12-31",
       "verlaengert": false,
-      "tage": 405,
+      "tage": 404,
       "zustand": "läuft",
       "gelb": false,
       "rot_pruefen": false,
@@ -72,7 +72,7 @@
       "bis": "2027-12-31",
       "urspruenglich_bis": "2027-12-31",
       "verlaengert": false,
-      "tage": 405,
+      "tage": 404,
       "zustand": "läuft",
       "gelb": false,
       "rot_pruefen": false,
@@ -88,7 +88,7 @@
       "bis": "2027-10-03",
       "urspruenglich_bis": "2027-10-03",
       "verlaengert": false,
-      "tage": 316,
+      "tage": 315,
       "zustand": "läuft",
       "gelb": false,
       "rot_pruefen": false,
@@ -99,6 +99,30 @@
     "herkunft": "frisch",
     "tage": 30,
     "dokumente": [
+      {
+        "nummer": "2026-23802",
+        "titel": "Certain Cold-Rolled Steel Flat Products From the Republic of Korea: Preliminary Results and Rescission, in Part of Countervailing Duty Administrative Review; 2024",
+        "datum": "2026-11-23",
+        "art": "Notice",
+        "behoerden": [
+          "commerce-department",
+          "international-trade-administration"
+        ],
+        "behoerden_namen": [
+          "Commerce Department",
+          "International Trade Administration"
+        ],
+        "url": "https://www.federalregister.gov/documents/2026/11/23/2026-23802/certain-cold-rolled-steel-flat-products-from-the-republic-of-korea-preliminary-results-and",
+        "zusammenfassung": "The U.S. Department of Commerce (Commerce) preliminarily determines that countervailable subsidies were provided to Hyundai Steel Company (Hyundai Steel) and POSCO for the production of certain cold-rolled steel flat products (cold-rolled steel) from the Republic of Korea (Korea). The period of review (POR) is January 1, 2024, through December 31, 2024. In addition, Commerce is rescinding this review, in part, with respect to 46 companies. Interested parties are invited to comment on these preliminary results.",
+        "begriffe": [
+          "fertilizer"
+        ],
+        "achsen": [
+          "duenger"
+        ],
+        "gewichtig": false,
+        "neu": true
+      },
       {
         "nummer": "2026-23278",
         "titel": "Finished Carbon Steel Flanges From India: Preliminary Results and Rescission, in Part, of Antidumping Duty Administrative Review; 2024-2025",
@@ -488,11 +512,11 @@
       "waehrung": "USD",
       "letzter": "2026-11-20",
       "schluss": 63.84,
-      "alter_tage": 1,
+      "alter_tage": 2,
       "r_kurz": -0.1039,
-      "vorsprung_kurz": -0.0465,
+      "vorsprung_kurz": -0.0374,
       "r_lang": -0.0846,
-      "vorsprung_lang": -0.0198,
+      "vorsprung_lang": 0.0086,
       "urteil": "schläft",
       "markt_schlaeft": true,
       "handel": 149494946,
@@ -506,11 +530,11 @@
       "waehrung": "USD",
       "letzter": "2026-11-20",
       "schluss": 18.66,
-      "alter_tage": 1,
+      "alter_tage": 2,
       "r_kurz": -0.1487,
-      "vorsprung_kurz": -0.0914,
+      "vorsprung_kurz": -0.0823,
       "r_lang": 0.046,
-      "vorsprung_lang": 0.1108,
+      "vorsprung_lang": 0.1391,
       "urteil": "schläft",
       "markt_schlaeft": true,
       "handel": 192455834,

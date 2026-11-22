@@ -1,6 +1,6 @@
 {
-  "stand": "2026-11-21T04:57:15+01:00",
-  "datum": "2026-11-21",
+  "stand": "2026-11-22T04:08:04+01:00",
+  "datum": "2026-11-22",
   "version": "0.1.0",
   "land": "china",
   "name": "China-Ausfuhr",
@@ -45,7 +45,7 @@
         {
           "kanal": "frist",
           "kennung": "aussetzung_usa_ga_ge_sb",
-          "tage": 6,
+          "tage": 5,
           "zustand": "läuft bald aus"
         },
         {
@@ -139,7 +139,7 @@
       "bis": "2027-01-10",
       "urspruenglich_bis": "2026-11-10",
       "verlaengert": true,
-      "tage": 50,
+      "tage": 49,
       "zustand": "läuft",
       "gelb": false,
       "rot_pruefen": false,
@@ -155,7 +155,7 @@
       "bis": "2026-11-27",
       "urspruenglich_bis": "2026-11-27",
       "verlaengert": false,
-      "tage": 6,
+      "tage": 5,
       "zustand": "läuft bald aus",
       "gelb": true,
       "rot_pruefen": false,
@@ -166,6 +166,32 @@
     "herkunft": "frisch",
     "tage": 30,
     "dokumente": [
+      {
+        "nummer": "2026-23807",
+        "titel": "Foreign-Trade Zone (FTZ) 7, Notification of Proposed Production Activity; Hindustan Platinum Puerto Rico; (Electrical Contacts); Humacao, Puerto Rico",
+        "datum": "2026-11-23",
+        "art": "Notice",
+        "behoerden": [
+          "commerce-department",
+          "foreign-trade-zones-board"
+        ],
+        "behoerden_namen": [
+          "Commerce Department",
+          "Foreign-Trade Zones Board"
+        ],
+        "url": "https://www.federalregister.gov/documents/2026/11/23/2026-23807/foreign-trade-zone-ftz-7-notification-of-proposed-production-activity-hindustan-platinum-puerto-rico",
+        "zusammenfassung": "",
+        "begriffe": [
+          "graphite",
+          "tungsten"
+        ],
+        "achsen": [
+          "batterie",
+          "werkzeug"
+        ],
+        "gewichtig": false,
+        "neu": true
+      },
       {
         "nummer": "2026-23529",
         "titel": "Addressing Remote Access to Advanced Semiconductors",
@@ -357,114 +383,42 @@
         ],
         "gewichtig": false,
         "neu": false
-      },
-      {
-        "nummer": "2026-21561",
-        "titel": "Foreign-Trade Zone (FTZ) 186, Notification of Proposed Production Activity; Pratt & Whitney, a Division of RTX Corporation; (Aircraft Engines, Engine Modules, and Parts); North Berwick, Maine",
-        "datum": "2026-10-22",
-        "art": "Notice",
-        "behoerden": [
-          "commerce-department",
-          "foreign-trade-zones-board"
-        ],
-        "behoerden_namen": [
-          "Commerce Department",
-          "Foreign-Trade Zones Board"
-        ],
-        "url": "https://www.federalregister.gov/documents/2026/10/22/2026-21561/foreign-trade-zone-ftz-186-notification-of-proposed-production-activity-pratt-and-whitney-a-division",
-        "zusammenfassung": "",
-        "begriffe": [
-          "graphite"
-        ],
-        "achsen": [
-          "batterie"
-        ],
-        "gewichtig": false,
-        "neu": false
-      },
-      {
-        "nummer": "2026-21552",
-        "titel": "Foreign-Trade Zone (FTZ) 71, Notification of Proposed Production Activity; Pratt & Whitney, a Division of RTX Corporation; (Aircraft Engines, Engine Modules, and Parts); Middletown, Connecticut",
-        "datum": "2026-10-22",
-        "art": "Notice",
-        "behoerden": [
-          "commerce-department",
-          "foreign-trade-zones-board"
-        ],
-        "behoerden_namen": [
-          "Commerce Department",
-          "Foreign-Trade Zones Board"
-        ],
-        "url": "https://www.federalregister.gov/documents/2026/10/22/2026-21552/foreign-trade-zone-ftz-71-notification-of-proposed-production-activity-pratt-and-whitney-a-division",
-        "zusammenfassung": "",
-        "begriffe": [
-          "graphite"
-        ],
-        "achsen": [
-          "batterie"
-        ],
-        "gewichtig": false,
-        "neu": false
-      },
-      {
-        "nummer": "2026-21542",
-        "titel": "Foreign-Trade Zone (FTZ) 26, Notification of Proposed Production Activity; Pratt & Whitney, a Division of RTX Corporation; (Aircraft Engines, Engine Modules, and Parts); Midland, Georgia",
-        "datum": "2026-10-22",
-        "art": "Notice",
-        "behoerden": [
-          "commerce-department",
-          "foreign-trade-zones-board"
-        ],
-        "behoerden_namen": [
-          "Commerce Department",
-          "Foreign-Trade Zones Board"
-        ],
-        "url": "https://www.federalregister.gov/documents/2026/10/22/2026-21542/foreign-trade-zone-ftz-26-notification-of-proposed-production-activity-pratt-and-whitney-a-division",
-        "zusammenfassung": "",
-        "begriffe": [
-          "graphite"
-        ],
-        "achsen": [
-          "batterie"
-        ],
-        "gewichtig": false,
-        "neu": false
       }
     ]
   },
   "stoerung": {
     "erdbeben": [],
-    "erdbeben_gesamt": 3,
+    "erdbeben_gesamt": 4,
     "starkregen_gemessen": [],
     "starkregen_vorhergesagt": [],
     "regen_hoechst_mm": {
-      "lengshuijiang": 18.9,
+      "lengshuijiang": 12.4,
       "hechi": 9.6,
-      "lincang": 5.2,
+      "lincang": 4.7,
       "qujing": 9.5,
-      "pingguo": 21.3,
+      "pingguo": 11.5,
       "zibo": 1.9,
       "baotou": 5.7,
-      "ganzhou": 27.6,
-      "jixi": 3.3
+      "ganzhou": 30.2,
+      "jixi": 2.3
     },
     "trocken": {
       "lincang": {
-        "von": "2026-08-18",
-        "bis": "2026-11-15",
-        "summe_mm": 447,
-        "normal_mm": 470,
+        "von": "2026-08-19",
+        "bis": "2026-11-16",
+        "summe_mm": 440,
+        "normal_mm": 460,
         "urteil": "normal",
-        "anteil": 0.95,
+        "anteil": 0.96,
         "trocken": false
       },
       "qujing": {
-        "von": "2026-08-18",
-        "bis": "2026-11-15",
-        "summe_mm": 228,
-        "normal_mm": 312,
+        "von": "2026-08-19",
+        "bis": "2026-11-16",
+        "summe_mm": 217,
+        "normal_mm": 307,
         "urteil": "normal",
-        "anteil": 0.73,
+        "anteil": 0.71,
         "trocken": false
       }
     },
@@ -479,7 +433,7 @@
       "waehrung": "USD",
       "letzter": "2026-11-20",
       "schluss": 14.51,
-      "alter_tage": 1,
+      "alter_tage": 2,
       "r_kurz": -0.1839,
       "vorsprung_kurz": -0.0405,
       "r_lang": -0.1174,
@@ -497,7 +451,7 @@
       "waehrung": "USD",
       "letzter": "2026-11-20",
       "schluss": 2.23,
-      "alter_tage": 1,
+      "alter_tage": 2,
       "r_kurz": -0.2783,
       "vorsprung_kurz": -0.1349,
       "r_lang": -0.2712,
@@ -515,7 +469,7 @@
       "waehrung": "USD",
       "letzter": "2026-11-20",
       "schluss": 33.95,
-      "alter_tage": 1,
+      "alter_tage": 2,
       "r_kurz": -0.1241,
       "vorsprung_kurz": 0.0193,
       "r_lang": -0.1136,
@@ -533,7 +487,7 @@
       "waehrung": "AUD",
       "letzter": "2026-11-20",
       "schluss": 12.44,
-      "alter_tage": 1,
+      "alter_tage": 2,
       "r_kurz": -0.0569,
       "vorsprung_kurz": 0.0865,
       "r_lang": 0.1615,

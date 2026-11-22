@@ -42,3 +42,4 @@
 {"datum": "2026-11-19", "preise": {"MOS": "gelaufen", "NTR": "schläft"}, "stufen": {"duenger": "Gelb"}, "zeit": "2026-11-19T05:11:54+01:00", "zustand": "in Ordnung"}
 {"datum": "2026-11-20", "preise": {"MOS": "gelaufen", "NTR": "schläft"}, "stufen": {"duenger": "Gelb"}, "zeit": "2026-11-20T04:58:07+01:00", "zustand": "in Ordnung"}
 {"datum": "2026-11-21", "preise": {"MOS": "schläft", "NTR": "schläft"}, "stufen": {"duenger": "Gelb"}, "zeit": "2026-11-21T04:59:03+01:00", "zustand": "in Ordnung"}
+{"datum": "2026-11-22", "preise": {"MOS": "schläft", "NTR": "schläft"}, "stufen": {"duenger": "Gelb"}, "zeit": "2026-11-22T04:08:18+01:00", "zustand": "in Ordnung"}
