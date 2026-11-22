@@ -1,5 +1,5 @@
 Agent: Inlandspreise (täglich, GitHub)
-Stand: 21.11.2026, 05:00
+Stand: 22.11.2026, 04:15
 Zustand: in Ordnung
 Ergebnis: daten/inlandspreise.json, daten/inland/
 Frühzeichen: keines
