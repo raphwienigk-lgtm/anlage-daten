@@ -1,6 +1,6 @@
 {
-  "stand": "2026-11-22T04:15:40+01:00",
-  "datum": "2026-11-22",
+  "stand": "2026-11-23T04:45:25+01:00",
+  "datum": "2026-11-23",
   "version": "0.1.0",
   "hinweis": "Denkhilfe, keine Anlageberatung. Frühzeichen, nicht am Rückblick geprüft.",
   "reihen": {
@@ -12,16 +12,16 @@
       "einheit": "Rupiah",
       "rolle": "fruehzeichen",
       "status": "ok",
-      "werte": 2300,
+      "werte": 2301,
       "letzter": {
-        "datum": "2026-11-20",
-        "wert": 20250.0
+        "datum": "2026-11-23",
+        "wert": 20550.0
       },
-      "alter_tage": 2,
+      "alter_tage": 0,
       "art": "täglich",
-      "mittel_jetzt": 20330.0,
-      "mittel_damals": 20445.0,
-      "veraenderung": -0.0056,
+      "mittel_jetzt": 20342.5,
+      "mittel_damals": 20447.5,
+      "veraenderung": -0.0051,
       "urteil": "ruhig"
     },
     "speiseoel_id_marke": {
@@ -32,16 +32,16 @@
       "einheit": "Rupiah",
       "rolle": "fruehzeichen",
       "status": "ok",
-      "werte": 2303,
+      "werte": 2304,
       "letzter": {
-        "datum": "2026-11-20",
-        "wert": 24300.0
+        "datum": "2026-11-23",
+        "wert": 24450.0
       },
-      "alter_tage": 2,
+      "alter_tage": 0,
       "art": "täglich",
-      "mittel_jetzt": 24400.0,
+      "mittel_jetzt": 24410.0,
       "mittel_damals": 24297.5,
-      "veraenderung": 0.0042,
+      "veraenderung": 0.0046,
       "urteil": "ruhig"
     },
     "pflanzenoel_id_monat": {
@@ -57,7 +57,7 @@
         "datum": "2026-09-01",
         "wert": 21727.0
       },
-      "alter_tage": 82,
+      "alter_tage": 83,
       "art": "monatlich",
       "vergleich": {
         "datum": "2026-06-01",
@@ -73,13 +73,14 @@
       "quelle": "mpob",
       "einheit": "Ringgit je Tonne",
       "rolle": "tagespreis",
-      "status": "ok",
+      "status": "Fehler",
+      "meldung": "AbrufFehler: ConnectTimeout bei https://bepi.mpob.gov.my/admin2/price_local_daily_view_cpo_msia.php: HTTPSConnectionPool(host='bepi.mpob.gov.my', port=443): Max retries exceeded with url: /admin2/price_local_daily_view_cpo_msia.php?more=Y&jenis=1Y&tahun=2026 (Caused by ConnectTimeoutError(<HTTPSConn",
       "werte": 455,
       "letzter": {
         "datum": "2026-11-19",
         "wert": 4038.0
       },
-      "alter_tage": 3,
+      "alter_tage": 4,
       "art": "täglich",
       "mittel_jetzt": 4253.53,
       "mittel_damals": 4557.53,
