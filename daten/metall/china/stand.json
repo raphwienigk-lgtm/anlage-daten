@@ -1,6 +1,6 @@
 {
-  "stand": "2026-11-22T04:08:04+01:00",
-  "datum": "2026-11-22",
+  "stand": "2026-11-23T04:42:17+01:00",
+  "datum": "2026-11-23",
   "version": "0.1.0",
   "land": "china",
   "name": "China-Ausfuhr",
@@ -45,7 +45,7 @@
         {
           "kanal": "frist",
           "kennung": "aussetzung_usa_ga_ge_sb",
-          "tage": 5,
+          "tage": 4,
           "zustand": "läuft bald aus"
         },
         {
@@ -139,7 +139,7 @@
       "bis": "2027-01-10",
       "urspruenglich_bis": "2026-11-10",
       "verlaengert": true,
-      "tage": 49,
+      "tage": 48,
       "zustand": "läuft",
       "gelb": false,
       "rot_pruefen": false,
@@ -155,7 +155,7 @@
       "bis": "2026-11-27",
       "urspruenglich_bis": "2026-11-27",
       "verlaengert": false,
-      "tage": 5,
+      "tage": 4,
       "zustand": "läuft bald aus",
       "gelb": true,
       "rot_pruefen": false,
@@ -190,7 +190,7 @@
           "werkzeug"
         ],
         "gewichtig": false,
-        "neu": true
+        "neu": false
       },
       {
         "nummer": "2026-23529",
@@ -359,66 +359,42 @@
         ],
         "gewichtig": false,
         "neu": false
-      },
-      {
-        "nummer": "2026-21693",
-        "titel": "Agency Information Collection Activities; Submission to the Office of Management and Budget (OMB) for Review and Approval; Comment Request; CHIPS Expansion Clawback Information Collection",
-        "datum": "2026-10-23",
-        "art": "Notice",
-        "behoerden": [
-          "commerce-department",
-          "national-institute-of-standards-and-technology"
-        ],
-        "behoerden_namen": [
-          "Commerce Department",
-          "National Institute of Standards and Technology"
-        ],
-        "url": "https://www.federalregister.gov/documents/2026/10/23/2026-21693/agency-information-collection-activities-submission-to-the-office-of-management-and-budget-omb-for",
-        "zusammenfassung": "The Department of Commerce, in accordance with the Paperwork Reduction Act of 1995 (PRA), invites the general public and other Federal agencies to comment on proposed, and continuing information collections, which helps us assess the impact of our information collection requirements and minimize the public's reporting burden. The purpose of this notice is to allow for 60 days of public comment preceding submission of the collection to OMB.",
-        "begriffe": [
-          "semiconductor manufacturing"
-        ],
-        "achsen": [
-          "chip"
-        ],
-        "gewichtig": false,
-        "neu": false
       }
     ]
   },
   "stoerung": {
     "erdbeben": [],
-    "erdbeben_gesamt": 4,
+    "erdbeben_gesamt": 3,
     "starkregen_gemessen": [],
     "starkregen_vorhergesagt": [],
     "regen_hoechst_mm": {
       "lengshuijiang": 12.4,
-      "hechi": 9.6,
+      "hechi": 17.1,
       "lincang": 4.7,
       "qujing": 9.5,
-      "pingguo": 11.5,
+      "pingguo": 11.1,
       "zibo": 1.9,
-      "baotou": 5.7,
-      "ganzhou": 30.2,
+      "baotou": 0.7,
+      "ganzhou": 13.7,
       "jixi": 2.3
     },
     "trocken": {
       "lincang": {
-        "von": "2026-08-19",
-        "bis": "2026-11-16",
-        "summe_mm": 440,
-        "normal_mm": 460,
+        "von": "2026-08-20",
+        "bis": "2026-11-17",
+        "summe_mm": 423,
+        "normal_mm": 450,
         "urteil": "normal",
-        "anteil": 0.96,
+        "anteil": 0.94,
         "trocken": false
       },
       "qujing": {
-        "von": "2026-08-19",
-        "bis": "2026-11-16",
-        "summe_mm": 217,
-        "normal_mm": 307,
+        "von": "2026-08-20",
+        "bis": "2026-11-17",
+        "summe_mm": 210,
+        "normal_mm": 304,
         "urteil": "normal",
-        "anteil": 0.71,
+        "anteil": 0.69,
         "trocken": false
       }
     },
@@ -433,7 +409,7 @@
       "waehrung": "USD",
       "letzter": "2026-11-20",
       "schluss": 14.51,
-      "alter_tage": 2,
+      "alter_tage": 3,
       "r_kurz": -0.1839,
       "vorsprung_kurz": -0.0405,
       "r_lang": -0.1174,
@@ -451,7 +427,7 @@
       "waehrung": "USD",
       "letzter": "2026-11-20",
       "schluss": 2.23,
-      "alter_tage": 2,
+      "alter_tage": 3,
       "r_kurz": -0.2783,
       "vorsprung_kurz": -0.1349,
       "r_lang": -0.2712,
@@ -469,7 +445,7 @@
       "waehrung": "USD",
       "letzter": "2026-11-20",
       "schluss": 33.95,
-      "alter_tage": 2,
+      "alter_tage": 3,
       "r_kurz": -0.1241,
       "vorsprung_kurz": 0.0193,
       "r_lang": -0.1136,
@@ -487,7 +463,7 @@
       "waehrung": "AUD",
       "letzter": "2026-11-20",
       "schluss": 12.44,
-      "alter_tage": 2,
+      "alter_tage": 3,
       "r_kurz": -0.0569,
       "vorsprung_kurz": 0.0865,
       "r_lang": 0.1615,

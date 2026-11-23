@@ -1,6 +1,6 @@
 {
-  "stand": "2026-11-22T04:08:18+01:00",
-  "datum": "2026-11-22",
+  "stand": "2026-11-23T04:42:29+01:00",
+  "datum": "2026-11-23",
   "version": "0.1.0",
   "land": "marokko",
   "name": "Marokko-Phosphat",
@@ -56,7 +56,7 @@
       "bis": "2027-12-31",
       "urspruenglich_bis": "2027-12-31",
       "verlaengert": false,
-      "tage": 404,
+      "tage": 403,
       "zustand": "läuft",
       "gelb": false,
       "rot_pruefen": false,
@@ -72,7 +72,7 @@
       "bis": "2027-12-31",
       "urspruenglich_bis": "2027-12-31",
       "verlaengert": false,
-      "tage": 404,
+      "tage": 403,
       "zustand": "läuft",
       "gelb": false,
       "rot_pruefen": false,
@@ -88,7 +88,7 @@
       "bis": "2027-10-03",
       "urspruenglich_bis": "2027-10-03",
       "verlaengert": false,
-      "tage": 315,
+      "tage": 314,
       "zustand": "läuft",
       "gelb": false,
       "rot_pruefen": false,
@@ -121,7 +121,7 @@
           "duenger"
         ],
         "gewichtig": false,
-        "neu": true
+        "neu": false
       },
       {
         "nummer": "2026-23278",
@@ -512,7 +512,7 @@
       "waehrung": "USD",
       "letzter": "2026-11-20",
       "schluss": 63.84,
-      "alter_tage": 2,
+      "alter_tage": 3,
       "r_kurz": -0.1039,
       "vorsprung_kurz": -0.0374,
       "r_lang": -0.0846,
@@ -530,7 +530,7 @@
       "waehrung": "USD",
       "letzter": "2026-11-20",
       "schluss": 18.66,
-      "alter_tage": 2,
+      "alter_tage": 3,
       "r_kurz": -0.1487,
       "vorsprung_kurz": -0.0823,
       "r_lang": 0.046,
